@@ -1,15 +1,7 @@
-/**
- * Created with IntelliJ IDEA.
- * User: User
- * Date: 19.06.13
- * Time: 19:21
- * To change this template use File | Settings | File Templates.
- */
+
 package embed {
-import embed.AltWindowBase;
 
 import flash.display.MovieClip;
-import flash.display.Sprite;
 import flash.events.KeyboardEvent;
 import flash.events.MouseEvent;
 import flash.geom.Point;
@@ -31,24 +23,25 @@ public class AltManager extends MovieClip{
     private var _params:AltWindowParameters = new AltWindowParameters();
 
     public function AltManager() {
-//        var posY:int = 180;
-        addChild(new g1())
+        addChild(new g1());
 
-//        _params.position = new Point(100,posY);
-        _params.title_text = "ХУЕТЕНЬ"
-        _params.info_text = "Убрать"
+
+        _params.title_text = "ПОЕБЕНЬ!";
         _params.callback = test;
+        generate_tip(AltWindowGreenProgressButton);
 
-        generate_tip(AltWindowBase)
-        generate_tip(AltWindowRedProgress)
-        generate_tip(AltWindowGreenProgress)
-        generate_tip(AltWindowGreenProgressButton)
+        _params.title_text = "ХУЕТЕНЬ";
+        _params.info_text = "Убрать";
+
+        generate_tip(AltWindowBase);
+        generate_tip(AltWindowRedProgress);
+        generate_tip(AltWindowGreenProgress);
 
         stage.addEventListener(KeyboardEvent.KEY_UP, on_key)
     }
 
     private function test():void {
-        trace("HERE")
+        trace("HERE");
     }
 
     public function generate_tip(_class:Class):void {

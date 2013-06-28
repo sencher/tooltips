@@ -1,6 +1,6 @@
 package embed {
 
-public class AltWindowRedProgress extends AltWindowProgressBase {
+public class AltWindowRedProgress extends AltWindowProgressBase implements ISwfEmbed{
 
     [Embed(source="../swf/bubble_3d.swf", symbol="red_progress")]
     public var red_progress:Class;

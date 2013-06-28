@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: User
- * Date: 28.06.13
- * Time: 15:32
- * To change this template use File | Settings | File Templates.
- */
 package embed {
 import flash.display.MovieClip;
 

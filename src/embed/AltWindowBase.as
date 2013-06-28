@@ -1,42 +1,28 @@
-/**
- * Created with IntelliJ IDEA.
- * User: User
- * Date: 19.06.13
- * Time: 19:32
- * To change this template use File | Settings | File Templates.
- */
 package embed {
 import flash.display.DisplayObject;
 import flash.display.MovieClip;
-import flash.display.Sprite;
 import flash.geom.Point;
 import flash.text.TextField;
-import flash.text.TextFieldAutoSize;
-import flash.text.TextFormat;
-import flash.text.TextLineMetrics;
 
 [Embed(source="../swf/bubble_3d.swf", symbol="ExternalMovie")]
 public class AltWindowBase extends MovieClip implements IAltWindow{
     protected const TOP_MARGIN:int = 8;
-    protected const BOTTOM_MARGIN:int = 10;
+    public var bottom_margin:int = 8;
     protected const VERTICAL_MARGIN:int = 14;
-    protected const LINE_MARGIN:int = 6;
+    protected const LINE_MARGIN:int = 8;
 
-//    protected const LEFT:String = 'left';
     protected const RIGHT:String = 'right';
-//    protected const TOP:String = 'top';
     protected const BOTTOM:String = 'bottom';
 
-//    protected var progress_max_width:int;
     protected var params:AltWindowParameters;
-//    private var text_lines:int;
-//    protected var progress_mask:MovieClip;
-//    protected var width_array:Array = [];
-//
+
     public var text_title:TextField;
     public var text_info:TextField;
     public var anchor:MovieClip;
     public var bubble:MovieClip;
+
+    protected var contentHeight:int;
+    protected var contentWidth:int;
 
     public function AltWindowBase(init_params:AltWindowParameters) {
         super();
@@ -55,44 +41,9 @@ public class AltWindowBase extends MovieClip implements IAltWindow{
         adjust_background();
     }
 
-    protected var contentHeight:int;
-    protected var contentWidth:int;
-    protected var top_coord:int;
-
-    public function adjust_background():void {
-
-
-//        var element:*;
-//
-//        for each(element in _elements)
-//        {
-//            if (element is TextField)
-//            {
-////                var text_field:TextField = TextField(element);
-//                contentHeight += element.textHeight + LINE_MARGIN;
-//            }else if (element is MovieClip)
-//            {
-//                contentHeight += element.height + LINE_MARGIN;
-//            }
-//        }
-//
-//        contentWidth = Math.max.apply(null, width_array);
-//
-////        var contentWidth:int = Math.max.apply(null, elements_length) + HORIZONTAL_MARGIN * 2;
-////        var contentHeight:int = text_lines * LINE_HEIGHT +
-////                button_lines * BUTTON_HEIGHT +
-////                (text_lines + button_lines - 1) * LINE_MARGIN +
-////                VERTICAL_MARGIN * 2;
-////
-        set_bg_size(contentWidth, contentHeight);
-////
-        adjust_elements();
-    }
-//
     public function set_bg_size(width:int, height:int):void {
-        bubble.height = height + TOP_MARGIN + BOTTOM_MARGIN;
+        bubble.height = height + TOP_MARGIN + bottom_margin;
         bubble.width = width + VERTICAL_MARGIN * 2;
-        top_coord = bubble.y - bubble.height;
     }
 
 
@@ -103,8 +54,8 @@ public class AltWindowBase extends MovieClip implements IAltWindow{
 
         if(add_to == BOTTOM){
             if(contentWidth < bound_box.x) contentWidth = bound_box.x;
-        } else {
-            contentWidth += bound_box.x;
+        } else if(add_to == RIGHT){
+            contentWidth += bound_box.x + LINE_MARGIN;
         }
     }
 
@@ -116,9 +67,14 @@ public class AltWindowBase extends MovieClip implements IAltWindow{
             return new Point( object.width, object.height );
     }
 
+    public function adjust_background():void {
+        set_bg_size(contentWidth, contentHeight);
+        adjust_elements();
+    }
+
     public function adjust_elements():void {
-        text_title.y = top_coord + TOP_MARGIN;
-        text_info.y = text_title.y + text_title.height - 3;
+        text_title.y = AltUtils.get_top_inverted_y(bubble) + TOP_MARGIN;
+        text_info.y = AltUtils.get_bottom_y(text_title);
     }
 }
 }

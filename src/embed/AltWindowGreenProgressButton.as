@@ -1,12 +1,5 @@
-/**
- * Created with IntelliJ IDEA.
- * User: User
- * Date: 28.06.13
- * Time: 13:18
- * To change this template use File | Settings | File Templates.
- */
 package embed {
-public class AltWindowGreenProgressButton extends AltWindowProgressBase {
+public class AltWindowGreenProgressButton extends AltWindowProgressBase implements ISwfEmbed{
 
     [Embed(source="../swf/bubble_3d.swf", symbol="green_progress_clock")]
     public var green_progress_clock:Class;
@@ -19,6 +12,8 @@ public class AltWindowGreenProgressButton extends AltWindowProgressBase {
     public function AltWindowGreenProgressButton(init_params:AltWindowParameters) {
         button = new AltButton(green_button_with_icon, init_params.callback);
         addChild(button);
+        add_content_box(button);
+
         super(init_params);
     }
 
@@ -28,11 +23,13 @@ public class AltWindowGreenProgressButton extends AltWindowProgressBase {
     }
 
     override public function adjust_background():void {
+        bottom_margin += 6;
         super.adjust_background();
     }
 
     override public function adjust_elements():void {
         super.adjust_elements();
+        button.y = AltUtils.get_bottom_y(progress_bar) + LINE_MARGIN * 0.5;
     }
 }
 }
