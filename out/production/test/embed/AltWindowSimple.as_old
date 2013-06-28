@@ -1,0 +1,27 @@
+///**
+// * Created with IntelliJ IDEA.
+// * User: User
+// * Date: 27.06.13
+// * Time: 17:54
+// * To change this template use File | Settings | File Templates.
+// */
+//package embed {
+//public class AltWindowSimple extends AltWindowBase {
+//    public function AltWindowSimple(init_params:AltWindowParameters) {
+//        super(init_params);
+//    }
+//
+//
+//    override public function adjust_background():void {
+//        text_info.text = params.info_text || "";
+//        add_content_box(text_info);
+//        super.adjust_background();
+//    }
+//
+//
+//    override public function adjust_elements():void {
+//        super.adjust_elements();
+//        text_info.y = text_title.y + text_title.height - 3;
+//    }
+//}
+//}
