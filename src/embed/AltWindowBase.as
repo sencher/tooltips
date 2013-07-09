@@ -3,6 +3,7 @@ import flash.display.DisplayObject;
 import flash.display.MovieClip;
 import flash.geom.Point;
 import flash.text.TextField;
+import flash.text.TextFormat;
 
 [Embed(source="../swf/bubble_3d.swf", symbol="ExternalMovie")]
 public class AltWindowBase extends MovieClip implements IAltWindow{
@@ -35,6 +36,7 @@ public class AltWindowBase extends MovieClip implements IAltWindow{
             add_content_box(text_info);
         }
         text_info.text = params.info_text || "";
+        var form:TextFormat = text_info.getTextFormat();
 
         this.x = params.position.x;
         this.y = params.position.y;
@@ -75,6 +77,7 @@ public class AltWindowBase extends MovieClip implements IAltWindow{
     public function adjust_elements():void {
         text_title.y = AltUtils.get_top_inverted_y(bubble) + TOP_MARGIN;
         text_info.y = AltUtils.get_bottom_y(text_title);
+        var form:TextFormat = text_info.getTextFormat();
     }
 }
 }
