@@ -10,7 +10,7 @@ public class Test_Time extends Sprite{
 
     private var ms:int;
     public var d:Date;
-    private var d2:Date;
+    private var d2:Test_Date;
 //    public var value:Number = 25157762345;
     public var value:Number = (2592000000)*(8.5/30);
 

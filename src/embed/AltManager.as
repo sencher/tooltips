@@ -35,7 +35,7 @@ public class AltManager extends MovieClip{
 
         generate_tip(AltWindowBase);
         generate_tip(AltWindowRedProgress);
-        generate_tip(AltWindowGreenProgress);
+        generate_tip(AltWindowGreenProgressButton);
 
         stage.addEventListener(KeyboardEvent.KEY_UP, on_key)
     }
