@@ -11,6 +11,15 @@
             <entry library-id="03db6977-2e44-4b4d-83d0-1ca89a53e2f3">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="blooddy_crypto" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="tlfruntime" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="haxe_lib" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="flex 4.6+air 3.6 sdk" />
         </dependencies>
@@ -40,6 +49,10 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="blooddy_crypto" level="application" />
+    <orderEntry type="library" name="actionmailer (v2.3.12, ruby-1.9.2-p290) [gem]" level="application" />
+    <orderEntry type="library" name="tlfruntime" level="application" />
+    <orderEntry type="library" name="haxe_lib" level="application" />
   </component>
 </module>
 

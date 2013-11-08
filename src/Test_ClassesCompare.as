@@ -17,7 +17,9 @@ import folder.Third;
 
 import mx.core.FlexTextField;
 
-public class Test_ClassesCompare extends Sprite{
+    import utils.Hash;
+
+    public class Test_ClassesCompare extends Sprite{
 
     private var h:Hash;
 
