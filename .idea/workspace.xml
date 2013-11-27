@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335145ed-7ae8-4370-8731-e66212392341" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_AddedToStage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Added_Removed.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Array.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Function_And_Custom_Events.as" />
-      <change type="DELETED" beforePath="D:\Projects\idea\test\src\Array_Test.as" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_BitmapDraw.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Constructor.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Context3D.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_DynamicOverloadFunction.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_EventDispatcher.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Logic.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_McWrapper.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_OverrideVisible.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ShortIf.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Utils.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/utils/AGALMiniAssembler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/utils/PerspectiveMatrix3D.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/MovieClipUtils.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/VectorHelper.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/visible/CircleButton.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/visible/VisDisplayObject.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Hash.as" afterPath="$PROJECT_DIR$/src/Test_Hash.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Vector.as" afterPath="$PROJECT_DIR$/src/Test_Vector.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_rtree.as" afterPath="$PROJECT_DIR$/src/Test_rtree.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Hash.as" afterPath="$PROJECT_DIR$/src/utils/Hash.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,8 +93,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -88,59 +103,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Test_rtree.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_rtree.as">
+      <file leaf-file-name="MovieClipUtils.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/MovieClipUtils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+            <state line="36" column="24" selection-start="0" selection-end="1656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RTree.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rtree/RTree.as">
+      <file leaf-file-name="Test_Context3D.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_Context3D.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="22" selection-start="5971" selection-end="5971" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Added_Removed.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Added_Removed.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="64" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_AddedToStage.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1609" selection-end="3498" vertical-scroll-proportion="-7.16">
+            <state line="59" column="28" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.50421584">
               <folding>
-                <element signature="e#14#49#0" expanded="true" />
+                <element signature="e#14#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Array.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test_Array.as">
+      <file leaf-file-name="FractalGeometryGenerator.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="39" selection-start="235" selection-end="235" vertical-scroll-proportion="0.3090909">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Function_And_Custom_Events.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Function_And_Custom_Events.as">
+      <file leaf-file-name="VectorHelper.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/VectorHelper.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="23" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,22 +154,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Test_BitmapData.as" />
-        <option value="$PROJECT_DIR$/src/utils/Hash.as" />
-        <option value="$PROJECT_DIR$/src/Test_ArabicText.as" />
-        <option value="$PROJECT_DIR$/src/Test_ClassesCompare.as" />
-        <option value="$PROJECT_DIR$/src/Test_Hash.as" />
-        <option value="$PROJECT_DIR$/src/Test_ColorTransform.as" />
-        <option value="$PROJECT_DIR$/src/rtree/Cube.as" />
-        <option value="$PROJECT_DIR$/src/rtree/RTree.as" />
-        <option value="$PROJECT_DIR$/src/rtree/RTreeNode.as" />
+        <option value="$PROJECT_DIR$/src/visible/VisDisplayObject.as" />
+        <option value="$PROJECT_DIR$/src/Test_OverrideVisible.as" />
+        <option value="$PROJECT_DIR$/src/Test_McWrapper.as" />
         <option value="$PROJECT_DIR$/src/Test_rtree.as" />
-        <option value="$PROJECT_DIR$/src/Test_Added_Removed.as" />
-        <option value="$PROJECT_DIR$/src/Test_AddedToStage.as" />
-        <option value="$PROJECT_DIR$/src/Array_Test.as" />
-        <option value="$PROJECT_DIR$/src/Test_Function.as" />
-        <option value="$PROJECT_DIR$/src/Test_Function_And_Custom_Events.as" />
-        <option value="$PROJECT_DIR$/src/Test_Array.as" />
+        <option value="$PROJECT_DIR$/src/Test_BitmapDraw.as" />
+        <option value="$PROJECT_DIR$/src/utils/Hash.as" />
+        <option value="$PROJECT_DIR$/src/Test_Hash.as" />
+        <option value="$PROJECT_DIR$/src/utils/VectorHelper.as" />
+        <option value="$PROJECT_DIR$/src/Test_Vector.as" />
+        <option value="$PROJECT_DIR$/src/Test_Logic.as" />
+        <option value="$PROJECT_DIR$/src/Test_ShortIf.as" />
+        <option value="$PROJECT_DIR$/src/Test_Constructor.as" />
+        <option value="$PROJECT_DIR$/src/Test_Utils.as" />
+        <option value="$PROJECT_DIR$/src/utils/MovieClipUtils.as" />
+        <option value="$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as" />
+        <option value="$PROJECT_DIR$/src/Test_Context3D.as" />
       </list>
     </option>
   </component>
@@ -258,6 +253,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -280,28 +295,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rtree" />
+              <option name="myItemId" value="visible" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.adobe.utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -311,13 +334,13 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
@@ -343,11 +366,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\idea\test\src" />
+      <recent name="D:\Projects\idea\test\src\" />
       <recent name="D:\Projects\idea\test\src\utils" />
+      <recent name="D:\Projects\idea\test\src" />
       <recent name="D:\Projects\idea\test\src\images" />
       <recent name="D:\Projects\idea\test\src\embed" />
-      <recent name="D:\Projects\idea\test\src\folder" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="embed" />
@@ -367,8 +390,8 @@
       <recent name="D:\Projects\idea\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Function_And_Custom_Events">
-    <configuration default="false" name="Test_rtree" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+  <component name="RunManager" selected="Flash App.Test_Utils">
+    <configuration default="false" name="Test_Vector" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
       <option name="BCName" value="test" />
       <option name="adlOptions" value="" />
       <option name="airProgramParameters" value="" />
@@ -389,8 +412,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_rtree" />
-      <option name="overriddenOutputFileName" value="Test_rtree.swf" />
+      <option name="overriddenMainClass" value="Test_Vector" />
+      <option name="overriddenOutputFileName" value="Test_Vector.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenHeight" value="0" />
@@ -401,7 +424,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Added_Removed" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+    <configuration default="false" name="Test_Logic" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
       <option name="BCName" value="test" />
       <option name="adlOptions" value="" />
       <option name="airProgramParameters" value="" />
@@ -422,41 +445,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Added_Removed" />
-      <option name="overriddenOutputFileName" value="Test_Added_Removed.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <RunnerSettings RunnerId="FlexDebugRunner" />
-      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test_AddedToStage" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
-      <option name="BCName" value="test" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Generated" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_AddedToStage" />
-      <option name="overriddenOutputFileName" value="Test_AddedToStage.swf" />
+      <option name="overriddenMainClass" value="Test_Logic" />
+      <option name="overriddenOutputFileName" value="Test_Logic.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenHeight" value="0" />
@@ -469,7 +459,7 @@
       <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Array" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+    <configuration default="false" name="Test_ShortIf" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
       <option name="BCName" value="test" />
       <option name="adlOptions" value="" />
       <option name="airProgramParameters" value="" />
@@ -490,8 +480,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Array" />
-      <option name="overriddenOutputFileName" value="Array_Test.swf" />
+      <option name="overriddenMainClass" value="Test_ShortIf" />
+      <option name="overriddenOutputFileName" value="Test_ShortIf.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenHeight" value="0" />
@@ -502,7 +492,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Function_And_Custom_Events" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+    <configuration default="false" name="Test_Constructor" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
       <option name="BCName" value="test" />
       <option name="adlOptions" value="" />
       <option name="airProgramParameters" value="" />
@@ -523,8 +513,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Function_And_Custom_Events" />
-      <option name="overriddenOutputFileName" value="Test_Function.swf" />
+      <option name="overriddenMainClass" value="Test_Constructor" />
+      <option name="overriddenOutputFileName" value="Test_Constructor.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenHeight" value="0" />
@@ -532,7 +522,44 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
       <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test_Utils" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+      <option name="BCName" value="test" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Generated" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="test" />
+      <option name="overriddenMainClass" value="Test_Utils" />
+      <option name="overriddenOutputFileName" value="Test_Utils.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -579,25 +606,6 @@
         <option name="RakeTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="RakeTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -624,6 +632,25 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -752,11 +779,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Flash App.test" />
-      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_rtree" />
-      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Added_Removed" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_AddedToStage" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Array" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Function_And_Custom_Events" />
+      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Vector" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Logic" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ShortIf" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Constructor" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Utils" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -808,7 +835,11 @@
       <created>1383935013133</created>
       <updated>1383935013133</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="rtree, array, added-removed, custom events">
+      <created>1384258155891</created>
+      <updated>1384258155891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -839,25 +870,25 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3236607" sideWeight="0.4871795" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33705357" sideWeight="0.4871795" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38392857" sideWeight="0.5090812" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3314732" sideWeight="0.4957265" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.4957265" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25373933" sideWeight="0.67633927" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25373933" sideWeight="0.6629464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6773504" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6339286" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -898,7 +929,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="rtree, blur" />
+    <option name="LAST_COMMIT_MESSAGE" value="rtree, array, added-removed, custom events" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -916,6 +947,7 @@
     <MESSAGE value="add all" />
     <MESSAGE value="Blur, BitmapData" />
     <MESSAGE value="rtree, blur" />
+    <MESSAGE value="rtree, array, added-removed, custom events" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -962,6 +994,10 @@
           <url>file://$PROJECT_DIR$/src/embed/AltWindowBase.as</url>
           <line>80</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_McWrapper.as</url>
+          <line>40</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -970,100 +1006,118 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_Time.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_Logic.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" />
+        <state line="28" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BitmapDataExample.as">
+    <entry file="file://$PROJECT_DIR$/src/visible/VisDisplayObject.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/game.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Vector.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="713" selection-end="735" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/embed/AltButtonParams.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://D:/work/projects/energy/ContryClient/haxe_swc/haxe_lib.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="25" selection-start="6406" selection-end="6406" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://D:/Flex/flex 4.6+air 3.6 sdk/frameworks/libs/player/11.6/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="920" column="29" selection-start="39486" selection-end="39486" vertical-scroll-proportion="0.33152175" />
+        <state line="71" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_rtree.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rtree/RTree.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="22" selection-start="5971" selection-end="5971" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="0" selection-end="1319" vertical-scroll-proportion="0.5090909">
+        <state line="23" column="21" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_BitmapData.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="61" selection-start="0" selection-end="2238" vertical-scroll-proportion="0.47272727">
+        <state line="52" column="0" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Added_Removed.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="64" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1609" selection-end="3498" vertical-scroll-proportion="-7.16">
-          <folding>
-            <element signature="e#14#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Bitmap/merge.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="205" selection-end="205" vertical-scroll-proportion="0.124087594">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Function_And_Custom_Events.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_BitmapDraw.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+        <state line="32" column="45" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Array.as">
+    <entry file="file://$PROJECT_DIR$/src/rtree/RTree.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="235" selection-end="235" vertical-scroll-proportion="0.3090909">
+        <state line="214" column="12" selection-start="8397" selection-end="8429" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rtree/RTreeNode.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="81" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_OverrideVisible.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_DynamicOverloadFunction.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_EventDispatcher.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.51264757">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/MovieClipUtils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="24" selection-start="0" selection-end="1656" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/VectorHelper.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Context3D.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="28" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.50421584">
+          <folding>
+            <element signature="e#14#55#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,12 +14,17 @@ package {
             var c2:Cube = new Cube(5,5,0,15,15,0);
             rtree.addCube(c1,1)
             rtree.addCube(c2,2)
-            trace(rtree.intersects(c2))
-            trace(rtree.getBounds())
-            rtree.deleteCube(c1,1);
-            trace(rtree.entryStatus)
-            trace(rtree.deletedNodeIds)
-            trace(rtree.intersects(c2))
+//            trace(rtree.intersects(c2))
+//            trace(rtree.getBounds())
+//            rtree.deleteCube(c1,1);
+//            trace(rtree.deletedNodeIds)
+//            trace(rtree.intersects(c2))
+
+
+            //delete;
+            trace(this.rtree.nodeMap.h["0"].entryCount)
+            rtree = new RTree();
+            trace(this.rtree.nodeMap.h["0"].entryCount)
         }
     }
 }
