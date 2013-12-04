@@ -1,0 +1,15 @@
+<project name="CopyProxy" default="copy" basedir=".">
+    <description>
+        copy
+    </description>
+    <!-- set global properties for this build -->
+    <property name="src" location="d:\Projects\idea\test\out\production\test\Energy_Proxy.swf"/>
+    <property name="dest" location="D:\Work\projects\energy\ContryClient\bin\"/>
+
+    <target name="copy">
+        <tstamp>
+            <format property="ts" pattern="yyyy_MM_dd" locale="en,UK"/>
+        </tstamp>
+        <copy file="${src}" todir="${dest}" />
+    </target>
+</project>
