@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 package {
-import embed.AltButtonParams;
+import alts.AltButtonParams;
 
     import flash.display.MovieClip;
 

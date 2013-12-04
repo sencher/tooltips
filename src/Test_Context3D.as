@@ -20,10 +20,11 @@ package
     import flash.geom.Matrix3D;
     import flash.geom.Vector3D;
 
+[SWF(frameRate=120)]
     public class Test_Context3D extends Sprite
     {
-        public const viewWidth:Number = 320;
-        public const viewHeight:Number = 200;
+        public const viewWidth:Number = 320*1.4;
+        public const viewHeight:Number = 200*1.4;
         public const zNear:Number = 1;
         public const zFar:Number = 500;
 
@@ -57,7 +58,7 @@ package
         {
             this.stage.scaleMode = StageScaleMode.NO_SCALE;
             this.stage.align = StageAlign.TOP_LEFT;
-            this.stage.nativeWindow.activate(); //AIR only
+//            this.stage.nativeWindow.activate(); //AIR only
 
             stage3D = this.stage.stage3Ds[0];
             stage3D.x = 10;
@@ -83,7 +84,7 @@ package
 
         private function setupScene():void
         {
-            renderContext.enableErrorChecking = true; //Can slow rendering - only turn on when developing/testing
+            //renderContext.enableErrorChecking = true; //Can slow rendering - only turn on when developing/testing
             renderContext.configureBackBuffer( viewWidth, viewHeight, 2, false );
             renderContext.setCulling( Context3DTriangleFace.BACK );
 
@@ -120,10 +121,10 @@ package
                         1,0,1, 0,1,0,
                         0,0,1, 0,1,0,
 
-                        0,0,1, 1,0,0, //back face
-                        1,0,1, 1,0,0,
-                        1,1,1, 1,0,0,
-                        0,1,1, 1,0,0,
+                        0,0,1, 1,1,0, //back face
+                        1,0,1, 1,1,1,
+                        1,1,1, 1,0,1,
+                        0,1,1, 0,0,0,
 
                         0,1,1, 0,1,0, //top face
                         1,1,1, 0,1,0,
@@ -155,7 +156,7 @@ package
 
             //Set up 3D transforms
             projection.perspectiveFieldOfViewRH( fov, viewWidth/viewHeight, zNear, zFar );
-            view.appendTranslation( 0, 0, -2 );    //Move view back
+            view.appendTranslation( 0, 0, -3 );    //Move view back
             model.appendTranslation( -.5, -.5, -.5 ); //center cube on origin
             this.stage.addEventListener( Event.ENTER_FRAME, render );
         }
@@ -163,9 +164,9 @@ package
         private function render( event:Event ):void
         {
             //Rotate model on each frame
-            model.appendRotation( .5, Vector3D.Z_AXIS, pivot );
-            model.appendRotation( .5, Vector3D.Y_AXIS, pivot );
-            model.appendRotation( .5, Vector3D.X_AXIS, pivot );
+            model.appendRotation( 1, Vector3D.Z_AXIS, pivot );
+            model.appendRotation( 2, Vector3D.Y_AXIS, pivot );
+            model.appendRotation( 3, Vector3D.X_AXIS, pivot );
 
             //Combine transforms
             finalTransform.identity();

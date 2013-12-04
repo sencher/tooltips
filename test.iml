@@ -20,6 +20,12 @@
             <entry library-name="haxe_lib" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="36d6ebe9-702c-4adb-9668-2ca7f265982b">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="dafa3554-8457-40fc-87de-8c237e64633f">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="flex 4.6+air 3.6 sdk" />
         </dependencies>
@@ -53,6 +59,27 @@
     <orderEntry type="library" name="actionmailer (v2.3.12, ruby-1.9.2-p290) [gem]" level="application" />
     <orderEntry type="library" name="tlfruntime" level="application" />
     <orderEntry type="library" name="haxe_lib" level="application" />
+    <orderEntry type="library" name="gui_LEVEL_UP_convas_teh" level="project" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="36d6ebe9-702c-4adb-9668-2ca7f265982b" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/gui_LEVEL_UP_convas_teh.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="dafa3554-8457-40fc-87de-8c237e64633f" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/addFrame.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
 
