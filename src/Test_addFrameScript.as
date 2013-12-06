@@ -34,7 +34,7 @@ package {
         }
 
         public function setTextFramesScript(button:MovieClip):void{
-            for (var i:int = 0; i< button.framesLoaded; i+=4)
+            for (var i:int = 0; i< button.framesLoaded; i++)
                 button.addFrameScript(i,sendEvent);
         }
     }

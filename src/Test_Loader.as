@@ -1,37 +1,51 @@
 package {
-import flash.display.Loader;
-import flash.display.Sprite;
-import flash.events.Event;
-import flash.events.IOErrorEvent;
-import flash.net.URLLoader;
-import flash.net.URLRequest;
+    import flash.display.Loader;
+    import flash.display.Sprite;
+    import flash.events.Event;
+    import flash.events.IOErrorEvent;
+    import flash.events.ProgressEvent;
+    import flash.net.URLLoader;
+    import flash.net.URLRequest;
+    import flash.system.Security;
+    import flash.system.SecurityDomain;
 
-public class Test_Loader extends Sprite{
-    private var xmlLoader:URLLoader;
-    private var xml:XML;
-    private var uRequest = new URLRequest("http://xxxxxxx/app.php");
+    public class Test_Loader extends Sprite {
 
-    private var imgLoader:Loader;
+        var loader:Loader = new Loader();
 
-    public function Test_Loader() {
-        xmlLoader = new URLLoader(uRequest);
-        xmlLoader.addEventListener(Event.COMPLETE, onXMLLoad);
-        xmlLoader.addEventListener(IOErrorEvent.IO_ERROR, onImgLoadError);
+        public function Test_Loader() {
+            Security.allowDomain("*")
+
+//        loader.load( new URLRequest("http://www.onspeed.com/ie/swf/img/logo.gif") );
+//        loader.load( new URLRequest("http://www.onspeed.com/ie/swf/onspeed_comparison.swf") );
+//        loader.load( new URLRequest("http://dagobah.net/flash/tetris.swf") );
+            loader.load(new URLRequest("http://games-swf.ru/_sf/36/3640___.swf"));
+//        loader.load( new URLRequest("http://sheldonbrown.com/web_sample1.html") );
+            addChild(loader);
+
+            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loaderDone);
+            loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, loaderProgress);
+
+        }
+
+
+        function loaderDone(event:Event):void {
+// remove the listeners with these lines:
+            event.target.removeEventListener(Event.COMPLETE, loaderDone);
+            event.target.removeEventListener(ProgressEvent.PROGRESS, loaderProgress);
+
+// do whatever with it...
+//        blah();
+//            stage.width = loader.width;
+//            stage.height = loader.height;
+        }
+
+        function loaderProgress(event:ProgressEvent):void {
+// get the percent done
+            var percent:int = int((event.bytesLoaded / event.bytesTotal) * 100);
+
+// do whatever with it...
+//        blah();
+        }
     }
-
-    private function onImgLoadError(event:IOErrorEvent):void {
-        trace(event.text)
-    }
-
-    function onXMLLoad(e:Event) {
-        xml = new XML(e.target.data);
-        imgLoader = new Loader();
-        imgLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, onImgLoaded);
-        imgLoader.load(new URLRequest(xml.Data.Image.text()[0]));
-    }
-
-    function onImgLoaded(e:Event) {
-        addChild(imgLoader);
-    }
-}
 }
