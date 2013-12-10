@@ -16,6 +16,7 @@ package {
 
             var tf1:TextField = new TextField();
             var tf2:TextField = new TextField();
+            var tf3:TextField = new TextField();
             var b:Bitmap = new Bitmap();
             mc.addChild(tf1);
             mc.addChild(tf2);
@@ -27,52 +28,81 @@ package {
             tf2.y = 50;
             addChild(mc);
 
+            tf3.name = "tf3";
+            tf3.text = "third";
+
             //Object
             var object:Object = {};
             extractChildsToSaveFunction(function(key:String, value:String){
                 object[key] = value;
             });
+            trObject(object);
 
-            for (child in object){
-                s +=  child + ", " + object[child] + ", ";
-            }
-            trace(s);
-
-            //Array
-            var array:Array = [];
-            extractChildsToSaveFunction(function(key:String, value:String){
-                    array.push([key, value]);
-            });
-
-            s = "";
-            for each (child in array){
-                s +=  child[0] + ", " + child[1] + ", ";
-            }
-            trace(s);
+            //replace
+            delete object[tf2.name];
+            object[tf3.name] = tf3.text;
+            trObject(object);
 
             //Hash
             var hash:Hash = new Hash();
             extractChildsToSaveFunction(function(key:String, value:String){
                 hash.setKeyIfEmpty(key,  value);
             });
+            trObject(hash);
 
-            s = "";
-            for (child in hash){
-                s +=  child + ", " + hash.getKey(child) + ", ";
+            //replace
+            hash.removeKey(tf2.name);
+            hash.setKeyIfEmpty(tf3.name,tf3.text);
+            trObject(hash);
+
+            //Array
+            var array:Array = [];
+            extractChildsToSaveFunction(function(key:String, value:String){
+                    array.push([key, value]);
+            });
+            trObject(array);
+
+            //replace
+            for each (child in array){
+                if(child[0] == tf2.name){
+                    array[array.indexOf(child)] = [tf3.name, tf3.text];
+                }
             }
-            trace(s);
+            trObject(array);
 
             //Vector
             var vector:Vector.<Vector.<String>> = new Vector.<Vector.<String>>();
             extractChildsToSaveFunction(function(key:String, value:String){
-                var stringVector:Vector.<String> = new Vector.<String>();
-                stringVector.push(key, value);
-                vector.push(stringVector);
+                vector.push(createVectorPair(key, value));
             });
+            trObject(vector);
 
-            s = "";
-            for each(child in vector){
-                s +=  child[0] + ", " + child[1] + ", ";
+            //replace
+            for each (child in vector){
+                if(child[0] == tf2.name){
+                    vector[vector.indexOf(child)] = createVectorPair(tf3.name, tf3.text);
+                }
+            }
+            trObject(vector);
+        }
+
+        private function trObject(object:Object):void {
+            var classString:String = object.constructor.toString();
+            s = classString + " ";
+            for (child in object) {
+                switch (classString){
+                    case "[class Object]":
+                        s += child + ":" + object[child] + ", ";
+                        break;
+                    case "[class Array]":
+                    case "[class Vector.<*>]":
+                        s +=  object[child][0] + ":" + object[child][1] + ", ";
+                        break;
+                    case "[class Hash]":
+                        s +=  child + ":" + object.getKey(child) + ", ";
+                        break;
+                }
+
             }
             trace(s);
         }
@@ -84,6 +114,12 @@ package {
                 if(child is TextField)
                     callback(child.name, child.text);
             }
+        }
+
+        private function createVectorPair(key:String, value:String):Vector.<String>{
+            var stringVector:Vector.<String> = new Vector.<String>();
+            stringVector.push(key, value);
+            return stringVector;
         }
     }
 }

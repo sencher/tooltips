@@ -26,10 +26,18 @@
             <entry library-id="dafa3554-8457-40fc-87de-8c237e64633f">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="22236378-9692-469b-9272-a233d0a990ca">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="870454be-373f-49cc-9852-429a2b70bc78">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="flex 4.6+air 3.6 sdk" />
         </dependencies>
-        <compiler-options />
+        <compiler-options>
+          <option name="additionalOptions" value="-locale en_US -swf-version=19" />
+        </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
@@ -75,6 +83,26 @@
         <properties id="dafa3554-8457-40fc-87de-8c237e64633f" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/src/swf/addFrame.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="22236378-9692-469b-9272-a233d0a990ca" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/Youtube_Player.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="870454be-373f-49cc-9852-429a2b70bc78" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/GHelper.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
