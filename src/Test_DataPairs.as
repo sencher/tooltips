@@ -7,6 +7,11 @@ package {
     import utils.Hash;
 
     public class Test_DataPairs extends  Sprite{
+
+        private const CREATE:String = "Create";
+        private const REPLACE:String = "Replace";
+        private const SKIP_DUPLICATE:String = "Skip Duplicate";
+        private const OVERRIDE_DUPLICATE:String = "Override Duplicate";
         private var i:uint = 0;
         private var child:*;
         private var s:String = "";
@@ -30,37 +35,54 @@ package {
 
             tf3.name = "tf3";
             tf3.text = "third";
+            var overString:String = "Overrided!";
 
-            //Object
+            //OBJECT
             var object:Object = {};
             extractChildsToSaveFunction(function(key:String, value:String){
                 object[key] = value;
             });
-            trObject(object);
+            trObject(object, CREATE);
 
             //replace
             delete object[tf2.name];
             object[tf3.name] = tf3.text;
-            trObject(object);
+            trObject(object, REPLACE);
 
-            //Hash
+            //skip duplicate
+            object[tf3.name] ||= overString;
+            trObject(object, SKIP_DUPLICATE);
+
+            //override duplicate
+            object[tf3.name] = overString;
+            trObject(object, OVERRIDE_DUPLICATE);
+
+            //HASH
             var hash:Hash = new Hash();
             extractChildsToSaveFunction(function(key:String, value:String){
                 hash.setKeyIfEmpty(key,  value);
             });
-            trObject(hash);
+            trObject(hash, CREATE);
 
             //replace
             hash.removeKey(tf2.name);
             hash.setKeyIfEmpty(tf3.name,tf3.text);
-            trObject(hash);
+            trObject(hash, REPLACE);
 
-            //Array
+            //skip duplicate
+            hash.setKeyIfEmpty(tf3.name,overString);
+            trObject(hash, SKIP_DUPLICATE);
+
+            //override duplicate
+            hash.setKey(tf3.name,overString);
+            trObject(hash, OVERRIDE_DUPLICATE);
+
+            //ARRAY
             var array:Array = [];
             extractChildsToSaveFunction(function(key:String, value:String){
                     array.push([key, value]);
             });
-            trObject(array);
+            trObject(array, CREATE);
 
             //replace
             for each (child in array){
@@ -68,14 +90,34 @@ package {
                     array[array.indexOf(child)] = [tf3.name, tf3.text];
                 }
             }
-            trObject(array);
+            trObject(array, REPLACE);
 
-            //Vector
+            //skip duplicate
+            var isDuplicate:Boolean;
+            for each (child in array){
+                if(child[0] == tf3.name){
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if(!isDuplicate) array.push([overString, overString]);
+
+            trObject(array, SKIP_DUPLICATE);
+
+            //override duplicate
+            for each (child in array){
+                if(child[0] == tf3.name){
+                    array[array.indexOf(child)][1] = overString;
+                }
+            }
+            trObject(array, OVERRIDE_DUPLICATE);
+
+            //VECTOR
             var vector:Vector.<Vector.<String>> = new Vector.<Vector.<String>>();
             extractChildsToSaveFunction(function(key:String, value:String){
                 vector.push(createVectorPair(key, value));
             });
-            trObject(vector);
+            trObject(vector, CREATE);
 
             //replace
             for each (child in vector){
@@ -83,12 +125,32 @@ package {
                     vector[vector.indexOf(child)] = createVectorPair(tf3.name, tf3.text);
                 }
             }
-            trObject(vector);
+            trObject(vector, REPLACE);
+
+            //skip duplicate
+            var isDuplicate:Boolean;
+            for each (child in vector){
+                if(child[0] == tf3.name){
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if(!isDuplicate) vector.push([overString, overString]);
+
+            trObject(vector, SKIP_DUPLICATE);
+
+            //override duplicate
+            for each (child in vector){
+                if(child[0] == tf3.name){
+                    vector[vector.indexOf(child)][1] = overString;
+                }
+            }
+            trObject(vector, OVERRIDE_DUPLICATE);
         }
 
-        private function trObject(object:Object):void {
+        private function trObject(object:Object, prefix:String = ""):void {
             var classString:String = object.constructor.toString();
-            s = classString + " ";
+            s = classString + " " + prefix + " ";
             for (child in object) {
                 switch (classString){
                     case "[class Object]":

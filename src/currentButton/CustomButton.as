@@ -1,4 +1,4 @@
-package button {
+package currentButton {
 
     import flash.display.MovieClip;
     import flash.events.Event;
