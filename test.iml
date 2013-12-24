@@ -36,7 +36,7 @@
           <sdk name="flex 4.6+air 3.6 sdk" />
         </dependencies>
         <compiler-options>
-          <option name="additionalOptions" value="-locale en_US -swf-version=19" />
+          <option name="additionalOptions" value="-swf-version=19" />
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
@@ -52,8 +52,8 @@
     </content>
     <orderEntry type="jdk" jdkName="flex 4.6+air 3.6 sdk" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Flare3D_2.5.19j_Trial" level="application" />
-    <orderEntry type="module-library">
+    <orderEntry type="library" exported="" name="Flare3D_2.5.19j_Trial" level="application" />
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="03db6977-2e44-4b4d-83d0-1ca89a53e2f3" />
         <CLASSES>
@@ -63,12 +63,12 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="blooddy_crypto" level="application" />
-    <orderEntry type="library" name="actionmailer (v2.3.12, ruby-1.9.2-p290) [gem]" level="application" />
-    <orderEntry type="library" name="tlfruntime" level="application" />
-    <orderEntry type="library" name="haxe_lib" level="application" />
-    <orderEntry type="library" name="gui_LEVEL_UP_convas_teh" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="library" exported="" name="blooddy_crypto" level="application" />
+    <orderEntry type="library" exported="" name="actionmailer (v2.3.12, ruby-1.9.2-p290) [gem]" level="application" />
+    <orderEntry type="library" exported="" name="tlfruntime" level="application" />
+    <orderEntry type="library" exported="" name="haxe_lib" level="application" />
+    <orderEntry type="library" exported="" name="gui_LEVEL_UP_convas_teh" level="project" />
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="36d6ebe9-702c-4adb-9668-2ca7f265982b" />
         <CLASSES>
@@ -78,7 +78,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="dafa3554-8457-40fc-87de-8c237e64633f" />
         <CLASSES>
@@ -88,7 +88,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="22236378-9692-469b-9272-a233d0a990ca" />
         <CLASSES>
@@ -98,7 +98,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="870454be-373f-49cc-9852-429a2b70bc78" />
         <CLASSES>

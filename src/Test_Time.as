@@ -2,9 +2,9 @@ package {
 import flash.display.Sprite;
 import flash.utils.getTimer;
 
-import folder.StringHelper;
+import utils.StringHelper;
 
-import folder.Time;
+import utils.Time;
 
 public class Test_Time extends Sprite{
 
