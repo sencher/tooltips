@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Title</title>
+		<style type="text/css">
+		    html {width:100%;height:100%;}
+		    body {padding:0;margin:0;height:100%;width:100%;background-color: #000000;}
+		    #myContent {height:100%;width:100%;}
+		</style>
+		
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript" src="js/swfaddress.js"></script>
+        
+		<script type="text/javascript">
+			
+			var swfName = "Scale25_CS5_ex01";
+			var swfVersionStr = "9.0.124";
+			
+			var flashVars = 
+			{
+				test: 123
+			};
+
+			var params = 
+			{
+				allowFullScreen: true, 
+				allowScriptAccess: "always", 
+				wmode: "window"
+			};
+			
+			var attributes = 
+			{
+				id: "flash_flash"
+			};
+			
+			if( swfobject.hasFlashPlayerVersion(swfVersionStr))
+			{
+				embedSwf();
+			}
+			
+			function embedSwf()
+			{
+				swfobject.embedSWF(swfName + ".swf", "myContent", "100%", "100%", swfVersionStr, null, flashVars, params, attributes);
+				swfobject.createCSS("#myContent");
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="myContent"></div>
+	</body>
+</html>

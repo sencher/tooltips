@@ -1,543 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="335145ed-7ae8-4370-8731-e66212392341" name="Default" comment="EnergyButton&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Color.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorBurn.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorDodge.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Exclusion.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Hue.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Luminosity.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/LuminosityMaskFilter.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/SWFLoader.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Saturation.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/SoftLight.pbj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/Spacer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/AbstractTarget.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/accessibility/AccConst.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/accessibility/AccImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/ActionEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/ActiveWindowManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/AddChild.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/AddItems.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/AddRemoveEffectTargetFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/AdvancedLayoutFeatures.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/AdvancedStyleClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/AnchorStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/AnimateProperty.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/AnimatePropertyInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ApplicationDomainTarget.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ArrayCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/ArrayElementWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ArrayList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/ArrayUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/AsyncListView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/automation/Automation.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/Back.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/BarColorStyle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/Base64Decoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/Base64Encoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/filters/BaseDimensionFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/filters/BaseFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/listClasses/BaseListData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/BindabilityInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/Binding.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/BindingManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/utils/BindingUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/BitFlagUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/BitmapAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/BitmapFill.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/BitmapFillMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/BitmapScaleMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/BitmapSmoothingQuality.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Blur.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/BlurInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/Border.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/BorderStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/Bounce.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/BrokenImageBorderSkin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/BrowserChangeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/BrowserManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/BrowserManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/BusyCursor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ButtonAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/ButtonLabelPlacement.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ByteArrayAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/CSSCondition.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/CSSConditionKind.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/CSSMergedStyleDeclaration.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/CSSSelector.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/CSSStyleDeclaration.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/utils/ChangeWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ChildExistenceChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/ChildManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/Circular.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ClassFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/CloseEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/CollectionEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/CollectionEventKind.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/errors/CollectionViewError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Color.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorBurn.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorBurnShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorDodge.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorDodgeShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ColorShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/ColorUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ComponentDescriptor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/CompositeEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/CompositeEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/geom/CompoundTransform.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/ConstraintColumn.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/errors/ConstraintError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/ConstraintRow.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/ContainerBackgroundStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ContainerCreationPolicy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ContainerGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ContextualClassFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/CreditCardValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/CreditCardValidatorCardType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/CrossDomainRSLItem.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/CurrencyFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/CurrencyValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/CurrencyValidatorAlignSymbol.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/CursorBookmark.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/errors/CursorError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/CursorManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/CursorManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/CursorManagerMarshalMixin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/CursorManagerPriority.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/folder/CustomClassVO.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/DPIClassification.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/folder/DataObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/DateBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/DateFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/DateValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/DefaultDragImage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/DeferredInstanceFromClass.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/DeferredInstanceFromFunction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/DensityUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/DescribeTypeCacheRecord.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/DesignLayer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/DisplayUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Dissolve.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/DissolveInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/preloaders/DownloadProgressBar.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/DragEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/DragManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/DragManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/DragManagerMarshalMixin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/dragClasses/DragProxy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/DragSource.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/DropdownEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/DynamicEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/EdgeMetrics.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Effect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/EffectEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/EffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/EffectManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/EffectTargetFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/Elastic.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/EmailValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/EmbeddedFont.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/EmbeddedFontRegistry.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/EvalBindingResponder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/EventListenerRequest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/EventPriority.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/EventProxy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/EventUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Exclusion.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/ExclusionShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/Exponential.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Fade.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/FadeInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/Flex.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexApplicationBootstrap.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexBitmap.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/FlexChangeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/FlexChildInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/FlexEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexModuleFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/FlexMouseEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexMovieClip.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/printing/FlexPrintJob.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/printing/FlexPrintJobScaleType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexShape.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexSimpleButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexSprite.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexTextField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FlexVersion.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/FocusManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/FocusManagerMarshalMixin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/FocusRequestDirection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/FontAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/Formatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/FunctionReturnWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/GapStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/GetTimerUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/GradientBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/GradientEntry.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/GradientStroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/GraphicsUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/HSBColor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/HaloFocusRect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/HideShowEffectTargetFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/HistoryManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/HistoryManagerGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/HistoryManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Hue.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/HueShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/IAbstractEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IActiveWindowManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/IAdvancedStyleClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IAssetLayoutFeatures.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/automation/IAutomationObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/IBindingClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/filters/IBitmapFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IBorder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IBrowserManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IChildList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ICollectionView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IConstraintClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/IConstraintLayout.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IContainer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ICursorManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDataRenderer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDeferredContentOwner.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDeferredInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDeferredInstantiationUIComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDisplayObjectContainerInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IDisplayObjectInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IDragManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/listClasses/IDropInListItemRenderer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/IEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/IEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/IEffectTargetHost.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IEmbeddedFontRegistry.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/IFill.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFlexAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/IFlexContextMenu.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFlexDisplayObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFlexModule.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFlexModuleFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IFocusManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IFocusManagerComplexComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IFocusManagerComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IFocusManagerContainer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IFocusManagerGroup.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IFontContextComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/IFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IHistoryManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IHistoryManagerClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IIMESupport.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/codec/IImageEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IInteractiveObjectInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IInvalidating.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ILayoutDirectionElement.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ILayoutElement.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ILayoutManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ILayoutManagerClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/IList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/listClasses/IListItemRenderer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/ILogger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/ILoggingTarget.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IMXMLObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IMarshalSystemManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/menuClasses/IMenuDataDescriptor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/modules/IModule.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/modules/IModuleInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/INavigatorContent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/IOverride.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IPopUpManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/preloaders/IPreloaderDisplay.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IProgrammaticSkin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IPropertyChangeNotifier.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IRawChildrenContainer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IRectangularBorder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IRepeater.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IRepeaterClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/IResourceBundle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/IResourceManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/IResourceModule.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/rpc/IResponder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISWFBridgeGroup.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISWFBridgeProvider.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISWFLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISelectableList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/ISimpleStyleClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ISort.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ISortField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISpriteInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IStateClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IStateClient2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/IStroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/IStyleClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/IStyleManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/IStyleManager2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/IStyleModule.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ISystemCursorClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ISystemManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ISystemManagerChildManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ITextFieldFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ITextFieldInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ITextInput.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IToggleButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IToolTip.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IToolTipManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IToolTipManager2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/IToolTipManagerClient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ITransientDeferredInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IUIComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IUID.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IUITextField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/IValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/IValidatorListener.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/IViewCursor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IVisualElement.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/IVisualElementContainer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/IWatcherSetupUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/IWatcherSetupUtil2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/IXMLNotifiable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/ImageSnapshot.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/IndexChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/InterDragManagerEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/InterManagerRequest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/InteractionMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/InterruptionBehavior.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/errors/InvalidCategoryError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/errors/InvalidFilterError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/InvalidateRequestData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Iris.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/IrisInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ItemClickEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/errors/ItemPendingError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ItemResponder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ItemWrapper.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/codec/JPEGEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/layoutClasses/LayoutDebugHelper.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/LayoutDirection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/LayoutElementUIComponentUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/LayoutManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/LeadingStyle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/targets/LineFormattedTarget.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/LinearGradient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/LinearGradientStroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/LinkedList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/LinkedListNode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ListCollectionView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/ListDropIndicator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/messaging/config/LoaderConfig.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/LoaderUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/Locale.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/LocaleSorter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/Log.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/LogEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/LogEventLevel.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/LogLogger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Luminosity.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/LuminosityMaskFilter.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/LuminosityMaskShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/LuminosityShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/MXMLObjectAdapter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/MarshalPopUpData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/MarshallingSupport.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/MaskEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/MaskEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/MatrixUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/MediaQueryParser.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/ModifiedCollectionView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/modules/ModuleBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ModuleEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/modules/ModuleManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/modules/ModuleManagerGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Move.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/MoveEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/MoveInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/MovieClipAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/MovieClipLoaderAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/MovieClipSWFLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/NameUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/NumberBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/NumberBaseRoundType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/NumberFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/NumberValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/NumberValidatorDomainType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/ObjectProxy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/ObjectUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/OnDemandEventDispatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/OrderedObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/OverrideBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/codec/PNGEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/PaddingStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Parallel.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/ParallelInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Pause.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/PauseInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/PerfUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/PhoneFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/PhoneNumberValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/PlaceholderData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpManagerChildList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/PopUpManagerMarshalMixin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/PopUpUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/PostScaleAdapter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/preloaders/Preloader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/layoutClasses/PriorityQueue.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/ProgrammaticSkin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/ProgressBarDirection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/ProgressBarLabelPlacement.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/ProgressBarMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/PropertyChangeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/PropertyChangeEventKind.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/PropertyChanges.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/PropertyWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/RSLData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/RSLEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/RSLItem.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/RSLListLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/RadialGradient.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/RadialGradientStroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/RectangularBorder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/RectangularDropShadow.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/RegExpValidationResult.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/RegExpValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/RemotePopUp.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/RemoveChild.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/RepeatableBinding.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/RepeaterComponentWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/RepeaterItemWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/Request.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ResizeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/ResourceBundle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ResourceEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/ResourceManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/resources/ResourceManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ResourceModuleRSLItem.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Rotate.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/RotateInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/geom/RoundedRectangle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/RoundedRectangle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/RuntimeDPIProvider.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/SHA256.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/SWFBridgeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/SWFBridgeGroup.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/SWFBridgeRequest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/SWFLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/SandboxMouseEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/Saturation.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/SaturationShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/ScrollPolicy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/SecurityUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Sequence.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/SequenceInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/SetEventHandler.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/SetProperty.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/SetStyle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/SetStyleAction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/SetStyleActionInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/SimpleApplication.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/Singleton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/SocialSecurityValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/SoftLight.pbk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/shaderClasses/SoftLightShader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/SolidColor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/SolidColorStroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/Sort.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/errors/SortError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/SortField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/SortFieldCompareTypes.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/SoundAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/SoundEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/SoundEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/Spacer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/preloaders/SparkDownloadProgressBar.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/SpriteAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/State.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/StateChangeEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/StaticPropertyWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/StringFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/StringUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/StringValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/graphics/Stroke.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/StyleEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/StyleManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/StyleManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/StyleProtoChain.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/StyleProxy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/SwitchSymbolFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/SystemChildrenList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/SystemManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/SystemManagerGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/SystemManagerProxy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/SystemRawChildrenList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Clone.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_RegisterClassAlias.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Trace.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/TextFieldAsset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/TextFieldFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/styles/metadata/TextStyles.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/ToolTip.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/skins/halo/ToolTipBorder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ToolTipEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ToolTipManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/ToolTipManagerImpl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/ToolTipManagerMarshalMixin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/TouchInteractionEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/TouchInteractionReason.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/logging/targets/TraceTarget.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/geom/Transform.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/geom/TransformOffsets.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/TransformUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/states/Transition.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Tween.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/TweenEffect.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/TweenEffectInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/TweenEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UIComponent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/accessibility/UIComponentAccProps.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UIComponentCachePolicy.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UIComponentDescriptor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UIComponentGlobals.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/UIDUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UITextField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/UITextFormat.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/UtilFunctions.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/ValidationResult.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/events/ValidationResultEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/Validator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/Version.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/Watcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/controls/colorPickerClasses/WebSafePalette.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/XMLListAdapter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/collections/XMLListCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/XMLNotifier.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/XMLUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/binding/XMLWatcher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/formatters/ZipCodeFormatter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/ZipCodeValidator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/validators/ZipCodeValidatorDomainType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/Zoom.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/ZoomInstance.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/effects/easing/easing_readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/core/mx_internal.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mx/utils/object_proxy.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/folder/First.as" afterPath="$PROJECT_DIR$/src/folder/First.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Time.as" afterPath="$PROJECT_DIR$/src/Test_Time.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="335145ed-7ae8-4370-8731-e66212392341" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/swf/GuiBottom.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/swf/RECOVER_bubble_3d.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EnergyUserIcon.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FriendPanel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewAS.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewBase.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewFlex.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_Flex_ex01.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_Flex_ex02.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap9.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmapType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_9Slice.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sdads.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfaddress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfmacmousewheel2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfobject.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.iml" afterPath="$PROJECT_DIR$/test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Projects\idea\test\src\folder\StringHelper.as" afterPath="$PROJECT_DIR$/src/utils/StringHelper.as" />
-      <change type="MOVED" beforePath="D:\Projects\idea\test\src\folder\Time.as" afterPath="$PROJECT_DIR$/src/utils/Time.as" />
-      <change type="MOVED" beforePath="D:\Projects\idea\test\src\folder\TimeUnits.as" afterPath="$PROJECT_DIR$/src/utils/TimeUnits.as" />
     </list>
     <ignored path="*.iws" />
     <ignored mask=".idea/" />
@@ -609,19 +119,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Test_Trace.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Trace.as">
+      <file leaf-file-name="Test_9Slice.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_9Slice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Clone.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="21" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1513">
+            <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
               <folding>
                 <element signature="e#14#42#0" expanded="true" />
               </folding>
@@ -629,166 +130,97 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_RegisterClassAlias.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_RegisterClassAlias.as">
+      <file leaf-file-name="AltManager.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="52" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DescribeTypeCache.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3060">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IResponder.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/rpc/IResponder.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="7" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1122">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SHA256.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/utils/SHA256.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/core/Version.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataObject.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/folder/DataObject.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="19" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Third.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimeUnits.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/TimeUnits.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberValidator.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/validators/NumberValidator.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="658" column="35" selection-start="18635" selection-end="18635" vertical-scroll-proportion="0.0" vertical-offset="10605" max-vertical-offset="20026">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SWFLoader.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/controls/SWFLoader.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="283" column="17" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.0" vertical-offset="3674" max-vertical-offset="45662">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LayoutManager.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mx/managers/LayoutManager.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="697" column="8" selection-start="25627" selection-end="25627" vertical-scroll-proportion="0.5264423" vertical-offset="11137" max-vertical-offset="20706">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Time.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/Time.as">
+      <file leaf-file-name="scale25_Flex_ex02.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1361#1403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scale25_Flex_ex01.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1361#1403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexEvent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mx/events/FlexEvent.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RD_GuiHelper.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RD_GuiHelper.as">
+      <file leaf-file-name="ScaleBitmap.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="3502">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewAS.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="901">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewBase.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScaleBitmap25.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-4.0435686" vertical-offset="4085" max-vertical-offset="5049">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_DataPairs.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
+      <file leaf-file-name="MainViewFlex.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3281">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_addFrameScript.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_addFrameScript.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnergyButton.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/EnergyButton.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="38" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="3247">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hash.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="24" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2057">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_od26.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-              <folding />
+            <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -828,14 +260,22 @@
         <option value="$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as" />
         <option value="$PROJECT_DIR$/src/Test_Clone.as" />
         <option value="$PROJECT_DIR$/src/Test_RegisterClassAlias.as" />
+        <option value="$PROJECT_DIR$/src/icon.as" />
+        <option value="$PROJECT_DIR$/src/asd.as" />
+        <option value="$PROJECT_DIR$/src/EnergyUserIcon.as" />
+        <option value="$PROJECT_DIR$/src/FriendPanel.as" />
+        <option value="$PROJECT_DIR$/src/sdads.as" />
+        <option value="$PROJECT_DIR$/src/Test_9Slice.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -911,12 +351,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -957,6 +397,132 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="swf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.bytearray.display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.theory9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ex02.view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.theory9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scale25.src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.theory9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data.types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="obfuscated" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
@@ -977,12 +543,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -990,7 +556,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
@@ -1021,6 +587,8 @@
     <property name="project.structure.side.proportion" value="0.31585082" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/swf" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
@@ -1051,44 +619,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_RegisterClassAlias">
-    <configuration default="false" name="Test_Object" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
-      <option name="BCName" value="test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Object" />
-      <option name="overriddenOutputFileName" value="Test_Object.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <RunnerSettings RunnerId="FlexDebugRunner" />
-      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Flash App.Test_9Slice">
     <configuration default="false" name="Test_addFrameScript" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -1237,6 +768,43 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="Test_9Slice" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="test" />
+      <option name="overriddenMainClass" value="Test_9Slice" />
+      <option name="overriddenOutputFileName" value="Test_9Slice.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <RunnerSettings RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1361,16 +929,17 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Flash App.test" />
-      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Object" />
-      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_addFrameScript" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Trace" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
+      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_addFrameScript" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Trace" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_9Slice" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_9Slice" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1471,22 +1040,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5491892" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491892" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1400426" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3091892" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217253" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1495,11 +1065,37 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26378378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217253" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.43803418" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26378378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491892" sideWeight="0.48504272" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -1576,221 +1172,79 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RD_GuiHelper.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3281">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_addFrameScript.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/EnergyButton.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="38" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="3247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="24" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Trace.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="15" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1088">
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/DataObject.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Constructor.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Constructor2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="231" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/StringHelper.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4624">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4624" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Time.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RD_GuiHelper.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3281">
-          <folding />
-        </state>
+        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3281" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_addFrameScript.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="986" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/EnergyButton.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="38" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="3247">
-          <folding />
-        </state>
+        <state line="52" column="38" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="3247" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="24" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2057">
-          <folding />
-        </state>
+        <state line="37" column="24" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2057" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Time.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Constructor.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Trace.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="49" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Constructor2.as">
@@ -1805,9 +1259,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/First.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="10" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
@@ -1817,9 +1269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/DataObject.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="1" column="19" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="jar://D:/Flex/flex 4.6+air 3.6 sdk/frameworks/libs/player/11.6/playerglobal.swc!/library.swf">
@@ -1831,105 +1281,198 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/core/Version.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/rpc/IResponder.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
+        <state line="43" column="7" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
-          <folding />
-        </state>
+        <state line="25" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/utils/ObjectUtil.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1344" column="47" selection-start="45940" selection-end="45940" vertical-scroll-proportion="0.55469954" vertical-offset="22488" max-vertical-offset="24956">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#996#1025#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="1344" column="47" selection-start="45940" selection-end="45940" vertical-scroll-proportion="0.55469954" vertical-offset="22488" max-vertical-offset="24956" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="120" selection-end="120" vertical-scroll-proportion="0.052388288" vertical-offset="0" max-vertical-offset="649">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="120" selection-end="120" vertical-scroll-proportion="0.052388288" vertical-offset="0" max-vertical-offset="649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/collections/errors/SortError.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/utils/SHA256.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6256">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6256" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1513">
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="22" column="21" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_RegisterClassAlias.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state line="17" column="52" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/TimeUnits.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/validators/NumberValidator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="658" column="35" selection-start="18635" selection-end="18635" vertical-scroll-proportion="0.0" vertical-offset="10605" max-vertical-offset="20026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/controls/SWFLoader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="17" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.0" vertical-offset="3674" max-vertical-offset="45662" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/managers/LayoutManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="697" column="8" selection-start="25627" selection-end="25627" vertical-scroll-proportion="0.0" vertical-offset="11137" max-vertical-offset="20706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnergyUserIcon.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="17" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="4301">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdads.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="41" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.0" vertical-offset="712" max-vertical-offset="10710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FriendPanel.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1836">
+          <folding>
+            <element signature="e#27#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RD_GuiHelper.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/swf/GuiBottom.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.33333334" vertical-offset="103" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_9Slice.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
           <folding>
             <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
+    <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/TimeUnits.as">
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1361#1403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1361#1403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/events/FlexEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/validators/NumberValidator.as">
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="658" column="35" selection-start="18635" selection-end="18635" vertical-scroll-proportion="0.0" vertical-offset="10605" max-vertical-offset="20026">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/controls/SWFLoader.as">
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="17" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.0" vertical-offset="3674" max-vertical-offset="45662">
-          <folding />
+        <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/managers/LayoutManager.as">
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="697" column="8" selection-start="25627" selection-end="25627" vertical-scroll-proportion="0.5264423" vertical-offset="11137" max-vertical-offset="20706">
+        <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-4.0435686" vertical-offset="4085" max-vertical-offset="5049">
           <folding />
         </state>
       </provider>

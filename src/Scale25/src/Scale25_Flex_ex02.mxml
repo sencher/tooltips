@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	layout="absolute" 
+	minWidth="955" 
+	minHeight="600"
+	backgroundColor="0xFFFFFF"
+	applicationComplete="onApplicationComplete(event);"
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	>
+	
+	<mx:Script source="scale25_Flex_ex02.as" />
+	
+	<mx:UIComponent
+		id="mainViewCont"
+		width="100%"
+		height="100%"
+		/>
+	
+</mx:Application>

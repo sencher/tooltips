@@ -20,16 +20,7 @@
             <entry library-name="haxe_lib" library-level="application">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="36d6ebe9-702c-4adb-9668-2ca7f265982b">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="dafa3554-8457-40fc-87de-8c237e64633f">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="22236378-9692-469b-9272-a233d0a990ca">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="870454be-373f-49cc-9852-429a2b70bc78">
+            <entry library-id="97475821-08dd-4e67-abe5-1825791953b8">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -70,42 +61,13 @@
     <orderEntry type="library" exported="" name="gui_LEVEL_UP_convas_teh" level="project" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="36d6ebe9-702c-4adb-9668-2ca7f265982b" />
+        <properties id="97475821-08dd-4e67-abe5-1825791953b8" />
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/swf/gui_LEVEL_UP_convas_teh.swc!/" />
+          <root url="file://$MODULE_DIR$/src/swf" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="dafa3554-8457-40fc-87de-8c237e64633f" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/swf/addFrame.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="22236378-9692-469b-9272-a233d0a990ca" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/swf/Youtube_Player.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="870454be-373f-49cc-9852-429a2b70bc78" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/swf/GHelper.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/src/swf" recursive="false" />
       </library>
     </orderEntry>
   </component>
