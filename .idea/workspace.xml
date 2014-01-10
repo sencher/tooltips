@@ -2,51 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335145ed-7ae8-4370-8731-e66212392341" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/swf/GuiBottom.swc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/swf/RECOVER_bubble_3d.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EnergyUserIcon.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FriendPanel.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/Functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewAS.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewFlex.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS3_ex02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS4_ex02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_CS5_ex02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_Flex_ex01.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/Scale25_Flex_ex02.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap9.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmapType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_9Slice.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sdads.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfaddress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfmacmousewheel2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scale25/src/js/swfobject.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.iml" afterPath="$PROJECT_DIR$/test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/A.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/B.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/BInterface.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/C.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/CInterface.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Composition.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace2.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace2b.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace3.as" />
+      <change type="DELETED" beforePath="D:\Projects\idea\test\src\swf\RECOVER_bubble_3d.fla" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="*.iws" />
@@ -119,21 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Test_9Slice.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_9Slice.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-              <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AltManager.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -143,10 +99,7 @@
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1361#1403#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,11 +107,8 @@
       <file leaf-file-name="scale25_Flex_ex01.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1361#1403#0" expanded="true" />
-              </folding>
+            <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="731">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +116,7 @@
       <file leaf-file-name="FlexEvent.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/events/FlexEvent.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888">
+            <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="25177">
               <folding />
             </state>
           </provider>
@@ -175,10 +125,8 @@
       <file leaf-file-name="ScaleBitmap.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="3502">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,9 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="901">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,7 +143,99 @@
       <file leaf-file-name="MainViewBase.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975">
+            <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3094">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScaleBitmap25.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="5491">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_MultipleSwfEmbed.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="45" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="816">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BInterface.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/composition/BInterface.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CInterface.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/composition/CInterface.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/composition/A.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="40" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="B.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/composition/B.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="37" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="C.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/composition/C.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Composition.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Composition.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding>
+                <element signature="e#14#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Namespace.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Namespace.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="1" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Namespace2.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Namespace2.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -205,11 +243,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScaleBitmap25.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+      <file leaf-file-name="Test_Namespace2b.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_Namespace2b.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-4.0435686" vertical-offset="4085" max-vertical-offset="5049">
+            <state line="12" column="46" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3063063" vertical-offset="0" max-vertical-offset="666">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Namespace3.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Namespace3.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#825#853#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,10 +267,8 @@
       <file leaf-file-name="MainViewFlex.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1054">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,6 +316,19 @@
         <option value="$PROJECT_DIR$/src/Test_9Slice.as" />
         <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as" />
         <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as" />
+        <option value="$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as" />
+        <option value="$PROJECT_DIR$/src/composition/BInterface.as" />
+        <option value="$PROJECT_DIR$/src/composition/CInterface.as" />
+        <option value="$PROJECT_DIR$/src/composition/Test_Composition.as" />
+        <option value="$PROJECT_DIR$/src/composition/B.as" />
+        <option value="$PROJECT_DIR$/src/composition/C.as" />
+        <option value="$PROJECT_DIR$/src/composition/A.as" />
+        <option value="$PROJECT_DIR$/src/Test_Composition.as" />
+        <option value="$PROJECT_DIR$/src/sdadsa.as" />
+        <option value="$PROJECT_DIR$/src/Test_Namespace3.as" />
+        <option value="$PROJECT_DIR$/src/Test_Namespace.as" />
+        <option value="$PROJECT_DIR$/src/Test_Namespace2.as" />
+        <option value="$PROJECT_DIR$/src/Test_Namespace2b.as" />
       </list>
     </option>
   </component>
@@ -351,16 +412,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -372,19 +423,9 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -397,8 +438,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="swf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library.swf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -410,135 +455,15 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.bytearray.display" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.theory9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ex02.view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.theory9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scale25.src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.theory9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data.types" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="obfuscated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="currentButton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -591,10 +516,6 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
-      <recent name="folder" />
-      <recent name="embed" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\idea\test\src\mx" />
       <recent name="D:\Projects\idea\test\src\mx\utils\core" />
@@ -602,12 +523,21 @@
       <recent name="D:\Projects\idea\test\src\scripts" />
       <recent name="D:\Projects\idea\test\src\" />
     </key>
+    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="composition" />
+      <recent name="folder" />
+      <recent name="embed" />
+    </key>
     <key name="com.intellij.javascript.flex.refactoring.moveClass.FlexMoveClassDialog.target_package">
+      <recent name="" />
       <recent name="utils" />
       <recent name="embed" />
     </key>
     <key name="JSExtractSuperBase.RECENT_KEYS">
       <recent name="embed" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\idea\test\src\" />
@@ -615,12 +545,9 @@
       <recent name="D:\Projects\idea\test\src" />
       <recent name="D:\Projects\idea\test" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_9Slice">
-    <configuration default="false" name="Test_addFrameScript" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+  <component name="RunManager" selected="Flash App.Test_Namespace2b">
+    <configuration default="false" name="Test_Composition" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -644,8 +571,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_addFrameScript" />
-      <option name="overriddenOutputFileName" value="Test_addFrameScript.swf" />
+      <option name="overriddenMainClass" value="Test_Composition" />
+      <option name="overriddenOutputFileName" value="Test_Composition.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -657,7 +584,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Trace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+    <configuration default="false" name="Test_Namespace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -681,8 +608,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Trace" />
-      <option name="overriddenOutputFileName" value="Test_Trace.swf" />
+      <option name="overriddenMainClass" value="Test_Namespace" />
+      <option name="overriddenOutputFileName" value="Test_Namespace.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -694,7 +621,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Clone" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true">
+    <configuration default="false" name="Test_Namespace2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -718,8 +645,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Clone" />
-      <option name="overriddenOutputFileName" value="Test_Clone.swf" />
+      <option name="overriddenMainClass" value="Test_Namespace2" />
+      <option name="overriddenOutputFileName" value="Test_Namespace2.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -731,7 +658,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_RegisterClassAlias" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_Namespace3" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -755,8 +682,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_RegisterClassAlias" />
-      <option name="overriddenOutputFileName" value="Test_RegisterClassAlias.swf" />
+      <option name="overriddenMainClass" value="Test_Namespace3" />
+      <option name="overriddenOutputFileName" value="Test_Namespace3.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -768,7 +695,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_9Slice" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_Namespace2b" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -792,8 +719,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_9Slice" />
-      <option name="overriddenOutputFileName" value="Test_9Slice.swf" />
+      <option name="overriddenMainClass" value="Test_Namespace2b" />
+      <option name="overriddenOutputFileName" value="Test_Namespace2b.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -929,17 +856,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Flash App.test" />
-      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_addFrameScript" />
-      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Trace" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_9Slice" />
+      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Composition" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Namespace" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Namespace2" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Namespace3" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Namespace2b" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_9Slice" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_RegisterClassAlias" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_Namespace2b" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Namespace3" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Namespace2" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Namespace" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Composition" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1043,20 +972,19 @@
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253886" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491892" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217253" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14643237" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1065,6 +993,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1073,21 +1002,21 @@
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14217253" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14643237" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.43803418" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26378378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491892" sideWeight="0.48504272" order="11" side_tool="false" content_ui="tabs" />
@@ -1120,7 +1049,8 @@
     <MESSAGE value="Obfuscated, Constructor, DataPairs" />
     <MESSAGE value="EnergyButton" />
     <MESSAGE value="EnergyButton&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="EnergyButton&#10;" />
+    <MESSAGE value="Scale 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scale 25" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1158,7 +1088,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_Namespace.as</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1172,61 +1109,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/StringHelper.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4624" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Time.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_addFrameScript.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/EnergyButton.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="38" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="3247" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="24" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2057" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Time.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_DataPairs.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obfuscated/_od26.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -1351,9 +1233,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EnergyUserIcon.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="17" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="4301">
-          <folding />
-        </state>
+        <state line="36" column="17" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="4301" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sdads.as">
@@ -1363,40 +1243,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FriendPanel.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1836">
-          <folding>
-            <element signature="e#27#71#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="40" column="30" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RD_GuiHelper.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="57" column="0" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/swf/GuiBottom.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.33333334" vertical-offset="103" max-vertical-offset="1683">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_9Slice.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,20 +1273,14 @@
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1361#1403#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1361#1403#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,42 +1294,125 @@
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5049">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="45" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composition/BInterface.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composition/CInterface.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composition/B.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composition/C.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composition/A.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="40" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/swf/GuiBottom.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="125" selection-end="125" vertical-scroll-proportion="0.17867868" vertical-offset="0" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Composition.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding>
+            <element signature="e#14#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace3.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#825#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2b.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-4.0435686" vertical-offset="4085" max-vertical-offset="5049">
+        <state line="12" column="46" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3063063" vertical-offset="0" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
