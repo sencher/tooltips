@@ -2,18 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335145ed-7ae8-4370-8731-e66212392341" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/A.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/B.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/BInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/C.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/composition/CInterface.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Composition.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace2b.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Namespace3.as" />
-      <change type="DELETED" beforePath="D:\Projects\idea\test\src\swf\RECOVER_bubble_3d.fla" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/AuxFunctions.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/ColorShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/CurveModifiers.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/DisplayShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/Equations.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/FilterShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/inheritance/IFirst.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/proxy/IMath.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/inheritance/ISecond.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/proxy/MathProxy.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/proxy/MathSubject.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/PropertyInfoObj.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/SoundShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/SpecialProperty.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/SpecialPropertyModifier.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/SpecialPropertySplitter.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Args.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_DescribeType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_GetDefinitionByName.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_MultiInheritance.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ProxyClass.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ProxyInjection.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Tween.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/properties/TextShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/TweenListObj.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/transitions/Tweener.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/definition/Widget.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/utils/MediaQueryParser.as" afterPath="$PROJECT_DIR$/src/mx/utils/MediaQueryParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Clone.as" afterPath="$PROJECT_DIR$/src/Test_Clone.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Math.as" afterPath="$PROJECT_DIR$/src/Test_Math.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/validators/Validator.as" afterPath="$PROJECT_DIR$/src/mx/validators/Validator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.iml" afterPath="$PROJECT_DIR$/test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="*.iws" />
@@ -86,189 +107,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AltManager.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
+      <file leaf-file-name="Test_DescribeType.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_DescribeType.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+            <state line="28" column="44" selection-start="1094" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scale25_Flex_ex02.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
+      <file leaf-file-name="Widget.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/definition/Widget.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state line="0" column="18" selection-start="8" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scale25_Flex_ex01.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
+      <file leaf-file-name="Test_GetDefinitionByName.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_GetDefinitionByName.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlexEvent.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mx/events/FlexEvent.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="25177">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScaleBitmap.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewAS.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="901">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewBase.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3094">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScaleBitmap25.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="5491">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_MultipleSwfEmbed.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="45" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="816">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BInterface.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composition/BInterface.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CInterface.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composition/CInterface.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composition/A.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="B.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composition/B.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="C.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composition/C.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Composition.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Composition.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding>
-                <element signature="e#14#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Namespace.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Namespace.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="1" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Namespace2.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Namespace2.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="28" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+            <state line="30" column="29" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.7511046" vertical-offset="0" max-vertical-offset="697">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#650#675#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Namespace2b.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test_Namespace2b.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3063063" vertical-offset="0" max-vertical-offset="666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Namespace3.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Namespace3.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#825#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewFlex.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1054">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -286,27 +150,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/utils/GuiHelper.as" />
-        <option value="$PROJECT_DIR$/src/Test_DataPairs.as" />
-        <option value="$PROJECT_DIR$/src/Test_Object.as" />
-        <option value="$PROJECT_DIR$/src/Test_addFrameScript.as" />
-        <option value="$PROJECT_DIR$/src/utils/GuiHelper4.as" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
-        <option value="$PROJECT_DIR$/src/utils/EnergyButton.as" />
-        <option value="$PROJECT_DIR$/src/RD_GuiHelper.as" />
-        <option value="$PROJECT_DIR$/src/Test_Trace.as" />
-        <option value="$PROJECT_DIR$/src/utils/Time.as" />
-        <option value="$PROJECT_DIR$/src/utils/swa.as" />
         <option value="$PROJECT_DIR$/src/utils/UtilFunctions.as" />
         <option value="$PROJECT_DIR$/src/folder/DataObject.as" />
         <option value="$PROJECT_DIR$/src/folder/First.as" />
         <option value="$PROJECT_DIR$/src/folder/ысы.as" />
-        <option value="$PROJECT_DIR$/src/folder/CustomClassVO.as" />
         <option value="$PROJECT_DIR$/src/utils/ObjectUtil.as" />
         <option value="$PROJECT_DIR$/src/mx/utils/ObjectUtil.as" />
         <option value="$PROJECT_DIR$/src/mx/mx/rpc/IResponder.as" />
         <option value="$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as" />
-        <option value="$PROJECT_DIR$/src/Test_Clone.as" />
         <option value="$PROJECT_DIR$/src/Test_RegisterClassAlias.as" />
         <option value="$PROJECT_DIR$/src/icon.as" />
         <option value="$PROJECT_DIR$/src/asd.as" />
@@ -329,6 +180,27 @@
         <option value="$PROJECT_DIR$/src/Test_Namespace.as" />
         <option value="$PROJECT_DIR$/src/Test_Namespace2.as" />
         <option value="$PROJECT_DIR$/src/Test_Namespace2b.as" />
+        <option value="$PROJECT_DIR$/src/transitions/properties/TextShortcuts.as" />
+        <option value="$PROJECT_DIR$/src/Test_Tween.as" />
+        <option value="$PROJECT_DIR$/src/Test_Args.as" />
+        <option value="$PROJECT_DIR$/src/inheritance/ISecond.as" />
+        <option value="$PROJECT_DIR$/src/inheritance/IFirst.as" />
+        <option value="$PROJECT_DIR$/src/Test_MultiInheritance.as" />
+        <option value="$PROJECT_DIR$/src/Test_Math.as" />
+        <option value="$PROJECT_DIR$/src/proxy/IMath.as" />
+        <option value="$PROJECT_DIR$/src/proxy/MathSubject.as" />
+        <option value="$PROJECT_DIR$/src/proxy/MathProxy.as" />
+        <option value="$PROJECT_DIR$/src/proxy/Main.as" />
+        <option value="$PROJECT_DIR$/src/Test_ProxyClass.as" />
+        <option value="$PROJECT_DIR$/src/Test_DescribeType.as" />
+        <option value="$PROJECT_DIR$/src/Test_ProxyInjection.as" />
+        <option value="$PROJECT_DIR$/src/folder/CustomClassVO.as" />
+        <option value="$PROJECT_DIR$/src/Test_Clone.as" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/definition/w.as" />
+        <option value="$PROJECT_DIR$/src/definition/w.as" />
+        <option value="$PROJECT_DIR$/src/definition/Widget.as" />
+        <option value="$PROJECT_DIR$/src/Test_GetDefinitionByName.as" />
       </list>
     </option>
   </component>
@@ -412,6 +284,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -423,9 +305,19 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -438,12 +330,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library.swf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <option name="myItemId" value="inheritance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -455,15 +343,9 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemId" value="definition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -517,13 +399,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\idea\test\src" />
       <recent name="D:\Projects\idea\test\src\mx" />
       <recent name="D:\Projects\idea\test\src\mx\utils\core" />
       <recent name="D:\Projects\idea\test\src\utils" />
       <recent name="D:\Projects\idea\test\src\scripts" />
-      <recent name="D:\Projects\idea\test\src\" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="proxy" />
+      <recent name="inheritance" />
       <recent name="composition" />
       <recent name="folder" />
       <recent name="embed" />
@@ -546,8 +430,8 @@
       <recent name="D:\Projects\idea\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Namespace2b">
-    <configuration default="false" name="Test_Composition" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Flash App.Test_GetDefinitionByName">
+    <configuration default="false" name="Test_ProxyClass" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -571,8 +455,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Composition" />
-      <option name="overriddenOutputFileName" value="Test_Composition.swf" />
+      <option name="overriddenMainClass" value="Test_ProxyClass" />
+      <option name="overriddenOutputFileName" value="Main.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -584,7 +468,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Namespace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_ProxyInjection" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -608,8 +492,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Namespace" />
-      <option name="overriddenOutputFileName" value="Test_Namespace.swf" />
+      <option name="overriddenMainClass" value="Test_ProxyInjection" />
+      <option name="overriddenOutputFileName" value="Test_ProxyInjection.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -621,7 +505,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Namespace2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_Clone" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -645,8 +529,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Namespace2" />
-      <option name="overriddenOutputFileName" value="Test_Namespace2.swf" />
+      <option name="overriddenMainClass" value="Test_Clone" />
+      <option name="overriddenOutputFileName" value="Test_Clone.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -658,7 +542,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Namespace3" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_DescribeType" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -682,8 +566,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Namespace3" />
-      <option name="overriddenOutputFileName" value="Test_Namespace3.swf" />
+      <option name="overriddenMainClass" value="Test_DescribeType" />
+      <option name="overriddenOutputFileName" value="Test_DescribeType.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -695,7 +579,7 @@
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Namespace2b" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_GetDefinitionByName" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -719,8 +603,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="test" />
-      <option name="overriddenMainClass" value="Test_Namespace2b" />
-      <option name="overriddenOutputFileName" value="Test_Namespace2b.swf" />
+      <option name="overriddenMainClass" value="Test_GetDefinitionByName" />
+      <option name="overriddenOutputFileName" value="Test_GetDefinitionByName.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -856,19 +740,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Flash App.test" />
-      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Composition" />
-      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Namespace" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Namespace2" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Namespace3" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Namespace2b" />
+      <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ProxyClass" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_ProxyInjection" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_DescribeType" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_GetDefinitionByName" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_Namespace2b" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Namespace3" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Namespace2" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Namespace" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Composition" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_GetDefinitionByName" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Clone" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_DescribeType" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ProxyInjection" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ProxyClass" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -972,15 +856,15 @@
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253886" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14643237" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15761448" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29533678" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -993,7 +877,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2627027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1002,24 +886,24 @@
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67628205" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.51121795" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14643237" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.43803418" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15761448" sideWeight="0.7147436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.43803418" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26321244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088083" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2627027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29533678" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" x="1918" y="722" width="1872" height="361" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491892" sideWeight="0.48504272" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.48504272" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25373933" sideWeight="0.22098215" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5870536" order="0" side_tool="false" content_ui="tabs" />
@@ -1050,7 +934,8 @@
     <MESSAGE value="EnergyButton" />
     <MESSAGE value="EnergyButton&#10;" />
     <MESSAGE value="Scale 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scale 25" />
+    <MESSAGE value="Composition, Namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composition, Namespace" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1088,14 +973,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/Test_Namespace.as</url>
-          <line>21</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="12" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="35" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1109,123 +990,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Constructor.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Trace.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Constructor2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="231" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Object.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/DataObject.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="jar://D:/Flex/flex 4.6+air 3.6 sdk/frameworks/libs/player/11.6/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5539" column="37" selection-start="234932" selection-end="234944" vertical-scroll-proportion="0.0" vertical-offset="93836" max-vertical-offset="173519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/core/Version.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/rpc/IResponder.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/utils/DescribeTypeCache.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/utils/ObjectUtil.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1344" column="47" selection-start="45940" selection-end="45940" vertical-scroll-proportion="0.55469954" vertical-offset="22488" max-vertical-offset="24956" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="120" selection-end="120" vertical-scroll-proportion="0.052388288" vertical-offset="0" max-vertical-offset="649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/collections/errors/SortError.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/utils/SHA256.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6256" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_RegisterClassAlias.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/TimeUnits.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/validators/NumberValidator.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="658" column="35" selection-start="18635" selection-end="18635" vertical-scroll-proportion="0.0" vertical-offset="10605" max-vertical-offset="20026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/controls/SWFLoader.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="17" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.0" vertical-offset="3674" max-vertical-offset="45662" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/managers/LayoutManager.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="697" column="8" selection-start="25627" selection-end="25627" vertical-scroll-proportion="0.0" vertical-offset="11137" max-vertical-offset="20706" />
@@ -1258,135 +1022,219 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_9Slice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="31" column="30" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex02.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/scale25_Flex_ex01.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="30" column="46" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/events/FlexEvent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888">
-          <folding />
-        </state>
+        <state line="33" column="13" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewAS.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
+        <state line="41" column="36" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewFlex.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054">
-          <folding />
-        </state>
+        <state line="26" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975">
-          <folding />
-        </state>
+        <state line="120" column="37" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5049">
-          <folding />
-        </state>
+        <state line="37" column="17" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5049" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding />
-        </state>
+        <state line="30" column="45" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/composition/BInterface.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
+        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/composition/CInterface.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
+        <state line="2" column="36" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/composition/B.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="3" column="37" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/composition/C.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="6" column="25" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/composition/A.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
+        <state line="12" column="40" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/swf/GuiBottom.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="125" selection-end="125" vertical-scroll-proportion="0.17867868" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
+        <state line="7" column="21" selection-start="125" selection-end="125" vertical-scroll-proportion="0.17867868" vertical-offset="0" max-vertical-offset="666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Composition.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding>
-            <element signature="e#14#35#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Namespace.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+        <state line="9" column="1" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2b.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swf/HintMenu.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="290" selection-end="290" vertical-scroll-proportion="0.1583851" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Tween.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="9" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Args.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="245" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inheritance/ISecond.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="74" selection-end="74" vertical-scroll-proportion="0.036796536" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inheritance/IFirst.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="104" selection-end="104" vertical-scroll-proportion="0.055194806" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Flex/flex 4.6+air 3.6 sdk/frameworks/libs/player/11.6/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1026" column="0" selection-start="43790" selection-end="43790" vertical-scroll-proportion="0.2487725" vertical-offset="17290" max-vertical-offset="173519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Math.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ProxySwfWithParameter.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ProxyClass.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proxy/IMath.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proxy/MathSubject.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <marker date="1390408324332" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proxy/MathProxy.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding>
+            <marker date="1390408359504" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Mock.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="19" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.6991342" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="306" selection-end="306" vertical-scroll-proportion="0.18622848" vertical-offset="0" max-vertical-offset="639" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_MultiInheritance.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ProxyInjection.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
@@ -1394,26 +1242,59 @@
     <entry file="file://$PROJECT_DIR$/src/Test_Namespace3.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#825#853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Namespace2b.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3063063" vertical-offset="0" max-vertical-offset="666">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transitions/properties/TextShortcuts.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="0.1492865" vertical-offset="0" max-vertical-offset="911">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.27222833" vertical-offset="670" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="49" selection-start="1959" selection-end="1970" vertical-scroll-proportion="0.72667396" vertical-offset="222" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_DescribeType.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="44" selection-start="1094" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/definition/Widget.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="8" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_GetDefinitionByName.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="29" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.7511046" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#650#675#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1446,7 +1327,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>tlfruntime</last-edited>
+          <last-edited>greensock</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

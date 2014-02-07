@@ -117,11 +117,11 @@ public class MediaQueryParser
     
     /**
      *  @private
-     *  Main entry point.
-     * 
+     *  Test_ProxyClass entry point.
+     *
      *  @param expression A syntactically correct CSS Media Query
      *  @returns true if valid for this media, false otherwise
-     * 
+     *
      *  @langversion 3.0
      *  @playerversion Flash 10.2
      *  @playerversion AIR 2.6

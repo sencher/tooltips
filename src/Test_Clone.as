@@ -12,6 +12,7 @@ package {
     import mx.utils.ObjectUtil;
 
     import utils.UtilFunctions;
+    import utils.Utils;
 
     public class Test_Clone extends Sprite {
 
@@ -50,6 +51,9 @@ package {
 
             var cc3:CustomClassVO = CustomClassVO(ObjectUtil.clone(cc1));
             trace(cc3.variableName);
+
+            var cc4:CustomClassVO = Utils.clone(cc1);
+            trace(cc4.variableName);
 
         }
 

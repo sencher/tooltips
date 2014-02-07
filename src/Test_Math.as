@@ -11,12 +11,14 @@ import flash.display.Sprite;
 
 public class Test_Math extends Sprite{
     public function Test_Math() {
-        var a:int = 2;
-        var b:int = 15;
+        var a:Number = 2.45;
+        var b:Number = 2.51;
+        trace(Math.round(a),Math.round(b));
         var c:* = Math.ceil(3.0001);
         trace(c);
         const TWO_THIRD:Number = 2. / 3.;
-        trace(TWO_THIRD)
+        trace(TWO_THIRD);
+
     }
 }
 }

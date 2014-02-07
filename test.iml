@@ -23,6 +23,9 @@
             <entry library-id="97475821-08dd-4e67-abe5-1825791953b8">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="greensock" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="flex 4.6+air 3.6 sdk" />
         </dependencies>
@@ -70,6 +73,7 @@
         <jarDirectory url="file://$MODULE_DIR$/src/swf" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="greensock" level="application" />
   </component>
 </module>
 
