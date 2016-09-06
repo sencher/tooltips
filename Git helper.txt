@@ -1,0 +1,13 @@
+git fetch
+git pull --rebase
+git reset --hard
+git push
+
+gitk --follow --all -p -- ContryClient/assets/pixs/energy/*Tips*
+git rebase -i HEAD~1
+git fetch -p - After fetching, remove any remote-tracking branches which no longer exist on the remote.
+git log --all -- board_orders_manager
+git reset --soft HEAD~1 - сбросить последний коммит
+git reset HEAD . - отменить git add .
+git checkout HEAD~1 -- my-file.txt отрисетиться файл на коммит назад 
+git log --all --grep='Build 0051' найти по имени коммита
