@@ -19,6 +19,7 @@ import flash.net.URLVariables;
 [SWF(width=1440 , height=810, backgroundColor="0x000000", frameRate="60")]
 public class Test_ExternalInterface extends Sprite {
     public function Test_ExternalInterface() {
+        ExternalInterface.call("console.log", "YourString");
         var available:Boolean = ExternalInterface.available;
         trace (available);
         if(!available) return;
@@ -33,7 +34,7 @@ public class Test_ExternalInterface extends Sprite {
 
         function callMe(name:String):String
         {
-            trace("callMe")
+            trace("callMe", name);
                 var url:String = "http://api.flickr.com/services/rest/";
                 var request:URLRequest = new URLRequest(url);
                 var requestVars:URLVariables = new URLVariables();
