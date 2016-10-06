@@ -15,6 +15,17 @@ package {
             Utils.mergeObjects(o1,o3,true)
             Utils.substractObjects(o1,o3)
             Utils.substractObjects(o1,o4)
+
+            function objectLength(myObject:Object):int {
+                var cnt:int=0;
+
+                for (var s:String in myObject) cnt++;
+
+                return cnt;
+            }
+
+            var o:Object={foo:"hello", bar:"world", a:5};
+            trace(objectLength(o)); // output
         }
     }
 }

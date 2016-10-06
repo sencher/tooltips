@@ -11,3 +11,20 @@ git reset --soft HEAD~1 - сбросить последний коммит
 git reset HEAD . - отменить git add .
 git checkout HEAD~1 -- my-file.txt отрисетиться файл на коммит назад 
 git log --all --grep='Build 0051' найти по имени коммита
+
+
+git tag -d name
+git push --tags
+git branch -dr origin/s.senkov - удалить ремоут бренч
+git branch -r 		remote branches 
+git branch -vv
+
+git push & git push --tags
+
+git log -5 --stat  - показывает только миена файлов
+
+
+git branch -D books_refactored
+git push origin --delete books_refactored
+or
+git push origin :books_refactored
