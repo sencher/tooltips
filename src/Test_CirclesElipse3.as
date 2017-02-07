@@ -3,6 +3,8 @@
  */
 package
 {
+	import com.junkbyte.console.Cc;
+	
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -10,7 +12,7 @@ package
 	import flash.text.TextField;
 	
 	[SWF(width=1200,height=1000)]
-	public class Test_CirclesElipse2 extends Sprite
+	public class Test_CirclesElipse3 extends Sprite
 	{
 	private var X1:Number = 400;
 	private var Y1:Number = 400;
@@ -21,16 +23,18 @@ package
 		
 	private var ELLIPSE_X:Number = 500;
 	private var ELLIPSE_Y:Number = 500;
-	private var ELLIPSE_WIDTH:Number = 100;
-	private var ELLIPSE_HEIGHT:Number = 500;
-	private var ELLIPSE_ROTATION:Number = 0;
+	private var ELLIPSE_WIDTH:Number = 80;
+	private var ELLIPSE_HEIGHT:Number = 60;
+	private var ELLIPSE_ROTATION:Number = 4550;
 		
 	private var curRotation:Number = 0;
 	private var container:Sprite = new Sprite();
 		
 	private var tf:TextField = new TextField();
-		public function Test_CirclesElipse2()
+		public function Test_CirclesElipse3()
 		{
+			Cc.start(this);
+			Cc.visible = true;
 			tf.width = tf.height = 1000;
 			addChild(tf);
 			
@@ -51,24 +55,26 @@ package
 //			tf.appendText("\n " + X1 +" "+Y1 +" "+X2 +" "+Y2 +" "+RADIUS);
 			tf.width = tf.height = 1000;
 			addChild(tf);
-			addChild(container)
+			addChild(container);
 			
-			drawEllipse(ELLIPSE_X,ELLIPSE_Y,ELLIPSE_WIDTH,ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
-			var length:Number;
+			var halfLength:Number;
 			var width:Number;
 			if(ELLIPSE_HEIGHT >= ELLIPSE_WIDTH){
-				length = ELLIPSE_HEIGHT;
+				halfLength = ELLIPSE_HEIGHT / 2;
 				width = ELLIPSE_WIDTH;
+				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, 12);
+				drawLine(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, ELLIPSE_ROTATION);
 			}else{
-				length = ELLIPSE_WIDTH;
+				halfLength = ELLIPSE_WIDTH /2 ;
 				width = ELLIPSE_HEIGHT;
+				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, 33);
+				drawLine(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, ELLIPSE_ROTATION);
 			}
 			
 			//drawLine(-ELLIPSE_HEIGHT/2,ELLIPSE_Y,ELLIPSE_HEIGHT/2,ELLIPSE_Y);
-			drawLine(ELLIPSE_X,ELLIPSE_Y-ELLIPSE_HEIGHT/2,ELLIPSE_X,ELLIPSE_Y+ELLIPSE_HEIGHT/2,ELLIPSE_ROTATION);
+			drawEllipse(ELLIPSE_X,ELLIPSE_Y,ELLIPSE_WIDTH,ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
-			generateCircles(ELLIPSE_X,Y1,ELLIPSE_X,Y2,RADIUS);
 			
 			addEventListener(MouseEvent.CLICK, onClick)
 		}
@@ -93,6 +99,7 @@ package
 		{
 			line.rotation +=10;
 			ellipse.rotation += 10;
+			container.rotation += 10;
 //			curRotation += 10;
 //			removeChild(ellipse);
 //			//ellipse.rotation += 7;
@@ -121,34 +128,39 @@ package
 		private function drawCircle(x:Number,y:Number,r:Number):void
 		{
 //			trace(arguments)
-//			tf.appendText("\ndrawCircle " + arguments.toString());
-			var circle:Sprite = new Sprite();
+			tf.appendText("\ndrawCircle " + arguments.toString());
+			if(r < 1) return;
+			
+			var circle:Shape = new Shape();
 			circle.graphics.beginFill(0xFF794B);
-			circle.graphics.drawCircle(x, y, r>0?r:0);
+			circle.graphics.drawCircle(x, y, r);
 			circle.graphics.endFill();
-			addChild(circle);
+			container.addChild(circle);
 		}
 		
 		private function getLength(x1:Number, y1:Number, x2:Number, y2:Number):Number{
 			return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
 		}
 		
-		private function generateCircles(x1:Number, y1:Number, x2:Number, y2:Number, width:Number):Array {
+		private function generateCircles(x1:Number, y1:Number, x2:Number, y2:Number, radius:Number, angle:int, density:int):Array {
+			
+			var dx:Number = x2 - x1;
+			var dy:Number = y2 - y1;
+			var centerX:Number = (x1 + x2)/2;
+			var centerY:Number = (y1 + y2)/2;
+			
+			container.x = centerX;
+			container.y = centerY;
+			container.rotation = angle;
+			
 			var length:Number = getLength(x1,y1,x2,y2);
-			var steps:Number = 130;
+			var steps:Number = density+1;
 			var curX:Number = x1;
 			var curY:Number = y1;
-			var curR:Number = RADIUS_MIN;
-			var dx:Number = x2-x1-RADIUS_MIN*2;
-			var dy:Number = y2-y1;
-			var dr:Number = RADIUS - RADIUS_MIN;
+			var curR:Number;
 			var lenghtFromCenter:Number;
 			
-			var maxLenghtFromCenter:Number = length/2 - RADIUS_MIN;
-			var centerX:Number = x1 + (x2-x1)/2;
-			var centerY:Number = y1 + (y2-y1)/2;
-			
-			for(var i:Number = 0; i<steps; i++){
+			for(var i:Number = 1; i<steps; i++){
 				if (x1==x2){
 					curY = y1 +i*(y2-y1)/steps;
 					curX = (y2*x1-y1*x2-(x1-x2)*curY)/(y2-y1);
@@ -159,12 +171,15 @@ package
 
 				
 				lenghtFromCenter = getLength(curX,curY,centerX,centerY);
-				curR = Math.sqrt(1-Math.pow(lenghtFromCenter,2)/Math.pow(length/2,2))*RADIUS;
+				curR = Math.sqrt(1-Math.pow(lenghtFromCenter,2)/Math.pow(length/2,2))*radius;
 				
-//				if (curR<(length/2-lenghtFromCenter))
-					drawCircle(curX,curY,curR);
-//				else
-//					curR=(length/2-lenghtFromCenter);
+				
+//				drawCircle(curX-centerX,curY-centerY,curR);
+				
+				if (curR<(length/2-lenghtFromCenter))
+					drawCircle(curX-centerX,curY-centerY,curR);
+				else
+					curR=(length/2-lenghtFromCenter);
 			}
 
 			return [];

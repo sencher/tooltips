@@ -10,9 +10,6 @@ package
 	import flash.events.Event;
 	import flash.geom.Matrix;
 	import flash.geom.Point;
-	import flash.geom.Matrix;
-	import flash.geom.Point;
-//	import fl.motion.MatrixTransformer;
 	
 	//http://www.flashandmath.com/howtos/rotation/?howtos/rotation
 	public class Test_RotationPoint extends Sprite
