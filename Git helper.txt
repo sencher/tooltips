@@ -28,3 +28,5 @@ git branch -D books_refactored
 git push origin --delete books_refactored
 or
 git push origin :books_refactored
+
+git checkout -- <path>		- git reset hard directory

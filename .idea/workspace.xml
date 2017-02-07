@@ -1,16 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Parent Call">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Patterns/Singleton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Reload.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Patterns/Test_Singleton.as" />
-      <change type="MOVED" beforePath="A:\Projects\tooltips\Test.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
-      <change type="MOVED" beforePath="A:\Projects\tooltips\src\Test_StringDiffs.as" afterPath="$PROJECT_DIR$/src/Test_String.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Git helper.txt" afterPath="$PROJECT_DIR$/Git helper.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_Object.as" afterPath="$PROJECT_DIR$/src/Test_Object.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Singleton, Object, Reload, String">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/greensock.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Circles.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_CirclesElipse.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_CirclesElipse2.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Ellipse.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_RotationPoint.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_TweenLite.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Git helper.txt" afterPath="$PROJECT_DIR$/Git helper.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as" afterPath="$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_String.as" afterPath="$PROJECT_DIR$/src/Test_String.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/containers/utilityClasses/PostScaleAdapter.as" afterPath="$PROJECT_DIR$/src/mx/containers/utilityClasses/PostScaleAdapter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/BitmapAsset.as" afterPath="$PROJECT_DIR$/src/mx/core/BitmapAsset.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IAssetLayoutFeatures.as" afterPath="$PROJECT_DIR$/src/mx/core/IAssetLayoutFeatures.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IChildList.as" afterPath="$PROJECT_DIR$/src/mx/core/IChildList.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IDisplayObjectContainerInterface.as" afterPath="$PROJECT_DIR$/src/mx/core/IDisplayObjectContainerInterface.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IFlexDisplayObject.as" afterPath="$PROJECT_DIR$/src/mx/core/IFlexDisplayObject.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/ILayoutElement.as" afterPath="$PROJECT_DIR$/src/mx/core/ILayoutElement.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IRectangularBorder.as" afterPath="$PROJECT_DIR$/src/mx/core/IRectangularBorder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/ISWFLoader.as" afterPath="$PROJECT_DIR$/src/mx/core/ISWFLoader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/ISpriteInterface.as" afterPath="$PROJECT_DIR$/src/mx/core/ISpriteInterface.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IToolTip.as" afterPath="$PROJECT_DIR$/src/mx/core/IToolTip.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IUIComponent.as" afterPath="$PROJECT_DIR$/src/mx/core/IUIComponent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/IUITextField.as" afterPath="$PROJECT_DIR$/src/mx/core/IUITextField.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/LayoutElementUIComponentUtils.as" afterPath="$PROJECT_DIR$/src/mx/core/LayoutElementUIComponentUtils.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/SpriteAsset.as" afterPath="$PROJECT_DIR$/src/mx/core/SpriteAsset.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/UIComponent.as" afterPath="$PROJECT_DIR$/src/mx/core/UIComponent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/UIComponentGlobals.as" afterPath="$PROJECT_DIR$/src/mx/core/UIComponentGlobals.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/core/UITextField.as" afterPath="$PROJECT_DIR$/src/mx/core/UITextField.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/effects/effectClasses/MaskEffectInstance.as" afterPath="$PROJECT_DIR$/src/mx/effects/effectClasses/MaskEffectInstance.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/events/TouchInteractionEvent.as" afterPath="$PROJECT_DIR$/src/mx/events/TouchInteractionEvent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/geom/CompoundTransform.as" afterPath="$PROJECT_DIR$/src/mx/geom/CompoundTransform.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/geom/RoundedRectangle.as" afterPath="$PROJECT_DIR$/src/mx/geom/RoundedRectangle.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/geom/Transform.as" afterPath="$PROJECT_DIR$/src/mx/geom/Transform.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/geom/TransformOffsets.as" afterPath="$PROJECT_DIR$/src/mx/geom/TransformOffsets.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/BitmapFill.as" afterPath="$PROJECT_DIR$/src/mx/graphics/BitmapFill.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/GradientBase.as" afterPath="$PROJECT_DIR$/src/mx/graphics/GradientBase.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/GradientStroke.as" afterPath="$PROJECT_DIR$/src/mx/graphics/GradientStroke.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/IFill.as" afterPath="$PROJECT_DIR$/src/mx/graphics/IFill.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/IStroke.as" afterPath="$PROJECT_DIR$/src/mx/graphics/IStroke.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/ImageSnapshot.as" afterPath="$PROJECT_DIR$/src/mx/graphics/ImageSnapshot.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/LinearGradient.as" afterPath="$PROJECT_DIR$/src/mx/graphics/LinearGradient.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/LinearGradientStroke.as" afterPath="$PROJECT_DIR$/src/mx/graphics/LinearGradientStroke.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/RadialGradient.as" afterPath="$PROJECT_DIR$/src/mx/graphics/RadialGradient.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/RadialGradientStroke.as" afterPath="$PROJECT_DIR$/src/mx/graphics/RadialGradientStroke.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/RectangularDropShadow.as" afterPath="$PROJECT_DIR$/src/mx/graphics/RectangularDropShadow.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/RoundedRectangle.as" afterPath="$PROJECT_DIR$/src/mx/graphics/RoundedRectangle.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/SolidColor.as" afterPath="$PROJECT_DIR$/src/mx/graphics/SolidColor.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/graphics/SolidColorStroke.as" afterPath="$PROJECT_DIR$/src/mx/graphics/SolidColorStroke.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/CursorManagerImpl.as" afterPath="$PROJECT_DIR$/src/mx/managers/CursorManagerImpl.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/DragManagerImpl.as" afterPath="$PROJECT_DIR$/src/mx/managers/DragManagerImpl.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/IMarshalSystemManager.as" afterPath="$PROJECT_DIR$/src/mx/managers/IMarshalSystemManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/ISystemManager.as" afterPath="$PROJECT_DIR$/src/mx/managers/ISystemManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/PopUpData.as" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpData.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/PopUpManagerImpl.as" afterPath="$PROJECT_DIR$/src/mx/managers/PopUpManagerImpl.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/SystemChildrenList.as" afterPath="$PROJECT_DIR$/src/mx/managers/SystemChildrenList.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/SystemManager.as" afterPath="$PROJECT_DIR$/src/mx/managers/SystemManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/SystemManagerProxy.as" afterPath="$PROJECT_DIR$/src/mx/managers/SystemManagerProxy.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/SystemRawChildrenList.as" afterPath="$PROJECT_DIR$/src/mx/managers/SystemRawChildrenList.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/ToolTipManagerImpl.as" afterPath="$PROJECT_DIR$/src/mx/managers/ToolTipManagerImpl.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/dragClasses/DragProxy.as" afterPath="$PROJECT_DIR$/src/mx/managers/dragClasses/DragProxy.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/layoutClasses/LayoutDebugHelper.as" afterPath="$PROJECT_DIR$/src/mx/managers/layoutClasses/LayoutDebugHelper.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/marshalClasses/MarshalPopUpData.as" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/MarshalPopUpData.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/marshalClasses/PopUpManagerMarshalMixin.as" afterPath="$PROJECT_DIR$/src/mx/managers/marshalClasses/PopUpManagerMarshalMixin.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/managers/systemClasses/MarshallingSupport.as" afterPath="$PROJECT_DIR$/src/mx/managers/systemClasses/MarshallingSupport.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/preloaders/DownloadProgressBar.as" afterPath="$PROJECT_DIR$/src/mx/preloaders/DownloadProgressBar.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/preloaders/SparkDownloadProgressBar.as" afterPath="$PROJECT_DIR$/src/mx/preloaders/SparkDownloadProgressBar.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/printing/FlexPrintJob.as" afterPath="$PROJECT_DIR$/src/mx/printing/FlexPrintJob.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/skins/ProgrammaticSkin.as" afterPath="$PROJECT_DIR$/src/mx/skins/ProgrammaticSkin.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/skins/RectangularBorder.as" afterPath="$PROJECT_DIR$/src/mx/skins/RectangularBorder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/utils/MatrixUtil.as" afterPath="$PROJECT_DIR$/src/mx/utils/MatrixUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/utils/PopUpUtil.as" afterPath="$PROJECT_DIR$/src/mx/utils/PopUpUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/utils/TransformUtil.as" afterPath="$PROJECT_DIR$/src/mx/utils/TransformUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rtree/RTree.as" afterPath="$PROJECT_DIR$/src/rtree/RTree.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transitions/properties/ColorShortcuts.as" afterPath="$PROJECT_DIR$/src/transitions/properties/ColorShortcuts.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transitions/properties/DisplayShortcuts.as" afterPath="$PROJECT_DIR$/src/transitions/properties/DisplayShortcuts.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transitions/properties/FilterShortcuts.as" afterPath="$PROJECT_DIR$/src/transitions/properties/FilterShortcuts.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +92,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -32,101 +100,103 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Test_ExternalInterface.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="199">
+      <file leaf-file-name="Test_Dependency.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Dependency.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtInt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/ExtInt.js">
+      <file leaf-file-name="Test_Interview.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Interview.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Object.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Object.as">
+      <file leaf-file-name="Test_LocalGlobal.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_LocalGlobal.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singleton.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Patterns/Singleton.as">
+      <file leaf-file-name="Test_RotationPoint.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_RotationPoint.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_String.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_String.as">
+      <file leaf-file-name="Test_copPixels.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_copPixels.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Reload.as" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test_Reload.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4301676">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding>
-                <element signature="e#57#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Time.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Time.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Singleton.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Patterns/Test_Singleton.as">
+      <file leaf-file-name="AltManager.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <file leaf-file-name="AltWindowBase.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alts/AltWindowBase.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding>
-                <element signature="e#20#51#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AltWindowParameters.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alts/AltWindowParameters.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FractalGeometryGenerator.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerspectiveMatrix3D.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/PerspectiveMatrix3D.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,17 +235,46 @@
         <option value="$PROJECT_DIR$/src/Patterns/Singleton.as" />
         <option value="$PROJECT_DIR$/src/Patterns/Test_Singleton.as" />
         <option value="$PROJECT_DIR$/src/Test_StringDiffs.as" />
-        <option value="$PROJECT_DIR$/src/Test_String.as" />
         <option value="$PROJECT_DIR$/src/Test_Reload.as" />
+        <option value="$PROJECT_DIR$/src/Test_TweenLite.as" />
+        <option value="$PROJECT_DIR$/src/Test_String.as" />
+        <option value="$PROJECT_DIR$/src/Test_Circles.as" />
+        <option value="$PROJECT_DIR$/src/Test_CirclesElipse.as" />
+        <option value="$PROJECT_DIR$/src/Test_Ellipse.as" />
+        <option value="$PROJECT_DIR$/src/Test_CirclesElipse2.as" />
+        <option value="$PROJECT_DIR$/src/flash/motion/MatrixTransformer.as" />
+        <option value="$PROJECT_DIR$/src/BitmapDataExample.as" />
+        <option value="$PROJECT_DIR$/src/EnergyUserIcon.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap9.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewBase.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as" />
+        <option value="$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as" />
+        <option value="$PROJECT_DIR$/src/Test_BitmapData.as" />
+        <option value="$PROJECT_DIR$/src/Test_BitmapDraw.as" />
+        <option value="$PROJECT_DIR$/src/Test_Bitmap/merge.as" />
+        <option value="$PROJECT_DIR$/src/Test_Bitmap/merge2.as" />
+        <option value="$PROJECT_DIR$/src/Test_ClassesCompare.as" />
+        <option value="$PROJECT_DIR$/src/Test_ColorTransform.as" />
+        <option value="$PROJECT_DIR$/src/Test_Context3D.as" />
+        <option value="$PROJECT_DIR$/src/Test_Dependency.as" />
+        <option value="$PROJECT_DIR$/src/Test_Interview.as" />
+        <option value="$PROJECT_DIR$/src/Test_LocalGlobal.as" />
+        <option value="$PROJECT_DIR$/src/Test_RotationPoint.as" />
+        <option value="$PROJECT_DIR$/src/Test_copPixels.as" />
+        <option value="$PROJECT_DIR$/src/alts/AltManager.as" />
+        <option value="$PROJECT_DIR$/src/alts/AltWindowBase.as" />
+        <option value="$PROJECT_DIR$/src/alts/AltWindowParameters.as" />
+        <option value="$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as" />
+        <option value="$PROJECT_DIR$/src/com/adobe/utils/PerspectiveMatrix3D.as" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-  </component>
-  <component name="NamedScopeManager">
-    <order />
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -204,11 +303,10 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,37 +339,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tooltips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="A:/Dropbox/SDK/flashplayer18_debugsa_win_32.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="flex.debug.filter.swf.load.unload" value="true" />
+    <property name="GO_FMT" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="A:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="A:\Projects\tooltips\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="A:\Projects\tooltips\src\Patterns" />
+      <recent name="A:\Projects\tooltips\libs" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="" />
       <recent name="Patterns" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Projects\tooltips\src\Patterns" />
+    </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Reload">
-    <configuration default="false" name="Test_InternalClass" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Flash App.Test_RotationPoint">
+    <configuration default="false" name="Test_Circles" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -287,16 +407,16 @@
       <option name="launchUrl" value="false" />
       <option name="launcherParameters">
         <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
+          <option name="browser" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+          <option name="launcherType" value="Player" />
           <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+          <option name="playerPath" value="A:/Dropbox/SDK/flashplayer18_debugsa_win_32.exe" />
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_InternalClass" />
-      <option name="overriddenOutputFileName" value="A.swf" />
+      <option name="overriddenMainClass" value="Test_Circles" />
+      <option name="overriddenOutputFileName" value="Test_Circles.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -306,7 +426,7 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Object" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_CirclesElipse" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -330,8 +450,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Object" />
-      <option name="overriddenOutputFileName" value="Test_Object.swf" />
+      <option name="overriddenMainClass" value="Test_CirclesElipse" />
+      <option name="overriddenOutputFileName" value="Test_CirclesElipse.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -341,7 +461,7 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Singleton" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_CirclesElipse2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -357,16 +477,16 @@
       <option name="launchUrl" value="false" />
       <option name="launcherParameters">
         <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
+          <option name="browser" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+          <option name="launcherType" value="Player" />
           <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+          <option name="playerPath" value="A:/Dropbox/SDK/flashplayer18_debugsa_win_32.exe" />
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Patterns.Test_Singleton" />
-      <option name="overriddenOutputFileName" value="Test_Singleton.swf" />
+      <option name="overriddenMainClass" value="Test_CirclesElipse2" />
+      <option name="overriddenOutputFileName" value="Test_CirclesElipse2.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -376,7 +496,7 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_String" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_Ellipse" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -400,8 +520,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_String" />
-      <option name="overriddenOutputFileName" value="Test_String.swf" />
+      <option name="overriddenMainClass" value="Test_Ellipse" />
+      <option name="overriddenOutputFileName" value="Test_Ellipse.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -411,7 +531,7 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="false" name="Test_Reload" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Test_RotationPoint" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -435,8 +555,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Reload" />
-      <option name="overriddenOutputFileName" value="Test_Reload.swf" />
+      <option name="overriddenMainClass" value="Test_RotationPoint" />
+      <option name="overriddenOutputFileName" value="Test_RotationPoint.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -473,6 +593,9 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -568,7 +691,48 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Tooltips" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -607,6 +771,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
       <setting name="environment" value="" />
       <setting name="specsToExecute" value="" />
@@ -621,11 +813,19 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -702,19 +902,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Flash App.Test" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ExternalInterface HTML" />
-      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_InternalClass" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Object" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Singleton" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_String" />
-      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_Reload" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Circles" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse2" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Ellipse" />
+      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_RotationPoint" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_Reload" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_String" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Singleton" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Object" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_InternalClass" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_RotationPoint" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse2" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Ellipse" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Circles" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
@@ -724,12 +924,15 @@
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="" />
       <created>1438960811205</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1438960811205</updated>
       <workItem from="1438960811523" duration="909000" />
       <workItem from="1439390632611" duration="7131000" />
@@ -745,73 +948,89 @@
       <workItem from="1473189485953" duration="809000" />
       <workItem from="1473229347638" duration="1768000" />
       <workItem from="1474625413527" duration="2126000" />
-      <workItem from="1475748081101" duration="516000" />
+      <workItem from="1475748081101" duration="3550000" />
+      <workItem from="1476280105497" duration="599000" />
+      <workItem from="1476348447061" duration="7091000" />
+      <workItem from="1476446061233" duration="599000" />
+      <workItem from="1476662282536" duration="597000" />
+      <workItem from="1477059772953" duration="1273000" />
+      <workItem from="1486409943708" duration="12537000" />
+      <workItem from="1486423903895" duration="2575000" />
+      <workItem from="1486455628149" duration="7327000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1441194958326</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Singleton, Object, Reload, String">
+      <created>1475748637721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1475748637721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27678000" />
+    <option name="totallyTimeSpent" value="63310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33582088" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41883117" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.49333334" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263506" sideWeight="0.50666666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1945629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33296582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40584415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40584415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -827,7 +1046,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Parent Call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parent Call" />
+    <MESSAGE value="Singleton, Object, Reload, String" />
+    <option name="LAST_COMMIT_MESSAGE" value="Singleton, Object, Reload, String" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -843,9 +1063,17 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="52" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="FlashRunConfigurationType">
+        <watch expression="1-Math.pow(lenghtFromCenter,2)" />
+        <watch expression="Math.pow(length/2,2)" />
+        <watch expression="1-Math.pow(lenghtFromCenter,2)/Math.pow(length/2,2)" />
+        <watch expression="Math.sqrt(1-Math.pow(lenghtFromCenter,2)/Math.pow(length/2,2))" />
+        <watch expression="Math.pow(lenghtFromCenter,2)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -858,338 +1086,156 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_ParentCall.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ParentCallChild.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Response.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_InternalClass.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ParentCall.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ParentCallChild.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/Test_ExternalInterface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/ExtInt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Button.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TraceLimit.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/Test_ExternalInterface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/ExtInt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/Test_ExternalInterface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/Test_ExternalInterface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Close.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#55#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Close.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#55#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html-template/index.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52577317">
-          <caret line="48" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Button.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TraceLimit.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.444445">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/DataObject.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/UtilFunctions.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Clone.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ParentCallChild.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ParentCall.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Response.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_InternalClass.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/Test_ExternalInterface.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9285715">
+        <state relative-caret-position="0">
           <caret line="33" column="58" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="jar://A:/Dropbox/SDK/Flex 4.6 + Air18/frameworks/libs/player/18.0/playerglobal.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
+        <state relative-caret-position="0">
           <caret line="1781" column="38" selection-start-line="1781" selection-start-column="38" selection-end-line="1781" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/ExtInt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Object.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="136">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Patterns/Test_Singleton.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="221">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Time.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Reload.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Tween.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transitions/Tweener.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_TweenLite.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_String.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
@@ -1198,47 +1244,247 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Patterns/Singleton.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_Circles.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="136">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="34" />
           <folding>
-            <element signature="e#20#51#0" expanded="false" />
+            <element signature="e#57#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Time.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_String.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_Ellipse.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#11#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Reload.as">
+    <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse2.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4301676">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="544">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
-            <element signature="e#57#85#0" expanded="true" />
+            <element signature="e#57#84#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fl/motion/MatrixTransformer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BitmapDataExample.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnergyUserIcon.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap25.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/data/types/ScaleBitmap9.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex01/view/MainViewBase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/com/theory9/ex02/view/MainViewBase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scale25/src/org/bytearray/display/ScaleBitmap.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_BitmapData.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_BitmapDraw.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Bitmap/merge.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Bitmap/merge2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Context3D.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Dependency.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Interview.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_LocalGlobal.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_RotationPoint.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_copPixels.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alts/AltWindowBase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alts/AltWindowParameters.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/FractalGeometryGenerator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/PerspectiveMatrix3D.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1529,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>4.6.0</last-edited>
+          <last-edited>Flex 4.6 + Air18</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1295,7 +1541,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Tooltips</last-edited>
+          <last-edited>Test|Tooltips</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
