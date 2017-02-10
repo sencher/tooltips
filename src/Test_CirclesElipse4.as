@@ -23,8 +23,8 @@ package
 		
 	private var ELLIPSE_X:Number = 500;
 	private var ELLIPSE_Y:Number = 500;
-	private var ELLIPSE_WIDTH:Number = 80;
-	private var ELLIPSE_HEIGHT:Number = 60;
+	private var ELLIPSE_WIDTH:Number = 1000;
+	private var ELLIPSE_HEIGHT:Number = 150;
 	private var ELLIPSE_ROTATION:Number = 4550;
 		
 	private var curRotation:Number = 0;
@@ -38,19 +38,19 @@ package
 			tf.width = tf.height = 1000;
 			addChild(tf);
 			
-			ELLIPSE_X = Math.random()*1000;
-			ELLIPSE_Y = Math.random()*1000;
-			ELLIPSE_WIDTH = Math.random()*1000;
-			ELLIPSE_HEIGHT = Math.random()*1000;
-			ELLIPSE_ROTATION = Math.random()*360;
+//			ELLIPSE_X = Math.random()*1000;
+//			ELLIPSE_Y = Math.random()*1000;
+//			ELLIPSE_WIDTH = Math.random()*1000;
+//			ELLIPSE_HEIGHT = Math.random()*1000;
+//			ELLIPSE_ROTATION = Math.random()*360;
 			
-//			var debug:String ="587.4927979893982 600.4301062785089 419.62395515292883 534.6810068003833 24.36956369318068";
+//			var debug:String ="421.4574797078967 234.8647005856037 756.6431704908609 389.9144730530679 252.04937115311623";
 //			var debArray:Array = debug.split(" ");
-//			X1 = debArray[0];
-//			Y1 = debArray[1];
-//			X2 = debArray[2];
-//			Y2 = debArray[3];
-//			RADIUS = debArray[4];
+//			ELLIPSE_X = debArray[0];
+//			ELLIPSE_Y = debArray[1];
+//			ELLIPSE_WIDTH = debArray[2];
+//			ELLIPSE_HEIGHT = debArray[3];
+//			ELLIPSE_ROTATION = debArray[4];
 			
 			tf.appendText("\n " + ELLIPSE_X +" "+ELLIPSE_Y +" "+ELLIPSE_WIDTH +" "+ELLIPSE_HEIGHT +" "+ELLIPSE_ROTATION);
 			tf.width = tf.height = 1000;
@@ -63,18 +63,16 @@ package
 			if(ELLIPSE_HEIGHT >= ELLIPSE_WIDTH){
 				halfLength = ELLIPSE_HEIGHT / 2;
 				width = ELLIPSE_WIDTH;
-				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, 12);
+				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, 6);
 				drawLine(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, ELLIPSE_ROTATION);
 			}else{
 				halfLength = ELLIPSE_WIDTH /2 ;
 				width = ELLIPSE_HEIGHT;
-				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, 33);
+				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, 6);
 				drawLine(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, ELLIPSE_ROTATION);
 			}
 			
-			//drawLine(-ELLIPSE_HEIGHT/2,ELLIPSE_Y,ELLIPSE_HEIGHT/2,ELLIPSE_Y);
-			drawEllipse(ELLIPSE_X,ELLIPSE_Y,ELLIPSE_WIDTH,ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
-			
+			drawEllipse(ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
 			addEventListener(MouseEvent.CLICK, onClick)
 		}
@@ -140,7 +138,7 @@ package
 			return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
 		}
 		
-		private function generateCircles(x1:Number, y1:Number, x2:Number, y2:Number, radius:Number, angle:int, density:int):void {
+		private function generateCircles(x1:Number, y1:Number, x2:Number, y2:Number, radius:Number, angle:Number, density:int):void {
 			var dx:Number = x2 - x1;
 			var dy:Number = y2 - y1;
 			var centerX:Number = (x1 + x2)/2;
@@ -159,21 +157,21 @@ package
 			
 			for(var i:Number = 1; i<steps; i++){
 				if (x1==x2){
-					curY = y1 +i*(y2-y1)/steps;
-					curX = (y2*x1-y1*x2-(x1-x2)*curY)/(y2-y1);
+					curY = y1 + i * dy / steps;
+					curX = (y2 * x1 - y1 * x2 - (x1 - x2) * curY) / dy;
 				}else{
-					curX = x1 +i*(x2-x1)/steps;
-					curY = (x2*y1-x1*y2-(y1-y2)*curX)/(x2-x1);
+					curX = x1 + i * dx / steps;
+					curY = (x2 * y1 - x1 * y2 - (y1 - y2) * curX) / dx;
 				}
 
 				
 				lenghtFromCenter = getLength(curX,curY,centerX,centerY);
 				curR = Math.sqrt(1-Math.pow(lenghtFromCenter,2)/Math.pow(length/2,2))*radius;
 				
-				if (curR<(length/2-lenghtFromCenter))
-					drawCircle(curX-centerX,curY-centerY,curR);
-				else
+				if (curR>(length/2-lenghtFromCenter))
 					curR=(length/2-lenghtFromCenter);
+					
+				drawCircle(curX-centerX,curY-centerY,curR);
 			}
 		}
 	}

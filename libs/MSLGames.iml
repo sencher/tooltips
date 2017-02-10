@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Main">
+    <configurations>
+      <configuration name="Main" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="18.0">
+          <entries>
+            <entry library-id="ce5a9d8d-6f9f-4e92-a73d-8f09fddb0d48">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="Flex 4.6 + Air18" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.locale" value="" />
+          </map>
+          <option name="additionalOptions" value="-allow-source-path-overlap=true -incremental=true -static-link-runtime-shared-libraries=true -default-frame-rate=30 -swf-version=15 -target-player=11.2 -default-size 1366 768" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Flex 4.6 + Air18" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="ce5a9d8d-6f9f-4e92-a73d-8f09fddb0d48" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
