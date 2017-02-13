@@ -3,11 +3,8 @@
  */
 package
 {
-	import com.junkbyte.console.Cc;
-	
 	import flash.display.Shape;
 	import flash.display.Sprite;
-	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
@@ -27,9 +24,9 @@ package
 		
 	private var ELLIPSE_X:Number = 500;
 	private var ELLIPSE_Y:Number = 500;
-	private var ELLIPSE_WIDTH:Number = 100;
+	private var ELLIPSE_WIDTH:Number = 300;
 	private var ELLIPSE_HEIGHT:Number = 500;
-	private var ELLIPSE_ROTATION:Number = 0;
+	private var ELLIPSE_ROTATION:Number = 45;
 	private var ELLIPSE_DENSITY:Number = 6;
 		
 	private var curRotation:Number = 0;
@@ -68,28 +65,29 @@ package
 				halfLength = ELLIPSE_HEIGHT / 2;
 				width = ELLIPSE_WIDTH;
 				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
-				generateBoxes(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
+//				generateBoxes(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
 				drawLine(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, ELLIPSE_ROTATION);
 			}else{
 				halfLength = ELLIPSE_WIDTH /2 ;
 				width = ELLIPSE_HEIGHT;
 				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
-				generateBoxes(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
+//				generateBoxes(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
 				drawLine(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, ELLIPSE_ROTATION);
 			}
 			
+			generateBoxes(0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
 			drawEllipse(ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
 			stage.addEventListener(MouseEvent.CLICK, onClick);
-//			stage.addEventListener(MouseEvent.MOUSE_MOVE, onClick);
+			stage.addEventListener(MouseEvent.MOUSE_MOVE, onClick);
 			
 			//trace(isPointInEllipse(point.x,point.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0));
 			
-//			for (var dx:int = 345; dx < 760; dx++){
-//				for (var dy:int = 440; dy < 460; dy++){
-//					checkInsideAndDraw(dx,dy);
-//				}
-//			}
+			for (var dx:int = 345; dx < 760; dx++){
+				for (var dy:int = 440; dy < 460; dy++){
+					checkInsideAndDraw(dx,dy);
+				}
+			}
 			
 		}
 		
@@ -138,7 +136,7 @@ package
 		}
 		
 		private function checkInsideAndDraw(x:Number, y:Number):void{
-			var inside:Boolean = isPointInEllipse(x, y);
+			var inside:Boolean = isPointInEllipse(x, y,ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION );
 			//trace(x,y,inside);
 			drawPoint(x,y,inside);
 		}
@@ -214,20 +212,17 @@ package
 			}
 		}
 		
-		private function isPointInEllipse(xp:Number, yp:Number):Boolean{
-			
-//			var x = ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION
-			
+		private function isPointInEllipse(xp:Number, yp:Number, x:Number, y:Number, w:Number, h:Number, angle:Number):Boolean{
 			//var aaa = Math.pow(Math.cos(angle)*(xp-x) + Math.sin(angle)*(yp-y),2)/Math.pow(h,2) + Math.pow(Math.sin(angle)*(xp-x) - Math.cos(angle)*(yp-y),2)/Math.pow(w,2);
 //			var bbb = Math.pow(Math.cos(angle)*(xp-x) + Math.sin(deg2rad(angle))*(yp-y),2)/Math.pow(w/2,2) + Math.pow(Math.sin(angle)*(xp-x) - Math.cos(angle)*(yp-y),2)/Math.pow(h/2,2);
 			
-			var cosA:Number = Math.cos(deg2rad(ELLIPSE_ROTATION));
-			var sinA:Number = Math.sin(deg2rad(ELLIPSE_ROTATION));
-			var dd:Number = ELLIPSE_WIDTH/2*ELLIPSE_WIDTH/2;
-			var DD:Number = ELLIPSE_HEIGHT/2*ELLIPSE_HEIGHT/2;
+			var cosA:Number = Math.cos(deg2rad(angle));
+			var sinA:Number = Math.sin(deg2rad(angle));
+			var dd:Number = w/2*w/2;
+			var DD:Number = h/2*h/2;
 			
-			var a:Number = Math.pow(cosA*(xp-ELLIPSE_X)+sinA*(yp-ELLIPSE_Y),2);
-			var b:Number = Math.pow(sinA*(xp-ELLIPSE_X)-cosA*(yp-ELLIPSE_Y),2);
+			var a:Number = Math.pow(cosA*(xp-x)+sinA*(yp-y),2);
+			var b:Number = Math.pow(sinA*(xp-x)-cosA*(yp-y),2);
 			var ellipse:Number = (a/dd)+(b/DD);
 			
 //			trace(aaa<= 1,bbb<= 1,ellipse<= 1)
@@ -237,30 +232,115 @@ package
 				return false;
 		}
 		
-		private var boxSize:Number = 50;
+		private var boxSizeX:Number = 50;
+		private var boxSizeY:Number = 50;
 		
-		private function generateBoxes(x:Number, y:Number, w:Number, h:Number, radius:Number, angle:Number, density:int):void
+		private function generateBoxes(x:Number, y:Number, w:Number, h:Number, angle:Number, density:Number):void
 		{
-//			drawBox(10,10,50,50,45)
-			var r:flash.geom.Rectangle = new flash.geom.Rectangle(0,0,boxSize,boxSize);
-			checkInEllipse(r);
-			drawBox(0,0,50,50,0);
-			drawBox(0,0,50,50,45);
+//			var angle:Number = 45;
+//			var r:Rectangle = new flash.geom.Rectangle(0,0,boxSize,boxSize);
+//			checkInEllipse(r,angle);
+//			drawBox(r.x,r.y,r.width,r.height,angle)
+			var xMax:Number = x + w/2 - boxSizeX/2;
+			var yMax:Number = y + h/2 - boxSizeY/2;
+			var counter:int = 0;
+			
+//			var p1:Point = getRotatedPoint2(-1,-1,90,1,1);
+//			var p2:Point = getRotatedPoint2(1,-1,90,1,1);
+//			var p3:Point = getRotatedPoint2(1,1,90,1,1);
+//			var p4:Point = getRotatedPoint2(-1,1,90,1,1);
+		
+//			for (var i:int = 0; i<1;i++){
+			while (counter < 50 ){
+				var r:Rectangle = new flash.geom.Rectangle(getRandom(-xMax,xMax),getRandom(-yMax,yMax),boxSizeX,boxSizeY);
+				//var r:Rectangle = new flash.geom.Rectangle(27,173,boxSizeX,boxSizeY);
+				var a:Number = getRandom(0,360);
+				if(checkInEllipse(r, a)) {
+					drawBox(r.x, r.y, r.width, r.height, a, 0x000099);
+					counter++;
+				}else {
+					drawBox(r.x, r.y, r.width, r.height, a, 0x990000);
+					//counter++;
+				}
+			}
 		}
 		
-		private function checkInEllipse(r:Rectangle):Boolean
-		{
-			trace(isPointInEllipse(r.x,r.y));
-			return false;
+		private function getRandom(min:int, max:int):int{
+			return Math.floor(Math.random() * (max + 1 - min)) + min;
 		}
 		
-		private function drawBox(x:Number, y:Number, w:Number, h:Number, angle:Number):void
+		private function checkInEllipse(r:Rectangle, angle:int):Boolean
 		{
+			trace("checkInEllipse",arguments)
+			var x = r.x - r.width/2;
+			var y = r.y - r.height/2;
+			
+			var topLeft:Point = getRotatedPoint2(x,y,angle,r.x,r.y);
+			var topRight:Point = getRotatedPoint2(x+r.width,y,angle,r.x,r.y);
+			var bottomRight:Point = getRotatedPoint2(x+r.width,y+r.height,angle,r.x,r.y);
+			var bottomLeft:Point = getRotatedPoint2(x,y+r.height,angle,r.x,r.y);
+			
+//			var s:Shape = new Shape();
+//			s.graphics.lineStyle(2, 0x000099, .75);
+//			s.graphics.moveTo(topLeft.x,topLeft.y);
+//			s.graphics.lineTo(topRight.x,topRight.y);
+//			s.graphics.lineTo(bottomRight.x,bottomRight.y);
+//			s.graphics.lineTo(bottomLeft.x,bottomLeft.y);
+//			s.graphics.lineTo(topLeft.x,topLeft.y);
+//			container.addChild(s);
+			
+			var tlInside:Boolean = isPointInEllipse(topLeft.x,topLeft.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0 );
+			var trInside:Boolean = isPointInEllipse(topRight.x,topRight.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0 );
+			var brInside:Boolean = isPointInEllipse(bottomRight.x, bottomRight.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0 );
+			var blInside:Boolean = isPointInEllipse(bottomLeft.x, bottomLeft.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0 );
+			trace("isPointInEllipse",tlInside,trInside,brInside, blInside);
+			return tlInside && trInside && brInside && blInside;
+		}
+		
+		private function getRotatedPoint2(x0:Number, y0:Number, angle:Number, xc:Number = 0, yc:Number = 0):Point{
+//			var xc = 0;
+//			var yc = 0;
+			var rx = x0 - xc;
+			var ry = y0 - yc;
+			var c = Math.cos(deg2rad(angle));
+			var s = Math.sin(deg2rad(angle));
+			var x1 = xc + rx * c - ry * s;
+			var y1 = yc + rx * s + ry * c;
+			return new Point(x1, y1);
+		}
+		
+		private function getRotatedPoint3(x0:Number, y0:Number, angle:Number):Point{
+			var xc = 0;
+			var yc = 0;
+			var R = getLength(x0,y0,xc,yc);
+			var ang : Number = Math.atan2(y0-yc,x0-xc);
+			ang += angle;
+			var x1 = Math.cos(ang) * R + xc;
+			var y1 = Math.sin(ang) * R + yc;
+			return new Point(x1, y1);
+		}
+		
+		private function getRotatedPoint(x:Number, y:Number, angle:Number):Point{
+			trace("getRotatedPoint",arguments)
+			var cosA = Math.cos(deg2rad(angle));
+			var sinA = Math.sin(deg2rad(angle));
+			var xRotated:Number = x * cosA + y * sinA;
+			var yRotated:Number = x * sinA - y * cosA;
+			trace("getRotatedPoint return",xRotated,yRotated)
+			return new Point(xRotated, yRotated);
+		}
+		
+		private function drawBox(x:Number, y:Number, w:Number, h:Number, angle:Number, color:uint):void
+		{
+			trace("drawBox",arguments)
 			var box:Shape = new Shape();
-			box.graphics.lineStyle(1, 0x990000, .75);
-			box.graphics.beginFill(0x00FF00);
-			box.graphics.drawRect(x-w/2,y-h/2,w,h);
+			box.graphics.lineStyle(1, color, .75);
+//			box.graphics.beginFill(0x00FF00);
+			box.graphics.drawRect(-w/2,-h/2,w,h);
+			box.x = x;
+			box.y = y;
 			box.rotation = angle;
+			
 			container.addChild(box);
 		}
 	}
