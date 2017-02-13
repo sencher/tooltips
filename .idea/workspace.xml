@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Test_CirclesElipse3.as" line="176" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as" line="27" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as" line="85" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as" line="216" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Starling draw converter">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_JsonToObject.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Random.as" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_CirclesElipse4.as" afterPath="$PROJECT_DIR$/src/Test_CirclesElipse4.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/starling/Game.as" afterPath="$PROJECT_DIR$/src/starling/Game.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,11 +79,21 @@
       <file leaf-file-name="Test_CirclesElipse4.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="65" column="130" selection-start-line="65" selection-start-column="130" selection-end-line="65" selection-end-column="130" />
+            <state relative-caret-position="362">
+              <caret line="251" column="9" selection-start-line="251" selection-start-column="9" selection-end-line="251" selection-end-column="9" />
               <folding>
                 <element signature="e#57#88#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
+        <entry file="jar://A:/Dropbox/SDK/Flex 4.6 + Air18/frameworks/libs/player/18.0/playerglobal.swc!/library.swf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="2720" column="34" selection-start-line="2720" selection-start-column="34" selection-end-line="2720" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -198,7 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,34 +216,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tooltips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tooltips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -835,7 +820,8 @@
       <workItem from="1486566776494" duration="20535000" />
       <workItem from="1486662942164" duration="2615000" />
       <workItem from="1486667443157" duration="1496000" />
-      <workItem from="1486719583508" duration="1608000" />
+      <workItem from="1486719583508" duration="2966000" />
+      <workItem from="1486946381684" duration="7380000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -872,11 +858,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486583050332</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Circles moded, Random, Json, +libs">
+      <created>1486730952852</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486730952852</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102620000" />
+    <option name="totallyTimeSpent" value="111358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -884,28 +877,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33152762" sideWeight="0.1977612" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263506" sideWeight="0.50666666" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.20941402" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24466951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5154584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.790586" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152762" sideWeight="0.8022388" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -925,7 +918,8 @@
     <MESSAGE value="Circle, Ellipse" />
     <MESSAGE value="Circles in Ellipse" />
     <MESSAGE value="Starling draw converter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starling draw converter" />
+    <MESSAGE value="Circles moded, Random, Json, +libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circles moded, Random, Json, +libs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,7 +940,7 @@
           <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="92" />
+      <option name="time" value="102" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1290,13 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://A:/Dropbox/SDK/Flex 4.6 + Air18/frameworks/libs/player/18.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="2139" column="13" selection-start-line="2139" selection-start-column="13" selection-end-line="2139" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/starling/Game.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1325,10 +1312,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://A:/Dropbox/SDK/Flex 4.6 + Air18/frameworks/libs/player/18.0/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="2720" column="34" selection-start-line="2720" selection-start-column="34" selection-end-line="2720" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="65" column="130" selection-start-line="65" selection-start-column="130" selection-end-line="65" selection-end-column="130" />
+        <state relative-caret-position="362">
+          <caret line="251" column="9" selection-start-line="251" selection-start-column="9" selection-end-line="251" selection-end-column="9" />
           <folding>
             <element signature="e#57#88#0" expanded="true" />
           </folding>

@@ -9,7 +9,11 @@ package
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.geom.Point;
+	import flash.geom.Rectangle;
 	import flash.text.TextField;
+	
+	import starling.utils.deg2rad;
 	
 	[SWF(width=1200,height=1000)]
 	public class Test_CirclesElipse4 extends Sprite
@@ -23,9 +27,10 @@ package
 		
 	private var ELLIPSE_X:Number = 500;
 	private var ELLIPSE_Y:Number = 500;
-	private var ELLIPSE_WIDTH:Number = 1000;
-	private var ELLIPSE_HEIGHT:Number = 150;
-	private var ELLIPSE_ROTATION:Number = 4550;
+	private var ELLIPSE_WIDTH:Number = 100;
+	private var ELLIPSE_HEIGHT:Number = 500;
+	private var ELLIPSE_ROTATION:Number = 0;
+	private var ELLIPSE_DENSITY:Number = 6;
 		
 	private var curRotation:Number = 0;
 	private var container:Sprite = new Sprite();
@@ -35,7 +40,8 @@ package
 		{
 //			Cc.start(this);
 //			Cc.visible = true;
-			tf.width = tf.height = 1000;
+			tf.height = 1000;
+			tf.width = 200;
 			addChild(tf);
 			
 //			ELLIPSE_X = Math.random()*1000;
@@ -53,8 +59,6 @@ package
 //			ELLIPSE_ROTATION = debArray[4];
 			
 			tf.appendText("\n " + ELLIPSE_X +" "+ELLIPSE_Y +" "+ELLIPSE_WIDTH +" "+ELLIPSE_HEIGHT +" "+ELLIPSE_ROTATION);
-			tf.width = tf.height = 1000;
-			addChild(tf);
 			addChild(container);
 			
 			
@@ -63,18 +67,39 @@ package
 			if(ELLIPSE_HEIGHT >= ELLIPSE_WIDTH){
 				halfLength = ELLIPSE_HEIGHT / 2;
 				width = ELLIPSE_WIDTH;
-				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, 6);
+				generateCircles(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
+				generateBoxes(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
 				drawLine(ELLIPSE_X, ELLIPSE_Y - halfLength, ELLIPSE_X, ELLIPSE_Y + halfLength, ELLIPSE_ROTATION);
 			}else{
 				halfLength = ELLIPSE_WIDTH /2 ;
 				width = ELLIPSE_HEIGHT;
-				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, 6);
+				generateCircles(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
+				generateBoxes(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, width/2, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
 				drawLine(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, ELLIPSE_ROTATION);
 			}
 			
 			drawEllipse(ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
-			addEventListener(MouseEvent.CLICK, onClick)
+			stage.addEventListener(MouseEvent.CLICK, onClick);
+//			stage.addEventListener(MouseEvent.MOUSE_MOVE, onClick);
+			
+			//trace(isPointInEllipse(point.x,point.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0));
+			
+//			for (var dx:int = 345; dx < 760; dx++){
+//				for (var dy:int = 440; dy < 460; dy++){
+//					checkInsideAndDraw(dx,dy);
+//				}
+//			}
+			
+		}
+		
+		private function drawPoint(x:Number, y:Number, inside:Boolean):void{
+			var pointView:Shape = new Shape();
+//			pointView.graphics.lineStyle(3,0x00ff00);
+			pointView.graphics.beginFill(inside ? 0x0000FF : 0xFF0000);
+			pointView.graphics.drawRect(x,y,1,1);
+			pointView.graphics.endFill();
+			addChild(pointView);
 		}
 		
 		private var ellipse:Shape;
@@ -93,15 +118,29 @@ package
 //			addEventListener(MouseEvent.CLICK, onClick)
 		}
 		
-		private function onClick(event:Event):void
+		private function onClick(event:MouseEvent):void
 		{
-			line.rotation +=10;
-			ellipse.rotation += 10;
-			container.rotation += 10;
+//			trace(event.stageX, event.stageY);
+//			var inside:Boolean =isPointInEllipse(event.stageX, event.stageY,ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION );
+//			trace(inside)
+//			drawPoint(event.stageX, event.stageY, inside);
+			
+			checkInsideAndDraw(event.stageX, event.stageY);
+			
+//			line.rotation +=10;
+//			ellipse.rotation += 10;
+//			container.rotation += 10;
+			
 //			curRotation += 10;
 //			removeChild(ellipse);
 //			//ellipse.rotation += 7;
 //			drawEllipse(ellipse.x, ellipse.y,  ELLIPSE_WIDTH, ELLIPSE_HEIGHT, curRotation)
+		}
+		
+		private function checkInsideAndDraw(x:Number, y:Number):void{
+			var inside:Boolean = isPointInEllipse(x, y);
+			//trace(x,y,inside);
+			drawPoint(x,y,inside);
 		}
 		
 		private var line:Shape = new Shape();
@@ -173,6 +212,56 @@ package
 					
 				drawCircle(curX-centerX,curY-centerY,curR);
 			}
+		}
+		
+		private function isPointInEllipse(xp:Number, yp:Number):Boolean{
+			
+//			var x = ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION
+			
+			//var aaa = Math.pow(Math.cos(angle)*(xp-x) + Math.sin(angle)*(yp-y),2)/Math.pow(h,2) + Math.pow(Math.sin(angle)*(xp-x) - Math.cos(angle)*(yp-y),2)/Math.pow(w,2);
+//			var bbb = Math.pow(Math.cos(angle)*(xp-x) + Math.sin(deg2rad(angle))*(yp-y),2)/Math.pow(w/2,2) + Math.pow(Math.sin(angle)*(xp-x) - Math.cos(angle)*(yp-y),2)/Math.pow(h/2,2);
+			
+			var cosA:Number = Math.cos(deg2rad(ELLIPSE_ROTATION));
+			var sinA:Number = Math.sin(deg2rad(ELLIPSE_ROTATION));
+			var dd:Number = ELLIPSE_WIDTH/2*ELLIPSE_WIDTH/2;
+			var DD:Number = ELLIPSE_HEIGHT/2*ELLIPSE_HEIGHT/2;
+			
+			var a:Number = Math.pow(cosA*(xp-ELLIPSE_X)+sinA*(yp-ELLIPSE_Y),2);
+			var b:Number = Math.pow(sinA*(xp-ELLIPSE_X)-cosA*(yp-ELLIPSE_Y),2);
+			var ellipse:Number = (a/dd)+(b/DD);
+			
+//			trace(aaa<= 1,bbb<= 1,ellipse<= 1)
+			if (ellipse <= 1)
+				return true;
+			else
+				return false;
+		}
+		
+		private var boxSize:Number = 50;
+		
+		private function generateBoxes(x:Number, y:Number, w:Number, h:Number, radius:Number, angle:Number, density:int):void
+		{
+//			drawBox(10,10,50,50,45)
+			var r:flash.geom.Rectangle = new flash.geom.Rectangle(0,0,boxSize,boxSize);
+			checkInEllipse(r);
+			drawBox(0,0,50,50,0);
+			drawBox(0,0,50,50,45);
+		}
+		
+		private function checkInEllipse(r:Rectangle):Boolean
+		{
+			trace(isPointInEllipse(r.x,r.y));
+			return false;
+		}
+		
+		private function drawBox(x:Number, y:Number, w:Number, h:Number, angle:Number):void
+		{
+			var box:Shape = new Shape();
+			box.graphics.lineStyle(1, 0x990000, .75);
+			box.graphics.beginFill(0x00FF00);
+			box.graphics.drawRect(x-w/2,y-h/2,w,h);
+			box.rotation = angle;
+			container.addChild(box);
 		}
 	}
 }
