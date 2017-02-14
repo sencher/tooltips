@@ -75,7 +75,7 @@ package
 				drawLine(ELLIPSE_X - halfLength, ELLIPSE_Y, ELLIPSE_X + halfLength, ELLIPSE_Y, ELLIPSE_ROTATION);
 			}
 			
-			generateBoxes(0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION, ELLIPSE_DENSITY);
+			generateBoxes(0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_DENSITY);
 			drawEllipse(ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION);
 			
 			stage.addEventListener(MouseEvent.CLICK, onClick);
@@ -83,8 +83,8 @@ package
 			
 			//trace(isPointInEllipse(point.x,point.y,0, 0, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, 0));
 			
-			for (var dx:int = 345; dx < 760; dx++){
-				for (var dy:int = 440; dy < 460; dy++){
+			for (var dx:int = 0; dx < 1000; dx+=10){
+				for (var dy:int = 0; dy < 400; dy+=10){
 					checkInsideAndDraw(dx,dy);
 				}
 			}
@@ -95,7 +95,7 @@ package
 			var pointView:Shape = new Shape();
 //			pointView.graphics.lineStyle(3,0x00ff00);
 			pointView.graphics.beginFill(inside ? 0x0000FF : 0xFF0000);
-			pointView.graphics.drawRect(x,y,1,1);
+			pointView.graphics.drawRect(x,y,10,10);
 			pointView.graphics.endFill();
 			addChild(pointView);
 		}
@@ -137,8 +137,9 @@ package
 		
 		private function checkInsideAndDraw(x:Number, y:Number):void{
 			var inside:Boolean = isPointInEllipse(x, y,ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION );
-			//trace(x,y,inside);
-			drawPoint(x,y,inside);
+			var inside2:Boolean = isPointInEllipseJava(x, y,ELLIPSE_X, ELLIPSE_Y, ELLIPSE_WIDTH, ELLIPSE_HEIGHT, ELLIPSE_ROTATION );
+			trace(x,y,inside,inside2);
+			drawPoint(x,y,inside2);
 		}
 		
 		private var line:Shape = new Shape();
@@ -232,30 +233,33 @@ package
 				return false;
 		}
 		
+		private function isPointInEllipseJava(x:Number, y:Number, xc:Number, yc:Number, w:Number, h:Number, angle:Number):Boolean{
+			var cosA = Math.cos(deg2rad(angle));
+			var sinA = Math.sin(deg2rad(angle));
+			var firstPart = Math.pow(cosA*(x-xc) + sinA*(y-yc), 2.0)/Math.pow(w/2, 2.0);
+			var secondPart = Math.pow(sinA*(x-xc) - cosA*(y-yc), 2.0)/Math.pow(h/2, 2.0);
+			var result = firstPart + secondPart;
+			if (result <= 1) {
+				return true;
+			}
+			return false;
+		}
+		
 		private var boxSizeX:Number = 50;
 		private var boxSizeY:Number = 50;
 		
-		private function generateBoxes(x:Number, y:Number, w:Number, h:Number, angle:Number, density:Number):void
+		private function generateBoxes(x:Number, y:Number, w:Number, h:Number, density:Number):void
 		{
-//			var angle:Number = 45;
-//			var r:Rectangle = new flash.geom.Rectangle(0,0,boxSize,boxSize);
-//			checkInEllipse(r,angle);
-//			drawBox(r.x,r.y,r.width,r.height,angle)
+			density = 100;
 			var xMax:Number = x + w/2 - boxSizeX/2;
 			var yMax:Number = y + h/2 - boxSizeY/2;
 			var counter:int = 0;
 			
-//			var p1:Point = getRotatedPoint2(-1,-1,90,1,1);
-//			var p2:Point = getRotatedPoint2(1,-1,90,1,1);
-//			var p3:Point = getRotatedPoint2(1,1,90,1,1);
-//			var p4:Point = getRotatedPoint2(-1,1,90,1,1);
-		
-//			for (var i:int = 0; i<1;i++){
-			while (counter < 50 ){
+			while (counter < density ){
 				var r:Rectangle = new flash.geom.Rectangle(getRandom(-xMax,xMax),getRandom(-yMax,yMax),boxSizeX,boxSizeY);
 				//var r:Rectangle = new flash.geom.Rectangle(27,173,boxSizeX,boxSizeY);
 				var a:Number = getRandom(0,360);
-				if(checkInEllipse(r, a)) {
+				if(isRectangleInEllipse(r, a)) {
 					drawBox(r.x, r.y, r.width, r.height, a, 0x000099);
 					counter++;
 				}else {
@@ -269,7 +273,7 @@ package
 			return Math.floor(Math.random() * (max + 1 - min)) + min;
 		}
 		
-		private function checkInEllipse(r:Rectangle, angle:int):Boolean
+		private function isRectangleInEllipse(r:Rectangle, angle:int):Boolean
 		{
 			trace("checkInEllipse",arguments)
 			var x = r.x - r.width/2;

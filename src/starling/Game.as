@@ -9,20 +9,58 @@ package starling
     import flash.geom.Rectangle;
     
     import starling.display.Image;
-    import starling.display.Sprite;
-    import starling.text.TextField;
+	import starling.display.Mesh;
+	import starling.display.MovieClip;
+	import starling.display.Quad;
+	import starling.display.Sprite;
+	import starling.rendering.VertexData;
+	import starling.text.TextField;
     import starling.textures.Texture;
-    import starling.utils.deg2rad;
+	import starling.textures.TextureAtlas;
+	import starling.utils.deg2rad;
     
     public class Game extends Sprite
     {
         private var fStage:Stage;
         private var gen:Sprite;
         private var shape:Shape = new Shape();
-        
+		
+		[Embed(source="../../atf/meteor.png")]
+		private var textureAtfFile:Class;
+	
+		[Embed(source="../../atf/effect_areas_asteroids.xml", mimeType="application/octet-stream")]
+		public static const AtlasXml:Class;
+	
+		[Embed(source="../../atf/effect_areas_asteroids.png")]
+		public static const AtlasTexture:Class;
+	
+		private var im:Image;
         
         public function Game()
         {
+			
+			var q = new Quad(256,256,0x007777);
+			addChild(q);
+			
+			var bgTexture:Texture = Texture.fromEmbeddedAsset(textureAtfFile);
+			//var subTexture:Texture = Texture.fromTexture(
+			//		bgTexture, new Rectangle(10, 10, 170, 150));
+			im = new Image(bgTexture);
+			addChild(im);
+			
+			doAdjustments(q);
+			doAdjustments(im);
+	
+			var texture:Texture = Texture.fromEmbeddedAsset(AtlasTexture);
+			var xml:XML = XML(new AtlasXml());
+			var atlas:TextureAtlas = new TextureAtlas(texture, xml);
+	
+			var moonTexture:Texture = atlas.getTexture("Meteor_1_0000.png");
+			var moonImage:Image = new Image(moonTexture);
+			addChild(moonImage);
+			
+//			var mc:MovieClip = new MovieClip(new )
+			
             fStage = Startup.flashStage;
             var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
             addChild(textField);
@@ -63,6 +101,12 @@ package starling
             addChild(gen);
             fStage.addEventListener(MouseEvent.CLICK, onClick)
         }
+		
+		private function doAdjustments(d:starling.display.DisplayObject):void{
+			d.x = d.y = 200;
+			d.alignPivot();
+			//d.rotation = deg2rad(45);
+		}
     
         private function onClick(event:MouseEvent):void
         {

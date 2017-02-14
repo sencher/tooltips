@@ -1,0 +1,32 @@
+<TextureAtlas imagePath="effect_areas_asteroids.png">
+	<SubTexture name="Meteor_1_0000.png" x="400" y="342" width="125" height="116"/>
+	<SubTexture name="Meteor_1_0001.png" x="653" y="112" width="122" height="114"/>
+	<SubTexture name="Meteor_1_0002.png" x="776" y="334" width="118" height="109"/>
+	<SubTexture name="Meteor_1_0003.png" x="777" y="107" width="114" height="107"/>
+	<SubTexture name="Meteor_1_0004.png" x="897" y="0" width="112" height="105"/>
+	<SubTexture name="Meteor_1_0005.png" x="896" y="213" width="111" height="104"/>
+	<SubTexture name="Meteor_1_0006.png" x="653" y="228" width="112" height="102"/>
+	<SubTexture name="Meteor_1_0007.png" x="893" y="107" width="114" height="104"/>
+	<SubTexture name="Meteor_1_0008.png" x="776" y="228" width="118" height="104"/>
+	<SubTexture name="Meteor_1_0009.png" x="774" y="0" width="121" height="105"/>
+	<SubTexture name="Meteor_1_0010.png" x="649" y="0" width="123" height="110"/>
+	<SubTexture name="Meteor_1_0011.png" x="527" y="218" width="124" height="113"/>
+	<SubTexture name="Meteor_1_0012.png" x="396" y="99" width="125" height="117"/>
+	<SubTexture name="Meteor_1_0013.png" x="273" y="358" width="125" height="121"/>
+	<SubTexture name="Meteor_1_0014.png" x="400" y="218" width="125" height="122"/>
+	<SubTexture name="Meteor_1_0015.png" x="273" y="236" width="125" height="120"/>
+	<SubTexture name="Meteor_1_0016.png" x="527" y="333" width="123" height="117"/>
+	<SubTexture name="Meteor_1_0017.png" x="652" y="333" width="122" height="114"/>
+	<SubTexture name="Meteor_1_0018.png" x="523" y="0" width="124" height="110"/>
+	<SubTexture name="Meteor_1_0019.png" x="523" y="112" width="124" height="104"/>
+	<SubTexture name="Meteor_1_0020.png" x="270" y="0" width="125" height="97"/>
+	<SubTexture name="Meteor_1_0021.png" x="138" y="215" width="129" height="95"/>
+	<SubTexture name="Meteor_1_0022.png" x="0" y="412" width="133" height="94"/>
+	<SubTexture name="Meteor_1_0023.png" x="0" y="316" width="135" height="94"/>
+	<SubTexture name="Meteor_1_0024.png" x="0" y="215" width="136" height="99"/>
+	<SubTexture name="Meteor_1_0025.png" x="0" y="0" width="137" height="103"/>
+	<SubTexture name="Meteor_1_0026.png" x="0" y="105" width="137" height="108"/>
+	<SubTexture name="Meteor_1_0027.png" x="137" y="316" width="134" height="113"/>
+	<SubTexture name="Meteor_1_0028.png" x="139" y="0" width="129" height="116"/>
+	<SubTexture name="Meteor_1_0029.png" x="269" y="118" width="125" height="116"/>
+</TextureAtlas>
