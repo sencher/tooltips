@@ -1,5 +1,8 @@
 package utils {
-    import flash.display.MovieClip;
+import com.adobe.serialization.json.JSON;
+import com.junkbyte.console.Cc;
+
+import flash.display.MovieClip;
     import flash.events.Event;
     import flash.utils.describeType;
 
@@ -59,6 +62,45 @@ package utils {
                 result[prop] = source[prop];
             }
             return result;
+        }
+
+
+        public static function whoCalledThis(depth:int = 1):String{
+            var e:Error = new Error();
+            var stackTrace:String = e.getStackTrace();
+            var lines:Array = stackTrace.split("\n\t");
+            var cut:Array = lines.slice(3, 3 + depth);
+            var s:String;
+            var r:String = "";
+            for each (s in cut) {
+                r += s + "\n";
+            }
+            r += "*************";
+            Cc.log(r);
+            return r;
+        }
+
+        public static function logJsonObject(value:*):void{
+            Cc.log(com.adobe.serialization.json.JSON.encode(value));
+        }
+
+        public static function logFuncNameAndArgs(args:*):void{
+            Utils.whoCalledThis();
+            var param:*;
+            for each (param in args){
+                Utils.logJsonObject(param);
+            }
+        }
+
+        public static function generateRandomString(len:Number):String{
+            var chars:String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var num_chars:Number = chars.length - 1;
+            var randomChar:String = "";
+
+            for (var i:Number = 0; i < len; i++){
+                randomChar += chars.charAt(Math.floor(Math.random() * num_chars));
+            }
+            return randomChar;
         }
     }
 }

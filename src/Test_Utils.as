@@ -4,8 +4,9 @@ package {
     import flash.display.Sprite;
 
     import utils.MovieClipUtils;
+import utils.Utils;
 
-    public class Test_Utils extends Sprite{
+public class Test_Utils extends Sprite{
         public function Test_Utils() {
             var mc1:MovieClip = new MovieClip();
             var mc2:MovieClip = new MovieClip();
@@ -41,6 +42,12 @@ package {
             trace(s, MovieClipUtils.findMovieClipsByName(mc1,s));
             var s:String = "5";
             trace(s, MovieClipUtils.findMovieClipsByName(mc1,s));
+
+
+            trace(Utils.generateRandomString(12));
+            trace(Utils.generateRandomString(3));
+            trace(Utils.generateRandomString(5));
+            trace(Utils.generateRandomString(7));
         }
     }
 }
