@@ -22,7 +22,7 @@
 * 3. This notice may not be removed or altered from any source distribution.
 * 
 */
-package com.junkbyte.console.core 
+package com.junkbyte.console.core
 {
 	import flash.utils.ByteArray;
 	import flash.utils.getQualifiedClassName;
@@ -32,25 +32,25 @@ package com.junkbyte.console.core
 
 	import flash.display.DisplayObjectContainer;
 	import flash.events.Event;
-	
+
 	/**
 	 * @private
 	 */
 	public class CommandLine extends ConsoleCore{
-		
+
 		private static const DISABLED:String = "<b>Advanced CommandLine is disabled.</b>\nEnable by setting `Cc.config.commandLineAllowed = true;´\nType <b>/commands</b> for permitted commands.";
-		
+
 		private static const RESERVED:Array = [Executer.RETURNED, "base", "C"];
-		
+
 		private var _saved:WeakObject;
-		
+
 		private var _scope:*;
 		private var _prevScope:WeakRef;
 		private var _scopeStr:String = "";
 		private var _slashCmds:Object;
-		
+
 		public var localCommands:Array = new Array("filter", "filterexp");
-		
+
 		public function CommandLine(m:Console) {
 			super(m);
 			_saved = new WeakObject();
@@ -58,7 +58,7 @@ package com.junkbyte.console.core
 			_slashCmds = new Object();
 			_prevScope = new WeakRef(m);
 			_saved.set("C", m);
-			
+
 			remoter.registerCallback("cmd", function(bytes:ByteArray):void{
 				run(bytes.readUTF());
 			});
@@ -67,7 +67,7 @@ package com.junkbyte.console.core
 			});
 			remoter.registerCallback("cls", handleScopeString);
 			remoter.addEventListener(Event.CONNECT, sendCmdScope2Remote);
-			
+
 			addCLCmd("help", printHelp, "How to use command line");
 			addCLCmd("save|store", saveCmd, "Save current scope as weak reference. (same as Cc.store(...))");
 			addCLCmd("savestrong|storestrong", saveStrongCmd, "Save current scope as strong reference");
@@ -81,7 +81,7 @@ package com.junkbyte.console.core
 			addCLCmd("autoscope", autoscopeCmd, "Toggle autoscoping.");
 			addCLCmd("base", baseCmd, "Return to base scope");
 			addCLCmd("/", prevCmd, "Return to previous scope");
-			
+
 		}
 		public function set base(obj:Object):void {
 			if (base) {
@@ -115,7 +115,7 @@ package com.junkbyte.console.core
 				report("ERROR: Give a name to save.",10);
 				return;
 			}
-			// if it is a function it needs to be strong reference atm, 
+			// if it is a function it needs to be strong reference atm,
 			// otherwise it fails if the function passed is from a dynamic class/instance
 			if(obj is Function) strong = true;
 			n = n.replace(/[^\w]*/g, "");
@@ -194,7 +194,7 @@ package com.junkbyte.console.core
 					str = str.substring(1);
 				}else if(str.search(new RegExp("\/"+localCommands.join("|\/"))) != 0){
 					report("Run command at remote: "+str,-2);
-					
+
 					var bytes:ByteArray = new ByteArray();
 					bytes.writeUTF(str);
 					if(!console.remoter.send("cmd", bytes)){
@@ -242,7 +242,7 @@ package com.junkbyte.console.core
 			}
 		}
 		private function execCommand(str:String):void{
-			var brk:int = str.search(/[^\w]/); 
+			var brk:int = str.search(/[^\w]/);
 			var cmd:String = str.substring(0, brk>0?brk:str.length);
 			if(cmd == ""){
 				setReturned(_saved.get(Executer.RETURNED), true);
@@ -265,11 +265,8 @@ package com.junkbyte.console.core
 							param = param.substring(0, endInd);
 						}
 					}
-					if(param.length == 0){
-						slashcmd.f();
-					} else {
-						slashcmd.f(param);
-					}
+					//TODO: Add Array as param
+					slashcmd.f.apply(null, param.split(" "));
 					if(restStr){
 						run(restStr);
 					}
