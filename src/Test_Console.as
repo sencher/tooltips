@@ -16,14 +16,14 @@ public class Test_Console extends Sprite {
         Cc.config.commandLineAllowed = true;
         Cc.addSlashCommand("test", returnArg)
         Cc.commandLine = true;
-        Cc.bindKey(new KeyBind(Keyboard.NUMBER_0), returnArg, [99]);
+        Cc.bindKey(new KeyBind(Keyboard.NUMBER_0), returnArg, [99,8]);
 
-        trace(returnArg(77))
+        trace(returnArg(77,1))
     }
 
-    public function returnArg(value:*):* {
-        Cc.log("returnArg called", arguments);
-        return value;
+    public function returnArg(value1:*,value2:*/* = null*/):* {
+        Cc.log("returnArg called", value1, value2, arguments);
+        return value1;
     }
 }
 }
