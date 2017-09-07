@@ -341,6 +341,7 @@ package com.junkbyte.console
 		 * @copy com.junkbyte.console.Cc#explode()
 		 */
 		public function explode(obj:Object, depth:int = 3):void{
+            trace("Console.ex",arguments);
 			addLine(new Array(_tools.explode(obj, depth)), 1, null, false, true);
 		}
 		
@@ -349,6 +350,10 @@ package com.junkbyte.console
 		 */
 		public function explodech(channel:*, obj:Object, depth:int = 3):void{
 			addLine(new Array(_tools.explode(obj, depth)), 1, channel, false, true);
+		}
+
+		public function jsonch(channel:*, obj:Object, depth:int = 3):void{
+			addLine(new Array(_tools.json(obj)), 1, channel, false, true);
 		}
 		
 		public function get paused():Boolean{

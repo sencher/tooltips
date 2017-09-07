@@ -102,5 +102,32 @@ import flash.display.MovieClip;
             }
             return randomChar;
         }
+
+        /*
+        	Compares 2 argument Arrays. Saves new to previous if different.
+
+            newArgs - "arguments" from your method
+            prevArgsObject - Just pass local INITED empty object here
+
+         */
+        public static function sameAsPreviousArgs(newArgs:Array, prevArgsObject:Object):Boolean {
+            if(!prevArgsObject || !prevArgsObject.prevArgs || !prevArgsObject.prevArgs.length){
+                prevArgsObject.prevArgs = newArgs;
+                return false;
+            }
+
+            var i:int;
+            for (i = 0; i < prevArgsObject.prevArgs.length; i++){
+                if(newArgs[i] != prevArgsObject.prevArgs[i]) {
+                    prevArgsObject.prevArgs = newArgs;
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static function getRandom(min:int, max:int):int{
+            return Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
     }
 }

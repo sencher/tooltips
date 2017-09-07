@@ -6,8 +6,8 @@ import flash.display.Sprite;
 import flash.ui.Keyboard;
 
 [SWF(height=600,width=500)]
-public class Test_Console extends Sprite {
-    public function Test_Console() {
+public class Test_ConsoleKeysAndCommands extends Sprite {
+    public function Test_ConsoleKeysAndCommands() {
         Cc.start(this);
         Cc.visible = true;
         Cc.height = 600;

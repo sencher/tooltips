@@ -24,7 +24,9 @@
 */
 package com.junkbyte.console.core 
 {
-	import flash.utils.ByteArray;
+import com.adobe.serialization.json.JSON;
+
+import flash.utils.ByteArray;
 	import flash.utils.describeType;
 	import com.junkbyte.console.Cc;
 	import flash.utils.getQualifiedClassName;
@@ -109,9 +111,14 @@ package com.junkbyte.console.core
 			report(base.name + ":" + console.refs.makeRefTyped(base) + " has " + (list.length - 1) + " children/sub-children.", 9, true, ch);
 			if (config.commandLineAllowed) report("Click on the child display's name to set scope.", -2, true, ch);
 		}
+
+		public function json(obj:Object):String{
+			return com.adobe.serialization.json.JSON.encode(obj);
+		}
 		
 		
 		public function explode(obj:Object, depth:int = 3, p:int = 9):String{
+            trace("ConsoleTools.ex",arguments);
 			var t:String = typeof obj;
 			if(obj == null){ 
 				// could be null, undefined, NaN, 0, etc. all should be printed as is

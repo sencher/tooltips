@@ -25,7 +25,8 @@
 
 package com.junkbyte.console.core 
 {
-	import com.junkbyte.console.Console;
+import com.adobe.serialization.json.JSON;
+import com.junkbyte.console.Console;
 	import com.junkbyte.console.vos.WeakObject;
 
 	import flash.display.DisplayObject;
@@ -226,8 +227,12 @@ package com.junkbyte.console.core
 					var o:Object = getRefById(id);
 					if(prop) o = o[prop];
 					if(o){
-						if(str.indexOf("refe_")==0){
-							console.explodech(console.panels.mainPanel.reportChannel, o);
+						if(str.indexOf("refe_")==0) {
+                            console.explodech(console.panels.mainPanel.reportChannel, o);
+                        }else if(str.indexOf("refj_")==0){
+							//console.explodech(console.panels.mainPanel.reportChannel, o);
+                            console.jsonch(console.panels.mainPanel.reportChannel, o);
+							//trace(com.adobe.serialization.json.JSON.encode(o));
 						}else{
 							focus(o, _dofull);
 						}
@@ -290,6 +295,7 @@ package com.junkbyte.console.core
 				}
 				menuStr += "</b> || [<a href='event:ref_"+refIndex+"'>refresh</a>]";
 				menuStr += "</b> [<a href='event:refe_"+refIndex+"'>explode</a>]";
+				menuStr += "</b> [<a href='event:refj_"+refIndex+"'>json</a>]";
 				if(config.commandLineAllowed){
 					menuStr += " [<a href='event:cl_"+refIndex+"'>scope</a>]";
 				}

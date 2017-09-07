@@ -306,6 +306,7 @@ package com.junkbyte.console {
 		 * @param depth	Depth of explosion, -1 = unlimited
 		 */
 		public static function explode(obj:Object, depth:int = 3):void {
+			trace("CC.ex",arguments);
 			if(_console) _console.explode(obj,depth);
 		}
 		/**
