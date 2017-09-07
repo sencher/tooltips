@@ -118,7 +118,6 @@ import flash.utils.ByteArray;
 		
 		
 		public function explode(obj:Object, depth:int = 3, p:int = 9):String{
-            trace("ConsoleTools.ex",arguments);
 			var t:String = typeof obj;
 			if(obj == null){ 
 				// could be null, undefined, NaN, 0, etc. all should be printed as is

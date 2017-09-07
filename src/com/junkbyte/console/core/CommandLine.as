@@ -376,7 +376,6 @@ package com.junkbyte.console.core
 			console.refs.focus(_scope);
 		}
 		private function explodeCmd(param:String = "0"):void{
-            trace("CommandLine.explodeCmd",arguments);
 			var depth:int = int(param);
 			console.explodech(console.panels.mainPanel.reportChannel, _scope, depth<=0?3:depth);
 		}

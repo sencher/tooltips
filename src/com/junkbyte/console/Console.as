@@ -341,7 +341,6 @@ package com.junkbyte.console
 		 * @copy com.junkbyte.console.Cc#explode()
 		 */
 		public function explode(obj:Object, depth:int = 3):void{
-            trace("Console.ex",arguments);
 			addLine(new Array(_tools.explode(obj, depth)), 1, null, false, true);
 		}
 		
