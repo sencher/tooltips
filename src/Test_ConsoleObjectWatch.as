@@ -1,4 +1,7 @@
 package {
+import ConsoleObjectWatch.Human;
+import ConsoleObjectWatch.World;
+
 import com.adobe.serialization.json.JSON;
 import com.junkbyte.console.Cc;
 import com.junkbyte.console.KeyBind;
@@ -14,11 +17,14 @@ import utils.Utils;
 [SWF(height=600,width=500)]
 public class Test_ConsoleObjectWatch extends Sprite {
     private var o:Object = {ar:[7,9,"kk"], s:"vv2dda", i:726, o:{ar:[2,2,"kk"], s:"22dda", i:22}};
+    private var world:World;
+
     public function Test_ConsoleObjectWatch() {
         Cc.start(this);
         Cc.visible = true;
         Cc.height = 600;
         Cc.width = 500;
+        Cc.config.commandLineAllowed = true;
 
         var mc1:MovieClip = new MovieClip();
         mc1.name = "First";
@@ -44,6 +50,13 @@ public class Test_ConsoleObjectWatch extends Sprite {
         var checkResult:Object = com.adobe.serialization.json.JSON.decode('{"ar":[7,9,"kk"],"s":"vv2dda","i":999,"o":{"ar":[2,2,"kk"],"s":"22dda","i":22}}');
         trace(checkResult.s, checkResult.o.i);
 
+        world = new World();
+        var h = new Human("Mike", Human.MALE, 25)
+        Cc.log(h);
+
+        world.addHuman(h);
+
+        Cc.log(world);
 
     }
 }

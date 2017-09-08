@@ -113,7 +113,12 @@ import flash.utils.ByteArray;
 		}
 
 		public function json(obj:Object):String{
-			return com.adobe.serialization.json.JSON.encode(obj);
+            try {
+                return com.adobe.serialization.json.JSON.encode(obj);
+            }catch (e:Error){
+                return "Recursive Links Object";
+            }
+            return "";
 		}
 		
 		

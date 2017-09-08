@@ -8,13 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_SerializeRecursive.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ConsoleObjectWatch/Human.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ConsoleObjectWatch/World.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleChannel.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleChannel.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_SerializeRecursive.as" afterPath="$PROJECT_DIR$/src/Test_SerializeRecursive.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_TraceLimit.as" afterPath="$PROJECT_DIR$/src/Test_TraceLimit.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mx/logging/LogLogger.as" afterPath="$PROJECT_DIR$/src/mx/logging/LogLogger.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,20 +39,52 @@
       <file leaf-file-name="Test_ConsoleObjectWatch.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="43" column="66" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="66" />
+            <state relative-caret-position="379">
+              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
-                <element signature="e#10#51#0" expanded="true" />
+                <element signature="e#10#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_SerializeRecursive.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="World.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConsoleObjectWatch/World.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConsoleObjectWatch/Human.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Executer.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2805">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_SerializeRecursive.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_SerializeRecursive.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="58" />
               <folding>
                 <element signature="e#10#51#0" expanded="true" />
               </folding>
@@ -62,32 +95,10 @@
       <file leaf-file-name="ConsoleTools.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="119" column="24" lean-forward="false" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+            <state relative-caret-position="239">
+              <caret line="120" column="22" lean-forward="false" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
               <folding>
                 <element signature="e#991#1032#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cc.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="317" column="31" lean-forward="false" selection-start-line="317" selection-start-column="31" selection-end-line="317" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPanel.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,21 +137,11 @@
       <file leaf-file-name="LogReferences.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="234" column="79" lean-forward="false" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="79" />
+            <state relative-caret-position="171">
+              <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
               <folding>
                 <element signature="e#992#1033#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PanelsManager.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/view/PanelsManager.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +153,8 @@
       <list>
         <option value="Html5" />
         <option value="JavaScript File" />
-        <option value="ActionScript Class" />
         <option value="ActionScript Class with Supers" />
+        <option value="ActionScript Class" />
       </list>
     </option>
   </component>
@@ -175,6 +176,7 @@
       <find>refe_</find>
       <find>trace</find>
       <find>explode</find>
+      <find>serialization.json.JSON.encode</find>
     </findStrings>
     <replaceStrings>
       <replace>600</replace>
@@ -195,8 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sd.as" />
-        <option value="$PROJECT_DIR$/src/Test_RotationPoint2.as" />
         <option value="$PROJECT_DIR$/src/Test_CirclesElipse2.as" />
         <option value="$PROJECT_DIR$/src/Test_CirclesElipse3.as" />
         <option value="$PROJECT_DIR$/src/TestDrawStarling.as" />
@@ -239,13 +239,15 @@
         <option value="$PROJECT_DIR$/src/Test_ConsoleAddons.as" />
         <option value="$PROJECT_DIR$/src/Test_TextHtmlLink.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as" />
-        <option value="$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleChannel.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
         <option value="$PROJECT_DIR$/src/Test_SerializeRecursive.as" />
+        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" />
+        <option value="$PROJECT_DIR$/src/ConsoleObjectWatch/World.as" />
+        <option value="$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as" />
+        <option value="$PROJECT_DIR$/src/ConsoleObjectWatch/Human.as" />
       </list>
     </option>
   </component>
@@ -296,36 +298,6 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="as3corelib.swc" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="as3corelib.swc" type="ab9368bb:PsiFileNode" />
-              <item name="library.swf" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="as3corelib.swc" type="ab9368bb:PsiFileNode" />
-              <item name="library.swf" type="ab9368bb:PsiFileNode" />
-              <item name="com.adobe" type="9c46ba4a:SwfPackageElementNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="as3corelib.swc" type="ab9368bb:PsiFileNode" />
-              <item name="library.swf" type="ab9368bb:PsiFileNode" />
-              <item name="com.adobe" type="9c46ba4a:SwfPackageElementNode" />
-              <item name="serialization.json" type="9c46ba4a:SwfPackageElementNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -449,6 +421,7 @@
       <recent name="A:\Projects\tooltips\src" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="ConsoleObjectWatch" />
       <recent name="" />
       <recent name="Patterns" />
     </key>
@@ -469,7 +442,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.Test_SerializeRecursive">
+  <component name="RunManager" selected="Flash App.Test_ConsoleObjectWatch">
     <configuration name="Test" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -1036,8 +1009,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_SerializeRecursive" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ConsoleObjectWatch" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_ConsoleObjectWatch" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_SerializeRecursive" />
         <item index="2" class="java.lang.String" itemvalue="Flash App.Test_TextHtmlLink" />
         <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ConsoleAddons" />
         <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ConsoleChannels" />
@@ -1098,7 +1071,7 @@
       <workItem from="1504201361351" duration="18357000" />
       <workItem from="1504489081758" duration="2320000" />
       <workItem from="1504628901851" duration="1540000" />
-      <workItem from="1504788182807" duration="9831000" />
+      <workItem from="1504788182807" duration="12552000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1191,11 +1164,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504804733772</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="com.junkbyte.console - traces removed&#10;Test_SerializeRecursive.as">
+      <created>1504805829558</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1504805829558</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208528000" />
+    <option name="totallyTimeSpent" value="211249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1211,7 +1191,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47020584" sideWeight="0.42004263" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47020584" sideWeight="0.42004263" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1268,22 +1248,11 @@
     <MESSAGE value="com.junkbyte.console - stock" />
     <MESSAGE value="com.junkbyte.console - added command with 2 params" />
     <MESSAGE value="com.junkbyte.console - added JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="com.junkbyte.console - added JSON" />
+    <MESSAGE value="com.junkbyte.console - traces removed&#10;Test_SerializeRecursive.as" />
+    <option name="LAST_COMMIT_MESSAGE" value="com.junkbyte.console - traces removed&#10;Test_SerializeRecursive.as" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as</url>
-          <line>230</line>
-          <option name="timeStamp" value="212" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as</url>
-          <line>233</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -1312,27 +1281,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_Ellipse.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_StageScale.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Loader.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/alts/AltManager.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1652,16 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="234" column="79" lean-forward="false" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="79" />
-          <folding>
-            <element signature="e#992#1033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1694,32 +1632,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as">
+    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="119" column="24" lean-forward="false" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+        <state relative-caret-position="171">
+          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
           <folding>
-            <element signature="e#991#1032#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="43" column="66" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="66" />
-          <folding>
-            <element signature="e#10#51#0" expanded="true" />
+            <element signature="e#992#1033#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_SerializeRecursive.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="340">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="58" />
           <folding>
             <element signature="e#10#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="120" column="22" lean-forward="false" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <folding>
+            <element signature="e#991#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsoleObjectWatch/World.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#10#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsoleObjectWatch/Human.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2805">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
