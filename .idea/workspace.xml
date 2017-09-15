@@ -10,16 +10,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" line="114" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="com.junkbyte.console - Added logchw with whoCalledThis">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS2_Test/AS2_Test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS2_Test/AS2_Test.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS2_Test/AS2_Test.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS2_Test/src/First.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
@@ -1097,7 +1088,7 @@
       <workItem from="1505132744950" duration="16159000" />
       <workItem from="1505319180792" duration="544000" />
       <workItem from="1505386547166" duration="21994000" />
-      <workItem from="1505468031812" duration="12756000" />
+      <workItem from="1505468031812" duration="12867000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1218,11 +1209,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505482332704</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="AS2, AIR, as3corelib source">
+      <created>1505482456979</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1505482456979</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265686000" />
+    <option name="totallyTimeSpent" value="265797000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1310,7 +1308,8 @@
     <MESSAGE value="com.junkbyte.console - json recursion error removed" />
     <MESSAGE value="com.junkbyte.console - Added logchw with whoCalledThis" />
     <MESSAGE value="MovieClipWithEvents.as and other" />
-    <option name="LAST_COMMIT_MESSAGE" value="MovieClipWithEvents.as and other" />
+    <MESSAGE value="AS2, AIR, as3corelib source" />
+    <option name="LAST_COMMIT_MESSAGE" value="AS2, AIR, as3corelib source" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1591,6 +1590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,6 +1598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="303" column="13" lean-forward="true" selection-start-line="303" selection-start-column="13" selection-end-line="303" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
