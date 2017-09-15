@@ -55,10 +55,10 @@ package com.junkbyte.console
 	 */
 	public class Console extends Sprite {
 
-		public static const VERSION:Number = 2.6;
+		public static const VERSION:Number = 2.7;
 		public static const VERSION_STAGE:String = "";
 		public static const BUILD:int = 611;
-		public static const BUILD_DATE:String = "2012/02/22 00:11";
+		public static const BUILD_DATE:String = "2017/09/15 16:00";
 		//
 		public static const LOG:uint = 1;
 		public static const INFO:uint = 3;
@@ -630,8 +630,8 @@ package com.junkbyte.console
 		/**
 		 * @copy com.junkbyte.console.Cc#addCh()
 		 */
-		public function addCh(channel:*, strings:Array, priority:int = 2, isRepeating:Boolean = false):void{
-			addLine(strings, priority, channel, isRepeating);
+		public function addCh(channel:*, strings:Array, priority:int = 2, isRepeating:Boolean = false, html:Boolean = false, stacks:int = -1):void{
+			addLine(strings, priority, channel, isRepeating, html, stacks);
 		}
 		
 		/**

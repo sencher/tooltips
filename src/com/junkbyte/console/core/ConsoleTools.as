@@ -190,5 +190,20 @@ import flash.utils.ByteArray;
 			}
 			return txt;
 		}
+		
+		
+		public function whoCalledThis(depth:int = 10):String{
+			var e:Error = new Error();
+			var stackTrace:String = e.getStackTrace();
+			var lines:Array = stackTrace.split("\n\t");
+			var cut:Array = lines.slice(4, 4 + depth);
+			var s:String;
+			var r:String = "";
+			for each (s in cut) {
+				r += s + "\n";
+			}
+			r += "*************";
+			return r;
+		}
 	}
 }

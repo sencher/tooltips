@@ -167,7 +167,7 @@ import com.junkbyte.console.Console;
 			}
 			return ShortClassName(v);
 		}
-		private function genLinkString(o:*, prop:*, str:String):String{
+		public function genLinkString(o:*, prop:*, str:String):String{
 			if(prop && !(prop is String)) {
 				o = o[prop];
 				prop = null;

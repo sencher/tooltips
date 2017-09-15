@@ -99,7 +99,7 @@ package com.junkbyte.console {
 		 * // However if you set objectHardReferenceTimer to 60, you will get AT LEAST 60 seconds before it become unavailable.
 		 * </code>
 		 */
-		public var objectHardReferenceTimer:uint = 0;
+		public var objectHardReferenceTimer:uint = 120;
 		
 		/**
 		 * Use flash's build in (or external) trace().
