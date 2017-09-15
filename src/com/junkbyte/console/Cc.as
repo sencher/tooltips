@@ -217,29 +217,6 @@ package com.junkbyte.console {
 			if(_console) _console.addCh(channel, strings, Console.LOG, false, true);
 		}
 		
-//		public static function logchw_test(channel:*, ...strings):void{
-//			//strings.push("\n"+Utils.whoCalledThis());
-//
-////			var refs:LogReferences = _console.refs;
-////			var s = refs.makeString(strings[1]);
-////			strings.unshift(s);
-//
-////			strings.unshift("</b> [<a href='event:refj_"+1+"'>json</a>]");
-//
-//
-//			var tools:ConsoleTools = _console.mapper;
-//			var stack = tools.whoCalledThis();
-////			var stack = tools.getStack(10, Console.LOG);
-//			var refs:LogReferences = _console.refs;
-//			//var s = refs.makeString(stack, null, true);
-//			var s = refs.genLinkString(stack, null, "Stack");
-//			strings.unshift(s);
-//
-////			strings.unshift("</b> [<a href='event:refj_"+1+"'>json</a>]");
-//
-//			if(_console) _console.addCh(channel, strings, Console.LOG, false, true);
-//		}
-		
 		/**
 		 * Add log line with priority 3 to channel
 		 * Allows multiple arguments for convenience use.

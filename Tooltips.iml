@@ -8,6 +8,9 @@
             <entry library-id="ca31bd53-a8a6-43f5-87c1-e6b15d9549bc">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="25d8d902-fac5-4318-bfce-b240f8adcfec">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="4.6.0+26.0.0" />
         </dependencies>
@@ -18,6 +21,31 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
+      <configuration name="AirMain" target-platform="Desktop" pure-as="true" main-class="air.AirMain" output-file="AirMain.swf" output-folder="$MODULE_DIR$/out">
+        <dependencies>
+          <sdk name="AirSDK_26" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.keep-generated-actionscript" value="false" />
+          </map>
+          <option name="resourceFilesMode" value="None" />
+        </compiler-options>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/air/AirMain-app.xml" package-file-name="AirMain" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="AirChild" target-platform="Desktop" pure-as="true" main-class="air.AirChild" output-file="AirChild.swf" output-folder="$MODULE_DIR$/out">
+        <dependencies>
+          <sdk name="4.6.0+26.0.0" />
+        </dependencies>
+        <compiler-options>
+          <option name="resourceFilesMode" value="None" />
+        </compiler-options>
+        <packaging-air-desktop custom-descriptor-path="$MODULE_DIR$/src/air/AirMain-app.xml" package-file-name="AirChild" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
     </configurations>
     <compiler-options />
   </component>
@@ -25,8 +53,14 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/AS2_Test" />
+      <excludeFolder url="file://$MODULE_DIR$/docs" />
     </content>
-    <orderEntry type="jdk" jdkName="4.6.0+26.0.0" jdkType="Flex SDK Type (new)" />
+    <content url="file://D:/Survarium/resources/sources/ui/sources">
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
+    </content>
+    <orderEntry type="jdk" jdkName="AirSDK_26&#9;4.6.0+26.0.0" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
@@ -37,6 +71,17 @@
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="25d8d902-fac5-4318-bfce-b240f8adcfec" />
+        <CLASSES>
+          <root url="file://D:/Survarium/resources/sources/ui/sources/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/Survarium/resources/sources/ui/sources/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

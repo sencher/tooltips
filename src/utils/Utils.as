@@ -1,9 +1,13 @@
 package utils {
 import com.adobe.serialization.json.JSON;
 import com.junkbyte.console.Cc;
-
-import flash.display.MovieClip;
-    import flash.events.Event;
+	
+	import flash.display.DisplayObject;
+	
+	import flash.display.MovieClip;
+import flash.display.Shape;
+import flash.display.Sprite;
+import flash.events.Event;
     import flash.utils.describeType;
 
     public class Utils {
@@ -65,7 +69,7 @@ import flash.display.MovieClip;
         }
 
 
-        public static function whoCalledThis(depth:int = 1):String{
+        public static function whoCalledThis(depth:int = 3):String{
             var e:Error = new Error();
             var stackTrace:String = e.getStackTrace();
             var lines:Array = stackTrace.split("\n\t");
@@ -129,5 +133,46 @@ import flash.display.MovieClip;
         public static function getRandom(min:int, max:int):int{
             return Math.floor(Math.random() * (max + 1 - min)) + min;
         }
+        
+	    public static function drawBox(x:Number = 100, y:Number = 100, w:Number = 200, h:Number = 200, angle:Number = 0, color:uint = 0xffff00):Shape
+	    {
+		    //trace("drawBox",arguments)
+		    var box:Shape = new Shape();
+		    box.graphics.lineStyle(1, color, .75);
+		    box.graphics.beginFill(0xcccccc);
+//        box.graphics.drawRect(-w/2,-h/2,w,h);
+		    box.graphics.drawRect(0,0,w,h);
+		    box.x = x;
+		    box.y = y;
+		    box.rotation = angle;
+		
+		    return box;
+	    }
+	
+	    public static function drawButton():Sprite {
+            var s:Sprite = new Sprite();
+            s.addChild(drawBox());
+            return s;
+	    }
+	
+	    public static function globalVisibleList(displayObject:DisplayObject):String {
+		    var result:String = "";
+		    var checking:DisplayObject = displayObject;
+		    while(checking){
+			
+			    result += getNameAndVisible(checking);
+			
+			    if(checking.parent){
+				    checking = checking.parent;
+			    }else{
+				    return result;
+			    }
+		    }
+		    return null;// to make Idea happy
+	    }
+	
+	    public static function getNameAndVisible(displayObject:DisplayObject):String {
+		    return displayObject + ", " + displayObject.name + ", " + displayObject.visible + "\n";
+	    }
     }
 }
