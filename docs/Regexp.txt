@@ -1,0 +1,10 @@
+Search only SET visible of this level
+	[^."]visible[\s]*=
+	[^."]visible([0-9\sA-Z]{0,})=
+
+Add
+    (function )(.*)(\([^{]*)(\{)
+    $1$2$3$4\nCc.logch(this, "$2", arguments);
+
+Remove
+    Cc.log(.*)\n
