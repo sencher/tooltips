@@ -57,8 +57,12 @@
       <excludeFolder url="file://$MODULE_DIR$/AS2_Test" />
       <excludeFolder url="file://$MODULE_DIR$/docs" />
     </content>
+    <content url="file://D:/Survarium/resources/sources/flash_movies">
+      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
+    </content>
     <content url="file://D:/Survarium/resources/sources/ui/sources">
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
     </content>
     <orderEntry type="jdk" jdkName="AirSDK_26&#9;4.6.0+26.0.0" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />

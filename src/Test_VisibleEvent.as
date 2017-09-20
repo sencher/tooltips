@@ -40,9 +40,9 @@ package {
 			
 			main = new MovieClipWithEvents();
 			mc1 = new MovieClipWithEvents();
-			mc2 = new MimicMovie();
+			mc2 = new MovieClipWithEvents();
 			mc3 = new MovieClipWithEvents();
-			mc3b = new MovieClipWithEvents();
+			mc3b = new MimicMovie();
 			mc3c = new MovieClipWithEvents();
 			
 			main.name = "main";
@@ -53,13 +53,18 @@ package {
 			mc3c.name = "mc3c";
 			
 			mcDefault2.addChild(main);
-			main.addChild(mc1);
+//			main.
+			addChild(mc1);
 			mc1.addChild(mc2);
 			mc2.addChild(mc3);
-			mc1.addChild(mc3);
-			mc2.addChild(mc3);
-			mc2.addChild(mc3b);
-			mc2.addChild(mc3c);
+//			mc1.addChild(mc3);
+//			mc2.addChild(mc3);
+			mc3.addChild(mc3b);
+//			mc2.addChild(mc3c);
+			
+//			main.
+			removeChild(mc1);
+//			addChild(mc1);
 			
 			mc3.addEventListener(MovieClipWithEvents.VISIBILITY_CHANGED, handler);
 			
@@ -69,9 +74,9 @@ package {
 //			trace(mc3.globalVisibleList());
 //			trace(Utils.globalVisibleList(mc3));
 //			mc2.visible = false;
-			mc1.visible = false;
-			main.visible = false;
-			main.visible = true;
+//			mc1.visible = false;
+//			main.visible = false;
+//			main.visible = true;
 //			mcDefault.visible = false;
 //			trace(Utils.globalVisibleList(mc3));
 //			trace(mc3.globalVisible());
@@ -94,15 +99,23 @@ import display.MovieClipWithEvents;
 
 import flash.events.Event;
 
+import utils.Utils;
+
 class MimicMovie extends MovieClipWithEvents{
 	public function MimicMovie(){
 	
 	}
 	
-	override public function parentVisibilityChanged(event:Event):void {
+	override protected function parentVisibilityChanged(event:Event):void {
 		var targetVisibility:Boolean = event.target.visible;
 		super.parentVisibilityChanged(event);
 		trace("MimicMovie", name, targetVisibility);
 		visible = targetVisibility;
+	}
+	
+	override protected function removedFromStageHandler(event:Event):void {
+		trace(Utils.whoCalledThis());
+		trace(Utils.globalVisibleList(this));
+		super.removedFromStageHandler(event);
 	}
 }

@@ -1,14 +1,16 @@
 package utils {
-import com.adobe.serialization.json.JSON;
-import com.junkbyte.console.Cc;
+	import com.adobe.serialization.json.JSON;
+	import com.junkbyte.console.Cc;
 	
 	import flash.display.DisplayObject;
 	
 	import flash.display.MovieClip;
-import flash.display.Shape;
-import flash.display.Sprite;
-import flash.events.Event;
+	import flash.display.Shape;
+	import flash.display.Sprite;
+	import flash.events.Event;
     import flash.utils.describeType;
+	import flash.utils.getQualifiedClassName;
+	import flash.utils.getQualifiedSuperclassName;
 
     public class Utils {
         public static function trEvent(event:Event):void {
@@ -155,8 +157,22 @@ import flash.events.Event;
             return s;
 	    }
 	
+	    public static function globalVisible(displayObject:DisplayObject):Boolean {
+		    var checking:DisplayObject = displayObject;
+		    while(checking){
+			    if(!checking.visible){
+				    return false;
+			    }else if(checking.parent){
+				    checking = checking.parent;
+			    }else{
+				    return true;
+			    }
+		    }
+		    return true;// to make Idea happy
+	    }
+	
 	    public static function globalVisibleList(displayObject:DisplayObject):String {
-		    var result:String = "";
+		    var result:String = "globalVisibleList of :\n";
 		    var checking:DisplayObject = displayObject;
 		    while(checking){
 			
@@ -168,11 +184,11 @@ import flash.events.Event;
 				    return result;
 			    }
 		    }
-		    return null;// to make Idea happy
+		    return result;// to make Idea happy
 	    }
 	
 	    public static function getNameAndVisible(displayObject:DisplayObject):String {
-		    return displayObject + ", " + displayObject.name + ", " + displayObject.visible + "\n";
+		    return displayObject + ", " + getQualifiedClassName(displayObject) + ", " + getQualifiedSuperclassName(displayObject) + ", " + displayObject.name + ", " + String(displayObject.visible).toUpperCase() + "\n";
 	    }
     }
 }

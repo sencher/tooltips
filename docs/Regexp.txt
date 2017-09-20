@@ -3,8 +3,18 @@ Search only SET visible of this level
 	[^."]visible([0-9\sA-Z]{0,})=
 
 Add
-    (function )(.*)(\([^{]*)(\{)
-    $1$2$3$4\nCc.logch(this, "$2", arguments);
+	(function )(.*)(\([^{]*)(\{ *)(\r*)(\s*)
+	$1$2$3$4$5$6Cc.logchw(this, "$2", arguments);$5$6
 
-Remove
-    Cc.log(.*)\n
+Remove active or commented
+    (\s)*(/\*)*(\s*/*\s*Cc.(log|warn)(.*);)(\*/)*
+
+
+Comment active
+    (\n)([^/\n]+)(Cc.(log|warn)(.*);)
+    $1$2/*$3*/
+
+Un-Comment // or /* */
+    ([/\*|\/])+(Cc.(log|warn)(.*);)(\*/)*
+    $2
+
