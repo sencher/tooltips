@@ -2,17 +2,20 @@ package utils {
 	import com.adobe.serialization.json.JSON;
 	import com.junkbyte.console.Cc;
 	
-	import flash.display.DisplayObject;
+	import display.MovieClipWithEvents;
 	
+	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.events.Event;
-    import flash.utils.describeType;
+	import flash.text.TextField;
+	import flash.text.TextFormat;
+	import flash.utils.describeType;
 	import flash.utils.getQualifiedClassName;
 	import flash.utils.getQualifiedSuperclassName;
-
-    public class Utils {
+	
+	public class Utils {
         public static function trEvent(event:Event):void {
             trace(event.currentTarget.name, event.type);
         }
@@ -85,10 +88,10 @@ package utils {
             Cc.log(r);
             return r;
         }
-
-        public static function logJsonObject(value:*):void{
-            Cc.log(com.adobe.serialization.json.JSON.encode(value));
-        }
+		
+		public static function logJsonObject(value:*, channel:* = "logJson"):void{
+			Cc.logch(channel, com.adobe.serialization.json.JSON.encode(value));
+		}
 
         public static function logFuncNameAndArgs(args:*):void{
             Utils.whoCalledThis();
@@ -136,7 +139,7 @@ package utils {
             return Math.floor(Math.random() * (max + 1 - min)) + min;
         }
         
-	    public static function drawBox(x:Number = 100, y:Number = 100, w:Number = 200, h:Number = 200, angle:Number = 0, color:uint = 0xffff00):Shape
+	    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xffff00):Shape
 	    {
 		    //trace("drawBox",arguments)
 		    var box:Shape = new Shape();
@@ -190,5 +193,19 @@ package utils {
 	    public static function getNameAndVisible(displayObject:DisplayObject):String {
 		    return displayObject + ", " + getQualifiedClassName(displayObject) + ", " + getQualifiedSuperclassName(displayObject) + ", " + displayObject.name + ", " + String(displayObject.visible).toUpperCase() + "\n";
 	    }
+	
+	    public static function getTopParent(displayObject:DisplayObject):DisplayObject {
+		    var checking:DisplayObject = displayObject;
+		    while(checking.parent){
+			    checking = checking.parent;
+		    }
+		    return checking;
+	    }
+		
+		public static function setTextColor(textField:TextField, color:int):void {
+			var textFormat:TextFormat = textField.getTextFormat();
+			textFormat.color = color;
+			textField.setTextFormat(textFormat);
+		}
     }
 }

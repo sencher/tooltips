@@ -16,6 +16,7 @@
         </dependencies>
         <compiler-options>
           <option name="resourceFilesMode" value="None" />
+          <option name="additionalOptions" value="-define=CONFIG::debug,false" />
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
@@ -61,8 +62,10 @@
       <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
     </content>
     <content url="file://D:/Survarium/resources/sources/ui/sources">
-      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
+      <sourceFolder url="file://D:/Survarium/resources/sources/ui/sources" isTestSource="false" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/com" />
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/obj" />
     </content>
     <orderEntry type="jdk" jdkName="AirSDK_26&#9;4.6.0+26.0.0" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />

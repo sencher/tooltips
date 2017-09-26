@@ -62,7 +62,7 @@ package {
 			mc3.addChild(mc3b);
 //			mc2.addChild(mc3c);
 			
-//			main.
+			mc2.visible = false;
 			removeChild(mc1);
 //			addChild(mc1);
 			
@@ -113,9 +113,9 @@ class MimicMovie extends MovieClipWithEvents{
 		visible = targetVisibility;
 	}
 	
-	override protected function removedFromStageHandler(event:Event):void {
-		trace(Utils.whoCalledThis());
-		trace(Utils.globalVisibleList(this));
-		super.removedFromStageHandler(event);
-	}
+//	override protected function removedFromStageHandler(event:Event):void {
+//		trace(Utils.whoCalledThis());
+//		trace(Utils.globalVisibleList(this));
+//		super.removedFromStageHandler(event);
+//	}
 }

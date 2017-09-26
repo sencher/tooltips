@@ -1,10 +1,37 @@
+All
+	(\n|.)*
+
+Any until
+	((.|\n)+?)(function)
+
+Delete all except
+	.*(\.\w+).*	
+	$1
+
 Search only SET visible of this level
 	[^."]visible[\s]*=
 	[^."]visible([0-9\sA-Z]{0,})=
 
+Class name
+	(class\s+)([^ ]+)(\s+)
+	(class\s+)([^ ]+)( )(.*\n*)
+	(class )(\S*)((.|\n)+?)(function)
+	$2
+
+Search set functions with "player"
+	function(.*)player(.*)\(.+\)
+
+\\(?:.(?!\\))+$
+
+
 Add
 	(function )(.*)(\([^{]*)(\{ *)(\r*)(\s*)
 	$1$2$3$4$5$6Cc.logchw(this, "$2", arguments);$5$6
+	$1$2$3$4$5$6Cc.warnchw(this, "$2", arguments);$5$6
+
+Add Singleton
+	(function )(.*)(\([^{]*)(\{ *)(\r*)(\s*)
+	$1$2$3$4$5$6Cc.logchw(PopUpManager, "$2", arguments);$5$6
 
 Remove active or commented
     (\s)*(/\*)*(\s*/*\s*Cc.(log|warn)(.*);)(\*/)*
@@ -18,3 +45,6 @@ Un-Comment // or /* */
     ([/\*|\/])+(Cc.(log|warn)(.*);)(\*/)*
     $2
 
+
+
+(\.\w+)

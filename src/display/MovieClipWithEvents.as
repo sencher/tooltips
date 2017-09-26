@@ -3,6 +3,8 @@ package display {
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	
+	import utils.Utils;
+	
 	/*
 		Debug class
 	 */
@@ -18,9 +20,18 @@ package display {
 		
 		protected function removedFromStageHandler(event:Event):void {
 			trace("removedFromStageHandler", name, parent.name, event.target.name, event.currentTarget.name);
-//			trace(Utils.whoCalledThis());
+			trace(Utils.whoCalledThis());
 //			trace(Utils.globalVisibleList(this));
 			parent.removeEventListener(MovieClipWithEvents.VISIBILITY_CHANGED, parentVisibilityChanged);
+			addEventListener(Event.ENTER_FRAME, enterFrameHandler);
+		}
+		
+		private function enterFrameHandler(event:Event):void {
+			trace("enterFrameHandler", name);
+//			trace(Utils.globalVisibleList(this));
+			removeEventListener(Event.ENTER_FRAME, enterFrameHandler);
+			var topParent:DisplayObject = Utils.getTopParent(this);
+			if(topParent != this) trace(name + " noticed that " + topParent.name + " was removed!");
 		}
 		
 		protected function addedToStageHandler(event:Event):void {
