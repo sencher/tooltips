@@ -10,7 +10,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" line="114" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Air search files in folder">
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.air" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.exe" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.swf" />
@@ -38,7 +38,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain-app.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/MyTextFile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -996,7 +995,7 @@
       <workItem from="1505737540508" duration="2962000" />
       <workItem from="1505899355156" duration="31616000" />
       <workItem from="1506327901367" duration="9015000" />
-      <workItem from="1506413964375" duration="11695000" />
+      <workItem from="1506413964375" duration="11774000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1152,11 +1151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506526419228</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="out with Air folder test">
+      <created>1506526533939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1506526533939</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332755000" />
+    <option name="totallyTimeSpent" value="332834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1283,7 +1289,8 @@
     <MESSAGE value="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as" />
     <MESSAGE value="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as" />
     <MESSAGE value="Air search files in folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Air search files in folder" />
+    <MESSAGE value="out with Air folder test" />
+    <option name="LAST_COMMIT_MESSAGE" value="out with Air folder test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
