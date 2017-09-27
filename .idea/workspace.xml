@@ -11,25 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_DictionaryChangeTrace.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_HtmlColorsText.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_TraceXML.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/TabPve.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/Template.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/TradeWithInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/TradeWithInfo2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/DictionaryDebug.as" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/survarium/Container.as" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Random2.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ReturnBreakContinue.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Validator.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Regexp.txt" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_AddChild.as" afterPath="$PROJECT_DIR$/src/Test_AddChild.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_VisibleEvent.as" afterPath="$PROJECT_DIR$/src/Test_VisibleEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/air/AirMain.as" afterPath="$PROJECT_DIR$/src/air/AirMain.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/display/MovieClipWithEvents.as" afterPath="$PROJECT_DIR$/src/display/MovieClipWithEvents.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,170 +39,50 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49239543">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="159">
-          <file leaf-file-name="MessageItemTradeWithInfo.as" pinned="false" current-in-tab="true">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="277" column="25" lean-forward="false" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PVEMatchSettingsWindow.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchSettingsWindow.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3553">
-                  <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PlayerInfo.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/controls/PlayerInfo.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1122">
-                  <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TradeWithInfo.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/survarium/TradeWithInfo.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#21#52#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test_HtmlColorsText.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Test_HtmlColorsText.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="8" column="95" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="95" />
-                  <folding>
-                    <element signature="e#11#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Message.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/controls/Message.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3111">
-                  <caret line="193" column="59" lean-forward="false" selection-start-line="193" selection-start-column="59" selection-end-line="193" selection-end-column="59" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MessageBase.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageBase.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MessageItemBase.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemBase.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Colors.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/constants/Colors.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TradeWithInfo2.as" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/survarium/TradeWithInfo2.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NumericStepperLabel.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperLabel.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NumericStepperSrv.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperSrv.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1377">
-                  <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NumericStepper.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/scaleform/clik/controls/NumericStepper.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4760">
-                  <caret line="331" column="27" lean-forward="false" selection-start-line="331" selection-start-column="27" selection-end-line="331" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UIComponent.as" pinned="false" current-in-tab="false">
-            <entry file="file://D:/Survarium/resources/sources/ui/sources/scaleform/clik/core/UIComponent.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7650">
-                  <caret line="472" column="24" lean-forward="false" selection-start-line="472" selection-start-column="24" selection-end-line="472" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Regexp.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/docs/Regexp.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="159">
+      <file leaf-file-name="pve_match_end_screen.swf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FLA_experiments/pve_match_end_screen.swf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/pveLobbyScreen.swc!/library.swf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="745" column="45" lean-forward="false" selection-start-line="745" selection-start-column="45" selection-end-line="745" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PVEManager.as" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/managers/PVEManager.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PVEMatchEndScreen.as" pinned="false" current-in-tab="true">
+        <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchEndScreen.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+              <folding>
+                <element signature="e#25#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -226,7 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(\s)*(/\*)*(\s*/*\s*Cc.log(.*);)(\*/)*</find>
       <find>log</find>
       <find>(\n)([^/\n]+)(Cc.[log|warn](.*);)</find>
       <find>(\n)([^/\n]+)(Cc.(log|warn)(.*);)</find>
@@ -256,6 +125,7 @@
       <find>data.</find>
       <find>00ff00</find>
       <find>textField</find>
+      <find>22223333</find>
     </findStrings>
     <replaceStrings>
       <replace>600</replace>
@@ -298,10 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Test_ConsoleAddons.as" />
-        <option value="$PROJECT_DIR$/src/Test_TextHtmlLink.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleChannel.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
         <option value="$PROJECT_DIR$/src/Test_SerializeRecursive.as" />
         <option value="$PROJECT_DIR$/src/ConsoleObjectWatch/World.as" />
         <option value="$PROJECT_DIR$/src/Test_ConsoleObjectWatch.as" />
@@ -349,6 +215,10 @@
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperWithInfo.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchSettingsWindow.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as" />
+        <option value="$PROJECT_DIR$/src/Test_IfNull.as" />
+        <option value="$PROJECT_DIR$/src/Test_Validator.as" />
+        <option value="$PROJECT_DIR$/src/Test_Random2.as" />
+        <option value="$PROJECT_DIR$/src/Test_ReturnBreakContinue.as" />
       </list>
     </option>
   </component>
@@ -366,18 +236,18 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="145" />
-    <option name="y" value="6" />
-    <option name="width" value="1772" />
-    <option name="height" value="940" />
+    <option name="x" value="656" />
+    <option name="y" value="515" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
@@ -402,27 +272,7 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="survarium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="survarium" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="survarium" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
+              <item name="flash_movies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -434,31 +284,6 @@
               <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="display" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="survarium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -480,26 +305,26 @@
     <property name="GO_FMT" value="false" />
     <property name="js-jscs-nodeInterpreter" value="A:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="SearchEverywhereHistoryKey" value="matmase&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/mmaking/MatchMakingSettings.as&#10;withinfo&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as&#10;NumericStepperLabel&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperLabel.as&#10;tabp&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as&#10;setDirty&#9;null&#9;null&#10;consoleas&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as" />
+    <property name="SearchEverywhereHistoryKey" value="pveMatchEndScreen&#9;null&#9;null&#10;pvematendsc&#9;null&#9;null&#10;22223333&#9;null&#9;null&#10;testconso&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as&#10;matmase&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/mmaking/MatchMakingSettings.as&#10;withinfo&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as&#10;NumericStepperLabel&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperLabel.as&#10;tabp&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as&#10;setDirty&#9;null&#9;null&#10;consoleas&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="A:\Projects\tooltips\src\starling" />
-      <recent name="A:\Projects\tooltips\src\Patterns" />
-    </key>
-    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
-      <recent name="survarium.controls" />
-      <recent name="" />
-      <recent name="utils" />
-      <recent name="display" />
-      <recent name="survarium" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\tooltips\src\survarium" />
       <recent name="D:\Projects\tooltips\src\display" />
       <recent name="D:\Projects\tooltips\src" />
       <recent name="D:\Projects\tooltips\src\air" />
       <recent name="D:\Projects\tooltips\libs" />
+    </key>
+    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="" />
+      <recent name="survarium.controls" />
+      <recent name="utils" />
+      <recent name="display" />
+      <recent name="survarium" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Projects\tooltips\src\starling" />
+      <recent name="A:\Projects\tooltips\src\Patterns" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.TradeWithInfo2">
+  <component name="RunManager" selected="Flash App.Test_ReturnBreakContinue">
     <configuration name="AirMainModule" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="AirMainModule" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -585,40 +410,6 @@
       <method>
         <option name="Make" enabled="false" />
       </method>
-    </configuration>
-    <configuration name="Test_DictionaryChangeTrace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="Player" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_DictionaryChangeTrace" />
-      <option name="overriddenOutputFileName" value="Test_DictionaryChangeTrace.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
     </configuration>
     <configuration name="Test_ExternalInterface HTML" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="Test" />
@@ -691,7 +482,7 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
     </configuration>
-    <configuration name="Test_TraceXML" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Random2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -715,8 +506,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_TraceXML" />
-      <option name="overriddenOutputFileName" value="Test_TraceXML.swf" />
+      <option name="overriddenMainClass" value="Test_Random2" />
+      <option name="overriddenOutputFileName" value="Test_Random2.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -725,7 +516,7 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
     </configuration>
-    <configuration name="TradeWithInfo" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ReturnBreakContinue" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -749,8 +540,42 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="survarium.TradeWithInfo" />
-      <option name="overriddenOutputFileName" value="TradeWithInfo.swf" />
+      <option name="overriddenMainClass" value="Test_ReturnBreakContinue" />
+      <option name="overriddenOutputFileName" value="Test_ReturnBreakContinue.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_Validator" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="Player" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_Validator" />
+      <option name="overriddenOutputFileName" value="Test_IfNull.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -1074,19 +899,19 @@
       <item index="0" class="java.lang.String" itemvalue="Flash App.Test" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ExternalInterface HTML" />
       <item index="2" class="java.lang.String" itemvalue="Flash App.AirMainModule" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_DictionaryChangeTrace" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_TraceXML" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.TradeWithInfo" />
-      <item index="6" class="java.lang.String" itemvalue="Flash App.TradeWithInfo2" />
-      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.TradeWithInfo2" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_Validator" />
+      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_Random2" />
+      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_ReturnBreakContinue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.TradeWithInfo2" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.TradeWithInfo" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_TraceXML" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_DictionaryChangeTrace" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_ReturnBreakContinue" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Random2" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Validator" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.TradeWithInfo2" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
       </list>
     </recent_temporary>
   </component>
@@ -1152,7 +977,7 @@
       <workItem from="1505737540508" duration="2962000" />
       <workItem from="1505899355156" duration="31616000" />
       <workItem from="1506327901367" duration="9015000" />
-      <workItem from="1506413964375" duration="667000" />
+      <workItem from="1506413964375" duration="11533000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1294,11 +1119,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505907351498</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as">
+      <created>1506430404234</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1506430404235</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321727000" />
+    <option name="totallyTimeSpent" value="332593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1314,6 +1146,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.1913646" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1322,12 +1155,13 @@
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52437705" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1340,9 +1174,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.1913646" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52437705" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1423,7 +1255,8 @@
     <MESSAGE value="MovieClipWithEvents.as and other" />
     <MESSAGE value="AS2, AIR, as3corelib source" />
     <MESSAGE value="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as" />
+    <MESSAGE value="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as" />
+    <option name="LAST_COMMIT_MESSAGE" value="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1442,7 +1275,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="273" />
+      <option name="time" value="274" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
@@ -1469,169 +1302,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_AddChild.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-          <folding>
-            <element signature="e#11#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Regexp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/display/MovieClipWithEvents.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="41" column="60" lean-forward="false" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_VisibleEvent.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <element signature="e#992#1033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="154" column="39" lean-forward="false" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/18.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5641" column="33" lean-forward="false" selection-start-line="5641" selection-start-column="25" selection-end-line="5641" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Console.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="123" column="28" lean-forward="false" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/hud.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="3447" column="67" lean-forward="false" selection-start-line="3447" selection-start-column="67" selection-end-line="3447" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Addition Compiler Options.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="205" column="34" lean-forward="false" selection-start-line="205" selection-start-column="34" selection-end-line="205" selection-end-column="34" />
-          <folding>
-            <element signature="e#17#58#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="279" column="52" lean-forward="false" selection-start-line="279" selection-start-column="52" selection-end-line="279" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="e#11#42#0" expanded="false" />
-            <element signature="e#1527#1554#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="219" column="11" lean-forward="false" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/TimeUnits.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/StringHelper.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/InnerSwf.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="10739" column="25" lean-forward="false" selection-start-line="10739" selection-start-column="25" selection-end-line="10739" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/DictionaryDebug.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1709,6 +1379,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25687">
           <caret line="1511" column="21" lean-forward="false" selection-start-line="1511" selection-start-column="21" selection-end-line="1511" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1731,6 +1402,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2397">
           <caret line="164" column="47" lean-forward="false" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1753,6 +1425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12087">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1769,7 +1442,7 @@
         <state relative-caret-position="731">
           <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1843,40 +1516,209 @@
         <state relative-caret-position="119">
           <caret line="8" column="95" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="95" />
           <folding>
-            <element signature="e#11#39#0" expanded="true" />
+            <element signature="e#11#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/constants/Colors.as">
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchSettingsWindow.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="4403">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding>
+            <marker date="1506431472255" expanded="true" signature="22:30199" ph="{...}" />
+            <marker date="1506431472255" expanded="true" signature="30097:30196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="289" column="29" lean-forward="false" selection-start-line="289" selection-start-column="29" selection-end-line="289" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/LobbyDebug.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="180" column="16" lean-forward="false" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="341" column="20" lean-forward="false" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Validator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Random.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Random2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#11#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTest/11112222.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTestAS2/11112222.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Regexp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ReturnBreakContinue.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTest/swf/c22223333.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTestAS2/fla/LIBRARY/Symbol 1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTestAS2/swf/~11112222.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/survarium/TradeWithInfo2.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="238">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchSettingsWindow.as">
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/constants/Colors.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as">
+    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/air/airglobal.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="277" column="25" lean-forward="false" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
+        <state relative-caret-position="214">
+          <caret line="3508" column="50" lean-forward="true" selection-start-line="3508" selection-start-column="50" selection-end-line="3508" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/managers/PVEManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/pveLobbyScreen.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="745" column="45" lean-forward="false" selection-start-line="745" selection-start-column="45" selection-end-line="745" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/pve_match_end_screen.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/flash_movies/11112222.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/flash_movies/movies/actions/shared_fonts.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchEndScreen.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="e#25#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

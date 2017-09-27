@@ -9,6 +9,7 @@ Delete all except
 	$1
 
 Search only SET visible of this level
+	\s+visible\s+=
 	[^."]visible[\s]*=
 	[^."]visible([0-9\sA-Z]{0,})=
 

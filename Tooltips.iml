@@ -59,7 +59,9 @@
       <excludeFolder url="file://$MODULE_DIR$/docs" />
     </content>
     <content url="file://D:/Survarium/resources/sources/flash_movies">
-      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
+      <sourceFolder url="file://D:/Survarium/resources/sources/flash_movies" isTestSource="false" />
+      <sourceFolder url="file://D:/Survarium/resources/sources/flash_movies/movies" isTestSource="false" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies/movies/actions" />
     </content>
     <content url="file://D:/Survarium/resources/sources/ui/sources">
       <sourceFolder url="file://D:/Survarium/resources/sources/ui/sources" isTestSource="false" />

@@ -1,0 +1,55 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" frameRate="25" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <symbols>
+          <Include href="Symbol 1.xml" itemID="59cb6dea-000008e7" lastModified="1506506575"/>
+          <Include href="Symbol 1 copy.xml" itemID="59cb6df0-000008ee" lastModified="1506506572"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 2" color="#9933CC">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <Actionscript>
+                                        <script><![CDATA[//Some Commented Text
+
+trace("main timeline inited");
+stop();]]></script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1" name="mc1" selected="true" centerPoint3DX="204.5" centerPoint3DY="84.5">
+                                             <matrix>
+                                                  <Matrix tx="51" ty="20"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="153.5" y="64.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1 copy" name="mc2" centerPoint3DX="368.35" centerPoint3DY="235">
+                                             <matrix>
+                                                  <Matrix tx="214.85" ty="170.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="153.5" y="64.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="1091" publishTime="1506506576"/>
+          <PublishItem publishSize="644" publishTime="1506506532"/>
+          <PublishItem publishSize="907" publishTime="1506504214"/>
+     </publishHistory>
+</DOMDocument>

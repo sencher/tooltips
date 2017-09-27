@@ -277,7 +277,9 @@ package com.junkbyte.console {
 		 * Local shared object used for storing user data such as command line history
 		 * Set to null to disable storing to local shared object.
 		 */
-		public var sharedObjectName:String = "com.junkbyte/Console/UserData";
+		
+		//DEBUG for Gfx Scaleform player
+		public var sharedObjectName:String = null;//"com.junkbyte/Console/UserData";
 		
 		/** Local shared object path */
 		public var sharedObjectPath:String = "/";
