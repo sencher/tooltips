@@ -10,16 +10,35 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" line="114" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Random2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ReturnBreakContinue.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Validator.as" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Air search files in folder">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.air" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Container.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/55/Test_IfNull.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/55/h/Test_TabSpaceSearch.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/55/xx/Test_ReturnBreakContinue.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/Container.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_AddChild.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_AddLogToAllMethods.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_DictionaryChangeTrace.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_GetClassNames.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_HtmlColorsText.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_IfNull.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_OverrideBehaviourInRuntime.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_Random2.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_ReturnBreakContinue.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_SimulateClick.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_TabSpaceSearch.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_TraceXML.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_VisibleEvent.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test_VisibleEvent2.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/TradeWithInfo.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/TradeWithInfo2.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/AirMain-app.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Test/MyTextFile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Regexp.txt" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/air/AirMain.as" afterPath="$PROJECT_DIR$/src/air/AirMain.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -977,7 +996,7 @@
       <workItem from="1505737540508" duration="2962000" />
       <workItem from="1505899355156" duration="31616000" />
       <workItem from="1506327901367" duration="9015000" />
-      <workItem from="1506413964375" duration="11533000" />
+      <workItem from="1506413964375" duration="11695000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1126,11 +1145,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506430404235</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Air search files in folder">
+      <created>1506526419228</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1506526419228</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332593000" />
+    <option name="totallyTimeSpent" value="332755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1155,13 +1181,13 @@
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52437705" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52437705" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1256,7 +1282,8 @@
     <MESSAGE value="AS2, AIR, as3corelib source" />
     <MESSAGE value="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as" />
     <MESSAGE value="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as" />
-    <option name="LAST_COMMIT_MESSAGE" value="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as" />
+    <MESSAGE value="Air search files in folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Air search files in folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
