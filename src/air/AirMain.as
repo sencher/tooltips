@@ -1,16 +1,22 @@
 package air {
-import flash.desktop.NativeProcess;
+	import air.update.utils.FileUtils;
+	
+	import flash.desktop.NativeProcess;
 import flash.desktop.NativeProcessStartupInfo;
 import flash.display.Shape;
 import flash.display.Sprite;
-import flash.events.MouseEvent;
+	import flash.events.Event;
+	import flash.events.MouseEvent;
 import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
 	import flash.text.TextField;
 
 import utils.Utils;
-
+	
+	// in app.xml
+	// <supportedProfiles>desktop extendedDesktop mobileDevice extendedMobileDevice</supportedProfiles>
+	// build exe to NativeProcess
 public class AirMain extends Sprite {
 	private var tf:TextField = new TextField();
 	private var button:Sprite = new Sprite();
@@ -29,15 +35,12 @@ public class AirMain extends Sprite {
 		box.name = "box";
 		addChild(button);
 		button.addChild(box);
-		button.addEventListener(MouseEvent.CLICK, onClick)
+		button.addEventListener(MouseEvent.CLICK, browseBtn_clickHandler)
 //		onClick();
 	}
 	
 	private function onClick(event:MouseEvent = null):void {
 		tf.appendText("c");
-		
-		//  in app.xml
-		// <supportedProfiles>desktop extendedDesktop mobileDevice extendedMobileDevice</supportedProfiles>
 		
 //		if(NativeProcess.isSupported)
 //		{
@@ -76,12 +79,55 @@ public class AirMain extends Sprite {
 //		{
 //			if(contentstrace(contents[i].name, contents[i].size);
 //		}
+
+//			newFolder = currentPath.resolvePath("Test");
+//			trace(newFolder.nativePath, newFolder.url);
+//			newFolder.createDirectory();
 		
 		var swfFiles:Array = getFilesInFolderRecursive(currentPath);
 		trace(swfFiles.length);
-		for (var i:uint = 0; i < swfFiles.length; i++)
+		var file:File;
+		var movedFile:File;
+		var newPath:String;
+		for each (file in swfFiles)
 		{
-			trace(swfFiles[i].name, swfFiles[i].size);
+			trace(file.name, file.size);
+			
+			var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
+			newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
+			trace(newPath);
+			var movedFile:File = new File(newPath);
+			trace(movedFile.nativePath);
+			file.copyTo(movedFile, true);
+			//file.deleteFile();
+		}
+	}
+	
+	protected function browseBtn_clickHandler(event:MouseEvent):void
+	{
+		var browseFile:File = currentPath;
+		browseFile.addEventListener(Event.SELECT, fileSelected);
+		browseFile.browseForDirectory("Select Local Folder");
+		function fileSelected(e:Event):void {
+			browseFile.removeEventListener(Event.SELECT, fileSelected);
+			trace(browseFile.nativePath);
+			var swfFiles:Array = getFilesInFolderRecursive(browseFile);
+			trace(swfFiles.length);
+			var file:File;
+			var movedFile:File;
+			var newPath:String;
+			for each (file in swfFiles)
+			{
+				trace(file.name, file.size);
+				
+				var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
+				newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
+				trace(newPath);
+				var movedFile:File = new File(newPath);
+				trace(movedFile.nativePath);
+				file.copyTo(movedFile, true);
+				//file.deleteFile();
+			}
 		}
 	}
 	
