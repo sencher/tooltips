@@ -10,19 +10,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/junkbyte/console/Console.as" line="488" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="AirMain.exe">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/AirMain.exe" afterPath="$PROJECT_DIR$/out/AirMain.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/AirMain.swf" afterPath="$PROJECT_DIR$/out/AirMain.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" afterPath="$PROJECT_DIR$/AirMainModule/AirMainModule.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleChannels.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleChannels.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/air/AirMain.as" afterPath="$PROJECT_DIR$/src/air/AirMain.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1063,7 +1054,7 @@
       <workItem from="1505899355156" duration="31616000" />
       <workItem from="1506327901367" duration="9015000" />
       <workItem from="1506413964375" duration="13029000" />
-      <workItem from="1506599287587" duration="5683000" />
+      <workItem from="1506599287587" duration="5741000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1247,11 +1238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506605036549</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="AirMain.exe">
+      <created>1506605075409</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1506605075409</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339772000" />
+    <option name="totallyTimeSpent" value="339830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1383,7 +1381,8 @@
     <MESSAGE value="out with Air folder test" />
     <MESSAGE value="Air select folder and move/copy swf to subfolders." />
     <MESSAGE value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
-    <option name="LAST_COMMIT_MESSAGE" value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
+    <MESSAGE value="AirMain.exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="AirMain.exe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
