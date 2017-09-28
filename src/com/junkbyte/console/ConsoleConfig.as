@@ -26,6 +26,8 @@ package com.junkbyte.console {
 
 	public class ConsoleConfig {
 		
+		public static const STACK_HREF_TEXT:String = "[Stack]";
+		
 		/**
 		 * 	Password sequence to toggle console's visibility. If password is set, console will start hidden. Set Cc.visible = ture to unhide at start.
 		 * 	Must be ASCII chars. Example passwords: ` OR debug.

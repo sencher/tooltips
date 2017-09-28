@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console {
+	import com.junkbyte.console.ConsoleConfig;
 	import com.junkbyte.console.core.ConsoleTools;
 	import com.junkbyte.console.core.LogReferences;
 	
@@ -213,7 +214,7 @@ package com.junkbyte.console {
 		public static function logchw(channel:*, ...strings):void{
 			if(!_console) return;
 			var stack:String = _console.mapper.whoCalledThis();
-			strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
+			if(stack) strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
 			_console.addCh(channel, strings, Console.LOG, false, true);
 		}
 		
@@ -258,7 +259,7 @@ package com.junkbyte.console {
 		public static function warnchw(channel:*, ...strings):void{
 			if(!_console) return;
 			var stack:String = _console.mapper.whoCalledThis();
-			strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
+			if(stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
 			_console.addCh(channel, strings, Console.WARN, false, true);
 		}
 		

@@ -20,10 +20,15 @@ import utils.Utils;
 public class AirMain extends Sprite {
 	private var tf:TextField = new TextField();
 	private var button:Sprite = new Sprite();
-	private var currentPath:File;
+	private var appPath:File;
+	private var lastPath:File;
+	private var lastPathLoading:File;
+	private var browsePath:File;
+	private const LAST_PATH:String = "LastPath.txt";
+	private const COPIES:String = "Copies";
 	
 	public function AirMain() {
-		currentPath = new File(File.applicationDirectory.nativePath + "/Test");
+		appPath = new File(File.applicationDirectory.nativePath/* + "/Test"*/);
 		
 		tf.text = "Main";
 		tf.multiline = true;
@@ -35,8 +40,34 @@ public class AirMain extends Sprite {
 		box.name = "box";
 		addChild(button);
 		button.addChild(box);
+		
+		lastPathLoading = appPath.resolvePath(LAST_PATH);
+		if(lastPathLoading.exists) {
+			lastPathLoading.addEventListener(Event.COMPLETE, lastPathLoaded);
+			lastPathLoading.load();
+		}
+		
+//		function loaded(event:Event = null)
+//		{
+//			var bytes = file.data;
+//			str = bytes.readUTFBytes(bytes.length);
+//			lastPath = new File(str);
+//		}
+		
 		button.addEventListener(MouseEvent.CLICK, browseBtn_clickHandler)
 //		onClick();
+	}
+	
+	private function lastPathLoaded(event:Event = null)
+	{
+		var bytes = lastPathLoading.data;
+		var str:String = bytes.readUTFBytes(bytes.length);
+		try {
+			lastPath = new File(str);
+			trace("loaded " + LAST_PATH);
+		}catch (e:Error){
+			trace("Incorrect LastPath.txt : ", str);
+		}
 	}
 	
 	private function onClick(event:MouseEvent = null):void {
@@ -84,7 +115,43 @@ public class AirMain extends Sprite {
 //			trace(newFolder.nativePath, newFolder.url);
 //			newFolder.createDirectory();
 		
-		var swfFiles:Array = getFilesInFolderRecursive(currentPath);
+//		var swfFiles:Array = getFilesInFolderRecursive(currentPath);
+//		trace(swfFiles.length);
+//		var file:File;
+//		var movedFile:File;
+//		var newPath:String;
+//		for each (file in swfFiles)
+//		{
+//			trace(file.name, file.size);
+//
+//			var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
+//			newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
+//			trace(newPath);
+//			var movedFile:File = new File(newPath);
+//			trace(movedFile.nativePath);
+//			file.copyTo(movedFile, true);
+//			//file.deleteFile();
+//		}
+	}
+	
+	protected function browseBtn_clickHandler(event:MouseEvent):void
+	{
+		browsePath = lastPath ? lastPath.clone() : appPath.clone();
+		browsePath.addEventListener(Event.SELECT, fileSelected);
+		browsePath.browseForDirectory("Select Local Folder");
+	}
+	
+	private function fileSelected(e:Event):void {
+		browsePath.removeEventListener(Event.SELECT, fileSelected);
+		trace(browsePath.nativePath);
+		
+		var copiesFolder:File = browsePath.resolvePath(COPIES);
+		if(copiesFolder.exists){
+			trace("removed old copiesFolder");
+			copiesFolder.deleteDirectory(true);
+		}
+		
+		var swfFiles:Array = getFilesInFolderRecursive(browsePath);
 		trace(swfFiles.length);
 		var file:File;
 		var movedFile:File;
@@ -93,42 +160,24 @@ public class AirMain extends Sprite {
 		{
 			trace(file.name, file.size);
 			
-			var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
-			newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
+			//Each swf in folder Copies and then in separate folders
+			newPath = browsePath.nativePath + "\\" + COPIES + "\\" + file.name.replace(file.type,"\\") + file.name;
+			
+			//Each swf in folder in place
+			//var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
+			//newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
 			trace(newPath);
 			var movedFile:File = new File(newPath);
 			trace(movedFile.nativePath);
 			file.copyTo(movedFile, true);
 			//file.deleteFile();
 		}
-	}
-	
-	protected function browseBtn_clickHandler(event:MouseEvent):void
-	{
-		var browseFile:File = currentPath;
-		browseFile.addEventListener(Event.SELECT, fileSelected);
-		browseFile.browseForDirectory("Select Local Folder");
-		function fileSelected(e:Event):void {
-			browseFile.removeEventListener(Event.SELECT, fileSelected);
-			trace(browseFile.nativePath);
-			var swfFiles:Array = getFilesInFolderRecursive(browseFile);
-			trace(swfFiles.length);
-			var file:File;
-			var movedFile:File;
-			var newPath:String;
-			for each (file in swfFiles)
-			{
-				trace(file.name, file.size);
-				
-				var lastSlash:int = file.nativePath.lastIndexOf("\\") + 1;
-				newPath = file.nativePath.substring(0, lastSlash) + file.name.replace(file.type,"\\") + file.nativePath.substring(lastSlash, file.nativePath.length);
-				trace(newPath);
-				var movedFile:File = new File(newPath);
-				trace(movedFile.nativePath);
-				file.copyTo(movedFile, true);
-				//file.deleteFile();
-			}
-		}
+		
+		var stream:FileStream = new FileStream();
+		stream.open(appPath.resolvePath(LAST_PATH), FileMode.WRITE);
+		stream.writeUTFBytes(browsePath.nativePath);
+		stream.close();
+		lastPath = browsePath.clone();
 	}
 	
 	private function getFilesInFolderRecursive(path:File):Array {

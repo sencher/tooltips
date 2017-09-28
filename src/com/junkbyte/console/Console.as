@@ -486,7 +486,7 @@ package com.junkbyte.console
 			if(!html && stacks>0){
 				txt += _tools.getStack(stacks, priority);
 			}
-			_logs.add(new Log(txt, MakeChannelName(channel), priority, isRepeating, html));
+			_logs.add(new Log(this, txt, MakeChannelName(channel), priority, isRepeating, html));
 		}
 		//
 		// COMMAND LINE

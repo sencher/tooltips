@@ -202,8 +202,7 @@ import flash.utils.ByteArray;
 			for each (s in cut) {
 				r += s + "\n";
 			}
-			r += "*************";
-			return r;
+			return cut.length ? r += "*************" : r;
 		}
 	}
 }

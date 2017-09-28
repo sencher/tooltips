@@ -23,6 +23,9 @@
 * 
 */
 package com.junkbyte.console.vos {
+	import com.junkbyte.console.Console;
+	import com.junkbyte.console.ConsoleConfig;
+	
 	import flash.utils.ByteArray;
 	
 	/**
@@ -44,8 +47,10 @@ package com.junkbyte.console.vos {
 		//
 		public var next:Log;
 		public var prev:Log;
+		private var _console:Console;
 		//
-		public function Log(txt:String, cc:String, pp:int, repeating:Boolean = false, ishtml:Boolean = false){
+		public function Log(console:Console, txt:String, cc:String, pp:int, repeating:Boolean = false, ishtml:Boolean = false){
+			_console = console;
 			text = txt;
 			ch = cc;
 			priority = pp;
@@ -61,23 +66,29 @@ package com.junkbyte.console.vos {
 			bytes.writeInt(priority);
 			bytes.writeBoolean(repeat);
 		}
-		public static function FromBytes(bytes:ByteArray):Log{
+		public static function FromBytes(console:Console, bytes:ByteArray):Log{
 			var t:String = bytes.readUTFBytes(bytes.readUnsignedInt());
 			var c:String = bytes.readUTF();
 			var p:int = bytes.readInt();
 			var r:Boolean = bytes.readBoolean();
-			return new Log(t, c, p, r, true);
+			return new Log(console, t, c, p, r, true);
 		}
 		
 		public function plainText():String{
-			return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+			if(text.indexOf(ConsoleConfig.STACK_HREF_TEXT) < 0) {
+				return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+			}else{
+				var pattern:RegExp = /event:.*_(.*)'/g;
+				var linkId:int = text.match(pattern)[0].replace(pattern, "$1");
+				return text.replace(/<.*> /g,"") + "\n" + _console.refs.getRefById(linkId);
+			}
 		}
 		public function toString():String{
 			return "["+ch+"] " + plainText();
 		}
 		
 		public function clone():Log{
-			var l:Log = new Log(text, ch, priority, repeat, html);
+			var l:Log = new Log(_console, text, ch, priority, repeat, html);
 			l.line = line;
 			l.time = time;
 			//l.stack = stack;
