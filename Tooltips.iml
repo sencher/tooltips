@@ -56,15 +56,23 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/AS2_Test" />
+      <excludeFolder url="file://$MODULE_DIR$/AirChild" />
+      <excludeFolder url="file://$MODULE_DIR$/AirMainModule" />
+      <excludeFolder url="file://$MODULE_DIR$/FLA_experiments" />
+      <excludeFolder url="file://$MODULE_DIR$/atf" />
       <excludeFolder url="file://$MODULE_DIR$/docs" />
+      <excludeFolder url="file://$MODULE_DIR$/html-template" />
+      <excludeFolder url="file://$MODULE_DIR$/libs" />
+      <excludeFolder url="file://$MODULE_DIR$/src/fl" />
+      <excludeFolder url="file://$MODULE_DIR$/src/mx" />
+      <excludeFolder url="file://$MODULE_DIR$/src/starling" />
     </content>
     <content url="file://D:/Survarium/resources/sources/flash_movies">
-      <sourceFolder url="file://D:/Survarium/resources/sources/flash_movies" isTestSource="false" />
-      <sourceFolder url="file://D:/Survarium/resources/sources/flash_movies/movies" isTestSource="false" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
       <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies/movies/actions" />
     </content>
     <content url="file://D:/Survarium/resources/sources/ui/sources">
-      <sourceFolder url="file://D:/Survarium/resources/sources/ui/sources" isTestSource="false" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/com" />
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/obj" />
@@ -82,7 +90,7 @@
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library" exported="" scope="TEST">
       <library type="flex">
         <properties id="25d8d902-fac5-4318-bfce-b240f8adcfec" />
         <CLASSES>

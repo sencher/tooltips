@@ -30,14 +30,13 @@ public class Test_ConsoleChannels extends Sprite {
 	
 	    Cc.config.tracing = true;
      
-//        Cc.log("log");
-//        Cc.logch("logch","logch");
-//        Cc.logchw("logchw","logchw");
-//        Cc.warn("warn");
-//        Cc.warnch("warnch","warnch");
-        Cc.warnchw("warnchw","warnchw");
-        
-//        var s:String = "<menu><a href='event:ref_1'>[Stack]</a></menu> warnchw";
+        Cc.log("log");
+        Cc.logch("logch", "logch");
+        Cc.logchw(this, "logchw", "logchw");
+        Cc.warn("warn");
+        Cc.warnch("warnch", "warnch");
+	    Cc.warnchw(this, "warnchw", "warnchw");
+     //        var s:String = "<menu><a href='event:ref_1'>[Stack]</a></menu> warnchw";
 //	    var pattern:RegExp = /event:.*_(.*)'/g;
 //	    var linkId:int = s.match(pattern)[0].replace(pattern, "$1");
 //        trace(linkId);

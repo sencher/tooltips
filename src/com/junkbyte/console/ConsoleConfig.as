@@ -23,7 +23,8 @@
 * 
 */
 package com.junkbyte.console {
-
+	import com.junkbyte.console.vos.Log;
+	
 	public class ConsoleConfig {
 		
 		public static const STACK_HREF_TEXT:String = "[Stack]";
@@ -133,8 +134,8 @@ package com.junkbyte.console {
 		 * </p>
 		 * @see tracing
 		 */
-		public var traceCall:Function = function (ch:String, line:String, ...args):void{
-			trace("["+ch+"] "+line);
+		public var traceCall:Function = function (line:Log):void{
+			trace(line);
 		};
 		
 		
@@ -279,9 +280,7 @@ package com.junkbyte.console {
 		 * Local shared object used for storing user data such as command line history
 		 * Set to null to disable storing to local shared object.
 		 */
-		
-		//DEBUG for Gfx Scaleform player
-		public var sharedObjectName:String = null;//"com.junkbyte/Console/UserData";
+		public var sharedObjectName:String = "com.junkbyte/Console/UserData";
 		
 		/** Local shared object path */
 		public var sharedObjectPath:String = "/";

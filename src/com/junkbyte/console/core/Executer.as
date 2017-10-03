@@ -532,15 +532,28 @@ package com.junkbyte.console.core
 			return null;
 		}
 		private function ignoreWhite(str:String):String{
-			// can't just do /\s*(.*?)\s*/  :(  any better way?
-			str = str.replace(/\s*(.*)/,"$1");
-			var i:int = str.length-1;
-			while(i>0){
-				if(str.charAt(i).match(/\s/)) str = str.substring(0,i);
-				else break;
-				i--;
+			var counter:int = 0;
+			var counterEnd:int = str.length - 1;
+			while(str.charAt(counter) == " "){
+				counter++;
 			}
-			return str;
+			while(str.charAt(counterEnd) == " "){
+				counterEnd--;
+			}
+			return str.substring(counter, counterEnd + 1);
+			
+//			Cc.logchw(this, "ignoreWhite", str);
+//			// can't just do /\s*(.*?)\s*/  :(  any better way?
+//			str = str.replace(/\s*(.*)/,"$1");
+//			var i:int = str.length-1;
+//			while(i>0){
+//				if(str.charAt(i).match(/\s/)) {
+//					str = str.substring(0,i);
+//				}
+//				else break;
+//				i--;
+//			}
+//			return str;
 		}
 	}
 }

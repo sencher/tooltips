@@ -5,15 +5,20 @@ package {
 	import flash.display.Sprite;
 	import flash.ui.Keyboard;
 	
+	import scaleform.gfx.Extensions;
+	
 	[SWF(height=600,width=500)]
 public class Test_ConsoleKeysAndCommands extends Sprite {
-    public function Test_ConsoleKeysAndCommands() {
-//        Cc.start(this);
-//        Cc.visible = true;
-//        Cc.height = 200;
-//        Cc.width = 500;
+		public var box:Box = new Box();
+		
+		public function Test_ConsoleKeysAndCommands() {
+        Cc.start(this);
+        Cc.visible = true;
+        Cc.height = 200;
+        Cc.width = 500;
 
         Cc.config.commandLineAllowed = true;
+        Cc.config.commandLineAutoScope = true;
         Cc.addSlashCommand("f0", f0);
         Cc.addSlashCommand("f1", f1);
         Cc.addSlashCommand("f2", f2);
@@ -23,19 +28,29 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_9), toggleConsoleVisibility, []);
 
         //trace(f2(77,1))
+        trace(Extensions.isGFxPlayer);
         
-        var b1 = new Box();
-        b1.y = 250;
-        addChild(b1);
+        box.y = 250;
+        addChild(box);
 	    
 	    Cc.warnchw(this);
 	    Cc.log(this);
+			
+			var str:String = "this";
+			var str2:String = str.replace(/\s*(.*)/,"$1");
+			var str3:String = str.replace(/\s*(.*?)\s*/,"$1");
+			trace(str,str2,str3);
+			
+			var b:String = "     aaa     bbb    ccc ddd";
+			var b1:String = b.replace(/\s*(.*)/, "$1");
+			trace(b1);
+			
      
     }
 		
-		private function toggleConsoleVisibility():void {
-            Cc.visible = !Cc.visible;
-		}
+	private function toggleConsoleVisibility():void {
+        Cc.visible = !Cc.visible;
+	}
 
     public function f0():void {
         Cc.log("f0 called", arguments);

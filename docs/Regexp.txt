@@ -49,3 +49,9 @@ Un-Comment // or /* */
 
 
 (\.\w+)
+
+
+C++ log
+	File          :
+	scaleform <error
+	[trace

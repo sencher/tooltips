@@ -117,7 +117,7 @@ package com.junkbyte.console.core
 			}
 			//
 			if ( config.tracing && config.traceCall != null) {
-				config.traceCall(line.ch, line.plainText(), line.priority);
+				config.traceCall(line);
 			}
 		}
 		

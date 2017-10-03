@@ -61,7 +61,7 @@ package com.junkbyte.console.vos {
 			var t:ByteArray = new ByteArray();
 			t.writeUTFBytes(text);// because writeUTF can't accept more than 65535
 			bytes.writeUnsignedInt(t.length);
-			bytes.writeBytes(t); 
+			bytes.writeBytes(t);
 			bytes.writeUTF(ch);
 			bytes.writeInt(priority);
 			bytes.writeBoolean(repeat);
@@ -79,12 +79,12 @@ package com.junkbyte.console.vos {
 				return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 			}else{
 				var pattern:RegExp = /event:.*_(.*)'/g;
-				var linkId:int = text.match(pattern)[0].replace(pattern, "$1");
+				var linkId:int = int(String(text.match(pattern)[0]).replace(pattern, "$1"));
 				return text.replace(/<.*> /g,"") + "\n" + _console.refs.getRefById(linkId);
 			}
 		}
 		public function toString():String{
-			return "["+ch+"] " + plainText();
+			return "[trace " + priority + "] " + "["+ch+"] " + plainText();
 		}
 		
 		public function clone():Log{

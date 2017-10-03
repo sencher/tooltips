@@ -814,5 +814,9 @@ package com.junkbyte.console {
 				mc.stage.addChild(_console);
 			}
 		}
+		
+		public static function setScale(value:Number):void {
+			if(_console) _console.scaleX = _console.scaleY = value;
+		}
 	}
 }
