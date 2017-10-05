@@ -28,7 +28,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_9), toggleConsoleVisibility, []);
 
         //trace(f2(77,1))
-        trace(Extensions.isGFxPlayer);
+        //trace(Extensions.isGFxPlayer);
         
         box.y = 250;
         addChild(box);

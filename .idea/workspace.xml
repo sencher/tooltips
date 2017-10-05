@@ -11,23 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="AirMain.exe">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ConsoleAutoscope.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ConsoleTopmost.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/Test_ConsoleChannels.swf" afterPath="$PROJECT_DIR$/out/Test_ConsoleChannels.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Bitwise.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ColorARGB.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Regexp.txt" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleChannels.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleChannels.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/junkbyte/console/vos/WeakObject.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/vos/WeakObject.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Test_Regexp_Converter.as" afterPath="$PROJECT_DIR$/src/Test_RegexpReplace.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,118 +41,52 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59756875">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="159">
-          <file leaf-file-name="Test_ConsoleAutoscope.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Test_ConsoleAutoscope.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#11#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ConsoleConfig.as" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CommandLine.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
-                  <caret line="411" column="29" lean-forward="false" selection-start-line="411" selection-start-column="29" selection-end-line="411" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#991#1022#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test_ConsoleTopmost.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Test_ConsoleTopmost.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#11#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Executer.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="64">
-                  <caret line="218" column="10" lean-forward="true" selection-start-line="218" selection-start-column="10" selection-end-line="218" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#992#1023#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test_ConsoleKeysAndCommands.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test_RegexpReplace.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#11#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainPanel.as" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="157">
-                  <caret line="1038" column="9" lean-forward="false" selection-start-line="1038" selection-start-column="9" selection-end-line="1038" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#992#1023#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Test_ConsoleChannels.as" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Test_ConsoleChannels.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="159">
+      <file leaf-file-name="Test_ColorTransform.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaa.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/aaa.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39">
+              <caret line="5632" column="25" lean-forward="false" selection-start-line="5632" selection-start-column="25" selection-end-line="5632" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="147" column="47" lean-forward="false" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
+              <folding>
+                <marker date="1507212964962" expanded="true" signature="14:7066" ph="{...}" />
+                <marker date="1507212964962" expanded="true" signature="498:7064" ph="{...}" />
+                <marker date="1507212964962" expanded="true" signature="6926:7058" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -248,11 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/Survarium/resources/sources/ui/sources/HUD.as" />
-        <option value="$PROJECT_DIR$/src/Test_TabSpaceSearch.as" />
-        <option value="$PROJECT_DIR$/src/Test_OverrideBehaviourInRuntime2.as" />
-        <option value="$PROJECT_DIR$/src/Test_OverrideBehaviourInRuntime.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as" />
         <option value="$PROJECT_DIR$/AS2_Test/BirthdayGame.as" />
         <option value="$PROJECT_DIR$/src/Test_GetClassNames.as" />
         <option value="$PROJECT_DIR$/src/display/MovieClipWithEvents2.as" />
@@ -263,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/display/MovieClipWithEvents.as" />
         <option value="$PROJECT_DIR$/src/Test_VisibleEvent.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/Util.as" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as" />
         <option value="$PROJECT_DIR$/src/survarium/Container.as" />
         <option value="$PROJECT_DIR$/src/utils/DictionaryDebug.as" />
@@ -292,13 +211,19 @@
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/vos/WeakObject.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" />
-        <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
         <option value="$PROJECT_DIR$/src/Test_Regexp_Converter.as" />
         <option value="$PROJECT_DIR$/src/Test_ConsoleTopmost.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as" />
         <option value="$PROJECT_DIR$/src/Test_RegexpReplace.as" />
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
+        <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
+        <option value="$PROJECT_DIR$/src/survarium/Watermark.as" />
+        <option value="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
+        <option value="D:/Survarium/resources/sources/ui/sources/survarium/hud/Watermark.as" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/Test_Bitwise.as" />
+        <option value="$PROJECT_DIR$/src/Test_ColorARGB.as" />
       </list>
     </option>
   </component>
@@ -340,6 +265,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -348,28 +274,11 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
             </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="flash_movies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,26 +294,26 @@
     <property name="GO_FMT" value="false" />
     <property name="js-jscs-nodeInterpreter" value="A:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
-    <property name="SearchEverywhereHistoryKey" value="testconsole&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as&#10;config&#9;null&#9;null&#10;pveMatchEndScreen&#9;null&#9;null&#10;pvematendsc&#9;null&#9;null&#10;22223333&#9;null&#9;null&#10;testconso&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as&#10;matmase&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/mmaking/MatchMakingSettings.as&#10;withinfo&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as&#10;NumericStepperLabel&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperLabel.as&#10;tabp&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as&#10;setDirty&#9;null&#9;null&#10;consoleas&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as" />
+    <property name="SearchEverywhereHistoryKey" value="water&#9;null&#9;null&#10;testconsole&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as&#10;config&#9;null&#9;null&#10;pveMatchEndScreen&#9;null&#9;null&#10;pvematendsc&#9;null&#9;null&#10;22223333&#9;null&#9;null&#10;testconso&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as&#10;matmase&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/mmaking/MatchMakingSettings.as&#10;withinfo&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as&#10;NumericStepperLabel&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/controls/NumericStepperLabel.as&#10;tabp&#9;FILE&#9;file://D:/Survarium/resources/sources/ui/sources/survarium/hud/TabPlayersPve.as&#10;setDirty&#9;null&#9;null&#10;consoleas&#9;FILE&#9;file://D:/Projects/tooltips/src/Test_ConsoleKeysAndCommands.as" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="A:\Projects\tooltips\src\starling" />
-      <recent name="A:\Projects\tooltips\src\Patterns" />
-    </key>
-    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
-      <recent name="" />
-      <recent name="survarium.controls" />
-      <recent name="utils" />
-      <recent name="display" />
-      <recent name="survarium" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\tooltips\src\survarium" />
       <recent name="D:\Projects\tooltips\src\display" />
       <recent name="D:\Projects\tooltips\src" />
       <recent name="D:\Projects\tooltips\src\air" />
       <recent name="D:\Projects\tooltips\libs" />
+    </key>
+    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="" />
+      <recent name="survarium" />
+      <recent name="survarium.controls" />
+      <recent name="utils" />
+      <recent name="display" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Projects\tooltips\src\starling" />
+      <recent name="A:\Projects\tooltips\src\Patterns" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.Test_ConsoleKeysAndCommands">
+  <component name="RunManager" selected="Flash App.Test_ColorARGB">
     <configuration name="AirMainModule" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="AirMainModule" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -491,7 +400,7 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration name="Test_ConsoleChannels" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Bitwise" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -515,8 +424,76 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ConsoleChannels" />
-      <option name="overriddenOutputFileName" value="Test_ConsoleChannels.swf" />
+      <option name="overriddenMainClass" value="Test_Bitwise" />
+      <option name="overriddenOutputFileName" value="Test_Bitwise.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_ColorARGB" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="Player" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_ColorARGB" />
+      <option name="overriddenOutputFileName" value="Test_ColorARGB.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_ColorTransform" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="Player" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_ColorTransform" />
+      <option name="overriddenOutputFileName" value="Test_ColorTransform.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -551,40 +528,6 @@
       <option name="moduleName" value="Tooltips" />
       <option name="overriddenMainClass" value="Test_ConsoleKeysAndCommands" />
       <option name="overriddenOutputFileName" value="Test_ConsoleKeysAndCommands.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_ConsoleTopmost" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="Player" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ConsoleTopmost" />
-      <option name="overriddenOutputFileName" value="Test_ConsoleTopmost.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -630,7 +573,7 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration name="Test_RegexpReplace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="WatermarkTest" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -654,42 +597,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_RegexpReplace" />
-      <option name="overriddenOutputFileName" value="Test_RegexpReplace.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_ReturnBreakContinue" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="Player" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ReturnBreakContinue" />
-      <option name="overriddenOutputFileName" value="Test_ReturnBreakContinue.swf" />
+      <option name="overriddenMainClass" value="survarium.WatermarkTest" />
+      <option name="overriddenOutputFileName" value="WatermarkTest.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -979,19 +888,19 @@
       <item index="0" class="java.lang.String" itemvalue="Flash App.Test" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ExternalInterface HTML" />
       <item index="2" class="java.lang.String" itemvalue="Flash App.AirMainModule" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ReturnBreakContinue" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ConsoleChannels" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
-      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_RegexpReplace" />
-      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_ConsoleTopmost" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.WatermarkTest" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_ColorTransform" />
+      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_ColorARGB" />
+      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_Bitwise" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_RegexpReplace" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_ConsoleTopmost" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ConsoleChannels" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ReturnBreakContinue" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_ColorARGB" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Bitwise" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_ColorTransform" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.WatermarkTest" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
       </list>
     </recent_temporary>
   </component>
@@ -1062,6 +971,8 @@
       <workItem from="1506609276331" duration="2968000" />
       <workItem from="1506700318738" duration="669000" />
       <workItem from="1506947697474" duration="18301000" />
+      <workItem from="1507127214735" duration="7479000" />
+      <workItem from="1507195187847" duration="15496000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1263,7 +1174,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362415000" />
+    <option name="totallyTimeSpent" value="386273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1279,19 +1190,19 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.1977612" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.3608742" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5063966" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
@@ -1299,16 +1210,40 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43228602" sideWeight="0.8022388" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.79584223" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.3608742" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.79584223" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1426,16 +1361,22 @@
           <line>398</line>
           <option name="timeStamp" value="293" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_ColorARGB.as</url>
+          <line>121</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="297" />
+      <option name="time" value="320" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
         <watch expression="_returned" />
         <watch expression="_scope" />
+        <watch expression="trans.color" />
       </configuration>
     </watches-manager>
   </component>
@@ -1450,84 +1391,10 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageBase.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemBase.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_HtmlColorsText.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="95" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="95" />
-          <folding>
-            <element signature="e#11#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/pve/PVEMatchSettingsWindow.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4403">
-          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/messages/MessageItemTradeWithInfo.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="289" column="29" lean-forward="false" selection-start-line="289" selection-start-column="29" selection-end-line="289" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Survarium/resources/sources/ui/sources/LobbyDebug.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="180" column="16" lean-forward="false" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="341" column="20" lean-forward="false" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Validator.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Random.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Random2.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#11#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1636,9 +1502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding>
-            <element signature="e#25#56#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1646,7 +1509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1670,7 +1532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,7 +1547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,9 +1554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="143" column="33" lean-forward="false" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
-          <folding>
-            <element signature="e#992#1021#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1704,7 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1712,7 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1720,17 +1575,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="1038" column="9" lean-forward="false" selection-start-line="1038" selection-start-column="9" selection-end-line="1038" selection-end-column="9" />
-          <folding>
-            <element signature="e#992#1023#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="16864">
+          <caret line="1037" column="9" lean-forward="false" selection-start-line="1037" selection-start-column="9" selection-end-line="1037" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1738,7 +1589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="885" column="9" lean-forward="false" selection-start-line="885" selection-start-column="9" selection-end-line="885" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1746,7 +1596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1754,7 +1603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="558" column="42" lean-forward="false" selection-start-line="558" selection-start-column="42" selection-end-line="558" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1762,27 +1610,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="253" column="38" lean-forward="false" selection-start-line="253" selection-start-column="38" selection-end-line="253" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ConsoleTopmost.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="51">
           <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
           <folding>
-            <element signature="e#11#42#0" expanded="true" />
+            <element signature="e#11#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ConsoleAutoscope.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="255">
           <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#11#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1790,69 +1634,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="137" column="31" lean-forward="false" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="411" column="29" lean-forward="false" selection-start-line="411" selection-start-column="29" selection-end-line="411" selection-end-column="29" />
+        <state relative-caret-position="6392">
+          <caret line="406" column="29" lean-forward="false" selection-start-line="406" selection-start-column="29" selection-end-line="406" selection-end-column="29" />
           <folding>
-            <element signature="e#991#1022#0" expanded="true" />
+            <marker date="1507026148043" expanded="true" signature="9715:10390" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="119">
           <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding>
-            <element signature="e#11#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ConsoleChannels.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="348">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="218" column="10" lean-forward="true" selection-start-line="218" selection-start-column="10" selection-end-line="218" selection-end-column="10" />
+        <state relative-caret-position="3128">
+          <caret line="211" column="10" lean-forward="false" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
           <folding>
-            <element signature="e#992#1023#0" expanded="true" />
+            <marker date="1507026458294" expanded="true" signature="990:1143" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
+        <state relative-caret-position="4437">
+          <caret line="284" column="39" lean-forward="false" selection-start-line="284" selection-start-column="39" selection-end-line="284" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/survarium/Template.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/watermark.swc!/library.swf" />
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/hud/Watermark.as" />
+    <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/Util.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="552" column="31" lean-forward="false" selection-start-line="552" selection-start-column="31" selection-end-line="552" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/survarium/WatermarkTest.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="147" column="47" lean-forward="false" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
+          <folding>
+            <marker date="1507212964962" expanded="true" signature="14:7066" ph="{...}" />
+            <marker date="1507212964962" expanded="true" signature="498:7064" ph="{...}" />
+            <marker date="1507212964962" expanded="true" signature="6926:7058" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="5632" column="25" lean-forward="false" selection-start-line="5632" selection-start-column="25" selection-end-line="5632" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Bitwise.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ColorARGB.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <folding>
+            <element signature="e#11#38#0" expanded="true" />
+            <element signature="e#2062#2089#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1914,7 +1813,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -139,12 +139,12 @@ package utils {
             return Math.floor(Math.random() * (max + 1 - min)) + min;
         }
         
-	    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xffff00):Shape
+	    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, borderColor:uint = 0x000000):Shape
 	    {
 		    //trace("drawBox",arguments)
 		    var box:Shape = new Shape();
-		    box.graphics.lineStyle(1, color, .75);
-		    box.graphics.beginFill(0xcccccc);
+		    box.graphics.lineStyle(1, borderColor, .75);
+		    box.graphics.beginFill(color);
 //        box.graphics.drawRect(-w/2,-h/2,w,h);
 		    box.graphics.drawRect(0,0,w,h);
 		    box.x = x;
