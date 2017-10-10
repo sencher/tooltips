@@ -1,8 +1,12 @@
 package survarium {
+	import com.junkbyte.console.Cc;
+	
 	import flash.display.Sprite;
+	import flash.display.StageScaleMode;
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
+	import flash.text.TextField;
 	import flash.ui.Keyboard;
 	import flash.utils.Timer;
 	
@@ -12,8 +16,9 @@ package survarium {
 	
 	import utils.Utils;
 	
-	[SWF(width="1400", height="800", backgroundColor="0x999999")]
+	[SWF(width="1920", height="1080", backgroundColor="0x999999", scaleMode=StageScaleMode.SHOW_ALL)]
 	public class WatermarkTest extends Sprite {
+		private static const ROWS:int = 4;
 		private var mc:Watermark;
 		private var timer:Timer = new Timer(1);
 		private var data1:Object = {
@@ -59,6 +64,10 @@ package survarium {
 		};
 		
 		public function WatermarkTest() {
+			var box = Utils.drawBox(0,0,1920,1080);
+			addChild(box);
+			
+			Cc.start(this);
 			PlayRegular;PlayBold;
 			mc = new SrvWatermark();
 			
@@ -69,6 +78,16 @@ package survarium {
 	//		timer.addEventListener(TimerEvent.TIMER, onTimer);
 			//timer.start();
 			mc.setData(data1);
+			
+			var i:int;
+			var curRow:TextField;
+			for(i=0; i<ROWS; i++){
+				curRow = TextField(mc["row"+i].row_tf);
+				curRow.backgroundColor = 0xFFFFFF;
+				curRow.background = true;
+				curRow.borderColor = 0x000000;
+				curRow.border = true;
+			}
 		}
 		
 		

@@ -207,5 +207,11 @@ package utils {
 			textFormat.color = color;
 			textField.setTextFormat(textFormat);
 		}
+		
+		public static function cutDecimals(num:Number, decimals:int):Number
+		{
+			var m:int = Math.pow(10, decimals);
+			return Math.round(num * m) / m;
+		}
     }
 }

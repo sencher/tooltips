@@ -95,7 +95,7 @@
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="" scope="TEST">
+    <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="25d8d902-fac5-4318-bfce-b240f8adcfec" />
         <CLASSES>

@@ -10,14 +10,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/junkbyte/console/Console.as" line="488" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="AirMain.exe">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_Bitwise.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test_ColorARGB.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Regexp.txt" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" afterPath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/survarium/WatermarkTest.as" afterPath="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
@@ -45,14 +41,14 @@
       <file leaf-file-name="Test_ColorTransform.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="408">
               <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aaa.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aaa.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aaa.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -62,10 +58,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="WatermarkTest.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/survarium/WatermarkTest.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <folding>
+                <element signature="e#21#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/watermark.swc!/library.swf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30566">
+              <caret line="1798" column="25" lean-forward="false" selection-start-line="1798" selection-start-column="25" selection-end-line="1798" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
+            <state relative-caret-position="95744">
               <caret line="5632" column="25" lean-forward="false" selection-start-line="5632" selection-start-column="25" selection-end-line="5632" selection-end-column="25" />
               <folding />
             </state>
@@ -75,13 +93,9 @@
       <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="147" column="47" lean-forward="false" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
-              <folding>
-                <marker date="1507212964962" expanded="true" signature="14:7066" ph="{...}" />
-                <marker date="1507212964962" expanded="true" signature="498:7064" ph="{...}" />
-                <marker date="1507212964962" expanded="true" signature="6926:7058" ph="{...}" />
-              </folding>
+            <state relative-caret-position="3315">
+              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="214" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AS2_Test/BirthdayGame.as" />
         <option value="$PROJECT_DIR$/src/Test_GetClassNames.as" />
         <option value="$PROJECT_DIR$/src/display/MovieClipWithEvents2.as" />
         <option value="$PROJECT_DIR$/src/Test_VisibleEvent2.as" />
@@ -219,11 +232,12 @@
         <option value="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
         <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
         <option value="$PROJECT_DIR$/src/survarium/Watermark.as" />
-        <option value="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/hud/Watermark.as" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
         <option value="$PROJECT_DIR$/src/Test_Bitwise.as" />
         <option value="$PROJECT_DIR$/src/Test_ColorARGB.as" />
+        <option value="D:/Survarium/resources/sources/ui/sources/lib/watermark.swc!/library.swf" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
       </list>
     </option>
   </component>
@@ -241,9 +255,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="656" />
-    <option name="y" value="515" />
-    <option name="width" value="974" />
+    <option name="x" value="-6" />
+    <option name="width" value="1932" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -265,8 +278,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,11 +285,31 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
             </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tooltips" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="survarium" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.Test_ColorARGB">
+  <component name="RunManager" selected="Flash App.WatermarkTest">
     <configuration name="AirMainModule" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="AirMainModule" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -896,10 +927,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_ColorARGB" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_Bitwise" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_ColorTransform" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.WatermarkTest" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.WatermarkTest" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ColorARGB" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_Bitwise" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ColorTransform" />
         <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
       </list>
     </recent_temporary>
@@ -973,6 +1004,8 @@
       <workItem from="1506947697474" duration="18301000" />
       <workItem from="1507127214735" duration="7479000" />
       <workItem from="1507195187847" duration="15496000" />
+      <workItem from="1507290898339" duration="3768000" />
+      <workItem from="1507639458660" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1170,11 +1203,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506605115935</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="WatermarkTest.as&#10;Test_Bitwise.as&#10;Test_ColorARGB.as">
+      <created>1507213030272</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1507213030272</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386273000" />
+    <option name="totallyTimeSpent" value="390127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1187,63 +1227,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5063966" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.3608742" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1716418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.79584223" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.60714287" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.3608742" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.79584223" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43228602" sideWeight="0.39285713" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.55810237" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1293,6 +1310,24 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -1331,7 +1366,8 @@
     <MESSAGE value="Air select folder and move/copy swf to subfolders." />
     <MESSAGE value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
     <MESSAGE value="AirMain.exe" />
-    <option name="LAST_COMMIT_MESSAGE" value="AirMain.exe" />
+    <MESSAGE value="WatermarkTest.as&#10;Test_Bitwise.as&#10;Test_ColorARGB.as" />
+    <option name="LAST_COMMIT_MESSAGE" value="WatermarkTest.as&#10;Test_Bitwise.as&#10;Test_ColorARGB.as" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1391,13 +1427,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_Random2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FLA_experiments/SearchByContentTest/11112222.swf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1472,7 +1501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1692,46 +1720,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/watermark.swc!/library.swf" />
     <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/hud/Watermark.as" />
     <entry file="file://D:/Survarium/resources/sources/ui/sources/survarium/Util.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="552" column="31" lean-forward="false" selection-start-line="552" selection-start-column="31" selection-end-line="552" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/survarium/WatermarkTest.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_ColorTransform.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="408">
           <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="147" column="47" lean-forward="false" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
-          <folding>
-            <marker date="1507212964962" expanded="true" signature="14:7066" ph="{...}" />
-            <marker date="1507212964962" expanded="true" signature="498:7064" ph="{...}" />
-            <marker date="1507212964962" expanded="true" signature="6926:7058" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+26.0.0/frameworks/libs/player/26.0/playerglobal.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
+        <state relative-caret-position="95744">
           <caret line="5632" column="25" lean-forward="false" selection-start-line="5632" selection-start-column="25" selection-end-line="5632" selection-end-column="25" />
           <folding />
         </state>
@@ -1749,8 +1756,42 @@
         <state relative-caret-position="711">
           <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
           <folding>
-            <element signature="e#11#38#0" expanded="true" />
-            <element signature="e#2062#2089#0" expanded="true" />
+            <element signature="e#11#38#0" expanded="false" />
+            <element signature="e#2062#2089#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aaa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Survarium/resources/sources/ui/sources/lib/watermark.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30566">
+          <caret line="1798" column="25" lean-forward="false" selection-start-line="1798" selection-start-column="25" selection-end-line="1798" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="214" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/survarium/WatermarkTest.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
