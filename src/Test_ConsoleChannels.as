@@ -56,6 +56,10 @@ public class Test_ConsoleChannels extends Sprite {
     }
 	
 	private function f1():void {
+		f2();
+	}
+	
+	private function f2():void {
 		Cc.warnchw("warnchw","warnchw2");
 	}
 }

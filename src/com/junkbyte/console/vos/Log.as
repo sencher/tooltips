@@ -28,6 +28,8 @@ package com.junkbyte.console.vos {
 	
 	import flash.utils.ByteArray;
 	
+	import scaleform.gfx.Extensions;
+	
 	/**
 	 * @private
 	 */
@@ -79,7 +81,13 @@ package com.junkbyte.console.vos {
 				return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 			}else{
 				var pattern:RegExp = /event:.*_(.*)'/g;
-				var linkId:int = int(String(text.match(pattern)[0]).replace(pattern, "$1"));
+				var linkId:int;
+				if(!Extensions.isGFxPlayer){
+					linkId = int(String(text.match(pattern)[0]).replace(pattern, "$1"));
+				}else{
+					linkId = int(text.substring(text.indexOf("ref_") + 4, text.lastIndexOf("\'")));
+				}
+				
 				return text.replace(/<.*> /g,"") + "\n" + _console.refs.getRefById(linkId);
 			}
 		}

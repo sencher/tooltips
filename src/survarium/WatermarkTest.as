@@ -1,4 +1,5 @@
 package survarium {
+
 	import com.junkbyte.console.Cc;
 	
 	import flash.display.Sprite;
@@ -16,9 +17,12 @@ package survarium {
 	
 	import utils.Utils;
 	
+
+	
 	[SWF(width="1920", height="1080", backgroundColor="0x999999", scaleMode=StageScaleMode.SHOW_ALL)]
 	public class WatermarkTest extends Sprite {
 		private static const ROWS:int = 4;
+
 		private var mc:Watermark;
 		private var timer:Timer = new Timer(1);
 		private var data1:Object = {
