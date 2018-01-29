@@ -9,7 +9,8 @@ package utils {
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.events.Event;
-	import flash.text.TextField;
+import flash.text.Font;
+import flash.text.TextField;
 	import flash.text.TextFormat;
 	import flash.utils.describeType;
 	import flash.utils.getQualifiedClassName;
@@ -213,5 +214,101 @@ package utils {
 			var m:int = Math.pow(10, decimals);
 			return Math.round(num * m) / m;
 		}
+
+        public static function checkFonts():void {
+            var allFonts:Array = Font.enumerateFonts(true);
+            allFonts.sortOn("fontName", Array.CASEINSENSITIVE);
+
+            var embeddedFonts:Array = Font.enumerateFonts(false);
+            embeddedFonts.sortOn("fontName", Array.CASEINSENSITIVE);
+
+            trace("Fonts : embedded", embeddedFonts.length, "/ all", allFonts.length);
+            for each (var i in embeddedFonts){
+                trace("\t" + fontParamsString(i));
+            }
+        }
+
+        private static function fontParamsString(f:Font):String {
+            return f.fontName + " / " + f.fontStyle + " / " + f.fontType;
+        }
+
+        public static function updateLabel(tf:TextField, str:String):void {
+            var format:TextFormat = tf.getTextFormat();
+            if(tf && format.font == null){
+                tf.text = "123";
+                format = tf.getTextFormat();
+            }
+
+            var font:Font = getFont(format);
+            trace(Utils.fontParamsString(font));
+            if (!font.hasGlyphs(str)){
+                format.font = "Arial";
+                tf.defaultTextFormat = format;
+            }
+
+            var font2:Font = getFont(format);
+            trace(Utils.fontParamsString(font2));
+            trace(font.hasGlyphs(str), font2.hasGlyphs(str));
+            trace(Utils.missingGlyphs(font, str));
+            trace(Utils.missingGlyphs(font2, str));
+            tf.text = str;
+        }
+
+        public static function getFont(format:TextFormat):Font {
+            var fontString:String = format.font;
+            var fonts:Array = Font.enumerateFonts(false);
+            var i:Font;
+            for each (i in fonts){
+                if(i.fontName == fontString){
+                    return i;
+                }
+            }
+            return null;
+        }
+
+        public static function missingGlyphs(font:Font,
+                                             string:String):String
+        {
+            // strip out line breaks etc, which can be problematic with font.hasGlyphs()
+            string = stringReplace(string, ' ', '');	// strip out spaces
+            string = stringReplace(string, '\n', '');	// remove new line
+            string = stringReplace(string, '\r', '');	// remove return
+            string = stringReplace(string, '\t', '');	// remove tabs
+
+            var missing:String;
+            if (! font.hasGlyphs(string))
+            {
+                var missingGlyphs:Object = new Object();
+                missing = "";
+                for (var i:uint = 0; i < string.length; ++i)
+                {
+                    var char:String = string.charAt(i);
+                    var charCode:int = char.charCodeAt();
+                    if (! font.hasGlyphs(char) && ! missingGlyphs[char])
+                    {
+                        missingGlyphs[char] = char;
+                        missing += ((missing == "") ? "" : ", ") + "\"" + char + "\" [" + charCode + "]";
+                    }
+                }
+            }
+
+            return missing;
+        }
+
+        /**
+         * Replaces all instances of the replace string in the input string
+         * with the replaceWith string.
+         *
+         * @param input Original string
+         * @param replace The string that will be replaced
+         * @param replaceWith The string that will replace instances of replace
+         * @returns A new String with the replace string replaced with replaceWith
+         */
+        public static function stringReplace(input:String,
+                                             replace:String,
+                                             replaceWith:String):String
+        {
+            return input.split(replace).join(replaceWith);
+        }
     }
 }

@@ -8,6 +8,21 @@ Delete all except
 	.*(\.\w+).*	
 	$1
 
+Search until end of line
+	^(.*)text(.*)$
+	or
+	text+
+
+Line without
+	^((?!text).)*$
+
+0 or more spaces or tabs, but not new line
+	([ \f\t]*)
+
+.* without /
+	[^\/\n]*
+
+
 Search only SET visible of this level
 	\s+visible\s+=
 	[^."]visible[\s]*=
@@ -60,3 +75,19 @@ C++ log
 	File          :
 	scaleform <error
 	[trace
+
+Replace set text through validator
+	^([ \f\t]*)([^\/\n]*)\.text\s*=[ \f\t]*([^$;\n]+)	
+	$1UIUtils.updateLabel($2, $3)
+
+	^(\s*)(.*)\.text\s*=\s*(.*);
+	$1UIUtils.updateLabel($2, $3);
+
+
+
+
+	[^\n|\r]
+	(\n|\r+)
+	([^\n]*)
+	[^ \f\t\v]
+	([^\n\r]*)(.*)\.text\s*=\s*([^\n]*)
