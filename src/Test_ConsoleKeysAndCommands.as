@@ -17,13 +17,13 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         Cc.height = 200;
         Cc.width = 500;
 
+        Cc.commandLine = true;
         Cc.config.commandLineAllowed = true;
         Cc.config.commandLineAutoScope = true;
         Cc.addSlashCommand("f0", f0);
         Cc.addSlashCommand("f1", f1);
         Cc.addSlashCommand("f2", f2);
         Cc.addSlashCommand("f3", f3);
-        Cc.commandLine = true;
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_0), f2, [99, 8]);
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_9), toggleConsoleVisibility, []);
         Cc.setRollerCaptureKey("0");

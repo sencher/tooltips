@@ -44,7 +44,8 @@ public class Test_FontFromTTF extends Sprite {
 //    )]
 //    private const FONT_OFFICINA_SERIF_LT_BOLD:Class;
 
-    private const FONT_NAME:String = "ITC Officina Serif LT Bold";
+//    private const FONT_NAME:String = "ITC Officina Serif LT Bold";
+    private const FONT_NAME:String = "Futura Extra Black Condensed BT";
     private var initFormat:TextFormat;
 
     private var tf:TextField;
@@ -69,7 +70,7 @@ public class Test_FontFromTTF extends Sprite {
         tf.selectable = true;
         tf.type = TextFieldType.INPUT;
         tf.embedFonts = true;
-        Utils.updateLabel(tf, STR);
+        Utils.updateLabel(tf, STR, true);
         addChild(tf);
 
         //trace(tf.text);
@@ -82,9 +83,9 @@ public class Test_FontFromTTF extends Sprite {
             trace(tf.rotation);
         }else if(event.altKey) {
             tf.defaultTextFormat = initFormat;
-            Utils.updateLabel(tf, STR);
+            Utils.updateLabel(tf, STR, true);
         }else{
-            Utils.updateLabel(tf, STR2);
+            Utils.updateLabel(tf, STR2, true);
         }
     }
 

@@ -14,8 +14,8 @@ public class Test_RegexpReplace2 extends Sprite {
         ttt.text = Localisation(STR_CODE)
         ttt.text=Localisation(STR_CODE);
         tt.hghgt.text=Localisation(STR_CODE);
-        UIUtils.updateLabel(tf, str, true);
-
+        txtField.text = "<high><menu>Press a key to set [ <a href=\"event:cancel\"><b>cancel</b></a> ]</menu></high>";
+        peerInfo.getTextField("tooltip_info_superbingo/txt_title").text = Env.getString(BingoKeySet.LB_INFO_TITLE_TOOLTIP_SUPERBINGO_ROOMLIST);
         //invalid
         preFilled.setVisible(field.text == "");
         ttt.textLocalisation(STR_CODE);
@@ -24,8 +24,17 @@ public class Test_RegexpReplace2 extends Sprite {
         tt.hghgt.text=;
         tt.hghgt.text=
         //_captionField.text = cover.caption;
-    /*    _captionField.text = cover.caption;*/
+        /*    _captionField.text = cover.caption;*/
         this.text = text;
+
+        //valid HTML
+        tf.htmlText = str;
+        txtField.htmlText = "<high><menu>Press a key to set [ <a href=\"event:cancel\"><b>cancel</b></a> ]</menu></high>";
+        peerInfo.getTextField("tooltip_info_superbingo/txt_title").htmlText = Env.getString(BingoKeySet.LB_INFO_TITLE_TOOLTIP_SUPERBINGO_ROOMLIST);
+        //invalid HTML
+        txtField.htmlText == "<high><menu>Press a key to set [ <a href=\"event:cancel\"><b>cancel</b></a> ]</menu></high>";
+        //peerInfo.getTextField("tooltip_info_superbingo/txt_title").htmlText = Env.getString(BingoKeySet.LB_INFO_TITLE_TOOLTIP_SUPERBINGO_ROOMLIST);
+        /*peerInfo.getTextField("tooltip_info_superbingo/txt_title").htmlText = Env.getString(BingoKeySet.LB_INFO_TITLE_TOOLTIP_SUPERBINGO_ROOMLIST);*/
     }
 }
 }

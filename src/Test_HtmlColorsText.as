@@ -6,7 +6,8 @@ package {
 		public function Test_HtmlColorsText() {
 			var t:TextField  = new TextField();
 			//t.text = "BLUEGREEN";
-			t.htmlText = '<font color="#0000ff">BLUE</font><font color="#00ff00">GREEN</font>';
+			t.htmlText = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
+			trace()
 			addChild(t);
 		}
 	}

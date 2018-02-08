@@ -77,15 +77,18 @@ C++ log
 	[trace
 
 Replace set text through validator
-	^([ \f\t]*)([^\/\n]*)\.text\s*=[ \f\t]*([^$;\n]+)	
+	^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.text\s*=[ \f\t]*(?:(?!=)([^$;\n]+))
+	^([ \f\t]*)([^\/\n]*)\.text\s*=[ \f\t]*([^$;\n=]+)
 	$1UIUtils.updateLabel($2, $3)
-
+	
+	old
 	^(\s*)(.*)\.text\s*=\s*(.*);
 	$1UIUtils.updateLabel($2, $3);
+htmlText
+	^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.htmlText\s*=[ \f\t]*(?:(?!=)([^$;\n]+))
+	$1UIUtils.updateLabel($2, $3, true)
 
-
-
-
+	
 	[^\n|\r]
 	(\n|\r+)
 	([^\n]*)

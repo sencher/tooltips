@@ -75,7 +75,6 @@
       <excludeFolder url="file://$MODULE_DIR$/libs" />
       <excludeFolder url="file://$MODULE_DIR$/src/Scale25" />
       <excludeFolder url="file://$MODULE_DIR$/src/air" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/adobe" />
       <excludeFolder url="file://$MODULE_DIR$/src/fl" />
       <excludeFolder url="file://$MODULE_DIR$/src/images" />
       <excludeFolder url="file://$MODULE_DIR$/src/mx" />

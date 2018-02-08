@@ -1,22 +1,22 @@
 package utils {
-	import com.adobe.serialization.json.JSON;
-	import com.junkbyte.console.Cc;
-	
-	import display.MovieClipWithEvents;
-	
-	import flash.display.DisplayObject;
-	import flash.display.MovieClip;
-	import flash.display.Shape;
-	import flash.display.Sprite;
-	import flash.events.Event;
+import com.adobe.serialization.json.JSON;
+import com.junkbyte.console.Cc;
+
+import flash.display.DisplayObject;
+import flash.display.LoaderInfo;
+import flash.display.MovieClip;
+import flash.display.Shape;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.system.ApplicationDomain;
 import flash.text.Font;
 import flash.text.TextField;
-	import flash.text.TextFormat;
-	import flash.utils.describeType;
-	import flash.utils.getQualifiedClassName;
-	import flash.utils.getQualifiedSuperclassName;
-	
-	public class Utils {
+import flash.text.TextFormat;
+import flash.utils.describeType;
+import flash.utils.getQualifiedClassName;
+import flash.utils.getQualifiedSuperclassName;
+
+public class Utils {
         public static function trEvent(event:Event):void {
             trace(event.currentTarget.name, event.type);
         }
@@ -223,7 +223,7 @@ import flash.text.TextField;
             embeddedFonts.sortOn("fontName", Array.CASEINSENSITIVE);
 
             trace("Fonts : embedded", embeddedFonts.length, "/ all", allFonts.length);
-            for each (var i in embeddedFonts){
+            for each (var i:Font in embeddedFonts){
                 trace("\t" + fontParamsString(i));
             }
         }
@@ -232,30 +232,50 @@ import flash.text.TextField;
             return f.fontName + " / " + f.fontStyle + " / " + f.fontType;
         }
 
-        public static function updateLabel(tf:TextField, str:String):void {
+        public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
+            var stringForCheck:String = removeBuggedGlyphs(str);
+            tf.embedFonts = true;
             var format:TextFormat = tf.getTextFormat();
             if(tf && format.font == null){
                 tf.text = "123";
                 format = tf.getTextFormat();
             }
 
-            var font:Font = getFont(format);
-            trace(Utils.fontParamsString(font));
-            if (!font.hasGlyphs(str)){
-                format.font = "Arial";
-                tf.defaultTextFormat = format;
+            var font:Font = getFontObject(format.font);
+            if (!font || !font.hasGlyphs(stringForCheck)){
+                Cc.logchw("Font", format.font,"|", str, tf.name, missingGlyphs(font, stringForCheck));
+                var defaultFont:Font = getFixedFont(format.font);
+                if(!defaultFont.hasGlyphs(stringForCheck)){
+                    Cc.warnchw("Font Error", fontParamsString(defaultFont),"|", str, missingGlyphs(defaultFont, stringForCheck));
+                }else{
+                    format.font = defaultFont.fontName;
+                    tf.defaultTextFormat = format;
+                    Cc.logchw("Font Fixed", fontParamsString(defaultFont),"|", str);
+                }
             }
 
-            var font2:Font = getFont(format);
-            trace(Utils.fontParamsString(font2));
-            trace(font.hasGlyphs(str), font2.hasGlyphs(str));
-            trace(Utils.missingGlyphs(font, str));
-            trace(Utils.missingGlyphs(font2, str));
-            tf.text = str;
+            html ? tf.htmlText = str : tf.text = str;
         }
 
-        public static function getFont(format:TextFormat):Font {
-            var fontString:String = format.font;
+        private static function getFixedFont(fontName:String):Font {
+            var fixedFontString:String;
+            switch (fontName){
+                case DefaultValues.FONT_NAME_VAG_ROUNDED_BT:
+                    fixedFontString = DefaultValues.FONT_NAME_VAG_ROUNDED_CYRILLIC;
+                    break;
+//            case DefaultValues.FONT_NAME_OFFICINA_SERIF:
+//                fixedFontString = DefaultValues.FONT_NAME_OFFICINA_SERIF_CYRILLIC;
+//                break;
+                default:
+//                fixedFontString = DefaultValues.FONT_NAME_ARIAL;
+                    fixedFontString = DefaultValues.FONT_NAME_MYRIAD_PRO;
+                    break;
+            }
+
+            return getFontObject(fixedFontString);
+        }
+
+        public static function getFontObject(fontString:String):Font {
             var fonts:Array = Font.enumerateFonts(false);
             var i:Font;
             for each (i in fonts){
@@ -266,14 +286,12 @@ import flash.text.TextField;
             return null;
         }
 
-        public static function missingGlyphs(font:Font,
-                                             string:String):String
+        public static function missingGlyphs(font:Font, string:String):String
         {
-            // strip out line breaks etc, which can be problematic with font.hasGlyphs()
-            string = stringReplace(string, ' ', '');	// strip out spaces
-            string = stringReplace(string, '\n', '');	// remove new line
-            string = stringReplace(string, '\r', '');	// remove return
-            string = stringReplace(string, '\t', '');	// remove tabs
+            if(!font){
+                return "No Embed font!";
+            }
+            string = removeBuggedGlyphs(string);
 
             var missing:String;
             if (! font.hasGlyphs(string))
@@ -304,11 +322,46 @@ import flash.text.TextField;
          * @param replaceWith The string that will replace instances of replace
          * @returns A new String with the replace string replaced with replaceWith
          */
-        public static function stringReplace(input:String,
-                                             replace:String,
-                                             replaceWith:String):String
+        public static function stringReplace(input:String, replace:String, replaceWith:String):String
         {
             return input.split(replace).join(replaceWith);
+        }
+
+        public static function removeBuggedGlyphs(string:String):String {
+            // strip out line breaks etc, which can be problematic with font.hasGlyphs()
+            string = stringReplace(string, ' ', '');	// strip out spaces
+            string = stringReplace(string, '\n', '');	// remove new line
+            string = stringReplace(string, '\r', '');	// remove return
+            string = stringReplace(string, '\t', '');	// remove tabs
+            return string;
+        }
+
+        public static function getDomainPrefix(loaderInfo:LoaderInfo):String {
+            var prefix:String = getQualifiedClassName(loaderInfo.content);
+            return prefix.substr(0, prefix.lastIndexOf(":") + 1);
+        }
+
+        public static function getQualifiedDefinitionNamesIgnorePrefix(domain:ApplicationDomain):Vector.<String> {
+            var list:Vector.<String> = domain.getQualifiedDefinitionNames();
+            var i:int;
+            var currentString:String;
+            for (i = 0; i < list.length; i++){
+                currentString = list[i];
+                list[i] = currentString.substr(currentString.lastIndexOf(":") + 1);
+            }
+
+            return list;
+        }
+
+        public static function hasDefinitionIgnorePrefix(domain:ApplicationDomain, value:String):Boolean {
+            var list:Vector.<String> = getQualifiedDefinitionNamesIgnorePrefix(domain);
+            return Boolean(list.indexOf(value));
+        }
+
+        public static function getDefinitionIgnorePrefix(domain:ApplicationDomain, value:String):Object {
+            var list:Vector.<String> = getQualifiedDefinitionNamesIgnorePrefix(domain);
+            var listFull:Vector.<String> = domain.getQualifiedDefinitionNames();
+            return domain.getDefinition(listFull[list.indexOf(value)]);
         }
     }
 }
