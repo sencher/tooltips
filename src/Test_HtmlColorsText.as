@@ -5,8 +5,11 @@ package {
 	public class Test_HtmlColorsText extends Sprite {
 		public function Test_HtmlColorsText() {
 			var t:TextField  = new TextField();
-			//t.text = "BLUEGREEN";
-			t.htmlText = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
+            t.width = stage.stageWidth;
+			var s:String = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
+            t.text = s;
+
+			//t.htmlText = s;
 			trace()
 			addChild(t);
 		}
