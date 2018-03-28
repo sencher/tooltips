@@ -11,26 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_JpexsEditSwf.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_MemoryAddChild.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_Vector2d.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ideaRefactoring/RefactoringA.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ideaRefactoring/RefactoringB.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ideaRefactoring/Test_IdeaRefactoring.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/loader_test/Test_LoaderMain.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/loader_test/Test_LoaderSecond.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/loader_test/Test_LoaderStaticSimple.as" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/Test_ConsoleKeysAndCommands.swf" afterPath="$PROJECT_DIR$/out/Test_ConsoleKeysAndCommands.swf" />
-      <change beforePath="$PROJECT_DIR$/out/Test_HtmlColorsText.swf" afterPath="$PROJECT_DIR$/out/Test_HtmlColorsText.swf" />
-      <change beforePath="$PROJECT_DIR$/src/AppDomain/ApplicationDomainExample.as" afterPath="$PROJECT_DIR$/src/AppDomain/ApplicationDomainExample.as" />
-      <change beforePath="$PROJECT_DIR$/src/AppDomainConflict/ApplicationDomainExample2.as" afterPath="$PROJECT_DIR$/src/AppDomainConflict/ApplicationDomainExample2.as" />
-      <change beforePath="$PROJECT_DIR$/src/AppDomainConflictPureFla/ApplicationDomainExample3.as" afterPath="$PROJECT_DIR$/src/AppDomainConflictPureFla/ApplicationDomainExample3.as" />
-      <change beforePath="$PROJECT_DIR$/src/Energy_Proxy.as" afterPath="$PROJECT_DIR$/src/Energy_Proxy.as" />
-      <change beforePath="$PROJECT_DIR$/src/Test_HtmlColorsText.as" afterPath="$PROJECT_DIR$/src/Test_HtmlColorsText.as" />
-      <change beforePath="$PROJECT_DIR$/src/Test_Loader.as" afterPath="$PROJECT_DIR$/src/Test_Loader.as" />
-      <change beforePath="$PROJECT_DIR$/src/Test_LoaderLocal.as" afterPath="$PROJECT_DIR$/src/Test_LoaderLocal.as" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/KeyBinder.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/KeyBinder.as" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1031,7 +1016,7 @@
       <workItem from="1519742336271" duration="893000" />
       <workItem from="1521026720414" duration="4034000" />
       <workItem from="1521105720616" duration="592000" />
-      <workItem from="1522259763663" duration="7000" />
+      <workItem from="1522259763663" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1250,11 +1235,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518178993599</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Application Domain&#10;Idea refactoring&#10;Minor fixes">
+      <created>1522259903727</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1522259903727</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598455000" />
+    <option name="totallyTimeSpent" value="598660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1280,7 +1272,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30988184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30988184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1383,7 +1375,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Circle, Ellipse" />
     <MESSAGE value="Circles in Ellipse" />
     <MESSAGE value="Starling draw converter" />
     <MESSAGE value="Circles moded, Random, Json, +libs" />
@@ -1408,7 +1399,8 @@
     <MESSAGE value="WatermarkTest.as&#10;Test_Bitwise.as&#10;Test_ColorARGB.as" />
     <MESSAGE value="Fonts" />
     <MESSAGE value="Git Recipes.txt&#10;Test_HtmlColorsText.as" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git Recipes.txt&#10;Test_HtmlColorsText.as" />
+    <MESSAGE value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

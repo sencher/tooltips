@@ -116,7 +116,7 @@ package com.junkbyte.console.core
 				remove(first);
 			}
 			//
-			if ( config.tracing && config.traceCall != null) {
+			if ( config.tracingLevel > 0 && config.traceCall != null) {
 				config.traceCall(line);
 			}
 		}

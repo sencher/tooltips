@@ -111,15 +111,18 @@ package com.junkbyte.console {
 		 * Trace function can be replaced with something of your own (such as Flex's logging) by
 		 * setting your own function into traceCall variable.
 		 * Default function: trace("["+channel+"] "+text);
+         * 0 = no trace
+         * 1 = trace without stack
+         * 2 = trace with stack
 		 * </p>
 		 * @see traceCall
 		 */
-		public var tracing:Boolean;
+		public var tracingLevel:int;
 		
 		/**
 		 * Assign custom trace function.
 		 * <p>
-		 * Console will only call this when Cc.config.tracing is set to true.<br/>
+		 * Console will only call this when Cc.config.tracingLevel is set to > 0.<br/>
 		 * Custom function must accept 3 parameters:<br/>
 		 * - String channel name.<br/>
 		 * - String the log line.<br/>
@@ -132,12 +135,12 @@ package com.junkbyte.console {
 		 * 	  trace("["+ch+"] "+line);
 		 * }
 		 * </p>
-		 * @see tracing
+		 * @see tracingLevel
 		 */
 		public var traceCall:Function = function (line:Log):void{
 			trace(line);
 		};
-		
+
 		
 		/**
 		 * Specifies whether to show timestamps in Console.

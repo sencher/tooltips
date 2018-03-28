@@ -80,7 +80,7 @@ package com.junkbyte.console.vos {
 			if(text.indexOf(ConsoleConfig.STACK_HREF_TEXT) < 0) {
 				return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 			}else{
-				var pattern:RegExp = /event:.*_(.*)'/g;
+//				var pattern:RegExp = /event:.*_(.*)'/g;
 				var linkId:int;
 //				if(!Extensions.isGFxPlayer){
 //					linkId = int(String(text.match(pattern)[0]).replace(pattern, "$1"));
@@ -88,7 +88,7 @@ package com.junkbyte.console.vos {
 					linkId = int(text.substring(text.indexOf("ref_") + 4, text.lastIndexOf("\'")));
 //				}
 				
-				return text.replace(/<.*> /g,"") + "\n" + _console.refs.getRefById(linkId);
+				return text.replace(/<.*> /g,"") + "\n" + String(_console.config.tracingLevel > 1 ? _console.refs.getRefById(linkId) : "");
 			}
 		}
 		public function toString():String{

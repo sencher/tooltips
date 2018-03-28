@@ -124,6 +124,9 @@ package com.junkbyte.console.core
 			}
 		}
 		private function canTrigger():Boolean{
+			//DEBUG ignore textField focus
+            return true;
+
 			// in try catch block incase the textfield is in another domain and we wont be able to access the type... (i think)
 			try {
 				if(console.stage && console.stage.focus is TextField){
