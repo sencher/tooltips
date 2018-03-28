@@ -14,7 +14,7 @@ public class Test_LoaderLocal extends Sprite{
     private var loader:flash.display.Loader;
     public function Test_LoaderLocal() {
 //        var loader_mc:Loader =new Loader();
-//        addChild( loader_mc );// Add the loader to the display list
+//        addChild( loader_mc );// Add the loader_test to the display list
 //        loader_mc.load( "swf/Girl_bkg_January_05.swf");// Load the file
 
 
@@ -24,9 +24,9 @@ public class Test_LoaderLocal extends Sprite{
         var url:URLRequest = new URLRequest("../src/swf/Girl_bkg_January_05.swf");
         var loaderContext:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain, null);
         loader.load(url, loaderContext);
-//        loader.scaleX = loader.scaleY = 0.2;
-//        loader.width = 400;
-//        loader.height = 300;
+//        loader_test.scaleX = loader_test.scaleY = 0.2;
+//        loader_test.width = 400;
+//        loader_test.height = 300;
         loader.x = loader.y = 0;
 
         addChild(loader);

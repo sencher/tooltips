@@ -91,7 +91,7 @@ class ClassLoader extends EventDispatcher {
 
     public function getClass(className:String):Class {
         try {
-            return Utils.getDefinitionIgnorePrefix(loader.contentLoaderInfo.applicationDomain, className) as Class;
+            return Utils.getDefinitionIgnorePrefix(className, loader.contentLoaderInfo.applicationDomain) as Class;
         } catch (e:Error) {
             throw new IllegalOperationError(className + " definition not found in " + swfLib);
         }

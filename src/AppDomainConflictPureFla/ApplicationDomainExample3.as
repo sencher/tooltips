@@ -54,8 +54,8 @@ public class ApplicationDomainExample3 extends Sprite {
     private function greet():void {
         Utils.checkFonts();
 //        trace(ApplicationDomain.currentDomain.getQualifiedDefinitionNames(), "\n");
-//        trace(spanishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
-//        trace(englishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
+//        trace(spanishGreeterLoader.loader_test.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
+//        trace(englishGreeterLoader.loader_test.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
         var tf22:TextField = englishGreeterLoader.loader.content["tf22"];
         var format:TextFormat = tf22.getTextFormat();
         var fontName:String = format.font;
@@ -127,7 +127,7 @@ class ClassLoader extends EventDispatcher {
 
     public function getClass(className:String):Class {
         try {
-//            var ad:ApplicationDomain = loader.contentLoaderInfo.applicationDomain;
+//            var ad:ApplicationDomain = loader_test.contentLoaderInfo.applicationDomain;
 //            var names:Vector.<String> = ad.getQualifiedDefinitionNames();
 //            trace(ad.domainMemory)
 //            trace(ad.hasDefinition("AppDomain::" + className));
@@ -138,8 +138,8 @@ class ClassLoader extends EventDispatcher {
 //            trace(cur.hasDefinition("AppDomain::" + className));
 //            trace(cur.getQualifiedDefinitionNames());
 //
-//            return loader.contentLoaderInfo.applicationDomain.getDefinition(className)  as  Class;
-            return Utils.getDefinitionIgnorePrefix(loader.contentLoaderInfo.applicationDomain, className) as Class;
+//            return loader_test.contentLoaderInfo.applicationDomain.getDefinition(className)  as  Class;
+            return Utils.getDefinitionIgnorePrefix(className, loader.contentLoaderInfo.applicationDomain) as Class;
         } catch (e:Error) {
             throw new IllegalOperationError(className + " definition not found in " + swfLib);
         }

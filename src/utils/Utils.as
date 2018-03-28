@@ -233,28 +233,83 @@ public class Utils {
         }
 
         public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
-            var stringForCheck:String = removeBuggedGlyphs(str);
+            //DEBUG
+//            if(str.indexOf("Играть") > -1){
+//                //DebugUtils.Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+//                tf.border = true;
+//                tf.background = true;
+//                tf.backgroundColor = 0x880000;
+//            }
+
             tf.embedFonts = true;
             var format:TextFormat = tf.getTextFormat();
-            if(tf && format.font == null){
+            if (tf && format.font == null) {
                 tf.text = "123";
                 format = tf.getTextFormat();
             }
 
-            var font:Font = getFontObject(format.font);
-            if (!font || !font.hasGlyphs(stringForCheck)){
-                Cc.logchw("Font", format.font,"|", str, tf.name, missingGlyphs(font, stringForCheck));
-                var defaultFont:Font = getFixedFont(format.font);
-                if(!defaultFont.hasGlyphs(stringForCheck)){
-                    Cc.warnchw("Font Error", fontParamsString(defaultFont),"|", str, missingGlyphs(defaultFont, stringForCheck));
-                }else{
-                    format.font = defaultFont.fontName;
-                    tf.defaultTextFormat = format;
-                    Cc.logchw("Font Fixed", fontParamsString(defaultFont),"|", str);
+            var fixedFont:Font = getFixedFont(format.font);
+            if (fixedFont) {
+                var stringForCheck:String = str.replace(/[\n\r\t ]/g, "");
+                format.font = fixedFont.fontName;
+                tf.defaultTextFormat = format;
+                tf.setTextFormat(format);
+    //            if (!fixedFont.hasGlyphs(stringForCheck)) {
+    //                Cc.logch("Font", format.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
+    //            }
+            }
+
+            if( html){
+                tf.htmlText = str;
+                if (tf.htmlText != str) {
+                    // TextField is set to text=htmlText="" if tags without quoted values
+                    var htmlText:String = quoteHtmlParams(str);
+                    tf.htmlText = htmlText;
+                }
+            }else{
+                tf.text = str;
+            }
+        }
+
+        /**
+         * Converting string like this: <p align=center>
+         * to strings like that: <p align="center"> (Because TextField are ignore strings without quoted values)
+         */
+        private static const tagsRegExp:RegExp = / < ([^<]*) \/? > /ix;
+        private static const paramsRegExp:RegExp = / ([a-z0-9]+) \s* = \s*  ([#a-z0-9]+) /ix;
+
+        static public function quoteHtmlParams(html:String):String {
+            var newHtml:String = '';
+            while (html != '') {
+                if (tagsRegExp.test(html)) {
+                    var tagsData:Object = tagsRegExp.exec(html);
+                    var tag:String = tagsData[0];
+                    var body:String = tagsData[1];
+
+                    var i:int = html.indexOf(tag);
+                    if (i > 0) {
+                        newHtml += html.substr(0, i);
+                        html = html.substr(i);
+                    }
+                    html = html.replace(tag, '');
+
+                    while (paramsRegExp.test(body)) {
+                        var bodyData:Object = paramsRegExp.exec(body);
+                        var all:String = bodyData[0];
+                        var param:String = bodyData[1];
+                        var value:String = bodyData[2];
+
+                        body = body.replace(all, param + '="' + value + '"');
+                    }
+
+                    newHtml += '<' + body + '>';
+                } else {
+                    newHtml += html;
+                    html = '';
                 }
             }
 
-            html ? tf.htmlText = str : tf.text = str;
+            return newHtml;
         }
 
         private static function getFixedFont(fontName:String):Font {
@@ -336,12 +391,13 @@ public class Utils {
             return string;
         }
 
-        public static function getDomainPrefix(loaderInfo:LoaderInfo):String {
-            var prefix:String = getQualifiedClassName(loaderInfo.content);
-            return prefix.substr(0, prefix.lastIndexOf(":") + 1);
+        public static function getPrefix(value:*):String {
+            var prefix:String = getQualifiedClassName(value);
+            return prefix ? prefix.substr(0, prefix.lastIndexOf(":") + 1) : null;
         }
 
-        public static function getQualifiedDefinitionNamesIgnorePrefix(domain:ApplicationDomain):Vector.<String> {
+        public static function getQualifiedDefinitionNamesIgnorePrefix(domain:ApplicationDomain = null):Vector.<String> {
+            if(!domain) domain = ApplicationDomain.currentDomain;
             var list:Vector.<String> = domain.getQualifiedDefinitionNames();
             var i:int;
             var currentString:String;
@@ -353,15 +409,44 @@ public class Utils {
             return list;
         }
 
-        public static function hasDefinitionIgnorePrefix(domain:ApplicationDomain, value:String):Boolean {
+        public static function hasDefinitionIgnorePrefix(value:String, domain:ApplicationDomain = null):Boolean {
+            if(!domain) domain = ApplicationDomain.currentDomain;
             var list:Vector.<String> = getQualifiedDefinitionNamesIgnorePrefix(domain);
             return Boolean(list.indexOf(value));
         }
 
-        public static function getDefinitionIgnorePrefix(domain:ApplicationDomain, value:String):Object {
-            var list:Vector.<String> = getQualifiedDefinitionNamesIgnorePrefix(domain);
+        public static function getDefinitionIgnorePrefix(value:String, domain:ApplicationDomain = null):Object {
+            if(!domain) domain = ApplicationDomain.currentDomain;
+            var listShort:Vector.<String> = getQualifiedDefinitionNamesIgnorePrefix(domain);
             var listFull:Vector.<String> = domain.getQualifiedDefinitionNames();
-            return domain.getDefinition(listFull[list.indexOf(value)]);
+            var id:Number = listShort.indexOf(value);
+            return id > -1 ? domain.getDefinition(listFull[id]) : null;
+        }
+
+        public static function getIndexes(array:Array, value:*):Array {
+            var result:Array = [];
+            var currentId:int;
+            var previousId:int = 0;
+
+            do{
+                currentId = array.indexOf(value, previousId);
+                if(currentId > -1){
+                    result.push(currentId);
+                    previousId = currentId + 1;
+                }
+            }while (currentId > -1);
+
+            return result;
+        }
+
+        public static function safeVector2dCheck(v:*, d1:int, d2:int):Boolean {
+            try{
+                v[d1][d2];
+            }catch (e:Error){
+                return false;
+            }
+
+            return true;
         }
     }
 }
