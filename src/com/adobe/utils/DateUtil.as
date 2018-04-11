@@ -234,6 +234,10 @@ package com.adobe.utils
 			return (dStr.substr(dStr.length - 2));
 		}
 
+        public static function getTimeNow():Number {
+			return new Date().time;
+        }
+
 		/**
 		*	Compares two dates and returns an integer depending on their relationship.
 		*

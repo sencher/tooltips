@@ -4,18 +4,41 @@
     <option name="deselectedBCs" value="Tooltips&#9;AirMain" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="393" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="417" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="387" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="411" mnemonic="4" />
     <bookmark url="file://$PROJECT_DIR$/src/Test_MemoryAddChild.as" line="59" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/src/Test_MemoryAddChild.as" line="45" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/Regexp Training/get all before slash/get all before slash.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/Regexp Training/get all before slash/key.rgx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/Regexp Training/text=/text=.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_ClassesCompare2.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_DictionaryKeys.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_ForPerformance.as" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/KeyBinder.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/KeyBinder.as" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" />
+      <change beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
+      <change beforePath="$PROJECT_DIR$/out/AppDomainConflict.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/ApplicationDomainExample.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/ApplicationDomainExample3.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Conflict1.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Conflict2.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Greeter_en.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Greeter_es.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/RuntimeClasses.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_ArrayIndexesOfSeveral.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_ConsoleKeysAndCommands.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_DescribeType.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_FontFromSwf.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_FontFromTTF.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_HtmlColorsText.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_MouseEvents.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/Test_TextField.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Test_ClassesCompare.as" afterPath="$PROJECT_DIR$/src/Test_ClassesCompare.as" />
+      <change beforePath="$PROJECT_DIR$/src/Test_RegexpReplace2.as" afterPath="$PROJECT_DIR$/src/Test_RegexpReplace2.as" />
+      <change beforePath="$PROJECT_DIR$/src/com/adobe/utils/DateUtil.as" afterPath="$PROJECT_DIR$/src/com/adobe/utils/DateUtil.as" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +74,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Test_Vector2d.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_Vector2d.as">
+      <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="170">
+              <caret line="439" column="5" lean-forward="false" selection-start-line="439" selection-start-column="5" selection-end-line="439" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Hash.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Hash.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hash.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_DictionaryKeys.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_DictionaryKeys.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
               <folding>
                 <element signature="e#10#38#0" expanded="true" />
               </folding>
@@ -63,11 +116,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.as" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <file leaf-file-name="Test_RegexpReplace.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="430" column="15" lean-forward="false" selection-start-line="430" selection-start-column="15" selection-end-line="430" selection-end-column="15" />
+            <state relative-caret-position="882">
+              <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_RegexpReplace2.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace2.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1097">
+              <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Random.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Random.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_ConsoleKeysAndCommands.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -88,21 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>../../../../../assets</find>
-      <find>^([ \f\t]*)((?:(?!this)[^\/\n])*)\.htmlText\s*=[ \f\t]*(?:(?!=)([^$;\n]+))</find>
-      <find>futura</find>
-      <find>describeType</find>
-      <find>refle</find>
-      <find>Run</find>
-      <find>Gree</find>
-      <find>trace</find>
-      <find>FUTURA_BOLD_CONDENSED2</find>
-      <find>Greeter</find>
-      <find>Conflict</find>
-      <find>font</find>
-      <find>tre</find>
-      <find>zzz</find>
-      <find>registerF</find>
       <find>^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.htmlText\s*=[ \f\t]*(?:(?!=)([^$;\n]+))</find>
       <find>Total</find>
       <find>this[&quot;button&quot;+i]</find>
@@ -118,10 +188,24 @@
       <find>getIndexes</find>
       <find>currentId</find>
       <find>getQualifiedDefinitionNamesIgnorePrefix</find>
+      <find>Class</find>
+      <find>typeof</find>
+      <find>as</find>
+      <find>Date</find>
+      <find>getTime</find>
+      <find>DateBase</find>
+      <find>Error</find>
+      <find>/(.*)/</find>
+      <find>[^\/\n]*</find>
+      <find>UncaughtErrorEvent</find>
+      <find>[^\/\n]*/</find>
+      <find>([^\/\n]*)/</find>
+      <find>(.*)/</find>
+      <find>mousechildren</find>
+      <find>addSlashCommand</find>
     </findStrings>
     <replaceStrings>
       <replace>600</replace>
-      <replace>$1</replace>
       <replace>$1$2$3\n&quot;$2&quot;</replace>
       <replace>$1$2$3$4\n&quot;$2&quot;</replace>
       <replace>$1$2$3$4\nCc.logch(this, &quot;$2&quot;, arguments);</replace>
@@ -150,12 +234,14 @@
       <replace>Private</replace>
       <replace>TotalNum</replace>
       <replace>currentMc</replace>
+      <replace>$1</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Projects\tooltips</dir>
       <dir>D:\Projects\tooltips\src\com\junkbyte\console</dir>
       <dir>D:\Projects\tooltips\src\</dir>
       <dir>D:\Projects\tooltips\src\com\junkbyte</dir>
+      <dir>D:\Work\tooltips\src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -169,15 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/vos/WeakObject.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/CommandLine.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" />
-        <option value="$PROJECT_DIR$/src/Test_Regexp_Converter.as" />
-        <option value="$PROJECT_DIR$/src/Test_ConsoleTopmost.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as" />
-        <option value="$PROJECT_DIR$/src/Test_RegexpReplace.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/ConsoleConfig.as" />
         <option value="$PROJECT_DIR$/src/survarium/Watermark.as" />
         <option value="D:/Survarium/resources/sources/ui/sources/survarium/hud/Watermark.as" />
         <option value="$PROJECT_DIR$/src/Test_Bitwise.as" />
@@ -190,7 +267,6 @@
         <option value="$PROJECT_DIR$/src/Test_TextField.as" />
         <option value="$PROJECT_DIR$/FLA_experiments/embedfonts/App.as" />
         <option value="$PROJECT_DIR$/src/Test_FontFromSwf.as" />
-        <option value="$PROJECT_DIR$/src/Test_RegexpReplace2.as" />
         <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
         <option value="$PROJECT_DIR$/src/Test_ArrayIndexesOfSeveral.as" />
         <option value="$PROJECT_DIR$/src/utils/DefaultValues.as" />
@@ -218,8 +294,18 @@
         <option value="$PROJECT_DIR$/src/loader_test/Test_LoaderMain.as" />
         <option value="$PROJECT_DIR$/src/loader_test/Test_LoaderSecond.as" />
         <option value="$PROJECT_DIR$/src/Test_HtmlColorsText.as" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
         <option value="$PROJECT_DIR$/src/Test_Vector2d.as" />
+        <option value="$PROJECT_DIR$/src/Test_ClassesCompare.as" />
+        <option value="$PROJECT_DIR$/src/Test_ClassesCompare2.as" />
+        <option value="$PROJECT_DIR$/src/com/adobe/utils/DateUtil.as" />
+        <option value="$PROJECT_DIR$/src/mx/resources/ResourceManager.as" />
+        <option value="$PROJECT_DIR$/src/Test_ForPerformance.as" />
+        <option value="$PROJECT_DIR$/docs/Regexp Training/aaa/bbb/ccc.txt" />
+        <option value="$PROJECT_DIR$/docs/Regexp Training/get all before slash.txt" />
+        <option value="$PROJECT_DIR$/docs/Regexp Training/get all before slash/key.rgx" />
+        <option value="$PROJECT_DIR$/src/Test_RegexpReplace2.as" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/Test_DictionaryKeys.as" />
       </list>
     </option>
   </component>
@@ -261,7 +347,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,27 +360,49 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="Regexp Training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="Regexp Training" type="462c0819:PsiDirectoryNode" />
+              <item name="get all before slash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="Regexp Training" type="462c0819:PsiDirectoryNode" />
+              <item name="text=" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,9 +428,11 @@
       <recent name="ideaRefactoring" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\tooltips\docs\Regexp Training\text=" />
+      <recent name="D:\Work\tooltips\docs\Regexp Training\get all before slash" />
+      <recent name="D:\Work\tooltips\docs\Regexp Training" />
       <recent name="D:\Work\tooltips\src\AppDomainConflictPureFla" />
       <recent name="A:\Projects\tooltips\src\starling" />
-      <recent name="A:\Projects\tooltips\src\Patterns" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\tooltips\src" />
@@ -352,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Vector2d">
+  <component name="RunManager" selected="Flash App.Test_DictionaryKeys">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -445,7 +557,7 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration name="Test_ArrayIndexesOfSeveral" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ClassesCompare2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -469,8 +581,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ArrayIndexesOfSeveral" />
-      <option name="overriddenOutputFileName" value="Test_ArrayIndexesOfSeveral.swf" />
+      <option name="overriddenMainClass" value="Test_ClassesCompare2" />
+      <option name="overriddenOutputFileName" value="Test_ClassesCompare2.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -479,7 +591,7 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
     </configuration>
-    <configuration name="Test_ConsoleKeysAndCommands" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_DictionaryChangeTrace" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -503,8 +615,42 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ConsoleKeysAndCommands" />
-      <option name="overriddenOutputFileName" value="Test_ConsoleKeysAndCommands.swf" />
+      <option name="overriddenMainClass" value="Test_DictionaryChangeTrace" />
+      <option name="overriddenOutputFileName" value="Test_DictionaryChangeTrace.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_DictionaryKeys" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_DictionaryKeys" />
+      <option name="overriddenOutputFileName" value="Test_DictionaryKeys.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -550,7 +696,7 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration name="Test_HtmlColorsText" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ForPerformance" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -574,8 +720,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_HtmlColorsText" />
-      <option name="overriddenOutputFileName" value="Test_HtmlColorsText.swf" />
+      <option name="overriddenMainClass" value="Test_ForPerformance" />
+      <option name="overriddenOutputFileName" value="Test_ForPerformance.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -584,7 +730,7 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
     </configuration>
-    <configuration name="Test_LoaderMain" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_RegexpReplace2" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -608,42 +754,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="loader_test.Test_LoaderMain" />
-      <option name="overriddenOutputFileName" value="Test_LoaderMain.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_Vector2d" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Vector2d" />
-      <option name="overriddenOutputFileName" value="Test_Vector2d.swf" />
+      <option name="overriddenMainClass" value="Test_RegexpReplace2" />
+      <option name="overriddenOutputFileName" value="Test_RegexpReplace2.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -912,19 +1024,19 @@
       <item index="0" class="java.lang.String" itemvalue="Flash App.Test" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ExternalInterface HTML" />
       <item index="2" class="java.lang.String" itemvalue="Flash App.AirMainModule" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_LoaderMain" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ArrayIndexesOfSeveral" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
-      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
-      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_Vector2d" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ClassesCompare2" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ForPerformance" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_RegexpReplace2" />
+      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_DictionaryChangeTrace" />
+      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_DictionaryKeys" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_Vector2d" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_HtmlColorsText" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ArrayIndexesOfSeveral" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_LoaderMain" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_DictionaryKeys" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_DictionaryChangeTrace" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_RegexpReplace2" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_ForPerformance" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_ClassesCompare2" />
       </list>
     </recent_temporary>
   </component>
@@ -1016,7 +1128,9 @@
       <workItem from="1519742336271" duration="893000" />
       <workItem from="1521026720414" duration="4034000" />
       <workItem from="1521105720616" duration="592000" />
-      <workItem from="1522259763663" duration="212000" />
+      <workItem from="1522259763663" duration="3261000" />
+      <workItem from="1522313228365" duration="580000" />
+      <workItem from="1522672316322" duration="15491000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1242,11 +1356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522259903727</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Console - tracingLevel, ignore textField focus">
+      <created>1522260083714</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1522260083714</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598660000" />
+    <option name="totallyTimeSpent" value="617780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1260,72 +1381,76 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35400227" sideWeight="0.31203008" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.47046188" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.47046188" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30988184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5062007" sideWeight="0.6197637" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.68045115" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35400227" sideWeight="0.6879699" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.31954888" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5062007" sideWeight="0.5311493" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43228602" sideWeight="0.3608742" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.47046188" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59977454" sideWeight="0.78571427" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59977454" sideWeight="0.21428572" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50845546" sideWeight="0.67508054" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50845546" sideWeight="0.32491943" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27604726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3167982" sideWeight="0.5537057" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5062007" sideWeight="0.6197637" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1355,6 +1480,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -1375,8 +1508,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Circles in Ellipse" />
-    <MESSAGE value="Starling draw converter" />
     <MESSAGE value="Circles moded, Random, Json, +libs" />
     <MESSAGE value="Boxes in Circles" />
     <MESSAGE value="Addition Compiler Options.txt&#10;Test_LoaderLocal.as&#10;Test_StageScale.as&#10;Test_UncaughtErrorEvent.as" />
@@ -1400,7 +1531,9 @@
     <MESSAGE value="Fonts" />
     <MESSAGE value="Git Recipes.txt&#10;Test_HtmlColorsText.as" />
     <MESSAGE value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
+    <MESSAGE value="Console - tracingLevel, ignore textField focus" />
+    <MESSAGE value="Regexp2, DictionaryKeys, ClassesCompare" />
+    <option name="LAST_COMMIT_MESSAGE" value="Regexp2, DictionaryKeys, ClassesCompare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1452,14 +1585,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/utils/Utils.as</url>
-          <line>243</line>
+          <line>242</line>
           <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_ForPerformance.as</url>
+          <line>65</line>
+          <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_ForPerformance.as</url>
+          <line>46</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_ForPerformance.as</url>
+          <line>29</line>
+          <option name="timeStamp" value="505" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="490" />
+      <option name="time" value="515" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
@@ -1509,190 +1657,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="109" column="24" lean-forward="false" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Logs.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="128" column="37" lean-forward="false" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FLA_experiments/embedfonts/font/BrushScript.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FLA_experiments/embedfonts/App.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="78" column="57" lean-forward="false" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TextField.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FLA_experiments/font_to_swf.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleChannels.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/KeyBind.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/core/Executer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ArrayCopyReverse.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Array.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_FontFromTTF.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#10#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppDomain/RuntimeClasses.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppDomainConflict/en/es/Greeter.as" />
-    <entry file="file://$PROJECT_DIR$/src/Test_MouseEvents.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TraceLimit.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="96047" lean-forward="false" selection-start-line="24" selection-start-column="96047" selection-end-line="24" selection-end-column="96047" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/adobe/serialization/json/JSON.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppDomainConflict/en/Greeter.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_DescribeType.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/DefaultValues.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppDomainConflict/es/Greeter.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppDomainConflict/ApplicationDomainExample2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="47" selection-end-column="115" />
-          <folding>
-            <element signature="e#28#65#0" expanded="false" />
-            <element signature="e#2315#2343#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_FontFromSwf.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppDomainConflictPureFla/ApplicationDomainExample3.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
@@ -1766,7 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1781,7 +1744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1796,7 +1758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1814,25 +1775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/alts/AltButtonParams.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/player/28.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="384" column="22" lean-forward="false" selection-start-line="384" selection-start-column="22" selection-end-line="384" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1855,16 +1801,255 @@
         <state relative-caret-position="567">
           <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding>
-            <element signature="e#10#38#0" expanded="true" />
+            <element signature="e#10#38#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Interview.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="e#10#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#161#198#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_For.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/DateUtil.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/resources/ResourceManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_UncaughtErrorEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="113" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="113" />
+          <folding>
+            <element signature="e#10#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/player/28.0/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="6693" column="13" lean-forward="false" selection-start-line="6693" selection-start-column="13" selection-end-line="6693" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ForPerformance.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#10#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_String.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="23" column="160" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="160" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Regexp Training/text=/text=.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Regexp Training/get all before slash/get all before slash.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Regexp Training/get all before slash/key.rgx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdads.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="141" column="79" lean-forward="false" selection-start-line="141" selection-start-column="79" selection-end-line="141" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Random2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_RegexpReplace2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1097">
+          <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Random.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Hash.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Hash.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DictionaryDebug.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_DictionaryChangeTrace.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="430" column="15" lean-forward="false" selection-start-line="430" selection-start-column="15" selection-end-line="430" selection-end-column="15" />
+        <state relative-caret-position="170">
+          <caret line="439" column="5" lean-forward="false" selection-start-line="439" selection-start-column="5" selection-end-line="439" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_DictionaryKeys.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#10#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
