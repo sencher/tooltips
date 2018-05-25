@@ -3,10 +3,12 @@ import com.adobe.serialization.json.JSON;
 import com.junkbyte.console.Cc;
 
 import flash.display.DisplayObject;
+import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
 import flash.display.MovieClip;
 import flash.display.Shape;
 import flash.display.Sprite;
+import flash.display.Stage;
 import flash.events.Event;
 import flash.system.ApplicationDomain;
 import flash.text.Font;
@@ -103,8 +105,10 @@ public class Utils {
         }
     }
 
-    public static function generateRandomString(len:Number):String {
-        var chars:String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    public static function generateRandomString(len:Number, russian:Boolean = false):String {
+        var chars:String = russian ?
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789абвгдеёжзийклмнопрстуфхцчшщьыъэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ"
+                :"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         var num_chars:Number = chars.length - 1;
         var randomChar:String = "";
 
@@ -163,13 +167,17 @@ public class Utils {
 
     public static function globalVisible(displayObject:DisplayObject):Boolean {
         var checking:DisplayObject = displayObject;
+        var par:DisplayObject = checking.parent;
         while (checking) {
-            if (!checking.visible) {
+            if (!checking.visible || checking.alpha == 0) {
                 return false;
-            } else if (checking.parent) {
-                checking = checking.parent;
-            } else {
+            } else if (par) {
+                checking = par;
+                par = checking.parent;
+            } else if(checking is Stage) {
                 return true;
+            }else{
+                return false;
             }
         }
         return true;// to make Idea happy
@@ -192,7 +200,7 @@ public class Utils {
     }
 
     public static function getNameAndVisible(displayObject:DisplayObject):String {
-        return displayObject + ", " + getQualifiedClassName(displayObject) + ", " + getQualifiedSuperclassName(displayObject) + ", " + displayObject.name + ", " + String(displayObject.visible).toUpperCase() + "\n";
+        return displayObject.name + displayObject + " / visible:" + String(displayObject.visible).toUpperCase() + ", alpha:" + displayObject.alpha + "\n";
     }
 
     public static function getTopParent(displayObject:DisplayObject):DisplayObject {
@@ -451,6 +459,20 @@ public class Utils {
         }
 
         trace(a);
+    }
+
+    public static function childList(container:DisplayObjectContainer):String {
+        var s:String = describeDisplayObject(container);
+        var displayObject:DisplayObject;
+        for (var i:int = 0; i < container.numChildren; i++) {
+            displayObject = container.getChildAt(i);
+            s += "\t" + describeDisplayObject(displayObject);
+        }
+        return s;
+    }
+
+    private static function describeDisplayObject(value:DisplayObject):String{
+        return value.name + " / " + DomainUtils.getTypeIgnorePrefix(value) + "\n";
     }
 }
 }

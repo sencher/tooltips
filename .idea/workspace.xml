@@ -4,527 +4,21 @@
     <option name="deselectedBCs" value="Tooltips&#9;AirMain" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="387" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="411" mnemonic="4" />
-    <bookmark url="file://$PROJECT_DIR$/src/Test_MemoryAddChild.as" line="59" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/src/Test_MemoryAddChild.as" line="45" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="395" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="419" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/src/Test_FontSize.as" line="12" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/demo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/audio/wing_flap.mp3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/1x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/1x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/2x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/2x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/Ubuntu-License.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/fonts/Ubuntu-R.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/1x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/1x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/1x/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/1x/compressed_texture.atf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/2x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/2x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/2x/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/assets/textures/2x/compressed_texture.atf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/demo-shared.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/Constants.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/Game.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/MainMenu.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/AnimationScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/BenchmarkScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/BlendModeScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/CustomHitTestScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/FilterScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/MaskScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/MovieScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/RenderTextureScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/Scene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/Sprite3DScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/TextScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/TextureScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/scenes/TouchScene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/utils/MenuButton.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/utils/ProgressBar.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/utils/RoundButton.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/src/utils/TouchSheet.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/Default-Portrait.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/Default.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/Default@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/icon114.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/icon144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/icon57.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo/system/icon72.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/.actionScriptProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/demo-mobile.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/src/Demo_Mobile-app.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_mobile/src/Demo_Mobile.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.actionScriptProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/flexCompiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/Starling-Demo-Web.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/Default-Portrait.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/Default.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/Default@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/Demo_Web.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/Demo_Web_Preloader.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/audio/wing_flap.mp3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/1x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/1x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/2x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/2x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/Ubuntu-License.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/fonts/Ubuntu-R.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/icon114.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/icon144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/icon57.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/icon72.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/1x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/1x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/1x/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/1x/compressed_texture.atf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/2x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/2x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/2x/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/bin-debug/textures/2x/compressed_texture.atf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/demo-web.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/src/Demo_Web.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/src/Demo_Web_Preloader.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/demo_web/src/EmbeddedAssets.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/.actionScriptProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/audio/click.mp3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/1x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/1x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/2x/desyrel.fnt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/2x/desyrel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/Ubuntu-License.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/fonts/Ubuntu-R.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/1x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/1x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/1x/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/2x/atlas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/2x/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/assets/textures/2x/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/scaffold-mobile.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Game.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Menu.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Root.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Scaffold_Mobile-app.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Scaffold_Mobile.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/Scene.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/utils/MenuButton.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/utils/ProgressBar.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/src/utils/ScreenSetup.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/Default-375w-667h@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/Default-568h@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/Default-Portrait.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/Default.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/Default@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/icon114.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/icon144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/icon57.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/scaffold_mobile/system/icon72.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/samples/settings.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.actionScriptProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.flexLibProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/flexCompiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/Starling.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/bin-debug/HelloWorld.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/bin/starling2.3.swc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/ant/build.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/ant/build.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/gradle/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/copyright/profiles_settings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/flexCompiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/scopes/scope_settings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/idea/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/build/shared/package-descriptions.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/generate.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/AC_OETags.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-classes.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-A.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-B.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-C.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-D.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-E.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-F.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-G.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-H.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-I.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-J.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-K.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-L.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-M.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-N.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-O.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-P.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-Q.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-R.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-S.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-T.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-U.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-V.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-W.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-X.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-Y.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/all-index-Z.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/asdoc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/class-summary.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/cookies.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/help.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/AirIcon12x12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/P_AlternativeMetadataIndicator_30x28_N.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/collapsed.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/detailHeaderRule.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/detailSectionHeader.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/expanded.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/inherit-arrow.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/inheritedSummary.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/logo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/titleTableBottom.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/titleTableMiddle.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/images/titleTableTop.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/index-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/override.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/package-frame.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/package-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/package-summary.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/print.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/DelayedCall.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/IAnimatable.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/Juggler.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/Transitions.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/Tween.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/animation/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/core/RenderSupport.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/core/Starling.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/core/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/core/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/BlendMode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Button.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/ButtonState.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Canvas.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/DisplayObject.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/DisplayObjectContainer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Image.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Mesh.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/MeshBatch.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/MovieClip.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Quad.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/QuadBatch.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Shape.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Sprite.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Sprite3D.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/Stage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/display/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/AbstractClassError.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/AbstractMethodError.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/MissingContextError.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/NotSupportedError.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/errors/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/EnterFrameEvent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/Event.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/EventDispatcher.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/KeyboardEvent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/ResizeEvent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/Touch.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/TouchEvent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/TouchPhase.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/TouchProcessor.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/events/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/BlurFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/ColorMatrixFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/CompositeFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/DisplacementMapFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/DropShadowFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/FilterChain.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/FragmentFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/FragmentFilterMode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/GlowFilter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/IFilterHelper.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/filters/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/geom/Polygon.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/geom/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/geom/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/BatchToken.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/Effect.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/FilterEffect.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/IndexData.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/MeshEffect.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/Painter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/Program.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/RenderState.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/VertexData.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/VertexDataFormat.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/rendering/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/styles/DistanceFieldStyle.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/styles/MeshStyle.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/styles/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/styles/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/BitmapChar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/BitmapCharLocation.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/BitmapFont.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/BitmapFontType.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/ITextCompositor.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/TextField.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/TextFieldAutoSize.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/TextFormat.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/TextOptions.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/TrueTypeCompositor.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/text/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/AtfData.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/ConcreteTexture.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/RenderTexture.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/SubTexture.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/Texture.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/TextureAtlas.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/TextureOptions.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/TextureSmoothing.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/textures/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/Align.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/ArrayUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/AssetManager.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/Color.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/HAlign.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/MathUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/MatrixUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/MeshSubset.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/MeshUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/Padding.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/Pool.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/RectangleUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/RenderUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/ScaleMode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/StringUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/SystemUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/VAlign.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/VectorUtil.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/VertexData.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/class-list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/package-detail.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/starling/utils/package.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/title-bar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/doc/html/validation_errors.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/Game.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/HelloWorld.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/com/adobe/utils/AGALMiniAssembler.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/animation/DelayedCall.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/animation/IAnimatable.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/animation/Juggler.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/animation/Transitions.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/animation/Tween.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/core/Starling.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/core/StatsDisplay.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/core/starling_internal.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/BlendMode.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Button.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/ButtonState.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Canvas.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/DisplayObject.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/DisplayObjectContainer.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Image.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Mesh.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/MeshBatch.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/MovieClip.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Quad.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Sprite.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Sprite3D.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/display/Stage.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/errors/AbstractClassError.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/errors/AbstractMethodError.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/errors/MissingContextError.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/errors/NotSupportedError.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/EnterFrameEvent.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/Event.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/EventDispatcher.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/KeyboardEvent.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/ResizeEvent.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/Touch.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/TouchEvent.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/TouchMarker.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/TouchPhase.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/events/TouchProcessor.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/BlurFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/ColorMatrixFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/CompositeFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/DisplacementMapFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/DropShadowFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/FilterChain.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/FilterHelper.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/FragmentFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/GlowFilter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/filters/IFilterHelper.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/geom/Polygon.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/BatchProcessor.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/BatchToken.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/Effect.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/FilterEffect.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/IndexData.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/MeshEffect.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/Painter.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/Program.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/RenderState.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/VertexData.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/VertexDataAttribute.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/rendering/VertexDataFormat.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/styles/DistanceFieldStyle.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/styles/MeshStyle.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/BitmapChar.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/BitmapCharLocation.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/BitmapFont.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/BitmapFontType.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/ITextCompositor.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/MiniBitmapFont.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/TextField.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/TextFieldAutoSize.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/TextFormat.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/TextOptions.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/text/TrueTypeCompositor.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/AtfData.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/ConcretePotTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/ConcreteRectangleTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/ConcreteTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/ConcreteVideoTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/RenderTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/SubTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/Texture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/TextureAtlas.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/TextureOptions.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/textures/TextureSmoothing.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/Align.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/AssetManager.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/Color.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/MathUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/MatrixUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/MeshSubset.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/MeshUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/Padding.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/Pool.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/RectangleUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/RenderUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/ScaleMode.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/StringUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/SystemUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/deg2rad.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/execute.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/starling/src/starling/utils/rad2deg.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/.actionScriptProperties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/atlas.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/audio.mp3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/data.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/font.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/image.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/image.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/image.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/invalid.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/invalid.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/json.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/fixtures/xml.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/libs/.gitkeep" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/FlexUnitRunner.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/AsyncUtil.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/Helpers.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/StarlingTestCase.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/animation/DelayedCallTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/animation/JugglerTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/animation/TweenTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/BlendModeTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/ButtonTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/DisplayObjectContainerTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/DisplayObjectTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/ImageTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/MeshTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/MovieClipTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/QuadTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/display/Sprite3DTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/events/EventTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/filters/FilterChainTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/filters/FragmentFilterTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/geom/PolygonTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/rendering/IndexDataTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/rendering/MeshStyleTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/rendering/VertexDataFormatTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/rendering/VertexDataTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/text/TextFieldTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/textures/TextureAtlasTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/textures/TextureTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/AssetManagerTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/ColorTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/MathUtilTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/MatrixUtilTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/MockTexture.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/RectangleUtilTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/StringUtilTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/src/tests/utils/UtilsTest.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/tests/starling-tests.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/field_agent/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/field_agent/field_agent.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/idea/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/idea/copy_resources.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/transporter_chief/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StarlingProject/util/transporter_chief/transporter_chief.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/starling191.swc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/starling253.swc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_LinkedObjectReset.as" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_ChildList.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_FontSize.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_GlobalVisibility.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_Swap3.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/DomainUtils.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/FontUtils.as" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
-      <change beforePath="$PROJECT_DIR$/docs/Regexp.txt" afterPath="$PROJECT_DIR$/docs/Regexp.txt" />
-      <change beforePath="$PROJECT_DIR$/libs/starling191.swc+" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/starling253.swc+" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Test_Cast.as" afterPath="$PROJECT_DIR$/src/Test_Cast.as" />
-      <change beforePath="$PROJECT_DIR$/src/Test_CirclesElipse4.as" afterPath="$PROJECT_DIR$/src/Test_CirclesElipse4.as" />
-      <change beforePath="$PROJECT_DIR$/src/starling/Game.as" afterPath="$PROJECT_DIR$/src/starling/Game.as" />
+      <change beforePath="$PROJECT_DIR$/src/Test_FontFromTTF.as" afterPath="$PROJECT_DIR$/src/Test_FontFromTTF.as" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -560,119 +54,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TestDrawStarling.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/starling/TestDrawStarling.as">
+      <file leaf-file-name="FontUtils.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/FontUtils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#66#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/starling/Game.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-              <folding>
-                <element signature="e#19#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo-shared.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StarlingProject/samples/demo/demo-shared.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Starling.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StarlingProject/starling/Starling.iml">
+      <file leaf-file-name="Test_FontFromTTF.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_FontFromTTF.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+              <folding>
+                <element signature="e#10#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="109" column="126" lean-forward="false" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="145" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Cast.as" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test_Cast.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_CirclesElipse4.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6237">
-              <caret line="306" column="23" lean-forward="false" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
-              <folding>
-                <element signature="e#57#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_CirclesElipse.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_CirclesElipse2.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse2.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_CirclesElipse3.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse3.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3213">
-              <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Startup.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/starling/Startup.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding>
-                <element signature="e#28#59#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -692,13 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.call</find>
-      <find>.apply</find>
-      <find>sim</find>
-      <find>.load</find>
-      <find>simple</find>
-      <find>Test_</find>
-      <find>getDomainPrefix</find>
       <find>hasDefinitionIgnorePrefix</find>
       <find>getIndexes</find>
       <find>currentId</find>
@@ -722,11 +124,15 @@
       <find>drawLine</find>
       <find>deg2rad</find>
       <find>effect_areas_asteroids.png</find>
+      <find>getQualifiedClassName</find>
+      <find>adjustFontSize</find>
+      <find>arial.</find>
+      <find>../../../../assets/</find>
+      <find>visi</find>
+      <find>../../../../assets/fonts/</find>
+      <find>format3</find>
     </findStrings>
     <replaceStrings>
-      <replace>600</replace>
-      <replace>$1$2$3\n&quot;$2&quot;</replace>
-      <replace>$1$2$3$4\n&quot;$2&quot;</replace>
       <replace>$1$2$3$4\nCc.logch(this, &quot;$2&quot;, arguments);</replace>
       <replace>\n</replace>
       <replace>$1$2$3$4$5Cc.logchw(this, &quot;$2&quot;, arguments);</replace>
@@ -754,6 +160,9 @@
       <replace>currentMc</replace>
       <replace>$1</replace>
       <replace>$1UIUtils.updateLabel($2, $3)</replace>
+      <replace>../../FLA_experiments/</replace>
+      <replace>../../FLA_experiments/fonts/</replace>
+      <replace>format4</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Projects\tooltips</dir>
@@ -774,17 +183,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/survarium/WatermarkTest.as" />
-        <option value="$PROJECT_DIR$/src/Test_ConsoleChannels.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" />
-        <option value="$PROJECT_DIR$/src/com/junkbyte/console/vos/Log.as" />
-        <option value="$PROJECT_DIR$/src/Test_TextField.as" />
-        <option value="$PROJECT_DIR$/FLA_experiments/embedfonts/App.as" />
-        <option value="$PROJECT_DIR$/src/Test_FontFromSwf.as" />
         <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
         <option value="$PROJECT_DIR$/src/Test_ArrayIndexesOfSeveral.as" />
         <option value="$PROJECT_DIR$/src/utils/DefaultValues.as" />
-        <option value="$PROJECT_DIR$/src/Test_FontFromTTF.as" />
         <option value="$PROJECT_DIR$/src/AppDomain/RuntimeClasses.as" />
         <option value="$PROJECT_DIR$/src/AppDomainConflict/en/Greeter.as" />
         <option value="$PROJECT_DIR$/src/AppDomainConflict/en/es/sda.as" />
@@ -818,13 +219,21 @@
         <option value="$PROJECT_DIR$/docs/Regexp Training/get all before slash.txt" />
         <option value="$PROJECT_DIR$/docs/Regexp Training/get all before slash/key.rgx" />
         <option value="$PROJECT_DIR$/src/Test_RegexpReplace2.as" />
-        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
         <option value="$PROJECT_DIR$/src/Test_DictionaryKeys.as" />
         <option value="$PROJECT_DIR$/src/Test_LinkedObjectDelete.as" />
         <option value="$PROJECT_DIR$/src/Test_LinkedObjectReset.as" />
         <option value="$PROJECT_DIR$/src/Test_CirclesElipse4.as" />
         <option value="$PROJECT_DIR$/src/starling/Game.as" />
         <option value="$PROJECT_DIR$/src/Test_Cast.as" />
+        <option value="$PROJECT_DIR$/src/utils/DomainUtils.as" />
+        <option value="$PROJECT_DIR$/src/Test_ChildList.as" />
+        <option value="$PROJECT_DIR$/src/Test_FontSize.as" />
+        <option value="$PROJECT_DIR$/src/Test_Swap3.as" />
+        <option value="$PROJECT_DIR$/src/Test_AddChild2.as" />
+        <option value="$PROJECT_DIR$/src/Test_GlobalVisibility.as" />
+        <option value="$PROJECT_DIR$/src/utils/FontUtils.as" />
+        <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/Test_FontFromTTF.as" />
       </list>
     </option>
   </component>
@@ -842,8 +251,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="314" />
+    <option name="y" value="-12" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
   </component>
@@ -865,9 +274,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -878,20 +286,13 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="FLA_experiments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="Regexp Training" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="Regexp Training" type="462c0819:PsiDirectoryNode" />
-              <item name="text=" type="462c0819:PsiDirectoryNode" />
+              <item name="FLA_experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -917,13 +318,20 @@
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -956,11 +364,11 @@
       <recent name="A:\Projects\tooltips\src\starling" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\tooltips\src\utils" />
       <recent name="D:\Work\tooltips\src" />
       <recent name="D:\Projects\tooltips\src\survarium" />
       <recent name="D:\Projects\tooltips\src\display" />
       <recent name="D:\Projects\tooltips\src" />
-      <recent name="D:\Projects\tooltips\src\air" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="" />
@@ -985,7 +393,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Cast">
+  <component name="RunManager" selected="Flash App.Test_FontFromTTF">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1041,40 +449,6 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
     </configuration>
-    <configuration name="Startup" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="starling.Startup" />
-      <option name="overriddenOutputFileName" value="Startup.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
     <configuration name="Test" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -1112,7 +486,7 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration name="TestDrawStarling" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_AddChild" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorSdkPath" value="" />
       <option name="adlOptions" value="" />
@@ -1136,110 +510,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="starling.TestDrawStarling" />
-      <option name="overriddenOutputFileName" value="TestDrawStarling.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_Cast" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Cast" />
-      <option name="overriddenOutputFileName" value="Test_Cast.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_CirclesElipse3" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_CirclesElipse3" />
-      <option name="overriddenOutputFileName" value="Test_CirclesElipse3.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-    </configuration>
-    <configuration name="Test_CirclesElipse4" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_CirclesElipse4" />
-      <option name="overriddenOutputFileName" value="Test_CirclesElipse4.swf" />
+      <option name="overriddenMainClass" value="Test_AddChild" />
+      <option name="overriddenOutputFileName" value="Test_AddChild.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -1284,6 +556,142 @@
       <method>
         <option name="Make" enabled="false" />
       </method>
+    </configuration>
+    <configuration name="Test_FontFromTTF" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_FontFromTTF" />
+      <option name="overriddenOutputFileName" value="Test_FontFromTTF.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_FontSize" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_FontSize" />
+      <option name="overriddenOutputFileName" value="Test_FontSize.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_GlobalVisibility" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_GlobalVisibility" />
+      <option name="overriddenOutputFileName" value="Test_GlobalVisibility.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration name="Test_Swap3" type="FlashRunConfigurationType" factoryName="Flash App" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/flex_sdk_4.6/flashplayer_26_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_Swap3" />
+      <option name="overriddenOutputFileName" value="Test_Swap3.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="Test" />
@@ -1545,19 +953,19 @@
       <item index="0" class="java.lang.String" itemvalue="Flash App.Test" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.Test_ExternalInterface HTML" />
       <item index="2" class="java.lang.String" itemvalue="Flash App.AirMainModule" />
-      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse3" />
-      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse4" />
-      <item index="5" class="java.lang.String" itemvalue="Flash App.Startup" />
-      <item index="6" class="java.lang.String" itemvalue="Flash App.TestDrawStarling" />
-      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_Cast" />
+      <item index="3" class="java.lang.String" itemvalue="Flash App.Test_FontSize" />
+      <item index="4" class="java.lang.String" itemvalue="Flash App.Test_Swap3" />
+      <item index="5" class="java.lang.String" itemvalue="Flash App.Test_AddChild" />
+      <item index="6" class="java.lang.String" itemvalue="Flash App.Test_GlobalVisibility" />
+      <item index="7" class="java.lang.String" itemvalue="Flash App.Test_FontFromTTF" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_Cast" />
-        <item index="1" class="java.lang.String" itemvalue="Flash App.Startup" />
-        <item index="2" class="java.lang.String" itemvalue="Flash App.TestDrawStarling" />
-        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse4" />
-        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_CirclesElipse3" />
+        <item index="0" class="java.lang.String" itemvalue="Flash App.Test_FontFromTTF" />
+        <item index="1" class="java.lang.String" itemvalue="Flash App.Test_GlobalVisibility" />
+        <item index="2" class="java.lang.String" itemvalue="Flash App.Test_AddChild" />
+        <item index="3" class="java.lang.String" itemvalue="Flash App.Test_Swap3" />
+        <item index="4" class="java.lang.String" itemvalue="Flash App.Test_FontSize" />
       </list>
     </recent_temporary>
   </component>
@@ -1655,7 +1063,13 @@
       <workItem from="1523541976926" duration="3203000" />
       <workItem from="1524559588984" duration="730000" />
       <workItem from="1524643284242" duration="4003000" />
-      <workItem from="1525264948314" duration="558000" />
+      <workItem from="1525264948314" duration="1353000" />
+      <workItem from="1525332798507" duration="1190000" />
+      <workItem from="1525358032340" duration="5440000" />
+      <workItem from="1525447511818" duration="12556000" />
+      <workItem from="1526459359675" duration="85000" />
+      <workItem from="1527164506001" duration="3943000" />
+      <workItem from="1527255631448" duration="3933000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1895,11 +1309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523435625296</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update">
+      <created>1525265699834</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1525265699834</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="626502000" />
+    <option name="totallyTimeSpent" value="654444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1912,10 +1333,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33582887" sideWeight="0.31740063" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40213904" sideWeight="0.32277122" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1926,7 +1348,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33834586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53974223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1934,7 +1356,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3348365" sideWeight="0.68259937" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42390078" sideWeight="0.6772288" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1947,45 +1369,8 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5062007" sideWeight="0.66058004" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5058824" sideWeight="0.66058004" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.47046188" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50845546" sideWeight="0.67508054" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50845546" sideWeight="0.32491943" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5062007" sideWeight="0.6197637" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -2040,7 +1425,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Circles moded, Random, Json, +libs" />
     <MESSAGE value="Boxes in Circles" />
     <MESSAGE value="Addition Compiler Options.txt&#10;Test_LoaderLocal.as&#10;Test_StageScale.as&#10;Test_UncaughtErrorEvent.as" />
     <MESSAGE value="Vostok Games many tools" />
@@ -2065,7 +1449,8 @@
     <MESSAGE value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
     <MESSAGE value="Console - tracingLevel, ignore textField focus" />
     <MESSAGE value="Regexp2, DictionaryKeys, ClassesCompare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Regexp2, DictionaryKeys, ClassesCompare" />
+    <MESSAGE value="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2101,11 +1486,6 @@
           <option name="timeStamp" value="316" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/Test_FontFromTTF.as</url>
-          <line>59</line>
-          <option name="timeStamp" value="362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/AppDomainConflict/ApplicationDomainExample2.as</url>
           <line>18</line>
           <option name="timeStamp" value="418" />
@@ -2114,11 +1494,6 @@
           <url>file://$PROJECT_DIR$/src/AppDomainConflictPureFla/ApplicationDomainExample3.as</url>
           <line>70</line>
           <option name="timeStamp" value="426" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/utils/Utils.as</url>
-          <line>242</line>
-          <option name="timeStamp" value="487" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/Test_ForPerformance.as</url>
@@ -2135,18 +1510,21 @@
           <line>29</line>
           <option name="timeStamp" value="505" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/utils/Utils.as</url>
+          <line>168</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="518" />
+      <option name="time" value="525" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
-        <watch expression="s[&quot;xxx&quot;]" />
-        <watch expression="this.arguments" language="ECMA Script Level 4" />
-        <watch expression="v[d1][d2]" />
-        <watch expression="l" />
+        <watch expression="format.size" />
+        <watch expression="tf.textWidth" />
       </configuration>
     </watches-manager>
   </component>
@@ -2190,111 +1568,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_ArrayIndexesOfSeveral.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TextHtmlLink.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader_test/Test_LoaderSecond.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_HtmlColorsText.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="10" column="95" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alts/AltButtonParams.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Vector.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader_test/Test_LoaderStaticSimple.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Vector2d.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Second.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/folder/Third.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_Interview.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare2.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_For.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2334,7 +1607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="6693" column="13" lean-forward="false" selection-start-line="6693" selection-start-column="13" selection-end-line="6693" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2439,14 +1711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8883">
-          <caret line="439" column="5" lean-forward="false" selection-start-line="439" selection-start-column="5" selection-end-line="439" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_DictionaryKeys.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -2472,37 +1736,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="483">
           <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse2.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
+        <state relative-caret-position="1890">
           <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse3.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
+        <state relative-caret-position="3255">
           <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2515,42 +1769,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CirclesElipse4.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6237">
+        <state relative-caret-position="6384">
           <caret line="306" column="23" lean-forward="false" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
-          <folding>
-            <element signature="e#57#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starling/TestDrawStarling.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="714">
           <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#66#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starling/Startup.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="273">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#28#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starling/Game.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
+        <state relative-caret-position="1869">
           <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-          <folding>
-            <element signature="e#19#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2558,7 +1799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2566,16 +1806,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_Cast.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/folder/First.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_AddedToStage.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ClassesCompare.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_GetClassNames.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Child.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DomainUtils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#105#143#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DefaultValues.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_ChildList.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#10#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_FontSize.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#10#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Swap3.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <folding>
+            <element signature="e#10#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_AddChild.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_GlobalVisibility.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/FontUtils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="109" column="126" lean-forward="false" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_FontFromTTF.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+          <folding>
+            <element signature="e#10#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
