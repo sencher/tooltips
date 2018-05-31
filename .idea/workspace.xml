@@ -6,18 +6,15 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="395" mnemonic="3" />
     <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="419" mnemonic="4" />
-    <bookmark url="file://$PROJECT_DIR$/src/Test_FontSize.as" line="12" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/Test_FontFromTTF.as" line="92" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_ChildList.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_FontSize.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_GlobalVisibility.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_Swap3.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/DomainUtils.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/FontUtils.as" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Tooltips.iml" afterPath="$PROJECT_DIR$/Tooltips.iml" />
       <change beforePath="$PROJECT_DIR$/src/Test_FontFromTTF.as" afterPath="$PROJECT_DIR$/src/Test_FontFromTTF.as" />
+      <change beforePath="$PROJECT_DIR$/src/utils/DefaultValues.as" afterPath="$PROJECT_DIR$/src/utils/DefaultValues.as" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FontUtils.as" afterPath="$PROJECT_DIR$/src/utils/FontUtils.as" />
       <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
@@ -54,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="FontUtils.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/FontUtils.as">
+      <file leaf-file-name="DefaultValues.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/DefaultValues.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+            <state relative-caret-position="693">
+              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -67,11 +64,43 @@
       <file leaf-file-name="Test_FontFromTTF.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_FontFromTTF.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+            <state relative-caret-position="-239">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="e#10#38#0" expanded="true" />
+                <element signature="e#10#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cc.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="301" column="48" lean-forward="false" selection-start-line="301" selection-start-column="43" selection-end-line="301" selection-end-column="48" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Loader.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Loader.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_MultipleSwfEmbed.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,8 +108,28 @@
       <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="109" column="126" lean-forward="false" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="145" />
+            <state relative-caret-position="5460">
+              <caret line="278" column="7" lean-forward="false" selection-start-line="241" selection-start-column="33" selection-end-line="278" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FontUtils.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/FontUtils.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2730">
+              <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AltWindowRedProgress.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alts/AltWindowRedProgress.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -101,11 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hasDefinitionIgnorePrefix</find>
-      <find>getIndexes</find>
-      <find>currentId</find>
-      <find>getQualifiedDefinitionNamesIgnorePrefix</find>
-      <find>Class</find>
       <find>typeof</find>
       <find>as</find>
       <find>Date</find>
@@ -131,6 +175,11 @@
       <find>visi</find>
       <find>../../../../assets/fonts/</find>
       <find>format3</find>
+      <find>ttf</find>
+      <find>Utils</find>
+      <find>OpenSans</find>
+      <find>swf</find>
+      <find>trace</find>
     </findStrings>
     <replaceStrings>
       <replace>$1$2$3$4\nCc.logch(this, &quot;$2&quot;, arguments);</replace>
@@ -185,7 +234,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" />
         <option value="$PROJECT_DIR$/src/Test_ArrayIndexesOfSeveral.as" />
-        <option value="$PROJECT_DIR$/src/utils/DefaultValues.as" />
         <option value="$PROJECT_DIR$/src/AppDomain/RuntimeClasses.as" />
         <option value="$PROJECT_DIR$/src/AppDomainConflict/en/Greeter.as" />
         <option value="$PROJECT_DIR$/src/AppDomainConflict/en/es/sda.as" />
@@ -231,8 +279,9 @@
         <option value="$PROJECT_DIR$/src/Test_Swap3.as" />
         <option value="$PROJECT_DIR$/src/Test_AddChild2.as" />
         <option value="$PROJECT_DIR$/src/Test_GlobalVisibility.as" />
-        <option value="$PROJECT_DIR$/src/utils/FontUtils.as" />
         <option value="$PROJECT_DIR$/src/utils/Utils.as" />
+        <option value="$PROJECT_DIR$/src/utils/DefaultValues.as" />
+        <option value="$PROJECT_DIR$/src/utils/FontUtils.as" />
         <option value="$PROJECT_DIR$/src/Test_FontFromTTF.as" />
       </list>
     </option>
@@ -251,10 +300,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="314" />
-    <option name="y" value="-12" />
+    <option name="x" value="-1929" />
+    <option name="y" value="-9" />
     <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -274,8 +323,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,7 +342,14 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="FLA_experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="Personal.swc" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="FLA_experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="Personal.swc" type="ab9368bb:PsiFileNode" />
+              <item name="library.swf" type="ab9368bb:PsiFileNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -303,6 +360,19 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="tooltips" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -330,8 +400,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,7 +408,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/starling191.swc!/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -1069,7 +1138,8 @@
       <workItem from="1525447511818" duration="12556000" />
       <workItem from="1526459359675" duration="85000" />
       <workItem from="1527164506001" duration="3943000" />
-      <workItem from="1527255631448" duration="3933000" />
+      <workItem from="1527255631448" duration="18025000" />
+      <workItem from="1527751702046" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1316,11 +1386,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525265699834</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Additional Fonts Test">
+      <created>1527259752918</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1527259752919</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654444000" />
+    <option name="totallyTimeSpent" value="669370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,12 +1409,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1929" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40213904" sideWeight="0.32277122" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5580609" sideWeight="0.3254565" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1348,7 +1424,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53974223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53974223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1356,7 +1432,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42390078" sideWeight="0.6772288" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5294118" sideWeight="0.6745435" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1369,7 +1445,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="850" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5058824" sideWeight="0.66058004" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5050733" sideWeight="0.66917294" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1425,7 +1501,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Boxes in Circles" />
     <MESSAGE value="Addition Compiler Options.txt&#10;Test_LoaderLocal.as&#10;Test_StageScale.as&#10;Test_UncaughtErrorEvent.as" />
     <MESSAGE value="Vostok Games many tools" />
     <MESSAGE value="com.junkbyte.console - stock" />
@@ -1450,7 +1525,8 @@
     <MESSAGE value="Console - tracingLevel, ignore textField focus" />
     <MESSAGE value="Regexp2, DictionaryKeys, ClassesCompare" />
     <MESSAGE value="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update" />
+    <MESSAGE value="Additional Fonts Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional Fonts Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1519,12 +1595,18 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="525" />
+      <option name="time" value="540" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
         <watch expression="format.size" />
         <watch expression="tf.textWidth" />
+        <watch expression="tf.embedFonts" />
+        <watch expression="format.font" />
+        <watch expression="tf.defaultTextFormat.font" />
+        <watch expression="tf.text" />
+        <watch expression="this.tf.textWidth" />
+        <watch expression="this.tf.defaultTextFormat" />
       </configuration>
     </watches-manager>
   </component>
@@ -1568,58 +1650,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_For.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/adobe/utils/DateUtil.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/resources/ResourceManager.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ExternalInterface.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_UncaughtErrorEvent.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="10" column="113" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/player/28.0/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="6693" column="13" lean-forward="false" selection-start-line="6693" selection-start-column="13" selection-end-line="6693" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_ForPerformance.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="e#10#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_String.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1848,7 +1878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1856,9 +1885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1866,16 +1892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="e#105#143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/DefaultValues.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1883,19 +1899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#10#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_FontSize.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#10#37#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1903,9 +1906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
-          <folding>
-            <element signature="e#10#37#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1913,7 +1913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1921,32 +1920,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_FontSize.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5460">
+          <caret line="278" column="7" lean-forward="false" selection-start-line="241" selection-start-column="33" selection-end-line="278" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DefaultValues.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/player/28.0/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="5828" column="31" lean-forward="false" selection-start-line="5828" selection-start-column="31" selection-end-line="5828" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/FontUtils.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        <state relative-caret-position="2730">
+          <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+    <entry file="file://$PROJECT_DIR$/src/alts/AltWindowRedProgress.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="109" column="126" lean-forward="false" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="145" />
+        <state relative-caret-position="84">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FLA_experiments/common-images-lobby.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/FLA_experiments/Personal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Loader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_MultipleSwfEmbed.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/junkbyte/console/Cc.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="301" column="48" lean-forward="false" selection-start-line="301" selection-start-column="43" selection-end-line="301" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_FontFromTTF.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        <state relative-caret-position="-239">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#10#38#0" expanded="true" />
+            <element signature="e#10#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

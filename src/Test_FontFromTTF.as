@@ -1,7 +1,10 @@
 package {
+import com.junkbyte.console.Cc;
+
 import flash.display.Sprite;
 import flash.events.KeyboardEvent;
 import flash.events.MouseEvent;
+import flash.text.AntiAliasType;
 import flash.text.TextField;
 import flash.text.TextFieldType;
 import flash.text.TextFormat;
@@ -13,48 +16,6 @@ import utils.Utils;
 [SWF(width="1000")]
 public class Test_FontFromTTF extends Sprite {
 
-    [Embed(
-        source="../FLA_experiments/fonts/Stay Wildy.ttf",
-        fontFamily="Stay Wildy",
-        mimeType="application/x-font-truetype",
-        embedAsCFF="false"
-    )]
-    private const FONT_STAY_WILDY:Class;
-
-    [Embed(
-        source="../FLA_experiments/fonts/arial.ttf",
-        fontFamily="Arial",
-        mimeType="application/x-font-truetype",
-        embedAsCFF="false"
-    )]
-    private const ARIAL:Class;
-
-    [Embed(
-        source="../FLA_experiments/fonts/OfficinaSerifLT-Bold.ttf",
-        fontFamily="ITC Officina Serif LT Bold",
-        mimeType="application/x-font-truetype",
-        embedAsCFF="false"
-    )]
-    private const FONT_OPEN_SANS_SEMIBOLD:Class;
-
-    [Embed(
-        source="../FLA_experiments/fonts/OpenSans-SemiBold.ttf",
-        fontFamily="Open Sans SemiBold",
-        mimeType="application/x-font-truetype",
-        embedAsCFF="false"
-    )]
-    private const FONT_OFFICINA_SERIF_LT_BOLD:Class;
-
-//    [Embed(
-//        source="../FLA_experiments/fonts/OfficinaSerifC-Bold.otf",
-//        fontFamily="ITC Officina Serif LT Bold",
-//        mimeType="application/x-font-truetype",
-//        embedAsCFF="false"
-//    )]
-//    private const FONT_OFFICINA_SERIF_LT_BOLD:Class;
-
-//    private const FONT_NAME:String = "ITC Officina Serif LT Bold";
-    private const FONT_NAME:String = "Futura Extra Black Condensed BT";
     private var initFormat:TextFormat;
     private var format2:TextFormat;
     private var format3:TextFormat;
@@ -67,6 +28,11 @@ public class Test_FontFromTTF extends Sprite {
     private const STR2:String = "123asdASDфывФЫВ.,:!@#";
 
     public function Test_FontFromTTF() {
+
+        Cc.start(this)
+        Cc.visible = true;
+        Cc.y = 100;
+
         FontUtils.checkFonts();
 //        var font:Font = Font.enumerateFonts(false)[0];
 //        trace(font.hasGlyphs(STR));
@@ -74,6 +40,9 @@ public class Test_FontFromTTF extends Sprite {
         initFormat = new TextFormat();
         initFormat.font = FontUtils.FONT_NAME_OPEN_SANS_SEMIBOLD;
         initFormat.color = 0x990000;
+
+        initFormat.leading = 2;
+
         initFormat.size = 30;
 
         format2 = new TextFormat();
@@ -94,7 +63,7 @@ public class Test_FontFromTTF extends Sprite {
         info_tf = new TextField();
         info_tf.defaultTextFormat = initFormat;
         info_tf.y = 300;
-        info_tf.width = 800;
+        info_tf.width = 1000;
         addChild(info_tf);
 
         tf = new TextField();
@@ -104,8 +73,13 @@ public class Test_FontFromTTF extends Sprite {
         tf.width = 500;
         tf.selectable = true;
         tf.type = TextFieldType.INPUT;
+
+        tf.antiAliasType = AntiAliasType.ADVANCED;
+        tf.maxChars = 32;
+
         tf.embedFonts = true;
-        FontUtils.updateLabel(tf, STR, true);
+
+        FontUtils.updateLabel(tf, STR);
         addChild(tf);
 
         //trace(tf.text);
@@ -120,8 +94,9 @@ public class Test_FontFromTTF extends Sprite {
                 tf.embedFonts = !tf.embedFonts;
                 break;
             case Keyboard.NUMBER_2:
-                tf.defaultTextFormat = initFormat;
                 tf.setTextFormat(initFormat);
+                //tf.defaultTextFormat = initFormat;
+                FontUtils.updateLabel(tf,tf.text);
                 break;
             case Keyboard.NUMBER_3:
                 tf.defaultTextFormat = format2;
@@ -141,13 +116,16 @@ public class Test_FontFromTTF extends Sprite {
             case Keyboard.NUMBER_7:
                 FontUtils.updateLabel(tf, Utils.generateRandomString(18, true));
                 break;
+            case Keyboard.NUMBER_8:
+                FontUtils.updateLabel(tf, tf.text);
+                break;
         }
         updateFormatInfo();
     }
 
     private function updateFormatInfo():void {
         var format:TextFormat = tf.getTextFormat();
-        info_tf.text = format.font + ", " + tf.embedFonts + ", " + tf.text;
+        info_tf.text = format.font + ", " + tf.embedFonts + ", " + tf.textWidth + ", " + tf.text;
     }
 
     private function onClick(event:MouseEvent):void {
@@ -156,9 +134,9 @@ public class Test_FontFromTTF extends Sprite {
             trace(tf.rotation);
         }else if(event.altKey) {
             tf.defaultTextFormat = initFormat;
-            FontUtils.updateLabel(tf, STR, true);
+            FontUtils.updateLabel(tf, STR);
         }else{
-            FontUtils.updateLabel(tf, STR2, true);
+            FontUtils.updateLabel(tf, STR2);
         }
         updateFormatInfo();
     }

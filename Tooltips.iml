@@ -14,6 +14,9 @@
             <entry library-name="starling253" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="64b354b1-ebb0-4180-b9cc-e783b39d2f51">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="4.6.0" />
         </dependencies>
@@ -105,5 +108,15 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="starling253" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="64b354b1-ebb0-4180-b9cc-e783b39d2f51" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/FLA_experiments/Personal.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

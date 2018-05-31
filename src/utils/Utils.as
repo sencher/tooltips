@@ -239,44 +239,44 @@ public class Utils {
         return f.fontName + " / " + f.fontStyle + " / " + f.fontType;
     }
 
-    public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
-        //DEBUG
-//            if(str.indexOf("Играть") > -1){
-//                //DebugUtils.Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
-//                tf.border = true;
-//                tf.background = true;
-//                tf.backgroundColor = 0x880000;
+//    public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
+//        //DEBUG
+////            if(str.indexOf("Играть") > -1){
+////                //DebugUtils.Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+////                tf.border = true;
+////                tf.background = true;
+////                tf.backgroundColor = 0x880000;
+////            }
+//
+//        tf.embedFonts = true;
+//        var format:TextFormat = tf.getTextFormat();
+//        if (tf && format.font == null) {
+//            tf.text = "123";
+//            format = tf.getTextFormat();
+//        }
+//
+//        var fixedFont:Font = getFixedFont(format.font);
+//        if (fixedFont) {
+//            var stringForCheck:String = str.replace(/[\n\r\t ]/g, "");
+//            format.font = fixedFont.fontName;
+//            tf.defaultTextFormat = format;
+//            tf.setTextFormat(format);
+//            //            if (!fixedFont.hasGlyphs(stringForCheck)) {
+//            //                Cc.logch("Font", format.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
+//            //            }
+//        }
+//
+//        if (html) {
+//            tf.htmlText = str;
+//            if (tf.htmlText != str) {
+//                // TextField is set to text=htmlText="" if tags without quoted values
+//                var htmlText:String = quoteHtmlParams(str);
+//                tf.htmlText = htmlText;
 //            }
-
-        tf.embedFonts = true;
-        var format:TextFormat = tf.getTextFormat();
-        if (tf && format.font == null) {
-            tf.text = "123";
-            format = tf.getTextFormat();
-        }
-
-        var fixedFont:Font = getFixedFont(format.font);
-        if (fixedFont) {
-            var stringForCheck:String = str.replace(/[\n\r\t ]/g, "");
-            format.font = fixedFont.fontName;
-            tf.defaultTextFormat = format;
-            tf.setTextFormat(format);
-            //            if (!fixedFont.hasGlyphs(stringForCheck)) {
-            //                Cc.logch("Font", format.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
-            //            }
-        }
-
-        if (html) {
-            tf.htmlText = str;
-            if (tf.htmlText != str) {
-                // TextField is set to text=htmlText="" if tags without quoted values
-                var htmlText:String = quoteHtmlParams(str);
-                tf.htmlText = htmlText;
-            }
-        } else {
-            tf.text = str;
-        }
-    }
+//        } else {
+//            tf.text = str;
+//        }
+//    }
 
     /**
      * Converting string like this: <p align=center>
@@ -319,23 +319,23 @@ public class Utils {
         return newHtml;
     }
 
-    private static function getFixedFont(fontName:String):Font {
-        var fixedFontString:String;
-        switch (fontName) {
-            case DefaultValues.FONT_NAME_VAG_ROUNDED_BT:
-                fixedFontString = DefaultValues.FONT_NAME_VAG_ROUNDED_CYRILLIC;
-                break;
-//            case DefaultValues.FONT_NAME_OFFICINA_SERIF:
-//                fixedFontString = DefaultValues.FONT_NAME_OFFICINA_SERIF_CYRILLIC;
+//    private static function getFixedFont(fontName:String):Font {
+//        var fixedFontString:String;
+//        switch (fontName) {
+//            case DefaultValues.FONT_NAME_VAG_ROUNDED_BT:
+//                fixedFontString = DefaultValues.FONT_NAME_VAG_ROUNDED_CYRILLIC;
 //                break;
-            default:
-//                fixedFontString = DefaultValues.FONT_NAME_ARIAL;
-                fixedFontString = DefaultValues.FONT_NAME_MYRIAD_PRO;
-                break;
-        }
-
-        return getFontObject(fixedFontString);
-    }
+////            case DefaultValues.FONT_NAME_OFFICINA_SERIF:
+////                fixedFontString = DefaultValues.FONT_NAME_OFFICINA_SERIF_CYRILLIC;
+////                break;
+//            default:
+////                fixedFontString = DefaultValues.FONT_NAME_ARIAL;
+//                fixedFontString = DefaultValues.FONT_NAME_MYRIAD_PRO;
+//                break;
+//        }
+//
+//        return getFontObject(fixedFontString);
+//    }
 
     public static function getFontObject(fontString:String):Font {
         var fonts:Array = Font.enumerateFonts(false);

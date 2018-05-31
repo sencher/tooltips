@@ -104,14 +104,14 @@ public class FontUtils {
 
     public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
         //DEBUG
-        if(str.indexOf("Your personal") > -1){
-//            Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
-//            str = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
-//            html = true;
-            tf.border = true;
-            tf.background = true;
-            tf.backgroundColor = 0xffeeee;
-        }
+//        if(str.indexOf("Your personal") > -1){
+////            Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+////            str = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
+////            html = true;
+//            tf.border = true;
+//            tf.background = true;
+//            tf.backgroundColor = 0xffeeee;
+//        }
         if (!tf) {
             return;
         }
