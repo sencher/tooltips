@@ -4,7 +4,6 @@ import com.junkbyte.console.Cc;
 
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
-import flash.display.LoaderInfo;
 import flash.display.MovieClip;
 import flash.display.Shape;
 import flash.display.Sprite;
@@ -17,7 +16,6 @@ import flash.text.TextFormat;
 import flash.utils.Dictionary;
 import flash.utils.describeType;
 import flash.utils.getQualifiedClassName;
-import flash.utils.getQualifiedSuperclassName;
 
 public class Utils {
     public static function trEvent(event:Event):void {
@@ -108,7 +106,7 @@ public class Utils {
     public static function generateRandomString(len:Number, russian:Boolean = false):String {
         var chars:String = russian ?
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789абвгдеёжзийклмнопрстуфхцчшщьыъэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ"
-                :"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                : "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         var num_chars:Number = chars.length - 1;
         var randomChar:String = "";
 
@@ -175,9 +173,9 @@ public class Utils {
             } else if (par) {
                 checking = par;
                 par = checking.parent;
-            } else if(checking is Stage) {
+            } else if (checking is Stage) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }
@@ -446,9 +444,8 @@ public class Utils {
 
     public static function traceDictionaryKeys(d:Dictionary):void {
         var a:Array = [];
-        for ( var key: Object in d )
-        {
-            a.push( key );
+        for (var key:Object in d) {
+            a.push(key);
         }
 
         trace(a);
@@ -464,7 +461,7 @@ public class Utils {
         return s;
     }
 
-    private static function describeDisplayObject(value:DisplayObject):String{
+    private static function describeDisplayObject(value:DisplayObject):String {
         return value.name + " / " + DomainUtils.getTypeIgnorePrefix(value) + "\n";
     }
 
@@ -478,43 +475,27 @@ public class Utils {
     }
 
     public static function getCommonParent(main:DisplayObject, others:Array):DisplayObjectContainer {
-        if(!others || !others.length){
+        if (!others || !others.length) {
             return null;
         }
 
         var mainList:Vector.<DisplayObjectContainer> = getAllParents(main);
         var checkList:Vector.<DisplayObjectContainer>;
 
-        for (var i:int=0;i<others.length;i++){
+        for (var i:int = 0; i < others.length; i++) {
             checkList = getAllParents(others[i]);
 
-            for each(var nextMainParent:DisplayObjectContainer in mainList){
-                if(checkList.indexOf(nextMainParent) > -1){
-
+            for each(var nextMainParent:DisplayObjectContainer in mainList) {
+                if (checkList.indexOf(nextMainParent) > -1) {
                     break;
-                }else {
+                } else {
                     mainList.shift();
                 }
             }
 
         }
-//        var currentCommon:DisplayObjectContainer = getCommonParentOfTwo(main, others[0]);
-//        trace(displayObjects)
-//        for (var i:int=0; i< displayObjects.length; i++){
-//            trace(displayObjects[i]);
-//        }
 
         return mainList[0] ? mainList[0] : null;
-    }
-
-    private static function getCommonParentOfTwo(disp1:DisplayObject, disp2:DisplayObject):DisplayObjectContainer {
-        var common:DisplayObject = disp1;
-        while (common.parent) {
-            common = common.parent;
-        }
-//        return common;
-
-        return null;
     }
 
     public static function getTopParent(displayObject:DisplayObject):DisplayObject {
@@ -528,7 +509,7 @@ public class Utils {
     public static function getAllParents(displayObject:DisplayObject):Vector.<DisplayObjectContainer> {
         var list:Vector.<DisplayObjectContainer> = new Vector.<DisplayObjectContainer>();
         var checking:DisplayObject = displayObject;
-        while (checking.parent){
+        while (checking.parent) {
             list.push(checking.parent);
             checking = checking.parent;
         }

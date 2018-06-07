@@ -6,7 +6,9 @@ import components.ObstacleTextField;
 import flash.display.Sprite;
 import flash.events.KeyboardEvent;
 import flash.events.MouseEvent;
+import flash.geom.Rectangle;
 import flash.text.TextField;
+import flash.text.TextFieldType;
 import flash.text.TextFormat;
 
 import flashx.textLayout.formats.TextAlign;
@@ -50,6 +52,7 @@ public class Test_TextWithObstacleContLevels extends Sprite {
         tf.width = 400;
         tf.border = true;
         tf.text = "1234567890abcdefghjk";
+        tf.type = TextFieldType.INPUT;
         container.addChild(tf);
 
         var middleSprite:Sprite = new Sprite();
@@ -67,8 +70,8 @@ public class Test_TextWithObstacleContLevels extends Sprite {
 
         box2 = new Sprite();
         box2.alpha = 0.3;
-        box2.x = 550;
-        box2.y = 171;
+        box2.x = 150;
+        box2.y = 110;
         box2.rotation = 35;
         box2.addChild(Utils.drawBox());
         addChild(box2);
@@ -82,16 +85,11 @@ public class Test_TextWithObstacleContLevels extends Sprite {
     private function drag(event:MouseEvent):void {
         if (!dragged) {
             dragTarget = event.currentTarget;
-            stage.addEventListener(MouseEvent.MOUSE_MOVE, onMove);
+            dragTarget.startDrag();
         } else {
-            stage.removeEventListener(MouseEvent.MOUSE_MOVE, onMove);
+            dragTarget.stopDrag();
         }
         dragged = !dragged;
-    }
-
-    private function onMove(event:MouseEvent):void {
-        dragTarget.x = dragTarget.parent.mouseX - dragTarget.width / 2;
-        dragTarget.y = dragTarget.parent.mouseY - dragTarget.height / 2;
     }
 
     private function onKey(event:KeyboardEvent):void {

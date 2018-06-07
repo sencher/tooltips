@@ -4,16 +4,14 @@
     <option name="deselectedBCs" value="Tooltips&#9;AirMain" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="387" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="411" mnemonic="4" />
-    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="500" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="385" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/utils/Utils.as" line="409" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_TextWithObstacle.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ObstacleTextField.as" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as" afterPath="$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as" />
+      <change beforePath="$PROJECT_DIR$/src/components/ObstacleTextField.as" afterPath="$PROJECT_DIR$/src/components/ObstacleTextField.as" />
       <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" afterPath="$PROJECT_DIR$/src/utils/Utils.as" />
     </list>
     <ignored path="test.iws" />
@@ -53,8 +51,8 @@
       <file leaf-file-name="Test_TextWithObstacleContLevels.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+            <state relative-caret-position="239">
+              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
               <folding>
                 <element signature="e#10#41#0" expanded="true" />
               </folding>
@@ -65,9 +63,11 @@
       <file leaf-file-name="Utils.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="506" column="0" lean-forward="false" selection-start-line="506" selection-start-column="0" selection-end-line="506" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="305">
+              <caret line="512" column="39" lean-forward="true" selection-start-line="512" selection-start-column="39" selection-end-line="512" selection-end-column="39" />
+              <folding>
+                <element signature="e#16#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +85,8 @@
       <file leaf-file-name="ObstacleTextField.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ObstacleTextField.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="324">
+              <caret line="176" column="31" lean-forward="true" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
               <folding>
                 <element signature="e#21#52#0" expanded="true" />
               </folding>
@@ -1081,7 +1081,7 @@
       <workItem from="1527751702046" duration="1194000" />
       <workItem from="1527758166092" duration="18003000" />
       <workItem from="1528211058575" duration="6327000" />
-      <workItem from="1528270780400" duration="11450000" />
+      <workItem from="1528270780400" duration="17701000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1342,11 +1342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527757761471</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Test_TextWithObstacleContLevels.as">
+      <created>1528371348306</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1528371348306</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="705510000" />
+    <option name="totallyTimeSpent" value="711761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1359,7 +1366,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51183766" sideWeight="0.47046188" order="12" side_tool="true" content_ui="tabs" />
@@ -1372,18 +1378,18 @@
       <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52111113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22547914" sideWeight="0.66648763" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.367531" sideWeight="0.6638024" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5163472" sideWeight="0.33351237" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.367531" sideWeight="0.33619764" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.72266066" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.72266066" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.48933902" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53974223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5050733" sideWeight="0.6680988" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5050733" sideWeight="0.66541356" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1451,7 +1457,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Vostok Games many tools" />
     <MESSAGE value="com.junkbyte.console - stock" />
     <MESSAGE value="com.junkbyte.console - added command with 2 params" />
     <MESSAGE value="com.junkbyte.console - added JSON" />
@@ -1476,7 +1481,8 @@
     <MESSAGE value="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update" />
     <MESSAGE value="Additional Fonts Test" />
     <MESSAGE value="Additional Fonts Test 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional Fonts Test 2" />
+    <MESSAGE value="Test_TextWithObstacleContLevels.as" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test_TextWithObstacleContLevels.as" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1538,45 +1544,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/utils/Utils.as</url>
-          <line>169</line>
+          <line>167</line>
           <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/ObstacleTextField.as</url>
+          <line>41</line>
+          <option name="timeStamp" value="608" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="594" />
+      <option name="time" value="610" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
-        <watch expression="textField.x" />
-        <watch expression="textBoundaries.x" />
-        <watch expression="textBoundaries.x+textBoundaries.width" language="ECMA Script Level 4" />
-        <watch expression="textBoundaries.width" />
-        <watch expression="minXIntersection.x" />
-        <watch expression="intersection.x" />
-        <watch expression="intersection.width" />
-        <watch expression="i.x" />
-        <watch expression="i.width" />
-        <watch expression="r" />
-        <watch expression="r.x" />
-        <watch expression="r.width" />
-        <watch expression="target.x" />
-        <watch expression="b1.x" />
-        <watch expression="b1.width" />
-        <watch expression="b2.x" />
-        <watch expression="b2.width" />
-        <watch expression="b3.x" />
-        <watch expression="b3.width" />
-        <watch expression="i1.x" />
-        <watch expression="i1.width" />
-        <watch expression="i2.x" />
-        <watch expression="i2.width" />
-        <watch expression="i3.x" />
-        <watch expression="i3.width" />
-        <watch expression="DisplayObject(obstacles[i]).x" />
-        <watch expression="obstacles" />
-        <watch expression="obstacles[&quot;0&quot;].x" />
+        <watch expression="tf.textWidth" />
+        <watch expression="tf.width" />
       </configuration>
     </watches-manager>
   </component>
@@ -1964,24 +1949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
-          <folding>
-            <element signature="e#10#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="506" column="0" lean-forward="false" selection-start-line="506" selection-start-column="0" selection-end-line="506" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/player/28.0/playerglobal.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1990,10 +1957,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_TextWithObstacleContLevels.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#10#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="512" column="39" lean-forward="true" selection-start-line="512" selection-start-column="39" selection-end-line="512" selection-end-column="39" />
+          <folding>
+            <element signature="e#16#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ObstacleTextField.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="324">
+          <caret line="176" column="31" lean-forward="true" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
           <folding>
             <element signature="e#21#52#0" expanded="true" />
           </folding>

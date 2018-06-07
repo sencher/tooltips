@@ -6,31 +6,23 @@ import flash.display.DisplayObjectContainer;
 import flash.display.Shape;
 import flash.geom.Rectangle;
 import flash.text.TextField;
-import flash.text.TextFormat;
 
 import utils.Utils;
 
 public class ObstacleTextField extends TextField {
     public var debug:Boolean;
 
-    private const LEFT:String = "left";
-    private const RIGHT:String = "right";
     private const MARGIN:int = 3;
 
     private var debugBoxes:Vector.<Shape>;
 
     private var textField:TextField;
-    private var format:TextFormat;
-    private var initBoundaries:Rectangle;
-    private var initTextBoundaries:Rectangle;
     private var textFieldBoundaries:Rectangle;
     private var textBoundaries:Rectangle;
-    private var initSize:Number;
     private var initX:Number;
-    private var initY:Number;
     private var obstacles:Array;
     private var commonParent:DisplayObjectContainer;
-    private var evasionStrategy:String;
+    private var evasionStrategy:int;
 
     public function ObstacleTextField(tf:TextField, obstacles:Array, debug:Boolean = false) {
         textField = tf;
@@ -38,12 +30,7 @@ public class ObstacleTextField extends TextField {
         commonParent = Utils.getCommonParent(tf, obstacles);
         this.debug = debug;
 
-//        format = tf.getTextFormat();
-//        initSize = Number(format.size);
         initX = tf.x;
-//        initY = tf.y;
-//        initBoundaries = tf.getBounds(commonParent);
-//        initTextBoundaries = getCharsBoundaries(textField);
         update();
     }
 
@@ -52,7 +39,7 @@ public class ObstacleTextField extends TextField {
     }
 
     public function update():void {
-
+        evasionStrategy = 0;
         if (debug && (!debugBoxes || debugBoxes.length != obstacles.length + 1)) {
             reInitDebug();
             debugBoxes.push(Utils.drawBox(0, 0, 100, 100, 0, 0xaa0000, 0.5));
@@ -71,32 +58,49 @@ public class ObstacleTextField extends TextField {
         var intersections:Array = [];
 
         for each (var o:DisplayObject in obstacles) {
-            obstacleBounds = o.getBounds(commonParent);
-            if(obstacleBounds.x < textBoundaries.x){
-                evasionStrategy = RIGHT;
-            }else{
-                evasionStrategy = LEFT;
-            }
 
             intersection = textBoundaries.intersection(o.getBounds(commonParent));
             if (intersection.width) {
-                if(evasionStrategy == LEFT) {
-                    if (minX > intersection.x) {
-                        mostXIntersection = intersection;
-                    }
-                }else{
-                    if(maxX < intersection.x){
-                        mostXIntersection = intersection;
-                    }
+                obstacleBounds = o.getBounds(commonParent);
+                if (obstacleBounds.x < textBoundaries.x) {
+                    evasionStrategy++;
+                } else {
+                    evasionStrategy--;
+                }
+                intersections.push([intersection, obstacleBounds]);
+            }
+        }
+
+        //LEFT
+        if (evasionStrategy < 0) {
+            for each (var array:Array in intersections) {
+                if (minX > array[0].x) {
+                    minX = array[0].x;
+                    mostXIntersection = array[0];
+                }
+            }
+            //RIGHT
+        } else if (evasionStrategy > 0) {
+            for each (var array:Array in intersections) {
+                if (maxX < array[0].width) {
+                    maxX = array[0].width;
+                    mostXIntersection = array[0];
                 }
             }
         }
 
+        var shiftX:Number;
         if (mostXIntersection) {
-            if(evasionStrategy == LEFT) {
-                textField.x -= (textBoundaries.x + textBoundaries.width) - mostXIntersection.x + MARGIN;
-            }else {
-                textField.x += mostXIntersection.width + MARGIN;
+            if (evasionStrategy < 0) {
+                shiftX = textBoundaries.x + textBoundaries.width - mostXIntersection.x + MARGIN;
+                if (!anyCollisionsAfterMove(-shiftX)) {
+                    textField.x -= shiftX;
+                }
+            } else {
+                shiftX = mostXIntersection.width + MARGIN;
+                if (!anyCollisionsAfterMove(shiftX)) {
+                    textField.x += shiftX;
+                }
             }
         } else {
             resetShift();
@@ -111,7 +115,7 @@ public class ObstacleTextField extends TextField {
             setBoxDimentions(debugBoxes[0], textBoundaries);
             for (i = 0; i < obstacles.length; i++) {
                 setBoxDimentions(debugBoxes[i + 1], DisplayObject(obstacles[i]).getBounds(commonParent));
-                Cc.logch("Obstacle",debugBoxes[i + 1].x);
+                Cc.logch("Obstacle", debugBoxes[i + 1].x);
             }
         }
     }
@@ -145,14 +149,17 @@ public class ObstacleTextField extends TextField {
     }
 
     private function resetShift():void {
-        if (!anyCollisions(new Rectangle(textBoundaries.x + (initX - textField.x), textBoundaries.y, textBoundaries.width, textBoundaries.height))) {
+        if (!anyCollisionsAfterMove(initX - textField.x)) {
             textField.x = initX;
         }
     }
 
-    private function anyCollisions(rectangle:Rectangle):Boolean {
+    private function anyCollisionsAfterMove(shiftX:Number):Boolean {
+        var futureBoundaries:Rectangle = textBoundaries.clone();
+        futureBoundaries.x += shiftX;
+
         for each (var i:DisplayObject in obstacles) {
-            var intersection:Rectangle = rectangle.intersection(i.getBounds(commonParent));
+            var intersection:Rectangle = futureBoundaries.intersection(i.getBounds(commonParent));
             if (intersection.width) {
                 return true;
             }
@@ -164,6 +171,10 @@ public class ObstacleTextField extends TextField {
         var r:Rectangle = tf.getCharBoundaries(0);
         for (var i:int = 1; i < tf.text.length; i++) {
             summCharRectangles(r, tf.getCharBoundaries(i));
+        }
+
+        if(r.width > tf.width){
+            r.width = tf.width;
         }
 
         r.x += textFieldBoundaries.x;
