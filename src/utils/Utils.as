@@ -145,7 +145,7 @@ public class Utils {
         return Math.floor(Math.random() * (max + 1 - min)) + min;
     }
 
-    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, borderColor:uint = 0x000000):Shape {
+    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Shape {
         //trace("drawBox",arguments)
         var box:Shape = new Shape();
         box.graphics.lineStyle(1, borderColor, .75);
@@ -155,6 +155,7 @@ public class Utils {
         box.x = x;
         box.y = y;
         box.rotation = angle;
+        box.alpha = alpha;
 
         return box;
     }
@@ -201,14 +202,6 @@ public class Utils {
 
     public static function getNameAndVisible(displayObject:DisplayObject):String {
         return displayObject.name + displayObject + " / visible:" + String(displayObject.visible).toUpperCase() + ", alpha:" + displayObject.alpha + "\n";
-    }
-
-    public static function getTopParent(displayObject:DisplayObject):DisplayObject {
-        var checking:DisplayObject = displayObject;
-        while (checking.parent) {
-            checking = checking.parent;
-        }
-        return checking;
     }
 
     public static function setTextColor(textField:TextField, color:int):void {
@@ -473,6 +466,73 @@ public class Utils {
 
     private static function describeDisplayObject(value:DisplayObject):String{
         return value.name + " / " + DomainUtils.getTypeIgnorePrefix(value) + "\n";
+    }
+
+    public static function removeNullElements(value:Array):Array {
+        for (var i:int = value.length - 1; i > -1; i--) {
+            if (!value[i]) {
+                value.splice(i, 1);
+            }
+        }
+        return value;
+    }
+
+    public static function getCommonParent(main:DisplayObject, others:Array):DisplayObjectContainer {
+        if(!others || !others.length){
+            return null;
+        }
+
+        var mainList:Vector.<DisplayObjectContainer> = getAllParents(main);
+        var checkList:Vector.<DisplayObjectContainer>;
+
+        for (var i:int=0;i<others.length;i++){
+            checkList = getAllParents(others[i]);
+
+            for each(var nextMainParent:DisplayObjectContainer in mainList){
+                if(checkList.indexOf(nextMainParent) > -1){
+
+                    break;
+                }else {
+                    mainList.shift();
+                }
+            }
+
+        }
+//        var currentCommon:DisplayObjectContainer = getCommonParentOfTwo(main, others[0]);
+//        trace(displayObjects)
+//        for (var i:int=0; i< displayObjects.length; i++){
+//            trace(displayObjects[i]);
+//        }
+
+        return mainList[0] ? mainList[0] : null;
+    }
+
+    private static function getCommonParentOfTwo(disp1:DisplayObject, disp2:DisplayObject):DisplayObjectContainer {
+        var common:DisplayObject = disp1;
+        while (common.parent) {
+            common = common.parent;
+        }
+//        return common;
+
+        return null;
+    }
+
+    public static function getTopParent(displayObject:DisplayObject):DisplayObject {
+        var checking:DisplayObject = displayObject;
+        while (checking.parent) {
+            checking = checking.parent;
+        }
+        return checking;
+    }
+
+    public static function getAllParents(displayObject:DisplayObject):Vector.<DisplayObjectContainer> {
+        var list:Vector.<DisplayObjectContainer> = new Vector.<DisplayObjectContainer>();
+        var checking:DisplayObject = displayObject;
+        while (checking.parent){
+            list.push(checking.parent);
+            checking = checking.parent;
+        }
+        return list;
     }
 }
 }
