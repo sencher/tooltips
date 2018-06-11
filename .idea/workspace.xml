@@ -82,8 +82,8 @@
       <file leaf-file-name="CustomClassVO.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -1144,7 +1144,7 @@
       <workItem from="1527758166092" duration="18003000" />
       <workItem from="1528211058575" duration="6327000" />
       <workItem from="1528270780400" duration="18917000" />
-      <workItem from="1528703598468" duration="15433000" />
+      <workItem from="1528703598468" duration="15528000" />
     </task>
     <task id="LOCAL-00001" summary="Parent Call">
       <created>1441194958326</created>
@@ -1433,11 +1433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528723030798</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fonts">
+      <created>1528723129906</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1528723129906</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="728410000" />
+    <option name="totallyTimeSpent" value="728505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1542,7 +1549,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="com.junkbyte.console - added JSON" />
     <MESSAGE value="com.junkbyte.console - traces removed&#10;Test_SerializeRecursive.as" />
     <MESSAGE value="com.junkbyte.console - json recursion error removed" />
     <MESSAGE value="com.junkbyte.console - Added logchw with whoCalledThis" />
@@ -1567,7 +1573,8 @@
     <MESSAGE value="Test_TextWithObstacleContLevels.as" />
     <MESSAGE value="Test_TextWithObstacleContLevels v2" />
     <MESSAGE value="FontUtils update" />
-    <option name="LAST_COMMIT_MESSAGE" value="FontUtils update" />
+    <MESSAGE value="fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fonts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2091,8 +2098,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/folder/CustomClassVO.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding />
         </state>
       </provider>
