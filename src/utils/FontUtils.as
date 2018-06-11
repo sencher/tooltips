@@ -42,14 +42,27 @@ public class FontUtils {
     public static var FONT_NAME_OFFICINA_SANS_BOLD:String = "ITC Officina Sans LT Bold";
     public static var FONT_NAME_OFFICINA_SERIF_BOOK:String = "ITCOfficinaSerif LT Book";
 
+    private static const REG_VAG_ROUNDED:RegExp = /vag.*rounded/i;
+    private static const REG_VAG_ROUNDED_CYR:RegExp = /vag.*rounded.*cyr/i;
+    private static const REG_TIMES_NEW_ROMAN:RegExp = /times.*new.*roman/i;
+    private static const REG_ARIAL:RegExp = /arial/i;
+    private static const REG_ARIAL_BOLD:RegExp = /arial.*bold/i;
+    private static const REG_ARIAL_BLACK:RegExp = /arial.*black/i;
+    private static const REG_OPEN_SANS:RegExp = /open.*sans/i;
+    private static const REG_MYRIAD_PRO:RegExp = /myriad.*pro/i;
+    private static const REG_MYRIAD_PRO_BOLD:RegExp = /myriad.*pro((?!semi).)*bold/i;
+
+    [Embed(source='../../FLA_experiments/fonts/VAGRoundedLTCYR-Bold.otf', fontFamily='mVAG Rounded LT CYR Bold', mimeType="application/x-font", embedAsCFF="false")]//, fontWeight="bold"
+    public static var FONT_VAGROUNDED_LT_CYR_BOLD:Class;
+
+    [Embed(source='../../FLA_experiments/fonts/VAGRoundedBT-Regular.ttf', fontFamily='VAG Rounded BT', mimeType="application/x-font", embedAsCFF="false")]//, fontWeight="bold"
+    public static var FONT_VAGROUNDED_BT:Class;
+
     [Embed(source="../../FLA_experiments/fonts/MyriadPro-Semibold.otf", fontFamily="mMyriad Pro Semibold", mimeType="application/x-font", embedAsCFF="false")]
     public static const FONT_MYRIAD_PRO_SEMIBOLD:Class;
 
     [Embed(source="../../FLA_experiments/fonts/MyriadPro-Bold.otf", fontFamily="mMyriad Pro Bold", mimeType="application/x-font", embedAsCFF="false")]
     public static const FONT_MYRIAD_PRO_BOLD:Class;
-
-    [Embed(source='../../FLA_experiments/fonts/VAGRoundedLTCYR-Bold.otf', fontFamily='mVAG Rounded LT CYR Bold', mimeType="application/x-font", embedAsCFF="false", fontWeight="bold")]
-    public static var FONT_VAGROUNDED_LT_CYR_BOLD:Class;
 
     [Embed(source="../../FLA_experiments/fonts/times.ttf", fontFamily="mTimes New Roman", mimeType="application/x-font-truetype", embedAsCFF="false")]
     public static const FONT_TIMES_NEW_ROMAN:Class;
@@ -69,6 +82,12 @@ public class FontUtils {
     [Embed(source="../../FLA_experiments/fonts/arialbd.ttf", fontFamily="mArial Bold CFF", mimeType="application/x-font-truetype", embedAsCFF="true")]
     public static const FONT_ARIAL_BOLD_CFF:Class;
 
+    [Embed(source="../../FLA_experiments/fonts/DS-Digital.ttf", fontFamily="DS-Digital", mimeType="application/x-font-truetype", embedAsCFF="false")]
+    public static const FONT_DS_DIGITAL:Class;
+
+    [Embed(source="../../FLA_experiments/fonts/DS-Digital-Bold.ttf", fontFamily="DS-Digital Bold", mimeType="application/x-font-truetype", embedAsCFF="false")]
+    public static const FONT_DS_DIGITAL_BOLD:Class;
+
     [Embed(source="../../FLA_experiments/fonts/OpenSans-SemiBold.ttf", fontFamily="mOpen Sans Semibold", mimeType="application/x-font-truetype", embedAsCFF="false")]
     public static const FONT_OPEN_SANS_SEMIBOLD:Class;
 
@@ -81,6 +100,16 @@ public class FontUtils {
     private static const ADJUST_STEP:int = 1;
     private static const ADJUST_MARGIN_RIGHT:int = 10;
     private static const ADJUST_SMALLEST_FONT_SIZE:int = 7;
+
+    private static const WHITE:int = 0xFFFFFF;
+    private static const GREEN:int = 0x138000;
+    private static const ORANGE:int = 0xFF8400;
+    private static const YELLOW:int = 0xFFD900;
+    private static const RED:int = 0xFF2F00;
+    private static const PURPLE:int = 0xC300FF;
+    private static const BLUE:int = 0x0073FF;
+
+    private static var debug:Boolean = true;
 
     public function FontUtils() {
     }
@@ -102,104 +131,160 @@ public class FontUtils {
         return f.fontName + " / " + f.fontStyle + " / " + f.fontType;
     }
 
-    public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
+    public static function
+    updateLabel(tf:TextField, str:String, html:Boolean = false, d:Boolean = false):void {
         //DEBUG
-//        if(str.indexOf("Your personal") > -1){
-////            Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
-////            str = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
-////            html = true;
-//            tf.border = true;
-//            tf.background = true;
-//            tf.backgroundColor = 0xffeeee;
-//        }
+        if (debug/*str.indexOf("Your123ASD") > -1*/) {
+//            Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+//            str = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
+//            html = true;
+            tf.border = true;
+            tf.background = true;
+            tf.backgroundColor = WHITE;
+            tf.alpha = 0.6;
+        }
+
         if (!tf) {
             return;
         }
 
+//        //SPIKE
+//        if (html) {
+//            tf.htmlText = str;
+//            if (tf.htmlText != str) {
+//                // TextField is set to text=htmlText="" if tags without quoted values
+//                tf.htmlText = quoteHtmlParams(str);
+//            }
+//        } else {
+//            tf.text = str;
+//        }
+//        return;
+
+        var initEmbedFonts:Boolean = tf.embedFonts;
+
         tf.embedFonts = true;
-        var format:TextFormat = tf.getTextFormat();
-        if (tf && format.font == null) {
+        var initFormat:TextFormat = tf.getTextFormat();
+        if (tf && initFormat.font == null) {
             tf.text = "123";
-            format = tf.getTextFormat();
+            initFormat = tf.getTextFormat();
         }
 
         var stringForCheck:String = str.replace(/[\n\r\t ]/g, "");
-        var initFont:Font = getFontObject(format.font);
+        var initFont:Font = getFontObject(initFormat);
+
         if (!initFont || !initFont.hasGlyphs(stringForCheck)) {
-            Cc.logch("Font", format.font, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
-            var fixedFont:Font = getFixedFont(format.font);
+            Cc.logch("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
+            var futureFormat:TextFormat = GamuaFloxUtils.cloneObject(initFormat);
+            var fixedFont:Font = getFixedFont(futureFormat);
             if (fixedFont) {
-                format.font = fixedFont.fontName;
-                tf.defaultTextFormat = format;
-                tf.setTextFormat(format);
+
+                futureFormat.font = fixedFont.fontName;
+                futureFormat.bold = false;
+                tf.defaultTextFormat = futureFormat;
+                tf.setTextFormat(futureFormat);
                 if (!fixedFont.hasGlyphs(stringForCheck)) {
-                    Cc.logch("Font", format.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
+                    if(debug) {
+                        tf.backgroundColor = YELLOW;
+                    }
+                    Cc.errorch("fixedFont", futureFormat.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
+                }else if(debug) {
+                    tf.backgroundColor = BLUE;
                 }
+            } else {
+                if(debug) {
+                    tf.backgroundColor = ORANGE;
+                }
+                Cc.errorch("fixedFont", "No font", initFormat.font, initFormat.bold, "|", tf.name, tf.text);
             }
+        }else if(debug) {
+            tf.backgroundColor = GREEN;
         }
 
         if (html) {
+            if(debug) {
+                tf.backgroundColor = PURPLE;
+            }
             tf.htmlText = str;
             if (tf.htmlText != str) {
                 // TextField is set to text=htmlText="" if tags without quoted values
                 tf.htmlText = quoteHtmlParams(str);
+
+                // for <Coins> like swap pattern case
+                if (!tf.htmlText) {
+                    tf.text = str;
+                }
             }
         } else {
             tf.text = str;
         }
+
+        if (d || stringForCheck.length && !tf.textWidth) {
+            Cc.errorch("fixedFont", "Empty glyphs", tf.defaultTextFormat.font, initFormat.bold, "|", tf.name, tf.text);
+            if(debug) {
+                tf.backgroundColor = RED;
+            }
+            tf.defaultTextFormat = initFormat;
+            tf.setTextFormat(initFormat);
+            tf.embedFonts = initEmbedFonts;
+        }
     }
 
-    private static function getFixedFont(fontName:String):Font {
+    private static function getFixedFont(format:TextFormat):Font {
+        var name:String = format.font;
         //m - multilanguage font already
-        if (fontName.substr(0, 1) == "m" ||
-                fontName == FONT_NAME_DIGITAL ||
-                fontName == FONT_NAME_DIGITAL_BOLD
+        if (name.substr(0, 1) == "m" ||
+                name == FONT_NAME_DIGITAL ||
+                name == FONT_NAME_DIGITAL_BOLD
         ) {
-            return getFontObject(fontName);//TODO: Should be null here to prevent re-set same format. But for some reason null here stucks the game.
-        }
-        var fixedFontString:String;
-        switch (fontName) {
-            case FONT_NAME_VAGROUNDED_BT:
-            case FONT_NAME_VAG_ROUNDED_BT:
-            case FONT_NAME_VAG_ROUNDED_LT_CYR_BOLD:
-                fixedFontString = MULTI_FONT_VAG_ROUNDED;
-                break;
-            case FONT_NAME_MYRIAD_PRO:
-            case FONT_NAME_MYRIAD_PRO_SEMIBOLD:
-                fixedFontString = MULTI_FONT_MYRIAD_PRO_SEMIBOLD;
-                break;
-            case FONT_NAME_MYRIAD_PRO_BOLD:
-                fixedFontString = MULTI_FONT_MYRIAD_PRO_BOLD;
-                break;
-            case FONT_NAME_TIMES_NEW_ROMAN:
-                fixedFontString = MULTI_FONT_TIMES_NEW_ROMAN;
-                break;
-            case FONT_NAME_ARIAL:
-                fixedFontString = MULTI_FONT_ARIAL;
-                break;
-            case FONT_NAME_ARIAL_BOLD:
-                fixedFontString = MULTI_FONT_ARIAL_BOLD;
-                break;
-            case FONT_NAME_ARIAL_BLACK:
-                fixedFontString = MULTI_FONT_ARIAL_BLACK;
-                break;
-            case FONT_NAME_OPEN_SANS_SEMIBOLD:
-                fixedFontString = MULTI_FONT_OPEN_SANS_SEMIBOLD;
-                break;
-            default:
-                fixedFontString = MULTI_FONT_MYRIAD_PRO_SEMIBOLD;
-                break;
+            format.bold = false;
+            return getFontObject(format);
         }
 
-        return getFontObject(fixedFontString);
+        if(REG_VAG_ROUNDED_CYR.test(name)){
+            format.font = MULTI_FONT_VAG_ROUNDED;
+        }else if(REG_VAG_ROUNDED.test(name)){
+            format.font = FONT_NAME_VAG_ROUNDED_BT;
+        }else if(REG_TIMES_NEW_ROMAN.test(name)){
+            format.font = MULTI_FONT_TIMES_NEW_ROMAN;
+        }else if(REG_ARIAL_BOLD.test(name)) {
+            format.font = MULTI_FONT_ARIAL_BOLD;
+        }else if(REG_ARIAL_BLACK.test(name)) {
+            format.font = MULTI_FONT_ARIAL_BLACK;
+        }else if(REG_ARIAL.test(name)) {
+            if (format.bold) {
+                format.font = MULTI_FONT_ARIAL_BOLD;
+                format.bold = false;
+            } else {
+                format.font = MULTI_FONT_ARIAL;
+            }
+        }else if(REG_OPEN_SANS.test(name)) {
+            format.font = MULTI_FONT_OPEN_SANS_SEMIBOLD;
+        }else if(REG_MYRIAD_PRO_BOLD.test(name)) {
+            format.font = MULTI_FONT_MYRIAD_PRO_BOLD;
+            //default
+        }else{
+            if (format.bold) {
+                format.font = MULTI_FONT_MYRIAD_PRO_BOLD;
+                format.bold = false;
+            } else {
+                format.font = MULTI_FONT_MYRIAD_PRO_SEMIBOLD;
+            }
+        }
+
+
+        return getFontObject(format);
     }
 
-    public static function getFontObject(fontString:String):Font {
+    public static function getFontObject(format:TextFormat):Font {
         var fonts:Array = Font.enumerateFonts(false);
         var i:Font;
         for each (i in fonts) {
-            if (i.fontName == fontString) {
-                return i;
+            if (i.fontName == format.font) {
+                if (i.fontStyle == "bold" && format.bold) {
+                    return i;
+                } else if (i.fontStyle == "regular" && !format.bold) {
+                    return i;
+                }
             }
         }
         return null;
