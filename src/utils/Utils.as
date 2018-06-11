@@ -70,7 +70,11 @@ public class Utils {
         var result:* = new _class();
 
         for (var prop:String in propMap) {
-            result[prop] = source[prop];
+//            if(propMap[prop] == "Array" || propMap[prop] == "Object"){
+//                result[prop] = clone(source[prop]);
+//            }else {
+                result[prop] = source[prop];
+//            }
         }
         return result;
     }
