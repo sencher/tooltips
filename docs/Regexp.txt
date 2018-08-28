@@ -78,7 +78,7 @@ C++ log
 
 Replace set text through validator
 	^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.text\s*=[ \f\t]*(?:(?!=)([^$;\n]+))
-	$1UIUtils.updateLabel($2, $3)
+	$1FontUtils.updateLabel($2, $3)
 	
 	old
 	^(\s*)(.*)\.text\s*=\s*(.*);
@@ -93,3 +93,18 @@ htmlText
 	([^\n]*)
 	[^ \f\t\v]
 	([^\n\r]*)(.*)\.text\s*=\s*([^\n]*)
+
+
+
+	([^\/\n\s]*).setTextFormat\(([^\/\n\s;]*)\)
+	FontUtils.applyFormat($1, $2)
+
+Two lines
+	([^\/\n\s]*).defaultTextFormat\s*=\s*([^\/\n\s;]*)([^\/\n]*)\n([^\/\n;]*)setTextFormat([^\/\n;]*);
+	FontUtils.applyFormat($1, $2)$3
+
+Task name to branch
+	(\s)
+	-
+
+	

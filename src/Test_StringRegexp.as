@@ -33,9 +33,15 @@ public class Test_StringRegexp extends Sprite {
     public var FONT_NAME_OFFICINA_SANS_BOLD:String = "ITC Officina Sans LT Bold";
     public var FONT_NAME_OFFICINA_SERIF_BOOK:String = "ITCOfficinaSerif LT Book";
 
-    private const REG_MYRIAD_PRO:RegExp = /myriad.*pro/i;
-    private const REG_MYRIAD_PRO_SEMI_BOLD:RegExp = /myriad.*pro.*semi.*bold/i;
-    private const REG_MYRIAD_PRO_BOLD:RegExp = /myriad.*pro((?!semi).)*bold/i;
+    private static const REG_VAG_ROUNDED:RegExp = /vag.*rounded/i;
+    private static const REG_VAG_ROUNDED_CYR:RegExp = /vag.*rounded.*cyr/i;
+    private static const REG_TIMES_NEW_ROMAN:RegExp = /times.*new.*roman/i;
+    private static const REG_ARIAL:RegExp = /arial/i;
+    private static const REG_ARIAL_BOLD:RegExp = /arial.*bold/i;
+    private static const REG_ARIAL_BLACK:RegExp = /arial.*black/i;
+    private static const REG_OPEN_SANS:RegExp = /open.*sans/i;
+    private static const REG_MYRIAD_PRO:RegExp = /myriad.*pro/i;
+    private static const REG_MYRIAD_PRO_BOLD:RegExp = /myriad.*pro((?!semi).)*bold/i;
     
     public function Test_StringRegexp() {
 //        var regVagRounded:RegExp = /vag.*rounded/i;
@@ -48,18 +54,21 @@ public class Test_StringRegexp extends Sprite {
 //        trace(regVagRounded.test(FONT_NAME_VAG_ROUNDED_LT_CYR_BOLD));
 //        trace(regVagRounded.test(MULTI_FONT_VAG_ROUNDED));
 
-        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO));
-        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO_SEMIBOLD));
-        trace(REG_MYRIAD_PRO_BOLD.test(MULTI_FONT_MYRIAD_PRO_SEMIBOLD));
-        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO_BOLD));
-        trace(REG_MYRIAD_PRO_BOLD.test(MULTI_FONT_MYRIAD_PRO_BOLD));
-        trace(REG_MYRIAD_PRO_BOLD.test('mMyriad Pro Bold bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test('mMyriad Pro Bold bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test(' Myriad Pro Bold bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro fff Bold bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi ff bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi bold bold'));
-        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi bold semi'));
+        trace(REG_VAG_ROUNDED_CYR.test("VAG Rounded LT CYR Bold"));
+        trace(REG_VAG_ROUNDED.test("VAG Rounded LT CYR Bold"));
+
+//        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO));
+//        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO_SEMIBOLD));
+//        trace(REG_MYRIAD_PRO_BOLD.test(MULTI_FONT_MYRIAD_PRO_SEMIBOLD));
+//        trace(REG_MYRIAD_PRO_BOLD.test(FONT_NAME_MYRIAD_PRO_BOLD));
+//        trace(REG_MYRIAD_PRO_BOLD.test(MULTI_FONT_MYRIAD_PRO_BOLD));
+//        trace(REG_MYRIAD_PRO_BOLD.test('mMyriad Pro Bold bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test('mMyriad Pro Bold bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test(' Myriad Pro Bold bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro fff Bold bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi ff bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi bold bold'));
+//        trace(REG_MYRIAD_PRO_BOLD.test(' MyriadPro semi bold semi'));
 
     }
 }

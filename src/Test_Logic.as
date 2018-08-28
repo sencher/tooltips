@@ -3,17 +3,23 @@ package {
 
     public class Test_Logic extends Sprite{
         public function Test_Logic() {
-            var n:Number = 2;
+//            var n:Number = 2;
+//
+//            var _null:int = null;
+//
+//            var k:int = 0;
+//            trace(k);
+//            k ||= 1;
+//            trace(k);
+//            k ||= 2;
+//            trace(k);
 
-            var _null:int = null;
+            var a:Number = 2;
+            var b:Number = 4;
 
-            var k:int = 0;
-            trace(k)
-            k ||= 1;
-            trace(k)
-            k ||= 2;
-            trace(k)
-
+            if((a & b) >= 1 ){
+                trace("first");
+            }
 
 //            trace("***********")
 //            k = 0

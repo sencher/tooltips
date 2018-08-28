@@ -4,7 +4,6 @@
  * @author Sergey Senkov
  */
 package utils {
-
 import com.junkbyte.console.Cc;
 
 import flash.text.Font;
@@ -172,10 +171,34 @@ public class FontUtils {
         var stringForCheck:String = str.replace(/[\n\r\t ]/g, "");
         var initFont:Font = getFontObject(initFormat);
 
-        if (!initFont || !initFont.hasGlyphs(stringForCheck)) {
+        var initFontHasGlyphs:int = initFont ? int(initFont.hasGlyphs(stringForCheck)) : -1;
+
+//        if(initFont){
+//            if(!initFont.hasGlyphs(stringForCheck)){
+//            }
+//        }else{
+//        }
+
+//        var futureFormat:TextFormat;
+//
+//        switch (initFontHasGlyphs){
+//            // No initFont
+//            case -1:
+//                tryApplyNewFormat(tf, stringForCheck, initFormat, false);
+//                break;
+//            // initFont, but missingGlyphs
+//            case 0:
+//                tryApplyNewFormat(tf, stringForCheck, initFormat, true);
+//                break;
+//            // initFont has glyphs
+//            case 1:
+//                break;
+//        }
+
+        if (initFontHasGlyphs < 1) {
             Cc.logch("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
             var futureFormat:TextFormat = GamuaFloxUtils.cloneObject(initFormat);
-            var fixedFont:Font = getFixedFont(futureFormat);
+            var fixedFont:Font = getFixedFont(futureFormat, initFontHasGlyphs == 0);
             if (fixedFont) {
 
                 futureFormat.font = fixedFont.fontName;
@@ -229,7 +252,32 @@ public class FontUtils {
         }
     }
 
-    private static function getFixedFont(format:TextFormat):Font {
+//    private static function tryApplyNewFormat(textField:TextField, stringForCheck:String, initFormat:TextFormat, missingGlyphs:Boolean):void {
+//        var futureFormat:TextFormat = GamuaFloxUtils.cloneObject(initFormat);
+//        var fixedFont:Font = getFixedFont(futureFormat);
+//        if (fixedFont) {
+//
+//            futureFormat.font = fixedFont.fontName;
+//            futureFormat.bold = false;
+//            textField.defaultTextFormat = futureFormat;
+//            textField.setTextFormat(futureFormat);
+//            if (!fixedFont.hasGlyphs(stringForCheck)) {
+//                if(debug) {
+//                    textField.backgroundColor = YELLOW;
+//                }
+//                //Cc.errorch("fixedFont", futureFormat.font, "|", str, textField.name, missingGlyphs(fixedFont, stringForCheck));
+//            }else if(debug) {
+//                textField.backgroundColor = BLUE;
+//            }
+//        } else {
+//            if(debug) {
+//                textField.backgroundColor = ORANGE;
+//            }
+//            Cc.errorch("fixedFont", "No font", initFormat.font, initFormat.bold, "|", textField.name, textField.text);
+//        }
+//    }
+
+    private static function getFixedFont(format:TextFormat, missingGlyphs:Boolean):Font {
         var name:String = format.font;
         //m - multilanguage font already
         if (name.substr(0, 1) == "m" ||
@@ -243,7 +291,11 @@ public class FontUtils {
         if(REG_VAG_ROUNDED_CYR.test(name)){
             format.font = MULTI_FONT_VAG_ROUNDED;
         }else if(REG_VAG_ROUNDED.test(name)){
-            format.font = FONT_NAME_VAG_ROUNDED_BT;
+            if(missingGlyphs){
+                format.font = MULTI_FONT_VAG_ROUNDED;
+            }else{
+                format.font = FONT_NAME_VAG_ROUNDED_BT;
+            }
         }else if(REG_TIMES_NEW_ROMAN.test(name)){
             format.font = MULTI_FONT_TIMES_NEW_ROMAN;
         }else if(REG_ARIAL_BOLD.test(name)) {
