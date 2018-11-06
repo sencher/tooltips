@@ -3,6 +3,10 @@ package utils {
 import flash.utils.describeType;
 import flash.utils.getQualifiedClassName;
 
+import legacy.HashMap;
+
+import legacy.math.Long;
+
 public class GamuaFloxUtils {
 
     /** Creates a deep copy of the object.
@@ -28,17 +32,22 @@ public class GamuaFloxUtils {
             var filteredClone:Object = filter(object);
             if (filteredClone) return filteredClone;
         }
-
+        var i:int;
         if (object is Number || object is String || object is Boolean || object == null)
             return object;
+        else if (object.hasOwnProperty("clone"))
+            return object.clone();
         else if (maxDepth > 0 && object is Array) {
-            var array:Array = object as Array;
-            var arrayClone:Array = [];
-            var length:int = array.length;
-            for (var i:int = 0; i < length; ++i) arrayClone[i] = cloneObject(array[i], maxDepth - 1, filter);
-            return arrayClone;
-        }
-        else {
+                var arrayClone:Array = [];
+                var length:int = object.length;
+                for (i = 0; i < length; ++i) arrayClone[i] = cloneObject(object[i], maxDepth - 1, filter);
+                return arrayClone;
+        } else if (maxDepth > 0 && object is Vector.<*>) {
+            var vectorClone:* = object.slice(0,0);
+                var length:int = object.length;
+                for (i = 0; i < length; ++i) vectorClone[i] = cloneObject(object[i], maxDepth - 1, filter);
+                return vectorClone;
+        } else {
             var _class:Class = object.constructor;
             var objectClone:* = new _class();
             var typeDescription:XML = null;
