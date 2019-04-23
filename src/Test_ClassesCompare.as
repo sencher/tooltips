@@ -6,6 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 package {
+import avmplus.getQualifiedClassName;
+
 import flash.display.MovieClip;
 import flash.display.Sprite;
 import flash.geom.Point;
@@ -62,9 +64,9 @@ import mx.core.FlexTextField;
     private function get_window_by_class_name(window_class:Class):*
     {
         for each (var value:* in h) {
-            var v:* = String(value)
-            var w:* = String(window_class)
-            if(String(value) == String(window_class))
+            var v:* = getQualifiedClassName(value);
+            var w:* = getQualifiedClassName(window_class);
+            if(v == w)
             {
                 return value;
             }

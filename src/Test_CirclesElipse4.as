@@ -11,7 +11,8 @@ package
 	import flash.text.TextField;
 	
 	import starling.utils.deg2rad;
-	
+
+	//Starling 251
 	[SWF(width=1200,height=1000)]
 	public class Test_CirclesElipse4 extends Sprite
 	{

@@ -1,24 +1,22 @@
 package starling
 {
-    import flash.display.Bitmap;
-    import flash.display.BitmapData;
-    import flash.display.DisplayObject;
-    import flash.display.Shape;
-    import flash.display.Stage;
-    import flash.events.MouseEvent;
-    import flash.geom.Rectangle;
-    
-    import starling.display.Image;
-	import starling.display.Mesh;
-	import starling.display.MovieClip;
-	import starling.display.Quad;
-	import starling.display.Sprite;
-	import starling.rendering.VertexData;
-	import starling.text.TextField;
-    import starling.textures.Texture;
-	import starling.textures.TextureAtlas;
-	import starling.utils.deg2rad;
-    
+import flash.display.Bitmap;
+import flash.display.BitmapData;
+import flash.display.DisplayObject;
+import flash.display.Shape;
+import flash.display.Stage;
+import flash.events.MouseEvent;
+import flash.geom.Rectangle;
+
+import starling.display.Image;
+import starling.display.Quad;
+import starling.display.Sprite;
+import starling.text.TextField;
+import starling.textures.Texture;
+import starling.textures.TextureAtlas;
+import starling.utils.deg2rad;
+
+//Starling ?
     public class Game extends Sprite
     {
         private var fStage:Stage;
@@ -76,7 +74,7 @@ package starling
             flBox.graphics.drawRect(-10,-10,20,20);
             flBox.graphics.endFill();
     
-            fStage.addChild(flBox)
+            fStage.addChild(flBox);
             var stBox = flashSpriteToStarling(flBox);
             stBox.x = 400;
             stBox.y = 200;
@@ -120,7 +118,7 @@ package starling
             }
         }
     
-        private function flashSpriteToStarling(sprite:flash.display.DisplayObject):starling.display.Sprite{
+        private function flashSpriteToStarling(sprite:DisplayObject):Sprite{
             
             var rect:Rectangle = sprite.getRect(fStage);
             sprite.x -= rect.x;
@@ -137,7 +135,7 @@ package starling
             
             var texture:Texture = Texture.fromBitmapData(bitmapData, false, false);
             var im:Image = new Image(texture);
-            var starlingSprite:starling.display.Sprite = new starling.display.Sprite();
+            var starlingSprite:Sprite = new Sprite();
             starlingSprite.addChild(im);
             starlingSprite.x = sprite.x += rect.x;
             starlingSprite.y = sprite.y += rect.y;

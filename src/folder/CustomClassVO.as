@@ -6,9 +6,12 @@ package folder {
 
         public var variableValue:Object;
 
-        public function CustomClassVO(pVariableName:String = '', pVariableValue:Object = null){
-            variableName = pVariableName;
+        public var array:Array;
+
+        public function CustomClassVO(pVariableName:String = '', pVariableValue:Object = null, pArray:Array = null){
+            _variableName = pVariableName;
             variableValue = pVariableValue;
+            array = pArray;
         }
 
         public function get variableName():String {

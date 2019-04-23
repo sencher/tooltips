@@ -27,7 +27,7 @@ package {
             addChild(tf2);
             var request:URLRequest = new URLRequest(path);
             var loader:Loader = new Loader()
-//            addChild(loader);
+//            addChild(loader_test);
             loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onCompleteHandler);
             loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, onProgressHandler);
             loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, ioError_handler, false, 0, true);

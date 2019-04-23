@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flash version="12.0" build="d481" platform="WIN" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="_11112222_fla/MainTimeline" mod="1506507013038" >
+        <def id="_11112222_fla:MainTimeline" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="c33334444" type="s" /> 
+        <dep id="c22223333" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+      <script name="c22223333" mod="1506507013038" >
+        <def id="c22223333" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+      <script name="c33334444" mod="1506507013038" >
+        <def id="c33334444" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

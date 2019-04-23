@@ -1,33 +1,33 @@
 package {
-import flash.display.Sprite;
-import flash.events.Event;
-
-public class Test_AddChild extends Sprite{
+	import flash.display.DisplayObject;
+	import flash.display.Sprite;
+    import flash.events.Event;
+	
+	import utils.Utils;
+	
+	public class Test_AddChild extends Sprite{
     public function Test_AddChild() {
-        addEventListener(Event.ADDED_TO_STAGE, addedToS)
-        addEventListener(Event.ADDED, added)
-        addEventListener(Event.REMOVED_FROM_STAGE, removedFS)
-        addEventListener(Event.REMOVED, removed)
+        addEventListener(Event.ADDED_TO_STAGE, log);
+        addEventListener(Event.ADDED, log);
+        addEventListener(Event.REMOVED_FROM_STAGE, log);
+        addEventListener(Event.REMOVED, log);
+        
+        
         var s:Sprite = new Sprite();
+	    s.name = "child";
+	    s.addEventListener(Event.ADDED_TO_STAGE, log);
+	    s.addEventListener(Event.ADDED, log);
+	    s.addEventListener(Event.REMOVED_FROM_STAGE, log);
+	    s.addEventListener(Event.REMOVED, log);
+        
         addChild(s);
         removeChild(s);
-
     }
-
-    private function removedFS(event:Event):void {
-        trace("removedFS")
-    }
-
-    private function addedToS(event:Event):void {
-        trace("addedToS")
-    }
-
-    private function removed(event:Event):void {
-        trace("removed")
-    }
-
-    private function added(event:Event):void {
-        trace("added")
+		
+    private function log(event:Event):void {
+        trace("-");
+        trace(event.type, event.currentTarget, event.target);
+        trace(Utils.globalVisibleList(DisplayObject(event.target)));
     }
 }
 }

@@ -1,0 +1,110 @@
+All
+	(\n|.)*
+
+Any until
+	((.|\n)+?)(function)
+
+Delete all except
+	.*(\.\w+).*	
+	$1
+
+Search until end of line
+	^(.*)text(.*)$
+	or
+	text+
+
+Line without
+	^((?!text).)*$
+
+0 or more spaces or tabs, but not new line
+	([ \f\t]*)
+
+.* without /
+	[^\/\n]*
+
+
+Search only SET visible of this level
+	\s+visible\s+=
+	[^."]visible[\s]*=
+	[^."]visible([0-9\sA-Z]{0,})=
+
+Class name
+	(class\s+)([^ ]+)(\s+)
+	(class\s+)([^ ]+)( )(.*\n*)
+	(class )(\S*)((.|\n)+?)(function)
+	$2
+
+Search set functions with "player"
+	function(.*)player(.*)\(.+\)
+
+\\(?:.(?!\\))+$
+
+
+Add
+	(function )(.*)(\([^{]*)(\{ *)(\r*)(\s*)
+	$1$2$3$4$5$6Cc.logchw(this, "$2", arguments);$5$6
+	$1$2$3$4$5$6Cc.warnchw(this, "$2", arguments);$5$6
+
+Add Singleton
+	(function )(.*)(\([^{]*)(\{ *)(\r*)(\s*)
+	$1$2$3$4$5$6Cc.logchw(PopUpManager, "$2", arguments);$5$6
+
+Remove active or commented
+    (\s)*(/\*)*(\s*/*\s*Cc.(log|warn)(.*);)(\*/)*
+
+
+Comment active
+    (\n)([^/\n]+)(Cc.(log|warn)(.*);)
+    $1$2/*$3*/
+
+(\n)([^/\n]+)(Cc.(log|warn)(.*\.)(.*);)
+$1$2/*$3$4$5*/
+
+    
+
+Un-Comment // or /* */
+    ([/\*|\/])+(Cc.(log|warn)(.*);)(\*/)*
+    $2
+
+
+
+(\.\w+)
+
+
+C++ log
+	File          :
+	scaleform <error
+	[trace
+
+Replace set text through validator
+	^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.text\s*=[ \f\t]*(?:(?!=)([^$;\n]+))
+	$1FontUtils.updateLabel($2, $3)
+	
+	old
+	^(\s*)(.*)\.text\s*=\s*(.*);
+	$1UIUtils.updateLabel($2, $3);
+htmlText
+	^([ \f\t]*)((?:(?!this|//|/\*)[^\n])*)\.htmlText\s*=[ \f\t]*(?:(?!=)([^$;\n]+))
+	$1UIUtils.updateLabel($2, $3, true)
+
+	
+	[^\n|\r]
+	(\n|\r+)
+	([^\n]*)
+	[^ \f\t\v]
+	([^\n\r]*)(.*)\.text\s*=\s*([^\n]*)
+
+
+
+	([^\/\n\s]*).setTextFormat\(([^\/\n\s;]*)\)
+	FontUtils.applyFormat($1, $2)
+
+Two lines
+	([^\/\n\s]*).defaultTextFormat\s*=\s*([^\/\n\s;]*)([^\/\n]*)\n([^\/\n;]*)setTextFormat([^\/\n;]*);
+	FontUtils.applyFormat($1, $2)$3
+
+Task name to branch
+	(\s)
+	-
+
+	

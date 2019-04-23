@@ -16,11 +16,11 @@ package {
         public function Test_Loader() {
             Security.allowDomain("*")
 
-//        loader.load( new URLRequest("http://www.onspeed.com/ie/swf/img/logo.gif") );
-//        loader.load( new URLRequest("http://www.onspeed.com/ie/swf/onspeed_comparison.swf") );
-//        loader.load( new URLRequest("http://dagobah.net/flash/tetris.swf") );
+//        loader_test.load( new URLRequest("http://www.onspeed.com/ie/swf/img/logo.gif") );
+//        loader_test.load( new URLRequest("http://www.onspeed.com/ie/swf/onspeed_comparison.swf") );
+//        loader_test.load( new URLRequest("http://dagobah.net/flash/tetris.swf") );
             loader.load(new URLRequest("http://games-swf.ru/_sf/36/3640___.swf"));
-//        loader.load( new URLRequest("http://sheldonbrown.com/web_sample1.html") );
+//        loader_test.load( new URLRequest("http://sheldonbrown.com/web_sample1.html") );
             addChild(loader);
 
             loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loaderDone);
@@ -36,8 +36,8 @@ package {
 
 // do whatever with it...
 //        blah();
-//            stage.width = loader.width;
-//            stage.height = loader.height;
+//            stage.width = loader_test.width;
+//            stage.height = loader_test.height;
         }
 
         function loaderProgress(event:ProgressEvent):void {

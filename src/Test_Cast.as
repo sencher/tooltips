@@ -14,12 +14,24 @@ public class Test_Cast extends Sprite{
         var s:Sprite = new Sprite();
         s.name = "sprite";
         var mc:MovieClip = new MovieClip();
-        mc.name = "mc"
-        var ss:Sprite = mc as Sprite;
-        trace(ss.name);
-        var mc2:MovieClip = MovieClip(s)
-//        var mc2:MovieClip = MovieClip(s);
-        trace(mc2.name)
+        mc.name = "mc";
+
+        //cast to parent type is ok
+        var s1:Sprite = mc as Sprite;
+        var s2:Sprite = Sprite(mc);
+        trace(s1, s2, s1.name, s2.name);
+
+        //cast to child type
+        //just null
+        var mc1:MovieClip = s as MovieClip;
+        try{
+            //strict cast throws error
+            var mc2:MovieClip = MovieClip(s);
+        }catch(e:Error){
+            trace(e.message);
+        }
+
+        trace(mc1, mc2);
     }
 }
 }
