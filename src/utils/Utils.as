@@ -519,5 +519,32 @@ public class Utils {
         }
         return list;
     }
+	
+	public static function averageOfArray(array:Array):Number
+	{
+		var sum:Number = 0;
+		for each (var item:Number in array) {
+			sum += item;
+		}
+		return sum / array.length;
+	}
+	
+    /*
+        Counts all elements in two-dimensional array
+     */
+	public static function numChildrenArray(array:Array):Number
+	{
+		var sum:Number = 0;
+		for (var i:int = 0; i < array.length; i++) {
+			if (array[i] is Array && array.length) {
+				for (var j:int = 0; j < array[i].length; j++) {
+					if (array[i][j]) {
+						sum++;
+					}
+				}
+			}
+		}
+        return sum;
+	}
 }
 }

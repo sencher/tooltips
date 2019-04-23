@@ -3,7 +3,7 @@
   <component name="FlexBuildConfigurationManager" active="Test">
     <configurations>
       <configuration name="Test" pure-as="true" output-file="Test.swf" output-folder="$MODULE_DIR$/out">
-        <dependencies target-player="28.0">
+        <dependencies target-player="18.0">
           <entries>
             <entry library-id="ca31bd53-a8a6-43f5-87c1-e6b15d9549bc">
               <dependency linkage="Merged" />
@@ -18,7 +18,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="4.6.0" />
+          <sdk name="Flex 4.6 + Air18" />
         </dependencies>
         <compiler-options>
           <option name="resourceFilesMode" value="None" />
@@ -58,16 +58,6 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://D:/Survarium/resources/sources/flash_movies">
-      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
-      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies/movies/actions" />
-    </content>
-    <content url="file://D:/Survarium/resources/sources/ui/sources">
-      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
-      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/com" />
-      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
-      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/obj" />
-    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
@@ -83,7 +73,17 @@
       <excludeFolder url="file://$MODULE_DIR$/src/images" />
       <excludeFolder url="file://$MODULE_DIR$/src/swf" />
     </content>
-    <orderEntry type="jdk" jdkName="AirSDK_26&#9;4.6.0" jdkType="__CompositeFlexSdk__" />
+    <content url="file://D:/Survarium/resources/sources/flash_movies">
+      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies/movies/actions" />
+    </content>
+    <content url="file://D:/Survarium/resources/sources/ui/sources">
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/com" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
+      <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/obj" />
+    </content>
+    <orderEntry type="jdk" jdkName="AirSDK_26&#9;Flex 4.6 + Air18&#9;4.6.0" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="" scope="TEST">
       <library type="flex">
