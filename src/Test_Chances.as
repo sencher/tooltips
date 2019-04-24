@@ -7,70 +7,112 @@ package
 	
 	import utils.Utils;
 	
-	import utils.Utils;
-	
 	public class Test_Chances extends Sprite
 	{
-		private var NUM_CARDS:int = 30;
-		private var REPEATS:int = 1000;
-		private var COMBO:Array = [[1, 2]];
-//		private var COMBO:Array = [[1, 2], [3, 4]];
-//		private var COMBO:Array = [[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]];
+		private const COMBO:Array = [[1, 2], [3]];
 		
+		private const NUM_CARDS:int = 30;
+		private const REPEATS:int = 100000;
+		
+		private var coin:Boolean = true;
 		private var cards:Array = [];
-		private var comboDrawed:Array = [];
-		private var results:Array = [];
+		private var tempCards:Array = [];
+		private var comboDrawn:Array = [];
+		private var resultTurns:Array = [];
+		private var resultDraws:Array = [];
+		private var resultCoinTurns:Array = [];
+		private var resultCoinDraws:Array = [];
 		private var combo:Array = [];
+		private var cardsDrawn:int;
+		private var turns:int;
+		private var firstHand:Boolean;
+		private var repeats:int;
 		
 		public function Test_Chances()
 		{
-			restart();
+			while (repeats < REPEATS) {
+				restart();
+			}
+			
+			trace("First Turns:", Utils.averageOfArray(resultTurns), "Cards:", Utils.averageOfArray(resultDraws));
+			trace("Coin Turns:", Utils.averageOfArray(resultCoinTurns), "Cards:", Utils.averageOfArray(resultCoinDraws));
 		}
 		
 		private function restart():void
 		{
+			repeats++;
 			combo = COMBO.concat();
-			comboDrawed = [];
+			comboDrawn = [];
 			cards = [];
+			tempCards = [];
+			coin = !coin;
+			cardsDrawn = turns = 0;
+			firstHand = true;
+//			turns = 0;
 			
 			for (var i:int = 1; i < NUM_CARDS + 1; i++) {
 				cards.push(i);
 			}
 			
 			drawUntilCombo();
-			//trace(combo, comboDrawed, NUM_CARDS - cards.length);
-			results.push(NUM_CARDS - cards.length);
-			if (results.length < REPEATS) {
-				restart();
+			
+			if (!turns) turns = 1;
+			
+			if (!coin) {
+				resultTurns.push(turns);
+				resultDraws.push(cardsDrawn);
 			} else {
-				trace(Utils.averageOfArray(results));
+				resultCoinTurns.push(turns);
+				resultCoinDraws.push(cardsDrawn);
 			}
 		}
 		
 		private function drawUntilCombo():void
 		{
 			var card:int = drawCard();
-			checkCombo(card);
+			
+			if (!checkCombo(card) && firstHand) {
+				tempCards.push(card);
+			}
+			
 			if (combo.length) {
+				if (firstHand) {
+					if ((!coin && cardsDrawn > 5 - comboDrawn.length) || (coin && cardsDrawn > 7 - comboDrawn.length)) {
+						shuffleBack();
+					}
+				}
 				drawUntilCombo();
 			}
 		}
 		
-		private function checkCombo(card:int):void
+		private function shuffleBack():void
+		{
+			cards = Utils.joinArrays(cards, tempCards);
+			firstHand = false;
+//			coin = !coin;
+		}
+		
+		private function checkCombo(card:int):Boolean
 		{
 			for (var i:int = 0; i < combo.length; i++) {
 				for (var j:int = 0; j < combo[i].length; j++) {
 					if (combo[i][j] == card) {
-						comboDrawed.push(card);
+						comboDrawn.push(card);
 						combo.splice(i, 1);
-						return;
+						return true;
 					}
 				}
 			}
+			return false;
 		}
 		
 		private function drawCard():int
 		{
+			if (!cards.length) return 0;
+			
+			cardsDrawn++;
+			if (!firstHand) turns++;
+			
 			var id:int = Utils.getRandom(0, cards.length - 1);
 //			trace(id, cards[id]);
 			

@@ -546,5 +546,22 @@ public class Utils {
 		}
         return sum;
 	}
+	
+	public static function joinArrays(main:Array, additional:Array, clearAdditional:Boolean = true):Array
+	{
+		main = main.concat(additional);
+		if (clearAdditional) {
+			clearLinkedArray(additional);
+		}
+		return main;
+	}
+	
+	private static function clearLinkedArray(array:Array):void
+	{
+        var length:int = array.length;
+		for (var i:int = 0; i < length; i++) {
+			array.shift();
+		}
+	}
 }
 }
