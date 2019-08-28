@@ -21,8 +21,8 @@ private const COMBO:Array = [];
 [trace] Coin Turns: 11.68349 Cards: 18.49797
 private const COMBO:Array = [[1]];
 
-[trace] First Turns: 6.91883 Cards: 11.59596
-[trace] Coin Turns: 5.98976 Cards: 11.78012
+[trace] First Turns: 6.27 Cards: 10.96 Completed: 1
+[trace] Coin Turns: 5.27 Cards: 11.08 Completed: 1
 private const COMBO:Array = [[1, 2]];
 
 [trace] First Turns: 10.66326 Cards: 16.37815
