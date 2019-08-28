@@ -11,7 +11,7 @@ package
     {
         private const SEARCH:int = 2;
         private const DECK:int = 30;
-        private const TURNS:int = 1;
+        private const TURNS:int = 30;
         
         private var positiveChance:Number = 0;
         private var positiveChanceCoin:Number = 0;
@@ -31,8 +31,9 @@ package
             for (i = 0; i < TURNS; i++) {
                 if (positiveChance >= 1) break;
                 positiveChance += (1 - positiveChance) * SEARCH / cards--;
+                trace(i+1, Utils.setPrecision(positiveChance, 3));
             }
-            trace("First:", Utils.setPrecision(positiveChance, 3), i);
+            trace("First:", i, Utils.setPrecision(positiveChance, 3));
             
             cards = DECK;
             
@@ -46,8 +47,9 @@ package
             for (i = 0; i < TURNS; i++) {
                 if (positiveChanceCoin >= 1) break;
                 positiveChanceCoin += (1 - positiveChanceCoin) * SEARCH / cards--;
+                trace(i+1, Utils.setPrecision(positiveChanceCoin, 3));
             }
-            trace("Coin:", Utils.setPrecision(positiveChanceCoin, 3), i);
+            trace("Coin:", i, Utils.setPrecision(positiveChanceCoin, 3));
         }
     }
 }

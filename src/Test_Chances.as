@@ -15,9 +15,9 @@ package
         private const DEBUG_DRAW:Array = [25,27,9,28,22,5,14,20,13,11,27,30,4,6,3,21,15,26,23,8,12,28,5,16,17,9,22,18,29,19,7,24];
         
         private const NUM_CARDS:int = 30;
-        private const REPEATS:int = 200001;
-        private const TURN_LIMIT:int = 0;// 0 turn off
-        private const FORCE_NO_COINS:Boolean = false;
+        private const REPEATS:int = 100001;
+        private const TURN_LIMIT:int = 16;// 0 turn off
+        private const FORCE_NO_COINS:Boolean = true;
         private const FORCE_ALL_COINS:Boolean = false;
         
         private var coin:Boolean = true;
