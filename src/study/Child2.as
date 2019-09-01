@@ -4,6 +4,7 @@
 package study
 {
     import flash.display.Sprite;
+    import flash.events.Event;
     import flash.events.MouseEvent;
     import flash.events.TimerEvent;
     import flash.utils.Timer;
@@ -12,8 +13,9 @@ package study
     
     public class Child2 extends Child1
     {
-        private var button:Sprite;
+        public var button:Sprite;
         private var timer:Timer;
+        public static const POSITION_CHANGED:String = "position_changed";
         
         public function Child2()
         {
@@ -45,6 +47,7 @@ package study
         private function changePosition():void{
             button.x = Utils.getRandom(0, 500);
             button.y = Utils.getRandom(0, 300);
+            dispatchEvent(new Event(POSITION_CHANGED,true));
         }
     }
 }

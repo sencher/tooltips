@@ -4,6 +4,8 @@
 package study
 {
     import flash.display.Sprite;
+    import flash.events.Event;
+    import flash.text.TextField;
     
     public class Test_Study extends Sprite
     {
@@ -11,6 +13,7 @@ package study
         private var my2:int;
         private var child:Child2;
         private var flag:Boolean = false;
+        private var textField:TextField;
         
         public function Test_Study()
         {
@@ -25,7 +28,18 @@ package study
             trace(flag);
             
             child = new Child2();
+            child.addEventListener(Child2.POSITION_CHANGED, child_positionChangedHandler);
             addChild(child);
+            
+            textField = new TextField();
+            textField.width = 500;
+            textField.text = "Xyu!";
+            addChild(textField);
+        }
+    
+        private function child_positionChangedHandler(event:Event):void
+        {
+            textField.text = "new position: " + event.target.button.x + ", " + event.target.button.y;
         }
     }
 }
