@@ -18,7 +18,7 @@ package study
         
         override public function set x(value:Number):void
         {
-            value += 2;
+            value += 3;
             
             trace("Кто-то поменял х на", value);
             super.x = value;
