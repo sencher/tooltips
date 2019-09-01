@@ -20,7 +20,7 @@ package study
             trace("Hello");
             x = 7;
             y = 9;
-            //my = 14;
+            my = 14;
             my2 = 4;
             trace("my = ", my);
             trace(flag);
