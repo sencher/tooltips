@@ -107,4 +107,9 @@ Task name to branch
 	(\s)
 	-
 
-	
+Remove blank lines regex
+	^(?:[\t ]*(?:\r?\n|\r))+
+
+Break long lines
+	([^\r\n]{120})
+	$1\n
