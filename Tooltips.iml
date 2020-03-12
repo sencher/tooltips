@@ -3,7 +3,7 @@
   <component name="FlexBuildConfigurationManager" active="Test">
     <configurations>
       <configuration name="Test" pure-as="true" output-file="Test.swf" output-folder="$MODULE_DIR$/out">
-        <dependencies target-player="18.0">
+        <dependencies target-player="12.0">
           <entries>
             <entry library-id="ca31bd53-a8a6-43f5-87c1-e6b15d9549bc">
               <dependency linkage="Merged" />
@@ -18,7 +18,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="Flex 4.6 + Air18" />
+          <sdk name="AirSDK" />
         </dependencies>
         <compiler-options>
           <option name="resourceFilesMode" value="None" />
@@ -30,7 +30,7 @@
       </configuration>
       <configuration name="AirMain" target-platform="Desktop" pure-as="true" main-class="air.AirMain" output-file="AirMain.swf" output-folder="$MODULE_DIR$/out">
         <dependencies>
-          <sdk name="AirSDK_26" />
+          <sdk name="AirSDK" />
         </dependencies>
         <compiler-options>
           <map>
@@ -44,7 +44,7 @@
       </configuration>
       <configuration name="AirChild" target-platform="Desktop" pure-as="true" main-class="air.AirChild" output-file="AirChild.swf" output-folder="$MODULE_DIR$/out">
         <dependencies>
-          <sdk name="4.6.0" />
+          <sdk name="AirSDK" />
         </dependencies>
         <compiler-options>
           <option name="resourceFilesMode" value="None" />
@@ -83,7 +83,7 @@
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/lib" />
       <excludeFolder url="file://D:/Survarium/resources/sources/ui/sources/obj" />
     </content>
-    <orderEntry type="jdk" jdkName="AirSDK_26&#9;Flex 4.6 + Air18&#9;4.6.0" jdkType="__CompositeFlexSdk__" />
+    <orderEntry type="jdk" jdkName="AirSDK" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="" scope="TEST">
       <library type="flex">

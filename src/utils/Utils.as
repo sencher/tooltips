@@ -569,5 +569,24 @@ public class Utils {
         precision = Math.pow(10, precision);
         return Math.round(number * precision) / precision;
     }
+
+    private static var textField:TextField;
+
+    public static function traceTfInit(value:Stage):void {
+        var textFormat:TextFormat = new TextFormat();
+        textFormat.size = 20;
+        textField = new TextField();
+        textField.setTextFormat(textFormat);
+        textField.defaultTextFormat = textFormat;
+        textField.wordWrap = true;
+        textField.width = value.stageWidth;
+        textField.height = value.stageHeight;
+        value.addChild(textField);
+    }
+
+    public static function traceTf(value:*, index:int = 0, arr:Array = null):void {
+        textField.appendText(value + "\n");
+        textField.scrollV = textField.maxScrollV;
+    }
 }
 }
