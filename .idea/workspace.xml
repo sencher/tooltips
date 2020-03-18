@@ -7,17 +7,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Chance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tooltips.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tooltips.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Test_Chances.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Chances.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Chances_Math.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Chances_Math.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Study.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Study.swf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test_Chances.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Chances.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -781,14 +774,8 @@
       <workItem from="1567103837183" duration="5775000" />
       <workItem from="1567364380938" duration="3103000" />
       <workItem from="1583996576828" duration="2983000" />
-      <workItem from="1584002468858" duration="4523000" />
-    </task>
-    <task id="LOCAL-00003" summary="Circle, Ellipse">
-      <created>1486468609801</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1486468609801</updated>
+      <workItem from="1584002468858" duration="4913000" />
+      <workItem from="1584546090134" duration="8908000" />
     </task>
     <task id="LOCAL-00004" summary="Circles in Ellipse">
       <created>1486485337399</created>
@@ -1126,7 +1113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567366882043</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Chance">
+      <created>1584051705016</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1584051705017</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1175,7 +1169,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Air search files in folder" />
     <MESSAGE value="out with Air folder test" />
     <MESSAGE value="Air select folder and move/copy swf to subfolders." />
     <MESSAGE value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
@@ -1200,7 +1193,8 @@
     <MESSAGE value="Some cool fix" />
     <MESSAGE value="text field" />
     <MESSAGE value="bla" />
-    <option name="LAST_COMMIT_MESSAGE" value="bla" />
+    <MESSAGE value="Chance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chance" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="237" key="#Test_Chances" timestamp="1583997423274">
@@ -1215,34 +1209,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584003861107" />
-    <state width="417" height="466" key="DebuggerActiveHint" timestamp="1583999001625">
+    <state x="837" y="228" key="#xdebugger.evaluate" timestamp="1584552536468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="417" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1583999001625" />
+    <state x="837" y="228" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1584552536468" />
+    <state x="627" y="117" key="CommitChangelistDialog2" timestamp="1584051700878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584051700878" />
+    <state width="456" height="466" key="DebuggerActiveHint" timestamp="1584547453022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="456" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584547453022" />
     <state x="1271" y="346" key="FileChooserDialogImpl" timestamp="1584003857735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1271" y="346" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584003857735" />
-    <state width="1921" height="358" key="GridCell.Tab.0.bottom" timestamp="1584051663220">
+    <state width="1877" height="369" key="GridCell.Tab.0.bottom" timestamp="1584552407984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584051663220" />
-    <state width="1921" height="358" key="GridCell.Tab.0.center" timestamp="1584051663220">
+    <state width="1877" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
+    <state width="1877" height="369" key="GridCell.Tab.0.center" timestamp="1584552407984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="358" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584051663220" />
-    <state width="1921" height="358" key="GridCell.Tab.0.left" timestamp="1584051663220">
+    <state width="1877" height="369" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
+    <state width="1877" height="369" key="GridCell.Tab.0.left" timestamp="1584552407983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="358" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584051663220" />
-    <state width="1921" height="358" key="GridCell.Tab.0.right" timestamp="1584051663220">
+    <state width="1877" height="369" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407983" />
+    <state width="1877" height="369" key="GridCell.Tab.0.right" timestamp="1584552407984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="358" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584051663220" />
+    <state width="1877" height="369" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
     <state x="880" y="99" key="SettingsEditor" timestamp="1584002212841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="880" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584002212841" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1584051767839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584051767839" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1336,61 +1342,19 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
-        <watch expression="x" />
-        <watch expression="combo[i]" />
-        <watch expression="REPEATS" />
+        <watch expression="cards" />
+        <watch expression="log" />
+        <watch expression="mulliganCards" />
+        <watch expression="combo.length" />
+        <watch expression="mulliganedCard" />
+        <watch expression="cardsInHand" />
+        <watch expression="comboDrawn" />
+        <watch expression="cardsDrawn" />
+        <watch expression="coin" />
+        <watch expression="combo" />
+        <watch expression="resultCoinFinishedPartly" />
+        <watch expression="comboCoinCompleted" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>debugBoxes[0].x</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>textBoundaries.x+textBoundaries.width</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>textBoundaries.x</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.arguments</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s[&quot;active&quot;]</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s[&quot;_active&quot;]</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s._active</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s.active</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>classAsXML</expression-string>
-        <language-id>ECMA Script Level 4</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>
