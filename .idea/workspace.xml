@@ -7,10 +7,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Chance">
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Chance Mulligan fixed and Partly added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Chances.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Chances.swf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test_Chances.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Chances.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_CirclesElipse.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_CirclesElipse.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -775,14 +775,8 @@
       <workItem from="1567364380938" duration="3103000" />
       <workItem from="1583996576828" duration="2983000" />
       <workItem from="1584002468858" duration="4913000" />
-      <workItem from="1584546090134" duration="8908000" />
-    </task>
-    <task id="LOCAL-00004" summary="Circles in Ellipse">
-      <created>1486485337399</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1486485337400</updated>
+      <workItem from="1584546090134" duration="9635000" />
+      <workItem from="1585061308261" duration="5486000" />
     </task>
     <task id="LOCAL-00005" summary="Starling draw converter">
       <created>1486583050332</created>
@@ -1120,7 +1114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584051705017</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Chance Mulligan fixed and Partly added">
+      <created>1584555474642</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1584555474644</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1169,7 +1170,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="out with Air folder test" />
     <MESSAGE value="Air select folder and move/copy swf to subfolders." />
     <MESSAGE value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
     <MESSAGE value="AirMain.exe" />
@@ -1194,7 +1194,8 @@
     <MESSAGE value="text field" />
     <MESSAGE value="bla" />
     <MESSAGE value="Chance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chance" />
+    <MESSAGE value="Chance Mulligan fixed and Partly added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chance Mulligan fixed and Partly added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="237" key="#Test_Chances" timestamp="1583997423274">
@@ -1213,42 +1214,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="228" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1584552536468" />
-    <state x="627" y="117" key="CommitChangelistDialog2" timestamp="1584051700878">
+    <state x="627" y="117" key="CommitChangelistDialog2" timestamp="1584555468427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584051700878" />
-    <state width="456" height="466" key="DebuggerActiveHint" timestamp="1584547453022">
+    <state x="627" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584555468427" />
+    <state width="470" height="466" key="DebuggerActiveHint" timestamp="1585063796672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584547453022" />
+    <state width="470" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1585063796672" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584555575177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584555575177" />
     <state x="1271" y="346" key="FileChooserDialogImpl" timestamp="1584003857735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1271" y="346" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584003857735" />
-    <state width="1877" height="369" key="GridCell.Tab.0.bottom" timestamp="1584552407984">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1585077229600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
-    <state width="1877" height="369" key="GridCell.Tab.0.center" timestamp="1584552407984">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585077229600" />
+    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1585077229600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
-    <state width="1877" height="369" key="GridCell.Tab.0.left" timestamp="1584552407983">
+    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585077229600" />
+    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1585077229600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407983" />
-    <state width="1877" height="369" key="GridCell.Tab.0.right" timestamp="1584552407984">
+    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585077229600" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1585077229600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584552407984" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585077229600" />
     <state x="880" y="99" key="SettingsEditor" timestamp="1584002212841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="880" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584002212841" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1584051767839">
+    <state x="820" y="226" key="VCS.ChangeListViewerDialog" timestamp="1584555557363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584051767839" />
+    <state x="820" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584555557363" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1584555477471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584555477471" />
+    <state x="667" y="161" width="585" height="717" key="find.popup" timestamp="1585064797997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="161" width="585" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585064797997" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1338,22 +1351,32 @@
           <line>47</line>
           <option name="timeStamp" value="681" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_Chances.as</url>
+          <line>59</line>
+          <option name="timeStamp" value="698" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_Chances.as</url>
+          <line>68</line>
+          <option name="timeStamp" value="699" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
         <watch expression="cards" />
         <watch expression="log" />
-        <watch expression="mulliganCards" />
-        <watch expression="combo.length" />
-        <watch expression="mulliganedCard" />
-        <watch expression="cardsInHand" />
         <watch expression="comboDrawn" />
         <watch expression="cardsDrawn" />
         <watch expression="coin" />
         <watch expression="combo" />
         <watch expression="resultCoinFinishedPartly" />
         <watch expression="comboCoinCompleted" />
+        <watch expression="turns" />
+        <watch expression="this.PARSED_COMBO" />
+        <watch expression="resultTurns" />
+        <watch expression="resultDraws" />
       </configuration>
     </watches-manager>
   </component>
