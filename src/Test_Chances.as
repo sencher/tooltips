@@ -19,12 +19,12 @@ package
         private const DEBUG_DRAW:Array = [27,29,30,6,22,21,1,2,3,4,5,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,24,25,26,28];
 
         private const NUM_CARDS:int = 30;
-        private const DECK_GAMES:int = 15000;
+        private const DECK_GAMES:int = 30000;
         private const TURN_LIMIT_NO_COIN:int = 10;// 0 turn off
         private const TURN_LIMIT_COIN:int = 9;// 0 turn off
         private const CARDS_LEFT_LIMIT:int = 0;// 0 turn off
         private const FORCE_NO_COINS:Boolean = false;
-        private const FORCE_ALL_COINS:Boolean = false;
+        private const FORCE_ALL_COINS:Boolean = true;
 
         private var coin:Boolean = true;
         private var cards:Array = [];
@@ -53,8 +53,14 @@ package
         public function Test_Chances()
         {
             Utils.traceTfInit(stage);
-            decks.push(new Deck("Darkest Hour", [2,2,5]));
+            decks.push(new Deck("Darkest Hour", [2,2,1]));
+            decks.push(new Deck("Darkest Hour2", [2,2,2]));
+            decks.push(new Deck("Darkest Hour2", [2,2,3]));
             decks.push(new Deck("Darkest Hour2", [2,2,4]));
+            decks.push(new Deck("Darkest Hour2", [2,2,5]));
+            decks.push(new Deck("Darkest Hour2", [2,2,6]));
+            decks.push(new Deck("Darkest Hour2", [2,2,7]));
+            decks.push(new Deck("Darkest Hour2", [2,2,8]));
 
             for (var i:int = 0; i < decks.length; i++) {
                 nextDeck();
@@ -78,7 +84,7 @@ package
             resultCoinDraws = [];
             resultFinishedPartly = [];
             resultCoinFinishedPartly = [];
-            comboCompleted = comboCoinCompleted = deckGames = 0;
+            comboCompleted = comboCoinCompleted = deckGames = repeats = repeatsCoin = 0;
         }
 
         private function nextGame():void {

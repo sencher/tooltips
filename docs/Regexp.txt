@@ -13,6 +13,10 @@ Search until end of line
 	or
 	text+
 
+Add before and after each line
+    ^(.+)$
+    alert( $1 );
+
 Line without
 	^((?!text).)*$
 

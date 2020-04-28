@@ -588,5 +588,18 @@ public class Utils {
         textField.appendText(value + "\n");
         textField.scrollV = textField.maxScrollV;
     }
+
+    public static function areArraysEqual(a:Array, b:Array):Boolean {
+        if (a.length != b.length) {
+            return false;
+        }
+        var len:int = a.length;
+        for (var i:int = 0; i < len; i++) {
+            if (a[i] !== b[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 }

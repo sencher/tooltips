@@ -17,6 +17,9 @@
             <entry library-id="64b354b1-ebb0-4180-b9cc-e783b39d2f51">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="cfb7cea3-b1ff-4305-8331-06f003a2b265">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AirSDK" />
         </dependencies>
@@ -73,6 +76,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/images" />
       <excludeFolder url="file://$MODULE_DIR$/src/swf" />
     </content>
+    <content url="file://D:/Program Files/Adobe/Adobe Animate 2020/Common/Configuration/Component Source">
+      <sourceFolder url="file://D:/Program Files/Adobe/Adobe Animate 2020/Common/Configuration/Component Source/ActionScript 3.0/User Interface" isTestSource="false" />
+    </content>
     <content url="file://D:/Survarium/resources/sources/flash_movies">
       <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies" />
       <excludeFolder url="file://D:/Survarium/resources/sources/flash_movies/movies/actions" />
@@ -113,6 +119,16 @@
         <properties id="64b354b1-ebb0-4180-b9cc-e783b39d2f51" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/FLA_experiments/Personal.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="cfb7cea3-b1ff-4305-8331-06f003a2b265" />
+        <CLASSES>
+          <root url="jar://D:/Program Files/Adobe/Adobe Animate 2020/Common/Configuration/Component Source/ActionScript 3.0/User Interface/ComponentShim.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
