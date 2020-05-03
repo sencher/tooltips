@@ -7,18 +7,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Chance:&#10;Many decks support&#10;Coin and no Coin different turn limit&#10;Combo code">
-      <change afterPath="$PROJECT_DIR$/src/Test_AdobeAnimateComponents.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_ArrayCompare.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_ArrayRandomize.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_JavaScripFeatures.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_Performance.as" afterDir="false" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="April 2020">
+      <change afterPath="$PROJECT_DIR$/src/Test_AutomaticMouseAndKeyboard.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tooltips.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tooltips.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Regexp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Regexp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Chances.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Chances.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_ArrayCopyReverse.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ArrayCopyReverse.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_Chances.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Chances.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_ArrayRandomize.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ArrayRandomize.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_Object.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Object.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +126,7 @@
       <recent name="ideaRefactoring.RefactoringB" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_ArrayRandomize">
+  <component name="RunManager" selected="Flash App.Test_AutomaticMouseAndKeyboard">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -284,45 +277,6 @@
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AdobeAnimateComponents" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="Player" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="A:/FlexSDK/flashplayer_32_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_AdobeAnimateComponents" />
-      <option name="overriddenOutputFileName" value="Test_AdobeAnimateComponents.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test_ArrayCompare" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
@@ -440,6 +394,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_AutomaticMouseAndKeyboard" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_AutomaticMouseAndKeyboard" />
+      <option name="overriddenOutputFileName" value="Test_AutomaticMouseAndKeyboard.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test_ExternalInterface HTML" type="FlashRunConfigurationType">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
@@ -477,7 +470,7 @@
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_Performance" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Object" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -496,15 +489,15 @@
       <option name="launcherParameters">
         <LauncherParameters>
           <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="Player" />
+          <option name="launcherType" value="OSDefault" />
           <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="A:/FlexSDK/flashplayer_32_sa_debug.exe" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Performance" />
-      <option name="overriddenOutputFileName" value="Test_Performance.swf" />
+      <option name="overriddenMainClass" value="Test_Object" />
+      <option name="overriddenOutputFileName" value="Test_Object.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -627,19 +620,19 @@
       <item itemvalue="Flash App.Test" />
       <item itemvalue="Flash App.Test_ExternalInterface HTML" />
       <item itemvalue="Flash App.AirMainModule" />
-      <item itemvalue="Flash App.Test_AdobeAnimateComponents" />
-      <item itemvalue="Flash App.Test_Performance" />
       <item itemvalue="Flash App.Test_ArrayCopyReverse" />
       <item itemvalue="Flash App.Test_ArrayCompare" />
       <item itemvalue="Flash App.Test_ArrayRandomize" />
+      <item itemvalue="Flash App.Test_Object" />
+      <item itemvalue="Flash App.Test_AutomaticMouseAndKeyboard" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flash App.Test_AutomaticMouseAndKeyboard" />
+        <item itemvalue="Flash App.Test_Object" />
         <item itemvalue="Flash App.Test_ArrayRandomize" />
         <item itemvalue="Flash App.Test_ArrayCompare" />
         <item itemvalue="Flash App.Test_ArrayCopyReverse" />
-        <item itemvalue="Flash App.Test_Performance" />
-        <item itemvalue="Flash App.Test_AdobeAnimateComponents" />
       </list>
     </recent_temporary>
   </component>
@@ -790,14 +783,11 @@
       <workItem from="1586119475196" duration="117000" />
       <workItem from="1586130580717" duration="4203000" />
       <workItem from="1586951705381" duration="13120000" />
-      <workItem from="1588090384890" duration="771000" />
-    </task>
-    <task id="LOCAL-00006" summary="Circles moded, Random, Json, +libs">
-      <created>1486730952852</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1486730952852</updated>
+      <workItem from="1588090384890" duration="1759000" />
+      <workItem from="1588148406510" duration="4318000" />
+      <workItem from="1588205222294" duration="1664000" />
+      <workItem from="1588232344424" duration="1044000" />
+      <workItem from="1588375555517" duration="4649000" />
     </task>
     <task id="LOCAL-00007" summary="Boxes in Circles">
       <created>1486953788868</created>
@@ -1135,7 +1125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585077563222</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="April 2020">
+      <created>1588093909099</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1588093909099</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1184,7 +1181,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Console.config.tracing - logchw/warnchw stack added into deafult flash trace." />
     <MESSAGE value="AirMain.exe" />
     <MESSAGE value="WatermarkTest.as&#10;Test_Bitwise.as&#10;Test_ColorARGB.as" />
     <MESSAGE value="Fonts" />
@@ -1209,7 +1205,8 @@
     <MESSAGE value="Chance" />
     <MESSAGE value="Chance Mulligan fixed and Partly added" />
     <MESSAGE value="Chance:&#10;Many decks support&#10;Coin and no Coin different turn limit&#10;Combo code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chance:&#10;Many decks support&#10;Coin and no Coin different turn limit&#10;Combo code" />
+    <MESSAGE value="April 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="April 2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1166" y="241" key="#Test_AdobeAnimateComponents" timestamp="1586952541329">
@@ -1228,6 +1225,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="237" key="#Test_ArrayRandomize/0.0.1920.1040@0.0.1920.1040" timestamp="1588093742023" />
+    <state x="686" y="237" key="#Test_AutomaticMouseAndKeyboard" timestamp="1588376031640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="237" key="#Test_AutomaticMouseAndKeyboard/0.0.1920.1040@0.0.1920.1040" timestamp="1588376031640" />
     <state x="686" y="237" key="#Test_Chances" timestamp="1583997423274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1236,6 +1237,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="237" key="#Test_JavaScripFeatures/0.0.1920.1040@0.0.1920.1040" timestamp="1586130777181" />
+    <state x="686" y="237" key="#Test_Object" timestamp="1588206721244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="237" key="#Test_Object/0.0.1920.1040@0.0.1920.1040" timestamp="1588206721244" />
     <state x="1166" y="241" key="#Test_Performance" timestamp="1586961325538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1256,10 +1261,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="228" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1584552536468" />
-    <state x="627" y="117" width="1139" height="805" key="CommitChangelistDialog2" timestamp="1585077560090">
+    <state x="627" y="117" width="1139" height="805" key="CommitChangelistDialog2" timestamp="1588093906285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="117" width="1139" height="805" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585077560090" />
+    <state x="627" y="117" width="1139" height="805" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588093906285" />
     <state width="498" height="466" key="DebuggerActiveHint" timestamp="1586953061552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1272,22 +1277,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="921" y="346" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586961323577" />
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom" timestamp="1588093855902">
+    <state width="618" height="339" key="GridCell.Tab.0.bottom" timestamp="1588380907521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588093855902" />
-    <state width="1877" height="340" key="GridCell.Tab.0.center" timestamp="1588093855902">
+    <state width="618" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588380907521" />
+    <state width="618" height="339" key="GridCell.Tab.0.center" timestamp="1588380907521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588093855902" />
-    <state width="1877" height="340" key="GridCell.Tab.0.left" timestamp="1588093855902">
+    <state width="618" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588380907521" />
+    <state width="618" height="339" key="GridCell.Tab.0.left" timestamp="1588380907521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588093855902" />
-    <state width="1877" height="340" key="GridCell.Tab.0.right" timestamp="1588093855902">
+    <state width="618" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588380907521" />
+    <state width="618" height="339" key="GridCell.Tab.0.right" timestamp="1588380907521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588093855902" />
+    <state width="618" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588380907521" />
     <state x="807" y="232" key="RollbackChangesDialog" timestamp="1585077433048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1300,18 +1305,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="555" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1586968707169" />
-    <state x="820" y="226" key="VCS.ChangeListViewerDialog" timestamp="1584555557363">
+    <state x="820" y="226" key="VCS.ChangeListViewerDialog" timestamp="1588206583331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584555557363" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585077565464">
+    <state x="820" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588206583331" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1588093910837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585077565464" />
-    <state x="667" y="161" width="801" height="717" key="find.popup" timestamp="1586956703552">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588093910837" />
+    <state x="667" y="161" width="801" height="717" key="find.popup" timestamp="1588377942997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="161" width="801" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586956703552" />
+    <state x="667" y="161" width="801" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588377942997" />
     <state x="342" y="145" key="new project wizard" timestamp="1586119607657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

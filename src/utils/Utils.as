@@ -29,10 +29,10 @@ public class Utils {
     }
 
 
-    public static function mergeObjects(main:Object, second:Object, override:Boolean = false):void {
+    public static function mergeObjects(main:Object, second:Object, overrideMain:Boolean = false):void {
         var i:Object;
         for (i in second) {
-            if (override || !main[i]) {
+            if (overrideMain || !main[i]) {
                 main[i] = second[i];
             }
         }
@@ -162,9 +162,9 @@ public class Utils {
         return box;
     }
 
-    public static function drawButton():Sprite {
+    public static function drawButton(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Sprite {
         var s:Sprite = new Sprite();
-        s.addChild(drawBox());
+        s.addChild(drawBox(x, y, w, h, angle, color, alpha, borderColor));
         return s;
     }
 
