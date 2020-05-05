@@ -388,6 +388,13 @@ public class Utils {
         return string;
     }
 
+    public static function removeTabsAndNewLines($str:String):String
+    {
+        var rex:RegExp = /(\t|\n|\r)/gi;
+        $str = $str.replace(rex,'');
+        return $str;
+    }
+
     public static function getPrefix(value:*):String {
         var prefix:String = getQualifiedClassName(value);
         return prefix ? prefix.substr(0, prefix.lastIndexOf(":") + 1) : null;
