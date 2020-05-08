@@ -23,7 +23,7 @@ package study
             shoot(7);
             
             button = new Sprite();
-            button.addChild(Utils.drawBox());
+            button.addChild(Utils.createBox());
             button.addEventListener(MouseEvent.CLICK, button_clickHandler);
             addChild(button);
             

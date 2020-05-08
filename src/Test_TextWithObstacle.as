@@ -46,7 +46,7 @@ public class Test_TextWithObstacle extends Sprite {
         box.alpha = 0.5;
         box.x = 450;
         box.y = 117;
-        box.addChild(Utils.drawBox());
+        box.addChild(Utils.createBox());
         addChild(box);
 
         box2 = new Sprite();
@@ -54,7 +54,7 @@ public class Test_TextWithObstacle extends Sprite {
         box2.x = 550;
         box2.y = 171;
         box2.rotation = 35;
-        box2.addChild(Utils.drawBox());
+        box2.addChild(Utils.createBox());
         addChild(box2);
 
         obstacleTF = new ObstacleTextField(tf, [box, box2], true);

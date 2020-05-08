@@ -10,7 +10,7 @@ public class Test_MouseEvents extends Sprite {
     private var box:Shape;
     public function Test_MouseEvents() {
         var container:MovieClip = new MovieClip();
-        box = Utils.drawBox(100,100,200,200,0,0xffff00);
+        box = Utils.createBox(100,100,200,200,0,0xffff00);
         box.name = "box";
         addChild(container);
         container.addChild(box);

@@ -147,7 +147,7 @@ public class Utils {
         return Math.floor(Math.random() * (max + 1 - min)) + min;
     }
 
-    public static function drawBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Shape {
+    public static function createBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Shape {
         //trace("drawBox",arguments)
         var box:Shape = new Shape();
         box.graphics.lineStyle(1, borderColor, .75);
@@ -162,9 +162,9 @@ public class Utils {
         return box;
     }
 
-    public static function drawButton(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Sprite {
+    public static function createButton(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Sprite {
         var s:Sprite = new Sprite();
-        s.addChild(drawBox(x, y, w, h, angle, color, alpha, borderColor));
+        s.addChild(createBox(x, y, w, h, angle, color, alpha, borderColor));
         return s;
     }
 
@@ -607,6 +607,16 @@ public class Utils {
             }
         }
         return true;
+    }
+
+    public static function isNumber(value:String):Boolean {
+        return /[0-9]/.test(value);
+    }
+    public static function isUpperCase(value:String):Boolean {
+        return /[A-Z]/.test(value);
+    }
+    public static function isLowerCase(value:String):Boolean {
+        return /[a-z]/.test(value);
     }
 }
 }

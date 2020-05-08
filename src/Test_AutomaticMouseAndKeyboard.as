@@ -36,7 +36,7 @@ class ButtonWithCounter extends Sprite {
     private var tf:TextField = new TextField();
 
     function ButtonWithCounter() {
-        sprite = Utils.drawButton(0, 0, Test_AutomaticMouseAndKeyboard.BUTTON_SIZE, Test_AutomaticMouseAndKeyboard.BUTTON_SIZE);
+        sprite = Utils.createButton(0, 0, Test_AutomaticMouseAndKeyboard.BUTTON_SIZE, Test_AutomaticMouseAndKeyboard.BUTTON_SIZE);
         tf.selectable = false;
         tf.mouseEnabled = false;
         tf.width = tf.height = Test_AutomaticMouseAndKeyboard.BUTTON_SIZE;

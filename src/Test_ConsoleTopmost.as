@@ -9,7 +9,7 @@ package {
 	import utils.Utils;
 	
 	public class Test_ConsoleTopmost extends Sprite {
-		private var box:Shape = Utils.drawBox();
+		private var box:Shape = Utils.createBox();
 		public function Test_ConsoleTopmost() {
 			Cc.start(this);
 			addChildAt(box, this.numChildren );

@@ -47,7 +47,7 @@ public class Test_MemoryAddChild extends MovieClip{
             currentMcName = "button" + i;
             currentMc = new MovieClip();
             currentMc.x = 100 * (i - 1);
-            currentMc.addChild(Utils.drawBox());
+            currentMc.addChild(Utils.createBox());
             currentMc.name = currentMcName;
             currentMc.addEventListener(MouseEvent.CLICK, onClick);
             addChild(currentMc);
@@ -116,7 +116,7 @@ public class Test_MemoryAddChild extends MovieClip{
         addChild(container1);
 
         mc = new MovieClip();
-        mc.addChild(Utils.drawBox());
+        mc.addChild(Utils.createBox());
         container0.addChild(mc);
 
         stage.addEventListener(Event.ENTER_FRAME, enterFrame);
@@ -128,11 +128,11 @@ public class Test_MemoryAddChild extends MovieClip{
         switch (strategy){
             case CREATING:
                 // 12.10368 / 12.14464
-                Utils.drawBox();
+                Utils.createBox();
                 break;
             case CREATING_ADD_CHILD:
                 // 12.10368 / 12.14464
-                container0.addChild(Utils.drawBox());
+                container0.addChild(Utils.createBox());
                 break;
             case RE_ADD_CHILD:
                 // 11.382784 / 11.575296

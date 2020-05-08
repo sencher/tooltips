@@ -16,7 +16,7 @@ public class Test_FontSize extends Sprite {
         tf.border = true;
         addChild(tf);
 
-        var space:Shape = Utils.drawBox(0,0,SPACE,SPACE);
+        var space:Shape = Utils.createBox(0,0,SPACE,SPACE);
         space.alpha = 0.2;
         space.x = tf.width - SPACE;
         addChild(space);

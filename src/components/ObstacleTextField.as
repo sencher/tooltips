@@ -42,9 +42,9 @@ public class ObstacleTextField extends TextField {
         evasionStrategy = 0;
         if (debug && (!debugBoxes || debugBoxes.length != obstacles.length + 1)) {
             reInitDebug();
-            debugBoxes.push(Utils.drawBox(0, 0, 100, 100, 0, 0xaa0000, 0.5));
+            debugBoxes.push(Utils.createBox(0, 0, 100, 100, 0, 0xaa0000, 0.5));
             for (var i:int = 0; i < obstacles.length; i++) {
-                debugBoxes.push(Utils.drawBox(0, 0, 100, 100, 0, 0x00aa00, 0.5));
+                debugBoxes.push(Utils.createBox(0, 0, 100, 100, 0, 0x00aa00, 0.5));
             }
         }
 

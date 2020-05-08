@@ -97,7 +97,7 @@ import utils.Utils;
 class Box extends Sprite{
 	private var shape:Shape;
 	public function Box(xx:int, yy:int) {
-		shape = Utils.drawBox(xx, yy);
+		shape = Utils.createBox(xx, yy);
 		addChild(shape);
 	}
 	

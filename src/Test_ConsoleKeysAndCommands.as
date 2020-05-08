@@ -84,7 +84,7 @@ class Box extends Sprite {
     private var _shape:Shape;
 
     public function Box() {
-        _shape = Utils.drawBox();
+        _shape = Utils.createBox();
         addChild(_shape);
     }
 

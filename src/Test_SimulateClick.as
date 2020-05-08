@@ -8,7 +8,7 @@ import utils.Utils;
 public class Test_SimulateClick extends Sprite {
 	private var button:Sprite;
 	public function Test_SimulateClick() {
-		button = Utils.drawButton();
+		button = Utils.createButton();
 		button.addEventListener(MouseEvent.CLICK, onClick);
 		addChild(button);
 		button.dispatchEvent(new MouseEvent(MouseEvent.CLICK));

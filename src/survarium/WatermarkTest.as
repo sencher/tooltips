@@ -68,7 +68,7 @@ package survarium {
 		};
 		
 		public function WatermarkTest() {
-			var box = Utils.drawBox(0,0,1920,1080);
+			var box = Utils.createBox(0,0,1920,1080);
 			addChild(box);
 			
 			Cc.start(this);

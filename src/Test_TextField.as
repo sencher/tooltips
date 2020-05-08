@@ -13,7 +13,7 @@ public class Test_TextField extends Sprite {
     private var box:Shape;
     public function Test_TextField() {
 
-        box = Utils.drawBox(100,100,300,100);
+        box = Utils.createBox(100,100,300,100);
         addChild(box);
         var f:TextFormat = new TextFormat();
         f.font = "Courier";
