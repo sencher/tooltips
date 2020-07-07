@@ -591,7 +591,7 @@ public class Utils {
         value.addChild(textField);
     }
 
-    public static function traceTf(value:*, index:int = 0, arr:Array = null):void {
+    public static function traceTf(...value):void {
         textField.appendText(value + "\n");
         textField.scrollV = textField.maxScrollV;
     }
@@ -617,6 +617,20 @@ public class Utils {
     }
     public static function isLowerCase(value:String):Boolean {
         return /[a-z]/.test(value);
+    }
+
+    public static function patternOccurrences(pattern:String, target:String):uint {
+        return target.match(new RegExp(pattern, "g")).length;
+    }
+
+    public static function patternOccurrencesOverlayed(pattern:String, target:String):uint {
+        var counter:int = 0;
+        for (var i:int = 0; i < target.length; i++) {
+            if (target.substr(i, pattern.length) == pattern) {
+                counter++;
+            }
+        }
+        return counter;
     }
 }
 }
