@@ -25,28 +25,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Cube4to6Translator.as">
-      <change afterPath="$PROJECT_DIR$/src/Test_Cards.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Test_Cards3InARow.as">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tooltips.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tooltips.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CheatEngine.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Cube4Fixer.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Cube4Fixer.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Cube4to6Translator.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_AdobeAnimateComponents.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_ArrayCompare.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_ArrayCopyReverse.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_ArrayRandomize.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_AutomaticMouseAndKeyboard.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Chances.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Chances_Math.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_JavaScripFeatures.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Object.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Performance.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_RegexpCheck.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Test_Study.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_ConsoleAutoscope.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ConsoleAutoscope.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +139,7 @@
       <recent name="ideaRefactoring.RefactoringB" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_Cards3InARow">
+  <component name="RunManager" selected="Flash App.Test_ConsoleAddons">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -464,6 +446,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_ConsoleAddons" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_ConsoleAddons" />
+      <option name="overriddenOutputFileName" value="Test_ConsoleAddons.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test_ExternalInterface HTML" type="FlashRunConfigurationType">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
@@ -500,45 +521,6 @@
       <option name="url" value="$PROJECT_DIR$/out/Test_ExternalInterface.html" />
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
-    </configuration>
-    <configuration name="Test_RegexpCheck" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_RegexpCheck" />
-      <option name="overriddenOutputFileName" value="Test_RegexpCheck.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType">
       <option name="BCName" value="Test" />
@@ -653,17 +635,17 @@
       <item itemvalue="Flash App.AirMainModule" />
       <item itemvalue="Flash App.Cube4to6Translator" />
       <item itemvalue="Flash App.Cube4Fixer" />
-      <item itemvalue="Flash App.Test_RegexpCheck" />
       <item itemvalue="Flash App.CheatEngine" />
       <item itemvalue="Flash App.Test_Cards3InARow" />
+      <item itemvalue="Flash App.Test_ConsoleAddons" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flash App.Test_ConsoleAddons" />
         <item itemvalue="Flash App.Test_Cards3InARow" />
         <item itemvalue="Flash App.Cube4Fixer" />
         <item itemvalue="Flash App.CheatEngine" />
         <item itemvalue="Flash App.Cube4to6Translator" />
-        <item itemvalue="Flash App.Test_RegexpCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -818,14 +800,7 @@
       <workItem from="1592491740651" duration="1501000" />
       <workItem from="1593705680939" duration="3886000" />
       <workItem from="1593733069560" duration="3242000" />
-      <workItem from="1594122278110" duration="357000" />
-    </task>
-    <task id="LOCAL-00009" summary="Addition Compiler Options.txt&#10;Test_LoaderLocal.as&#10;Test_StageScale.as&#10;Test_UncaughtErrorEvent.as">
-      <created>1502723904487</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1502723904487</updated>
+      <workItem from="1594122278110" duration="1777000" />
     </task>
     <task id="LOCAL-00010" summary="Vostok Games many tools">
       <created>1504273865644</created>
@@ -1163,7 +1138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588639610868</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Test_Cards3InARow.as">
+      <created>1594122831597</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1594122831597</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1267,7 +1249,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fonts" />
     <MESSAGE value="Git Recipes.txt&#10;Test_HtmlColorsText.as" />
     <MESSAGE value="Application Domain&#10;Idea refactoring&#10;Minor fixes" />
     <MESSAGE value="Console - tracingLevel, ignore textField focus" />
@@ -1292,7 +1273,8 @@
     <MESSAGE value="April 2020" />
     <MESSAGE value="Test_AutomaticMouseAndKeyboard.as" />
     <MESSAGE value="Cube4to6Translator.as" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cube4to6Translator.as" />
+    <MESSAGE value="Test_Cards3InARow.as" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test_Cards3InARow.as" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1051" y="237" key="#CheatEngine" timestamp="1588893559697">
@@ -1331,6 +1313,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="663" y="237" key="#Test_Cards/0.0.1920.1160@0.0.1920.1160" timestamp="1593730783996" />
+    <state x="663" y="237" key="#Test_ConsoleAddons" timestamp="1594122921318">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="663" y="237" key="#Test_ConsoleAddons/0.0.1920.1160@0.0.1920.1160" timestamp="1594122921318" />
     <state x="686" y="237" key="#Test_JavaScripFeatures" timestamp="1586130777181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1368,10 +1354,10 @@
     </state>
     <state width="498" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1588876749050" />
     <state width="503" height="520" key="DebuggerActiveHint/0.0.1920.1160@0.0.1920.1160" timestamp="1593734722078" />
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1594122724562">
+    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1594124055681">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594122724562" />
+    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594124055681" />
     <state x="921" y="386" key="FileChooserDialogImpl" timestamp="1592489211446">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1422,32 +1408,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="555" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1586968707169" />
-    <state x="820" y="252" key="VCS.ChangeListViewerDialog" timestamp="1593706364142">
+    <state x="1204" y="315" key="VCS.ChangeListViewerDialog" timestamp="1594123971673">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="820" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588206583331" />
-    <state x="820" y="252" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1593706364142" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1588639669905">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1204" y="315" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594123971673" />
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2" timestamp="1594122833582">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588639669905" />
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1594122833582" />
     <state x="776" y="357" key="chooseDestDirectoryDialog" timestamp="1594122617370">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="776" y="357" key="chooseDestDirectoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594122617370" />
-    <state x="667" y="161" width="801" height="717" key="find.popup" timestamp="1588547322083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="667" y="180" width="801" height="800" key="find.popup" timestamp="1594123889634">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="667" y="161" width="801" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588547322083" />
+    <state x="667" y="180" width="801" height="800" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1594123889634" />
     <state x="342" y="145" key="new project wizard" timestamp="1586119607657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="145" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586119607657" />
-    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup" timestamp="1593730885272">
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup" timestamp="1594123565283">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588869171063" />
-    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1593730885272" />
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1594123565283" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

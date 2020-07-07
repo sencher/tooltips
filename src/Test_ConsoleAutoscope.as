@@ -15,4 +15,4 @@ package {
 	}
 }
 
-class
+//class

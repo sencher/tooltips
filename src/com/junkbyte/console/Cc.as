@@ -23,10 +23,6 @@
 * 
 */
 package com.junkbyte.console {
-	import com.junkbyte.console.ConsoleConfig;
-	import com.junkbyte.console.core.ConsoleTools;
-	import com.junkbyte.console.core.LogReferences;
-	
 	import flash.display.LoaderInfo;
 	import flash.display.DisplayObject;
 	import flash.display.DisplayObjectContainer;
@@ -41,16 +37,16 @@ package com.junkbyte.console {
 	 * and all other calls through Cc will stop working silently.
 	 * </p>
 	 * @author  Lu Aye Oo
-	 * @version 2.4
+	 * @version 2.71
 	 * @see http://code.google.com/p/flash-console/
 	 * @see #start()
 	 * @see #startOnStage()
 	 */
 	public class Cc{
-		
+
 		private static var _console:Console;
 		private static var _config:ConsoleConfig;
-		
+
 		/**
 		 * Returns ConsoleConfig used or to be used - to start console.
 		 * It is recommended to set the values via <code>Cc.config</code> before starting console.
@@ -60,7 +56,7 @@ package com.junkbyte.console {
 			if(!_config) _config = new ConsoleConfig();
 			return _config;
 		}
-		
+
 		/**
 		 * Start Console inside given Display.
 		 * <p>
@@ -115,7 +111,7 @@ package com.junkbyte.console {
 			}
 		}
 		//
-		// LOGGING 
+		// LOGGING
 		//
 		/**
 		 * Add log line to default channel
@@ -203,7 +199,7 @@ package com.junkbyte.console {
 		public static function logch(channel:*, ...strings):void{
 			if(_console) _console.addCh(channel, strings, Console.LOG);
 		}
-		
+
 		/**
 		 * Add log line with priority 1 to channel with whoCalledThis
 		 * Allows multiple arguments for convenience use.
@@ -217,7 +213,7 @@ package com.junkbyte.console {
 			if(stack) strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
 			_console.addCh(channel, strings, Console.LOG, false, true);
 		}
-		
+
 		/**
 		 * Add log line with priority 3 to channel
 		 * Allows multiple arguments for convenience use.
@@ -248,7 +244,7 @@ package com.junkbyte.console {
 		public static function warnch(channel:*, ...strings):void{
 			if(_console) _console.addCh(channel, strings, Console.WARN);
 		}
-		
+
 		/*
 		 * Add log line with priority 7 to channel with whoCalledThis
 		 * Allows multiple arguments for convenience use.
@@ -262,7 +258,7 @@ package com.junkbyte.console {
 			if(stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
 			_console.addCh(channel, strings, Console.WARN, false, true);
 		}
-		
+
 		/**
 		 * Add log line with priority 9 to channel
 		 * Allows multiple arguments for convenience use.
@@ -805,7 +801,7 @@ package com.junkbyte.console {
 		public static function get instance():Console{
 			return _console;
 		}
-		
+
 		//
 		private static function addedToStageHandle(e:Event):void{
 			var mc:DisplayObjectContainer = e.currentTarget as DisplayObjectContainer;
@@ -814,7 +810,7 @@ package com.junkbyte.console {
 				mc.stage.addChild(_console);
 			}
 		}
-		
+
 		public static function setScale(value:Number):void {
 			if(_console) _console.scaleX = _console.scaleY = value;
 		}
