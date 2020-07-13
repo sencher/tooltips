@@ -1,24 +1,52 @@
 /**
  * Created by S.Senkov on 09.02.2017.
  */
-package
-{
-	import flash.display.Sprite;
+package {
+import flash.display.Sprite;
 
 import utils.Utils;
 
-public class Test_Random extends Sprite
-	{
-		private var array:Array = [0,0,0,0,0];
-		public function Test_Random()
-		{
-			for (var i:int = 0; i< 1000; i++) {
-				//var rnd = Math.floor(Math.random() * 5); // 0-4
-				var rnd = Utils.getRandom(0,4);
-				array[rnd] += 1;
-			}
-			
-			trace(array, array[0]+array[1]+array[2]+array[3]+array[4]);
-		}
-	}
+public class Test_Random extends Sprite {
+    private var array:Array;
+    
+    public function Test_Random() {
+        
+        generateArray(0, 4);
+        for (var i:int = 0; i < 1000; i++) {
+            var rnd = Utils.getRandom(0, 4, [2]);
+            array[rnd] += 1;
+        }
+        trace(array);
+        
+        generateArray(1, 5);
+        for (var i:int = 0; i < 1000; i++) {
+            var rnd = Utils.getRandom(1,5,[1,2,3,4]);
+            array[rnd] += 1;
+        }
+        trace(array);
+        
+        generateArray(1, 5);
+        for (var i:int = 0; i < 1000; i++) {
+            var rnd = Utils.getRandom(1,5,[1,2,3,4,5]);
+            array[rnd] += 1;
+        }
+        trace(array);
+        
+        generateArray(10, 20);
+        for (var i:int = 0; i < 1000; i++) {
+            var rnd = Utils.getRandom(10,20,[1,2,13,4,15]);
+            array[rnd] += 1;
+        }
+        trace(array);
+
+    }
+    
+    private function generateArray(min:int, max:int):void {
+        array = [];
+        for (var i:int = min; i < max + 1; i++) {
+            array[i] = 0;
+        }
+        
+    }
+}
 }

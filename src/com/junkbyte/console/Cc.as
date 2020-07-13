@@ -23,13 +23,16 @@
 * 
 */
 package com.junkbyte.console {
-	import flash.display.LoaderInfo;
+import flash.display.DisplayObject;
+import flash.display.LoaderInfo;
 	import flash.display.DisplayObject;
 	import flash.display.DisplayObjectContainer;
 	import flash.events.Event;
-	import flash.geom.Rectangle;
+import flash.events.KeyboardEvent;
+import flash.geom.Rectangle;
+import flash.ui.Keyboard;
 
-	/**
+/**
 	 * Cc stands for Console Controller.
 	 * It is a singleton controller for <code>Console (com.junkbyte.console.Console)</code>.
 	 * <p>
@@ -37,7 +40,7 @@ package com.junkbyte.console {
 	 * and all other calls through Cc will stop working silently.
 	 * </p>
 	 * @author  Lu Aye Oo
-	 * @version 2.71
+	 * @version 2.72
 	 * @see http://code.google.com/p/flash-console/
 	 * @see #start()
 	 * @see #startOnStage()
@@ -71,15 +74,18 @@ package com.junkbyte.console {
 		 * 			Must be ASCII chars. Example passwords: ` OR debug.
 		 * 			Password will not trigger if you have focus on an input TextField.
 		 */
-		public static function start(container:DisplayObjectContainer, password:String = ""):void{
-			if(_console){
-				if(container && !_console.parent) container.addChild(_console);
-			}else{
+		public static function start(container:DisplayObjectContainer, password:String = ""):void {
+			if (_console) {
+				if (container && !_console.parent) container.addChild(_console);
+			} else {
 				_console = new Console(password, config);
 				// if no parent display, console will always be hidden, but using Cc.remoting is still possible so its not the end.
-				if(container) container.addChild(_console);
+				if (container) container.addChild(_console);
 			}
+			visible = true;
+			container.stage.addEventListener(KeyboardEvent.KEY_UP, stage_keyDownHandler);
 		}
+
 		/**
 		 * Start Console in top level (Stage).
 		 * Starting in stage makes sure console is added at the very top level.
@@ -675,6 +681,100 @@ package com.junkbyte.console {
 		}
 		public static function set visible(v:Boolean):void{
 			if(_console) _console.visible = v;
+		}
+	
+		private static function stage_keyDownHandler(event:KeyboardEvent):void {
+			if (event.keyCode == Keyboard.BACKQUOTE) {
+				visible = !visible;
+				return;
+			}
+			
+			if (event.ctrlKey && event.altKey) {
+				var cw:Number = _console.parent.width;
+				var ch:Number = _console.parent.height;
+				switch (event.keyCode) {
+					case Keyboard.UP:
+						x = y = 0;
+						width = cw;
+						height = ch / 2;
+						break;
+					case Keyboard.DOWN:
+						x = 0;
+						y = ch / 2;
+						width = cw;
+						height = ch / 2;
+						break;
+					case Keyboard.LEFT:
+						x = y = 0;
+						width = cw / 2;
+						height = ch;
+						break;
+					case Keyboard.RIGHT:
+						x = cw / 2;
+						y = 0;
+						width = cw / 2;
+						height = ch;
+						break;
+					case Keyboard.NUMPAD_7:
+						x = y = 0;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_8:
+						x = cw * .33;
+						y = 0;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_9:
+						x = cw * .66;
+						y = 0;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_4:
+						x = 0;
+						y = ch * .33;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_5:
+						x = cw * .33;
+						y = ch * .33;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_6:
+						x = cw * .66;
+						y = ch * .33;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_1:
+						x = 0;
+						y = ch * .66;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_2:
+						x = cw * .33;
+						y = ch * .66;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_3:
+						x = cw * .66;
+						y = ch * .66;
+						width = cw * .33;
+						height = ch * .33;
+						break;
+					case Keyboard.NUMPAD_0:
+						x = y = 0;
+						width = cw;
+						height = ch;
+						break;
+				}
+			}
 		}
 		/**
 		 * Start/stop FPS monitor graph.

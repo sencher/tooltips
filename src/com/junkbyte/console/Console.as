@@ -55,7 +55,7 @@ package com.junkbyte.console
 	 */
 	public class Console extends Sprite {
 
-		public static const VERSION:Number = 2.71;
+		public static const VERSION:Number = 2.72;
 		public static const VERSION_STAGE:String = "";
 		public static const BUILD:int = 611;
 		public static const BUILD_DATE:String = "2017/09/15 16:00";
@@ -133,6 +133,8 @@ package com.junkbyte.console
 			_config.style.updateStyleSheet();
 			_panels = new PanelsManager(this);
 			if(password) visible = false;
+			setRollerCaptureKey("x");
+
 			
 			//report("<b>Console v"+VERSION+VERSION_STAGE+" b"+BUILD+". Happy coding!</b>", -2);
 			report("<b>Console v"+VERSION+VERSION_STAGE+"</b> build "+BUILD+". "+Capabilities.playerType+" "+Capabilities.version+".", -2);

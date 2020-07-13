@@ -142,13 +142,37 @@ public class Utils {
         }
         return true;
     }
-
-    public static function getRandom(min:int, max:int):int {
-        return Math.floor(Math.random() * (max + 1 - min)) + min;
+    
+    public static function splitStringIntoNumbersArray(value:String, delim:*):Array {
+        var array:Array = value.split(delim);
+        var n:int = array.length;
+        while (n--) {
+            array[n] = Number(array[n])
+        }
+        return array;
+    }
+    
+    public static function getRandom(min:int, max:int, exclude:Array = null):int {
+        if (exclude && exclude.length) {
+            var pool:Array = [];
+            for (var i:int = min; i < max + 1; i++) {
+                if (exclude.indexOf(i) < 0) {
+                    pool.push(i);
+                }
+            }
+        
+            if (pool.length < 1) {
+                return null;
+            } else {
+                return pool[Math.floor(Math.random() * (pool.length))];
+            }
+        } else {
+            return Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
     }
 
     public static function createBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Shape {
-        //trace("drawBox",arguments)
+        //trace("createBox",arguments)
         var box:Shape = new Shape();
         box.graphics.lineStyle(1, borderColor, .75);
         box.graphics.beginFill(color);
