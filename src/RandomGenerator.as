@@ -74,7 +74,14 @@ public class RandomGenerator extends Sprite {
     }
     
     private function generateButton_clickHandler(event:MouseEvent):void {
-        resultTF.text = String(Utils.getRandom(int(minTF.text), int(maxTF.text), Utils.splitStringIntoNumbersArray(excludeTF.text, " ")));
+        var min:int = int(minTF.text);
+        var max:int = int(maxTF.text);
+        var result:int = Utils.getRandom(min, max, Utils.splitStringIntoNumbersArray(excludeTF.text, " "));
+        if (result == 0 && (min > 0 || max < 0)) {
+            resultTF.text = "not found";
+        }else{
+            resultTF.text = String(result);
+        }
     }
 }
 }

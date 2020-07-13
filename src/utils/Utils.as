@@ -144,6 +144,9 @@ public class Utils {
     }
     
     public static function splitStringIntoNumbersArray(value:String, delim:*):Array {
+        if(!value){
+            return [];
+        }
         var array:Array = value.split(delim);
         var n:int = array.length;
         while (n--) {
@@ -162,7 +165,7 @@ public class Utils {
             }
         
             if (pool.length < 1) {
-                return null;
+                return 0;
             } else {
                 return pool[Math.floor(Math.random() * (pool.length))];
             }
@@ -631,6 +634,14 @@ public class Utils {
             }
         }
         return true;
+    }
+    
+    public static function traceArrayWithIndexes(value:*):void{
+        var result:String = "***\n";
+        for (var key:* in value){
+            result += "[" + key + "]" + value[key] + "\n";
+        }
+        trace(result);
     }
 
     public static function isNumber(value:String):Boolean {

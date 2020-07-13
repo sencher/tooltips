@@ -24,10 +24,9 @@
 */
 package com.junkbyte.console {
 import flash.display.DisplayObject;
+import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
-	import flash.display.DisplayObject;
-	import flash.display.DisplayObjectContainer;
-	import flash.events.Event;
+import flash.events.Event;
 import flash.events.KeyboardEvent;
 import flash.geom.Rectangle;
 import flash.ui.Keyboard;
@@ -684,14 +683,14 @@ import flash.ui.Keyboard;
 		}
 	
 		private static function stage_keyDownHandler(event:KeyboardEvent):void {
-			if (event.keyCode == Keyboard.BACKQUOTE) {
+			if (event.keyCode == Keyboard.BACKQUOTE || (event.keyCode == Keyboard.A && event.altKey == true)) {
 				visible = !visible;
 				return;
 			}
 			
 			if (event.ctrlKey && event.altKey) {
-				var cw:Number = _console.parent.width;
-				var ch:Number = _console.parent.height;
+				var cw:Number = _console.stage.stageWidth;
+				var ch:Number = _console.stage.stageHeight;
 				switch (event.keyCode) {
 					case Keyboard.UP:
 						x = y = 0;
