@@ -26,6 +26,7 @@ import utils.Utils;
 			}
 //			stage.addEventListener(KeyboardEvent.KEY_DOWN, container_keyDownHandler)
 //			stage.addEventListener(KeyboardEvent.KEY_UP, container_keyDownHandler)
+			Cc.logch(Utils, "init");
 		}
 
 	private function container_keyDownHandler(event:KeyboardEvent):void {

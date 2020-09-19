@@ -112,25 +112,25 @@ public class Cube4Fixer extends Sprite {
 
     protected function findParts(value:String):Vector.<CubeMove> {
         var result:Vector.<CubeMove> = new Vector.<CubeMove>();
-        var temp:String = "";
+        var currentChar:String = "";
         var cubeMove:CubeMove;
 
         for (var i:int = 0; i < value.length; i++) {
             cubeMove = new CubeMove();
-            temp = value.substr(i, 1);
+            currentChar = value.substr(i, 1);
             //detect comment
-            if(temp == "/"){
+            if(currentChar == "/"){
                 cubeMove.move = value.substr(i);
                 result.push(cubeMove);
                 break;
-            }else if(temp == " "){
+            }else if(currentChar == " "){
                 continue;
             }
 
             //detect rows
-            if(Utils.isNumber(temp)){
-                    temp = value.substr(i + 1, 1);
-                    switch (temp) {
+            if(Utils.isNumber(currentChar)){
+                    currentChar = value.substr(i + 1, 1);
+                    switch (currentChar) {
                         case "-":
                             cubeMove.rows = value.substr(i , 3);
                             i += 3;
@@ -143,8 +143,8 @@ public class Cube4Fixer extends Sprite {
             }
 
             //detect move
-            temp = value.substr(i + 1, 1);
-            switch (temp) {
+            currentChar = value.substr(i + 1, 1);
+            switch (currentChar) {
                 case "w":
                     cubeMove.move = value.substr(i, 2);
                     i += 2;
@@ -156,16 +156,16 @@ public class Cube4Fixer extends Sprite {
             }
 
             //detect repeats
-            temp = value.substr(i, 1);
-            if(Utils.isNumber(temp)){
-                cubeMove.repeats = int(temp);
+            currentChar = value.substr(i, 1);
+            if(Utils.isNumber(currentChar)){
+                cubeMove.repeats = int(currentChar);
                 i++;
             }
 
             //detect invert
             if(cubeMove.repeats != 2) {
-                temp = value.substr(i, 1);
-                if (temp == "\'") {
+                currentChar = value.substr(i, 1);
+                if (currentChar == "\'") {
                     cubeMove.invert = true;
                 } else {
                     i--;

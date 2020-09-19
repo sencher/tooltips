@@ -53,10 +53,12 @@ public class RandomGenerator extends Sprite {
         minTF.y = maxTF.y = excludeTF.y = INPUT_Y_PADDING;
         minTF.type = maxTF.type = excludeTF.type = TextFieldType.INPUT;
         minTF.defaultTextFormat = maxTF.defaultTextFormat = excludeTF.defaultTextFormat = resultTF.defaultTextFormat = inputTextFormat;
+        minTF.text = "1";
         
         addChild(minTF);
         
         maxTF.x = MAXIMUM_X_POSITION;
+        maxTF.text = "10";
         addChild(maxTF);
         
         excludeTF.x = EXCLUDE_X_POSITION;

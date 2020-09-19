@@ -667,5 +667,11 @@ public class Utils {
         }
         return counter;
     }
+    
+    public static function pushIgnoreIfExist(storage:*, newElement:*):void {
+        if (storage.indexOf(newElement) < 0) {
+            storage.push(newElement);
+        }
+    }
 }
 }
