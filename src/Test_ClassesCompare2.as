@@ -10,11 +10,11 @@ public class Test_ClassesCompare2 extends Sprite {
         trace(mySprite is Sprite); // true
         trace(mySprite is DisplayObject);// true
         trace(mySprite is IEventDispatcher); // true
-
+        trace("***************");
         trace(mySprite instanceof Sprite); // true
         trace(mySprite instanceof DisplayObject);// true
         trace(mySprite instanceof IEventDispatcher); // false
-
+        trace("***************");
         trace(mySprite as Sprite);                 // [object Sprite]
         trace(mySprite as DisplayObject);                 // [object Sprite]
         trace(mySprite as IEventDispatcher);                 // [object Sprite]

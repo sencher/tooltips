@@ -20,6 +20,15 @@
             <entry library-id="cfb7cea3-b1ff-4305-8331-06f003a2b265">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="libs" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="96814c42-1f56-48e7-9172-c23e05be6cf2">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="abde6e17-141d-483f-8649-d9dd08c0b381">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler" />
         </dependencies>
@@ -125,6 +134,27 @@
         <properties id="cfb7cea3-b1ff-4305-8331-06f003a2b265" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../Program Files/Adobe/Adobe Animate 2020/Common/Configuration/Component Source/ActionScript 3.0/User Interface/ComponentShim.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="libs" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="96814c42-1f56-48e7-9172-c23e05be6cf2" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/totalWarLib.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="abde6e17-141d-483f-8649-d9dd08c0b381" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swf/robotAssistant.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

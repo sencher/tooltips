@@ -26,7 +26,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         Cc.addSlashCommand("f3", f3);
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_0), f2, [99, 8]);
         Cc.bindKey(new KeyBind(Keyboard.NUMBER_9), toggleConsoleVisibility, []);
-        Cc.setRollerCaptureKey("0");
+        //Cc.setRollerCaptureKey("0");
 
         //trace(f2(77,1))
         //trace(Extensions.isGFxPlayer);
@@ -46,7 +46,8 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         var b1:String = b.replace(/\s*(.*)/, "$1");
         trace(b1);
 
-
+        var mc:Test_SwcUsage = new Test_SwcUsage();
+        addChild(mc);
     }
 
     private function toggleConsoleVisibility():void {
