@@ -31,7 +31,7 @@ package com.junkbyte.console {
 		public var menuFont:String = "Arial";
 		
 		/** Default font size */
-		public var menuFontSize:int = 12;
+		public var menuFontSize:int = 14;
 		
 		/** Font for trace field */
 		public var traceFont:String = "Verdana";

@@ -11,16 +11,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="RandomGeneratorAdvanced">
-      <change afterPath="$PROJECT_DIR$/src/RobotAssistant.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_Base64.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_ClassesCompare3.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_SwcUsage.as" afterDir="false" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Base64, RobotAssistant">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tooltips.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tooltips.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_ClassesCompare2.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ClassesCompare2.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/swf/GHelper.swc" beforeDir="false" afterPath="$PROJECT_DIR$/src/swf/GHelper.swc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RobotAssistant.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/RobotAssistant.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,17 +197,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -819,14 +801,8 @@
       <workItem from="1600615714357" duration="1197000" />
       <workItem from="1601510390986" duration="9152000" />
       <workItem from="1601565057786" duration="12000" />
-      <workItem from="1601642277227" duration="13451000" />
-    </task>
-    <task id="LOCAL-00015" summary="com.junkbyte.console - json recursion error removed">
-      <created>1504862342981</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1504862342981</updated>
+      <workItem from="1601642277227" duration="14863000" />
+      <workItem from="1601995493478" duration="558000" />
     </task>
     <task id="LOCAL-00016" summary="com.junkbyte.console - Added logchw with whoCalledThis">
       <created>1505482099216</created>
@@ -1164,7 +1140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600529026378</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Base64, RobotAssistant">
+      <created>1601684503012</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1601684503012</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1259,7 +1242,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Additional Fonts Test" />
     <MESSAGE value="Additional Fonts Test 2" />
     <MESSAGE value="Test_TextWithObstacleContLevels.as" />
     <MESSAGE value="Test_TextWithObstacleContLevels v2" />
@@ -1284,7 +1266,8 @@
     <MESSAGE value="RandomGenerator.as&#10;Console 2.72" />
     <MESSAGE value="RandomGenerator &quot;not found&quot;" />
     <MESSAGE value="RandomGeneratorAdvanced" />
-    <option name="LAST_COMMIT_MESSAGE" value="RandomGeneratorAdvanced" />
+    <MESSAGE value="Base64, RobotAssistant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base64, RobotAssistant" />
   </component>
   <component name="WindowStateProjectService">
     <state x="752" y="266" key="#Default_Compiler_Options_For_Module_'Tooltips'" timestamp="1594571541701">
@@ -1375,22 +1358,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1877" height="388" key="GridCell.Tab.-1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1594675061393" />
-    <state width="942" height="394" key="GridCell.Tab.0.bottom" timestamp="1601683614321">
+    <state width="1877" height="394" key="GridCell.Tab.0.bottom" timestamp="1601691876498">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="942" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1601683614321" />
-    <state width="942" height="394" key="GridCell.Tab.0.center" timestamp="1601683614321">
+    <state width="1877" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
+    <state width="1877" height="394" key="GridCell.Tab.0.center" timestamp="1601691876498">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="942" height="394" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1601683614321" />
-    <state width="942" height="394" key="GridCell.Tab.0.left" timestamp="1601683614321">
+    <state width="1877" height="394" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
+    <state width="1877" height="394" key="GridCell.Tab.0.left" timestamp="1601691876498">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="942" height="394" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1601683614321" />
-    <state width="942" height="394" key="GridCell.Tab.0.right" timestamp="1601683614321">
+    <state width="1877" height="394" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
+    <state width="1877" height="394" key="GridCell.Tab.0.right" timestamp="1601691876498">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="942" height="394" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1601683614321" />
+    <state width="1877" height="394" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
     <state width="1877" height="397" key="GridCell.Tab.1.bottom" timestamp="1594678034327">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1419,10 +1402,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="1204" y="315" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601678404163" />
-    <state x="552" y="284" key="Vcs.Push.Dialog.v2" timestamp="1600529028158">
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2" timestamp="1601684504827">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1600529028158" />
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1601684504827" />
     <state width="968" height="588" key="XDebugger.FullValuePopup" timestamp="1594675261548">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

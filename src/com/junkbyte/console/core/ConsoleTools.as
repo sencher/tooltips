@@ -192,7 +192,7 @@ import flash.utils.ByteArray;
 		}
 		
 		
-		public function whoCalledThis(depth:int = 10):String{
+		public function whoCalledThis(depth:int = 100):String{
 			var e:Error = new Error();
 			var stackTrace:String = e.getStackTrace();
 			var lines:Array = stackTrace.split("\n\t");

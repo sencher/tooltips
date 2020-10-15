@@ -13,7 +13,7 @@ public class RobotAssistant extends Sprite {
     
     private static const MAX_X:int = 1750;
     private static const MAX_Y:int = 950;
-    private static const NUM_BUTTONS:int = 550;
+    private static const NUM_BUTTONS:int = 10;
     
     private var lookMode:Boolean;
     
