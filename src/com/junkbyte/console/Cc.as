@@ -39,7 +39,7 @@ import flash.ui.Keyboard;
  * and all other calls through Cc will stop working silently.
  * </p>
  * @author  Lu Aye Oo
- * @version 2.72
+ * @version 2.73
  * @see http://code.google.com/p/flash-console/
  * @see #start()
  * @see #startOnStage()
@@ -173,8 +173,26 @@ public class Cc {
     public static function logw(...strings):void {
         if (!_console) return;
         var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(Console.DEFAULT_CHANNEL, strings, Console.LOG, false, true);
+    }
+    
+    /**
+     * Add log line with priority 1 to channel with whoCalledThis.<br>
+     * Converting objects to JSON if possible.<br>
+     * Allows multiple arguments for convenience use.
+     *
+     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
+     */
+    public static function logchwj(channel:*, ...strings):void {
+        if (!_console) return;
+        for (var i:int = 0; i < strings.length; i++) {
+            strings[i] = _console.mapper.json(strings[i]);
+        }
+        var stack:String = _console.mapper.whoCalledThis();
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
+        _console.addCh(channel, strings, Console.LOG, false, true);
     }
     
     /**
@@ -187,7 +205,7 @@ public class Cc {
     public static function logchw(channel:*, ...strings):void {
         if (!_console) return;
         var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, "[Stack]"));
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(channel, strings, Console.LOG, false, true);
     }
     

@@ -16,6 +16,7 @@ import flash.text.TextFormat;
 import flash.utils.Dictionary;
 import flash.utils.describeType;
 import flash.utils.getQualifiedClassName;
+import flash.utils.getTimer;
 
 public class Utils {
     public static function trEvent(event:Event):void {
@@ -671,6 +672,12 @@ public class Utils {
     public static function pushIgnoreIfExist(storage:*, newElement:*):void {
         if (storage.indexOf(newElement) < 0) {
             storage.push(newElement);
+        }
+    }
+    
+    public static function delayCode(ms:Number):void{
+        var delayStart:Number = getTimer();
+        while (getTimer() - delayStart < ms){
         }
     }
 }

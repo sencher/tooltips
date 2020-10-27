@@ -12,8 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Base64, RobotAssistant">
+      <change afterPath="$PROJECT_DIR$/src/Array3dTest.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test_ConsoleGarbareCollector.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test_Pause.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RobotAssistant.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/RobotAssistant.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Cc.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +130,7 @@
       <recent name="ideaRefactoring.RefactoringB" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.RobotAssistant">
+  <component name="RunManager" selected="Flash App.Test_ConsoleGarbareCollector">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -201,6 +205,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AirMainModule" type="FlashRunConfigurationType">
       <option name="BCName" value="AirMainModule" />
       <option name="IOSSimulatorDevice" value="" />
@@ -230,6 +245,45 @@
       <option name="overriddenMainClass" value="" />
       <option name="overriddenOutputFileName" value="" />
       <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Array3dTest" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Array3dTest" />
+      <option name="overriddenOutputFileName" value="Array3dTest.swf" />
+      <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
       <option name="screenHeight" value="0" />
@@ -316,7 +370,7 @@
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_Base64" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ConsoleGarbareCollector" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -342,86 +396,8 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Base64" />
-      <option name="overriddenOutputFileName" value="Test_Base64.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_ClassesCompare3" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ClassesCompare3" />
-      <option name="overriddenOutputFileName" value="Test_ClassesCompare3.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_ConsoleKeysAndCommands" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_ConsoleKeysAndCommands" />
-      <option name="overriddenOutputFileName" value="Test_ConsoleKeysAndCommands.swf" />
+      <option name="overriddenMainClass" value="Test_ConsoleGarbareCollector" />
+      <option name="overriddenOutputFileName" value="Test_ConsoleGarbareCollector.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -470,7 +446,7 @@
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_SwcUsage" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Object" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -496,8 +472,47 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_SwcUsage" />
-      <option name="overriddenOutputFileName" value="Test_SwcUsage.swf" />
+      <option name="overriddenMainClass" value="Test_Object" />
+      <option name="overriddenOutputFileName" value="Test_Object.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Pause" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_Pause" />
+      <option name="overriddenOutputFileName" value="Test_Pause.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -618,11 +633,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flash App.Test_ConsoleGarbareCollector" />
+        <item itemvalue="Flash App.Test_Object" />
+        <item itemvalue="Flash App.Test_Pause" />
+        <item itemvalue="Flash App.Array3dTest" />
         <item itemvalue="Flash App.RobotAssistant" />
-        <item itemvalue="Flash App.Test_ConsoleKeysAndCommands" />
-        <item itemvalue="Flash App.Test_SwcUsage" />
-        <item itemvalue="Flash App.Test_Base64" />
-        <item itemvalue="Flash App.Test_ClassesCompare3" />
       </list>
     </recent_temporary>
   </component>
@@ -803,6 +818,12 @@
       <workItem from="1601565057786" duration="12000" />
       <workItem from="1601642277227" duration="14863000" />
       <workItem from="1601995493478" duration="558000" />
+      <workItem from="1603320925224" duration="6940000" />
+      <workItem from="1603730908221" duration="6780000" />
+      <workItem from="1603753743083" duration="74000" />
+      <workItem from="1603753898098" duration="900000" />
+      <workItem from="1603797058591" duration="599000" />
+      <workItem from="1603804594252" duration="2743000" />
     </task>
     <task id="LOCAL-00016" summary="com.junkbyte.console - Added logchw with whoCalledThis">
       <created>1505482099216</created>
@@ -1270,70 +1291,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Base64, RobotAssistant" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="752" y="266" key="#Default_Compiler_Options_For_Module_'Tooltips'" timestamp="1594571541701">
+    <state x="240" y="403" key="#Notifications" timestamp="1603740448216">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="752" y="266" key="#Default_Compiler_Options_For_Module_'Tooltips'/0.0.1920.1160@0.0.1920.1160" timestamp="1594571541701" />
-    <state x="755" y="299" key="#Default_Compiler_Options_For_Project_'test'" timestamp="1594571530396">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="755" y="299" key="#Default_Compiler_Options_For_Project_'test'/0.0.1920.1160@0.0.1920.1160" timestamp="1594571530396" />
-    <state x="663" y="237" key="#RandomGenerator" timestamp="1594571439675">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#RandomGenerator/0.0.1920.1160@0.0.1920.1160" timestamp="1594571439675" />
-    <state x="663" y="237" key="#Test_ArrayIndexes" timestamp="1594677741818">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_ArrayIndexes/0.0.1920.1160@0.0.1920.1160" timestamp="1594677741818" />
-    <state x="663" y="237" key="#Test_Cards" timestamp="1593730783996">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_Cards/0.0.1920.1160@0.0.1920.1160" timestamp="1593730783996" />
-    <state x="663" y="237" key="#Test_ConsoleAddons" timestamp="1594122921318">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_ConsoleAddons/0.0.1920.1160@0.0.1920.1160" timestamp="1594122921318" />
-    <state x="663" y="237" key="#Test_ConsoleAutoscope" timestamp="1594124466361">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_ConsoleAutoscope/0.0.1920.1160@0.0.1920.1160" timestamp="1594124466361" />
-    <state x="663" y="237" key="#Test_Math" timestamp="1594831480770">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_Math/0.0.1920.1160@0.0.1920.1160" timestamp="1594831480770" />
-    <state x="663" y="237" key="#Test_Random" timestamp="1594571234538">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_Random/0.0.1920.1160@0.0.1920.1160" timestamp="1594571234538" />
-    <state x="663" y="237" key="#Test_SpecialTypes" timestamp="1594661033985">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="663" y="237" key="#Test_SpecialTypes/0.0.1920.1160@0.0.1920.1160" timestamp="1594661033985" />
+    <state x="240" y="403" key="#Notifications/0.0.1920.1160@0.0.1920.1160" timestamp="1603740448216" />
     <state x="414" y="197" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600522715560">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="197" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1600522715560" />
-    <state x="1245" y="265" key="#com.intellij.ide.util.MemberChooser" timestamp="1594677010466">
+    <state width="527" height="520" key="DebuggerActiveHint" timestamp="1603322220486">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="1245" y="265" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594677010466" />
-    <state x="745" y="270" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594227312375">
+    <state width="527" height="520" key="DebuggerActiveHint/0.0.1920.1160@0.0.1920.1160" timestamp="1603322220486" />
+    <state x="92" y="92" width="1736" height="976" maximized="true" key="DiffContextDialog" timestamp="1603805046025">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="745" y="270" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594227312375" />
-    <state x="1120" y="315" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594210122764">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="1120" y="315" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594210122764" />
-    <state width="527" height="520" key="DebuggerActiveHint" timestamp="1601514674375">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="527" height="520" key="DebuggerActiveHint/0.0.1920.1160@0.0.1920.1160" timestamp="1601514674375" />
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1601678494837">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601678494837" />
+    <state x="92" y="92" width="1736" height="976" maximized="true" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603805046025" />
     <state x="549" y="361" key="FileChooserDialogImpl" timestamp="1601677171012">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1342,54 +1315,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="500" key="GitCloneDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601511635595" />
-    <state width="1877" height="388" key="GridCell.Tab.-1.bottom" timestamp="1594675061393">
+    <state width="1229" height="387" key="GridCell.Tab.0.bottom" timestamp="1603807131486">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="388" key="GridCell.Tab.-1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1594675061393" />
-    <state width="1877" height="388" key="GridCell.Tab.-1.center" timestamp="1594675061393">
+    <state width="1229" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1603807131486" />
+    <state width="1229" height="387" key="GridCell.Tab.0.center" timestamp="1603807131486">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="388" key="GridCell.Tab.-1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1594675061393" />
-    <state width="1877" height="388" key="GridCell.Tab.-1.left" timestamp="1594675061393">
+    <state width="1229" height="387" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1603807131486" />
+    <state width="1229" height="387" key="GridCell.Tab.0.left" timestamp="1603807131486">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="388" key="GridCell.Tab.-1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1594675061393" />
-    <state width="1877" height="388" key="GridCell.Tab.-1.right" timestamp="1594675061393">
+    <state width="1229" height="387" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1603807131486" />
+    <state width="1229" height="387" key="GridCell.Tab.0.right" timestamp="1603807131486">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="388" key="GridCell.Tab.-1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1594675061393" />
-    <state width="1877" height="394" key="GridCell.Tab.0.bottom" timestamp="1601691876498">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
-    <state width="1877" height="394" key="GridCell.Tab.0.center" timestamp="1601691876498">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
-    <state width="1877" height="394" key="GridCell.Tab.0.left" timestamp="1601691876498">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
-    <state width="1877" height="394" key="GridCell.Tab.0.right" timestamp="1601691876498">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1601691876498" />
-    <state width="1877" height="397" key="GridCell.Tab.1.bottom" timestamp="1594678034327">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1594678034327" />
-    <state width="1877" height="397" key="GridCell.Tab.1.center" timestamp="1594678034327">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1594678034327" />
-    <state width="1877" height="397" key="GridCell.Tab.1.left" timestamp="1594678034327">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1594678034327" />
-    <state width="1877" height="397" key="GridCell.Tab.1.right" timestamp="1594678034327">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1594678034327" />
+    <state width="1229" height="387" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1603807131486" />
     <state x="124" y="153" width="1669" height="1007" key="SettingsEditor" timestamp="1601677173032">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1398,18 +1339,18 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="681" y="291" width="570" height="585" key="StructurePopup/0.0.1920.1160@0.0.1920.1160" timestamp="1596124541952" />
-    <state x="1204" y="315" key="VCS.ChangeListViewerDialog" timestamp="1601678404163">
+    <state x="1068" y="45" key="VCS.ChangeListViewerDialog" timestamp="1603806738604">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="1204" y="315" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601678404163" />
+    <state x="1068" y="45" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603806738604" />
+    <state x="92" y="92" width="1736" height="976" key="VCS.FileHistoryDialog" timestamp="1603805046025">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="92" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603805046025" />
     <state x="552" y="284" key="Vcs.Push.Dialog.v2" timestamp="1601684504827">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1601684504827" />
-    <state width="968" height="588" key="XDebugger.FullValuePopup" timestamp="1594675261548">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="968" height="588" key="XDebugger.FullValuePopup/0.0.1920.1160@0.0.1920.1160" timestamp="1594675261548" />
     <state x="776" y="357" key="chooseDestDirectoryDialog" timestamp="1600528950014">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1418,14 +1359,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="864" y="365" key="com.intellij.lang.javascript.flex.projectStructure.ui.ChooseBuildConfigurationDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601512011123" />
-    <state x="650" y="323" width="819" height="800" key="find.popup" timestamp="1601683442256">
+    <state x="650" y="323" width="819" height="800" key="find.popup" timestamp="1603806794032">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="650" y="323" width="819" height="800" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1601683442256" />
-    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup" timestamp="1601676594036">
+    <state x="650" y="323" width="819" height="800" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1603806794032" />
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup" timestamp="1603805669513">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1601676594036" />
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1603805669513" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1435,11 +1376,28 @@
           <line>53</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_Object.as</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/Test_ConsoleGarbareCollector.as</url>
+          <line>21</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
         <watch expression="currentButton.x" />
+        <watch expression="model[i]" />
+        <watch expression="model[i][0]" />
+        <watch expression="model[i][p]" />
+        <watch expression="model[i][&quot;1&quot;][&quot;0&quot;]" />
+        <watch expression="model[i][p][1]" />
+        <watch expression="currentId.name" language="ECMA Script Level 4" />
+        <watch expression="startTime" />
       </configuration>
     </watches-manager>
   </component>
