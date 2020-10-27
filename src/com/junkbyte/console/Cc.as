@@ -188,7 +188,10 @@ public class Cc {
     public static function logchwj(channel:*, ...strings):void {
         if (!_console) return;
         for (var i:int = 0; i < strings.length; i++) {
-            strings[i] = _console.mapper.json(strings[i]);
+            var currentElement:* = strings[i];
+            if(currentElement is String == false) {
+                strings[i] = _console.mapper.json(currentElement) + "\n\n";
+            }
         }
         var stack:String = _console.mapper.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
