@@ -680,5 +680,17 @@ public class Utils {
         while (getTimer() - delayStart < ms){
         }
     }
+    
+    public static function addConsole(stage:Stage):void {
+        Cc.start(stage);
+        Cc.commandLine = true;
+        Cc.config.commandLineAllowed = true;
+        Cc.config.commandLineAutoScope = true;
+        Cc.visible = true;
+        var halfWidth = stage.stageWidth/2;
+        Cc.x = halfWidth
+        Cc.width = halfWidth;
+        Cc.height = stage.stageHeight;
+    }
 }
 }
