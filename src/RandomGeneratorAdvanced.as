@@ -7,58 +7,89 @@ import flash.text.TextFormat;
 
 import utils.Utils;
 
+[SWF(width=800, height=300)]
 public class RandomGeneratorAdvanced extends Sprite {
-    private const INPUT_Y_PADDING:int = 50;
-    private const RESULT_Y_POSITION:int = 200;
-    private const BUTTON_X:int = 350;
+    private const INFO_HEIGHT:int = 50;
     
     private var iRangesTF:TextField = new TextField();
+    private var iResultsRequiredTF:TextField = new TextField();
     private var iResultTF:TextField = new TextField();
     
     private var rangesTF:TextField = new TextField();
+    private var resultsRequiredTF:TextField = new TextField();
     private var resultTF:TextField = new TextField();
     
     private var generateButton:Sprite;
     
     public function RandomGeneratorAdvanced() {
+        //Common
         var interfaceTextFormat:TextFormat = new TextFormat();
         interfaceTextFormat.size = 20;
-        iRangesTF.defaultTextFormat = iResultTF.defaultTextFormat = interfaceTextFormat;
+        iRangesTF.defaultTextFormat = iResultsRequiredTF.defaultTextFormat = iResultTF.defaultTextFormat = interfaceTextFormat;
+        iRangesTF.selectable = iResultsRequiredTF.selectable = iResultTF.selectable = false;
+        iRangesTF.height = iResultsRequiredTF.height = iResultTF.height = INFO_HEIGHT;
+        iRangesTF.background = iResultsRequiredTF.background = iResultTF.background = true;
+        iRangesTF.backgroundColor = iResultsRequiredTF.backgroundColor = iResultTF.backgroundColor = 0xFF0000;
+        rangesTF.width = resultTF.width = iRangesTF.width = stage.stageWidth;
+        
+        var inputTextFormat:TextFormat = new TextFormat();
+        inputTextFormat.size = 42;
+        resultsRequiredTF.border = rangesTF.border = resultTF.border = true;
+        resultsRequiredTF.defaultTextFormat = rangesTF.defaultTextFormat = resultTF.defaultTextFormat = inputTextFormat;
+        
         iRangesTF.text = "Ranges ( example: 2-4 7-9 14 16 )";
         addChild(iRangesTF);
         
-        
-        iResultTF.text = "Result:";
-        iResultTF.y = RESULT_Y_POSITION;
-        addChild(iResultTF);
-        
-        var inputTextFormat:TextFormat = new TextFormat();
-        inputTextFormat.size = 50;
-        rangesTF.border = resultTF.border = true;
-        rangesTF.y = INPUT_Y_PADDING;
-        rangesTF.type = TextFieldType.INPUT;
-        rangesTF.defaultTextFormat = resultTF.defaultTextFormat = inputTextFormat;
-//        minTF.text = "-15--12 -3-3 1-4 1234-1236 -14 22 1235 -111 -5-0";
-        rangesTF.text = "1-10";
-        rangesTF.width = resultTF.width = iRangesTF.width = iResultTF.width = stage.stageWidth;
-        
+        rangesTF.y = iRangesTF.y + iRangesTF.height;
+        rangesTF.multiline = rangesTF.wordWrap = true;
+        resultsRequiredTF.type = rangesTF.type = TextFieldType.INPUT;
         addChild(rangesTF);
         
-        resultTF.y = RESULT_Y_POSITION + INPUT_Y_PADDING;
-        addChild(resultTF);
-        
-        generateButton = Utils.createButton();
-        generateButton.x = BUTTON_X;
+        generateButton = Utils.createButton(0, 0, 100, INFO_HEIGHT);
+        generateButton.x = stage.stageWidth - generateButton.width;
         generateButton.y = rangesTF.y + rangesTF.height;
         generateButton.addEventListener(MouseEvent.CLICK, generateButton_clickHandler)
         addChild(generateButton);
+        
+        iResultsRequiredTF.text = "Results required:";
+        resultsRequiredTF.width = iResultsRequiredTF.width = iResultTF.width = (stage.stageWidth - generateButton.width) / 2;
+        addChild(iResultsRequiredTF);
+        
+        iResultTF.text = "Result:";
+        iResultsRequiredTF.y = iResultTF.y = rangesTF.y + rangesTF.height;
+        resultTF.x = iResultTF.x = iResultsRequiredTF.x + iResultsRequiredTF.width;
+        addChild(iResultTF);
+        
+        resultsRequiredTF.x = iResultsRequiredTF.x;
+        resultTF.y = resultsRequiredTF.y = iResultsRequiredTF.y + iResultsRequiredTF.height;
+        addChild(resultsRequiredTF);
+        
+        addChild(resultTF);
+        
+        //start values
+        rangesTF.text = "1-11";
+        resultsRequiredTF.text = "1";
+//        rangesTF.text = "1-4 77-81";
+//        rangesTF.text = "-15--12 -3-3 1-4 1234-1236 -14 22 1235 -111 -5-0";
     }
     
     private function generateButton_clickHandler(event:MouseEvent):void {
+        var resultsRequired:int = int(resultsRequiredTF.text);
         var availableVariants:Array = generateVariants(rangesTF.text);
 //        trace(availableVariants);
-        var index:int = Utils.getRandom(0, availableVariants.length - 1);
-        resultTF.text = String(availableVariants[index]);
+        var resultArray:Array = [];
+        if (availableVariants.length < resultsRequired) {
+            resultsRequired = availableVariants.length;
+        }
+        
+        while (resultArray.length < resultsRequired) {
+            var index:int = Utils.getRandom(0, availableVariants.length - 1);
+            var element:int = availableVariants.splice(index, 1)[0];
+            resultArray.push(element);
+        }
+        
+        resultArray.sort(Array.NUMERIC);
+        resultTF.text = resultArray.toString();
     }
     
     private function generateVariants(value:String):Array {

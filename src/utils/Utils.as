@@ -687,7 +687,7 @@ public class Utils {
         Cc.config.commandLineAllowed = true;
         Cc.config.commandLineAutoScope = true;
         Cc.visible = true;
-        var halfWidth = stage.stageWidth/2;
+        var halfWidth:Number = stage.stageWidth/2;
         Cc.x = halfWidth
         Cc.width = halfWidth;
         Cc.height = stage.stageHeight;
