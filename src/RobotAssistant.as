@@ -4,6 +4,7 @@ import flash.display.MovieClip;
 import flash.display.Sprite;
 import flash.events.KeyboardEvent;
 import flash.events.MouseEvent;
+import flash.text.TextField;
 import flash.ui.Keyboard;
 
 import utils.Utils;
@@ -18,8 +19,12 @@ public class RobotAssistant extends Sprite {
     private var lookMode:Boolean;
     
     private var buttonsVector:Vector.<RobotButton> = new Vector.<RobotButton>();
+    private var keysTF:TextField = new TextField();
     
     public function RobotAssistant() {
+        keysTF.text = "Space - reset\nCtrl+Mouse Move - put box on top";
+        addChild(keysTF);
+        
         for (var i:int = 0; i < NUM_BUTTONS; i++) {
             addButton();
         }

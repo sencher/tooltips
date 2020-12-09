@@ -117,3 +117,7 @@ Remove blank lines regex
 Break long lines
 	([^\r\n]{120})
 	$1\n
+
+Excel to Localization
+	^(.+)	(.+)$
+	\nmsgid "$1"\nmsgstr "$2"

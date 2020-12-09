@@ -1,0 +1,14 @@
+How do I configure git to ignore some files locally?
+	git update-index --skip-worktree Common/html-template/index.template.html
+
+How do I undo 'git add' before commit?
+	git reset <file>
+
+Remove directory from remote repository after adding them to .gitignore
+	git rm -r --cached some-directory
+	git add .
+	git commit -m 'Remove the now ignored directory "some-directory"'
+	git push origin master
+
+Revert 1 file to previous commit
+	git checkout HEAD~1 *RectChange.amk
