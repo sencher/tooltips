@@ -8,9 +8,10 @@ import flash.utils.Dictionary;
 
 import utils.Utils;
 
-[SWF(width=800, height=300, backgroundColor=0x888888)]
+[SWF(width=800, height=500, backgroundColor=0x888888)]
 public class Cube4Fixer extends Sprite {
     protected var translateDict:Dictionary = new Dictionary();
+    protected var title:TextField = new TextField();
     protected var tf1:TextField = new TextField();
     protected var tf2:TextField = new TextField();
     protected var format:TextFormat = new TextFormat();
@@ -18,19 +19,25 @@ public class Cube4Fixer extends Sprite {
     public function Cube4Fixer() {
         fillTranslate();
         format.size = 25;
-        tf1.defaultTextFormat = tf2.defaultTextFormat = format;
+        title.defaultTextFormat = tf1.defaultTextFormat = tf2.defaultTextFormat = format;
         tf1.border = tf2.border = true;
         tf1.type = tf2.type = TextFieldType.INPUT;
         tf1.wordWrap = tf2.wordWrap = true;
-        tf1.width = tf2.width = stage.stageWidth;
+        title.width = tf1.width = tf2.width = stage.stageWidth;
+        tf1.height = tf2.height = (stage.stageHeight-100) / 2;
 //        tf1.text = "r'U'R'UrU'R\n"+
 //                "Rw'UrU'RUr'U'r\n" +
 //                "R'Rw'U'RUrU'R'UR2";
         tf1.text = "Uw Rwr";
 
+        title.height = 100;
+        title.text = String(this);
+        addChild(title);
+
+        tf1.y = 100;
         addChild(tf1);
 
-        tf2.y = stage.stageHeight / 2;
+        tf2.y = 100 + (stage.stageHeight-100) / 2;
         addChild(tf2);
 
         tf1.addEventListener(Event.CHANGE, tf1_changeEvent);

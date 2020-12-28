@@ -1,5 +1,5 @@
 package {
-[SWF(width=800, height=300, backgroundColor=0x888888)]
+//[SWF(width=800, height=300, backgroundColor=0x888888)]
 public class Cube4to6Translator extends Cube4Fixer {
 
     public function Cube4to6Translator() {
