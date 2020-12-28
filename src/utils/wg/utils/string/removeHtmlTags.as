@@ -1,0 +1,1 @@
+package utils.wg.utils.string{	public function removeHtmlTags(value:String):String {		return value.replace(new RegExp("<[^>]*>","ig"), "");	}}

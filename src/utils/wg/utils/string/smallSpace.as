@@ -1,0 +1,1 @@
+package utils.wg.utils.string{	public function smallSpace():String {		return "<font size='6'>" + nbsp() + "</font>";	}}

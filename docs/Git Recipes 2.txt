@@ -2,6 +2,7 @@ How do I configure git to ignore some files locally?
 	git update-index --skip-worktree Common/html-template/index.template.html
 
 How do I undo 'git add' before commit?
+	git reset
 	git reset <file>
 
 Remove directory from remote repository after adding them to .gitignore
@@ -12,3 +13,33 @@ Remove directory from remote repository after adding them to .gitignore
 
 Revert 1 file to previous commit
 	git checkout HEAD~1 *RectChange.amk
+
+
+To see local branches, run this command: 
+	git branch.
+To see remote branches, run this command: 
+	git branch -r.
+To see all local and remote branches, run this command: 
+	git branch -a
+
+delete branch locally
+	git branch -d localBranchName
+
+delete branch remotely
+	git push origin --delete remoteBranchName
+
+Git push all branches
+	git push --all origin
+
+Alias
+	git config --global alias.c "!git add -A && git commit -m"
+	git config --global alias.p "!git add -A && git commit && git push"
+Experiments
+	git config --global alias.p "!git add -A && git commit -a -m '$*' && git push"
+
+Undoing the Last Commit
+	git reset --soft HEAD~1	
+	git reset --hard HEAD~1
+
+Undo pushed commit
+	git revert HEAD

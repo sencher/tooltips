@@ -11,10 +11,317 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="RobotAssistant hint added">
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="RandomGeneratorAdvanced added required results">
+      <change afterPath="$PROJECT_DIR$/src/Test_RelativeAlignText.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test_WGUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/BasePopupLayoutBuilder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/MovieClipTiled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/SystemUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/TimeLeftFormatter.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/Utils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/addElements.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/addElementsOnce.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/addOnce.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/areDiferrent.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/areEqual.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/containsAll.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/exludeNulls.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/extractArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/extractUnique.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/findByField.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/findByFieldArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/findByFields.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getDiff.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getFieldArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getFieldCount.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getFirstKey.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getFirstValue.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getIntKeyArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getKey.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getKeyArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/getRandomValue.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/invertObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/isAllPrimitives.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/isEmpty.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/len.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/pickRandom.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/refillCollection.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/removeItem.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/reverse.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/safeSplice.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/substract.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/sumObjectsByType.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/toArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/toObjectByKey.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/vectorSortOn.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/array/wrapByObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/backend/Backend.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/backend/BackendStub.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/backend/IBackend.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/CostCurrencyMap.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/CostString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/getCostString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/getEquipmentCostString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/setCostListTextField.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/cost/setCostTextField.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/ISetData.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/Trigger.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/among.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/BindableObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/BindingUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/CallbackSet.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/DelayedSignal.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/EventBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/Flag.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/FlagSignal.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/NextFrameSignal.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/ObjectChangedEvent.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/PartialFunction.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/PropertyBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/SetterBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/Signal.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/SignalOnce.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/SignalValid.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/SignalValidContainer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/core/Binder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/core/IBindingModel.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/core/ModelEvent.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/objects/BindableArray.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/objects/BindableBoolean.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/objects/BindableInt.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/objects/BindableString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/presets/SelectBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/presets/clik/ButtonChangeBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/presets/clik/IndexChangeBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/binding/presets/clik/ValueChangedBinder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/convertKwargsToObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/copyProps.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/factory/ByClassFactory.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/filtering/FilteringManager.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/getByPath.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/ioc/IUnitInjector.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/ioc/UInjector.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/ioc/UnitInjector.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/ioc/getMethodArgumentCount.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/pool/Pool.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/pool/PoolableContainer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/sorting/SortingManager.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/data/valueFit.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/DebugTimer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/DebugUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/DebugWindow.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/o2s.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/traceObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/debug/traco.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/AlphaDisplayObjectWatcher.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/AlphaWrapper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/AnimationController.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/BackgroundWrappingHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/BitmapLoader.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/BitmapLoaderCentered.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/BitmapLoaderHorizontallyCentered.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/CirclePartSprite.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/ConstraintsInteger.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/GroupWrappingHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/MovieClipController.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/PaddingHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/ResizeHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/ScaleFormRemovedFromStageWatcher.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/StageResolutionClassification.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/VisibilityController.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/WrappingHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/addChildren.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/align/AlignManager.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/align/AlignSettings.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/align/RelativeAlign.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/align/adaptBackgroundSize.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/align/roundCoords.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/bottom.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/Cache.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/DefaultResourceLoader.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/EmptyCacheClient.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/ICacheClient.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/ItemsPreloader.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/ResourceLoader.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/cache/URLResourceLoader.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/center.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/centerOnStage.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/clearDisplayObjectContainer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/crop.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/debug/showBorders.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/fade/FadeOutController.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/findChildByClass.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/fitTextFieldDecreaseText.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/fixGlobalCoords.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/fixGlobalCoordsForContainer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/getChildren.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/getScrollRectOffset.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/mouseEnabledTextfield.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/placeUnder.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/right.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/safeAddChild.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/safeRemove.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/safeRemoveChild.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/safeRemoveChildren.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/setText.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/setVisibility.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/TextFieldTweener.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/hangarImageSubstitution/ImageSubstitutor.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/hangarImageSubstitution/icons/CurrencyDiscountIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/hangarImageSubstitution/icons/ISubIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/imageSubstitution/ImageSubstitutor.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/imageSubstitution/Substitution.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/AllianceIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/BattleScoreSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesMediumIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesMediumIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesMiniIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesMiniIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CertificatesSmallIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CouponIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CouponIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CouponSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CouponSmallIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CreditsIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CreditsIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CreditsSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CustomIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/CustomImage.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/EliteExperienceIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/EliteExperienceIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/EliteExperienceSmallDarkIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/EliteExperienceSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ExperienceIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ExperienceIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ExperienceSmallDarkIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ExperienceSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/FractionIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/FreeExperienceBigIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/FreeExperienceIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/FreeExperienceIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/FreeExperienceIconOff.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/GoldBigIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/GoldIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/GoldIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/GoldIconOff.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/GoldSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/HotKeyIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ImageSubstitutionIcons.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ImageSubstitutionsDefaultsRegistrator.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ImageSubstitutionsProcessor.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/InformationLineOrange.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/MasteryScoreSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/NationIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/PieceIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/PieceIconDisabled.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/ScorePointsSmallIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/XPFactorCreditsIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/XPFactorIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/glow/CurrencyDiscountIcon.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/setPiecesSubstitutions.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/text/substitution/setSubstitutions.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/textFieldClone.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/unSetMouseEnabledForTextFields.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/xGapTo.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/display/yGapTo.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/createObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/createObjectAndSetData.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/getClassName.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/getDefinition.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/isHangar.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/domain/isScaleform.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/enterFrame/EnterFrameDispatcher.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/enterFrame/IEnterFrameHandler.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/event/EventPropagationHelper.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/hyperlink/HyperlinkConstants.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/hyperlink/HyperlinkData.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/hyperlink/TextAchievementProcessor.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/hyperlink/TextHyperlinkProcessor.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/input/InputUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/object/deepCopy.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/object/getPropByPath.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/object/hasPropByPath.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/object/setPropByPath.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/PlaneString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/StringConstants.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/StringUtils.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/Transliteration.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/URLAddParameter.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/URLExtractDomain.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/URLRemoveParameter.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/a2r.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/array2hash.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/bold.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/br.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/bullet.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/colorize.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/createStubName.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/cutNickname.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/cutTextFieldLines.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/cutTextfield.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/cutTextfieldName.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/dash.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/formatString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/generateString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getHTMLSpace.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getPhraseLocation.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getProgressString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getTimeLeftString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getTimeString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/getTimerString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/insertNBSP.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/isSearchMatches.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/leadingZero.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/loc.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/nbsp.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/number2str.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/paint.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/paragraph.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/processTypicalTags.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/randomBetween.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/reduceNumber.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/removeHtmlTags.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/roundToString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/size.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/slash.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/smallBR.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/smallSpace.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/space.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/stringAddSeparator.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/stringReplace.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/stringReplaceBatch.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/FormatTimeOptions.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/Seconds.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/concatNickname.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/dayTimeFromUTC.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/formatTime.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getClientUTC.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getDayName.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getFormattedTime.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getTimeDMSString.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getTimeLeft.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/getTimeObject.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/int2String.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/int3String.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/mills2String.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/sec2String.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/time/seconds2String.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/toPercents.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/string/toStringK.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timeout/IValidator.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timeout/NextFrameValidator.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timeout/TimeoutValidator.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timer/CallbackManager.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timer/PausableTimer.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/timer/TimerEx.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/window/HangarWindowController.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/window/HangarWindowControllerFactory.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/window/HangarWindowControllerFluentAPI.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/window/HangarWindowControllerToken.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/wg/utils/xml/XMLLoader.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/RandomGeneratorAdvanced.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/RandomGeneratorAdvanced.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomGeneratorAdvanced.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomGeneratorAdvanced.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_Logic.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Logic.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Utils.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +356,8 @@
         <option value="Html5" />
         <option value="JavaScript File" />
         <option value="ActionScript Interface" />
-        <option value="ActionScript Class with Supers" />
         <option value="ActionScript Class" />
+        <option value="ActionScript Class with Supers" />
       </list>
     </option>
   </component>
@@ -88,7 +395,7 @@
     <property name="flex.debug.filter.swf.load.unload" value="true" />
     <property name="js-jscs-nodeInterpreter" value="A:\Program Files\nodejs\node.exe" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="C:/Program Files/Adobe/Adobe Animate 2021/Common/Configuration/Component Source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils/wg" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -112,15 +419,15 @@
       <recent name="D:\Work\tooltips\src\AppDomainConflictPureFla" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\tooltips\src\utils\wg" />
+      <recent name="D:\Projects\tooltips\src\utils" />
       <recent name="D:\Projects\tooltips\src" />
       <recent name="A:\Projects\tooltips\src" />
       <recent name="D:\Work\tooltips\src\legacy" />
-      <recent name="D:\Work\tooltips\src\utils" />
-      <recent name="D:\Work\tooltips\src" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
-      <recent name="utils" />
       <recent name="" />
+      <recent name="utils" />
       <recent name="study" />
       <recent name="components" />
       <recent name="loader" />
@@ -129,7 +436,7 @@
       <recent name="ideaRefactoring.RefactoringB" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.RandomGeneratorAdvanced">
+  <component name="RunManager" selected="Flash App.Test_RelativeAlignText">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -200,17 +507,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -293,45 +589,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RobotAssistant" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="RobotAssistant" />
-      <option name="overriddenOutputFileName" value="RobotAssistant.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="FlashRunConfigurationType">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
@@ -368,84 +625,6 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
-    </configuration>
-    <configuration name="Test_Callbacks" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_Callbacks" />
-      <option name="overriddenOutputFileName" value="Test_Callbacks.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_DrawDebugBounds" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="BCName" value="Test" />
-      <option name="IOSSimulatorDevice" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="clearAppDataOnEachLaunch" value="true" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_DrawDebugBounds" />
-      <option name="overriddenOutputFileName" value="Test_DrawDebugBounds.swf" />
-      <option name="overrideMainClass" value="true" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Test_ExternalInterface HTML" type="FlashRunConfigurationType">
       <option name="BCName" value="Test" />
@@ -484,7 +663,7 @@
       <option name="usbDebugPort" value="7936" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_MouseEnabled" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Logic" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="BCName" value="Test" />
       <option name="IOSSimulatorDevice" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -510,8 +689,125 @@
       </option>
       <option name="mobileRunTarget" value="Emulator" />
       <option name="moduleName" value="Tooltips" />
-      <option name="overriddenMainClass" value="Test_MouseEnabled" />
-      <option name="overriddenOutputFileName" value="Test_MouseEnabled.swf" />
+      <option name="overriddenMainClass" value="Test_Logic" />
+      <option name="overriddenOutputFileName" value="Test_Logic.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_RelativeAlignText" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_RelativeAlignText" />
+      <option name="overriddenOutputFileName" value="Test_RelativeAlignText.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_TextField" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_TextField" />
+      <option name="overriddenOutputFileName" value="Test_TextField.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_WGUtils" type="FlashRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/SDK/flashplayer_28_sa_debug.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_WGUtils" />
+      <option name="overriddenOutputFileName" value="Test_WGUtils.swf" />
       <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
@@ -632,11 +928,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flash App.Test_RelativeAlignText" />
+        <item itemvalue="Flash App.Test_TextField" />
+        <item itemvalue="Flash App.Test_Logic" />
+        <item itemvalue="Flash App.Test_WGUtils" />
         <item itemvalue="Flash App.RandomGeneratorAdvanced" />
-        <item itemvalue="Flash App.RobotAssistant" />
-        <item itemvalue="Flash App.Test_DrawDebugBounds" />
-        <item itemvalue="Flash App.Test_MouseEnabled" />
-        <item itemvalue="Flash App.Test_Callbacks" />
       </list>
     </recent_temporary>
   </component>
@@ -832,14 +1128,10 @@
       <workItem from="1605532132422" duration="18000" />
       <workItem from="1605705675479" duration="264955000" />
       <workItem from="1606205963052" duration="599000" />
-      <workItem from="1607532062165" duration="6928000" />
-    </task>
-    <task id="LOCAL-00020" summary="Test_AddLogToAllMethods.as&#10;MovieClipWithEvents.as&#10;BirthdayGame.as&#10;Utils.as">
-      <created>1505907351498</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1505907351498</updated>
+      <workItem from="1607532062165" duration="7429000" />
+      <workItem from="1607952245178" duration="18235000" />
+      <workItem from="1608003073592" duration="3675000" />
+      <workItem from="1608037883079" duration="1198000" />
     </task>
     <task id="LOCAL-00021" summary="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as">
       <created>1506430404234</created>
@@ -1177,7 +1469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607532151642</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="RandomGeneratorAdvanced added required results">
+      <created>1607540084590</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1607540084590</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1298,7 +1597,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fonts" />
     <MESSAGE value="Update" />
     <MESSAGE value="Chances" />
     <MESSAGE value="Chances Math" />
@@ -1323,7 +1621,8 @@
     <MESSAGE value="Console 2.73 logchwj style changed" />
     <MESSAGE value="MovieClipDebug" />
     <MESSAGE value="RobotAssistant hint added" />
-    <option name="LAST_COMMIT_MESSAGE" value="RobotAssistant hint added" />
+    <MESSAGE value="RandomGeneratorAdvanced added required results" />
+    <option name="LAST_COMMIT_MESSAGE" value="RandomGeneratorAdvanced added required results" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="403" key="#Notifications" timestamp="1603895322545">
@@ -1338,10 +1637,10 @@
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
     <state x="765" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1119@0.0.1920.1119" timestamp="1604434896134" />
-    <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1607532150203">
+    <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1607540083330">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2/0.0.1920.1119@0.0.1920.1119" timestamp="1607532150203" />
+    <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2/0.0.1920.1119@0.0.1920.1119" timestamp="1607540083330" />
     <state width="527" height="502" key="DebuggerActiveHint" timestamp="1607537489471">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
@@ -1361,35 +1660,35 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="500" key="GitCloneDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1601511635595" />
-    <state width="916" height="389" key="GridCell.Tab.0.bottom" timestamp="1607537567092">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="916" height="381" key="GridCell.Tab.0.bottom" timestamp="1608006128607">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="916" height="389" key="GridCell.Tab.0.bottom/0.0.1920.1119@0.0.1920.1119" timestamp="1607537567092" />
-    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1604431120061" />
-    <state width="916" height="389" key="GridCell.Tab.0.center" timestamp="1607537567092">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="916" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
+    <state width="916" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1608006128607" />
+    <state width="916" height="381" key="GridCell.Tab.0.center" timestamp="1608006128607">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="916" height="389" key="GridCell.Tab.0.center/0.0.1920.1119@0.0.1920.1119" timestamp="1607537567092" />
-    <state width="1877" height="387" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1604431120060" />
-    <state width="916" height="389" key="GridCell.Tab.0.left" timestamp="1607537567092">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="916" height="382" key="GridCell.Tab.0.center/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
+    <state width="916" height="381" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1608006128607" />
+    <state width="916" height="381" key="GridCell.Tab.0.left" timestamp="1608006128607">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="916" height="389" key="GridCell.Tab.0.left/0.0.1920.1119@0.0.1920.1119" timestamp="1607537567092" />
-    <state width="1877" height="387" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1604431120060" />
-    <state width="916" height="389" key="GridCell.Tab.0.right" timestamp="1607537567092">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="916" height="382" key="GridCell.Tab.0.left/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
+    <state width="916" height="381" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1608006128607" />
+    <state width="916" height="381" key="GridCell.Tab.0.right" timestamp="1608006128607">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="916" height="389" key="GridCell.Tab.0.right/0.0.1920.1119@0.0.1920.1119" timestamp="1607537567092" />
-    <state width="1877" height="387" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1604431120061" />
+    <state width="916" height="382" key="GridCell.Tab.0.right/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
+    <state width="916" height="381" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1608006128607" />
     <state x="124" y="147" width="1669" height="1007" key="SettingsEditor" timestamp="1604614519829">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
     <state x="124" y="147" key="SettingsEditor/0.0.1920.1119@0.0.1920.1119" timestamp="1604614519829" />
     <state x="124" y="153" width="1669" height="1007" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1603895695844" />
-    <state x="681" y="291" width="570" height="585" key="StructurePopup" timestamp="1604430655805">
+    <state x="681" y="291" width="570" height="585" key="StructurePopup" timestamp="1607971734163">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="681" y="291" width="570" height="585" key="StructurePopup/0.0.1920.1160@0.0.1920.1160" timestamp="1604430655805" />
+    <state x="681" y="291" width="570" height="585" key="StructurePopup/0.0.1920.1160@0.0.1920.1160" timestamp="1607971734163" />
     <state x="1068" y="45" key="VCS.ChangeListViewerDialog" timestamp="1604432121824">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1399,10 +1698,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603805046025" />
-    <state x="552" y="274" key="Vcs.Push.Dialog.v2" timestamp="1607532153412">
+    <state x="552" y="274" key="Vcs.Push.Dialog.v2" timestamp="1607540086030">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="552" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1119@0.0.1920.1119" timestamp="1607532153412" />
+    <state x="552" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1119@0.0.1920.1119" timestamp="1607540086030" />
     <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1603809334421" />
     <state x="776" y="357" key="chooseDestDirectoryDialog" timestamp="1603807390279">
       <screen x="0" y="0" width="1920" height="1160" />
@@ -1417,15 +1716,16 @@
     </state>
     <state x="650" y="312" width="842" height="772" key="find.popup/0.0.1920.1119@0.0.1920.1119" timestamp="1607532614319" />
     <state x="650" y="323" width="819" height="800" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1604427961232" />
-    <state width="656" height="500" key="javadoc.popup.new" timestamp="1607537669221">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="656" height="519" key="javadoc.popup.new" timestamp="1607962052007">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="656" height="500" key="javadoc.popup.new/0.0.1920.1119@0.0.1920.1119" timestamp="1607537669221" />
-    <state x="623" y="242" width="672" height="731" key="search.everywhere.popup" timestamp="1607532176236">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state width="656" height="519" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1607962052007" />
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup" timestamp="1607963603109">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="623" y="242" width="672" height="731" key="search.everywhere.popup/0.0.1920.1119@0.0.1920.1119" timestamp="1607532176236" />
-    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1604430722051" />
+    <state x="623" y="251" width="672" height="757" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1607963603109" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1439,11 +1739,11 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlashRunConfigurationType">
-        <watch expression="this.ARRAY" />
-        <watch expression="child.x" />
-        <watch expression="child.y" />
-        <watch expression="s.x" />
-        <watch expression="s.y" />
+        <watch expression="staticTF.x" />
+        <watch expression="m1.x" />
+        <watch expression="dynamicTF.x" />
+        <watch expression="m2.x" />
+        <watch expression="this[&quot;tf&quot;+i]" />
       </configuration>
     </watches-manager>
   </component>

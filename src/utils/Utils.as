@@ -4,6 +4,7 @@ import com.junkbyte.console.Cc;
 
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
+import flash.display.Graphics;
 import flash.display.MovieClip;
 import flash.display.Shape;
 import flash.display.Sprite;
@@ -13,6 +14,8 @@ import flash.system.ApplicationDomain;
 import flash.text.Font;
 import flash.text.TextField;
 import flash.text.TextFormat;
+import flash.text.TextLineMetrics;
+import flash.text.engine.FontMetrics;
 import flash.utils.Dictionary;
 import flash.utils.describeType;
 import flash.utils.getQualifiedClassName;
@@ -175,10 +178,10 @@ public class Utils {
         }
     }
 
-    public static function createBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Shape {
+    public static function createBox(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, border:Boolean = true, borderColor:uint = 0x000000):Shape {
         //trace("createBox",arguments)
         var box:Shape = new Shape();
-        box.graphics.lineStyle(1, borderColor, .75);
+        if(border) box.graphics.lineStyle(1, borderColor, .75);
         box.graphics.beginFill(color);
 //        box.graphics.drawRect(-w/2,-h/2,w,h);
         box.graphics.drawRect(0, 0, w, h);
@@ -190,9 +193,9 @@ public class Utils {
         return box;
     }
 
-    public static function createButton(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, borderColor:uint = 0x000000):Sprite {
+    public static function createButton(x:Number = 0, y:Number = 0, w:Number = 100, h:Number = 100, angle:Number = 0, color:uint = 0xcccccc, alpha:Number = 1, border:Boolean = true, borderColor:uint = 0x000000):Sprite {
         var s:Sprite = new Sprite();
-        s.addChild(createBox(x, y, w, h, angle, color, alpha, borderColor));
+        s.addChild(createBox(x, y, w, h, angle, color, alpha, border, borderColor));
         return s;
     }
 
@@ -691,6 +694,59 @@ public class Utils {
         Cc.x = halfWidth
         Cc.width = halfWidth;
         Cc.height = stage.stageHeight;
+    }
+    
+    public static function relativeAlignTextField(staticTF:TextField, dynamicTF:TextField):void {
+        var m1:TextLineMetrics = staticTF.getLineMetrics(0);
+        var m2:TextLineMetrics = dynamicTF.getLineMetrics(0);
+        var center1:Number = m1.x + m1.width / 2;
+        var center2:Number = m2.x + m2.width / 2;
+        
+//        var b1 = createBox(center1, staticTF.y, 1, staticTF.height, 0, 0xaa0000, 1, false);
+//        staticTF.parent.addChild(b1);
+//        var bg = createBox(m1.x, staticTF.y, m1.width, m1.height);
+//        staticTF.parent.addChildAt(bg, 0);
+        
+        dynamicTF.x += center1 - center2;
+        
+//        var b1 = createBox(center2, dynamicTF.y, 1, dynamicTF.height, 0, 0xaa0000, 1, false);
+//        staticTF.parent.addChild(b1);
+//        var bg = createBox(m2.x, dynamicTF.y, m2.width, m2.height);
+//        staticTF.parent.addChildAt(bg, 0);
+    }
+    
+    public static function drawGrid(stage:Stage, step:int):void {
+        var container:Sprite = new Sprite();
+        for (var x:int = 0; x < stage.stageWidth; x += step){
+            var l:Shape = createLine(x,0, x, stage.stageHeight, x % (step * 10) == 0 ? 0xAA0000 : 0xCCCCCC);
+            container.addChild(l);
+        }
+    
+        for (var y:int = 0; y < stage.stageHeight; y += step){
+            var l:Shape = createLine(0,y, stage.stageWidth, y, y % (step * 10) == 0 ? 0xAA0000 : 0xCCCCCC);
+            container.addChild(l);
+        }
+        
+        stage.addChildAt(container, 0);
+    }
+    
+    public static function createLine(xStart:Number = 0, yStart:Number = 0, xEnd:Number = 100, yEnd:Number = 100, color:uint = 0xcccccc, alpha:Number = 1):Shape {
+        //trace("createBox",arguments)
+        var line:Shape = new Shape();
+        var g:Graphics = line.graphics;
+        g.lineStyle(1, color, alpha);
+        g.moveTo(xStart, yStart);
+        g.lineTo(xEnd, yEnd);
+        
+//        box.graphics.beginFill(color);
+////        box.graphics.drawRect(-w/2,-h/2,w,h);
+//        box.graphics.drawRect(0, 0, w, h);
+//        box.x = x;
+//        box.y = y;
+//        box.rotation = angle;
+//        box.alpha = alpha;
+        
+        return line;
     }
 }
 }
