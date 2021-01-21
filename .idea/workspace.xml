@@ -12,17 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="RandomGeneratorAdvanced added required results">
-      <change afterPath="$PROJECT_DIR$/src/com/junkbyte/console/view/ConsoleScrollState.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Git Recipes 2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Git Recipes 2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Test_Callbacks.swf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Test_Callbacks.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_Callbacks.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_Callbacks.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_ConsoleAutoscope.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ConsoleAutoscope.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/LogReferences.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/view/PanelsManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/view/PanelsManager.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -847,14 +837,7 @@
       <workItem from="1610366689163" duration="13000" />
       <workItem from="1611076229416" duration="5460000" />
       <workItem from="1611150727483" duration="1587000" />
-      <workItem from="1611233013775" duration="22988000" />
-    </task>
-    <task id="LOCAL-00021" summary="Console - logchw, warnchw&#10;Test_HtmlColorsText.as&#10;Test_TraceXML.as">
-      <created>1506430404234</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1506430404235</updated>
+      <workItem from="1611233013775" duration="23851000" />
     </task>
     <task id="LOCAL-00022" summary="Air search files in folder">
       <created>1506526419228</created>
@@ -1192,7 +1175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607540084590</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Console:&#10;1. Command line text color fixed.&#10;2. Command line force focus added.&#10;3. Scroll refactored - Object view back button goes to previous place.&#10;4. Switch between channels goes to previous place.&#10;5. Object view ignores update of channel.">
+      <created>1611257012475</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1611257012475</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1313,7 +1303,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Chances" />
     <MESSAGE value="Chances Math" />
     <MESSAGE value="Study" />
@@ -1338,7 +1327,8 @@
     <MESSAGE value="MovieClipDebug" />
     <MESSAGE value="RobotAssistant hint added" />
     <MESSAGE value="RandomGeneratorAdvanced added required results" />
-    <option name="LAST_COMMIT_MESSAGE" value="RandomGeneratorAdvanced added required results" />
+    <MESSAGE value="Console:&#10;1. Command line text color fixed.&#10;2. Command line force focus added.&#10;3. Scroll refactored - Object view back button goes to previous place.&#10;4. Switch between channels goes to previous place.&#10;5. Object view ignores update of channel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Console:&#10;1. Command line text color fixed.&#10;2. Command line force focus added.&#10;3. Scroll refactored - Object view back button goes to previous place.&#10;4. Switch between channels goes to previous place.&#10;5. Object view ignores update of channel." />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="403" key="#Notifications" timestamp="1603895322545">
@@ -1353,44 +1343,45 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="715" y="282" key="#xdebugger.evaluate/0.0.1920.1160@0.0.1920.1160" timestamp="1611254950978" />
-    <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1607540083330">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state x="587" y="124" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1611257011213">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="587" y="120" width="1265" height="988" key="CommitChangelistDialog2/0.0.1920.1119@0.0.1920.1119" timestamp="1607540083330" />
+    <state x="587" y="124" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1611257011213" />
     <state width="650" height="520" key="DebuggerActiveHint" timestamp="1611254824700">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="527" height="502" key="DebuggerActiveHint/0.0.1920.1119@0.0.1920.1119" timestamp="1607537489471" />
     <state width="650" height="520" key="DebuggerActiveHint/0.0.1920.1160@0.0.1920.1160" timestamp="1611254824700" />
-    <state x="92" y="92" width="1536" height="924" key="DiffContextDialog" timestamp="1607538750539">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state x="92" y="92" width="1536" height="924" key="DiffContextDialog" timestamp="1611256755374">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1536" height="924" key="DiffContextDialog/0.0.1920.1119@0.0.1920.1119" timestamp="1607538750539" />
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1604432124852" />
+    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1611256755374" />
     <state x="549" y="348" key="FileChooserDialogImpl" timestamp="1604614504593">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
     <state x="549" y="348" key="FileChooserDialogImpl/0.0.1920.1119@0.0.1920.1119" timestamp="1604614504593" />
-    <state width="1328" height="379" key="GridCell.Tab.0.bottom" timestamp="1611255668900">
+    <state width="1328" height="379" key="GridCell.Tab.0.bottom" timestamp="1611256216608">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="916" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
-    <state width="1328" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1611255668900" />
-    <state width="1328" height="379" key="GridCell.Tab.0.center" timestamp="1611255668900">
+    <state width="1328" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1611256216608" />
+    <state width="1328" height="379" key="GridCell.Tab.0.center" timestamp="1611256216608">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="916" height="382" key="GridCell.Tab.0.center/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
-    <state width="1328" height="379" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1611255668900" />
-    <state width="1328" height="379" key="GridCell.Tab.0.left" timestamp="1611255668900">
+    <state width="1328" height="379" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1611256216608" />
+    <state width="1328" height="379" key="GridCell.Tab.0.left" timestamp="1611256216608">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="916" height="382" key="GridCell.Tab.0.left/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
-    <state width="1328" height="379" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1611255668900" />
-    <state width="1328" height="379" key="GridCell.Tab.0.right" timestamp="1611255668900">
+    <state width="1328" height="379" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1611256216608" />
+    <state width="1328" height="379" key="GridCell.Tab.0.right" timestamp="1611256216608">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="916" height="382" key="GridCell.Tab.0.right/0.0.1920.1119@0.0.1920.1119" timestamp="1607540355224" />
-    <state width="1328" height="379" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1611255668900" />
+    <state width="1328" height="379" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1611256216608" />
     <state x="793" y="282" key="RollbackChangesDialog" timestamp="1611237842741">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1413,11 +1404,11 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603805046025" />
-    <state x="552" y="274" key="Vcs.Push.Dialog.v2" timestamp="1607540086030">
-      <screen x="0" y="0" width="1920" height="1119" />
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611257013916">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="552" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1119@0.0.1920.1119" timestamp="1607540086030" />
-    <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1603809334421" />
+    <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1611257013916" />
     <state width="1069" height="559" key="XDebugger.FullValuePopup" timestamp="1611255768126">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -1456,7 +1447,7 @@
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>1039</line>
+          <line>1030</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="flex">
@@ -1476,7 +1467,7 @@
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>536</line>
+          <line>532</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="flex">
@@ -1486,57 +1477,52 @@
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>461</line>
+          <line>463</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>427</line>
+          <line>429</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>778</line>
+          <line>769</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>689</line>
+          <line>685</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>704</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint type="flex">
-          <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>544</line>
+          <line>540</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>521</line>
+          <line>517</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>413</line>
+          <line>415</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>374</line>
+          <line>376</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>379</line>
+          <line>381</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>570</line>
+          <line>566</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint type="flex">
@@ -1546,7 +1532,7 @@
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>526</line>
+          <line>522</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint type="flex">
@@ -1556,72 +1542,67 @@
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>507</line>
+          <line>504</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>694</line>
+          <line>690</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>715</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint type="flex">
-          <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>847</line>
+          <line>838</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>765</line>
+          <line>756</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>687</line>
+          <line>683</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>425</line>
+          <line>427</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>429</line>
+          <line>431</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>373</line>
+          <line>375</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>378</line>
+          <line>380</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>805</line>
+          <line>796</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>848</line>
+          <line>839</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>808</line>
+          <line>799</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>351</line>
+          <line>353</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint type="flex">
@@ -1641,37 +1622,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>362</line>
+          <line>364</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>364</line>
+          <line>366</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>366</line>
+          <line>368</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>368</line>
+          <line>370</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>352</line>
+          <line>354</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>410</line>
+          <line>412</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/junkbyte/console/view/MainPanel.as</url>
-          <line>460</line>
+          <line>462</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
