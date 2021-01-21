@@ -43,3 +43,8 @@ Undoing the Last Commit
 
 Undo pushed commit
 	git revert HEAD
+
+lists files to be deleted
+	git clean -x --dry-run path/to/Django/root/*/static
+actually deletes them
+	git clean -x --force path/to/Django/root/*/static

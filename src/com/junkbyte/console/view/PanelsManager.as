@@ -111,9 +111,9 @@ package com.junkbyte.console.view
 		/**
 		 * @private
 		 */
-		public function update(paused:Boolean, lineAdded:Boolean):void{
+		public function update(paused:Boolean, lineAdded:Boolean, ch:String = ""):void {
 			_canDraw = !paused;
-			_mainPanel.update(!paused && lineAdded);
+			_mainPanel.update(!paused && lineAdded, ch);
 			if(!paused) {
 				if(lineAdded && _chsPanel!=null){
 					_chsPanel.update();

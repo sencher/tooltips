@@ -421,7 +421,7 @@ package com.junkbyte.console
 					parent.addChild(this);
 					report("Moved console on top (alwaysOnTop enabled), "+_topTries+" attempts left.",-1);
 				}
-				_panels.update(_paused, _logs.hasNewLog);
+				_panels.update(_paused, _logs.hasNewLog, _logs.last.ch);
 				_logs.hasNewLog = false;
 				if(graphsList) _panels.updateGraphs(graphsList);
 			}
@@ -454,14 +454,18 @@ package com.junkbyte.console
 		 * @copy com.junkbyte.console.Cc#setViewingChannels()
 		 */
 		public function setViewingChannels(...channels:Array):void{
-			_panels.mainPanel.setViewingChannels.apply(this, channels);
+			_panels.mainPanel.setViewingChannels(channels);
+		}
+		
+		public function loadPrevChannelsFilter():void{
+			_panels.mainPanel.loadPrevChannelsFilter();
 		}
 		
 		/**
 		 * @copy com.junkbyte.console.Cc#setIgnoredChannels()
 		 */
 		public function setIgnoredChannels(...channels:Array):void{
-			_panels.mainPanel.setIgnoredChannels.apply(this, channels);
+			_panels.mainPanel.setIgnoredChannels(channels);
 		}
 		
 		/**

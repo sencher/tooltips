@@ -196,7 +196,7 @@ import flash.utils.ByteArray;
 			var e:Error = new Error();
 			var stackTrace:String = e.getStackTrace();
 			var lines:Array = stackTrace.split("\n\t");
-			var cut:Array = lines.slice(4, 4 + depth);
+			var cut:Array = lines.slice(3, 3 + depth);
 			var s:String;
 			var r:String = "";
 			for each (s in cut) {

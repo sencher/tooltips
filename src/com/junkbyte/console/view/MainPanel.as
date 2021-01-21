@@ -22,33 +22,35 @@
 * 3. This notice may not be removed or altered from any source distribution.
 * 
 */
-package com.junkbyte.console.view 
+package com.junkbyte.console.view
 {
-	import com.junkbyte.console.Console;
-	import com.junkbyte.console.core.LogReferences;
-	import com.junkbyte.console.core.Remoting;
-	import com.junkbyte.console.vos.Log;
-	
-	import flash.display.Shape;
-	import flash.display.Sprite;
-	import flash.events.Event;
-	import flash.events.FocusEvent;
-	import flash.events.KeyboardEvent;
-	import flash.events.MouseEvent;
-	import flash.events.TextEvent;
-	import flash.geom.ColorTransform;
-	import flash.geom.Rectangle;
-	import flash.net.FileReference;
-	import flash.system.Security;
-	import flash.system.SecurityPanel;
-	import flash.system.System;
-	import flash.text.TextField;
-	import flash.text.TextFieldAutoSize;
-	import flash.text.TextFieldType;
-	import flash.text.TextFormat;
-	import flash.ui.Keyboard;
+import com.junkbyte.console.Cc;
+import com.junkbyte.console.Console;
+import com.junkbyte.console.core.LogReferences;
+import com.junkbyte.console.core.Remoting;
+import com.junkbyte.console.vos.Log;
 
-	public class MainPanel extends ConsolePanel {
+import flash.display.Shape;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.events.FocusEvent;
+import flash.events.KeyboardEvent;
+import flash.events.MouseEvent;
+import flash.events.TextEvent;
+import flash.geom.ColorTransform;
+import flash.geom.Rectangle;
+import flash.net.FileReference;
+import flash.system.Security;
+import flash.system.SecurityPanel;
+import flash.system.System;
+import flash.text.TextField;
+import flash.text.TextFieldAutoSize;
+import flash.text.TextFieldType;
+import flash.text.TextFormat;
+import flash.ui.Keyboard;
+import flash.utils.Dictionary;
+
+public class MainPanel extends ConsolePanel {
 		
 		public static const NAME:String = "mainPanel";
 		
@@ -79,6 +81,9 @@ package com.junkbyte.console.view
 		
 		private var _viewingChannels:Array;
 		private var _ignoredChannels:Array;
+		private var _prevViewingChannels:Array;
+		private var _prevIgnoredChannels:Array;
+	
 		private var _extraMenus:Object = new Object();
 		private var _cmdsInd:int = -1;
 		private var _priority:uint;
@@ -88,6 +93,8 @@ package com.junkbyte.console.view
 		
 		private var _needUpdateMenu:Boolean;
 		private var _needUpdateTrace:Boolean;
+		private var _needRestoreScrollState:Boolean;
+		private var scrollStates:Dictionary = new Dictionary();
 		private var _lockScrollUpdate:Boolean;
 		private var _atBottom:Boolean = true;
 		private var _enteringLogin:Boolean;
@@ -135,6 +142,8 @@ package com.junkbyte.console.view
 			//
 			var tf:TextFormat = new TextFormat(style.menuFont, style.menuFontSize, style.highColor);
 			_cmdField = new TextField();
+			_cmdField.defaultTextFormat = tf;
+			_cmdField.setTextFormat(tf);
 			_cmdField.name = "commandField";
 			_cmdField.type  = TextFieldType.INPUT;
 			_cmdField.x = 40;
@@ -143,7 +152,6 @@ package com.junkbyte.console.view
 			_cmdField.addEventListener(KeyboardEvent.KEY_UP, commandKeyUp);
 			_cmdField.addEventListener(FocusEvent.FOCUS_IN, updateCmdHint);
 			_cmdField.addEventListener(FocusEvent.FOCUS_OUT, onCmdFocusOut);
-			_cmdField.defaultTextFormat = tf;
 			addChild(_cmdField);
 			
 			_hintField = makeTF("hintField", true);
@@ -324,10 +332,7 @@ package com.junkbyte.console.view
 			_enteringLogin = on;
 		}
 		
-		/**
-		 * @private
-		 */
-		public function update(changed:Boolean):void{
+		public function update(changed:Boolean, ch:String = ""):void{
 			if(_bottomLine.alpha>0){
 				_bottomLine.alpha -= 0.25;
 			}
@@ -343,28 +348,43 @@ package com.junkbyte.console.view
 			if(changed){
 				_bottomLine.alpha = 1;
 				_needUpdateMenu = true;
-				_needUpdateTrace = true;
+				_needUpdateTrace = isActiveChannel(ch);
 			}
 			if(_needUpdateTrace){
 				_needUpdateTrace = false;
-				_updateTraces(true);
+				_updateTraces(_needRestoreScrollState ? false : true);
 			}
 			if(_needUpdateMenu){
 				_needUpdateMenu = false;
 				_updateMenu();
 			}
 		}
+	
+	private function isActiveChannel(ch:String):Boolean {
+		if(!_viewingChannels.length && !_ignoredChannels.length){
+			return true;
+		}else if(_viewingChannels.length && _viewingChannels.indexOf(ch) > -1){
+			return true;
+		}else if (_ignoredChannels.length && _ignoredChannels.indexOf(ch) < 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
 		
-		/**
-		 * @private
-		 */
 		public function updateToBottom():void{
 			_atBottom = true;
 			_needUpdateTrace = true;
+			_needRestoreScrollState = false;
+		}
+		public function updateWithScroll():void{
+			_atBottom = false;
+			_needUpdateTrace = true;
+			_needRestoreScrollState = true;
 		}
 		private function _updateTraces(onlyBottom:Boolean = false):void{
 			if(_atBottom) {
-				updateBottom(); 
+				updateBottom();
 			}else if(!onlyBottom){
 				updateFull();
 			}
@@ -390,7 +410,12 @@ package com.junkbyte.console.view
 				line = line.next;
 			}
 			_lockScrollUpdate = true;
-			_traceField.htmlText = "<logs>"+text+"</logs>";;
+			_traceField.htmlText = "<logs>"+text+"</logs>";
+			if(_needRestoreScrollState){
+				_needRestoreScrollState = false;
+				setScrollState(ConsoleScrollState(scrollStates[channelsKey]));
+				delete scrollStates[channelsKey];
+			}
 			_lockScrollUpdate = false;
 			updateScroller();
 		}
@@ -442,13 +467,13 @@ package com.junkbyte.console.view
 		}
 		private function lineShouldShow(line:Log):Boolean{
 			return (
-			 	( _priority == 0 || line.priority >= _priority) 
+			 	( _priority == 0 || line.priority >= _priority)
 			 	&&
 				(
 					chShouldShow(line.ch)
 			 		|| (_filterText && _viewingChannels.indexOf(Console.FILTER_CHANNEL) >= 0 && line.text.toLowerCase().indexOf(_filterText)>=0 )
 			 		|| (_filterRegExp && _viewingChannels.indexOf(Console.FILTER_CHANNEL)>=0 && line.text.search(_filterRegExp)>=0 )
-			 	) 
+			 	)
 			);
 		}
 		private function chShouldShow(ch:String):Boolean{
@@ -456,23 +481,50 @@ package com.junkbyte.console.view
 					&&
 					 (_ignoredChannels.length == 0 || _ignoredChannels.indexOf(ch)<0));
 		}
-		
-		/**
-		 * @private
-		 */
+
 		public function get reportChannel():String{
 			return _viewingChannels.length == 1?_viewingChannels[0]:Console.CONSOLE_CHANNEL;
 		}
 		/*public function get viewingChannels():Array{
 			return _viewingChannels;
 		}*/
+	
+		private function get channelsKey():String{
+			if(_viewingChannels.length) {
+				_viewingChannels.sort();
+				return "viewingChannels_" + _viewingChannels.toString();
+			}else if (_ignoredChannels.length){
+				_ignoredChannels.sort();
+				return "ignoredChannels_" + _ignoredChannels.toString();
+			}else{
+				return "all";
+			}
+		}
+	
+		public function loadPrevChannelsFilter():void{
+			if(_prevViewingChannels.length){
+				setViewingChannels(_prevViewingChannels);
+				_prevViewingChannels = [];
+			}else if (_prevIgnoredChannels.length){
+				setIgnoredChannels(_prevIgnoredChannels);
+				_prevIgnoredChannels = [];
+			}else{
+				setViewingChannels([]);
+			}
+		}
 		
-		/**
-		 * @private
-		 */
-		public function setViewingChannels(...channels:Array):void{
+		public function setViewingChannels(channels:Array):void{
+			
+			scrollStates[channelsKey] = getScrollState();
+			
 			var a:Array = new Array();
-			for each(var item:Object in channels) a.push(Console.MakeChannelName(item));
+			for each(var item:Object in channels) {
+				if (item == LogReferences.INSPECTING_CHANNEL){
+					_prevViewingChannels = _viewingChannels.concat();
+					_prevIgnoredChannels = _ignoredChannels.concat();
+				}
+				a.push(Console.MakeChannelName(item));
+			}
 			
 			if(_viewingChannels[0] == LogReferences.INSPECTING_CHANNEL && (!a || a[0] != _viewingChannels[0])){
 				console.refs.exitFocus();
@@ -480,12 +532,18 @@ package com.junkbyte.console.view
 			_ignoredChannels.splice(0);
 			_viewingChannels.splice(0);
 			if(a.indexOf(Console.GLOBAL_CHANNEL) < 0 && a.indexOf(null) < 0){
-				for each(var ch:String in a) 
+				for each(var ch:String in a)
 				{
 					if(ch) _viewingChannels.push(ch);
 				}
 			}
-			updateToBottom();
+			
+			if(scrollStates[channelsKey] && scrollStates[channelsKey].scrollPercent < 1){
+				updateWithScroll()
+			}else {
+				updateToBottom();
+			}
+			
 			console.panels.updateMenu();
 		}
 		
@@ -502,7 +560,10 @@ package com.junkbyte.console.view
 		/**
 		 * @private
 		 */
-		public function setIgnoredChannels(...channels:Array):void{
+		public function setIgnoredChannels(channels:Array):void{
+			
+			scrollStates[channelsKey] = getScrollState();
+			
 			var a:Array = new Array();
 			for each(var item:Object in channels) a.push(Console.MakeChannelName(item));
 			
@@ -513,12 +574,18 @@ package com.junkbyte.console.view
 			_ignoredChannels.splice(0);
 			_viewingChannels.splice(0);
 			if(a.indexOf(Console.GLOBAL_CHANNEL) < 0 && a.indexOf(null) < 0){
-				for each(var ch:String in a) 
+				for each(var ch:String in a)
 				{
 					if(ch) _ignoredChannels.push(ch);
 				}
 			}
-			updateToBottom();
+			
+			if(scrollStates[channelsKey] && scrollStates[channelsKey].scrollPercent < 1){
+				updateWithScroll()
+			}else {
+				updateToBottom();
+			}
+			
 			console.panels.updateMenu();
 		}
 		
@@ -552,13 +619,13 @@ package com.junkbyte.console.view
 		private function startFilter():void{
 			console.clear(Console.FILTER_CHANNEL);
 			console.logs.addChannel(Console.FILTER_CHANNEL);
-			setViewingChannels(Console.FILTER_CHANNEL);
+			setViewingChannels([Console.FILTER_CHANNEL]);
 		}
 		private function endFilter():void{
 			_filterRegExp = null;
 			_filterText = null;
 			if(_viewingChannels.length == 1 && _viewingChannels[0] == Console.FILTER_CHANNEL){
-				setViewingChannels(Console.GLOBAL_CHANNEL);
+				setViewingChannels([Console.GLOBAL_CHANNEL]);
 			}
 		}
 		private function makeLine(line:Log, showch:Boolean):String{
@@ -632,6 +699,25 @@ package com.junkbyte.console.view
 				}
 			}
 		}
+	
+		public function getScrollState():ConsoleScrollState{
+			var state:ConsoleScrollState = new ConsoleScrollState();
+			state.scrollV = _traceField.scrollV;
+			state.scrollPercent = scrollPercent;
+			state.scrollVisible = _scroll.visible;
+			return state;
+		}
+	
+		public function setScrollState(value:ConsoleScrollState):void{
+				if(value.scrollPercent == 1){
+					updateBottom()
+				}else{
+					scrollPercent = value.scrollPercent;
+					_traceField.scrollV = value.scrollV;
+					_scroll.visible = value.scrollVisible;
+				}
+		}
+	
 		private function onScrollbarDown(e:MouseEvent):void{
 			if((_scroller.visible && _scroller.mouseY>0) || (!_scroller.visible && _scroll.mouseY>_scrollHeight/2)) {
 				_scrolldir = 3;
@@ -966,11 +1052,11 @@ package com.junkbyte.console.view
 			var current:Array;
 			if(_ctrl && chn != Console.GLOBAL_CHANNEL){
 				current = toggleCHList(_ignoredChannels, chn);
-				setIgnoredChannels.apply(this, current);
+				setIgnoredChannels(current);
 			}
 			else if(_shift && chn != Console.GLOBAL_CHANNEL && _viewingChannels[0] != LogReferences.INSPECTING_CHANNEL){
 				current = toggleCHList(_viewingChannels, chn);
-				setViewingChannels.apply(this, current);
+				setViewingChannels(current);
 			}else{
 				console.setViewingChannels(chn);
 			}
@@ -1039,7 +1125,7 @@ package com.junkbyte.console.view
 		private function commandKeyDown(e:KeyboardEvent):void{
 			//e.stopPropagation();
 			if(e.keyCode == Keyboard.TAB){
-				if(_hint) 
+				if(_hint)
 				{
 					_cmdField.text = _hint;
 					setCLSelectionAtEnd();
@@ -1124,6 +1210,7 @@ package com.junkbyte.console.view
 			setHints();
 		}
 		private function onCmdFocusOut(e:Event):void{
+			if (Cc && Cc.visible) stage.focus = _cmdField;
 			setHints();
 		}
 		private function setHints(hints:Array = null):void{

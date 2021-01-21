@@ -205,7 +205,7 @@ import com.junkbyte.console.Console;
 		private function handleString(str:String):void{
 			if(str == "refexit"){
 				exitFocus();
-				console.setViewingChannels();
+				console.loadPrevChannelsFilter();
 			}else if(str == "refprev"){
 				historyInc(-2);
 			}else if(str == "reffwd"){
