@@ -22,44 +22,40 @@
 * 3. This notice may not be removed or altered from any source distribution.
 * 
 */
-package com.junkbyte.console 
-{
-	public class KeyBind 
-	{
-		
-		private var _code:Boolean;
-		private var _key:String;
-		
-		/**
-		 * @param code Pass a single string (e.g. "a") OR pass keyCode (e.g. Keyboard.F1)
-		 * @param shift Set true if shift key needs to be pressed to trigger
-		 * @param ctrl Set true if ctrl key needs to be pressed to trigger
-		 * @param alt Set true if alt key needs to be pressed to trigger
-		 */
-		public function KeyBind(v:*, shift:Boolean = false, ctrl:Boolean = false, alt:Boolean = false, onUp:Boolean = false)
-		{
-			_key = String(v).toUpperCase();
-			if(v is uint){
-				_code = true;
-			}else if(!v || _key.length != 1) {
-				throw new Error("KeyBind: character (first char) must be a single character. You gave ["+v+"]");
-			}
-			
-			if(_code) _key = "keycode:"+_key;
-			if(shift) _key+="+shift";
-			if(ctrl) _key+="+ctrl";
-			if(alt) _key+="+alt";
-			if(onUp) _key+="+up";
-			
-		}
-		
-		public function get useKeyCode():Boolean
-		{
-			return _code;
-		}
-		public function get key():String
-		{
-			return _key;
-		}
-	}
+package com.junkbyte.console {
+public class KeyBind {
+    
+    private var _code:Boolean;
+    private var _key:String;
+    
+    /**
+     * @param code Pass a single string (e.g. "a") OR pass keyCode (e.g. Keyboard.F1)
+     * @param shift Set true if shift key needs to be pressed to trigger
+     * @param ctrl Set true if ctrl key needs to be pressed to trigger
+     * @param alt Set true if alt key needs to be pressed to trigger
+     */
+    public function KeyBind(v:*, shift:Boolean = false, ctrl:Boolean = false, alt:Boolean = false, onUp:Boolean = false) {
+        _key = String(v).toUpperCase();
+        if (v is uint) {
+            _code = true;
+        } else if (!v || _key.length != 1) {
+            throw new Error("KeyBind: character (first char) must be a single character. You gave [" + v + "]");
+        }
+        
+        if (_code) _key = "keycode:" + _key;
+        if (shift) _key += "+shift";
+        if (ctrl) _key += "+ctrl";
+        if (alt) _key += "+alt";
+        if (onUp) _key += "+up";
+        
+    }
+    
+    public function get useKeyCode():Boolean {
+        return _code;
+    }
+    
+    public function get key():String {
+        return _key;
+    }
+}
 }

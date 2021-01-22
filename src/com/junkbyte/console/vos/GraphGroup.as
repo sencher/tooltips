@@ -23,70 +23,73 @@
 * 
 */
 package com.junkbyte.console.vos {
-	import flash.utils.ByteArray;
-	import flash.geom.Rectangle;
+import flash.geom.Rectangle;
+import flash.utils.ByteArray;
 
-	/**
-	 * @private
-	 */
-	public class GraphGroup {
-		
-		public static const FPS:uint = 1;
-		public static const MEM:uint = 2;
-	
-		public var type:uint;
-		public var name:String;
-		public var freq:int = 1; // update every n number of frames.
-		public var low:Number;
-		public var hi:Number;
-		public var fixed:Boolean;
-		public var averaging:uint;
-		public var inv:Boolean;
-		public var interests:Array = [];
-		public var rect:Rectangle;
-		//
-		//
-		public var idle:int;
-		
-		public function GraphGroup(n:String){
-			name = n;
-		}
-		public function updateMinMax(v:Number):void{
-			if(!isNaN(v) && !fixed){
-				if(isNaN(low)) {
-					low = v;
-					hi = v;
-				}
-				if(v > hi) hi = v;
-				if(v < low) low = v;
-			}
-		}
-		//
-		//
-		//
-		public function toBytes(bytes:ByteArray):void{
-			bytes.writeUTF(name);
-			bytes.writeUnsignedInt(type);
-			bytes.writeUnsignedInt(idle);
-			bytes.writeDouble(low);
-			bytes.writeDouble(hi);
-			bytes.writeBoolean(inv);
-			bytes.writeUnsignedInt(interests.length);
-			for each(var gi:GraphInterest in interests) gi.toBytes(bytes);
-		}
-		public static function FromBytes(bytes:ByteArray):GraphGroup{
-			var g:GraphGroup = new GraphGroup(bytes.readUTF());
-			g.type = bytes.readUnsignedInt();
-			g.idle = bytes.readUnsignedInt();
-			g.low = bytes.readDouble();
-			g.hi = bytes.readDouble();
-			g.inv = bytes.readBoolean();
-			var len:uint = bytes.readUnsignedInt();
-			while(len){
-				g.interests.push(GraphInterest.FromBytes(bytes));
-				len--;
-			}
-			return g;
-		}
-	}
+/**
+ * @private
+ */
+public class GraphGroup {
+    
+    public static const FPS:uint = 1;
+    public static const MEM:uint = 2;
+    
+    public var type:uint;
+    public var name:String;
+    public var freq:int = 1; // update every n number of frames.
+    public var low:Number;
+    public var hi:Number;
+    public var fixed:Boolean;
+    public var averaging:uint;
+    public var inv:Boolean;
+    public var interests:Array = [];
+    public var rect:Rectangle;
+    //
+    //
+    public var idle:int;
+    
+    public function GraphGroup(n:String) {
+        name = n;
+    }
+    
+    public function updateMinMax(v:Number):void {
+        if (!isNaN(v) && !fixed) {
+            if (isNaN(low)) {
+                low = v;
+                hi = v;
+            }
+            if (v > hi) hi = v;
+            if (v < low) low = v;
+        }
+    }
+    
+    //
+    //
+    //
+    public function toBytes(bytes:ByteArray):void {
+        bytes.writeUTF(name);
+        bytes.writeUnsignedInt(type);
+        bytes.writeUnsignedInt(idle);
+        bytes.writeDouble(low);
+        bytes.writeDouble(hi);
+        bytes.writeBoolean(inv);
+        bytes.writeUnsignedInt(interests.length);
+        for each(var gi:GraphInterest in interests) gi.toBytes(bytes);
+    }
+    
+    public static function FromBytes(bytes:ByteArray):GraphGroup {
+        var g:GraphGroup = new GraphGroup(bytes.readUTF());
+        g.type = bytes.readUnsignedInt();
+        g.idle = bytes.readUnsignedInt();
+        g.low = bytes.readDouble();
+        g.hi = bytes.readDouble();
+        g.inv = bytes.readBoolean();
+        var len:uint = bytes.readUnsignedInt();
+        while (len) {
+            g.interests.push(GraphInterest.FromBytes(bytes));
+            len--;
+        }
+        return g;
+    }
+}
 }

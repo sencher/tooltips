@@ -23,84 +23,88 @@
 * 
 */
 package com.junkbyte.console.vos {
-	import com.junkbyte.console.Console;
-	import com.junkbyte.console.ConsoleConfig;
-	
-	import flash.utils.ByteArray;
-	
+import com.junkbyte.console.Console;
+import com.junkbyte.console.ConsoleConfig;
+
+import flash.utils.ByteArray;
+
 //	import scaleform.gfx.Extensions;
-	
-	/**
-	 * @private
-	 */
-	public class Log{
-		public var line:uint;
-		public var text:String;
-		public var ch:String;
-		public var priority:int;
-		public var repeat:Boolean;
-		public var html:Boolean;
-		public var time:uint;
-		//public var stack:String;
-		
-		public var timeStr:String;
-		public var lineStr:String;
-		public var chStr:String;
-		//
-		public var next:Log;
-		public var prev:Log;
-		private var _console:Console;
-		//
-		public function Log(console:Console, txt:String, cc:String, pp:int, repeating:Boolean = false, ishtml:Boolean = false){
-			_console = console;
-			text = txt;
-			ch = cc;
-			priority = pp;
-			repeat = repeating;
-			html = ishtml;
-		}
-		public function toBytes(bytes:ByteArray):void{
-			var t:ByteArray = new ByteArray();
-			t.writeUTFBytes(text);// because writeUTF can't accept more than 65535
-			bytes.writeUnsignedInt(t.length);
-			bytes.writeBytes(t);
-			bytes.writeUTF(ch);
-			bytes.writeInt(priority);
-			bytes.writeBoolean(repeat);
-		}
-		public static function FromBytes(console:Console, bytes:ByteArray):Log{
-			var t:String = bytes.readUTFBytes(bytes.readUnsignedInt());
-			var c:String = bytes.readUTF();
-			var p:int = bytes.readInt();
-			var r:Boolean = bytes.readBoolean();
-			return new Log(console, t, c, p, r, true);
-		}
-		
-		public function plainText():String{
-			if(text.indexOf(ConsoleConfig.STACK_HREF_TEXT) < 0) {
-				return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
-			}else{
+
+/**
+ * @private
+ */
+public class Log {
+    public var line:uint;
+    public var text:String;
+    public var ch:String;
+    public var priority:int;
+    public var repeat:Boolean;
+    public var html:Boolean;
+    public var time:uint;
+    //public var stack:String;
+    
+    public var timeStr:String;
+    public var lineStr:String;
+    public var chStr:String;
+    //
+    public var next:Log;
+    public var prev:Log;
+    private var _console:Console;
+    
+    //
+    public function Log(console:Console, txt:String, cc:String, pp:int, repeating:Boolean = false, ishtml:Boolean = false) {
+        _console = console;
+        text = txt;
+        ch = cc;
+        priority = pp;
+        repeat = repeating;
+        html = ishtml;
+    }
+    
+    public function toBytes(bytes:ByteArray):void {
+        var t:ByteArray = new ByteArray();
+        t.writeUTFBytes(text);// because writeUTF can't accept more than 65535
+        bytes.writeUnsignedInt(t.length);
+        bytes.writeBytes(t);
+        bytes.writeUTF(ch);
+        bytes.writeInt(priority);
+        bytes.writeBoolean(repeat);
+    }
+    
+    public static function FromBytes(console:Console, bytes:ByteArray):Log {
+        var t:String = bytes.readUTFBytes(bytes.readUnsignedInt());
+        var c:String = bytes.readUTF();
+        var p:int = bytes.readInt();
+        var r:Boolean = bytes.readBoolean();
+        return new Log(console, t, c, p, r, true);
+    }
+    
+    public function plainText():String {
+        if (text.indexOf(ConsoleConfig.STACK_HREF_TEXT) < 0) {
+            return text.replace(/<.*?>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+        } else {
 //				var pattern:RegExp = /event:.*_(.*)'/g;
-				var linkId:int;
+            var linkId:int;
 //				if(!Extensions.isGFxPlayer){
 //					linkId = int(String(text.match(pattern)[0]).replace(pattern, "$1"));
 //				}else{
-					linkId = int(text.substring(text.indexOf("ref_") + 4, text.lastIndexOf("\'")));
+            linkId = int(text.substring(text.indexOf("ref_") + 4, text.lastIndexOf("\'")));
 //				}
-				
-				return text.replace(/<.*> /g,"") + "\n" + String(_console.config.tracingLevel > 1 ? _console.refs.getRefById(linkId) : "");
-			}
-		}
-		public function toString():String{
-			return "[trace " + priority + "] " + "["+ch+"] " + plainText();
-		}
-		
-		public function clone():Log{
-			var l:Log = new Log(_console, text, ch, priority, repeat, html);
-			l.line = line;
-			l.time = time;
-			//l.stack = stack;
-			return l;
-		}
-	}
+            
+            return text.replace(/<.*> /g, "") + "\n" + String(_console.config.tracingLevel > 1 ? _console.refs.getRefById(linkId) : "");
+        }
+    }
+    
+    public function toString():String {
+        return "[trace " + priority + "] " + "[" + ch + "] " + plainText();
+    }
+    
+    public function clone():Log {
+        var l:Log = new Log(_console, text, ch, priority, repeat, html);
+        l.line = line;
+        l.time = time;
+        //l.stack = stack;
+        return l;
+    }
+}
 }

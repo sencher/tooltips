@@ -189,7 +189,7 @@ public class Cc {
         if (!_console) return;
         for (var i:int = 0; i < strings.length; i++) {
             var currentElement:* = strings[i];
-            if(currentElement is String == false) {
+            if (currentElement is String == false) {
                 strings[i] = _console.mapper.json(currentElement) + "\n\n";
             }
         }
@@ -321,6 +321,20 @@ public class Cc {
     }
     
     /**
+     * Add log line with priority 9 to channel with whoCalledThis
+     * Allows multiple arguments for convenience use.
+     *
+     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
+     */
+    public static function errorchw(channel:*, ...strings):void {
+        if (!_console) return;
+        var stack:String = _console.mapper.whoCalledThis();
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
+        _console.addCh(channel, strings, Console.ERROR, false, true);
+    }
+    
+    /**
      * Add log line with priority 10 to channel
      * Allows multiple arguments for convenience use.
      *
@@ -329,6 +343,20 @@ public class Cc {
      */
     public static function fatalch(channel:*, ...strings):void {
         if (_console) _console.addCh(channel, strings, Console.FATAL);
+    }
+    
+    /**
+     * Add log line with priority 10 to channel with whoCalledThis
+     * Allows multiple arguments for convenience use.
+     *
+     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
+     */
+    public static function fatalchw(channel:*, ...strings):void {
+        if (!_console) return;
+        var stack:String = _console.mapper.whoCalledThis();
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
+        _console.addCh(channel, strings, Console.FATAL, false, true);
     }
     
     /**
@@ -391,7 +419,7 @@ public class Cc {
      * @param obj    Object to explode
      * @param depth    Depth of explosion, -1 = unlimited
      */
-    public static function explode(obj:Object, depth:int = 3):void {
+    public static function explode(obj:Object, depth:int = 1):void {
         if (_console) _console.explode(obj, depth);
     }
     
@@ -402,7 +430,7 @@ public class Cc {
      * @param obj    Object to explode
      * @param depth    Depth of explosion, -1 = unlimited
      */
-    public static function explodech(channel:*, obj:Object, depth:int = 3):void {
+    public static function explodech(channel:*, obj:Object, depth:int = 1):void {
         if (_console) _console.explodech(channel, obj, depth);
     }
     

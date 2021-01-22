@@ -21,77 +21,81 @@
 * misrepresented as being the original software.
 * 3. This notice may not be removed or altered from any source distribution.
 * 
-*/package com.junkbyte.console.vos {
-	import flash.utils.ByteArray;
-	import com.junkbyte.console.core.Executer;
-	import com.junkbyte.console.vos.WeakRef;
-	
-	/**
-	 * @private
-	 */
-	public class GraphInterest {
-		
-		private var _ref:WeakRef;
-		public var _prop:String;
-		private var useExec:Boolean;
-		public var key:String;
-		public var col:Number;
-		public var v:Number;
-		public var avg:Number;
-		
-		public function GraphInterest(keystr:String ="", color:Number = 0):void{
-			col = color;
-			key = keystr;
-		}
-		public function setObject(object:Object, property:String):Number{
-			_ref = new WeakRef(object);
-			_prop = property;
-			useExec = _prop.search(/[^\w\d]/) >= 0;
-			//
-			v = getCurrentValue();
-			avg = v;
-			return v;
-		}
-		public function get obj():Object{
-			return _ref!=null?_ref.reference:undefined;
-		}
-		public function get prop():String{
-			return _prop;
-		}
-		//
-		//
-		//
-		public function getCurrentValue():Number{
-			return useExec?Executer.Exec(obj, _prop):obj[_prop];
-		}
-		public function setValue(val:Number, averaging:uint = 0):void{
-			v = val;
-			if(averaging>0)
-			{
-				if(isNaN(avg))
-				{
-					avg = v;
-				}
-				else
-				{
-					avg += ((v-avg)/averaging);
-				}
-			}
-		}
-		//
-		//
-		//
-		public function toBytes(bytes:ByteArray):void{
-			bytes.writeUTF(key);
-			bytes.writeUnsignedInt(col);
-			bytes.writeDouble(v);
-			bytes.writeDouble(avg);
-		}
-		public static function FromBytes(bytes:ByteArray):GraphInterest{
-			var interest:GraphInterest = new GraphInterest(bytes.readUTF(), bytes.readUnsignedInt());
-			interest.v = bytes.readDouble();
-			interest.avg = bytes.readDouble();
-			return interest;
-		}
-	}
+*/
+package com.junkbyte.console.vos {
+import com.junkbyte.console.core.Executer;
+
+import flash.utils.ByteArray;
+
+/**
+ * @private
+ */
+public class GraphInterest {
+    
+    private var _ref:WeakRef;
+    public var _prop:String;
+    private var useExec:Boolean;
+    public var key:String;
+    public var col:Number;
+    public var v:Number;
+    public var avg:Number;
+    
+    public function GraphInterest(keystr:String = "", color:Number = 0):void {
+        col = color;
+        key = keystr;
+    }
+    
+    public function setObject(object:Object, property:String):Number {
+        _ref = new WeakRef(object);
+        _prop = property;
+        useExec = _prop.search(/[^\w\d]/) >= 0;
+        //
+        v = getCurrentValue();
+        avg = v;
+        return v;
+    }
+    
+    public function get obj():Object {
+        return _ref != null ? _ref.reference : undefined;
+    }
+    
+    public function get prop():String {
+        return _prop;
+    }
+    
+    //
+    //
+    //
+    public function getCurrentValue():Number {
+        return useExec ? Executer.Exec(obj, _prop) : obj[_prop];
+    }
+    
+    public function setValue(val:Number, averaging:uint = 0):void {
+        v = val;
+        if (averaging > 0) {
+            if (isNaN(avg)) {
+                avg = v;
+            } else {
+                avg += ((v - avg) / averaging);
+            }
+        }
+    }
+    
+    //
+    //
+    //
+    public function toBytes(bytes:ByteArray):void {
+        bytes.writeUTF(key);
+        bytes.writeUnsignedInt(col);
+        bytes.writeDouble(v);
+        bytes.writeDouble(avg);
+    }
+    
+    public static function FromBytes(bytes:ByteArray):GraphInterest {
+        var interest:GraphInterest = new GraphInterest(bytes.readUTF(), bytes.readUnsignedInt());
+        interest.v = bytes.readDouble();
+        interest.avg = bytes.readDouble();
+        return interest;
+    }
+}
 }
