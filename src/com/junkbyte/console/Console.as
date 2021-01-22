@@ -55,10 +55,10 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.73;
+    public static const VERSION:Number = 2.74;
     public static const VERSION_STAGE:String = "";
     public static const BUILD:int = 611;
-    public static const BUILD_DATE:String = "2017/09/15 16:00";
+    public static const BUILD_DATE:String = "22.1.2021";
     //
     public static const LOG:uint = 1;
     public static const INFO:uint = 3;
