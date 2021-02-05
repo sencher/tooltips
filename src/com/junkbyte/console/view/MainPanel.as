@@ -355,7 +355,8 @@ public class MainPanel extends ConsolePanel {
         if (changed) {
             _bottomLine.alpha = 1;
             _needUpdateMenu = true;
-            _needUpdateTrace = isActiveChannel(ch);
+            _needUpdateTrace = true;
+//            _needUpdateTrace = isActiveChannel(ch);
         }
         if (_needUpdateTrace) {
             _needUpdateTrace = false;

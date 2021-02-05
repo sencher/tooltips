@@ -55,7 +55,7 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.74;
+    public static const VERSION:Number = 2.75;
     public static const VERSION_STAGE:String = "";
     public static const BUILD:int = 611;
     public static const BUILD_DATE:String = "22.1.2021";
@@ -120,6 +120,8 @@ public class Console extends Sprite {
             var args:Array = str.split(/\s+|\:/);
             remotingSocket(args[0], args[1]);
         }, "Connect to socket remote. /remotingSocket ip port");
+        
+        cl.addCLCmd("refs", printRefMap, "Show references");
         
         if (_config.sharedObjectName) {
             try {
@@ -439,7 +441,7 @@ public class Console extends Sprite {
                 parent.addChild(this);
                 report("Moved console on top (alwaysOnTop enabled), " + _topTries + " attempts left.", -1);
             }
-            _panels.update(_paused, _logs.hasNewLog, _logs.last.ch);
+            _panels.update(_paused, _logs.hasNewLog, _logs.last ? _logs.last.ch : "");
             _logs.hasNewLog = false;
             if (graphsList) _panels.updateGraphs(graphsList);
         }
@@ -739,10 +741,11 @@ public class Console extends Sprite {
     public function get graphing():Graphing {
         return _graphing;
     }
+
+    public function printRefMap(value:*):void {
+        log(_refs);
+    }
     
-    /**
-     * @private
-     */
     public function get refs():LogReferences {
         return _refs;
     }

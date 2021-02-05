@@ -90,14 +90,14 @@ public class LogReferences extends ConsoleCore {
                 _currentBank.push(o);
             }
             _refIndex++;
-            // Look through every 50th older _refMap ids and delete empty ones
-            // 50s rather than all to be faster.
-            var i:int = ind - 50;
+            // Look through every 200th older _refMap ids and delete empty ones
+            // 200s rather than all to be faster.
+            var i:int = ind - 200;
             while (i >= 0) {
                 if (_refMap[i] === null) {
                     delete _refMap[i];
                 }
-                i -= 50;
+                i -= 200;
             }
         }
         return ind;
@@ -109,6 +109,10 @@ public class LogReferences extends ConsoleCore {
     
     public function getRefById(ind:uint):* {
         return _refMap[ind];
+    }
+    
+    public function get refMap():WeakObject{
+        return _refMap;
     }
     
     public function makeString(o:*, prop:* = null, html:Boolean = false, maxlen:int = -1):String {
@@ -130,7 +134,7 @@ public class LogReferences extends ConsoleCore {
             return shortenString(EscHTML(v.toXMLString()), maxlen, o, prop);
         } else if (v is QName) {
             return String(v);
-        } else if (v is Array || getQualifiedClassName(v).indexOf("__AS3__.vec::Vector.") == 0) {
+        } else if (v is Array || getQualifiedClassName(v).indexOf("__AS3__.vec::Vector") == 0) {
             // note: using getQualifiedClassName for vector for backward compatibility
             // Need to specifically cast to string in array to produce correct results
             // e.g: new Array("str",null,undefined,0).toString() // traces to: str,,,0, SHOULD BE: str,null,undefined,0
