@@ -15,23 +15,26 @@ import utils.Utils;
 
 public class Test_LoaderMain extends Sprite {
     //private var loader_test:LoaderInfo;
+    private var loader:Loader = new Loader();
+    
     public function Test_LoaderMain() {
         var cur:ApplicationDomain = ApplicationDomain.currentDomain;
         trace(cur.getQualifiedDefinitionNames());
 //        c = Class(cur.getDefinition("com.junkbyte.console::Cc"));
 
-        var loader:Loader = new Loader();
+        
         //вешаем обработчики событий ошибок загрузки
         loader.contentLoaderInfo.addEventListener(Event.COMPLETE, оnComplete);
 //        loader_test.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, оnError);
 //        loader_test.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR, оnSequrityError);
         //грузим нашу флешку
-        var loaderContext:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain, null);
+//        var loaderContext:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain, null);
+        var loaderContext:LoaderContext = new LoaderContext();
         loader.load(new URLRequest("Test_LoaderSecond.swf"), loaderContext);
     }
 
     private function оnComplete(event:Event):void {
-        trace(event);
+//        trace(event, loader.loaderInfo.url);
         var cur:ApplicationDomain = event.target.applicationDomain;
         trace("1*********************\n", cur.getQualifiedDefinitionNames());
         var par:ApplicationDomain = cur.parentDomain;
