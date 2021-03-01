@@ -1,0 +1,1737 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://greensock.com/asdocs/index.html?com/greensock/package-detail.html&com/greensock/class-list.html
+Subject: FlexBlitMask - GreenSock Documentation
+Date: Mon, 1 Mar 2021 20:46:39 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----"
+
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-1312FFEB6037E394294EB36BFD0FA88F@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/index.html?com/greensock/package-detail.html&com/greensock/class-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.o=
+rg/TR/html4/frameset.dtd"><html><head><meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8">
+
+   =20
+<title>FlexBlitMask - GreenSock Documentation</title>
+   =20
+
+
+</head>
+
+<frameset cols=3D"210,*" border=3D"2" bordercolor=3D"#AAAAAA" framespacing=
+=3D"0" class=3D"vsc-initialized">
+      =20
+<frame src=3D"cid:frame-8E2F44989CD45DEB7F97D82B64DEAF58@mhtml.blink" name=
+=3D"packageFrame" scrolling=3D"no">
+      =20
+<frameset rows=3D"80,*" border=3D"0" bordercolor=3D"#AAAAAA">
+       	=09
+<frame src=3D"cid:frame-501211C38104CA3BA94F42327462FD6B@mhtml.blink" name=
+=3D"titlebar" scrolling=3D"no" frameborder=3D"0">
+       	=09
+<frame src=3D"cid:frame-D8597E5C10C52654623AE90471FD0F47@mhtml.blink" name=
+=3D"classFrame" frameborder=3D"0">
+    =09
+</frameset>
+   =20
+<noframes>
+=09
+<body>
+       =20
+<h2>Frame Alert</h2>
+       =20
+<p>
+        This document is designed to be viewed using the frames feature. If=
+ you see this message, you are using a non-frame-capable web client.
+        <br>
+        Link to <a href=3D"package-summary.html">Non-frame version.</a>
+       =20
+</p>
+       =20
+</body>
+   =20
+</noframes>
+
+</frameset>
+<!-- -->
+
+
+</html>
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-8E2F44989CD45DEB7F97D82B64DEAF58@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/package-frame.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.o=
+rg/TR/html4/frameset.dtd"><html><head><meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8">
+
+   =20
+<title>GreenSock Tweening Platform Language Reference</title>
+
+</head>
+
+<frameset rows=3D"40%,60%" border=3D"2" framespacing=3D"1" bordercolor=3D"#=
+AAAAAA" class=3D"vsc-initialized">
+   =20
+<frame src=3D"cid:frame-D2E701FDCAF0C8C47A47EC9156DD1075@mhtml.blink" name=
+=3D"packageListFrame">
+   =20
+<frame src=3D"cid:frame-2DB230D84C1A4EA07B8DF7B65FB1CBC6@mhtml.blink" name=
+=3D"classListFrame">
+   =20
+<noframes>
+       =20
+<body>
+           =20
+<h2>Frame Alert</h2>
+           =20
+<p>This document is designed to be viewed using the frames feature. If you =
+see this message, you are using a non-frame-capable web client.
+                <br>
+                Link to<a href=3D"package-summary.html">Non-frame version.<=
+/a>
+           =20
+</p>
+       =20
+</body>
+   =20
+</noframes>
+
+</frameset>
+<!-- -->
+
+
+</html>
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-501211C38104CA3BA94F42327462FD6B@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/title-bar.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><!=
+-- saved from url=3D(0014)about:internet --><html><head><meta http-equiv=3D=
+"Content-Type" content=3D"text/html; charset=3DUTF-8">
+		<title>GreenSock ActionScript API Docs</title><link rel=3D"stylesheet" hr=
+ef=3D"https://greensock.com/asdocs/style.css" type=3D"text/css" media=3D"sc=
+reen"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/print.c=
+ss" type=3D"text/css" media=3D"print"><link rel=3D"stylesheet" href=3D"http=
+s://greensock.com/asdocs/override.css" type=3D"text/css">
+	=09
+	=09
+	=09
+	</head>
+	<body class=3D"vsc-initialized">
+		<a name=3D"top"></a>
+	=09
+		<div style=3D"width:300px; height:60px;position:absolute;background-image=
+:url('images/02geek-as3-js.gif'); left:240px; top:7px; border:1px solid #77=
+7;">
+			<a href=3D"http://02skills.com/course/javascript-animation-bundle/?affco=
+de=3Dic6i&amp;couponCode=3DBEST" target=3D"_blank"><div style=3D"width:174p=
+x;height:61px;position:relative;left:0px;top:0px;"></div></a>
+			<a href=3D"http://02skills.com/course/gsap-flash-animation/?affcode=3Dic=
+6i&amp;couponCode=3DBEST" target=3D"_blank"><div style=3D"width:33px;height=
+:61px;position:relative;left:174px;top:-61px;"></div></a>
+			<a name=3D"02geek" href=3D"http://02skills.com/course/animation-bundle/?=
+affcode=3Dic6i&amp;couponCode=3DBEST" target=3D"_blank">
+					<div style=3D"width:93px;height:61px;position:relative;left:207px;top:=
+-122px;"></div>
+			</a>
+		</div>
+		<table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+		  <tbody><tr>
+			<td>
+			  <table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+				<tbody><tr>
+				  <td class=3D"titleTableTitle" align=3D"left">GreenSock ActionScript A=
+PI Docs</td><td class=3D"titleTableSearch" align=3D"center">&nbsp;</td>
+				  <td class=3D"titleTableTopNav" align=3D"right">
+					<a target=3D"classFrame" href=3D"https://greensock.com/asdocs/package-=
+summary.html"> All Packages </a>&nbsp;|&nbsp;<a target=3D"classFrame" href=
+=3D"https://greensock.com/asdocs/class-summary.html"> All Classes </a>&nbsp=
+;|&nbsp;<a target=3D"classFrame" href=3D"https://greensock.com/asdocs/all-i=
+ndex-A.html"> Index </a>&nbsp;|&nbsp;<a href=3D"https://greensock.com/asdoc=
+s/title-bar.html"> No Frames </a>
+				  </td>
+				</tr>
+			  </tbody></table>
+			</td>
+			<td class=3D"titleTableLogo" align=3D"right" rowspan=3D"3"><img src=3D"h=
+ttps://greensock.com/asdocs/images/logo.jpg" class=3D"logoImage" title=3D"A=
+dobe Logo" alt=3D"Adobe Logo"></td>
+		  </tr>
+		  <tr>
+			<td>
+			  <table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+				<tbody><tr class=3D"titleTableRow2">
+				  <td class=3D"titleTableSubTitle" id=3D"subTitle" align=3D"left" colsp=
+an=3D"2">FlexBlitMask</td>
+				  <td class=3D"titleTableSubNav" id=3D"subNav" align=3D"right">
+					<a id=3D"propertiesLink" href=3D"https://greensock.com/asdocs/title-ba=
+r.html#top" style=3D"display: inline;"> Properties </a><span id=3D"properti=
+esBar" style=3D"display: inline;"> | </span><a id=3D"packagePropertiesLink"=
+ href=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display:=
+none"> Properties </a><span id=3D"packagePropertiesBar" style=3D"display:no=
+ne"> | </span><a id=3D"constructorLink" href=3D"https://greensock.com/asdoc=
+s/title-bar.html#top" style=3D"display:none"> Constructor </a><span id=3D"c=
+onstructorBar" style=3D"display:none"> | </span><a id=3D"methodsLink" href=
+=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display: inli=
+ne;"> Methods </a><span id=3D"methodsBar" style=3D"display: inline;"> | </s=
+pan><a id=3D"packageFunctionsLink" href=3D"https://greensock.com/asdocs/tit=
+le-bar.html#top" style=3D"display:none"> Functions </a><span id=3D"packageF=
+unctionsBar" style=3D"display:none"> | </span><a id=3D"eventsLink" href=3D"=
+https://greensock.com/asdocs/title-bar.html#top" style=3D"display:none"> Ev=
+ents </a><span id=3D"eventsBar" style=3D"display:none"> | </span><a id=3D"s=
+tylesLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" style=
+=3D"display:none"> Styles </a><span id=3D"stylesBar" style=3D"display:none"=
+> | </span><a id=3D"SkinPartLink" href=3D"https://greensock.com/asdocs/titl=
+e-bar.html#top" style=3D"display:none"> Skin Parts </a><span id=3D"SkinPart=
+Bar" style=3D"display:none"> | </span><a id=3D"SkinStateLink" href=3D"https=
+://greensock.com/asdocs/title-bar.html#top" style=3D"display:none"> Skin St=
+ates </a><span id=3D"SkinStateBar" style=3D"display:none"> | </span><a id=
+=3D"effectsLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" s=
+tyle=3D"display:none"> Effects </a><span id=3D"effectsBar" style=3D"display=
+:none"> | </span><a id=3D"constantsLink" href=3D"https://greensock.com/asdo=
+cs/title-bar.html#top" style=3D"display:none"> Constants </a><span id=3D"co=
+nstantsBar" style=3D"display:none"> | </span><a id=3D"packageConstantsLink"=
+ href=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display:=
+none"> Constants </a><span id=3D"packageConstantsBar" style=3D"display:none=
+"> | </span><a id=3D"interfacesLink" href=3D"https://greensock.com/asdocs/t=
+itle-bar.html#top" style=3D"display:none"> Interfaces </a><span id=3D"inter=
+facesBar" style=3D"display:none"> | </span><a id=3D"classesLink" href=3D"ht=
+tps://greensock.com/asdocs/title-bar.html#top" style=3D"display: none;"> Cl=
+asses </a><span id=3D"classesBar" style=3D"display:none"> | </span><a id=3D=
+"packageUseLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" s=
+tyle=3D"display:none">Use</a><span id=3D"packageUseBar" style=3D"display:no=
+ne"> | </span><a id=3D"examplesLink" href=3D"https://greensock.com/asdocs/t=
+itle-bar.html#top" style=3D"display: inline;"> Examples </a>
+				  </td>
+				</tr>
+				<tr class=3D"titleTableRow3">
+				  <td colspan=3D"3">&nbsp;</td>
+				</tr>
+			  </tbody></table>
+			</td>
+		  </tr>
+		</tbody></table>
+=09
+<!--<br/>Thu Mar 28 2013, 04:38 PM -05:00  --></body></html>
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/style.css
+
+@charset "utf-8";
+
+.titleTable { width: 100%; }
+
+.titleTableTitle { white-space: nowrap; padding-left: 15px; padding-right: =
+5px; font-size: 13px; height: 44px; background-image: url("images/titleTabl=
+eTop.jpg"); background-repeat: repeat-x; }
+
+.titleTableSearch { white-space: nowrap; background-image: url("images/titl=
+eTableTop.jpg"); background-repeat: repeat-x; padding-right: 10px; }
+
+.searchForm { margin-top: 0px; margin-bottom: 0px; }
+
+.titleTableTopNav { font-size: 12px; background-image: url("images/titleTab=
+leTop.jpg"); background-repeat: repeat-x; }
+
+.titleTableLogo { width: 76px; height: 80px; vertical-align: top; }
+
+.titleTableRow2 { color: rgb(0, 0, 0); height: 31px; background-image: url(=
+"images/titleTableMiddle.jpg"); background-repeat: repeat-x; }
+
+.titleTableSubTitle { font-size: 20px; padding-left: 15px; padding-right: 5=
+px; }
+
+.titleTableSubNav { font-size: 12px; }
+
+.titleTableRow3 { height: 5px; background-image: url("images/titleTableBott=
+om.jpg"); background-repeat: repeat-x; }
+
+.logoImage { width: 76px; height: 80px; }
+
+.classHeaderTable { margin-top: 20px; }
+
+.classHeaderTable td { vertical-align: top; padding-bottom: 4px; }
+
+.classHeaderTableLabel { font-weight: bold; padding-right: 15px; }
+
+.classSignature { text-indent: -20px; padding-left: 20px; }
+
+.inheritanceList { text-indent: -20px; padding-left: 20px; }
+
+.inheritArrow { width: 15px; height: 9px; }
+
+.mxmlSyntax { margin-bottom: -13px; }
+
+.collapsedImage { width: 9px; height: 9px; border: 0px; }
+
+.expandedImage { width: 9px; height: 9px; border: 0px; }
+
+.classFrameContent { margin: 10px 5px 10px 10px; }
+
+.classFrameContent td { white-space: nowrap; padding-right: 5px; }
+
+.eclipseBody { display: none; }
+
+img { border: 0px; }
+
+.annotation { font-size: 20px; margin-top: 20px; }
+
+.label { color: rgb(68, 68, 68); font-weight: bold; }
+
+strong { color: rgb(68, 68, 68); }
+
+.summarySection { margin-left: 20px; margin-right: 10px; }
+
+.summaryTableTitle { font-weight: bold; font-size: 18px; padding-top: 20px;=
+ padding-bottom: 5px; }
+
+* .summaryTable { margin-top: 10px; border: 1px solid rgb(153, 153, 153); w=
+idth: 100%; margin-bottom: 20px; }
+
+html > body .summaryTable { margin-top: 10px; border: 1px solid rgb(153, 15=
+3, 153); width: 100%; margin-bottom: 20px; margin-right: 10px; }
+
+.summaryTable th { color: rgb(255, 255, 255); background-color: rgb(98, 124=
+, 157); white-space: nowrap; }
+
+.summaryTable td { border-top: 1px solid rgb(153, 153, 153); vertical-align=
+: top; }
+
+.summaryTablePaddingCol { width: 5px; }
+
+.summaryTableInheritanceCol { width: 14px; }
+
+.summaryTableSignatureCol { padding-right: 10px; }
+
+.summaryTableOperatorCol { padding-left: 10px; padding-right: 10px; font-we=
+ight: bold; }
+
+.summaryTableStatementCol { padding-left: 10px; padding-right: 10px; font-w=
+eight: bold; white-space: nowrap; }
+
+.summarySignature { text-indent: -20px; padding-left: 20px; }
+
+.summaryTableOwnerCol { padding-right: 10px; width: 10px; }
+
+.summaryTableCol, .summaryTableSecondCol { }
+
+.signatureLink { font-weight: bold; }
+
+.summaryTableDescription { color: rgb(51, 51, 51); }
+
+.summaryTableLastCol { padding-right: 10px; }
+
+.inheritedSummaryImage { width: 14px; height: 14px; }
+
+.showHideLink { }
+
+.showHideLinkImage { width: 9px; height: 9px; }
+
+.hideInheritedConstant { display: none; }
+
+.showInheritedConstant { display: inline; }
+
+.hideInheritedProtectedConstant { display: none; }
+
+.showInheritedProtectedConstant { display: inline; }
+
+.hideInheritedProperty { display: none; }
+
+.showInheritedProperty { display: inline; }
+
+.hideInheritedProtectedProperty { display: none; }
+
+.showInheritedProtectedProperty { display: inline; }
+
+.hideInheritedMethod { display: none; }
+
+.showInheritedMethod { display: inline; }
+
+.hideInheritedProtectedMethod { display: none; }
+
+.showInheritedProtectedMethod { display: inline; }
+
+.hideInheritedEvent { display: none; }
+
+.showInheritedEvent { display: inline; }
+
+.hideInheritedStyle { display: none; }
+
+.showInheritedStyle { display: inline; }
+
+.hideInheritedEffect { display: none; }
+
+.showInheritedEffect { display: inline; }
+
+.detailSectionHeader { color: rgb(67, 67, 67); font-size: 18px; padding-lef=
+t: 10px; padding-top: 4px; padding-bottom: 4px; margin-top: 40px; margin-bo=
+ttom: 3px; background-image: url("images/detailSectionHeader.jpg"); backgro=
+und-repeat: repeat-x; }
+
+.detailHeader { margin-left: 20px; margin-top: 10px; margin-bottom: 3px; }
+
+.detailHeaderName { font-weight: bold; font-size: 16px; vertical-align: bas=
+eline; white-space: nowrap; }
+
+.detailHeaderType { font-size: 12px; vertical-align: baseline; padding-righ=
+t: 10px; padding-left: 7px; white-space: nowrap; }
+
+.detailHeaderParens { font-size: 14px; font-weight: bold; padding-left: 1px=
+; padding-bottom: 2px; }
+
+.detailHeaderRule { background-image: url("images/detailHeaderRule.jpg"); b=
+ackground-repeat: repeat-x; width: 100%; background-position: 50% center; }
+
+.detailBody { margin-left: 20px; margin-right: 15px; margin-bottom: 20px; }
+
+.exampleHeader { background-color: rgb(200, 209, 223); padding-left: 10px; =
+padding-top: 3px; padding-bottom: 3px; }
+
+.seeAlso { margin-top: -13px; padding-left: 20px; }
+
+body { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; color: r=
+gb(0, 0, 0); background-color: rgb(255, 255, 255); margin: 0px; padding: 0p=
+x; }
+
+body, td, th { font-size: 13px; }
+
+.MainContent { margin-left: 20px; margin-right: 10px; margin-bottom: 10px; =
+}
+
+code { font-family: "Lucida Console", "Courier New", Courier, monospace; fo=
+nt-size: 12px; }
+
+pre { font-family: "Lucida Console", "Courier New", Courier, monospace; fon=
+t-size: 12px; }
+
+th { text-align: left; font-weight: bold; vertical-align: bottom; }
+
+table { background-color: white; }
+
+table.withBorder { border-color: rgb(187, 187, 187); border-width: 1px; bor=
+der-style: solid; }
+
+.innertable { border-collapse: collapse; }
+
+.innertable th { border: 1px solid rgb(0, 0, 0); background: rgb(221, 221, =
+221); padding: 2px 3px; }
+
+.innertable td { border: 1px solid rgb(0, 0, 0); padding: 2px 3px; }
+
+.paramSpacer { font-size: 5px; }
+
+.row0 { background-color: rgb(242, 242, 242); }
+
+.row1 { background-color: rgb(255, 255, 255); }
+
+.prow0 { background-color: rgb(242, 242, 242); }
+
+.prow1 { background-color: rgb(255, 255, 255); }
+
+.idxrow { padding-top: 5px; }
+
+.SummaryTableHeader { background-color: rgb(204, 204, 204); }
+
+.InheritedTableHeader { background-color: rgb(238, 238, 238); }
+
+.PackageTableHeader { background-color: rgb(238, 238, 238); }
+
+a:link { color: rgb(0, 0, 204); text-decoration: none; }
+
+a:visited { color: rgb(0, 0, 204); text-decoration: none; }
+
+a:hover { text-decoration: underline; color: rgb(0, 0, 204); }
+
+a:active { text-decoration: none; color: rgb(204, 0, 0); }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", "Bitstream Vera Sans"=
+, verdana, lucida, arial, helvetica, sans-serif; font-weight: bold; margin-=
+top: 3px; margin-bottom: 3px; letter-spacing: 1px; width: 90%; }
+
+h1 { font-size: 18px; }
+
+h2 { font-size: 16px; }
+
+h3 { font-size: 14px; }
+
+h4 { font-size: 12px; color: rgb(102, 102, 102); }
+
+h5 { font-size: 11px; }
+
+.copyright { margin-top: 30px; color: rgb(119, 119, 119); font-size: 10px; =
+padding-bottom: 5px; }
+
+.inheritanceList { line-height: 19px; }
+
+.private { color: rgb(153, 153, 153); }
+
+.flashonly { color: rgb(0, 0, 0); }
+
+.flexonly { display: none; color: rgb(0, 0, 0); }
+
+.hide { display: none; }
+
+.feedbackLink { }
+
+* html .listing { width: 93%; padding: 5px 5px 5px 6%; overflow-x: auto; ba=
+ckground-color: rgb(242, 242, 242); margin-bottom: 10px; margin-top: 10px; =
+font-family: "Lucida Console", "Courier New", Courier, monospace; font-size=
+: 12px; }
+
+html > body .listing pre { overflow: auto; padding: 5px 5px 5px 40px; backg=
+round-color: rgb(242, 242, 242); margin-top: 10px; margin-bottom: 10px; fon=
+t-family: "Lucida Console", "Courier New", Courier, monospace; font-size: 1=
+2px; }
+
+.listingIcons { padding: 0px; margin-top: 10px; height: 15px; }
+
+.pageTop { height: 10px; }
+
+.hideInheritedSkinState { display: none; }
+
+.showInheritedSkinState { display: inline; }
+
+.hideInheritedSkinPart { display: none; }
+
+.showInheritedSkinPart { display: inline; }
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableTop.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAsAAEDAREA
+AhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAcJ/8QAHRAAAgEEAwAAAAAAAAAAAAAAABMFAQMS
+F1WS0//EABgBAQEAAwAAAAAAAAAAAAAAAAEAAgQF/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oA
+DAMBAAIRAxEAPwDRnCh0mhDVhTS1hSeokYsElWzJbiIvrf8Aczwn/9k=
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableMiddle.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAfAAEDAREA
+AhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQJ/8QAGBABAQADAAAAAAAAAAAAAAAAABMBEmH/
+xAAXAQADAQAAAAAAAAAAAAAAAAABAgQA/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIR
+AxEAPwDWaPF1SlIgy7QIYhPBLgx//9k=
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableBottom.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAFAAEDAREA
+AhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABoQAAAHAAAAAAAAAAAAAAAAAAABAwYYU5H/
+xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/
+AFEjYx7V8ICP/9k=
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/print.css
+
+@charset "utf-8";
+
+body { color: rgb(0, 0, 0); background: rgb(255, 255, 255); font-family: "T=
+imes New Roman", Times, serif; font-size: 12pt; }
+
+a { text-decoration: none; color: rgb(0, 0, 0); }
+
+pre { overflow-wrap: break-word; }
+
+.titleTableTopNav, .titleTableSubNav, .logoImage { display: none; }
+
+.packageFrame { display: none; }
+
+.titleTableSubTitle { font-weight: bold; }
+
+.classHeaderTableLabel { padding-right: 10px; vertical-align: top; }
+
+.showHideLinks { display: none; }
+
+html > body code { font-size: 10pt; }
+
+.summaryTableTitle, .detailSectionHeader { font-size: 14pt; font-weight: bo=
+ld; padding-top: 15px; padding-bottom: 5px; }
+
+.summaryTable { border: 1px solid rgb(0, 0, 0); border-collapse: collapse; =
+width: 100%; }
+
+.summaryTableDescription { padding-bottom: 20px; }
+
+.summaryTableSignatureCol, .summaryTableOwnerCol, .summaryTableLastCol, .su=
+mmaryTableCol { border: 1px solid rgb(0, 0, 0); }
+
+.summaryTablePaddingCol { border-width: 1px 0px 1px 1px; border-top-style: =
+solid; border-bottom-style: solid; border-left-style: solid; border-top-col=
+or: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb=
+(0, 0, 0); border-image: initial; border-right-style: initial; border-right=
+-color: initial; }
+
+.summaryTableInheritanceCol, .summaryTableOperatorCol, .summaryTableStateme=
+ntCol, .summaryTableSecondCol { border-width: 1px 1px 1px 0px; border-top-s=
+tyle: solid; border-right-style: solid; border-bottom-style: solid; border-=
+top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-co=
+lor: rgb(0, 0, 0); border-image: initial; border-left-style: initial; borde=
+r-left-color: initial; }
+
+.summaryTableLastCol { vertical-align: top; }
+
+.detailHeader { font-size: 13pt; padding-top: 100px; }
+
+.detailHeaderName { font-weight: bold; }
+
+.detailHeaderType { padding-left: 5px; }
+
+.detailHeaderRule { background: rgb(255, 0, 0); }
+
+.seeAlso { padding-bottom: 20px; margin-top: -20px; }
+
+.innertable { border-collapse: collapse; }
+
+.innertable td, .innertable th { border: 1px solid rgb(0, 0, 0); padding-le=
+ft: 5px; padding-right: 5px; }
+
+.listing { font-size: 10pt; }
+
+.feedbackLink { display: none; }
+
+.copyright { font-size: 10pt; }
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/override.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/02geek-as3-js.gif
+
+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
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/logo.jpg
+
+/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABGAAD/7gAOQWRvYmUA
+ZMAAAAAB/9sAhAAEAwMDAwMEAwMEBgQDBAYHBQQEBQcIBgYHBgYICggJCQkJCAoKDAwMDAwKDAwN
+DQwMEREREREUFBQUFBQUFBQUAQQFBQgHCA8KCg8UDg4OFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABQAEwDAREAAhEBAxEB/8QAYwABAAIDAAAA
+AAAAAAAAAAAAAAMEAQYIAQEBAAMAAAAAAAAAAAAAAAAAAQIDBBAAAgADCQAAAAAAAAAAAAAAABIB
+AwRhUpKT0xTUVQcRAQEBAQAAAAAAAAAAAAAAAAAREgH/2gAMAwEAAhEDEQA/AOjVgdrkgsAQWAIL
+AEFgCCwBBYAgsAQWAILAETICiAogKICiAogKICiAogKICpkJVEFBBQQUEFBBQQUEFBBQQUWEAIAQ
+AgBACAEAIAQAgEygFAKAUAoBQCgFAKAUDKV96lyJvIEUSvvUuRN5AgJX3qXIm8gQEr71LkTeQICV
+96lyJvIEBK+9S5E3kCAlfepcibyBASvvUuRN5AgJX3qXIm8gQEr71LkTeQIL6GKiAEAIAQAgBACA
+EAIBaWwAtgBbAC2AFsALYAWwAtgBbAC2ATpElWCRFIJEUgkRSCRFIJEUgkRSCRFIJEUgkRSNP3Xq
+XWUGCbrGnfW3JuvUusoME3WG+mTdepdZQYJusN9Mm69S6ygwTdYb6ZN16l1lBgm6w30ybr1LrKDB
+N1hvpk3XqXWUGCbrDfTJuvUusoME3WG+mTdepdZQYJusN9Mm69S6ygwTdYb6Zf/Z
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-D8597E5C10C52654623AE90471FD0F47@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/com/greensock/FlexBlitMask.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/sty=
+le.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" href=3D=
+"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"print">=
+<link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/override.css"=
+ type=3D"text/css"><meta name=3D"keywords" content=3D"FlexBlitMask,com.gree=
+nsock.FlexBlitMask,autoUpdate,autoUpdate,bitmapMode,bitmapMode,defaultEase,=
+defaultEase,defaultOverwrite,fillColor,fillColor,height,height,rotation,rot=
+ation,scaleX,scaleX,scaleY,scaleY,scrollX,scrollX,scrollY,scrollY,smoothing=
+,smoothing,target,target,target,target,ticker,ticker,ticker,vars,width,widt=
+h,wrap,wrap,wrapOffsetX,wrapOffsetX,wrapOffsetY,wrapOffsetY,x,x,y,y,add,add=
+Callback,addEventListener,addEventListener,addLabel,addPause,call,clear,cur=
+rentLabel,delayedCall,delayedCall,delayedCall,disableBitmapMode,disableBitm=
+apMode,dispose,dispose,duration,duration,enableBitmapMode,enableBitmapMode,=
+exportRoot,from,from,from,from,fromTo,fromTo,fromTo,getActive,getAllTweens,=
+getChildren,getLabelAfter,getLabelBefore,getLabelTime,getLabelsArray,getTwe=
+ensOf,getTweensOf,getTweensOf,invalidate,invalidate,invalidate,invalidate,i=
+sTweening,kill,killAll,killChildTweensOf,killDelayedCallsTo,killDelayedCall=
+sTo,killTweensOf,killTweensOf,killTweensOf,normalizePosition,normalizePosit=
+ion,pauseAll,progress,progress,remove,removeCallback,removeEventListener,re=
+moveEventListener,removeLabel,repeat,repeat,repeatDelay,repeatDelay,resumeA=
+ll,seek,set,set,set,setActualSize,setSize,setSize,shiftChildren,staggerFrom=
+,staggerFrom,staggerFromTo,staggerFromTo,staggerTo,staggerTo,stop,time,time=
+,to,to,to,to,totalDuration,totalDuration,totalDuration,totalProgress,totalP=
+rogress,tweenFromTo,tweenTo,update,update,updateTo,usesFrames,yoyo,yoyo"><t=
+itle>com.greensock.FlexBlitMask</title></head><body class=3D"vsc-initialize=
+d">
+<table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0" id=3D"title=
+Table" style=3D"display:none"><tbody><tr><td class=3D"titleTableTitle" alig=
+n=3D"left">GreenSock ActionScript API Docs</td><td class=3D"titleTableTopNa=
+v" align=3D"right"><a href=3D"https://greensock.com/asdocs/package-summary.=
+html">All Packages</a>&nbsp;|&nbsp;<a href=3D"https://greensock.com/asdocs/=
+class-summary.html">All Classes</a>&nbsp;|&nbsp;<a href=3D"https://greensoc=
+k.com/asdocs/all-index-A.html">Index</a>&nbsp;|&nbsp;<a id=3D"framesLink1" =
+href=3D"https://greensock.com/asdocs/index.html?com/greensock/FlexBlitMask.=
+html&amp;com/greensock/class-list.html">Frames</a><a id=3D"noFramesLink1" s=
+tyle=3D"display:none" href=3D"https://greensock.com/asdocs/com/greensock/Fl=
+exBlitMask.html"> No Frames </a></td><td class=3D"titleTableLogo" align=3D"=
+right" rowspan=3D"3"><img src=3D"https://greensock.com/asdocs/images/logo.j=
+pg" class=3D"logoImage" alt=3D" Adobe Logo " title=3D" Adobe Logo "></td></=
+tr><tr class=3D"titleTableRow2"><td class=3D"titleTableSubTitle" id=3D"subT=
+itle" align=3D"left">FlexBlitMask</td><td class=3D"titleTableSubNav" id=3D"=
+subNav" align=3D"right"><a href=3D"https://greensock.com/asdocs/com/greenso=
+ck/FlexBlitMask.html#propertySummary">Properties</a>&nbsp;| <a href=3D"http=
+s://greensock.com/asdocs/com/greensock/FlexBlitMask.html#methodSummary">Met=
+hods</a>&nbsp;| <a href=3D"https://greensock.com/asdocs/com/greensock/FlexB=
+litMask.html#includeExamplesSummary">Examples</a></td></tr><tr class=3D"tit=
+leTableRow3"><td colspan=3D"3">&nbsp;</td></tr></tbody></table><div xmlns:f=
+n=3D"http://www.w3.org/2005/xpath-functions" class=3D"MainContent"><table c=
+lass=3D"classHeaderTable" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><t=
+d class=3D"classHeaderTableLabel">Package</td><td><a href=3D"https://greens=
+ock.com/asdocs/com/greensock/package-detail.html">com.greensock</a></td></t=
+r><tr><td class=3D"classHeaderTableLabel">Class</td><td class=3D"classSigna=
+ture">public  class  FlexBlitMask</td></tr><tr><td class=3D"classHeaderTabl=
+eLabel">Inheritance</td><td class=3D"inheritanceList">FlexBlitMask  <img sr=
+c=3D"https://greensock.com/asdocs/images/inherit-arrow.gif" title=3D"Inheri=
+tance" alt=3D"Inheritance" class=3D"inheritArrow"> mx.core.UIComponent</td>=
+</tr></tbody></table><p></p><p></p><p></p>
+ [AS3 only] A FlexBlitMask is basically a rectangular UIComponent that acts=
+ as a high-performance mask for a DisplayObject
+ by caching a bitmap version of it and blitting only the pixels that should=
+ be visible at any given time,
+ although its <code>bitmapMode</code> can be turned off to restore interact=
+ivity in the DisplayObject=20
+ whenever you want. It is a Flex-friendly version of BlitMask. When scrolli=
+ng very large images or text=20
+ blocks, a FlexBlitMask can greatly improve performance, especially on mobi=
+le devices that have weaker=20
+ processors.=20
+=20
+ Here are some of the conveniences FlexBlitMask offers:
+ <ul>
+ 		               <li>Excellent scrolling performance</li>
+ 		               <li>You don't need to do anything special with your targe=
+t DisplayObject - move/scale/rotate it=20
+ 			however you please and then <code>update()</code> the FlexBlitMask and =
+it syncs the pixels.
+ 			The FlexBlitMask basically sits on top of the DisplayObject in the disp=
+lay list and you can=20
+ 			move it independently too if you want.</li>
+ 		               <li>Use the FlexBlitMask's <code>scrollX</code> and <code=
+>scrollY</code> properties to move the
+ 			target DisplayObject inside the masked area. For example, to scroll fro=
+m top to bottom over=20
+ 			the course of 2 seconds, simply do: <code>myFlexBlitMask.scrollY =3D 0;
+ 			TweenLite.to(myFlexBlitMask, 2, {scrollY:1});</code>=20
+                  </li>
+ 		               <li>Use the "wrap" feature to make the bitmap wrap around=
+ to the opposite side when it scrolls=20
+ 			off one of the edges (only in <code>bitmapMode</code> of course), as th=
+ough the FlexBlitMask is=20
+ 			filled with a grid of bitmap copies of the target.</li>
+ 		               <li>For maximum <i>performance</i> in bitmapMode, set <co=
+de>smoothing</code> to <code>false</code> or=20
+ 			for maximum <i>quality</i>, set it to <code>true</code>
+                  </li>
+ 		               <li>You can toggle the <code>bitmapMode</code> to get eit=
+her maximum performance or interactivity=20
+ 			in the target DisplayObject anytime. (some other solutions out there ar=
+e only viable for=20
+ 			non-interactive bitmap content) </li>
+ 		               <li>MouseEvents are dispatched by the FlexBlitMask, so yo=
+u can listen for clicks, rollovers, rollouts, etc.</li>
+               </ul>
+=20
+            <p></p><p><a href=3D"https://greensock.com/asdocs/com/greensock=
+/FlexBlitMask.html#includeExamplesSummary">View the examples</a></p><br><hr=
+></div><a name=3D"propertySummary"></a><div class=3D"summarySection"><div c=
+lass=3D"summaryTableTitle">Public Properties</div><table cellspacing=3D"0" =
+cellpadding=3D"3" class=3D"summaryTable " id=3D"summaryTableProperty"><tbod=
+y><tr><th>&nbsp;</th><th colspan=3D"2">Property</th><th class=3D"summaryTab=
+leOwnerCol">Defined By</th></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td clas=
+s=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanc=
+eCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><a href=3D"https://=
+greensock.com/asdocs/com/greensock/FlexBlitMask.html#autoUpdate" class=3D"s=
+ignatureLink">autoUpdate</a> : Boolean<div class=3D"summaryTableDescription=
+">=20
+		 If true, the FlexBlitMask will automatically watch the target to see if=
+=20
+		 its position/scale/rotation has changed on each frame (while bitmapMode =
+is true)=20
+		 and if so, it will update() to make sure the FlexBlitMask always stays s=
+ynced with the target.</div></td><td class=3D"summaryTableOwnerCol">FlexBli=
+tMask</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTable=
+PaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td>=
+<td class=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com/asd=
+ocs/com/greensock/FlexBlitMask.html#bitmapMode" class=3D"signatureLink">bit=
+mapMode</a> : Boolean<div class=3D"summaryTableDescription">=20
+		 When true, the FlexBlitMask optimizes itself for performance by setting =
+the target's=20
+		 visible property to false (greatly reducing the load on Flash's graphics=
+ rendering=20
+		 routines) and uses its internally cached bitmap version of the target to=
+ redraw only the necessary
+		 pixels inside the masked area.</div></td><td class=3D"summaryTableOwnerC=
+ol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"s=
+ummaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">=
+&nbsp;</td><td class=3D"summaryTableSignatureCol"><a href=3D"https://greens=
+ock.com/asdocs/com/greensock/FlexBlitMask.html#fillColor" class=3D"signatur=
+eLink">fillColor</a> : uint<div class=3D"summaryTableDescription">=20
+		 The ARGB hexadecimal color that should fill the empty areas of the FlexB=
+litMask.</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr=
+><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&n=
+bsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"s=
+ummaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/greens=
+ock/FlexBlitMask.html#height" class=3D"signatureLink">height</a> : Number<d=
+iv class=3D"summaryTableDescription">[override]  Height of the FlexBlitMask=
+ </div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr cl=
+ass=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</t=
+d><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryT=
+ableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/greensock/Fle=
+xBlitMask.html#rotation" class=3D"signatureLink">rotation</a> : Number<div =
+class=3D"summaryTableDescription">[override] [write-only]  Rotation of the =
+FlexBlitMask (always 0 because FlexBlitMasks can't be rotated!) </div></td>=
+<td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgc=
+olor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=
+=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatu=
+reCol"><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.h=
+tml#scaleX" class=3D"signatureLink">scaleX</a> : Number<div class=3D"summar=
+yTableDescription">[override]  scaleX (warning: altering the scaleX won't a=
+ctually change its value - instead, it affects the width property according=
+ly) </div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr=
+ class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;=
+</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summa=
+ryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/greensock/=
+FlexBlitMask.html#scaleY" class=3D"signatureLink">scaleY</a> : Number<div c=
+lass=3D"summaryTableDescription">[override]  scaleY (warning: altering the =
+scaleY won't actually change its value - instead, it affects the height pro=
+perty accordingly) </div></td><td class=3D"summaryTableOwnerCol">FlexBlitMa=
+sk</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePad=
+dingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td=
+ class=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs=
+/com/greensock/FlexBlitMask.html#scrollX" class=3D"signatureLink">scrollX</=
+a> : Number<div class=3D"summaryTableDescription">=20
+		 Typically a value between 0 and 1 indicating the target's position in re=
+lation to the FlexBlitMask=20
+		 on the x-axis where 0 is at the beginning, 0.5 is scrolled to exactly th=
+e halfway point, and 1 is scrolled=20
+		 all the way.</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</=
+td></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePadding=
+Col">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td cla=
+ss=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com=
+/greensock/FlexBlitMask.html#scrollY" class=3D"signatureLink">scrollY</a> :=
+ Number<div class=3D"summaryTableDescription">=20
+		 Typically a value between 0 and 1 indicating the target's position in re=
+lation to the FlexBlitMask=20
+		 on the y-axis where 0 is at the beginning, 0.5 is scrolled to exactly th=
+e halfway point, and 1 is scrolled=20
+		 all the way.</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</=
+td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePadding=
+Col">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td cla=
+ss=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com=
+/greensock/FlexBlitMask.html#smoothing" class=3D"signatureLink">smoothing</=
+a> : Boolean<div class=3D"summaryTableDescription">=20
+		 If false (the default), the bitmap (and the FlexBlitMask's x/y coordinat=
+es)=20
+		 will be rendered only on whole pixels which is faster in terms of proces=
+sing.</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><t=
+r class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp=
+;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summ=
+aryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/greensock=
+/FlexBlitMask.html#target" class=3D"signatureLink">target</a> : DisplayObje=
+ct<div class=3D"summaryTableDescription"> The target DisplayObject that the=
+ FlexBlitMask should mask </div></td><td class=3D"summaryTableOwnerCol">Fle=
+xBlitMask</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryT=
+ablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;<=
+/td><td class=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com=
+/asdocs/com/greensock/FlexBlitMask.html#width" class=3D"signatureLink">widt=
+h</a> : Number<div class=3D"summaryTableDescription">[override]  Width of t=
+he FlexBlitMask </div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask<=
+/td></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddin=
+gCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td cl=
+ass=3D"summaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/co=
+m/greensock/FlexBlitMask.html#wrap" class=3D"signatureLink">wrap</a> : Bool=
+ean<div class=3D"summaryTableDescription">=20
+		 If true, the bitmap will be wrapped around to the opposite side when it =
+scrolls off=20
+		 one of the edges (only in bitmapMode of course), like the FlexBlitMask i=
+s filled with a=20
+		 grid of bitmap copies of the target.</div></td><td class=3D"summaryTable=
+OwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td clas=
+s=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanc=
+eCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><a href=3D"https://=
+greensock.com/asdocs/com/greensock/FlexBlitMask.html#wrapOffsetX" class=3D"=
+signatureLink">wrapOffsetX</a> : Number<div class=3D"summaryTableDescriptio=
+n">=20
+		 When wrap is true, wrapOffsetX controls how many pixels
+		 along the x-axis the wrapped copies of the bitmap are spaced.</div></td>=
+<td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgc=
+olor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=
+=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatu=
+reCol"><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.h=
+tml#wrapOffsetY" class=3D"signatureLink">wrapOffsetY</a> : Number<div class=
+=3D"summaryTableDescription">=20
+		 When wrap is true, wrapOffsetY controls how many pixels
+		 along the y-axis the wrapped copies of the bitmap are spaced.</div></td>=
+<td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgc=
+olor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=
+=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatu=
+reCol"><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.h=
+tml#x" class=3D"signatureLink">x</a> : Number<div class=3D"summaryTableDesc=
+ription">[override]  x coordinate of the FlexBlitMask (it will automaticall=
+y be forced to whole pixel values if smoothing is false).</div></td><td cla=
+ss=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=3D=
+"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summ=
+aryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><=
+a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#y" c=
+lass=3D"signatureLink">y</a> : Number<div class=3D"summaryTableDescription"=
+>[override]  y coordinate of the FlexBlitMask (it will automatically be for=
+ced to whole pixel values if smoothing is false).</div></td><td class=3D"su=
+mmaryTableOwnerCol">FlexBlitMask</td></tr></tbody></table></div><a name=3D"=
+methodSummary"></a><div class=3D"summarySection"><div class=3D"summaryTable=
+Title">Public Methods </div><table cellspacing=3D"0" cellpadding=3D"3" clas=
+s=3D"summaryTable " id=3D"summaryTableMethod"><tbody><tr><th>&nbsp;</th><th=
+ colspan=3D"2">Method</th><th class=3D"summaryTableOwnerCol">Defined By</th=
+></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCo=
+l">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=
+=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=3D"ht=
+tps://greensock.com/asdocs/com/greensock/FlexBlitMask.html#FlexBlitMask()" =
+class=3D"signatureLink">FlexBlitMask</a>(target:DisplayObject =3D null, x:N=
+umber =3D 0, y:Number =3D 0, width:Number =3D 100, height:Number =3D 100, s=
+moothing:Boolean =3D false, autoUpdate:Boolean =3D true, fillColor:uint =3D=
+ 0x00000000, wrap:Boolean =3D false)</div><div class=3D"summaryTableDescrip=
+tion">
+		 Constructor
+		=20
+		 </div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr =
+class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;<=
+/td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summar=
+yTableSignatureCol"><div class=3D"summarySignature"><a href=3D"https://gree=
+nsock.com/asdocs/com/greensock/FlexBlitMask.html#disableBitmapMode()" class=
+=3D"signatureLink">disableBitmapMode</a>(event:Event =3D null):void</div><d=
+iv class=3D"summaryTableDescription">
+		 Identical to setting bitmapMode =3D false but this method simplifies add=
+ing that
+		 functionality to tweens or using it as an event handler.</div></td><td c=
+lass=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=
+=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"s=
+ummaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol=
+"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/c=
+om/greensock/FlexBlitMask.html#dispose()" class=3D"signatureLink">dispose</=
+a>():void</div><div class=3D"summaryTableDescription"> Disposes of the Flex=
+BlitMask and its internal BitmapData instances, releasing them for garbage =
+collection.</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td><=
+/tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol"=
+>&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=
+=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=3D"ht=
+tps://greensock.com/asdocs/com/greensock/FlexBlitMask.html#enableBitmapMode=
+()" class=3D"signatureLink">enableBitmapMode</a>(event:Event =3D null):void=
+</div><div class=3D"summaryTableDescription">
+		 Identical to setting bitmapMode =3D true but this method simplifies addi=
+ng that
+		 functionality to tweens or using it as an event handler.</div></td><td c=
+lass=3D"summaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=
+=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"s=
+ummaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol=
+"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/c=
+om/greensock/FlexBlitMask.html#normalizePosition()" class=3D"signatureLink"=
+>normalizePosition</a>():void</div><div class=3D"summaryTableDescription">
+		 Repositions the target so that it is visible within the BlitMask, as tho=
+ugh wrap
+		 was enabled (this method is called automatically when bitmapMode is disa=
+bled while wrap=20
+		 is true).</div></td><td class=3D"summaryTableOwnerCol">FlexBlitMask</td>=
+</tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol=
+">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=
+=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=3D"ht=
+tps://greensock.com/asdocs/com/greensock/FlexBlitMask.html#setActualSize()"=
+ class=3D"signatureLink">setActualSize</a>(w:Number, h:Number):void</div><d=
+iv class=3D"summaryTableDescription">[override]  </div></td><td class=3D"su=
+mmaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=3D"#FFFFFF=
+"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTable=
+InheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><div clas=
+s=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/com/greensoc=
+k/FlexBlitMask.html#setSize()" class=3D"signatureLink">setSize</a>(width:Nu=
+mber, height:Number):void</div><div class=3D"summaryTableDescription">=20
+		 Sets the width and height of the FlexBlitMask.</div></td><td class=3D"su=
+mmaryTableOwnerCol">FlexBlitMask</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2=
+"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTable=
+InheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><div clas=
+s=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/com/greensoc=
+k/FlexBlitMask.html#update()" class=3D"signatureLink">update</a>(event:Even=
+t =3D null, forceRecaptureBitmap:Boolean =3D false):void</div><div class=3D=
+"summaryTableDescription">
+		 Updates the FlexBlitMask's internal bitmap to reflect the target's curre=
+nt position/scale/rotation.</div></td><td class=3D"summaryTableOwnerCol">Fl=
+exBlitMask</td></tr></tbody></table></div><div class=3D"MainContent"><div c=
+lass=3D"detailSectionHeader">Property Detail</div><a name=3D"propertyDetail=
+"></a><a name=3D"autoUpdate"></a><table class=3D"detailHeader" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">autoUpda=
+te</td><td class=3D"detailHeaderType">property</td></tr></tbody></table><di=
+v class=3D"detailBody"><code>autoUpdate:Boolean</code><p></p><p></p><p>=20
+		 If <code>true</code>, the FlexBlitMask will automatically watch the <cod=
+e>target</code> to see if=20
+		 its position/scale/rotation has changed on each frame (while <code>bitma=
+pMode</code> is <code>true</code>)=20
+		 and if so, it will <code>update()</code> to make sure the FlexBlitMask a=
+lways stays synced with the <code>target</code>.=20
+		 This is the easiest way to use FlexBlitMask but it is slightly less effi=
+cient than manually calling <code>update()</code>=20
+		 whenever you need to. Keep in mind that if you're tweening with TweenLit=
+e or TweenMax, you can simply set=20
+		 its <code>onUpdate</code> to the FlexBlitMask's <code>update()</code> me=
+thod to keep things synced.=20
+		 Like <code>onUpdate:myFlexBlitMask.update</code>.=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get autoUpdate():Boolean</code><br><code>&nb=
+sp;&nbsp;&nbsp;&nbsp;public function set autoUpdate(value:Boolean):void</co=
+de><br></div><a name=3D"propertyDetail"></a><a name=3D"bitmapMode"></a><tab=
+le class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><t=
+d class=3D"detailHeaderName">bitmapMode</td><td class=3D"detailHeaderType">=
+property</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table=
+><div class=3D"detailBody"><code>bitmapMode:Boolean</code><p></p><p></p><p>=
+=20
+		 When <code>true</code>, the FlexBlitMask optimizes itself for performanc=
+e by setting the <code>target's</code>=20
+		 <code>visible</code> property to <code>false</code> (greatly reducing th=
+e load on Flash's graphics rendering=20
+		 routines) and uses its internally cached bitmap version of the <code>tar=
+get</code> to redraw only the necessary
+		 pixels inside the masked area. Since only a bitmap version of the <code>=
+target</code> is shown while in bitmapMode,
+		 the <code>target</code> won't be interactive. So if you have buttons and=
+ other objects that normally react to=20
+		 MouseEvents, they won't while in bitmapMode. If you need the interactivi=
+ty, simply set <code>bitmapMode</code>
+		 to <code>false</code> and then it will turn the <code>target's</code> <c=
+ode>visible</code> property back to <code>true</code>
+		 and its <code>mask</code> property to the FlexBlitMask itself. Typically=
+ it is best to turn bitmapMode on at least when you're=20
+		 animating the <code>target</code> or the FlexBlitMask itself, and then w=
+hen the tween/animation is done and you need=20
+		 interactivity, set bitmapMode back to false. For example: <code>
+		=20
+		 var bm:FlexBlitMask =3D new FlexBlitMask(mc, 0, 0, 300, 200, true);
+		=20
+		 TweenLite.to(mc, 3, {x:200, onUpdate:bm.update, onComplete:completeHandl=
+er});
+		=20
+		 function completeHandler():void {
+		     bm.bitmapMode =3D false;
+		 }
+		 </code>
+		=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get bitmapMode():Boolean</code><br><code>&nb=
+sp;&nbsp;&nbsp;&nbsp;public function set bitmapMode(value:Boolean):void</co=
+de><br><p><span class=3D"label">See also</span></p><div class=3D"seeAlso"><=
+a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#enab=
+leBitmapMode()" target=3D"">enableBitmapMode()</a><br><a href=3D"https://gr=
+eensock.com/asdocs/com/greensock/FlexBlitMask.html#disableBitmapMode()" tar=
+get=3D"">disableBitmapMode()</a></div></div><a name=3D"propertyDetail"></a>=
+<a name=3D"fillColor"></a><table class=3D"detailHeader" cellpadding=3D"0" c=
+ellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">fillColor</td><t=
+d class=3D"detailHeaderType">property</td><td class=3D"detailHeaderRule">&n=
+bsp;</td></tr></tbody></table><div class=3D"detailBody"><code>fillColor:uin=
+t</code><p></p><p></p><p>=20
+		 The ARGB hexadecimal color that should fill the empty areas of the FlexB=
+litMask. By default,=20
+		 it is transparent (0x00000000). If you wanted a red color, for example, =
+it would be=20
+		 <code>0xFFFF0000</code>.=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get fillColor():uint</code><br><code>&nbsp;&=
+nbsp;&nbsp;&nbsp;public function set fillColor(value:uint):void</code><br><=
+/div><a name=3D"propertyDetail"></a><a name=3D"height"></a><table class=3D"=
+detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"d=
+etailHeaderName">height</td><td class=3D"detailHeaderType">property</td><td=
+ class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"d=
+etailBody"><code>height:Number</code>[override] <p></p><p></p><p> Height of=
+ the FlexBlitMask </p><br><span class=3D"label"> Implementation </span><br>=
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():Number</code><br=
+><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:Number):voi=
+d</code><br></div><a name=3D"propertyDetail"></a><a name=3D"rotation"></a><=
+table class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr=
+><td class=3D"detailHeaderName">rotation</td><td class=3D"detailHeaderType"=
+>property</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></tabl=
+e><div class=3D"detailBody"><code>rotation:Number</code>&nbsp;&nbsp;[write-=
+only] [override] <p></p><p></p><p> Rotation of the FlexBlitMask (always 0 b=
+ecause FlexBlitMasks can't be rotated!) </p><br><span class=3D"label"> Impl=
+ementation </span><br><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rot=
+ation(value:Number):void</code><br></div><a name=3D"propertyDetail"></a><a =
+name=3D"scaleX"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspa=
+cing=3D"0"><tbody><tr><td class=3D"detailHeaderName">scaleX</td><td class=
+=3D"detailHeaderType">property</td><td class=3D"detailHeaderRule">&nbsp;</t=
+d></tr></tbody></table><div class=3D"detailBody"><code>scaleX:Number</code>=
+[override] <p></p><p></p><p> scaleX (warning: altering the scaleX won't act=
+ually change its value - instead, it affects the <code>width</code> propert=
+y accordingly) </p><br><span class=3D"label"> Implementation </span><br><co=
+de>&nbsp;&nbsp;&nbsp;&nbsp;public function get scaleX():Number</code><br><c=
+ode>&nbsp;&nbsp;&nbsp;&nbsp;public function set scaleX(value:Number):void</=
+code><br></div><a name=3D"propertyDetail"></a><a name=3D"scaleY"></a><table=
+ class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td =
+class=3D"detailHeaderName">scaleY</td><td class=3D"detailHeaderType">proper=
+ty</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div =
+class=3D"detailBody"><code>scaleY:Number</code>[override] <p></p><p></p><p>=
+ scaleY (warning: altering the scaleY won't actually change its value - ins=
+tead, it affects the <code>height</code> property accordingly) </p><br><spa=
+n class=3D"label"> Implementation </span><br><code>&nbsp;&nbsp;&nbsp;&nbsp;=
+public function get scaleY():Number</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp=
+;public function set scaleY(value:Number):void</code><br></div><a name=3D"p=
+ropertyDetail"></a><a name=3D"scrollX"></a><table class=3D"detailHeader" ce=
+llpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName"=
+>scrollX</td><td class=3D"detailHeaderType">property</td><td class=3D"detai=
+lHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><cod=
+e>scrollX:Number</code><p></p><p></p><p>=20
+		 Typically a value between 0 and 1 indicating the <code>target's</code> p=
+osition in relation to the FlexBlitMask=20
+		 on the x-axis where 0 is at the beginning, 0.5 is scrolled to exactly th=
+e halfway point, and 1 is scrolled=20
+		 all the way. This makes it very easy to animate the scroll. For example,=
+ to scroll from beginning to end=20
+		 over 5 seconds, you could do: <code>
+		=20
+		 myFlexBlitMask.scrollX =3D 0;=20
+		 TweenLite.to(myFlexBlitMask, 5, {scrollX:1});
+		 </code>
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get scrollX():Number</code><br><code>&nbsp;&=
+nbsp;&nbsp;&nbsp;public function set scrollX(value:Number):void</code><br><=
+p><span class=3D"label">See also</span></p><div class=3D"seeAlso"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#scrollY" t=
+arget=3D"">scrollY</a></div></div><a name=3D"propertyDetail"></a><a name=3D=
+"scrollY"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"detailHeaderName">scrollY</td><td class=3D"d=
+etailHeaderType">property</td><td class=3D"detailHeaderRule">&nbsp;</td></t=
+r></tbody></table><div class=3D"detailBody"><code>scrollY:Number</code><p><=
+/p><p></p><p>=20
+		 Typically a value between 0 and 1 indicating the <code>target's</code> p=
+osition in relation to the FlexBlitMask=20
+		 on the y-axis where 0 is at the beginning, 0.5 is scrolled to exactly th=
+e halfway point, and 1 is scrolled=20
+		 all the way. This makes it very easy to animate the scroll. For example,=
+ to scroll from beginning to end=20
+		 over 5 seconds, you could do: <code>
+		=20
+		 myFlexBlitMask.scrollY =3D 0;=20
+		 TweenLite.to(myFlexBlitMask, 5, {scrollY:1});
+		 </code>
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get scrollY():Number</code><br><code>&nbsp;&=
+nbsp;&nbsp;&nbsp;public function set scrollY(value:Number):void</code><br><=
+p><span class=3D"label">See also</span></p><div class=3D"seeAlso"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#scrollX" t=
+arget=3D"">scrollX</a></div></div><a name=3D"propertyDetail"></a><a name=3D=
+"smoothing"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"detailHeaderName">smoothing</td><td class=3D=
+"detailHeaderType">property</td><td class=3D"detailHeaderRule">&nbsp;</td><=
+/tr></tbody></table><div class=3D"detailBody"><code>smoothing:Boolean</code=
+><p></p><p></p><p>=20
+		 If <code>false</code> (the default), the bitmap (and the FlexBlitMask's =
+x/y coordinates)=20
+		 will be rendered only on whole pixels which is faster in terms of proces=
+sing. However,=20
+		 for the best quality and smoothest animation, set <code>smoothing</code>=
+ to <code>true</code>.=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get smoothing():Boolean</code><br><code>&nbs=
+p;&nbsp;&nbsp;&nbsp;public function set smoothing(value:Boolean):void</code=
+><br></div><a name=3D"propertyDetail"></a><a name=3D"target"></a><table cla=
+ss=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td clas=
+s=3D"detailHeaderName">target</td><td class=3D"detailHeaderType">property</=
+td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div clas=
+s=3D"detailBody"><code>target:DisplayObject</code><p></p><p></p><p> The tar=
+get DisplayObject that the FlexBlitMask should mask </p><br><span class=3D"=
+label"> Implementation </span><br><code>&nbsp;&nbsp;&nbsp;&nbsp;public func=
+tion get target():DisplayObject</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;pub=
+lic function set target(value:DisplayObject):void</code><br></div><a name=
+=3D"propertyDetail"></a><a name=3D"width"></a><table class=3D"detailHeader"=
+ cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderNa=
+me">width</td><td class=3D"detailHeaderType">property</td><td class=3D"deta=
+ilHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><co=
+de>width:Number</code>[override] <p></p><p></p><p> Width of the FlexBlitMas=
+k </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nbs=
+p;&nbsp;&nbsp;public function get width():Number</code><br><code>&nbsp;&nbs=
+p;&nbsp;&nbsp;public function set width(value:Number):void</code><br></div>=
+<a name=3D"propertyDetail"></a><a name=3D"wrap"></a><table class=3D"detailH=
+eader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHe=
+aderName">wrap</td><td class=3D"detailHeaderType">property</td><td class=3D=
+"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody=
+"><code>wrap:Boolean</code><p></p><p></p><p>=20
+		 If <code>true</code>, the bitmap will be wrapped around to the opposite =
+side when it scrolls off=20
+		 one of the edges (only in <code>bitmapMode</code> of course), like the F=
+lexBlitMask is filled with a=20
+		 grid of bitmap copies of the target. Use the <code>wrapOffsetX</code> an=
+d <code>wrapOffsetY</code>=20
+		 properties to affect how far apart the copies are from each other. You c=
+an reposition the=20
+		 <code>target</code> anywhere and FlexBlitMask will align the copies acco=
+rdingly.
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get wrap():Boolean</code><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function set wrap(value:Boolean):void</code><br><p><s=
+pan class=3D"label">See also</span></p><div class=3D"seeAlso"><a href=3D"ht=
+tps://greensock.com/asdocs/com/greensock/FlexBlitMask.html#wrapOffsetX" tar=
+get=3D"">wrapOffsetX</a><br><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/FlexBlitMask.html#wrapOffsetY" target=3D"">wrapOffsetY</a></div></di=
+v><a name=3D"propertyDetail"></a><a name=3D"wrapOffsetX"></a><table class=
+=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=
+=3D"detailHeaderName">wrapOffsetX</td><td class=3D"detailHeaderType">proper=
+ty</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div =
+class=3D"detailBody"><code>wrapOffsetX:Number</code><p></p><p></p><p>=20
+		 When <code>wrap</code> is <code>true</code>, <code>wrapOffsetX</code> co=
+ntrols how many pixels
+		 along the x-axis the wrapped copies of the bitmap are spaced. It is esse=
+ntially the gap between
+		 the copies (although you can use a negative value or 0 to avoid any gap)=
+.=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get wrapOffsetX():Number</code><br><code>&nb=
+sp;&nbsp;&nbsp;&nbsp;public function set wrapOffsetX(value:Number):void</co=
+de><br><p><span class=3D"label">See also</span></p><div class=3D"seeAlso"><=
+a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#wrap=
+" target=3D"">wrap</a><br><a href=3D"https://greensock.com/asdocs/com/green=
+sock/FlexBlitMask.html#wrapOffsetY" target=3D"">wrapOffsetY</a></div></div>=
+<a name=3D"propertyDetail"></a><a name=3D"wrapOffsetY"></a><table class=3D"=
+detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"d=
+etailHeaderName">wrapOffsetY</td><td class=3D"detailHeaderType">property</t=
+d><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=
+=3D"detailBody"><code>wrapOffsetY:Number</code><p></p><p></p><p>=20
+		 When <code>wrap</code> is <code>true</code>, <code>wrapOffsetY</code> co=
+ntrols how many pixels
+		 along the y-axis the wrapped copies of the bitmap are spaced. It is esse=
+ntially the gap between
+		 the copies (although you can use a negative value or 0 to avoid any gap)=
+.=20
+		 </p><br><span class=3D"label"> Implementation </span><br><code>&nbsp;&nb=
+sp;&nbsp;&nbsp;public function get wrapOffsetY():Number</code><br><code>&nb=
+sp;&nbsp;&nbsp;&nbsp;public function set wrapOffsetY(value:Number):void</co=
+de><br><p><span class=3D"label">See also</span></p><div class=3D"seeAlso"><=
+a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.html#wrap=
+" target=3D"">wrap</a><br><a href=3D"https://greensock.com/asdocs/com/green=
+sock/FlexBlitMask.html#wrapOffsetX" target=3D"">wrapOffsetX</a></div></div>=
+<a name=3D"propertyDetail"></a><a name=3D"x"></a><table class=3D"detailHead=
+er" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeade=
+rName">x</td><td class=3D"detailHeaderType">property</td><td class=3D"detai=
+lHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><cod=
+e>x:Number</code>[override] <p></p><p></p><p> x coordinate of the FlexBlitM=
+ask (it will automatically be forced to whole pixel values if <code>smoothi=
+ng</code> is <code>false</code>). </p><br><span class=3D"label"> Implementa=
+tion </span><br><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get x():Numbe=
+r</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set x(value:Numbe=
+r):void</code><br></div><a name=3D"propertyDetail"></a><a name=3D"y"></a><t=
+able class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>=
+<td class=3D"detailHeaderName">y</td><td class=3D"detailHeaderType">propert=
+y</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div c=
+lass=3D"detailBody"><code>y:Number</code>[override] <p></p><p></p><p> y coo=
+rdinate of the FlexBlitMask (it will automatically be forced to whole pixel=
+ values if <code>smoothing</code> is <code>false</code>). </p><br><span cla=
+ss=3D"label"> Implementation </span><br><code>&nbsp;&nbsp;&nbsp;&nbsp;publi=
+c function get y():Number</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;public fu=
+nction set y(value:Number):void</code><br></div><a name=3D"constructorDetai=
+l"></a><div class=3D"detailSectionHeader">Constructor Detail</div><a name=
+=3D"FlexBlitMask()"></a><a name=3D"FlexBlitMask(flash.display.DisplayObject=
+,Number,Number,Number,Number,Boolean,Boolean,uint,Boolean)"></a><table clas=
+s=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=
+=3D"detailHeaderName">FlexBlitMask</td><td class=3D"detailHeaderParens">()<=
+/td><td class=3D"detailHeaderType">Constructor</td></tr></tbody></table><di=
+v class=3D"detailBody"><code>public function FlexBlitMask(target:DisplayObj=
+ect =3D null, x:Number =3D 0, y:Number =3D 0, width:Number =3D 100, height:=
+Number =3D 100, smoothing:Boolean =3D false, autoUpdate:Boolean =3D true, f=
+illColor:uint =3D 0x00000000, wrap:Boolean =3D false)</code><p></p><p>
+		 Constructor
+		=20
+		 </p><span class=3D"label"> Parameters </span><table cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><td><code><=
+span class=3D"label">target</span>:DisplayObject</code> (default =3D <code>=
+null</code>)<code></code> =E2=80=94 The DisplayObject that will be masked b=
+y the FlexBlitMask
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">x</span>:Number</code> (default=
+ =3D <code>0</code>)<code></code> =E2=80=94 x coorinate of the upper left c=
+orner of the FlexBlitMask. If <code>smoothing</code> is <code>false</code>,=
+ the x coordinate will be rounded to the closest integer.
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">y</span>:Number</code> (default=
+ =3D <code>0</code>)<code></code> =E2=80=94 y coordinate of the upper right=
+ corner of the FlexBlitMask
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">width</span>:Number</code> (def=
+ault =3D <code>100</code>)<code></code> =E2=80=94 width of the FlexBlitMask=
+ (in pixels)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">height</span>:Number</code> (de=
+fault =3D <code>100</code>)<code></code> =E2=80=94 height of the FlexBlitMa=
+sk (in pixels)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">smoothing</span>:Boolean</code>=
+ (default =3D <code>false</code>)<code></code> =E2=80=94 If <code>false</co=
+de> (the default), the bitmap (and the FlexBlitMask's x/y coordinates) will=
+ be rendered only on whole pixels which is faster in terms of processing. H=
+owever, for the best quality and smoothest animation, set <code>smoothing</=
+code> to <code>true</code>.
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">autoUpdate</span>:Boolean</code=
+> (default =3D <code>true</code>)<code></code> =E2=80=94 If <code>true</cod=
+e> (the default), the FlexBlitMask will automatically watch the <code>targe=
+t</code> to see if its position/scale/rotation has changed on each frame (w=
+hile <code>bitmapMode</code> is <code>true</code>) and if so, it will <code=
+>update()</code> to make sure the FlexBlitMask always stays synced with the=
+ <code>target</code>. This is the easiest way to use FlexBlitMask but it is=
+ slightly less efficient than manually calling <code>update()</code> whenev=
+er you need to. Keep in mind that if you're tweening with TweenLite or Twee=
+nMax, you can simply set its <code>onUpdate</code> to the FlexBlitMask's <c=
+ode>update()</code> method to keep things synced. Like <code>onUpdate:myFle=
+xBlitMask.update</code>.
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">fillColor</span>:uint</code> (d=
+efault =3D <code>0x00000000</code>)<code></code> =E2=80=94 The ARGB hexadec=
+imal color that should fill the empty areas of the FlexBlitMask. By default=
+, it is transparent (0x00000000). If you wanted a red color, for example, i=
+t would be <code>0xFFFF0000</code>.
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">wrap</span>:Boolean</code> (def=
+ault =3D <code>false</code>)<code></code> =E2=80=94 If <code>true</code>, t=
+he bitmap will be wrapped around to the opposite side when it scrolls off o=
+ne of the edges (only in <code>bitmapMode</code> of course), like the FlexB=
+litMask is filled with a grid of bitmap copies of the target. Use the <code=
+>wrapOffsetX</code> and <code>wrapOffsetY</code> properties to affect how f=
+ar apart the copies are from each other.=20
+		 </td></tr></tbody></table></div><a name=3D"methodDetail"></a><div class=
+=3D"detailSectionHeader">Method Detail</div><a name=3D"disableBitmapMode()"=
+></a><a name=3D"disableBitmapMode(flash.events.Event)"></a><table class=3D"=
+detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"d=
+etailHeaderName">disableBitmapMode</td><td class=3D"detailHeaderParens">()<=
+/td><td class=3D"detailHeaderType">method</td></tr></tbody></table><div cla=
+ss=3D"detailBody"><code> public function disableBitmapMode(event:Event =3D =
+null):void</code><p></p><p></p><p>
+		 Identical to setting <code>bitmapMode =3D false</code> but this method s=
+implifies adding that
+		 functionality to tweens or using it as an event handler. For example, to=
+ enable bitmapMode at
+		 the beginning of a tween and then disable it when the tween completes, y=
+ou could do: <code>
+		=20
+		 TweenLite.to(mc, 3, {x:400, onStart:myFlexBlitMask.enableBitmapMode, onU=
+pdate:myFlexBlitMask.update, onComplete:myFlexBlitMask.disableBitmapMode});
+		 </code>
+		=20
+		 </p><p><span class=3D"label"> Parameters </span></p><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><t=
+d><code><span class=3D"label">event</span>:Event</code> (default =3D <code>=
+null</code>)<code></code> =E2=80=94 An optional Event that isn't used inter=
+nally but makes it possible to use the method as an event handler like <cod=
+e>addEventListener(MouseEvent.CLICK, myFlexBlitMask.disableBitmapMode)</cod=
+e>.
+		 </td></tr></tbody></table><p></p><p><span class=3D"label">See also</span=
+></p><div class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/FlexBlitMask.html#enableBitmapMode()" target=3D"">enableBitmapMode()=
+</a><br><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMask.=
+html#bitmapMode" target=3D"">bitmapMode</a></div></div><a name=3D"dispose()=
+"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tb=
+ody><tr><td class=3D"detailHeaderName">dispose</td><td class=3D"detailHeade=
+rParens">()</td><td class=3D"detailHeaderType">method</td><td class=3D"deta=
+ilHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><co=
+de> public function dispose():void</code><p></p><p></p><p> Disposes of the =
+FlexBlitMask and its internal BitmapData instances, releasing them for garb=
+age collection. </p></div><a name=3D"enableBitmapMode()"></a><a name=3D"ena=
+bleBitmapMode(flash.events.Event)"></a><table class=3D"detailHeader" cellpa=
+dding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">ena=
+bleBitmapMode</td><td class=3D"detailHeaderParens">()</td><td class=3D"deta=
+ilHeaderType">method</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></t=
+body></table><div class=3D"detailBody"><code> public function enableBitmapM=
+ode(event:Event =3D null):void</code><p></p><p></p><p>
+		 Identical to setting <code>bitmapMode =3D true</code> but this method si=
+mplifies adding that
+		 functionality to tweens or using it as an event handler. For example, to=
+ enable bitmapMode at
+		 the beginning of a tween and then disable it when the tween completes, y=
+ou could do: <code>
+		=20
+		 TweenLite.to(mc, 3, {x:400, onStart:myFlexBlitMask.enableBitmapMode, onU=
+pdate:myFlexBlitMask.update, onComplete:myFlexBlitMask.disableBitmapMode});
+		 </code>
+		=20
+		 </p><p><span class=3D"label"> Parameters </span></p><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><t=
+d><code><span class=3D"label">event</span>:Event</code> (default =3D <code>=
+null</code>)<code></code> =E2=80=94 An optional Event that isn't used inter=
+nally but makes it possible to use the method as an event handler like <cod=
+e>addEventListener(MouseEvent.CLICK, myFlexBlitMask.enableBitmapMode)</code=
+>.
+		 </td></tr></tbody></table><p></p><p><span class=3D"label">See also</span=
+></p><div class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/FlexBlitMask.html#disableBitmapMode()" target=3D"">disableBitmapMode=
+()</a><br><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBlitMas=
+k.html#bitmapMode" target=3D"">bitmapMode</a></div></div><a name=3D"normali=
+zePosition()"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tbody><tr><td class=3D"detailHeaderName">normalizePosition</td><t=
+d class=3D"detailHeaderParens">()</td><td class=3D"detailHeaderType">method=
+</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div cl=
+ass=3D"detailBody"><code> public function normalizePosition():void</code><p=
+></p><p></p><p>
+		 Repositions the <code>target</code> so that it is visible within the Bli=
+tMask, as though <code>wrap</code>
+		 was enabled (this method is called automatically when <code>bitmapMode</=
+code> is disabled while <code>wrap</code>=20
+		 is <code>true</code>). For example, if you tween the <code>target</code>=
+ way off the edge of the BlitMask and
+		 have <code>wrap</code> enabled, it will appear to come back in from the =
+other side even though the raw coordinates
+		 of the target would indicate that it is outside the BlitMask. If you wan=
+t to force the coordinates to normalize=20
+		 so that they reflect that wrapped position, simply call <code>normalizeP=
+osition()</code>. It will automatically=20
+		 choose the coordinates that would maximize the visible portion of the ta=
+rget if a seam is currently showing.
+		 </p></div><a name=3D"setActualSize()"></a><a name=3D"setActualSize(Numbe=
+r,Number)"></a><table class=3D"detailHeader" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"detailHeaderName">setActualSize</td><td clas=
+s=3D"detailHeaderParens">()</td><td class=3D"detailHeaderType">method</td><=
+td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D=
+"detailBody"><code>override public function setActualSize(w:Number, h:Numbe=
+r):void</code><p></p><p></p><p> </p><p><span class=3D"label"> Parameters </=
+span></p><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr=
+><td width=3D"20px"></td><td><code><span class=3D"label">w</span>:Number</c=
+ode></td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=
+=3D"20px"></td><td><code><span class=3D"label">h</span>:Number</code></td><=
+/tr></tbody></table><p></p></div><a name=3D"setSize()"></a><a name=3D"setSi=
+ze(Number,Number)"></a><table class=3D"detailHeader" cellpadding=3D"0" cell=
+spacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">setSize</td><td cla=
+ss=3D"detailHeaderParens">()</td><td class=3D"detailHeaderType">method</td>=
+<td class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=
+=3D"detailBody"><code> public function setSize(width:Number, height:Number)=
+:void</code><p></p><p></p><p>=20
+		 Sets the width and height of the FlexBlitMask.=20
+		 Keep in mind that a FlexBlitMask should not be rotated or scaled.=20
+		 You can also directly set the <code>width</code> or <code>height</code> =
+properties.=20
+		=20
+		 </p><p><span class=3D"label"> Parameters </span></p><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><t=
+d><code><span class=3D"label">width</span>:Number</code> =E2=80=94 The widt=
+h of the FlexBlitMask
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">height</span>:Number</code> =E2=
+=80=94 The height of the FlexBlitMask
+		 </td></tr></tbody></table><p></p><p><span class=3D"label">See also</span=
+></p><div class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/FlexBlitMask.html#width" target=3D"">width</a><br><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/FlexBlitMask.html#height" target=3D"">h=
+eight</a></div></div><a name=3D"update()"></a><a name=3D"update(flash.event=
+s.Event,Boolean)"></a><table class=3D"detailHeader" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">update</td><td class=
+=3D"detailHeaderParens">()</td><td class=3D"detailHeaderType">method</td><t=
+d class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"=
+detailBody"><code> public function update(event:Event =3D null, forceRecapt=
+ureBitmap:Boolean =3D false):void</code><p></p><p></p><p>
+		 Updates the FlexBlitMask's internal bitmap to reflect the <code>target's=
+</code> current position/scale/rotation.=20
+		 This is a very important method that you'll need to call whenever visual=
+ or transformational changes are made=20
+		 to the target so that the FlexBlitMask remains synced with it.=20
+		=20
+		 </p><p><span class=3D"label"> Parameters </span></p><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><t=
+d><code><span class=3D"label">event</span>:Event</code> (default =3D <code>=
+null</code>)<code></code> =E2=80=94 An optional Event object (which isn't u=
+sed at all internally) in order to make it easier to use <code>update()</co=
+de> as an event handler. For example, you could <code>addEventListener(Even=
+t.ENTER_FRAME, myFlexBlitMask.update)</code> to make sure it is updated on =
+every frame (although it would be more efficient to simply set <code>autoUp=
+date</code> to <code>true</code> in this case).=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">forceRecaptureBitmap</span>:Boo=
+lean</code> (default =3D <code>false</code>)<code></code> =E2=80=94 Normall=
+y, the cached bitmap of the <code>target</code> is only recaptured if its s=
+cale or rotation changed because doing so is rather processor-intensive, bu=
+t you can force a full update (and regeneration of the cached bitmap) by se=
+tting <code>forceRecaptureBitmap</code> to <code>true</code>.
+		 </td></tr></tbody></table><p></p></div><a name=3D"includeExamplesSummary=
+"></a><div class=3D"detailSectionHeader">Examples</div><div class=3D"detail=
+Body">Example AS3 code:<div class=3D"listing" version=3D"3.0"><pre><!--?xml=
+ version=3D"1.0" encoding=3D"utf-8"?-->
+<mx:application xmlns:mx=3D"http://www.adobe.com/2006/mxml" framerate=3D"60=
+" layout=3D"absolute" xmlns:greensock=3D"com.greensock.*" creationcomplete=
+=3D"tween()">
+    <mx:script>
+        <!--[CDATA[
+            import com.greensock.TweenLite;
+            private function tween():void {
+                myText.y =3D 50;
+                TweenLite.to(myText, 6, {y:-100});
+            }
+        ]]-->
+    </mx:script>
+    <greensock:flexblitmask id=3D"blitMask" target=3D"{myText}" wrap=3D"fal=
+se" x=3D"20" y=3D"50" width=3D"300" height=3D"200" smoothing=3D"true">
+    <mx:label text=3D"FlexBlitMask Example" fontsize=3D"24">
+    <mx:text id=3D"myText" x=3D"20" y=3D"50" width=3D"135" height=3D"500" t=
+ext=3D"FlexBlitMask can be great for high-performance scrolling. Performanc=
+e is of paramount importance in mobile apps. There is, of course, a trade-o=
+ff in memory because an extra bitmap version of the target needs to be capt=
+ured/maintained, but overall performance while scrolling can be significant=
+ly improved. It doesn't make sense to use FlexBlitMask if you're tweening t=
+he scale or rotation of the target, though - it is primarily for scrolling =
+(tweening the x and/or y properties).">
+    <mx:button id=3D"tweenButton" label=3D"Tween" x=3D"20" y=3D"260" click=
+=3D"tween()">
+</mx:button></mx:text></mx:label></greensock:flexblitmask></mx:application>
+</pre></div>
+=20
+ Notes:
+ <ul>
+ 		<li>FlexBlitMasks themselves should not be rotated or scaled (although t=
+echnically you can alter the scaleX and scaleY=20
+ 			but doing so will only change the width or height instead). You can, of=
+ course, alter their x, y, width,=20
+ 			or height properties as much as you want. </li>
+ 		<li>FlexBlitMasks don't perform nearly as well in bitmapMode when the <c=
+ode>target</code> is being scaled or rotated=20
+ 			because it forces a flushing and recapture of the internal bitmap. Flex=
+BlitMasks are <b>MUCH</b> better when you are
+ 			simply changing x/y properties (scrolling) because it can reuse the sam=
+e cached bitmap over and over.</li>
+ 		<li>If the target content is changing frequently (like if it has nested =
+MovieClips that are animating on every frame),
+ 			you'd need to call update(null, true) each time you want the FlexBlitMa=
+sk to redraw itself to sync with the changes=20
+ 			in the target, but that's a relatively expensive operation so it's not =
+a great use case for FlexBlitMask. You may
+ 			be better off just turning off bitmapMode during that animation sequenc=
+e.</li>
+ </ul>
+=20
+ <b>Copyright 2011-2013, GreenSock. All rights reserved.</b> This work is s=
+ubject to the terms in <a href=3D"http://www.greensock.com/terms_of_use.htm=
+l" target=3D"">http://www.greensock.com/terms_of_use.html</a> or for <a hre=
+f=3D"http://www.greensock.com/club/" target=3D"">Club GreenSock</a> members=
+, the software agreement that was issued with the membership.
+=20
+ </div><br><br><hr><br><p></p><center class=3D"copyright"><footer></footer>=
+<br>Thu Oct 24 2013, 01:43 PM -05:00  </center></div></body></html><!--<br/=
+>Thu Oct 24 2013, 01:43 PM -05:00  -->
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/inherit-arrow.gif
+
+R0lGODlhDwAJAKIAAEZGRjExMSUlJSEhIQAAAP///wAAAAAAACH5BAEHAAUALAAAAAAPAAkAAAMa
+WLoM/I8ESAkZNFpsu/9TVnSCqFilOYaqsyQAOw==
+
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-D2E701FDCAF0C8C47A47EC9156DD1075@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/package-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><title>Package List - GreenSock Documentation</title><base target=
+=3D"classFrame"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdo=
+cs/style.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" h=
+ref=3D"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"p=
+rint"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/overrid=
+e.css" type=3D"text/css"></head><body class=3D"classFrameContent vsc-initia=
+lized"><h3><a href=3D"https://greensock.com/asdocs/package-summary.html" st=
+yle=3D"color:black">Packages</a></h3><table cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock=
+/package-detail.html">com.greensock</a></td></tr><tr><td><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/core/package-detail.html">com.greensock=
+.core</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/gree=
+nsock/data/package-detail.html">com.greensock.data</a></td></tr><tr><td><a =
+href=3D"https://greensock.com/asdocs/com/greensock/easing/package-detail.ht=
+ml">com.greensock.easing</a></td></tr><tr><td><a href=3D"https://greensock.=
+com/asdocs/com/greensock/events/package-detail.html">com.greensock.events</=
+a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/l=
+ayout/package-detail.html">com.greensock.layout</a></td></tr><tr><td><a hre=
+f=3D"https://greensock.com/asdocs/com/greensock/loading/package-detail.html=
+">com.greensock.loading</a></td></tr><tr><td><a href=3D"https://greensock.c=
+om/asdocs/com/greensock/loading/core/package-detail.html">com.greensock.loa=
+ding.core</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/=
+greensock/loading/data/package-detail.html">com.greensock.loading.data</a><=
+/td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/load=
+ing/display/package-detail.html">com.greensock.loading.display</a></td></tr=
+><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/motionPaths/=
+package-detail.html">com.greensock.motionPaths</a></td></tr><tr><td><a href=
+=3D"https://greensock.com/asdocs/com/greensock/plugins/package-detail.html"=
+>com.greensock.plugins</a></td></tr><tr><td><a href=3D"https://greensock.co=
+m/asdocs/com/greensock/text/package-detail.html">com.greensock.text</a></td=
+></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/utils/p=
+ackage-detail.html">com.greensock.utils</a></td></tr></tbody></table></body=
+></html><!--<br/>Thu Jul 4 2013, 12:48 AM -05:00  -->
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC----
+Content-Type: text/html
+Content-ID: <frame-2DB230D84C1A4EA07B8DF7B65FB1CBC6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/com/greensock/class-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><title>com.greensock - GreenSock Documentation</title><base targe=
+t=3D"classFrame"><link rel=3D"stylesheet" href=3D"https://greensock.com/asd=
+ocs/style.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" =
+href=3D"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"=
+print"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/overri=
+de.css" type=3D"text/css"></head><body class=3D"classFrameContent vsc-initi=
+alized"><h3><a href=3D"https://greensock.com/asdocs/com/greensock/package-d=
+etail.html" target=3D"classFrame" style=3D"color:black">Package com.greenso=
+ck</a></h3><table cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td><a hre=
+f=3D"https://greensock.com/asdocs/com/greensock/package-detail.html#classSu=
+mmary" style=3D"color:black"><b>Classes</b></a></td></tr><tr><td><a href=3D=
+"https://greensock.com/asdocs/com/greensock/BlitMask.html">BlitMask</a></td=
+></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBli=
+tMask.html">FlexBlitMask</a></td></tr><tr><td><a href=3D"https://greensock.=
+com/asdocs/com/greensock/TimelineLite.html">TimelineLite</a></td></tr><tr><=
+td><a href=3D"https://greensock.com/asdocs/com/greensock/TimelineMax.html">=
+TimelineMax</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/co=
+m/greensock/TweenLite.html">TweenLite</a></td></tr><tr><td><a href=3D"https=
+://greensock.com/asdocs/com/greensock/TweenMax.html">TweenMax</a></td></tr>=
+<tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/TweenNano.htm=
+l">TweenNano</a></td></tr></tbody></table></body></html><!--<br/>Thu Oct 24=
+ 2013, 01:43 PM -05:00  -->
+------MultipartBoundary--8nCYWm6qUuSG8czQnwonJBThpn3B2SeEG8kAze6ZrC------

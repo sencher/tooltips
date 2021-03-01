@@ -1,0 +1,2598 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://greensock.com/asdocs/index.html?com/greensock/package-detail.html&com/greensock/class-list.html
+Subject: TweenLite - GreenSock Documentation
+Date: Mon, 1 Mar 2021 20:47:52 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----"
+
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-1312FFEB6037E394294EB36BFD0FA88F@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/index.html?com/greensock/package-detail.html&com/greensock/class-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.o=
+rg/TR/html4/frameset.dtd"><html><head><meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8">
+
+   =20
+<title>TweenLite - GreenSock Documentation</title>
+   =20
+
+
+</head>
+
+<frameset cols=3D"210,*" border=3D"2" bordercolor=3D"#AAAAAA" framespacing=
+=3D"0" class=3D"vsc-initialized">
+      =20
+<frame src=3D"cid:frame-8E2F44989CD45DEB7F97D82B64DEAF58@mhtml.blink" name=
+=3D"packageFrame" scrolling=3D"no">
+      =20
+<frameset rows=3D"80,*" border=3D"0" bordercolor=3D"#AAAAAA">
+       	=09
+<frame src=3D"cid:frame-501211C38104CA3BA94F42327462FD6B@mhtml.blink" name=
+=3D"titlebar" scrolling=3D"no" frameborder=3D"0">
+       	=09
+<frame src=3D"cid:frame-D8597E5C10C52654623AE90471FD0F47@mhtml.blink" name=
+=3D"classFrame" frameborder=3D"0">
+    =09
+</frameset>
+   =20
+<noframes>
+=09
+<body>
+       =20
+<h2>Frame Alert</h2>
+       =20
+<p>
+        This document is designed to be viewed using the frames feature. If=
+ you see this message, you are using a non-frame-capable web client.
+        <br>
+        Link to <a href=3D"package-summary.html">Non-frame version.</a>
+       =20
+</p>
+       =20
+</body>
+   =20
+</noframes>
+
+</frameset>
+<!-- -->
+
+
+</html>
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-8E2F44989CD45DEB7F97D82B64DEAF58@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/package-frame.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.o=
+rg/TR/html4/frameset.dtd"><html><head><meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8">
+
+   =20
+<title>GreenSock Tweening Platform Language Reference</title>
+
+</head>
+
+<frameset rows=3D"40%,60%" border=3D"2" framespacing=3D"1" bordercolor=3D"#=
+AAAAAA" class=3D"vsc-initialized">
+   =20
+<frame src=3D"cid:frame-D2E701FDCAF0C8C47A47EC9156DD1075@mhtml.blink" name=
+=3D"packageListFrame">
+   =20
+<frame src=3D"cid:frame-2DB230D84C1A4EA07B8DF7B65FB1CBC6@mhtml.blink" name=
+=3D"classListFrame">
+   =20
+<noframes>
+       =20
+<body>
+           =20
+<h2>Frame Alert</h2>
+           =20
+<p>This document is designed to be viewed using the frames feature. If you =
+see this message, you are using a non-frame-capable web client.
+                <br>
+                Link to<a href=3D"package-summary.html">Non-frame version.<=
+/a>
+           =20
+</p>
+       =20
+</body>
+   =20
+</noframes>
+
+</frameset>
+<!-- -->
+
+
+</html>
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-501211C38104CA3BA94F42327462FD6B@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/title-bar.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><!=
+-- saved from url=3D(0014)about:internet --><html><head><meta http-equiv=3D=
+"Content-Type" content=3D"text/html; charset=3DUTF-8">
+		<title>GreenSock ActionScript API Docs</title><link rel=3D"stylesheet" hr=
+ef=3D"https://greensock.com/asdocs/style.css" type=3D"text/css" media=3D"sc=
+reen"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/print.c=
+ss" type=3D"text/css" media=3D"print"><link rel=3D"stylesheet" href=3D"http=
+s://greensock.com/asdocs/override.css" type=3D"text/css">
+	=09
+	=09
+	=09
+	</head>
+	<body class=3D"vsc-initialized">
+		<a name=3D"top"></a>
+	=09
+		<div style=3D"width:300px; height:60px;position:absolute;background-image=
+:url('images/02geek-as3-js.gif'); left:240px; top:7px; border:1px solid #77=
+7;">
+			<a href=3D"http://02skills.com/course/javascript-animation-bundle/?affco=
+de=3Dic6i&amp;couponCode=3DBEST" target=3D"_blank"><div style=3D"width:174p=
+x;height:61px;position:relative;left:0px;top:0px;"></div></a>
+			<a href=3D"http://02skills.com/course/gsap-flash-animation/?affcode=3Dic=
+6i&amp;couponCode=3DBEST" target=3D"_blank"><div style=3D"width:33px;height=
+:61px;position:relative;left:174px;top:-61px;"></div></a>
+			<a name=3D"02geek" href=3D"http://02skills.com/course/animation-bundle/?=
+affcode=3Dic6i&amp;couponCode=3DBEST" target=3D"_blank">
+					<div style=3D"width:93px;height:61px;position:relative;left:207px;top:=
+-122px;"></div>
+			</a>
+		</div>
+		<table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+		  <tbody><tr>
+			<td>
+			  <table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+				<tbody><tr>
+				  <td class=3D"titleTableTitle" align=3D"left">GreenSock ActionScript A=
+PI Docs</td><td class=3D"titleTableSearch" align=3D"center">&nbsp;</td>
+				  <td class=3D"titleTableTopNav" align=3D"right">
+					<a target=3D"classFrame" href=3D"https://greensock.com/asdocs/package-=
+summary.html"> All Packages </a>&nbsp;|&nbsp;<a target=3D"classFrame" href=
+=3D"https://greensock.com/asdocs/class-summary.html"> All Classes </a>&nbsp=
+;|&nbsp;<a target=3D"classFrame" href=3D"https://greensock.com/asdocs/all-i=
+ndex-A.html"> Index </a>&nbsp;|&nbsp;<a href=3D"https://greensock.com/asdoc=
+s/title-bar.html"> No Frames </a>
+				  </td>
+				</tr>
+			  </tbody></table>
+			</td>
+			<td class=3D"titleTableLogo" align=3D"right" rowspan=3D"3"><img src=3D"h=
+ttps://greensock.com/asdocs/images/logo.jpg" class=3D"logoImage" title=3D"A=
+dobe Logo" alt=3D"Adobe Logo"></td>
+		  </tr>
+		  <tr>
+			<td>
+			  <table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0">
+				<tbody><tr class=3D"titleTableRow2">
+				  <td class=3D"titleTableSubTitle" id=3D"subTitle" align=3D"left" colsp=
+an=3D"2">TweenLite</td>
+				  <td class=3D"titleTableSubNav" id=3D"subNav" align=3D"right">
+					<a id=3D"propertiesLink" href=3D"https://greensock.com/asdocs/title-ba=
+r.html#top" style=3D"display: inline;"> Properties </a><span id=3D"properti=
+esBar" style=3D"display: inline;"> | </span><a id=3D"packagePropertiesLink"=
+ href=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display:=
+none"> Properties </a><span id=3D"packagePropertiesBar" style=3D"display:no=
+ne"> | </span><a id=3D"constructorLink" href=3D"https://greensock.com/asdoc=
+s/title-bar.html#top" style=3D"display:none"> Constructor </a><span id=3D"c=
+onstructorBar" style=3D"display:none"> | </span><a id=3D"methodsLink" href=
+=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display: inli=
+ne;"> Methods </a><span id=3D"methodsBar" style=3D"display: none;"> | </spa=
+n><a id=3D"packageFunctionsLink" href=3D"https://greensock.com/asdocs/title=
+-bar.html#top" style=3D"display:none"> Functions </a><span id=3D"packageFun=
+ctionsBar" style=3D"display:none"> | </span><a id=3D"eventsLink" href=3D"ht=
+tps://greensock.com/asdocs/title-bar.html#top" style=3D"display:none"> Even=
+ts </a><span id=3D"eventsBar" style=3D"display:none"> | </span><a id=3D"sty=
+lesLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"=
+display:none"> Styles </a><span id=3D"stylesBar" style=3D"display:none"> | =
+</span><a id=3D"SkinPartLink" href=3D"https://greensock.com/asdocs/title-ba=
+r.html#top" style=3D"display:none"> Skin Parts </a><span id=3D"SkinPartBar"=
+ style=3D"display:none"> | </span><a id=3D"SkinStateLink" href=3D"https://g=
+reensock.com/asdocs/title-bar.html#top" style=3D"display:none"> Skin States=
+ </a><span id=3D"SkinStateBar" style=3D"display:none"> | </span><a id=3D"ef=
+fectsLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" style=
+=3D"display:none"> Effects </a><span id=3D"effectsBar" style=3D"display:non=
+e"> | </span><a id=3D"constantsLink" href=3D"https://greensock.com/asdocs/t=
+itle-bar.html#top" style=3D"display:none"> Constants </a><span id=3D"consta=
+ntsBar" style=3D"display:none"> | </span><a id=3D"packageConstantsLink" hre=
+f=3D"https://greensock.com/asdocs/title-bar.html#top" style=3D"display:none=
+"> Constants </a><span id=3D"packageConstantsBar" style=3D"display:none"> |=
+ </span><a id=3D"interfacesLink" href=3D"https://greensock.com/asdocs/title=
+-bar.html#top" style=3D"display:none"> Interfaces </a><span id=3D"interface=
+sBar" style=3D"display:none"> | </span><a id=3D"classesLink" href=3D"https:=
+//greensock.com/asdocs/title-bar.html#top" style=3D"display: none;"> Classe=
+s </a><span id=3D"classesBar" style=3D"display:none"> | </span><a id=3D"pac=
+kageUseLink" href=3D"https://greensock.com/asdocs/title-bar.html#top" style=
+=3D"display:none">Use</a><span id=3D"packageUseBar" style=3D"display:none">=
+ | </span><a id=3D"examplesLink" href=3D"https://greensock.com/asdocs/title=
+-bar.html#top" style=3D"display: none;"> Examples </a>
+				  </td>
+				</tr>
+				<tr class=3D"titleTableRow3">
+				  <td colspan=3D"3">&nbsp;</td>
+				</tr>
+			  </tbody></table>
+			</td>
+		  </tr>
+		</tbody></table>
+=09
+<!--<br/>Thu Mar 28 2013, 04:38 PM -05:00  --></body></html>
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/style.css
+
+@charset "utf-8";
+
+.titleTable { width: 100%; }
+
+.titleTableTitle { white-space: nowrap; padding-left: 15px; padding-right: =
+5px; font-size: 13px; height: 44px; background-image: url("images/titleTabl=
+eTop.jpg"); background-repeat: repeat-x; }
+
+.titleTableSearch { white-space: nowrap; background-image: url("images/titl=
+eTableTop.jpg"); background-repeat: repeat-x; padding-right: 10px; }
+
+.searchForm { margin-top: 0px; margin-bottom: 0px; }
+
+.titleTableTopNav { font-size: 12px; background-image: url("images/titleTab=
+leTop.jpg"); background-repeat: repeat-x; }
+
+.titleTableLogo { width: 76px; height: 80px; vertical-align: top; }
+
+.titleTableRow2 { color: rgb(0, 0, 0); height: 31px; background-image: url(=
+"images/titleTableMiddle.jpg"); background-repeat: repeat-x; }
+
+.titleTableSubTitle { font-size: 20px; padding-left: 15px; padding-right: 5=
+px; }
+
+.titleTableSubNav { font-size: 12px; }
+
+.titleTableRow3 { height: 5px; background-image: url("images/titleTableBott=
+om.jpg"); background-repeat: repeat-x; }
+
+.logoImage { width: 76px; height: 80px; }
+
+.classHeaderTable { margin-top: 20px; }
+
+.classHeaderTable td { vertical-align: top; padding-bottom: 4px; }
+
+.classHeaderTableLabel { font-weight: bold; padding-right: 15px; }
+
+.classSignature { text-indent: -20px; padding-left: 20px; }
+
+.inheritanceList { text-indent: -20px; padding-left: 20px; }
+
+.inheritArrow { width: 15px; height: 9px; }
+
+.mxmlSyntax { margin-bottom: -13px; }
+
+.collapsedImage { width: 9px; height: 9px; border: 0px; }
+
+.expandedImage { width: 9px; height: 9px; border: 0px; }
+
+.classFrameContent { margin: 10px 5px 10px 10px; }
+
+.classFrameContent td { white-space: nowrap; padding-right: 5px; }
+
+.eclipseBody { display: none; }
+
+img { border: 0px; }
+
+.annotation { font-size: 20px; margin-top: 20px; }
+
+.label { color: rgb(68, 68, 68); font-weight: bold; }
+
+strong { color: rgb(68, 68, 68); }
+
+.summarySection { margin-left: 20px; margin-right: 10px; }
+
+.summaryTableTitle { font-weight: bold; font-size: 18px; padding-top: 20px;=
+ padding-bottom: 5px; }
+
+* .summaryTable { margin-top: 10px; border: 1px solid rgb(153, 153, 153); w=
+idth: 100%; margin-bottom: 20px; }
+
+html > body .summaryTable { margin-top: 10px; border: 1px solid rgb(153, 15=
+3, 153); width: 100%; margin-bottom: 20px; margin-right: 10px; }
+
+.summaryTable th { color: rgb(255, 255, 255); background-color: rgb(98, 124=
+, 157); white-space: nowrap; }
+
+.summaryTable td { border-top: 1px solid rgb(153, 153, 153); vertical-align=
+: top; }
+
+.summaryTablePaddingCol { width: 5px; }
+
+.summaryTableInheritanceCol { width: 14px; }
+
+.summaryTableSignatureCol { padding-right: 10px; }
+
+.summaryTableOperatorCol { padding-left: 10px; padding-right: 10px; font-we=
+ight: bold; }
+
+.summaryTableStatementCol { padding-left: 10px; padding-right: 10px; font-w=
+eight: bold; white-space: nowrap; }
+
+.summarySignature { text-indent: -20px; padding-left: 20px; }
+
+.summaryTableOwnerCol { padding-right: 10px; width: 10px; }
+
+.summaryTableCol, .summaryTableSecondCol { }
+
+.signatureLink { font-weight: bold; }
+
+.summaryTableDescription { color: rgb(51, 51, 51); }
+
+.summaryTableLastCol { padding-right: 10px; }
+
+.inheritedSummaryImage { width: 14px; height: 14px; }
+
+.showHideLink { }
+
+.showHideLinkImage { width: 9px; height: 9px; }
+
+.hideInheritedConstant { display: none; }
+
+.showInheritedConstant { display: inline; }
+
+.hideInheritedProtectedConstant { display: none; }
+
+.showInheritedProtectedConstant { display: inline; }
+
+.hideInheritedProperty { display: none; }
+
+.showInheritedProperty { display: inline; }
+
+.hideInheritedProtectedProperty { display: none; }
+
+.showInheritedProtectedProperty { display: inline; }
+
+.hideInheritedMethod { display: none; }
+
+.showInheritedMethod { display: inline; }
+
+.hideInheritedProtectedMethod { display: none; }
+
+.showInheritedProtectedMethod { display: inline; }
+
+.hideInheritedEvent { display: none; }
+
+.showInheritedEvent { display: inline; }
+
+.hideInheritedStyle { display: none; }
+
+.showInheritedStyle { display: inline; }
+
+.hideInheritedEffect { display: none; }
+
+.showInheritedEffect { display: inline; }
+
+.detailSectionHeader { color: rgb(67, 67, 67); font-size: 18px; padding-lef=
+t: 10px; padding-top: 4px; padding-bottom: 4px; margin-top: 40px; margin-bo=
+ttom: 3px; background-image: url("images/detailSectionHeader.jpg"); backgro=
+und-repeat: repeat-x; }
+
+.detailHeader { margin-left: 20px; margin-top: 10px; margin-bottom: 3px; }
+
+.detailHeaderName { font-weight: bold; font-size: 16px; vertical-align: bas=
+eline; white-space: nowrap; }
+
+.detailHeaderType { font-size: 12px; vertical-align: baseline; padding-righ=
+t: 10px; padding-left: 7px; white-space: nowrap; }
+
+.detailHeaderParens { font-size: 14px; font-weight: bold; padding-left: 1px=
+; padding-bottom: 2px; }
+
+.detailHeaderRule { background-image: url("images/detailHeaderRule.jpg"); b=
+ackground-repeat: repeat-x; width: 100%; background-position: 50% center; }
+
+.detailBody { margin-left: 20px; margin-right: 15px; margin-bottom: 20px; }
+
+.exampleHeader { background-color: rgb(200, 209, 223); padding-left: 10px; =
+padding-top: 3px; padding-bottom: 3px; }
+
+.seeAlso { margin-top: -13px; padding-left: 20px; }
+
+body { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; color: r=
+gb(0, 0, 0); background-color: rgb(255, 255, 255); margin: 0px; padding: 0p=
+x; }
+
+body, td, th { font-size: 13px; }
+
+.MainContent { margin-left: 20px; margin-right: 10px; margin-bottom: 10px; =
+}
+
+code { font-family: "Lucida Console", "Courier New", Courier, monospace; fo=
+nt-size: 12px; }
+
+pre { font-family: "Lucida Console", "Courier New", Courier, monospace; fon=
+t-size: 12px; }
+
+th { text-align: left; font-weight: bold; vertical-align: bottom; }
+
+table { background-color: white; }
+
+table.withBorder { border-color: rgb(187, 187, 187); border-width: 1px; bor=
+der-style: solid; }
+
+.innertable { border-collapse: collapse; }
+
+.innertable th { border: 1px solid rgb(0, 0, 0); background: rgb(221, 221, =
+221); padding: 2px 3px; }
+
+.innertable td { border: 1px solid rgb(0, 0, 0); padding: 2px 3px; }
+
+.paramSpacer { font-size: 5px; }
+
+.row0 { background-color: rgb(242, 242, 242); }
+
+.row1 { background-color: rgb(255, 255, 255); }
+
+.prow0 { background-color: rgb(242, 242, 242); }
+
+.prow1 { background-color: rgb(255, 255, 255); }
+
+.idxrow { padding-top: 5px; }
+
+.SummaryTableHeader { background-color: rgb(204, 204, 204); }
+
+.InheritedTableHeader { background-color: rgb(238, 238, 238); }
+
+.PackageTableHeader { background-color: rgb(238, 238, 238); }
+
+a:link { color: rgb(0, 0, 204); text-decoration: none; }
+
+a:visited { color: rgb(0, 0, 204); text-decoration: none; }
+
+a:hover { text-decoration: underline; color: rgb(0, 0, 204); }
+
+a:active { text-decoration: none; color: rgb(204, 0, 0); }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", "Bitstream Vera Sans"=
+, verdana, lucida, arial, helvetica, sans-serif; font-weight: bold; margin-=
+top: 3px; margin-bottom: 3px; letter-spacing: 1px; width: 90%; }
+
+h1 { font-size: 18px; }
+
+h2 { font-size: 16px; }
+
+h3 { font-size: 14px; }
+
+h4 { font-size: 12px; color: rgb(102, 102, 102); }
+
+h5 { font-size: 11px; }
+
+.copyright { margin-top: 30px; color: rgb(119, 119, 119); font-size: 10px; =
+padding-bottom: 5px; }
+
+.inheritanceList { line-height: 19px; }
+
+.private { color: rgb(153, 153, 153); }
+
+.flashonly { color: rgb(0, 0, 0); }
+
+.flexonly { display: none; color: rgb(0, 0, 0); }
+
+.hide { display: none; }
+
+.feedbackLink { }
+
+* html .listing { width: 93%; padding: 5px 5px 5px 6%; overflow-x: auto; ba=
+ckground-color: rgb(242, 242, 242); margin-bottom: 10px; margin-top: 10px; =
+font-family: "Lucida Console", "Courier New", Courier, monospace; font-size=
+: 12px; }
+
+html > body .listing pre { overflow: auto; padding: 5px 5px 5px 40px; backg=
+round-color: rgb(242, 242, 242); margin-top: 10px; margin-bottom: 10px; fon=
+t-family: "Lucida Console", "Courier New", Courier, monospace; font-size: 1=
+2px; }
+
+.listingIcons { padding: 0px; margin-top: 10px; height: 15px; }
+
+.pageTop { height: 10px; }
+
+.hideInheritedSkinState { display: none; }
+
+.showInheritedSkinState { display: inline; }
+
+.hideInheritedSkinPart { display: none; }
+
+.showInheritedSkinPart { display: inline; }
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableTop.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAsAAEDAREA
+AhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAcJ/8QAHRAAAgEEAwAAAAAAAAAAAAAAABMFAQMS
+F1WS0//EABgBAQEAAwAAAAAAAAAAAAAAAAEAAgQF/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oA
+DAMBAAIRAxEAPwDRnCh0mhDVhTS1hSeokYsElWzJbiIvrf8Aczwn/9k=
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableMiddle.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAfAAEDAREA
+AhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQJ/8QAGBABAQADAAAAAAAAAAAAAAAAABMBEmH/
+xAAXAQADAQAAAAAAAAAAAAAAAAABAgQA/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIR
+AxEAPwDWaPF1SlIgy7QIYhPBLgx//9k=
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/titleTableBottom.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAgICAgIDAgICBAUEAgIEBQYFBQUFBQYHBgYG
+BgYGBwcICAkICAcKCgsLCgoODg4ODg4ODg4ODg4ODg7/2wBDAQMDAwYFBgsHBwsODAoMDhEQEBAQ
+EREODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAFAAEDAREA
+AhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABoQAAAHAAAAAAAAAAAAAAAAAAABAwYYU5H/
+xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/
+AFEjYx7V8ICP/9k=
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/print.css
+
+@charset "utf-8";
+
+body { color: rgb(0, 0, 0); background: rgb(255, 255, 255); font-family: "T=
+imes New Roman", Times, serif; font-size: 12pt; }
+
+a { text-decoration: none; color: rgb(0, 0, 0); }
+
+pre { overflow-wrap: break-word; }
+
+.titleTableTopNav, .titleTableSubNav, .logoImage { display: none; }
+
+.packageFrame { display: none; }
+
+.titleTableSubTitle { font-weight: bold; }
+
+.classHeaderTableLabel { padding-right: 10px; vertical-align: top; }
+
+.showHideLinks { display: none; }
+
+html > body code { font-size: 10pt; }
+
+.summaryTableTitle, .detailSectionHeader { font-size: 14pt; font-weight: bo=
+ld; padding-top: 15px; padding-bottom: 5px; }
+
+.summaryTable { border: 1px solid rgb(0, 0, 0); border-collapse: collapse; =
+width: 100%; }
+
+.summaryTableDescription { padding-bottom: 20px; }
+
+.summaryTableSignatureCol, .summaryTableOwnerCol, .summaryTableLastCol, .su=
+mmaryTableCol { border: 1px solid rgb(0, 0, 0); }
+
+.summaryTablePaddingCol { border-width: 1px 0px 1px 1px; border-top-style: =
+solid; border-bottom-style: solid; border-left-style: solid; border-top-col=
+or: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb=
+(0, 0, 0); border-image: initial; border-right-style: initial; border-right=
+-color: initial; }
+
+.summaryTableInheritanceCol, .summaryTableOperatorCol, .summaryTableStateme=
+ntCol, .summaryTableSecondCol { border-width: 1px 1px 1px 0px; border-top-s=
+tyle: solid; border-right-style: solid; border-bottom-style: solid; border-=
+top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-co=
+lor: rgb(0, 0, 0); border-image: initial; border-left-style: initial; borde=
+r-left-color: initial; }
+
+.summaryTableLastCol { vertical-align: top; }
+
+.detailHeader { font-size: 13pt; padding-top: 100px; }
+
+.detailHeaderName { font-weight: bold; }
+
+.detailHeaderType { padding-left: 5px; }
+
+.detailHeaderRule { background: rgb(255, 0, 0); }
+
+.seeAlso { padding-bottom: 20px; margin-top: -20px; }
+
+.innertable { border-collapse: collapse; }
+
+.innertable td, .innertable th { border: 1px solid rgb(0, 0, 0); padding-le=
+ft: 5px; padding-right: 5px; }
+
+.listing { font-size: 10pt; }
+
+.feedbackLink { display: none; }
+
+.copyright { font-size: 10pt; }
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/override.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/02geek-as3-js.gif
+
+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
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/logo.jpg
+
+/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABGAAD/7gAOQWRvYmUA
+ZMAAAAAB/9sAhAAEAwMDAwMEAwMEBgQDBAYHBQQEBQcIBgYHBgYICggJCQkJCAoKDAwMDAwKDAwN
+DQwMEREREREUFBQUFBQUFBQUAQQFBQgHCA8KCg8UDg4OFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABQAEwDAREAAhEBAxEB/8QAYwABAAIDAAAA
+AAAAAAAAAAAAAAMEAQYIAQEBAAMAAAAAAAAAAAAAAAAAAQIDBBAAAgADCQAAAAAAAAAAAAAAABIB
+AwRhUpKT0xTUVQcRAQEBAQAAAAAAAAAAAAAAAAAREgH/2gAMAwEAAhEDEQA/AOjVgdrkgsAQWAIL
+AEFgCCwBBYAgsAQWAILAETICiAogKICiAogKICiAogKICpkJVEFBBQQUEFBBQQUEFBBQQUWEAIAQ
+AgBACAEAIAQAgEygFAKAUAoBQCgFAKAUDKV96lyJvIEUSvvUuRN5AgJX3qXIm8gQEr71LkTeQICV
+96lyJvIEBK+9S5E3kCAlfepcibyBASvvUuRN5AgJX3qXIm8gQEr71LkTeQIL6GKiAEAIAQAgBACA
+EAIBaWwAtgBbAC2AFsALYAWwAtgBbAC2ATpElWCRFIJEUgkRSCRFIJEUgkRSCRFIJEUgkRSNP3Xq
+XWUGCbrGnfW3JuvUusoME3WG+mTdepdZQYJusN9Mm69S6ygwTdYb6ZN16l1lBgm6w30ybr1LrKDB
+N1hvpk3XqXWUGCbrDfTJuvUusoME3WG+mTdepdZQYJusN9Mm69S6ygwTdYb6Zf/Z
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-D8597E5C10C52654623AE90471FD0F47@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/com/greensock/TweenLite.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/sty=
+le.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" href=3D=
+"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"print">=
+<link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/override.css"=
+ type=3D"text/css"><meta name=3D"keywords" content=3D"TweenLite,com.greenso=
+ck.TweenLite,autoUpdate,autoUpdate,bitmapMode,bitmapMode,defaultEase,defaul=
+tEase,defaultOverwrite,fillColor,fillColor,height,height,rotation,rotation,=
+scaleX,scaleX,scaleY,scaleY,scrollX,scrollX,scrollY,scrollY,smoothing,smoot=
+hing,target,target,target,target,ticker,ticker,ticker,vars,width,width,wrap=
+,wrap,wrapOffsetX,wrapOffsetX,wrapOffsetY,wrapOffsetY,x,x,y,y,add,addCallba=
+ck,addEventListener,addEventListener,addLabel,addPause,call,clear,currentLa=
+bel,delayedCall,delayedCall,delayedCall,disableBitmapMode,disableBitmapMode=
+,dispose,dispose,duration,duration,enableBitmapMode,enableBitmapMode,export=
+Root,from,from,from,from,fromTo,fromTo,fromTo,getActive,getAllTweens,getChi=
+ldren,getLabelAfter,getLabelBefore,getLabelTime,getLabelsArray,getTweensOf,=
+getTweensOf,getTweensOf,invalidate,invalidate,invalidate,invalidate,isTween=
+ing,kill,killAll,killChildTweensOf,killDelayedCallsTo,killDelayedCallsTo,ki=
+llTweensOf,killTweensOf,killTweensOf,normalizePosition,normalizePosition,pa=
+useAll,progress,progress,remove,removeCallback,removeEventListener,removeEv=
+entListener,removeLabel,repeat,repeat,repeatDelay,repeatDelay,resumeAll,see=
+k,set,set,set,setActualSize,setSize,setSize,shiftChildren,staggerFrom,stagg=
+erFrom,staggerFromTo,staggerFromTo,staggerTo,staggerTo,stop,time,time,to,to=
+,to,to,totalDuration,totalDuration,totalDuration,totalProgress,totalProgres=
+s,tweenFromTo,tweenTo,update,update,updateTo,usesFrames,yoyo,yoyo"><title>c=
+om.greensock.TweenLite</title></head><body class=3D"vsc-initialized">
+<table class=3D"titleTable" cellpadding=3D"0" cellspacing=3D"0" id=3D"title=
+Table" style=3D"display:none"><tbody><tr><td class=3D"titleTableTitle" alig=
+n=3D"left">GreenSock ActionScript API Docs</td><td class=3D"titleTableTopNa=
+v" align=3D"right"><a href=3D"https://greensock.com/asdocs/package-summary.=
+html">All Packages</a>&nbsp;|&nbsp;<a href=3D"https://greensock.com/asdocs/=
+class-summary.html">All Classes</a>&nbsp;|&nbsp;<a href=3D"https://greensoc=
+k.com/asdocs/all-index-A.html">Index</a>&nbsp;|&nbsp;<a id=3D"framesLink1" =
+href=3D"https://greensock.com/asdocs/index.html?com/greensock/TweenLite.htm=
+l&amp;com/greensock/class-list.html">Frames</a><a id=3D"noFramesLink1" styl=
+e=3D"display:none" href=3D"https://greensock.com/asdocs/com/greensock/Tween=
+Lite.html"> No Frames </a></td><td class=3D"titleTableLogo" align=3D"right"=
+ rowspan=3D"3"><img src=3D"https://greensock.com/asdocs/images/logo.jpg" cl=
+ass=3D"logoImage" alt=3D" Adobe Logo " title=3D" Adobe Logo "></td></tr><tr=
+ class=3D"titleTableRow2"><td class=3D"titleTableSubTitle" id=3D"subTitle" =
+align=3D"left">TweenLite</td><td class=3D"titleTableSubNav" id=3D"subNav" a=
+lign=3D"right"><a href=3D"https://greensock.com/asdocs/com/greensock/TweenL=
+ite.html#propertySummary">Properties</a>&nbsp;| <a href=3D"https://greensoc=
+k.com/asdocs/com/greensock/TweenLite.html#methodSummary">Methods</a></td></=
+tr><tr class=3D"titleTableRow3"><td colspan=3D"3">&nbsp;</td></tr></tbody><=
+/table><div xmlns:fn=3D"http://www.w3.org/2005/xpath-functions" class=3D"Ma=
+inContent"><table class=3D"classHeaderTable" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td class=3D"classHeaderTableLabel">Package</td><td><a hr=
+ef=3D"https://greensock.com/asdocs/com/greensock/package-detail.html">com.g=
+reensock</a></td></tr><tr><td class=3D"classHeaderTableLabel">Class</td><td=
+ class=3D"classSignature">public  class  TweenLite</td></tr><tr><td class=
+=3D"classHeaderTableLabel">Inheritance</td><td class=3D"inheritanceList">Tw=
+eenLite  <img src=3D"https://greensock.com/asdocs/images/inherit-arrow.gif"=
+ title=3D"Inheritance" alt=3D"Inheritance" class=3D"inheritArrow"> <a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html">Animati=
+on</a> <img src=3D"https://greensock.com/asdocs/images/inherit-arrow.gif" t=
+itle=3D"Inheritance" alt=3D"Inheritance" class=3D"inheritArrow"> Object</td=
+></tr><tr><td class=3D"classHeaderTableLabel">Subclasses</td><td> <a href=
+=3D"https://greensock.com/asdocs/com/greensock/TweenMax.html">TweenMax</a><=
+/td></tr></tbody></table><p></p><p></p><p></p>
+ TweenLite is an extremely fast, lightweight, and flexible animation tool t=
+hat serves as the foundation of=20
+ the GreenSock Animation Platform (GSAP), available in AS2, AS3, and JavaSc=
+ript. A TweenLite instance handles=20
+ tweening one or more properties of <b>any object</b> (or array of objects)=
+ over time. TweenLite
+ can be used on its own to accomplish most animation chores with minimal fi=
+le size or it can be use in=20
+ conjuction with advanced sequencing tools like TimelineLite or TimelineMax=
+ to make complex tasks much
+ simpler. With scores of other animation frameworks to choose from, why con=
+sider the GreenSock Animation Platform?:
+=20
+ 	<ul>
+ 		               <li>
+                     <b> SPEED </b>- The platform has been highly optimized=
+ for maximum performance. See some=20
+ 		speed comparisons yourself at <a href=3D"http://www.greensock.com/tweeni=
+ng-speed-test/" target=3D"">http://www.greensock.com/tweening-speed-test/</=
+a>
+                  </li>
+ 		 =20
+ 		               <li>
+                     <b> Freakishly robust feature set </b>- In addition to=
+ tweening any numeric property of any object,=20
+ 			TweenLite has plugins that give it the ability to tween hex colors, bez=
+iers, arrays, filters, plus=20
+ 			<b>LOTS</b> more. It can round values, use relative values, smoothly re=
+verse() on the=20
+ 			fly, automatically detect and accommodate getter/setter functions, empl=
+oy virtually any easing=20
+ 			equation, <code>pause()/resume()</code> anytime, and intelligently mana=
+ge conflicting tweens of=20
+ 			the same object with various overwrite modes. TweenMax extends TweenLit=
+e and adds even=20
+ 			more capabilities like repeat, yoyo, repeatDelay, on-the-fly destinatio=
+n value=20
+ 			updates and more.</li>
+ 		 =20
+ 		               <li>
+                     <b> Sequencing, grouping, and management features </b>=
+- TimelineLite and TimelineMax=20
+ 			make it surprisingly simple to create complex sequences or groups of tw=
+eens that you can=20
+ 			control as a whole. play(), pause(), restart(),  or reverse(). You can =
+even tween a timeline's=20
+ 			<code>time</code> or <code>progress</code> to fastforward or rewind the=
+ entire timeline. Add=20
+ 			labels, change the timeline's timeScale, nest timelines within timeline=
+s, and much more.
+ 			This can revolutionize your animation workflow, making it more modular =
+and concise.</li>
+=20
+ 		               <li>
+                     <b> AS3, AS2, and JavaScript </b>- Most other engines =
+are only developed for one language,=20
+ 			but the GreenSock Animation Platform allows you to use a consistent API=
+ across all your Flash and
+ 			HTML5 projects.</li>
+=20
+ 		               <li>
+                     <b> Ease of use </b>- Designers and Developers alike r=
+ave about how intuitive the platform is.</li>
+ 	=09
+ 		               <li>
+                     <b> Support and reliability </b>- With frequent update=
+s, <a href=3D"http://forums.greensock.com/" target=3D"">dedicated forums</a=
+>,=20
+ 			committed authorship, a solid track record, a proven funding mechansim,=
+ and a thriving community of users,=20
+ 			the platform is a safe long-term bet (unlike many open source projects)=
+.</li>
+=20
+ 		               <li>
+                     <b> Expandability </b>- With its plugin architecture, =
+you can activate as many (or as few)=20
+ 			extra features as your project requires. Write your own plugin to handl=
+e particular special=20
+ 			properties in custom ways. Minimize bloat and maximize performance.</li=
+>
+ 	=09
+ 	             </ul>
+=20
+               <p>
+                  <b>USAGE</b>
+               </p>
+               <p>The most common type of tween is a <a href=3D"https://gre=
+ensock.com/asdocs/com/greensock/TweenLite.html#to()" target=3D"">to()</a> t=
+ween which allows you=20
+ to define the destination values:</p>
+=20
+               <p>
+                  <code>
+ TweenLite.to(myObject, 2, {x:100, y:200});
+ </code>
+               </p>
+=20
+               <p>The above code will tween <code>myObject.x</code> from wh=
+atever it currently is to 100 and=20
+ <code>myObject.y</code> property to 200 over the course of 2 seconds. Noti=
+ce the x and y values are=20
+ defined inside a generic object (between curly braces). Put as many proper=
+ties there as you want.</p>
+=20
+               <p>By default, tweens begin immediately, although you can de=
+lay them using the <code>delay</code>
+ special property or pause them initially using the <code>paused</code> spe=
+cial property (see below).</p>
+=20
+               <p>The <code>target</code> can also be an array of objects. =
+For example, the following tween will
+ tween the alpha property to 0.5 and y property to 100 for obj1, obj2, and =
+obj3:</p>
+=20
+               <p>
+                  <code>
+ TweenLite.to([obj1, obj2, obj3], 1, {alpha:0.5, y:100});
+ </code>
+               </p>
+=20
+               <p>You can also use a <a href=3D"https://greensock.com/asdoc=
+s/com/greensock/TweenLite.html#from()" target=3D"">from()</a> tween if you =
+want to define the=20
+ <b>starting</b> values instead of the ending values so that the target twe=
+ens <i>from</i>=20
+ the defined values to wherever they currently are. Or a <a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/TweenLite.html#fromTo()" target=3D"">fr=
+omTo()</a>=20
+ lets you define both starting and ending values.</p>
+=20
+               <p>Although the <code>to()</code>, <code>from()</code>, and =
+<code>fromTo()</code> static methods
+ are popular because they're quick and can avoid some garbage collection ha=
+ssles, you can also
+ use the more object-oriented syntax like this:</p>
+=20
+               <p>
+                  <code>
+ var tween =3D new TweenLite(myObject, 2, {x:100, y:200});
+ </code>
+               </p>
+=20
+               <p>or even:</p>
+=20
+               <p>
+                  <code>
+ var tween =3D TweenLite.to(myObject, 2, {x:100, y:200});
+ </code>
+               </p>
+=20
+=20
+               <p>
+                  <b>SPECIAL PROPERTIES (no plugins required):</b>
+               </p>
+               <p>Typically the <code>vars</code> parameter is used to defi=
+ne ending values for tweening=20
+ properties of the <code>target</code> (or beginning values for <code>from(=
+)</code> tweens)=20
+ like <code>{x:100, y:200, alpha:0}</code>, but the following optional spec=
+ial properties=20
+ serve other purposes:</p>
+=20
+               <ul>
+ 	                <li>
+                     <b> delay </b>:<i> Number</i> -
+ 				 Amount of delay in seconds (or frames for frames-based tweens) before=
+ the tween should begin.</li>
+ =09
+ 	                <li>
+                     <b> ease </b>:<i> Ease (or Function)</i> -
+ 				 You can choose from various eases to control the rate of change durin=
+g=20
+ 				 the animation, giving it a specific "feel". For example, <code>Elasti=
+cOut.ease</code>=20
+ 				 or <code>StrongInOut.ease</code>. For best performance, use one of th=
+e GreenSock eases
+ 				 (which are in the <code>com.greensock.easing</code> package). TweenLi=
+te also works with=20
+ 				 any standard easing equation that uses the typical 4 parameters (<cod=
+e>time, start,=20
+ 				 change, duration</code>) like Adobe's <code>fl.motion.easing</code> e=
+ases.
+ 				 The default is <code>Power1.easeOut</code>. For linear animation, use=
+ the GreenSock=20
+ 				 <code>Linear.ease</code> ease</li>
+ =09
+ 	                <li>
+                     <b> onComplete </b>:<i> Function</i> -
+ 				 A function that should be called when the tween has completed</li>
+ =09
+ 	                <li>
+                     <b> onCompleteParams </b>:<i> Array</i> -
+ 				 An Array of parameters to pass the <code>onComplete</code> function. =
+For example,
+ 				 <code>TweenLite.to(mc, 1, {x:100, onComplete:myFunction, onCompletePa=
+rams:[mc, "param2"]});</code>
+ 				 To self-reference the tween instance itself in one of the parameters,=
+ use <code>"{self}"</code>,
+ 				 like: <code>onCompleteParams:["{self}", "param2"]</code>
+                  </li>
+ =09
+ 	                <li>
+                     <b> useFrames </b>:<i> Boolean</i> -
+ 				 If <code>useFrames</code> is <code>true</code>, the tweens's timing w=
+ill be=20
+ 				 based on frames instead of seconds because it is intially added to th=
+e root
+ 				 frames-based timeline. This causes both its <code>duration</code>
+ 				 and <code>delay</code> to be based on frames. An animations's timing =
+mode is=20
+ 				 always determined by its parent <code>timeline</code>.</li>
+ =09
+ 	                <li>
+                     <b> easeParams </b>:<i> Array</i> [deprecated] -
+ 				 Some GreenSock eases (like <code>OutIn</code> or <code>ElasticOut</co=
+de>) have a <code>config()</code>=20
+ 				 method that allows them to be configured to change their behavior (li=
+ke <code>TweenLite.to(mc, 1, {x:100, ease:ElasticOut.ease.config(0.5, 1)})<=
+/code>
+ 				 but if you are using a non-GreenSock ease that accepts extra paramete=
+rs like Adobe's
+ 				 <code>fl.motion.easing.Elastic</code>, <code>easeParams</code> allows=
+ you to define=20
+ 				 those extra parameters as an array like <code>TweenLite.to(mc, 1, {x:=
+100, ease:Elastic.easeOut, easeParams:[0.5, 1]})</code>.=20
+ 				 Most easing equations, however, don't require extra parameters so you=
+ won't need to=20
+ 				 pass in any easeParams. GreenSock eases provide the best performance,=
+ so use them=20
+ 				 whenever possible.</li>
+ =09
+ 	                <li>
+                     <b> immediateRender </b>:<i> Boolean</i> -
+ 				 Normally when you create a tween, it begins rendering on the very nex=
+t frame (update cycle)=20
+ 				 unless you specify a <code>delay</code>. However, if you prefer to fo=
+rce the tween to=20
+ 				 render immediately when it is created, set <code>immediateRender</cod=
+e> to <code>true</code>.=20
+ 				 Or to prevent a <code>from()</code> from rendering immediately, set <=
+code>immediateRender</code>=20
+ 				 to <code>false</code>. By default, <code>from()</code> tweens set <co=
+de>immediateRender</code> to <code>true</code>.</li>
+=20
+                  <li>
+                     <b> onStart </b>:<i> Function</i> -
+ 				 A function that should be called when the tween begins (when its <cod=
+e>time</code>
+ 				 changes from 0 to some other value which can happen more than once if=
+ the=20
+ 				 tween is restarted multiple times).</li>
+ =09
+ 	                <li>
+                     <b> onStartParams </b>:<i> Array</i> -
+ 				 An Array of parameters to pass the <code>onStart</code> function. For=
+ example,=20
+ 				 <code>TweenLite.to(mc, 1, {x:100, delay:1, onStart:myFunction, onStar=
+tParams:[mc, "param2"]});</code>
+ 				 To self-reference the tween instance itself in one of the parameters,=
+ use <code>"{self}"</code>,
+ 				 like: <code>onStartParams:["{self}", "param2"]</code>
+                  </li>
+ =09
+ 	                <li>
+                     <b> onUpdate </b>:<i> Function</i> -
+ 				 A function that should be called every time the tween updates =20
+ 				 (on every frame while the tween is active)</li>
+ =09
+ 	                <li>
+                     <b> onUpdateParams </b>:<i> Array</i> -
+ 				 An Array of parameters to pass the <code>onUpdate</code> function. Fo=
+r example,
+ 				 <code>TweenLite.to(mc, 1, {x:100, onUpdate:myFunction, onUpdateParams=
+:[mc, "param2"]});</code>
+ 				 To self-reference the tween instance itself in one of the parameters,=
+ use <code>"{self}"</code>,
+ 				 like: <code>onUpdateParams:["{self}", "param2"]</code>
+                  </li>
+ =09
+ 	                <li>
+                     <b> onReverseComplete </b>:<i> Function</i> -
+ 				 A function that should be called when the tween has reached its begin=
+ning again from the=20
+ 				 reverse direction. For example, if <code>reverse()</code> is called t=
+he tween will move
+ 				 back towards its beginning and when its <code>time</code> reaches 0, =
+<code>onReverseComplete</code>
+ 				 will be called. This can also happen if the tween is placed in a Time=
+lineLite or TimelineMax instance
+ 				 that gets reversed and plays the tween backwards to (or past) the beg=
+inning.</li>
+ =09
+ 	                <li>
+                     <b> onReverseCompleteParams </b>:<i> Array</i> -
+ 				 An Array of parameters to pass the <code>onReverseComplete</code> fun=
+ction. For example,=20
+ 				 <code>TweenLite.to(mc, 1, {x:100, onReverseComplete:myFunction, onRev=
+erseCompleteParams:[mc, "param2"]});</code>
+ 				 To self-reference the tween instance itself in one of the parameters,=
+ use <code>"{self}"</code>,
+ 				 like: <code>onReverseCompleteParams:["{self}", "param2"]</code>
+                  </li>
+=20
+                  <li>
+                     <b> paused </b>:<i> Boolean</i> -
+ 				 If <code>true</code>, the tween will pause itself immediately upon cr=
+eation.</li>
+ =09
+ 	                <li>
+                     <b> overwrite </b>:<i> String (or integer)</i> -
+ 				 Controls how (and if) other tweens of the same target are overwritten=
+.=20
+ 				 There are several modes to choose from, but <code>"auto"</code> is th=
+e default (although
+ 				 you can change the default mode using the <code>TweenLite.defaultOver=
+write</code> property):
+ 					<ul>
+ 			  			               <li>
+                           <code>"none"</code> (0) (or <code>false</code>) =
+- no overwriting will occur.</li>
+ 					=09
+ 						                 <li>
+                           <code>"all"</code> (1) (or <code>true</code>) - =
+immediately overwrites all existing=20
+ 									tweens of the same target even if they haven't started yet or don=
+'t have=20
+ 									conflicting properties.</li>
+ 												=09
+ 						                 <li>
+                           <code>"auto"</code> (2) - when the tween renders=
+ for the first time, it will analyze=20
+ 									tweens of the same target that are currently active/running and o=
+nly overwrite=20
+ 									individual tweening properties that overlap/conflict. Tweens that=
+ haven't begun
+ 									yet are ignored. For example, if another active tween is found th=
+at is tweening
+ 									3 properties, only 1 of which it shares in common with the new tw=
+een, the other
+ 									2 properties will be left alone. Only the conflicting property ge=
+ts overwritten/killed.
+ 									This is the default mode and typically the most intuitive for dev=
+elopers.</li>
+ 						=09
+ 						                 <li>
+                           <code>"concurrent"</code> (3) - when the tween r=
+enders for the first time, it kills
+ 									only the active (in-progress) tweens of the same target regardles=
+s of whether=20
+ 									or not they contain conflicting properties. Like a mix of <code>"=
+all"</code>=20
+ 									and <code>"auto"</code>. Good for situations where you only want =
+one tween=20
+ 									controling the target at a time.</li>
+ 											=09
+ 						                 <li>
+                           <code>"allOnStart"</code> (4) - Identical to <co=
+de>"all"</code> but waits to run
+ 									the overwrite logic until the tween begins (after any delay). Kil=
+ls
+ 									tweens of the same target even if they don't contain conflicting =
+properties
+ 									or haven't started yet.</li>
+ 											=09
+ 						                 <li>
+                           <code>"preexisting"</code> (5) - when the tween =
+renders for the first time, it kills
+ 									only the tweens of the same target that existed BEFORE this tween=
+ was created
+ 									regardless of their scheduled start times. So, for example, if yo=
+u create a tween
+ 									with a delay of 10 and then a tween with a delay of 1 and then a =
+tween with a=20
+ 									delay of 2 (all of the same target), the 2nd tween would overwrit=
+e the first
+ 									but not the second even though scheduling might seem to dictate o=
+therwise.=20
+ 									<code>"preexisting"</code> only cares about the order in which th=
+e instances
+ 									were actually created. This can be useful when the order in which=
+ your code runs=20
+ 									plays a critical role.</li>
+=20
+ 					               </ul>
+                  </li>
+ 	             </ul>
+=20
+               <p>
+                  <b>AS3 note:</b> In AS3, using a <code>
+                     <a href=3D"https://greensock.com/asdocs/com/greensock/=
+data/TweenLiteVars.html" target=3D"">TweenLiteVars</a>
+                  </code>=20
+ instance instead of a generic object to define your <code>vars</code> is a=
+ bit more verbose but provides=20
+ code hinting and improved debugging because it enforces strict data typing=
+. Use whichever one you prefer.</p>
+=20
+=20
+               <p>
+                  <b>PLUGINS:</b>
+               </p>
+=20
+               <p>Think of plugins like special properties that are dynamic=
+ally added, delivering extra abilities without
+ forcing them to be baked into the core engine, keeping it relatively lean =
+and mean. Each plugin is associated=20
+ with a property name and it takes responsibility for handling that propert=
+y. For example, the TintPlugin=20
+ is associated with the "tint" property name so if it is activated it will =
+intercept the "tint" property=20
+ in the following tween and manage it uniquely:</p>
+=20
+               <p>
+                  <code>
+ TweenLite.to(mc, 1, {tint:0xFF0000});
+ </code>
+               </p>
+=20
+               <p>If the TintPlugin wasn't activated, TweenLite would act a=
+s though you were trying to literally tween the=20
+ <code>mc.tint</code> property (and there is no such thing).</p>
+=20
+               <p>In the JavaScript version of TweenLite, activating a plug=
+in is as simple as loading the associated .js file.=20
+ No extra activation code is necessary. In the ActionScript version, activa=
+ting a plugin requires a single line=20
+ of code and you only need to do it once, so it's pretty easy. Simply pass =
+an Array containing the names of all=20
+ the plugins you'd like to activate to the <code>TweenPlugin.activate()</co=
+de> method, like this:</p>
+=20
+               <p>
+                  <code>
+ TweenPlugin.activate([FrameLabelPlugin, ColorTransformPlugin, TintPlugin])=
+;
+ </code>
+               </p>
+=20
+               <p>To make it even easier, there is a <a href=3D"http://www.=
+greensock.com/tweenlite/#plugins" target=3D"">Plugin Explorer</a>
+ which writes the code for you. All you need to do is select the plugins an=
+d copy/paste the code=20
+ from the bottom of the tool. It also displays interactive examples of each=
+ plugin and the assocaited=20
+ code so that it=E2=80=99s easy to see the correct syntax.</p>
+=20
+=20
+               <p>
+                  <b>EXAMPLES:</b>
+               </p>
+=20
+               <p>Please see <a href=3D"http://www.greensock.com/" target=
+=3D"">http://www.greensock.com</a> for examples, tutorials, and interactive=
+ demos. </p>
+=20
+               <b>NOTES / TIPS:</b>
+               <ul> 	 =20
+ 	                <li> Passing values as Strings and a preceding "+=3D" or =
+"-=3D" will make the tween relative to the=20
+ 		current value. For example, if you do <code>TweenLite.to(mc, 2, {x:"-=3D=
+20"});</code> it'll=20
+ 		tween <code>mc.x</code> to the left 20 pixels. <code>{x:"+=3D20"}</code>=
+ would move it to the right.</li>
+ 	 =20
+ 	                <li> You can change the <code>TweenLite.defaultEase</code=
+> if you prefer something other=20
+ 		than <code>Power1.easeOut</code>.</li>
+ =09
+ 	                <li> Kill all tweens of a particular object anytime with =
+<code>TweenLite.killTweensOf(myObject);</code>
+                  </li>
+ 	 =20
+ 	                <li> You can kill all delayedCalls to a particular functi=
+on using <code>TweenLite.killDelayedCallsTo(myFunction);</code>=20
+ 		 or <code>TweenLite.killTweensOf(myFunction);</code>
+                  </li>
+ 	 =20
+ 	                <li> Use the <code>TweenLite.from()</code> method to anim=
+ate things into place. For example,=20
+ 		if you have things set up on the stage in the spot where they should end=
+ up, and you=20
+ 		just want to animate them into place, you can pass in the beginning x an=
+d/or y and/or=20
+ 		alpha (or whatever properties you want).</li>
+ 	 =20
+ 	                <li> If you find this class useful, please consider joini=
+ng <a href=3D"http://www.greensock.com/club/" target=3D"">Club GreenSock</a=
+>
+ 		which not only helps to sustain ongoing development, but also gets you b=
+onus plugins, classes=20
+ 		and other benefits that are ONLY available to members. Learn more at=20
+ 		<a href=3D"http://www.greensock.com/club/" target=3D"">http://www.greens=
+ock.com/club/</a>
+                  </li>
+               </ul>
+=20
+               <p>
+                  <b>Copyright 2006-2013, GreenSock. All rights reserved.</=
+b> This work is subject to the terms in <a href=3D"http://www.greensock.com=
+/terms_of_use.html" target=3D"">http://www.greensock.com/terms_of_use.html<=
+/a> or for <a href=3D"http://www.greensock.com/club/" target=3D"">Club Gree=
+nSock</a> members, the software agreement that was issued with the membersh=
+ip.</p>
+=20
+            <p></p><br><hr></div><a name=3D"propertySummary"></a><div class=
+=3D"summarySection"><div class=3D"summaryTableTitle">Public Properties</div=
+><div class=3D"showHideLinks"><div id=3D"hideInheritedProperty" class=3D"hi=
+deInheritedProperty"><a class=3D"showHideLink" href=3D"https://greensock.co=
+m/asdocs/com/greensock/TweenLite.html#propertySummary"><img class=3D"showHi=
+deLinkImage" src=3D"https://greensock.com/asdocs/images/expanded.gif"> Hide=
+ Inherited Public Properties</a></div><div id=3D"showInheritedProperty" cla=
+ss=3D"showInheritedProperty"><a class=3D"showHideLink" href=3D"https://gree=
+nsock.com/asdocs/com/greensock/TweenLite.html#propertySummary"><img class=
+=3D"showHideLinkImage" src=3D"https://greensock.com/asdocs/images/collapsed=
+.gif"> Show Inherited Public Properties</a></div></div><table cellspacing=
+=3D"0" cellpadding=3D"3" class=3D"summaryTable " id=3D"summaryTableProperty=
+"><tbody><tr><th>&nbsp;</th><th colspan=3D"2">Property</th><th class=3D"sum=
+maryTableOwnerCol">Defined By</th></tr><tr class=3D"hideInheritedProperty" =
+bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td cla=
+ss=3D"summaryTableInheritanceCol"><img src=3D"https://greensock.com/asdocs/=
+images/inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D=
+"inheritedSummaryImage"></td><td class=3D"summaryTableSignatureCol"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#data" cl=
+ass=3D"signatureLink">data</a> : *<div class=3D"summaryTableDescription"> A=
+ place to store any data you want (initially populated with vars.data if it=
+ exists).</div></td><td class=3D"summaryTableOwnerCol"><a href=3D"https://g=
+reensock.com/asdocs/com/greensock/core/Animation.html">Animation</a></td></=
+tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">=
+&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D=
+"summaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/gree=
+nsock/TweenLite.html#defaultEase" class=3D"signatureLink">defaultEase</a> :=
+ <a href=3D"https://greensock.com/asdocs/com/greensock/easing/Ease.html">Ea=
+se</a><div class=3D"summaryTableDescription">[static]  Provides An easy way=
+ to change the default easing equation.</div></td><td class=3D"summaryTable=
+OwnerCol">TweenLite</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=
+=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritance=
+Col">&nbsp;</td><td class=3D"summaryTableSignatureCol"><a href=3D"https://g=
+reensock.com/asdocs/com/greensock/TweenLite.html#defaultOverwrite" class=3D=
+"signatureLink">defaultOverwrite</a> : String =3D auto<div class=3D"summary=
+TableDescription">[static]  Provides An easy way to change the default over=
+write mode.</div></td><td class=3D"summaryTableOwnerCol">TweenLite</td></tr=
+><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&n=
+bsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"s=
+ummaryTableSignatureCol"><a href=3D"https://greensock.com/asdocs/com/greens=
+ock/TweenLite.html#target" class=3D"signatureLink">target</a> : Object<div =
+class=3D"summaryTableDescription"> [READ-ONLY] Target object (or array of o=
+bjects) whose properties the tween affects.</div></td><td class=3D"summaryT=
+ableOwnerCol">TweenLite</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td cla=
+ss=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritan=
+ceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/TweenLite.html#ticker" class=3D"signatu=
+reLink">ticker</a> : Shape<div class=3D"summaryTableDescription">[static]=
+=20
+		 The object that dispatches a "tick" event each time the engine updates, =
+making it easy for=20
+		 you to add your own listener(s) to run custom logic after each update (g=
+reat for game developers).</div></td><td class=3D"summaryTableOwnerCol">Twe=
+enLite</td></tr><tr class=3D"hideInheritedProperty" bgcolor=3D"#F2F2F2"><td=
+ class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInher=
+itanceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary=
+.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"=
+></td><td class=3D"summaryTableSignatureCol"><a href=3D"https://greensock.c=
+om/asdocs/com/greensock/core/Animation.html#timeline" class=3D"signatureLin=
+k">timeline</a> : <a href=3D"https://greensock.com/asdocs/com/greensock/cor=
+e/SimpleTimeline.html">SimpleTimeline</a><div class=3D"summaryTableDescript=
+ion"> [Read-only] Parent timeline.</div></td><td class=3D"summaryTableOwner=
+Col"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.h=
+tml">Animation</a></td></tr><tr class=3D"hideInheritedProperty" bgcolor=3D"=
+#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summa=
+ryTableInheritanceCol"><img src=3D"https://greensock.com/asdocs/images/inhe=
+ritedSummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedS=
+ummaryImage"></td><td class=3D"summaryTableSignatureCol"><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/core/Animation.html#vars" class=3D"sign=
+atureLink">vars</a> : Object<div class=3D"summaryTableDescription"> The var=
+s object passed into the constructor which stores configuration variables l=
+ike onComplete, onUpdate, etc.</div></td><td class=3D"summaryTableOwnerCol"=
+><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html"=
+>Animation</a></td></tr></tbody></table></div><a name=3D"methodSummary"></a=
+><div class=3D"summarySection"><div class=3D"summaryTableTitle">Public Meth=
+ods </div><div class=3D"showHideLinks"><div id=3D"hideInheritedMethod" clas=
+s=3D"hideInheritedMethod"><a class=3D"showHideLink" href=3D"https://greenso=
+ck.com/asdocs/com/greensock/TweenLite.html#methodSummary"><img class=3D"sho=
+wHideLinkImage" src=3D"https://greensock.com/asdocs/images/expanded.gif"> H=
+ide Inherited Public Methods</a></div><div id=3D"showInheritedMethod" class=
+=3D"showInheritedMethod"><a class=3D"showHideLink" href=3D"https://greensoc=
+k.com/asdocs/com/greensock/TweenLite.html#methodSummary"><img class=3D"show=
+HideLinkImage" src=3D"https://greensock.com/asdocs/images/collapsed.gif"> S=
+how Inherited Public Methods</a></div></div><table cellspacing=3D"0" cellpa=
+dding=3D"3" class=3D"summaryTable " id=3D"summaryTableMethod"><tbody><tr><t=
+h>&nbsp;</th><th colspan=3D"2">Method</th><th class=3D"summaryTableOwnerCol=
+">Defined By</th></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summa=
+ryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbs=
+p;</td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignatur=
+e"><a href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html#Twe=
+enLite()" class=3D"signatureLink">TweenLite</a>(target:Object, duration:Num=
+ber, vars:Object)</div><div class=3D"summaryTableDescription">
+		 Constructor
+		 =20
+		 </div></td><td class=3D"summaryTableOwnerCol">TweenLite</td></tr><tr cla=
+ss=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePad=
+dingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol"><img src=3D"ht=
+tps://greensock.com/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" t=
+itle=3D"Inherited" class=3D"inheritedSummaryImage"></td><td class=3D"summar=
+yTableSignatureCol"><div class=3D"summarySignature"><a href=3D"https://gree=
+nsock.com/asdocs/com/greensock/core/Animation.html#delay()" class=3D"signat=
+ureLink">delay</a>(value:Number):*</div><div class=3D"summaryTableDescripti=
+on">=20
+		 Gets or sets the animation's initial delay which is the length of time i=
+n seconds=20
+		 (or frames for frames-based tweens) before the animation should begin.</=
+div></td><td class=3D"summaryTableOwnerCol"><a href=3D"https://greensock.co=
+m/asdocs/com/greensock/core/Animation.html">Animation</a></td></tr><tr clas=
+s=3D"" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td>=
+<td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTab=
+leSignatureCol"><div class=3D"summarySignature"><a href=3D"https://greensoc=
+k.com/asdocs/com/greensock/TweenLite.html#delayedCall()" class=3D"signature=
+Link">delayedCall</a>(delay:Number, callback:Function, params:Array =3D nul=
+l, useFrames:Boolean =3D false):<a href=3D"https://greensock.com/asdocs/com=
+/greensock/TweenLite.html">TweenLite</a></div><div class=3D"summaryTableDes=
+cription">[static]=20
+		 Provides a simple way to call a function after a set amount of time (or =
+frames).</div></td><td class=3D"summaryTableOwnerCol">TweenLite</td></tr><t=
+r class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td class=3D"summaryTab=
+lePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol"><img src=
+=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" alt=3D"Inheri=
+ted" title=3D"Inherited" class=3D"inheritedSummaryImage"></td><td class=3D"=
+summaryTableSignatureCol"><div class=3D"summarySignature"><a href=3D"https:=
+//greensock.com/asdocs/com/greensock/core/Animation.html#duration()" class=
+=3D"signatureLink">duration</a>(value:Number):*</div><div class=3D"summaryT=
+ableDescription">
+		 Gets or sets the animation's duration, not including any repeats or repe=
+atDelays=20
+		 (which are only available in TweenMax and TimelineMax).</div></td><td cl=
+ass=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/asdocs/com/gr=
+eensock/core/Animation.html">Animation</a></td></tr><tr class=3D"hideInheri=
+tedMethod" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;<=
+/td><td class=3D"summaryTableInheritanceCol"><img src=3D"https://greensock.=
+com/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherite=
+d" class=3D"inheritedSummaryImage"></td><td class=3D"summaryTableSignatureC=
+ol"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs=
+/com/greensock/core/Animation.html#eventCallback()" class=3D"signatureLink"=
+>eventCallback</a>(type:String, callback:Function =3D null, params:Array =
+=3D null):*</div><div class=3D"summaryTableDescription">
+		 Gets or sets an event callback like "onComplete", "onUpdate", "onStart",=
+ "onReverseComplete"
+		 or "onRepeat" (onRepeat only applies to TweenMax or TimelineMax instance=
+s)
+		 along with any parameters that should be passed to that callback.</div><=
+/td><td class=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/asd=
+ocs/com/greensock/core/Animation.html">Animation</a></td></tr><tr class=3D"=
+" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td c=
+lass=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSig=
+natureCol"><div class=3D"summarySignature"><a href=3D"https://greensock.com=
+/asdocs/com/greensock/TweenLite.html#from()" class=3D"signatureLink">from</=
+a>(target:Object, duration:Number, vars:Object):<a href=3D"https://greensoc=
+k.com/asdocs/com/greensock/TweenLite.html">TweenLite</a></div><div class=3D=
+"summaryTableDescription">[static]=20
+		 Static method for creating a TweenLite instance that tweens backwards -=
+=20
+		 you define the BEGINNING values and the current values are used
+		 as the destination values which is great for doing things like animating=
+ objects
+		 onto the screen because you can set them up initially the way you want t=
+hem to look=20
+		 at the end of the tween and then animate in from elsewhere.</div></td><t=
+d class=3D"summaryTableOwnerCol">TweenLite</td></tr><tr class=3D"" bgcolor=
+=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"s=
+ummaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol=
+"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/c=
+om/greensock/TweenLite.html#fromTo()" class=3D"signatureLink">fromTo</a>(ta=
+rget:Object, duration:Number, fromVars:Object, toVars:Object):<a href=3D"ht=
+tps://greensock.com/asdocs/com/greensock/TweenLite.html">TweenLite</a></div=
+><div class=3D"summaryTableDescription">[static]=20
+		 Static method for creating a TweenLite instance that allows you to defin=
+e both the starting
+		 and ending values (as opposed to to() and from() tweens which are=20
+		 based on the target's current values at one end or the other).</div></td=
+><td class=3D"summaryTableOwnerCol">TweenLite</td></tr><tr class=3D"" bgcol=
+or=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D=
+"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureC=
+ol"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs=
+/com/greensock/TweenLite.html#getTweensOf()" class=3D"signatureLink">getTwe=
+ensOf</a>(target:*, onlyActive:Boolean =3D false):Array</div><div class=3D"=
+summaryTableDescription">[static]=20
+		 Returns an array containing all the tweens of a particular target (or gr=
+oup of targets) that have not
+		 been released for garbage collection yet which typically happens within =
+a few seconds after the tween completes.</div></td><td class=3D"summaryTabl=
+eOwnerCol">TweenLite</td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"><td class=
+=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritance=
+Col">&nbsp;</td><td class=3D"summaryTableSignatureCol"><div class=3D"summar=
+ySignature"><a href=3D"https://greensock.com/asdocs/com/greensock/TweenLite=
+.html#invalidate()" class=3D"signatureLink">invalidate</a>():*</div><div cl=
+ass=3D"summaryTableDescription">[override]  =20
+		 Clears any initialization data (like starting/ending values in tweens) w=
+hich can be useful if, for example,=20
+		 you want to restart a tween without reverting to any previously recorded=
+ starting values.</div></td><td class=3D"summaryTableOwnerCol">TweenLite</t=
+d></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td class=3D"s=
+ummaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">=
+<img src=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" alt=
+=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"></td><td=
+ class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#isActive=
+()" class=3D"signatureLink">isActive</a>():Boolean</div><div class=3D"summa=
+ryTableDescription">=20
+		 Indicates whether or not the animation is currently active (meaning the =
+virtual playhead is actively moving across=20
+		 this instance's time span and it is not paused, nor are any of its ances=
+tor timelines).</div></td><td class=3D"summaryTableOwnerCol"><a href=3D"htt=
+ps://greensock.com/asdocs/com/greensock/core/Animation.html">Animation</a><=
+/td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#FFFFFF"><td class=3D=
+"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol=
+"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" alt=
+=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"></td><td=
+ class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#kill()" =
+class=3D"signatureLink">kill</a>(vars:Object =3D null, target:Object =3D nu=
+ll):*</div><div class=3D"summaryTableDescription">
+		 Kills the animation entirely or in part depending on the parameters.</di=
+v></td><td class=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/=
+asdocs/com/greensock/core/Animation.html">Animation</a></td></tr><tr class=
+=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><=
+td class=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTabl=
+eSignatureCol"><div class=3D"summarySignature"><a href=3D"https://greensock=
+.com/asdocs/com/greensock/TweenLite.html#killDelayedCallsTo()" class=3D"sig=
+natureLink">killDelayedCallsTo</a>(func:Function):void</div><div class=3D"s=
+ummaryTableDescription">[static]=20
+		 Immediately kills all of the delayedCalls to a particular function.</div=
+></td><td class=3D"summaryTableOwnerCol">TweenLite</td></tr><tr class=3D"" =
+bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td cla=
+ss=3D"summaryTableInheritanceCol">&nbsp;</td><td class=3D"summaryTableSigna=
+tureCol"><div class=3D"summarySignature"><a href=3D"https://greensock.com/a=
+sdocs/com/greensock/TweenLite.html#killTweensOf()" class=3D"signatureLink">=
+killTweensOf</a>(target:*, onlyActive:* =3D false, vars:Object =3D null):vo=
+id</div><div class=3D"summaryTableDescription">[static]=20
+		 Kills all the tweens (or specific tweening properties) of a particular o=
+bject or delayedCalls=20
+		 to a particular function.</div></td><td class=3D"summaryTableOwnerCol">T=
+weenLite</td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td=
+ class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInher=
+itanceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary=
+.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"=
+></td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignature=
+"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html=
+#pause()" class=3D"signatureLink">pause</a>(atTime:* =3D null, suppressEven=
+ts:Boolean =3D true):*</div><div class=3D"summaryTableDescription">
+		 Pauses the instance, optionally jumping to a specific time.</div></td><t=
+d class=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/asdocs/co=
+m/greensock/core/Animation.html">Animation</a></td></tr><tr class=3D"hideIn=
+heritedMethod" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nb=
+sp;</td><td class=3D"summaryTableInheritanceCol"><img src=3D"https://greens=
+ock.com/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" title=3D"Inhe=
+rited" class=3D"inheritedSummaryImage"></td><td class=3D"summaryTableSignat=
+ureCol"><div class=3D"summarySignature"><a href=3D"https://greensock.com/as=
+docs/com/greensock/core/Animation.html#paused()" class=3D"signatureLink">pa=
+used</a>(value:Boolean =3D false):*</div><div class=3D"summaryTableDescript=
+ion">=20
+		 Gets or sets the animation's paused state which indicates whether or not=
+ the animation=20
+		 is currently paused.</div></td><td class=3D"summaryTableOwnerCol"><a hre=
+f=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html">Animat=
+ion</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td =
+class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheri=
+tanceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary.=
+gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage">=
+</td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"=
+><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#=
+play()" class=3D"signatureLink">play</a>(from:* =3D null, suppressEvents:Bo=
+olean =3D true):*</div><div class=3D"summaryTableDescription">
+		 Begins playing forward, optionally from a specific time (by default play=
+back begins from
+		 wherever the playhead currently is).</div></td><td class=3D"summaryTable=
+OwnerCol"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animat=
+ion.html">Animation</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=
+=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"s=
+ummaryTableInheritanceCol"><img src=3D"https://greensock.com/asdocs/images/=
+inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheri=
+tedSummaryImage"></td><td class=3D"summaryTableSignatureCol"><div class=3D"=
+summarySignature"><a href=3D"https://greensock.com/asdocs/com/greensock/cor=
+e/Animation.html#progress()" class=3D"signatureLink">progress</a>(value:Num=
+ber, suppressEvents:Boolean =3D false):*</div><div class=3D"summaryTableDes=
+cription">=20
+		 Gets or sets the animations's progress which is a value between 0 and 1 =
+indicating the position=20
+		 of the virtual playhead (excluding repeats) where 0 is at the beginning,=
+ 0.5 is at the halfway point,=20
+		 and 1 is at the end (complete).</div></td><td class=3D"summaryTableOwner=
+Col"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.h=
+tml">Animation</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F=
+2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summary=
+TableInheritanceCol"><img src=3D"https://greensock.com/asdocs/images/inheri=
+tedSummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSum=
+maryImage"></td><td class=3D"summaryTableSignatureCol"><div class=3D"summar=
+ySignature"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Anim=
+ation.html#restart()" class=3D"signatureLink">restart</a>(includeDelay:Bool=
+ean =3D false, suppressEvents:Boolean =3D true):*</div><div class=3D"summar=
+yTableDescription">
+		 Restarts and begins playing forward from the beginning.</div></td><td cl=
+ass=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/asdocs/com/gr=
+eensock/core/Animation.html">Animation</a></td></tr><tr class=3D"hideInheri=
+tedMethod" bgcolor=3D"#FFFFFF"><td class=3D"summaryTablePaddingCol">&nbsp;<=
+/td><td class=3D"summaryTableInheritanceCol"><img src=3D"https://greensock.=
+com/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherite=
+d" class=3D"inheritedSummaryImage"></td><td class=3D"summaryTableSignatureC=
+ol"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs=
+/com/greensock/core/Animation.html#resume()" class=3D"signatureLink">resume=
+</a>(from:* =3D null, suppressEvents:Boolean =3D true):*</div><div class=3D=
+"summaryTableDescription">
+		 Resumes playing without altering direction (forward or reversed), option=
+ally jumping to a specific time first.</div></td><td class=3D"summaryTableO=
+wnerCol"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animati=
+on.html">Animation</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=
+=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"s=
+ummaryTableInheritanceCol"><img src=3D"https://greensock.com/asdocs/images/=
+inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheri=
+tedSummaryImage"></td><td class=3D"summaryTableSignatureCol"><div class=3D"=
+summarySignature"><a href=3D"https://greensock.com/asdocs/com/greensock/cor=
+e/Animation.html#reverse()" class=3D"signatureLink">reverse</a>(from:* =3D =
+null, suppressEvents:Boolean =3D true):*</div><div class=3D"summaryTableDes=
+cription">
+		 Reverses playback so that all aspects of the animation are oriented back=
+wards including, for example,
+		 a tween's ease.</div></td><td class=3D"summaryTableOwnerCol"><a href=3D"=
+https://greensock.com/asdocs/com/greensock/core/Animation.html">Animation</=
+a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#FFFFFF"><td class=
+=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritance=
+Col"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" =
+alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"></td>=
+<td class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a h=
+ref=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#rever=
+sed()" class=3D"signatureLink">reversed</a>(value:Boolean =3D false):*</div=
+><div class=3D"summaryTableDescription">=20
+		 Gets or sets the animation's reversed state which indicates whether or n=
+ot the animation=20
+		 should be played backwards.</div></td><td class=3D"summaryTableOwnerCol"=
+><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html"=
+>Animation</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F=
+2"><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTabl=
+eInheritanceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedS=
+ummary.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummary=
+Image"></td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySig=
+nature"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animatio=
+n.html#seek()" class=3D"signatureLink">seek</a>(time:*, suppressEvents:Bool=
+ean =3D true):*</div><div class=3D"summaryTableDescription">
+		 Jumps to a specific time without affecting whether or not the instance i=
+s paused or reversed.</div></td><td class=3D"summaryTableOwnerCol"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html">Animati=
+on</a></td></tr><tr class=3D"" bgcolor=3D"#FFFFFF"><td class=3D"summaryTabl=
+ePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol">&nbsp;</td=
+><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a =
+href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html#set()" cl=
+ass=3D"signatureLink">set</a>(target:Object, vars:Object):<a href=3D"https:=
+//greensock.com/asdocs/com/greensock/TweenLite.html">TweenLite</a></div><di=
+v class=3D"summaryTableDescription">[static]=20
+		 Immediately sets properties of the target accordingly - essentially a ze=
+ro-duration to() tween with a more=20
+		 intuitive name.</div></td><td class=3D"summaryTableOwnerCol">TweenLite</=
+td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td class=3D"=
+summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol"=
+><img src=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" alt=
+=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"></td><td=
+ class=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#startTim=
+e()" class=3D"signatureLink">startTime</a>(value:Number):*</div><div class=
+=3D"summaryTableDescription">=20
+		 Gets or sets the time at which the animation begins on its parent timeli=
+ne (after any delay
+		 that was defined).</div></td><td class=3D"summaryTableOwnerCol"><a href=
+=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html">Animati=
+on</a></td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#FFFFFF"><td c=
+lass=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInherit=
+anceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedSummary.g=
+if" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"><=
+/td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignature">=
+<a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.html#t=
+ime()" class=3D"signatureLink">time</a>(value:Number, suppressEvents:Boolea=
+n =3D false):*</div><div class=3D"summaryTableDescription">
+		 Gets or sets the local position of the playhead (essentially the current=
+ time),=20
+		 described in seconds (or frames for frames-based animations) which
+		 will never be less than 0 or greater than the animation's duration.</div=
+></td><td class=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/a=
+sdocs/com/greensock/core/Animation.html">Animation</a></td></tr><tr class=
+=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddi=
+ngCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol"><img src=3D"http=
+s://greensock.com/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" tit=
+le=3D"Inherited" class=3D"inheritedSummaryImage"></td><td class=3D"summaryT=
+ableSignatureCol"><div class=3D"summarySignature"><a href=3D"https://greens=
+ock.com/asdocs/com/greensock/core/Animation.html#timeScale()" class=3D"sign=
+atureLink">timeScale</a>(value:Number):*</div><div class=3D"summaryTableDes=
+cription">=20
+		 Factor that's used to scale time in the animation where 1 =3D normal spe=
+ed (the default),
+		 0.5 =3D half speed, 2 =3D double speed, etc.</div></td><td class=3D"summ=
+aryTableOwnerCol"><a href=3D"https://greensock.com/asdocs/com/greensock/cor=
+e/Animation.html">Animation</a></td></tr><tr class=3D"" bgcolor=3D"#F2F2F2"=
+><td class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableI=
+nheritanceCol">&nbsp;</td><td class=3D"summaryTableSignatureCol"><div class=
+=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/com/greensock=
+/TweenLite.html#to()" class=3D"signatureLink">to</a>(target:Object, duratio=
+n:Number, vars:Object):<a href=3D"https://greensock.com/asdocs/com/greensoc=
+k/TweenLite.html">TweenLite</a></div><div class=3D"summaryTableDescription"=
+>[static]=20
+		 Static method for creating a TweenLite instance that animates to the spe=
+cified destination values
+		 (from the current values).</div></td><td class=3D"summaryTableOwnerCol">=
+TweenLite</td></tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#F2F2F2"><t=
+d class=3D"summaryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInhe=
+ritanceCol"><img src=3D"https://greensock.com/asdocs/images/inheritedSummar=
+y.gif" alt=3D"Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage=
+"></td><td class=3D"summaryTableSignatureCol"><div class=3D"summarySignatur=
+e"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.htm=
+l#totalDuration()" class=3D"signatureLink">totalDuration</a>(value:Number):=
+*</div><div class=3D"summaryTableDescription">
+		 Gets or sets the animation's total duration including=20
+		 any repeats or repeatDelays (which are only available in TweenMax and Ti=
+melineMax).</div></td><td class=3D"summaryTableOwnerCol"><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/core/Animation.html">Animation</a></td>=
+</tr><tr class=3D"hideInheritedMethod" bgcolor=3D"#FFFFFF"><td class=3D"sum=
+maryTablePaddingCol">&nbsp;</td><td class=3D"summaryTableInheritanceCol"><i=
+mg src=3D"https://greensock.com/asdocs/images/inheritedSummary.gif" alt=3D"=
+Inherited" title=3D"Inherited" class=3D"inheritedSummaryImage"></td><td cla=
+ss=3D"summaryTableSignatureCol"><div class=3D"summarySignature"><a href=3D"=
+https://greensock.com/asdocs/com/greensock/core/Animation.html#totalProgres=
+s()" class=3D"signatureLink">totalProgress</a>(value:Number, suppressEvents=
+:Boolean =3D false):*</div><div class=3D"summaryTableDescription">=20
+		 Gets or sets the animation's total progress which is a value between 0 a=
+nd 1 indicating the position=20
+		 of the virtual playhead (including repeats) where 0 is at the beginning,=
+ 0.5 is=20
+		 at the halfway point, and 1 is at the end (complete).</div></td><td clas=
+s=3D"summaryTableOwnerCol"><a href=3D"https://greensock.com/asdocs/com/gree=
+nsock/core/Animation.html">Animation</a></td></tr><tr class=3D"hideInherite=
+dMethod" bgcolor=3D"#F2F2F2"><td class=3D"summaryTablePaddingCol">&nbsp;</t=
+d><td class=3D"summaryTableInheritanceCol"><img src=3D"https://greensock.co=
+m/asdocs/images/inheritedSummary.gif" alt=3D"Inherited" title=3D"Inherited"=
+ class=3D"inheritedSummaryImage"></td><td class=3D"summaryTableSignatureCol=
+"><div class=3D"summarySignature"><a href=3D"https://greensock.com/asdocs/c=
+om/greensock/core/Animation.html#totalTime()" class=3D"signatureLink">total=
+Time</a>(time:Number, suppressEvents:Boolean =3D false, uncapped:Boolean =
+=3D false):*</div><div class=3D"summaryTableDescription">
+		 Gets or sets the position of the playhead according to the totalDuration
+		 which includes any repeats and repeatDelays (only available=20
+		 in TweenMax and TimelineMax).</div></td><td class=3D"summaryTableOwnerCo=
+l"><a href=3D"https://greensock.com/asdocs/com/greensock/core/Animation.htm=
+l">Animation</a></td></tr></tbody></table></div><div class=3D"MainContent">=
+<div class=3D"detailSectionHeader">Property Detail</div><a name=3D"property=
+Detail"></a><a name=3D"defaultEase"></a><table class=3D"detailHeader" cellp=
+adding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">de=
+faultEase</td><td class=3D"detailHeaderType">property</td></tr></tbody></ta=
+ble><div class=3D"detailBody"><code>public static var defaultEase:<a href=
+=3D"https://greensock.com/asdocs/com/greensock/easing/Ease.html">Ease</a></=
+code><p></p><p></p><p> Provides An easy way to change the default easing eq=
+uation. Choose from any of the GreenSock eases in the <code>com.greensock.e=
+asing</code> package. </p><p> The default value is <code>Power1.easeOut</co=
+de>.</p></div><a name=3D"propertyDetail"></a><a name=3D"defaultOverwrite"><=
+/a><table class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody=
+><tr><td class=3D"detailHeaderName">defaultOverwrite</td><td class=3D"detai=
+lHeaderType">property</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></=
+tbody></table><div class=3D"detailBody"><code>public static var defaultOver=
+write:String =3D auto</code><p></p><p></p><p> Provides An easy way to chang=
+e the default overwrite mode. Choose from any of the following: <code>"auto=
+", "all", "none", "allOnStart", "concurrent", "preexisting"</code>. </p><p>=
+ The default value is <code>"auto"</code>.</p></div><a name=3D"propertyDeta=
+il"></a><a name=3D"target"></a><table class=3D"detailHeader" cellpadding=3D=
+"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">target</td>=
+<td class=3D"detailHeaderType">property</td><td class=3D"detailHeaderRule">=
+&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><code>public var =
+target:Object</code><p></p><p></p><p> [READ-ONLY] Target object (or array o=
+f objects) whose properties the tween affects. </p></div><a name=3D"propert=
+yDetail"></a><a name=3D"ticker"></a><table class=3D"detailHeader" cellpaddi=
+ng=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">ticker=
+</td><td class=3D"detailHeaderType">property</td><td class=3D"detailHeaderR=
+ule">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><code>public=
+ static var ticker:Shape</code><p></p><p></p><p>
+		 The object that dispatches a <code>"tick"</code> event each time the eng=
+ine updates, making it easy for=20
+		 you to add your own listener(s) to run custom logic after each update (g=
+reat for game developers).
+		 Add as many listeners as you want. The basic syntax is the same for all =
+versions (AS2, AS3, and JavaScript):
+		=20
+		 </p><p><b>Basic example (AS2, AS3, and JavaScript):</b></p><div class=3D=
+"listing" version=3D"3.0"><pre> //add listener
+ TweenLite.ticker.addEventListener("tick", myFunction);
+=20
+ function myFunction(event) {
+     //executes on every tick after the core engine updates
+ }
+        =20
+ //to remove the listener later...
+ TweenLite.ticker.removeEventListener("tick", myFunction);
+         </pre></div>
+		=20
+		 <p>Due to differences in the core languages (and to maximize efficiency)=
+, the advanced syntax is slightly different
+		 for the AS3 version compared to AS2 and JavaScript. The parameters beyon=
+d the first 2 in the addEventListener()=20
+		 method are outlined below:</p>
+		=20
+		 <p><b>JavaScript and AS2</b></p>
+		 <p><code>addEventListener(type, callback, scope, useParam, priority)</co=
+de></p>
+		 <p>Parameters:
+		 </p><ol>
+		 		<li><b>type</b> <i>: String</i> - type of listener, should always be <=
+code>"tick"</code></li>
+		 		<li><b>callback</b> <i>: Function</i> - the function to call when the =
+event occurs</li>
+		 		<li><b>scope</b> <i>: Object</i> - binds the scope to a particular obj=
+ect (scope is basically what "<code>this</code>" refers to in your function=
+). This can be very useful in JavaScript and AS2 because scope isn't genera=
+lly maintained. </li>
+		 		<li><b>useParam</b> <i>: Boolean</i> - if <code>true</code>, an event =
+object will be generated and fed to the callback each time the event occurs=
+. The event is a generic object and has two properties: <code>type</code> (=
+always <code>"tick"</code>) and <code>target</code> which refers to the tic=
+ker instance. The default for <code>useParam</code> is <code>false</code> b=
+ecause it improves performance.</li>
+		 		<li><b>priority</b> <i>: Integer</i> - influences the order in which t=
+he listeners are called. Listeners with lower priorities are called after o=
+nes with higher priorities.</li>
+		 </ol>
+		 <p></p>
+		=20
+		 <p><b>Advanced example (JavaScript and AS2):</b></p><div class=3D"listin=
+g" version=3D"3.0"><pre> //add listener that requests an event object param=
+eter, binds scope to the current scope (this), and sets priority to 1 so th=
+at it is called before any other listeners that had a priority lower than 1=
+...
+ TweenLite.ticker.addEventListener("tick", myFunction, this, true, 1);
+=20
+ function myFunction(event) {
+     //executes on every tick after the core engine updates
+ }
+=20
+ //to remove the listener later...
+ TweenLite.ticker.removeEventListener("tick", myFunction);
+         </pre></div>
+		=20
+		 <p><b>AS3</b></p>
+		 <p>The AS3 version uses the standard <code>EventDispatcher.addEventListe=
+ner()</code> syntax which=20
+		 basically allows you to define a priority and whether or not to use weak=
+ references (see Adobe's=20
+		 docs for details).</p>
+		=20
+		 <p><b>Advanced example [AS3 only]:</b></p><div class=3D"listing" version=
+=3D"3.0"><pre> import flash.events.Event;
+=20
+ //add listener with weak reference (standard syntax - notice the 5th param=
+eter is true)
+ TweenLite.ticker.addEventListener("tick", myFunction, false, 0, true);
+=20
+ function myFunction(event:Event):void {
+     //executes on every tick after the core engine updates
+ }
+=20
+ //to remove the listener later...
+ TweenLite.ticker.removeEventListener("tick", myFunction);
+        </pre></div>
+		 <p></p></div><a name=3D"constructorDetail"></a><div class=3D"detailSecti=
+onHeader">Constructor Detail</div><a name=3D"TweenLite()"></a><a name=3D"Tw=
+eenLite(Object,Number,Object)"></a><table class=3D"detailHeader" cellpaddin=
+g=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">TweenLi=
+te</td><td class=3D"detailHeaderParens">()</td><td class=3D"detailHeaderTyp=
+e">Constructor</td></tr></tbody></table><div class=3D"detailBody"><code>pub=
+lic function TweenLite(target:Object, duration:Number, vars:Object)</code><=
+p></p><p>
+		 Constructor
+		 =20
+		 </p><span class=3D"label"> Parameters </span><table cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><td><code><=
+span class=3D"label">target</span>:Object</code> =E2=80=94 Target object (o=
+r array of objects) whose properties this tween affects=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">duration</span>:Number</code> =
+=E2=80=94 Duration in seconds (or frames if <code>useFrames:true</code> is =
+set in the <code>vars</code> parameter)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">vars</span>:Object</code> =E2=
+=80=94 An object defining the end value for each property that should be tw=
+eened as well as any special properties like <code>onComplete</code>, <code=
+>ease</code>, etc. For example, to tween <code>mc.x</code> to 100 and <code=
+>mc.y</code> to 200 and then call <code>myFunction</code>, do this: <code>n=
+ew TweenLite(mc, 1, {x:100, y:200, onComplete:myFunction})</code>.
+		 </td></tr></tbody></table></div><a name=3D"methodDetail"></a><div class=
+=3D"detailSectionHeader">Method Detail</div><a name=3D"delayedCall()"></a><=
+a name=3D"delayedCall(Number,Function,Array,Boolean)"></a><table class=3D"d=
+etailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"de=
+tailHeaderName">delayedCall</td><td class=3D"detailHeaderParens">()</td><td=
+ class=3D"detailHeaderType">method</td></tr></tbody></table><div class=3D"d=
+etailBody"><code> public static function delayedCall(delay:Number, callback=
+:Function, params:Array =3D null, useFrames:Boolean =3D false):<a href=3D"h=
+ttps://greensock.com/asdocs/com/greensock/TweenLite.html">TweenLite</a></co=
+de><p></p><p></p><p>
+		 Provides a simple way to call a function after a set amount of time (or =
+frames). You can
+		 optionally pass any number of parameters to the function too.
+		=20
+		 </p><p><b>JavaScript and AS2 note:</b> - Due to the way JavaScript and A=
+S2 don't=20
+		 maintain scope (what "<code>this</code>" refers to, or the context) in f=
+unction calls,=20
+		 it can be useful to define the scope specifically. Therefore, in the Jav=
+aScript and AS2=20
+		 versions the 4th parameter is <code>scope</code>, bumping <code>useFrame=
+s</code>=20
+		 back to the 5th parameter:</p>
+		=20
+		 <p><code>TweenLite.delayedCall(delay, callback, params, scope, useFrames=
+)</code> <i>[JavaScript and AS2 only]</i></p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>//calls myFunction after 1 s=
+econd and passes 2 parameters:
+TweenLite.delayedCall(1, myFunction, ["param1", 2]);
+=20
+function myFunction(param1, param2) {
+    //do stuff
+}
+</pre></div>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">delay</span>:Number</code> =E2=80=94 Delay i=
+n seconds (or frames if <code>useFrames</code> is <code>true</code>) before=
+ the function should be called
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">callback</span>:Function</code>=
+ =E2=80=94 Function to call
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">params</span>:Array</code> (def=
+ault =3D <code>null</code>)<code></code> =E2=80=94 An Array of parameters t=
+o pass the function (optional).
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">useFrames</span>:Boolean</code>=
+ (default =3D <code>false</code>)<code></code> =E2=80=94 If the delay shoul=
+d be measured in frames instead of seconds, set <code>useFrames</code> to <=
+code>true</code> (default is <code>false</code>)
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/TweenLite.html">TweenLite</a></code> =E2=80=94 TweenLite instance
+		 </td></tr></tbody></table><p><span class=3D"label">See also</span></p><d=
+iv class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/greensock/=
+TimelineLite.html#call()" target=3D"">com.greensock.TimelineLite.call()</a>=
+<br><a href=3D"https://greensock.com/asdocs/com/greensock/TimelineMax.html#=
+addCallback()" target=3D"">com.greensock.TimelineMax.addCallback()</a></div=
+></div><a name=3D"from()"></a><a name=3D"from(Object,Number,Object)"></a><t=
+able class=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>=
+<td class=3D"detailHeaderName">from</td><td class=3D"detailHeaderParens">()=
+</td><td class=3D"detailHeaderType">method</td><td class=3D"detailHeaderRul=
+e">&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><code> public =
+static function from(target:Object, duration:Number, vars:Object):<a href=
+=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html">TweenLite</a=
+></code><p></p><p></p><p>
+		 Static method for creating a TweenLite instance that tweens backwards -=
+=20
+		 you define the <b>BEGINNING</b> values and the current values are used
+		 as the destination values which is great for doing things like animating=
+ objects
+		 onto the screen because you can set them up initially the way you want t=
+hem to look=20
+		 at the end of the tween and then animate in from elsewhere.
+		=20
+		 </p><p><b>NOTE:</b> By default, <code>immediateRender</code> is <code>tr=
+ue</code> in=20
+		 <code>from()</code> tweens, meaning that they immediately render their s=
+tarting state=20
+		 regardless of any delay that is specified. You can override this behavio=
+r by passing=20
+		 <code>immediateRender:false</code> in the <code>vars</code> parameter so=
+ that it will=20
+		 wait to render until the tween actually begins (often the desired behavi=
+or when inserting=20
+		 into TimelineLite or TimelineMax instances). To illustrate the default b=
+ehavior, the=20
+		 following code will immediately set the <code>alpha</code> of <code>mc</=
+code>=20
+		 to 0 and then wait 2 seconds before tweening the <code>alpha</code> back=
+ to 1 over
+		 the course of 1.5 seconds:</p>
+		=20
+		 <p><code>
+		 TweenLite.from(mc, 1.5, {alpha:0, delay:2});
+		 </code></p>
+		=20
+		 <p>Since the <code>target</code> parameter can also be an array of objec=
+ts, the following=20
+		 code will tween the alpha property of mc1, mc2, and mc3 from a value of =
+0 simultaneously:</p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>TweenLite.from([mc1, mc2, mc=
+3], 1.5, {alpha:0});
+</pre></div>
+		 <p>Even though 3 objects are animating, there is still only one tween cr=
+eated.=20
+		 In order to stagger or offset the start times of each object animating, =
+please see=20
+		 the <code>staggerFrom()</code> method of TimelineLite or TweenMax.</p>
+		=20
+		 <p>For simple sequencing, you can use the <code>delay</code> special pro=
+perty
+		 (like <code>TweenLite.from(mc, 1, {alpha:0, delay:0.5})</code>),=20
+		 but it is highly recommended that you consider using TimelineLite (or Ti=
+melineMax)=20
+		 for all but the simplest sequencing tasks. It has an identical <code>fro=
+m()</code> method
+		 that allows you to append tweens one-after-the-other and then control th=
+e entire sequence=20
+		 as a whole. You can even have the tweens overlap as much as you want.</p=
+>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:Object</code> =E2=80=94 Target=
+ object (or array of objects) whose properties this tween affects. =20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">duration</span>:Number</code> =
+=E2=80=94 Duration in seconds (or frames if <code>useFrames:true</code> is =
+set in the <code>vars</code> parameter)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">vars</span>:Object</code> =E2=
+=80=94 An object defining the starting value for each property that should =
+be tweened as well as any special properties like <code>onComplete</code>, =
+<code>ease</code>, etc. For example, to tween <code>mc.x</code> from 100 an=
+d <code>mc.y</code> from 200 and then call <code>myFunction</code>, do this=
+: <code>TweenLite.from(mc, 1, {x:100, y:200, onComplete:myFunction});</code=
+>
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/TweenLite.html">TweenLite</a></code> =E2=80=94 TweenLite instance
+		 </td></tr></tbody></table><p><span class=3D"label">See also</span></p><d=
+iv class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/greensock/=
+TweenLite.html#to()" target=3D"">to()</a><br><a href=3D"https://greensock.c=
+om/asdocs/com/greensock/TweenLite.html#fromTo()" target=3D"">fromTo()</a><b=
+r><a href=3D"https://greensock.com/asdocs/com/greensock/TimelineLite.html#f=
+rom()" target=3D"">com.greensock.TimelineLite.from()</a><br><a href=3D"http=
+s://greensock.com/asdocs/com/greensock/TimelineLite.html#staggerFrom()" tar=
+get=3D"">com.greensock.TimelineLite.staggerFrom()</a><br><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/TweenMax.html#staggerFrom()" target=3D"=
+">com.greensock.TweenMax.staggerFrom()</a></div></div><a name=3D"fromTo()">=
+</a><a name=3D"fromTo(Object,Number,Object,Object)"></a><table class=3D"det=
+ailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"deta=
+ilHeaderName">fromTo</td><td class=3D"detailHeaderParens">()</td><td class=
+=3D"detailHeaderType">method</td><td class=3D"detailHeaderRule">&nbsp;</td>=
+</tr></tbody></table><div class=3D"detailBody"><code> public static functio=
+n fromTo(target:Object, duration:Number, fromVars:Object, toVars:Object):<a=
+ href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html">TweenLi=
+te</a></code><p></p><p></p><p>
+		 Static method for creating a TweenLite instance that allows you to defin=
+e both the starting
+		 and ending values (as opposed to <code>to()</code> and <code>from()</cod=
+e> tweens which are=20
+		 based on the target's current values at one end or the other).
+		=20
+		 </p><p><b>NOTE</b>: Only put starting values in the <code>fromVars</code=
+> parameter - all=20
+		 special properties for the tween (like onComplete, onUpdate, delay, etc.=
+) belong in the <code>toVars</code>=20
+		 parameter. </p>
+		=20
+		 <p>By default, <code>immediateRender</code> is <code>true</code> in=20
+		 <code>fromTo()</code> tweens, meaning that they immediately render their=
+ starting state=20
+		 regardless of any delay that is specified. This is done for convenience =
+because it is=20
+		 often the preferred behavior when setting things up on the screen to ani=
+mate into place, but=20
+		 you can override this behavior by passing <code>immediateRender:false</c=
+ode> in the=20
+		 <code>fromVars</code> or <code>toVars</code> parameter so that it will w=
+ait to render=20
+		 the starting values until the tween actually begins (often the desired b=
+ehavior when inserting=20
+		 into TimelineLite or TimelineMax instances).</p>
+		=20
+		 <p>Since the <code>target</code> parameter can also be an array of objec=
+ts, the following=20
+		 code will tween the x property of mc1, mc2, and mc3 from 0 to 100 simult=
+aneously:</p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>TweenLite.fromTo([mc1, mc2, =
+mc3], 1, {x:0}, {x:100});
+</pre></div>
+		 <p>Even though 3 objects are animating, there is still only one tween cr=
+eated.=20
+		 In order to stagger or offset the start times of each object animating, =
+please see=20
+		 the <code>staggerFromTo()</code> method of TimelineLite or TweenMax.</p>
+		=20
+		 <p>For simple sequencing, you can use the <code>delay</code> special pro=
+perty
+		 (like <code>TweenLite.fromTo(mc, 1, {x:0}, {x:100, delay:0.5})</code>),=
+=20
+		 but it is highly recommended that you consider using TimelineLite (or Ti=
+melineMax)=20
+		 for all but the simplest sequencing tasks. It has an identical <code>fro=
+mTo()</code> method
+		 that allows you to append tweens one-after-the-other and then control th=
+e entire sequence=20
+		 as a whole. You can even have the tweens overlap as much as you want.</p=
+>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:Object</code> =E2=80=94 Target=
+ object (or array of objects) whose properties this tween affects.=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">duration</span>:Number</code> =
+=E2=80=94 Duration in seconds (or frames if <code>useFrames:true</code> is =
+set in the <code>vars</code> parameter)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">fromVars</span>:Object</code> =
+=E2=80=94 An object defining the starting value for each property that shou=
+ld be tweened. For example, to tween <code>mc.x</code> from 100 and <code>m=
+c.y</code> from 200, <code>fromVars</code> would look like this: <code>{x:1=
+00, y:200}</code>.
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">toVars</span>:Object</code> =E2=
+=80=94 An object defining the end value for each property that should be tw=
+eened as well as any special properties like <code>onComplete</code>, <code=
+>ease</code>, etc. For example, to tween <code>mc.x</code> from 0 to 100 an=
+d <code>mc.y</code> from 0 to 200 and then call <code>myFunction</code>, do=
+ this: <code>TweenLite.fromTo(mc, 1, {x:0, y:0}, {x:100, y:200, onComplete:=
+myFunction});</code>
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/TweenLite.html">TweenLite</a></code> =E2=80=94 TweenLite instance
+		 </td></tr></tbody></table><p><span class=3D"label">See also</span></p><d=
+iv class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/greensock/=
+TweenLite.html#to()" target=3D"">to()</a><br><a href=3D"https://greensock.c=
+om/asdocs/com/greensock/TweenLite.html#from()" target=3D"">from()</a><br><a=
+ href=3D"https://greensock.com/asdocs/com/greensock/TimelineLite.html#fromT=
+o()" target=3D"">com.greensock.TimelineLite.fromTo()</a><br><a href=3D"http=
+s://greensock.com/asdocs/com/greensock/TimelineLite.html#staggerFromTo()" t=
+arget=3D"">com.greensock.TimelineLite.staggerFromTo()</a><br><a href=3D"htt=
+ps://greensock.com/asdocs/com/greensock/TweenMax.html#staggerFromTo()" targ=
+et=3D"">com.greensock.TweenMax.staggerFromTo()</a></div></div><a name=3D"ge=
+tTweensOf()"></a><a name=3D"getTweensOf(any,Boolean)"></a><table class=3D"d=
+etailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"de=
+tailHeaderName">getTweensOf</td><td class=3D"detailHeaderParens">()</td><td=
+ class=3D"detailHeaderType">method</td><td class=3D"detailHeaderRule">&nbsp=
+;</td></tr></tbody></table><div class=3D"detailBody"><code> public static f=
+unction getTweensOf(target:*, onlyActive:Boolean =3D false):Array</code><p>=
+</p><p></p><p>
+		 Returns an array containing all the tweens of a particular target (or gr=
+oup of targets) that have not
+		 been released for garbage collection yet which typically happens within =
+a few seconds after the tween completes.
+		 For example, <code>TweenLite.getTweensOf(myObject)</code> returns an arr=
+ay of all tweens
+		 of <code>myObject</code>, even tweens that haven't begun yet. <code>Twee=
+nLite.getTweensOf([myObject1, myObject2]);</code>
+		 will return a condensed array of the tweens of <code>myObject1</code> pl=
+us all the tweens
+		 of <code>myObject2</code> combined into one array with duplicates remove=
+d.=20
+		=20
+		 </p><p>Since the method only finds tweens that haven't been released for=
+ garbage collection, if you create a tween
+		 and then let it finish and then a while later try to find it with <code>=
+getTweensOf()</code>, it may not be found=20
+		 because it was released by the engine for garbage collection. Remember, =
+one of the best parts of GSAP is that it=20
+		 saves you from the headache of managing gc. Otherwise, you'd need to man=
+ually dispose each tween you create, making=20
+		 things much more cumbersome.</p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>TweenLite.to(myObject1, 1, {=
+x:100});
+TweenLite.to(myObject2, 1, {x:100});
+TweenLite.to([myObject1, myObject2], 1, {alpha:0});
+var a1 =3D TweenLite.getTweensOf(myObject1); //finds 2 tweens
+var a2 =3D TweenLite.getTweensOf([myObject1, myObject2]); //finds 3 tweens
+</pre></div>
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:*</code> =E2=80=94 The target =
+whose tweens should be returned, or an array of such targets
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">onlyActive</span>:Boolean</code=
+> (default =3D <code>false</code>)<code></code> =E2=80=94 If <code>true</co=
+de>, only tweens that are currently active will be returned (a tween is con=
+sidered "active" if the virtual playhead is actively moving across the twee=
+n and it is not paused, nor are any of its ancestor timelines paused).=20
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code>Array</code> =E2=80=94 An array of tweens
+		 </td></tr></tbody></table></div><a name=3D"invalidate()"></a><table clas=
+s=3D"detailHeader" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=
+=3D"detailHeaderName">invalidate</td><td class=3D"detailHeaderParens">()</t=
+d><td class=3D"detailHeaderType">method</td><td class=3D"detailHeaderRule">=
+&nbsp;</td></tr></tbody></table><div class=3D"detailBody"><code>override pu=
+blic function invalidate():*</code><p></p><p></p><p> =20
+		 Clears any initialization data (like starting/ending values in tweens) w=
+hich can be useful if, for example,=20
+		 you want to restart a tween without reverting to any previously recorded=
+ starting values. When you <code>invalidate()</code>=20
+		 an animation, it will be re-initialized the next time it renders and its=
+ <code>vars</code> object will be re-parsed.=20
+		 The timing of the animation (duration, startTime, delay) will not be aff=
+ected.
+		=20
+		 </p><p>Another example would be if you have a <code>TweenMax(mc, 1, {x:1=
+00, y:100})</code> that ran when mc.x and mc.y=20
+		 were initially at 0, but now mc.x and mc.y are 200 and you want them twe=
+en to 100 again, you could simply=20
+		 <code>invalidate()</code> the tween and <code>restart()</code> it. Witho=
+ut invalidating first, restarting it=20
+		 would cause the values jump back to 0 immediately (where they started wh=
+en the tween originally began).=20
+		 When you invalidate a TimelineLite/TimelineMax, it automatically invalid=
+ates all of its children.</p>
+		 <p></p><p></p><span class=3D"label">Returns</span><table cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20"></td><td><cod=
+e>*</code> =E2=80=94 self (makes chaining easier)
+		 </td></tr></tbody></table></div><a name=3D"killDelayedCallsTo()"></a><a =
+name=3D"killDelayedCallsTo(Function)"></a><table class=3D"detailHeader" cel=
+lpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">=
+killDelayedCallsTo</td><td class=3D"detailHeaderParens">()</td><td class=3D=
+"detailHeaderType">method</td><td class=3D"detailHeaderRule">&nbsp;</td></t=
+r></tbody></table><div class=3D"detailBody"><code> public static function k=
+illDelayedCallsTo(func:Function):void</code><p></p><p></p><p>
+		 Immediately kills all of the delayedCalls to a particular function. If, =
+for example,=20
+		 you want to kill all delayedCalls to <code>myFunction</code>, you'd do t=
+his:
+		=20
+		 </p><p><code>
+		 TweenLite.killDelayedCallsTo(myFunction);
+		 </code></p>
+		=20
+		 <p>Since a delayedCall is just a tween that uses the function/callback a=
+s both its <code>target</code>
+		 and its <code>onComplete</code>, <code>TweenLite.killTweensOf(myFunction=
+)</code> produces exactly the=20
+		 same result as <code>TweenLite.killDelayedCallsTo(myFunction)</code>.</p=
+>
+		=20
+		 <p>This method affects all delayedCalls that were created using <code>Tw=
+eenLite.delayedCall()</code>
+		 or <code>TweenMax.delayedCall()</code> or the <code>call()</code> or <co=
+de>addCallback()</code> methods
+		 of TimelineLite or TimelineMax. Basically, any tween whose target is the=
+ function you supply will=20
+		 be killed.</p>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">func</span>:Function</code> =E2=80=94 The fu=
+nction for which all delayedCalls should be killed/cancelled.
+		 </td></tr></tbody></table><p></p></div><a name=3D"killTweensOf()"></a><a=
+ name=3D"killTweensOf(any,any,Object)"></a><table class=3D"detailHeader" ce=
+llpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName"=
+>killTweensOf</td><td class=3D"detailHeaderParens">()</td><td class=3D"deta=
+ilHeaderType">method</td><td class=3D"detailHeaderRule">&nbsp;</td></tr></t=
+body></table><div class=3D"detailBody"><code> public static function killTw=
+eensOf(target:*, onlyActive:* =3D false, vars:Object =3D null):void</code><=
+p></p><p></p><p>
+		 Kills all the tweens (or specific tweening properties) of a particular o=
+bject or delayedCalls=20
+		 to a particular function. If, for example, you want to kill all tweens o=
+f <code>myObject</code>,=20
+		 you'd do this:
+		=20
+		 </p><p><code>
+		 TweenLite.killTweensOf(myObject);
+		 </code></p>
+		=20
+		 <p>To kill only active (currently animating) tweens of <code>myObject</c=
+ode>, you'd do this:</p>
+		=20
+		 <p><code>
+		 TweenLite.killTweensOf(myObject, true);
+		 </code></p>
+		=20
+		 <p>To kill only particular tweening properties of the object, use the th=
+ird parameter.=20
+		 For example, if you only want to kill all the tweens of <code>myObject.a=
+lpha</code> and=20
+		 <code>myObject.x</code>, you'd do this:</p>
+		=20
+		 <p><code>
+		 TweenLite.killTweensOf(myObject, false, {alpha:true, x:true});
+		 </code></p>
+		=20
+		 <p>To kill all the delayedCalls that were created like <code>TweenLite.d=
+elayedCall(5, myFunction);</code>,=20
+		 you can simply call <code>TweenLite.killTweensOf(myFunction);</code> bec=
+ause delayedCalls=20
+		 are simply tweens that have their <code>target</code> and <code>onComple=
+te</code> set to=20
+		 the same function (as well as a <code>delay</code> of course).</p>
+		=20
+		 <p><code>killTweensOf()</code> affects tweens that haven't begun yet too=
+. If, for example,=20
+		 a tween of <code>myObject</code> has a <code>delay</code> of 5 seconds a=
+nd=20
+		 <code>TweenLite.killTweensOf(mc)</code> is called 2 seconds after the tw=
+een was created,=20
+		 it will still be killed even though it hasn't started yet. </p>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:*</code> =E2=80=94 Object whos=
+e tweens should be killed immediately or selector text to feed the selector=
+ engine to find the target(s).
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">onlyActive</span>:*</code> (def=
+ault =3D <code>false</code>)<code></code> =E2=80=94 If <code>true</code>, o=
+nly tweens that are currently active will be killed (a tween is considered =
+"active" if the virtual playhead is actively moving across the tween and it=
+ is not paused, nor are any of its ancestor timelines paused).=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">vars</span>:Object</code> (defa=
+ult =3D <code>null</code>)<code></code> =E2=80=94 To kill only specific pro=
+perties, use a generic object containing enumerable properties correspondin=
+g to the ones that should be killed like <code>{x:true, y:true}</code>. The=
+ values assigned to each property of the object don't matter - the sole pur=
+pose of the object is for iteration over the named properties (in this case=
+, <code>x</code> and <code>y</code>). If no object (or <code>null</code>) i=
+s defined, all matched tweens will be killed in their entirety.
+		 </td></tr></tbody></table><p></p></div><a name=3D"set()"></a><a name=3D"=
+set(Object,Object)"></a><table class=3D"detailHeader" cellpadding=3D"0" cel=
+lspacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">set</td><td class=
+=3D"detailHeaderParens">()</td><td class=3D"detailHeaderType">method</td><t=
+d class=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"=
+detailBody"><code> public static function set(target:Object, vars:Object):<=
+a href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html">TweenL=
+ite</a></code><p></p><p></p><p>
+		 Immediately sets properties of the target accordingly - essentially a ze=
+ro-duration to() tween with a more=20
+		 intuitive name. So the following lines produce identical results:
+		=20
+		 </p><div class=3D"listing" version=3D"3.0"><pre>TweenLite.set(myObject, =
+{x:100, y:50, alpha:0});
+TweenLite.to(myObject, 0, {x:100, y:50, alpha:0});
+</pre></div>
+		=20
+		 <p>And of course you can use an array to set the properties of multiple =
+targets at the same time, like:</p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>TweenLite.set([obj1, obj2, o=
+bj3], {x:100, y:50, alpha:0});
+</pre></div>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:Object</code> =E2=80=94 Target=
+ object (or array of objects) whose properties will be affected.=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">vars</span>:Object</code> =E2=
+=80=94 An object defining the value for each property that should be set. F=
+or example, to set <code>mc.x</code> to 100 and <code>mc.y</code> to 200, d=
+o this: <code>TweenLite.set(mc, {x:100, y:200});</code>
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/TweenLite.html">TweenLite</a></code> =E2=80=94 A TweenLite instance =
+(with a duration of 0) which can optionally be inserted into a TimelineLite=
+/Max instance (although it's typically more concise to just use the timelin=
+e's <code>set()</code> method).
+		 </td></tr></tbody></table></div><a name=3D"to()"></a><a name=3D"to(Objec=
+t,Number,Object)"></a><table class=3D"detailHeader" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr><td class=3D"detailHeaderName">to</td><td class=3D"=
+detailHeaderParens">()</td><td class=3D"detailHeaderType">method</td><td cl=
+ass=3D"detailHeaderRule">&nbsp;</td></tr></tbody></table><div class=3D"deta=
+ilBody"><code> public static function to(target:Object, duration:Number, va=
+rs:Object):<a href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.=
+html">TweenLite</a></code><p></p><p></p><p>
+		 Static method for creating a TweenLite instance that animates to the spe=
+cified destination values
+		 (from the current values). The following lines of code all produce ident=
+ical results:=20
+		=20
+		 </p><div class=3D"listing" version=3D"3.0"><pre>TweenLite.to(mc, 1, {x:1=
+00});
+var myTween =3D new TweenLite(mc, 1, {x:100});
+var myTween =3D TweenLite.to(mc, 1, {x:100});
+</pre></div>
+		=20
+		 <p>Each line above will tween the <code>"x"</code> property of the <code=
+>mc</code> object=20
+		 to a value of 100 over the coarse of 1 second. They each use a slightly =
+different syntax,
+		 all of which are valid. If you don't need to store a reference of the tw=
+een, just use the=20
+		 static <code>TweenLite.to( )</code> call.</p>
+		=20
+		 <p>Since the <code>target</code> parameter can also be an array of objec=
+ts, the following=20
+		 code will tween the x property of mc1, mc2, and mc3 to a value of 100 si=
+multaneously:</p>
+		=20
+		 <div class=3D"listing" version=3D"3.0"><pre>TweenLite.to([mc1, mc2, mc3]=
+, 1, {x:100});
+</pre></div>
+		 <p>Even though 3 objects are animating, there is still only one tween cr=
+eated.=20
+		 In order to stagger or offset the start times of each object animating, =
+please see=20
+		 the <code>staggerTo()</code> method of TimelineLite or TweenMax.</p>
+		=20
+		 <p>For simple sequencing, you can use the <code>delay</code> special pro=
+perty
+		 (like <code>TweenLite.to(mc, 1, {x:100, delay:0.5})</code>),=20
+		 but it is highly recommended that you consider using TimelineLite (or Ti=
+melineMax)=20
+		 for all but the simplest sequencing tasks. It has an identical <code>to(=
+)</code> method
+		 that allows you to append tweens one-after-the-other and then control th=
+e entire sequence=20
+		 as a whole. You can even have the tweens overlap as much as you want.</p=
+>
+		=20
+		 <p></p><p><span class=3D"label"> Parameters </span></p><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"20px"></td><=
+td><code><span class=3D"label">target</span>:Object</code> =E2=80=94 Target=
+ object (or array of objects) whose properties this tween affects.=20
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">duration</span>:Number</code> =
+=E2=80=94 Duration in seconds (or frames if <code>useFrames:true</code> is =
+set in the <code>vars</code> parameter)
+		 </td></tr><tr><td class=3D"paramSpacer">&nbsp;</td></tr><tr><td width=3D=
+"20px"></td><td><code><span class=3D"label">vars</span>:Object</code> =E2=
+=80=94 An object defining the end value for each property that should be tw=
+eened as well as any special properties like <code>onComplete</code>, <code=
+>ease</code>, etc. For example, to tween <code>mc.x</code> to 100 and <code=
+>mc.y</code> to 200 and then call <code>myFunction</code>, do this: <code>T=
+weenLite.to(mc, 1, {x:100, y:200, onComplete:myFunction});</code>
+		 </td></tr></tbody></table><p></p><p></p><span class=3D"label">Returns</s=
+pan><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td =
+width=3D"20"></td><td><code><a href=3D"https://greensock.com/asdocs/com/gre=
+ensock/TweenLite.html">TweenLite</a></code> =E2=80=94 TweenLite instance
+		 </td></tr></tbody></table><p><span class=3D"label">See also</span></p><d=
+iv class=3D"seeAlso"><a href=3D"https://greensock.com/asdocs/com/greensock/=
+TimelineLite.html#to()" target=3D"">com.greensock.TimelineLite.to()</a><br>=
+<a href=3D"https://greensock.com/asdocs/com/greensock/TimelineLite.html#sta=
+ggerTo()" target=3D"">com.greensock.TimelineLite.staggerTo()</a><br><a href=
+=3D"https://greensock.com/asdocs/com/greensock/TweenMax.html#staggerTo()" t=
+arget=3D"">com.greensock.TweenMax.staggerTo()</a><br><a href=3D"https://gre=
+ensock.com/asdocs/com/greensock/TweenLite.html#from()" target=3D"">from()</=
+a><br><a href=3D"https://greensock.com/asdocs/com/greensock/TweenLite.html#=
+fromTo()" target=3D"">fromTo()</a></div></div><br><br><hr><br><p></p><cente=
+r class=3D"copyright"><footer></footer><br>Thu Oct 24 2013, 01:43 PM -05:00=
+  </center></div></body></html><!--<br/>Thu Oct 24 2013, 01:43 PM -05:00  -=
+->
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/inherit-arrow.gif
+
+R0lGODlhDwAJAKIAAEZGRjExMSUlJSEhIQAAAP///wAAAAAAACH5BAEHAAUALAAAAAAPAAkAAAMa
+WLoM/I8ESAkZNFpsu/9TVnSCqFilOYaqsyQAOw==
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/expanded.gif
+
+R0lGODlhCQAJAKIAAERERDMzMyIiIgAAAP///wAAAAAAAAAAACH5BAEHAAQALAAAAAAJAAkAAAMU
+SLrcCyPKAUiYIywhReOeozlkmQAAOw==
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/collapsed.gif
+
+R0lGODlhCQAJAKIAAERERDMzMyIiIgAAAP///wAAAAAAAAAAACH5BAEHAAQALAAAAAAJAAkAAAMU
+SATaPcG9ISQZuDqM46RSZkHWYiUAOw==
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://greensock.com/asdocs/images/inheritedSummary.gif
+
+R0lGODlhDgAOALMAAElJSYKCgpmZmWtra9jY2GZmZqSkpFNTU4+Pj8HBwXNzc+Xl5VtbW////wAA
+AAAAACH5BAEHAA0ALAAAAAAOAA4AAAQ9sMlJKyWAWLrAAMvWLEOgFEVYLYpgFkzKBYnxMrjauIjy
+HoOBwBJ4KUSN4ukoUhaYGyeUaERKkQrGwVOJAAA7
+
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-D2E701FDCAF0C8C47A47EC9156DD1075@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/package-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><title>Package List - GreenSock Documentation</title><base target=
+=3D"classFrame"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdo=
+cs/style.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" h=
+ref=3D"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"p=
+rint"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/overrid=
+e.css" type=3D"text/css"></head><body class=3D"classFrameContent vsc-initia=
+lized"><h3><a href=3D"https://greensock.com/asdocs/package-summary.html" st=
+yle=3D"color:black">Packages</a></h3><table cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock=
+/package-detail.html">com.greensock</a></td></tr><tr><td><a href=3D"https:/=
+/greensock.com/asdocs/com/greensock/core/package-detail.html">com.greensock=
+.core</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/gree=
+nsock/data/package-detail.html">com.greensock.data</a></td></tr><tr><td><a =
+href=3D"https://greensock.com/asdocs/com/greensock/easing/package-detail.ht=
+ml">com.greensock.easing</a></td></tr><tr><td><a href=3D"https://greensock.=
+com/asdocs/com/greensock/events/package-detail.html">com.greensock.events</=
+a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/l=
+ayout/package-detail.html">com.greensock.layout</a></td></tr><tr><td><a hre=
+f=3D"https://greensock.com/asdocs/com/greensock/loading/package-detail.html=
+">com.greensock.loading</a></td></tr><tr><td><a href=3D"https://greensock.c=
+om/asdocs/com/greensock/loading/core/package-detail.html">com.greensock.loa=
+ding.core</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/=
+greensock/loading/data/package-detail.html">com.greensock.loading.data</a><=
+/td></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/load=
+ing/display/package-detail.html">com.greensock.loading.display</a></td></tr=
+><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/motionPaths/=
+package-detail.html">com.greensock.motionPaths</a></td></tr><tr><td><a href=
+=3D"https://greensock.com/asdocs/com/greensock/plugins/package-detail.html"=
+>com.greensock.plugins</a></td></tr><tr><td><a href=3D"https://greensock.co=
+m/asdocs/com/greensock/text/package-detail.html">com.greensock.text</a></td=
+></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/utils/p=
+ackage-detail.html">com.greensock.utils</a></td></tr></tbody></table></body=
+></html><!--<br/>Thu Jul 4 2013, 12:48 AM -05:00  -->
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY----
+Content-Type: text/html
+Content-ID: <frame-2DB230D84C1A4EA07B8DF7B65FB1CBC6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://greensock.com/asdocs/com/greensock/class-list.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!-- saved from url=3D(0014)about:internet --><h=
+tml><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><title>com.greensock - GreenSock Documentation</title><base targe=
+t=3D"classFrame"><link rel=3D"stylesheet" href=3D"https://greensock.com/asd=
+ocs/style.css" type=3D"text/css" media=3D"screen"><link rel=3D"stylesheet" =
+href=3D"https://greensock.com/asdocs/print.css" type=3D"text/css" media=3D"=
+print"><link rel=3D"stylesheet" href=3D"https://greensock.com/asdocs/overri=
+de.css" type=3D"text/css"></head><body class=3D"classFrameContent vsc-initi=
+alized"><h3><a href=3D"https://greensock.com/asdocs/com/greensock/package-d=
+etail.html" target=3D"classFrame" style=3D"color:black">Package com.greenso=
+ck</a></h3><table cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td><a hre=
+f=3D"https://greensock.com/asdocs/com/greensock/package-detail.html#classSu=
+mmary" style=3D"color:black"><b>Classes</b></a></td></tr><tr><td><a href=3D=
+"https://greensock.com/asdocs/com/greensock/BlitMask.html">BlitMask</a></td=
+></tr><tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/FlexBli=
+tMask.html">FlexBlitMask</a></td></tr><tr><td><a href=3D"https://greensock.=
+com/asdocs/com/greensock/TimelineLite.html">TimelineLite</a></td></tr><tr><=
+td><a href=3D"https://greensock.com/asdocs/com/greensock/TimelineMax.html">=
+TimelineMax</a></td></tr><tr><td><a href=3D"https://greensock.com/asdocs/co=
+m/greensock/TweenLite.html">TweenLite</a></td></tr><tr><td><a href=3D"https=
+://greensock.com/asdocs/com/greensock/TweenMax.html">TweenMax</a></td></tr>=
+<tr><td><a href=3D"https://greensock.com/asdocs/com/greensock/TweenNano.htm=
+l">TweenNano</a></td></tr></tbody></table></body></html><!--<br/>Thu Oct 24=
+ 2013, 01:43 PM -05:00  -->
+------MultipartBoundary--RyII8twFlxGgvQbB6xfG7NIcSZ3PgzqTiOTuRgajyY------
