@@ -304,13 +304,18 @@ package com.greensock {
 	public class TweenLite extends Animation {
 		
 		/** @private **/
-		public static const version:String = "12.1.5";
+		public static const version:String = "12.1.6";
 		
 		/** Provides An easy way to change the default easing equation. Choose from any of the GreenSock eases in the <code>com.greensock.easing</code> package. @default Power1.easeOut **/
 		public static var defaultEase:Ease = new Ease(null, null, 1, 1);
 		
 		/** Provides An easy way to change the default overwrite mode. Choose from any of the following: <code>"auto", "all", "none", "allOnStart", "concurrent", "preexisting"</code>. @default "auto" **/
 		public static var defaultOverwrite:String = "auto";
+	
+		private const ON_UPDATE:String = "onUpdate";
+		private const ON_HALF:String = "onHalf";
+		private const ON_COMPLETE:String = "onComplete";
+		private const ON_REVERSE_COMPLETE:String = "onReverseComplete";
 		
 		/**
 		 * The object that dispatches a <code>"tick"</code> event each time the engine updates, making it easy for 
@@ -432,6 +437,9 @@ package com.greensock {
 		
 		/** @private Only used in tweens where a startAt is defined (like fromTo() tweens) so that we can record the pre-tween starting values and revert to them properly if/when the playhead on the timeline moves backwards, before this tween started. In other words, if alpha is at 1 and then someone does a fromTo() tween that makes it go from 0 to 1 and then the playhead moves BEFORE that tween, alpha should jump back to 1 instead of reverting to 0. **/
 		protected var _startAt:TweenLite;
+	
+		protected var _halfTriggered:Boolean;
+		protected var _completeTriggered:Boolean;
 		
 		
 		/**
@@ -622,12 +630,20 @@ package com.greensock {
 		/** @private (see Animation.render() for notes) **/
 		override public function render(time:Number, suppressEvents:Boolean=false, force:Boolean=false):void {
 			var isComplete:Boolean, callback:String, pt:PropTween, rawPrevTime:Number, prevTime:Number = _time;
-			if (time >= _duration) {
+			if (!_halfTriggered && time >= _duration / 2) {
 				_totalTime = _time = _duration;
 				ratio = _ease._calcEnd ? _ease.getRatio(1) : 1;
 				if (!_reversed) {
+					_halfTriggered = true;
+					callback = ON_HALF;
+				}
+			}else if (time >= _duration) {
+				_totalTime = _time = _duration;
+				ratio = _ease._calcEnd ? _ease.getRatio(1) : 1;
+				if (!_reversed) {
+					_completeTriggered = true;
 					isComplete = true;
-					callback = "onComplete";
+					callback = ON_COMPLETE;
 				}
 				if (_duration == 0) { //zero-duration tweens are tricky because we must discern the momentum/direction of time in order to determine whether the starting values should be rendered or the ending values. If the "playhead" of its timeline goes past the zero-duration tween in the forward direction or lands directly on it, the end values should be rendered, but if the timeline's "playhead" moves past it in the backward direction (from a postitive time to a negative time), the starting values must be rendered.
 					rawPrevTime = _rawPrevTime;
@@ -637,7 +653,7 @@ package com.greensock {
 					if (time === 0 || rawPrevTime < 0 || rawPrevTime === _tinyNum) if (rawPrevTime !== time) {
 						force = true;
 						if (rawPrevTime > 0 && rawPrevTime !== _tinyNum) {
-							callback = "onReverseComplete";
+							callback = ON_REVERSE_COMPLETE;
 						}
 					}
 					_rawPrevTime = rawPrevTime = (!suppressEvents || time !== 0 || _rawPrevTime === time) ? time : _tinyNum; //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect. We set the _rawPrevTime to be a precise tiny number to indicate this scenario rather than using another property/variable which would increase memory usage. This technique is less readable, but more efficient.
@@ -647,7 +663,7 @@ package com.greensock {
 				_totalTime = _time = 0;
 				ratio = _ease._calcEnd ? _ease.getRatio(0) : 0;
 				if (prevTime !== 0 || (_duration === 0 && _rawPrevTime > 0 && _rawPrevTime !== _tinyNum)) {
-					callback = "onReverseComplete";
+					callback = ON_REVERSE_COMPLETE;
 					isComplete = _reversed;
 				}
 				if (time < 0) {
@@ -743,6 +759,7 @@ package com.greensock {
 					_startAt.render(time, suppressEvents, force); //note: for performance reasons, we tuck this conditional logic inside less traveled areas (most tweens don't have an onUpdate). We'd just have it at the end before the onComplete, but the values should be updated before any onUpdate is called, so we ALSO put it here and then if it's not called, we do so later near the onComplete.
 				}
 				if (!suppressEvents) if (_time !== prevTime || isComplete) {
+//					trace(ON_UPDATE, time, _time);
 					_onUpdate.apply(null, vars.onUpdateParams);
 				}
 			}
@@ -759,7 +776,12 @@ package com.greensock {
 					_active = false;
 				}
 				if (!suppressEvents) if (vars[callback]) {
+//					trace(callback, time, _time);
 					vars[callback].apply(null, vars[callback + "Params"]);
+					if(!_completeTriggered && vars[ON_COMPLETE] && time >= _duration){
+//						trace(ON_COMPLETE, time, _time);
+						vars[ON_COMPLETE].apply(null, vars[ON_COMPLETE + "Params"]);
+					}
 				}
 				if (_duration === 0 && _rawPrevTime === _tinyNum && rawPrevTime !== _tinyNum) { //the onComplete or onReverseComplete could trigger movement of the playhead and for zero-duration tweens (which must discern direction) that land directly back on their start time, we don't want to fire again on the next render. Think of several addPause()'s in a timeline that forces the playhead to a certain spot, but what if it's already paused and another tween is tweening the "time" of the timeline? Each time it moves [forward] past that spot, it would move back, and since suppressEvents is true, it'd reset _rawPrevTime to _tinyNum so that when it begins again, the callback would fire (so ultimately it could bounce back and forth during that tween). Again, this is a very uncommon scenario, but possible nonetheless.
 					_rawPrevTime = 0;
