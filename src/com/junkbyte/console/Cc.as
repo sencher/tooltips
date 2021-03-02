@@ -39,12 +39,13 @@ import flash.ui.Keyboard;
  * and all other calls through Cc will stop working silently.
  * </p>
  * @author  Lu Aye Oo
- * @version 2.75
+ * @version 2.76
  * @see http://code.google.com/p/flash-console/
  * @see #start()
  * @see #startOnStage()
  */
 public class Cc {
+    public static var DEBUG_MODE:int = 0;
     
     private static var _console:Console;
     private static var _config:ConsoleConfig;

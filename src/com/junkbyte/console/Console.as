@@ -55,7 +55,7 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.75;
+    public static const VERSION:Number = 2.76;
     public static const VERSION_STAGE:String = "";
     public static const BUILD:int = 611;
     public static const BUILD_DATE:String = "22.1.2021";
@@ -122,6 +122,7 @@ public class Console extends Sprite {
         }, "Connect to socket remote. /remotingSocket ip port");
         
         cl.addCLCmd("refs", printRefMap, "Show references");
+        cl.addCLCmd("d", debugMode, "Set debug mode");
         
         if (_config.sharedObjectName) {
             try {
@@ -740,6 +741,15 @@ public class Console extends Sprite {
      */
     public function get graphing():Graphing {
         return _graphing;
+    }
+
+    public function debugMode(value:*):void {
+        if(!value){
+            log("DEBUG_MODE is " + Cc.DEBUG_MODE);
+            return;
+        }
+        Cc.DEBUG_MODE = value;
+        log("DEBUG_MODE set to " + value);
     }
 
     public function printRefMap(value:*):void {
