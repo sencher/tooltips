@@ -56,6 +56,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
 
     public function f0():void {
         Cc.log("f0 called", arguments);
+        Cc.log("f0 called", Cc.DEBUG_MODE);
     }
 
     public function f1(value1:int):void {
