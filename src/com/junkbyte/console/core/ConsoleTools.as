@@ -201,8 +201,11 @@ public class ConsoleTools extends ConsoleCore {
         var cut:Array = lines.slice(3, 3 + depth);
         var s:String;
         var r:String = "";
+    
+        var pattern:RegExp = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g;
+
         for each (s in cut) {
-            r += s + "\n";
+            r += s.replace(pattern, "$2__$4") + "\n";
         }
         return cut.length ? r += "*************" : r;
     }
