@@ -11,18 +11,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="Greensock 12.1.5">
-      <change afterPath="$PROJECT_DIR$/src/Test_EventListener.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_OR.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_RegexpReplaceStack.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test_TweenOnUpdate.as" afterDir="false" />
+    <list default="true" id="4c683a6c-f9cd-44d2-abc1-60e0b695644b" name="Default" comment="More tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLA_experiments/Personal.fla" beforeDir="false" afterPath="$PROJECT_DIR$/FLA_experiments/Personal.fla" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLA_experiments/Personal.swc" beforeDir="false" afterPath="$PROJECT_DIR$/FLA_experiments/Personal.swc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLA_experiments/RECOVER_Personal.fla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_ConsoleKeysAndCommands.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_FlaMovieClip.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_FlaMovieClip.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/Console.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_RegexpReplaceStack.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_RegexpReplaceStack.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/junkbyte/console/core/ConsoleTools.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +88,7 @@
     <property name="flex.debug.filter.swf.load.unload" value="true" />
     <property name="js-jscs-nodeInterpreter" value="A:\Program Files\nodejs\node.exe" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/legacy art/hangarWarCacheOpeningWindow.swc" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Autodesk/Scaleform/GFx SDK 4.5/Bin/GFxMediaPlayer.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -138,7 +129,7 @@
       <recent name="ideaRefactoring.RefactoringB" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.Test_RegexpReplaceStack">
+  <component name="RunManager" selected="Flash App.SF Test_RegexpReplaceStack">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -255,6 +246,45 @@
       <option name="overriddenMainClass" value="" />
       <option name="overriddenOutputFileName" value="" />
       <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SF Test_RegexpReplaceStack" type="FlashRunConfigurationType">
+      <option name="BCName" value="Test" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="Player" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="C:/Program Files (x86)/Autodesk/Scaleform/GFx SDK 4.5/Bin/GFxMediaPlayer.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Tooltips" />
+      <option name="overriddenMainClass" value="Test_RegexpReplaceStack" />
+      <option name="overriddenOutputFileName" value="Test_RegexpReplaceStack.swf" />
+      <option name="overrideMainClass" value="true" />
       <option name="runTrusted" value="true" />
       <option name="screenDpi" value="0" />
       <option name="screenHeight" value="0" />
@@ -645,6 +675,7 @@
       <item itemvalue="Flash App.AirMainModule" />
       <item itemvalue="Flash App.Test" />
       <item itemvalue="Flash App.Test_ExternalInterface HTML" />
+      <item itemvalue="Flash App.SF Test_RegexpReplaceStack" />
       <item itemvalue="Flash App.Test_TweenLite" />
       <item itemvalue="Flash App.Test_TweenOnUpdate" />
       <item itemvalue="Flash App.Test_EventListener" />
@@ -882,21 +913,7 @@
       <workItem from="1614345303509" duration="3743000" />
       <workItem from="1614607376172" duration="161000" />
       <workItem from="1614610552122" duration="8621000" />
-      <workItem from="1614694987760" duration="2602000" />
-    </task>
-    <task id="LOCAL-00033" summary="Console - tracingLevel, ignore textField focus">
-      <created>1522260083714</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1522260083714</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Regexp2, DictionaryKeys, ClassesCompare">
-      <created>1523435625296</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1523435625296</updated>
+      <workItem from="1614694987760" duration="9038000" />
     </task>
     <task id="LOCAL-00035" summary="StarlingProject, Test_LinkedObjectReset, Test_Cast.as, Test_CirclesElipse4 update">
       <created>1525265699834</created>
@@ -1227,7 +1244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614695093762</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Console 2.77">
+      <created>1614697624159</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1614697624159</updated>
+    </task>
+    <task id="LOCAL-00083" summary="More tests">
+      <created>1614697667213</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1614697667213</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1348,8 +1379,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Chance:&#10;Many decks support&#10;Coin and no Coin different turn limit&#10;Combo code" />
-    <MESSAGE value="April 2020" />
     <MESSAGE value="Test_AutomaticMouseAndKeyboard.as" />
     <MESSAGE value="Cube4to6Translator.as" />
     <MESSAGE value="Test_Cards3InARow.as" />
@@ -1373,60 +1402,62 @@
     <MESSAGE value="Greensock 12.1.5" />
     <MESSAGE value="Greensock 12.1.6" />
     <MESSAGE value="Console 2.76" />
-    <option name="LAST_COMMIT_MESSAGE" value="Console 2.76" />
+    <MESSAGE value="Console 2.77" />
+    <MESSAGE value="More tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="More tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614118168432">
+    <state x="414" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614703346813">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="414" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1119@0.0.1920.1119" timestamp="1614118168432" />
+    <state x="414" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1119@0.0.1920.1119" timestamp="1614703346813" />
     <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1612451646362" />
     <state x="715" y="282" key="#xdebugger.evaluate" timestamp="1612203301470">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="715" y="282" key="#xdebugger.evaluate/0.0.1920.1160@0.0.1920.1160" timestamp="1612203301470" />
-    <state x="415" y="10" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1614695092017">
+    <state x="415" y="10" width="1265" height="988" key="CommitChangelistDialog2" timestamp="1614697665725">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="415" y="10" width="1265" height="988" key="CommitChangelistDialog2/0.0.1920.1119@0.0.1920.1119" timestamp="1614695092017" />
+    <state x="415" y="10" width="1265" height="988" key="CommitChangelistDialog2/0.0.1920.1119@0.0.1920.1119" timestamp="1614697665725" />
     <state x="587" y="124" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1611328631718" />
-    <state width="544" height="502" key="DebuggerActiveHint" timestamp="1614629390986">
+    <state width="544" height="502" key="DebuggerActiveHint" timestamp="1614704067090">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="544" height="502" key="DebuggerActiveHint/0.0.1920.1119@0.0.1920.1119" timestamp="1614629390986" />
+    <state width="544" height="502" key="DebuggerActiveHint/0.0.1920.1119@0.0.1920.1119" timestamp="1614704067090" />
     <state width="650" height="520" key="DebuggerActiveHint/0.0.1920.1160@0.0.1920.1160" timestamp="1612452492423" />
     <state x="92" y="92" width="1536" height="924" key="DiffContextDialog" timestamp="1612490651432">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
     <state x="92" y="92" width="1536" height="924" key="DiffContextDialog/0.0.1920.1119@0.0.1920.1119" timestamp="1612490651432" />
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1611256755374" />
-    <state x="921" y="314" key="FileChooserDialogImpl" timestamp="1614113507618">
+    <state x="921" y="314" key="FileChooserDialogImpl" timestamp="1614703324100">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="921" y="314" key="FileChooserDialogImpl/0.0.1920.1119@0.0.1920.1119" timestamp="1614113507618" />
+    <state x="921" y="314" key="FileChooserDialogImpl/0.0.1920.1119@0.0.1920.1119" timestamp="1614703324100" />
     <state x="1076" y="474" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1612490719453">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
     <state x="1076" y="474" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1119@0.0.1920.1119" timestamp="1612490719453" />
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1614697560913">
+    <state width="1246" height="353" key="GridCell.Tab.0.bottom" timestamp="1614706579655">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1119@0.0.1920.1119" timestamp="1614697560913" />
+    <state width="1246" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1119@0.0.1920.1119" timestamp="1614706579655" />
     <state width="1877" height="452" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1612453013293" />
-    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1614697560913">
+    <state width="1246" height="353" key="GridCell.Tab.0.center" timestamp="1614706579655">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1119@0.0.1920.1119" timestamp="1614697560913" />
+    <state width="1246" height="353" key="GridCell.Tab.0.center/0.0.1920.1119@0.0.1920.1119" timestamp="1614706579655" />
     <state width="1877" height="452" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1612453013293" />
-    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1614697560913">
+    <state width="1246" height="353" key="GridCell.Tab.0.left" timestamp="1614706579655">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1119@0.0.1920.1119" timestamp="1614697560913" />
+    <state width="1246" height="353" key="GridCell.Tab.0.left/0.0.1920.1119@0.0.1920.1119" timestamp="1614706579655" />
     <state width="1877" height="452" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1612453013293" />
-    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1614697560913">
+    <state width="1246" height="353" key="GridCell.Tab.0.right" timestamp="1614706579655">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1119@0.0.1920.1119" timestamp="1614697560913" />
+    <state width="1246" height="353" key="GridCell.Tab.0.right/0.0.1920.1119@0.0.1920.1119" timestamp="1614706579655" />
     <state width="1877" height="452" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1612453013293" />
     <state width="1246" height="423" key="GridCell.Tab.1.bottom" timestamp="1614122902213">
       <screen x="0" y="0" width="1920" height="1119" />
@@ -1462,10 +1493,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="1068" y="45" key="VCS.ChangeListViewerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1612452744345" />
-    <state x="552" y="274" key="Vcs.Push.Dialog.v2" timestamp="1612490889632">
+    <state x="552" y="274" key="Vcs.Push.Dialog.v2" timestamp="1614697671588">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state x="552" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1119@0.0.1920.1119" timestamp="1612490889632" />
+    <state x="552" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1119@0.0.1920.1119" timestamp="1614697671588" />
     <state x="552" y="284" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1611328226530" />
     <state width="1351" height="540" key="XDebugger.FullValuePopup" timestamp="1614696180755">
       <screen x="0" y="0" width="1920" height="1119" />
@@ -1485,10 +1516,10 @@
     </state>
     <state x="650" y="312" width="842" height="772" key="find.popup/0.0.1920.1119@0.0.1920.1119" timestamp="1614697582124" />
     <state x="650" y="323" width="844" height="800" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1612450365138" />
-    <state width="656" height="500" key="javadoc.popup.new" timestamp="1614630590805">
+    <state width="656" height="500" key="javadoc.popup.new" timestamp="1614706278098">
       <screen x="0" y="0" width="1920" height="1119" />
     </state>
-    <state width="656" height="500" key="javadoc.popup.new/0.0.1920.1119@0.0.1920.1119" timestamp="1614630590805" />
+    <state width="656" height="500" key="javadoc.popup.new/0.0.1920.1119@0.0.1920.1119" timestamp="1614706278098" />
     <state width="656" height="519" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1611330601488" />
     <state x="623" y="242" width="672" height="731" key="search.everywhere.popup" timestamp="1614359115964">
       <screen x="0" y="0" width="1920" height="1119" />
@@ -1732,6 +1763,7 @@
         <watch expression="_time" />
         <watch expression="ratio" />
         <watch expression="_duration" />
+        <watch expression="arguments" language="ECMA Script Level 4" />
       </configuration>
     </watches-manager>
   </component>

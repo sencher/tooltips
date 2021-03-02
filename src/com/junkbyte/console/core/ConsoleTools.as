@@ -202,11 +202,19 @@ public class ConsoleTools extends ConsoleCore {
         var s:String;
         var r:String = "";
     
-        var pattern:RegExp = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g;
-
         for each (s in cut) {
-            r += s.replace(pattern, "$2__$4") + "\n";
+            r += cutLongNames(s) + "\n";
         }
+    
+        function cutLongNames(value:String):String{
+            var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
+            if(o && o[2] && o[4]){
+                return o[2] + "__" + o[4];
+            }else {
+                return "cutLongNames null";
+            }
+        }
+        
         return cut.length ? r += "*************" : r;
     }
 }
