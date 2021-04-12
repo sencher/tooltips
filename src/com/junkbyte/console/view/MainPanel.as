@@ -168,7 +168,7 @@ public class MainPanel extends ConsolePanel {
         _cmdPrefx.height = fsize + 6;
         _cmdPrefx.selectable = false;
         _cmdPrefx.defaultTextFormat = tf;
-        _cmdPrefx.addEventListener(MouseEvent.MOUSE_DOWN, onCmdPrefMouseDown);
+        _cmdPrefx.addEventListener(MouseEvent.MOUSE_DOWN, setCommandLineFocus);
         _cmdPrefx.addEventListener(MouseEvent.MOUSE_MOVE, onCmdPrefRollOverOut);
         _cmdPrefx.addEventListener(MouseEvent.ROLL_OUT, onCmdPrefRollOverOut);
         addChild(_cmdPrefx);
@@ -282,7 +282,7 @@ public class MainPanel extends ConsolePanel {
         console.panels.tooltip(e.type == MouseEvent.MOUSE_MOVE ? "Current scope::(CommandLine)" : "", this);
     }
     
-    private function onCmdPrefMouseDown(e:MouseEvent):void {
+    private function setCommandLineFocus(e:MouseEvent = null):void {
         try {
             stage.focus = _cmdField;
             setCLSelectionAtEnd();
@@ -308,11 +308,7 @@ public class MainPanel extends ConsolePanel {
         else if (e.keyCode == 18) _alt = false;
         
         if ((e.keyCode == Keyboard.TAB || e.keyCode == Keyboard.ENTER) && parent.visible && visible && _cmdField.visible) {
-            try {
-                stage.focus = _cmdField;
-                setCLSelectionAtEnd();
-            } catch (err:Error) {
-            }
+            setCommandLineFocus();
         }
     }
     
@@ -1249,7 +1245,9 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function onCmdFocusOut(e:Event):void {
-        if (Cc && Cc.visible) stage.focus = _cmdField;
+        if (Cc && Cc.visible && stage && _cmdField.visible) {
+            setCommandLineFocus();
+        }
         setHints();
     }
     

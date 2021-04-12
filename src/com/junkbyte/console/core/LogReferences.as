@@ -90,15 +90,15 @@ public class LogReferences extends ConsoleCore {
                 _currentBank.push(o);
             }
             _refIndex++;
-            // Look through every 200th older _refMap ids and delete empty ones
-            // 200s rather than all to be faster.
-            var i:int = ind - 200;
-            while (i >= 0) {
-                if (_refMap[i] === null) {
-                    delete _refMap[i];
-                }
-                i -= 200;
-            }
+            // Look through every 20000 older _refMap ids and delete empty ones
+            // 20000 rather than all to be faster.
+//            var i:int = ind - 20000;
+//            while (i >= 0) {
+//                if (_refMap[i] === null) {
+//                    delete _refMap[i];
+//                }
+//                i -= 20000;
+//            }
         }
         return ind;
     }
@@ -525,6 +525,7 @@ public class LogReferences extends ConsoleCore {
                     else str = X;
                     report(" dynamic var <p3>" + str + "</p3> = " + makeValue(obj, X), 1, true, ch);
                 } else {
+//                    Cc.warn("makeValue", obj, X, config.useObjectLinking, makeValue(obj, X));
                     report(" dictionary <p3>" + makeValue(X) + "</p3> = " + makeValue(obj, X), 1, true, ch);
                 }
             }
