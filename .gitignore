@@ -1,3 +1,5 @@
 out/Test*.swf
+Tooltips.iml
+.idea
 .ruby-version
 .DS_Store

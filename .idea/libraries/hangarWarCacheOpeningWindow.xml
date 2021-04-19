@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="hangarWarCacheOpeningWindow" type="flex">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/legacy art/hangarWarCacheOpeningWindow.swc!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
