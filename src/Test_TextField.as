@@ -1,4 +1,6 @@
 package {
+import com.junkbyte.console.Cc;
+
 import flash.display.Shape;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
@@ -32,8 +34,9 @@ public class Test_TextField extends Sprite {
         tf.type = TextFieldType.INPUT;
         tf.border = true;
         addChild(tf);
-        stage.addEventListener(MouseEvent.CLICK, onClick);
+        if(stage) stage.addEventListener(MouseEvent.CLICK, onClick);
         onClick();
+        Cc.log("dummy");
     }
 
     private function onClick(event:MouseEvent = null):void {
