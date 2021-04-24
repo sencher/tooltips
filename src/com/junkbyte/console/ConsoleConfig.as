@@ -56,7 +56,7 @@ public class ConsoleConfig {
      * Maximum number of logs Console should remember.
      * 0 = unlimited. Setting to very high will take up more memory and potentially slow down.
      */
-    public var maxLines:uint = 1000;
+    public var maxLines:uint = 0;
     
     /**
      * Frames before repeating line is forced to print to next line.

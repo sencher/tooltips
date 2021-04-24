@@ -55,7 +55,7 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.78;
+    public static const VERSION:Number = 2.79;
     public static const VERSION_STAGE:String = "";
     public static const BUILD:int = 611;
     public static const BUILD_DATE:String = "22.1.2021";
@@ -425,6 +425,8 @@ public class Console extends Sprite {
     //
     //
     private function _onEnterFrame(e:Event):void {
+        if(_paused) return;
+
         var time:int = getTimer();
         _logs.update(time);
         _refs.update(time);

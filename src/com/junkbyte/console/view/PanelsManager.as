@@ -106,18 +106,12 @@ public class PanelsManager {
         }
     }
     
-    /**
-     * @private
-     */
     public function updateMenu():void {
         _mainPanel.updateMenu();
         var chpanel:ChannelsPanel = getPanel(ChannelsPanel.NAME) as ChannelsPanel;
         if (chpanel) chpanel.update();
     }
     
-    /**
-     * @private
-     */
     public function update(paused:Boolean, lineAdded:Boolean, ch:String = ""):void {
         _canDraw = !paused;
         _mainPanel.update(!paused && lineAdded, ch);
@@ -128,9 +122,6 @@ public class PanelsManager {
         }
     }
     
-    /**
-     * @private
-     */
     public function updateGraphs(graphs:Array):void {
         var usedMap:Object;
         var fpsGroup:GraphGroup;
