@@ -10,6 +10,7 @@ import flash.display.Shape;
 import flash.display.Sprite;
 import flash.display.Stage;
 import flash.events.Event;
+import flash.geom.Point;
 import flash.system.ApplicationDomain;
 import flash.text.Font;
 import flash.text.TextField;
@@ -31,13 +32,34 @@ public class Utils {
             trace('\t|\t ' + i + '.\t name:' + mc.getChildAt(i).name + '\t type:' + typeof (mc.getChildAt(i)) + '\t' + mc.getChildAt(i));
         }
     }
-
-
+    
     public static function mergeObjects(main:Object, second:Object, overrideMain:Boolean = false):void {
-        var i:Object;
-        for (i in second) {
-            if (overrideMain || !main[i]) {
-                main[i] = second[i];
+        var classAsXML:XML = describeType(main);
+        if (classAsXML.@isDynamic.toString() == "true") {
+            var i:Object;
+            for (i in second) {
+                if (overrideMain || !main[i]) {
+                    main[i] = second[i];
+                }
+            }
+        } else {
+            var list:XMLList = classAsXML.*;
+            var propMap:Object = new Object();
+            var item:XML;
+            
+            for each (item in list) {
+                var itemType:String = item.name().toString();
+                var itemName:String = item.@name.toString();
+                switch (itemType) {
+                    case "variable":
+                        if (second.hasOwnProperty(itemName)) {
+                            if (overrideMain || !main[itemName]) {
+                                main[itemName] = second[itemName];
+                            }
+                        }
+                        propMap[item.@name.toString()] = item.@type.toString();
+                        break;
+                }
             }
         }
     }
@@ -748,5 +770,68 @@ public class Utils {
         
         return line;
     }
+    
+    private static function getMetrics(displayObj:DisplayObject):Metrics {
+        var m:Metrics = new Metrics();
+        
+        if(displayObj is TextField){
+            var textMetrics:TextLineMetrics = TextField(displayObj).getLineMetrics(0);
+            Utils.mergeObjects(m, textMetrics, true);
+        }else {
+            Utils.mergeObjects(m, displayObj, true);
+        }
+        return m;
+    }
+    
+    public static function alignToDisplayObjectHorizoltally(alignedObj:DisplayObject, staticObj:DisplayObject):void{
+        var alignedMetrics:Metrics = getMetrics(alignedObj);
+        var staticMetrics:Metrics = getMetrics(staticObj);
+        var alignedCenter:Number = alignedObj.localToGlobal(new Point(alignedMetrics.width / 2, 0)).x;
+        var staticCenter:Number = staticObj.localToGlobal(new Point(staticMetrics.width / 2, 0)).x;
+        alignedObj.x += staticCenter - alignedCenter;
+    }
+    
+    public static function alignToDisplayObjectVertically(alignedObj:DisplayObject, staticObj:DisplayObject):void{
+        var alignedMetrics:Metrics = getMetrics(alignedObj);
+        var staticMetrics:Metrics = getMetrics(staticObj);
+        var alignedCenter:Number = alignedObj.localToGlobal(new Point(0, alignedMetrics.height/2)).y;
+        var staticCenter:Number = staticObj.localToGlobal(new Point(0, staticMetrics.height/2)).y;
+        alignedObj.y += staticCenter - alignedCenter;
+    }
+    
+    public static function alignToDisplayObjectBoth(alignedObj:DisplayObject, staticObj:DisplayObject):void{
+        var alignedMetrics:Metrics = getMetrics(alignedObj);
+        var staticMetrics:Metrics = getMetrics(staticObj);
+        var alignedCenter:Point = alignedObj.localToGlobal(new Point(alignedMetrics.width/2, alignedMetrics.height/2));
+        var staticCenter:Point = staticObj.localToGlobal(new Point(staticMetrics.width/2, staticMetrics.height/2));
+        alignedObj.x += staticCenter.x - alignedCenter.x;
+        alignedObj.y += staticCenter.y - alignedCenter.y;
+    }
 }
+}
+
+class Metrics{
+    public var x:Number;
+    public var y:Number;
+    public var width:Number;
+    public var height:Number;
+    
+    function Metrics(x:Number = 0, y:Number = 0, width:Number = 0, height:Number = 0){
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+    
+    public function get centerX():Number{
+        return x + width/2;
+    }
+    
+    public function get centerY():Number{
+        return y + height/2;
+    }
+    
+    public function toString():String {
+        return "x: " + x + ", y: " + y + ", width: " + width + ", height: " + height;
+    }
 }
