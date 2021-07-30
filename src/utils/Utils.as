@@ -1,6 +1,7 @@
 package utils {
 import com.adobe.serialization.json.JSON;
 import com.junkbyte.console.Cc;
+import com.junkbyte.console.core.ConsoleUtils;
 
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
@@ -33,13 +34,13 @@ public class Utils {
         }
     }
     
-    public static function mergeObjects(main:Object, second:Object, overrideMain:Boolean = false):void {
-        var classAsXML:XML = describeType(main);
+    public static function mergeObjects(receiver:Object, source:Object, overrideMain:Boolean = false):void {
+        var classAsXML:XML = describeType(receiver);
         if (classAsXML.@isDynamic.toString() == "true") {
             var i:Object;
-            for (i in second) {
-                if (overrideMain || !main[i]) {
-                    main[i] = second[i];
+            for (i in source) {
+                if (overrideMain || !receiver[i]) {
+                    receiver[i] = source[i];
                 }
             }
         } else {
@@ -52,9 +53,9 @@ public class Utils {
                 var itemName:String = item.@name.toString();
                 switch (itemType) {
                     case "variable":
-                        if (second.hasOwnProperty(itemName)) {
-                            if (overrideMain || !main[itemName]) {
-                                main[itemName] = second[itemName];
+                        if (source.hasOwnProperty(itemName)) {
+                            if (overrideMain || !receiver[itemName]) {
+                                receiver[itemName] = source[itemName];
                             }
                         }
                         propMap[item.@name.toString()] = item.@type.toString();
@@ -64,10 +65,10 @@ public class Utils {
         }
     }
 
-    public static function substractObjects(main:Object, second:Object):void {
+    public static function substractObjects(receiver:Object, source:Object):void {
         var i:Object;
-        for (i in second) {
-            delete main[i];
+        for (i in source) {
+            delete receiver[i];
         }
     }
 
@@ -122,7 +123,7 @@ public class Utils {
     }
 
     public static function logJsonObject(value:*, channel:* = "logJson"):void {
-        Cc.logch(channel, com.adobe.serialization.json.JSON.encode(value));
+        Cc.logch(channel, ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(value)));
     }
 
     public static function logFuncNameAndArgs(args:*):void {

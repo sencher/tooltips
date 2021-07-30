@@ -44,8 +44,6 @@ import flash.utils.getQualifiedClassName;
  */
 public class LogReferences extends ConsoleCore {
     
-    public static const INSPECTING_CHANNEL:String = "⌂";
-    
     private var _refMap:WeakObject = new WeakObject();
     private var _refRev:Dictionary = new Dictionary(true);
     private var _refIndex:uint = 1;
@@ -240,6 +238,12 @@ public class LogReferences extends ConsoleCore {
                 if (o) {
                     if (str.indexOf("refe_") == 0) {
                         console.explodech(console.panels.mainPanel.reportChannel, o);
+                    } else if (str.indexOf("refj1_") == 0) {
+                        console.jsonch(console.panels.mainPanel.reportChannel, o, 1);
+                    } else if (str.indexOf("refj2_") == 0) {
+                        console.jsonch(console.panels.mainPanel.reportChannel, o, 2);
+                    } else if (str.indexOf("refj4_") == 0) {
+                        console.jsonch(console.panels.mainPanel.reportChannel, o, 4);
                     } else if (str.indexOf("refj_") == 0) {
                         //console.explodech(console.panels.mainPanel.reportChannel, o);
                         console.jsonch(console.panels.mainPanel.reportChannel, o);
@@ -256,8 +260,7 @@ public class LogReferences extends ConsoleCore {
     
     public function focus(o:*, full:Boolean = false):void {
         remoter.send("focus");
-        console.clear(LogReferences.INSPECTING_CHANNEL);
-        console.setViewingChannels(LogReferences.INSPECTING_CHANNEL);
+        handleFocused();
         
         if (!_history) _history = new Array();
         
@@ -272,8 +275,8 @@ public class LogReferences extends ConsoleCore {
     }
     
     private function handleFocused():void {
-        console.clear(LogReferences.INSPECTING_CHANNEL);
-        console.setViewingChannels(LogReferences.INSPECTING_CHANNEL);
+        console.clear(Console.INSPECTING_CHANNEL);
+        console.setViewingChannels(Console.INSPECTING_CHANNEL);
     }
     
     public function exitFocus():void {
@@ -286,7 +289,7 @@ public class LogReferences extends ConsoleCore {
             bytes.writeUTF("refexit");
             remoter.send("ref", bytes);
         }
-        console.clear(LogReferences.INSPECTING_CHANNEL);
+        console.clear(Console.INSPECTING_CHANNEL);
     }
     
     
@@ -309,6 +312,9 @@ public class LogReferences extends ConsoleCore {
             }
             menuStr += "</b> || [<a href='event:ref_" + refIndex + "'>refresh</a>]";
             menuStr += "</b> [<a href='event:refe_" + refIndex + "'>explode</a>]";
+            menuStr += "</b> [<a href='event:refj1_" + refIndex + "'>j1</a>]";
+            menuStr += "</b> [<a href='event:refj2_" + refIndex + "'>j2</a>]";
+            menuStr += "</b> [<a href='event:refj4_" + refIndex + "'>j4</a>]";
             menuStr += "</b> [<a href='event:refj_" + refIndex + "'>json</a>]";
             if (config.commandLineAllowed) {
                 menuStr += " [<a href='event:cl_" + refIndex + "'>scope</a>]";

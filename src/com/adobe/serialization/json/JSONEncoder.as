@@ -33,12 +33,13 @@
 package com.adobe.serialization.json 
 {
 
-	import flash.utils.describeType;
+import flash.utils.describeType;
 
-	public class JSONEncoder {
-	
+public class JSONEncoder {
+		private static const LIMIT:String = "***";
 		/** The string that is going to represent the object we're encoding */
 		private var jsonString:String;
+		private var recursionLimit:int;
 		
 		/**
 		 * Creates a new JSONEncoder.
@@ -48,9 +49,9 @@ package com.adobe.serialization.json
 		 * @playerversion Flash 9.0
 		 * @tiptext
 		 */
-		public function JSONEncoder( value:* ) {
+		public function JSONEncoder( value:*, limit:int ) {
+			recursionLimit = limit;
 			jsonString = convertToString( value );
-		
 		}
 		
 		/**
@@ -72,7 +73,7 @@ package com.adobe.serialization.json
 		 * @param value The value to convert.  Could be any 
 		 *		type (object, number, array, etc)
 		 */
-		private function convertToString( value:* ):String {
+		private function convertToString( value:*, currentLayer:int = 0 ):String {
 			
 			// determine what value is and convert it based on it's type
 			if ( value is String ) {
@@ -91,14 +92,18 @@ package com.adobe.serialization.json
 				return value ? "true" : "false";
 
 			} else if ( value is Array ) {
-			
+				if(currentLayer >= recursionLimit){
+					return LIMIT;
+				}
 				// call the helper method to convert an array
-				return arrayToString( value as Array );
+				return arrayToString( value as Array, ++currentLayer );
 			
 			} else if ( value is Object && value != null ) {
-			
+				if(currentLayer >= recursionLimit){
+					return LIMIT;
+				}
 				// call the helper method to convert an object
-				return objectToString( value );
+				return objectToString( value, ++currentLayer );
 			}
             return "null";
 		}
@@ -189,7 +194,7 @@ package com.adobe.serialization.json
 		 * @param a The array to convert
 		 * @return The JSON string representation of <code>a</code>
 		 */
-		private function arrayToString( a:Array ):String {
+		private function arrayToString( a:Array, currentLayer:int ):String {
 			// create a string to store the array's jsonstring value
 			var s:String = "";
 			
@@ -204,7 +209,7 @@ package com.adobe.serialization.json
 				}
 				
 				// convert the value to a string
-				s += convertToString( a[i] );	
+				s += convertToString( a[i], currentLayer );
 			}
 			
 			// KNOWN ISSUE:  In ActionScript, Arrays can also be associative
@@ -233,7 +238,7 @@ package com.adobe.serialization.json
 		 * @param o The object to convert
 		 * @return The JSON string representation of <code>o</code>
 		 */
-		private function objectToString( o:Object ):String
+		private function objectToString( o:Object, currentLayer:int ):String
 		{
 			// create a string to store the object's jsonstring value
 			var s:String = "";
@@ -268,7 +273,7 @@ package com.adobe.serialization.json
 						s += ","
 					}
 					
-					s += escapeString( key ) + ":" + convertToString( value );
+					s += escapeString( key ) + ":" + convertToString( value,  currentLayer);
 				}
 			}
 			else // o is a class instance
@@ -297,8 +302,18 @@ package com.adobe.serialization.json
 						s += ","
 					}
 					
-					s += escapeString( v.@name.toString() ) + ":" 
-							+ convertToString( o[ v.@name ] );
+					var stringName:String = v.@name.toString();
+					var escString:String = escapeString( stringName );
+					switch (stringName) {
+						case "parent":
+						case "root":
+						case "stage":
+							s += escString + ":" + LIMIT;
+							break;
+						default:
+							s += escString + ":" + convertToString( o[ v.@name ], currentLayer );
+							break;
+					}
 				}
 				
 			}

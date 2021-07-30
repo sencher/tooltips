@@ -55,23 +55,24 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.79;
+    public static const VERSION:Number = 2.80;
     public static const VERSION_STAGE:String = "";
     public static const BUILD:int = 611;
-    public static const BUILD_DATE:String = "22.1.2021";
-    //
+    public static const BUILD_DATE:String = "30.7.2021";
+    
     public static const LOG:uint = 1;
     public static const INFO:uint = 3;
     public static const DEBUG:uint = 6;
     public static const WARN:uint = 8;
     public static const ERROR:uint = 9;
     public static const FATAL:uint = 10;
-    //
+    
     public static const GLOBAL_CHANNEL:String = " * ";
     public static const DEFAULT_CHANNEL:String = "-";
     public static const CONSOLE_CHANNEL:String = "C";
     public static const FILTER_CHANNEL:String = "~";
-    //
+    public static const INSPECTING_CHANNEL:String = "⌂";
+    
     private var _config:ConsoleConfig;
     private var _panels:PanelsManager;
     private var _cl:CommandLine;
@@ -81,7 +82,7 @@ public class Console extends Sprite {
     private var _graphing:Graphing;
     private var _remoter:Remoting;
     private var _tools:ConsoleTools;
-    //
+    
     private var _topTries:int = 50;
     private var _paused:Boolean;
     private var _rollerKey:KeyBind;
@@ -145,6 +146,8 @@ public class Console extends Sprite {
         // must have enterFrame here because user can start without a parent display and use remoting.
         addEventListener(Event.ENTER_FRAME, _onEnterFrame);
         addEventListener(Event.ADDED_TO_STAGE, stageAddedHandle);
+        
+        _panels.mainPanel.setViewingChannels([GLOBAL_CHANNEL]);
     }
     
     private function stageAddedHandle(e:Event = null):void {
@@ -365,8 +368,8 @@ public class Console extends Sprite {
         addLine(new Array(_tools.explode(obj, depth)), 1, channel, false, true);
     }
     
-    public function jsonch(channel:*, obj:Object, depth:int = 3):void {
-        addLine(new Array(_tools.json(obj)), 1, channel, false, true);
+    public function jsonch(channel:*, obj:Object, depth:int = int.MAX_VALUE):void {
+        addLine(new Array(_tools.json(obj, depth)), 1, channel, false, true);
     }
     
     public function get paused():Boolean {

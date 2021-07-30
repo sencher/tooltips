@@ -56,9 +56,9 @@ package com.adobe.serialization.json
 		 * @playerversion Flash 9.0
 		 * @tiptext
 		 */
-		public static function encode( o:Object ):String
+		public static function encode( o:Object, limit:int = 4 ):String
 		{	
-			return new JSONEncoder( o ).getString();
+			return new JSONEncoder( o, limit ).getString();
 		}
 		
 		/**

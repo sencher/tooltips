@@ -111,9 +111,9 @@ public class ConsoleTools extends ConsoleCore {
         if (config.commandLineAllowed) report("Click on the child display's name to set scope.", -2, true, ch);
     }
     
-    public function json(obj:Object):String {
+    public function json(obj:Object, depth:int = int.MAX_VALUE):String {
         try {
-            return com.adobe.serialization.json.JSON.encode(obj);
+            return ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(obj, depth));
         } catch (e:Error) {
             return "Recursive Links Object";
         }
