@@ -30,10 +30,6 @@ class Vector3D {
     }
 
     public function length():Number {
-        var x = Math.pow(xEnd - xStart, 2);
-        var y = Math.pow(yEnd - yStart, 2);
-        var z = Math.pow(zEnd - zStart, 2);
-
         return Math.sqrt(Math.pow(xEnd - xStart, 2) + Math.pow(yEnd - yStart, 2) + Math.pow(zEnd - zStart, 2));
     }
 

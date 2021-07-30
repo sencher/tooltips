@@ -156,7 +156,7 @@ public class Logs extends ConsoleCore {
         var arr:Array = new Array(Console.GLOBAL_CHANNEL);
         addIfexist(Console.DEFAULT_CHANNEL, arr);
         addIfexist(Console.FILTER_CHANNEL, arr);
-        addIfexist(LogReferences.INSPECTING_CHANNEL, arr);
+        addIfexist(Console.INSPECTING_CHANNEL, arr);
         addIfexist(Console.CONSOLE_CHANNEL, arr);
         var others:Array = new Array();
         for (var X:String in _channels) {

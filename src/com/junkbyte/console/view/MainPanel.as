@@ -25,6 +25,7 @@
 package com.junkbyte.console.view {
 import com.junkbyte.console.Cc;
 import com.junkbyte.console.Console;
+import com.junkbyte.console.core.ConsoleUtils;
 import com.junkbyte.console.core.LogReferences;
 import com.junkbyte.console.core.Remoting;
 import com.junkbyte.console.vos.Log;
@@ -405,14 +406,20 @@ public class MainPanel extends ConsolePanel {
         }
     }
     
+    private function viewAll():Boolean{
+        return _priority == 0 && _viewingChannels.indexOf(Console.GLOBAL_CHANNEL) > -1;
+    }
+    
+    private function showChannelTag():Boolean{
+        return _viewingChannels.indexOf(Console.GLOBAL_CHANNEL) > -1 || _viewingChannels.length != 1;
+    }
+    
     private function updateFull():void {
         var text:String = "";
         var line:Log = console.logs.first;
-        var showch:Boolean = _viewingChannels.length != 1;
-        var viewingAll:Boolean = _priority == 0 && _viewingChannels.length == 0;
         while (line) {
-            if (viewingAll || lineShouldShow(line)) {
-                text += makeLine(line, showch);
+            if (viewAll() || lineShouldShow(line)) {
+                text += makeLine(line);
             }
             line = line.next;
         }
@@ -448,16 +455,15 @@ public class MainPanel extends ConsolePanel {
         var maxchars:int = Math.round(_traceField.width * 5 / style.traceFontSize);
         
         var line:Log = console.logs.last;
-        var showch:Boolean = _viewingChannels.length != 1;
         while (line) {
             if (lineShouldShow(line)) {
                 var numlines:int = Math.ceil(line.text.length / maxchars);
                 if (line.html || linesLeft >= numlines) {
-                    text = makeLine(line, showch) + text;
+                    text = makeLine(line) + text;
                 } else {
                     line = line.clone();
                     line.text = line.text.substring(Math.max(0, line.text.length - (maxchars * linesLeft)));
-                    text = makeLine(line, showch) + text;
+                    text = makeLine(line) + text;
                     break;
                 }
                 linesLeft -= numlines;
@@ -487,7 +493,7 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function chShouldShow(ch:String):Boolean {
-        return ((_viewingChannels.length == 0 || _viewingChannels.indexOf(ch) >= 0)
+        return ((_viewingChannels.indexOf(Console.GLOBAL_CHANNEL) > -1 || _viewingChannels.indexOf(ch) > -1)
                 &&
                 (_ignoredChannels.length == 0 || _ignoredChannels.indexOf(ch) < 0));
     }
@@ -508,7 +514,7 @@ public class MainPanel extends ConsolePanel {
             _ignoredChannels.sort();
             return "ignoredChannels_" + _ignoredChannels.toString();
         } else {
-            return "all";
+            return Console.GLOBAL_CHANNEL;
         }
     }
     
@@ -525,24 +531,32 @@ public class MainPanel extends ConsolePanel {
     }
     
     public function setViewingChannels(channels:Array):void {
+//        trace("_viewingChannels",_viewingChannels);
+//        trace("channels",channels);
+        if(ConsoleUtils.areEqual(_viewingChannels, channels)){
+//            trace("skip");
+            return;
+        }
         
-        _scrollStates[channelsKey] = getScrollState();
+        if(channelsKey != Console.INSPECTING_CHANNEL){
+            _scrollStates[channelsKey] = getScrollState();
+        }
         
         var a:Array = new Array();
         for each(var item:Object in channels) {
-            if (item == LogReferences.INSPECTING_CHANNEL) {
+            if (item == Console.INSPECTING_CHANNEL) {
                 _prevViewingChannels = _viewingChannels.concat();
                 _prevIgnoredChannels = _ignoredChannels.concat();
             }
             a.push(Console.MakeChannelName(item));
         }
         
-        if (_viewingChannels[0] == LogReferences.INSPECTING_CHANNEL && (!a || a[0] != _viewingChannels[0])) {
+        if (_viewingChannels[0] == Console.INSPECTING_CHANNEL && (!a || a[0] != _viewingChannels[0])) {
             console.refs.exitFocus();
         }
         _ignoredChannels.splice(0);
         _viewingChannels.splice(0);
-        if (a.indexOf(Console.GLOBAL_CHANNEL) < 0 && a.indexOf(null) < 0) {
+        if (/*a.indexOf(Console.GLOBAL_CHANNEL) < 0 && */a.indexOf(null) < 0) {
             for each(var ch:String in a) {
                 if (ch) _viewingChannels.push(ch);
             }
@@ -576,7 +590,7 @@ public class MainPanel extends ConsolePanel {
         var a:Array = new Array();
         for each(var item:Object in channels) a.push(Console.MakeChannelName(item));
         
-        if (_viewingChannels[0] == LogReferences.INSPECTING_CHANNEL) {
+        if (_viewingChannels[0] == Console.INSPECTING_CHANNEL) {
             console.refs.exitFocus();
         }
         
@@ -640,9 +654,9 @@ public class MainPanel extends ConsolePanel {
         }
     }
     
-    private function makeLine(line:Log, showch:Boolean):String {
+    private function makeLine(line:Log):String {
         var header:String = "<p>";
-        if (showch) {
+        if (showChannelTag()) {
             header += line.chStr;
         }
         if (config.showLineNumber) {
@@ -715,14 +729,11 @@ public class MainPanel extends ConsolePanel {
     }
     
     public function getScrollState():ConsoleScrollState {
-        var state:ConsoleScrollState = new ConsoleScrollState();
-        state.scrollV = _traceField.scrollV;
-        state.scrollPercent = scrollPercent;
-        state.scrollVisible = _scroll.visible;
-        return state;
+        return new ConsoleScrollState(_traceField.scrollV, scrollPercent, _scroll.visible, _atBottom);
     }
     
     public function setScrollState(value:ConsoleScrollState):void {
+        _atBottom = value.atBottom;
         if (value.scrollPercent == 1) {
             updateBottom()
         } else {
@@ -931,10 +942,14 @@ public class MainPanel extends ConsolePanel {
         var channels:Array = console.logs.getChannels();
         var len:int = channels.length;
         if (limited && len > style.maxChannelsInMenu) len = style.maxChannelsInMenu;
-        var filtering:Boolean = _viewingChannels.length > 0 || _ignoredChannels.length > 0;
         for (var i:int = 0; i < len; i++) {
             var channel:String = channels[i];
-            var channelTxt:String = ((!filtering && i == 0) || (filtering && i != 0 && chShouldShow(channel))) ? "<ch><b>" + channel + "</b></ch>" : channel;
+            var channelTxt:String;
+            if (chShouldShow(channel)) {
+                channelTxt = "<ch><b>" + channel + "</b></ch>";
+            }else{
+                channelTxt = channel;
+            }
             str += "<a href=\"event:channel_" + channel + "\">[" + channelTxt + "]</a> ";
         }
         if (limited) {
@@ -964,7 +979,7 @@ public class MainPanel extends ConsolePanel {
         } else if (txt == "channel_" + Console.FILTER_CHANNEL) {
             txt = _filterRegExp ? String(_filterRegExp) : _filterText;
             txt = "Filtering channel" + "::*" + txt + "*";
-        } else if (txt == "channel_" + LogReferences.INSPECTING_CHANNEL) {
+        } else if (txt == "channel_" + Console.INSPECTING_CHANNEL) {
             txt = "Inspecting channel";
         } else if (txt.indexOf("channel_") == 0) {
             txt = "Change channel::shift: select multiple\nctrl: ignore channel";
@@ -1082,7 +1097,7 @@ public class MainPanel extends ConsolePanel {
         if (_ctrl && chn != Console.GLOBAL_CHANNEL) {
             current = toggleCHList(_ignoredChannels, chn);
             setIgnoredChannels(current);
-        } else if (_shift && chn != Console.GLOBAL_CHANNEL && _viewingChannels[0] != LogReferences.INSPECTING_CHANNEL) {
+        } else if (_shift && chn != Console.GLOBAL_CHANNEL && _viewingChannels[0] != Console.INSPECTING_CHANNEL) {
             current = toggleCHList(_viewingChannels, chn);
             setViewingChannels(current);
         } else {
