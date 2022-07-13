@@ -51,8 +51,12 @@ public class Utils {
             for each (item in list) {
                 var itemType:String = item.name().toString();
                 var itemName:String = item.@name.toString();
+                var itemAccess:String = item.@access.toString();
+                if(itemName == "metaData" || (itemType == "accessor" && itemAccess != "readwrite")) continue;
+                
                 switch (itemType) {
                     case "variable":
+                    case "accessor":
                         if (source.hasOwnProperty(itemName)) {
                             if (overrideMain || !receiver[itemName]) {
                                 receiver[itemName] = source[itemName];
@@ -97,11 +101,11 @@ public class Utils {
         var result:* = new _class();
 
         for (var prop:String in propMap) {
-//            if(propMap[prop] == "Array" || propMap[prop] == "Object"){
-//                result[prop] = clone(source[prop]);
-//            }else {
+            if(propMap[prop] == "Array" || propMap[prop] == "Object"){
+                result[prop] = clone(source[prop]);
+            }else {
                 result[prop] = source[prop];
-//            }
+            }
         }
         return result;
     }
@@ -123,7 +127,7 @@ public class Utils {
     }
 
     public static function logJsonObject(value:*, channel:* = "logJson"):void {
-        Cc.logch(channel, ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(value)));
+        Cc.logc(channel, ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(value)));
     }
 
     public static function logFuncNameAndArgs(args:*):void {

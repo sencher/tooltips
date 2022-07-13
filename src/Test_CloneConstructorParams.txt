@@ -1,0 +1,96 @@
+https://coderedirect.com/questions/404287/as3-knowing-how-many-arguments-a-function-takes
+
+
+
+Its not a "bug", but the documentation for call and apply is very misleading and doesn't do a good job at all of explaining whats going on. So here is an explaination of what is happening.
+
+Methods are different from Functions in ActionScript. Methods are defined as a part of a class defintion, and methods are always bound to that instance. See the Methods second of this link. To quote from there:
+
+Methods are functions that are part of a class definition. Once an instance of the class is created, a method is bound to that instance. Unlike a function declared outside a class, a method cannot be used apart from the instance to which it is attached.
+
+So when you make a new instance of MyObj, all of its methods are bound to that instance. Which is why when you try to use call or apply, you aren't seeing this getting overridden. See the section on Bound Methods for details.
+
+See, this document for an explanation of the traits object, which actionscript uses to resolve methods and used for performance reasons behind the scenes is probably to blame. That or class methods are just syntactic sugar for the following ECMAScript pattern:
+
+var TestClass = function(data) {
+    var self = this;
+    this.data = data;
+    this.boundWork = function() {
+        return self.constructor.prototype.unboundWork.apply(self, arguments);
+    };
+};
+
+TestClass.prototype.unboundWork = function() {
+    return this.data;
+};
+Then:
+
+var a = new TestClass("a");
+var b = new TestClass("b");
+
+alert(a.boundWork()); // a
+alert(b.boundWork()); // b
+
+alert(a.unboundWork()); // a
+alert(b.unboundWork()); // b
+
+alert(a.boundWork.call(b)); // a
+alert(a.boundWork.call(undefined)); // a
+
+alert(a.unboundWork.call(b)); // b
+or even more interesting:
+
+var method = a.unboundWork;
+method() // undefined. ACK!
+Vs:
+
+method = a.boundWork;
+method() // a. TADA MAGIC!
+Notice that boundWork will always get executed in the context of the instance it belongs to, no matter what you pass in for this with call or apply. Which, in ActionScript, this behavior is exactly why class methods are bound to their instance. So no matter where they are used, they still point at the instance they came from (which makes the actionscript event model a little more "sane"). Once you understand this, then a work-around should become obvious.
+
+For places where you want to do some magic, avoid the ActionScript 3 based hard-bound methods in favor of prototype functions.
+
+For example, consider the following ActionScript code:
+
+package
+{
+    import flash.display.Sprite;
+    public class FunctionApplyTest extends Sprite
+    {
+        public function FunctionApplyTest()
+        {
+            var objA:MyObj = new MyObj("A");
+            var objB:MyObj = new MyObj("B");
+
+            objA.sayName();
+            objB.sayName();
+
+            objA.sayName.apply(objB, []); // a
+            objA.sayName.call(objB); // a
+
+            objA.pSayName.call(objB) // b <---
+        }
+    }
+}
+
+internal dynamic class MyObj
+{
+    private var _name:String;
+    public function MyObj(name:String)
+    {
+        _name = name;
+    }
+    public function sayName():void
+    {
+        trace(_name);
+    }
+
+    prototype.pSayName = function():void {
+        trace(this._name);
+    };
+}
+Notice the declaration difference between sayName and pSayName. sayName will always be bound to the instance it was created for. pSayName is a function that is available to instances of MyObj but is not bound to a particular instance of it.
+
+The documentation for call and apply are technically correct, as long as you are talking about prototypical functions and not class methods, which I don't think it mentions at all.
+
+Tuesday, August 3, 2021

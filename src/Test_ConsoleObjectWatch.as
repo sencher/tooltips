@@ -40,8 +40,8 @@ public class Test_ConsoleObjectWatch extends Sprite {
 //        Cc.log(mc2);
 
 
-        Cc.warnchw(this, "asd",o, "o:" + o);
-        Cc.warnchw(this, "asd",com.adobe.serialization.json.JSON.encode(o), "o:" + com.adobe.serialization.json.JSON.encode(o));
+        Cc.warncw(this, "asd",o, "o:" + o);
+        Cc.warncw(this, "asd",com.adobe.serialization.json.JSON.encode(o), "o:" + com.adobe.serialization.json.JSON.encode(o));
         Utils.logJsonObject(o);
         o.i = 999;
         Cc.log(o);

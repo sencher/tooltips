@@ -103,9 +103,9 @@ public class Test_SerializeRecursive extends Sprite {
     
     private function unitTest(correctAnswer:*, result:*):void{
         if(correctAnswer == result){
-            Cc.logch("test", correctAnswer);
+            Cc.logc("test", correctAnswer);
         }else {
-            Cc.errorch("test", correctAnswer, result);
+            Cc.errorc("test", correctAnswer, result);
         }
     }
 }

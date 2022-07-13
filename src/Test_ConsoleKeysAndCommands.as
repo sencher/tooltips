@@ -34,7 +34,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         box.y = 250;
         addChild(box);
 
-        Cc.warnchw(this);
+        Cc.warncw(this);
         Cc.log(this);
 
         var str:String = "this";
@@ -65,7 +65,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
 
     public function f2(value1:int, value2:String):* {
         Cc.log("f2 called", value1, value2, arguments);
-        Cc.warnchw(this, "sdadfdsf##5555")
+        Cc.warncw(this, "sdadfdsf##5555")
         return value1;
     }
 

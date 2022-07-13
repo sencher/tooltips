@@ -26,7 +26,7 @@ public class Test_ConsoleGarbareCollector extends Sprite {
         
 //        Cc.logchwj("ch", "func", {a:1},{b:2},{c:3},{d:4},{e:5},{f:6},{g:7})
 //        Cc.logchwj("ch", "func", new MovieClip(),new MovieClip(),new MovieClip());
-        Cc.logchwj("ch", "func", a,b,c,d);
+        Cc.logcwj("ch", "func", a,b,c,d);
         Cc.explodech("ch",a,1);
         Cc.explodech("ch",a,3);
         Cc.explodech("ch",a,5);
