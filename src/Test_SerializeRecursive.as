@@ -85,14 +85,14 @@ public class Test_SerializeRecursive extends Sprite {
         unitTest(5, ConsoleUtils.untilComma("false,rer"));
         unitTest(8, ConsoleUtils.untilComma("falserer"));
         
-        unitTest(9, ConsoleUtils.findClose("{{{}}{{}}}"));
-        unitTest(1, ConsoleUtils.findClose("{}{}"));
-        unitTest(7, ConsoleUtils.findClose("{{{}{}}}{}"));
-        unitTest(-1, ConsoleUtils.findClose("{{{}}{{}}"));
-        unitTest(12, ConsoleUtils.findClose("[[a][b][c]{}]"));
-        unitTest(8, ConsoleUtils.findClose("[[a,b,c]][[a][b][c]{}]"));
-        unitTest(12, ConsoleUtils.findClose("{[[a,b,c]]{}}[[a][b][c]{}]"));
-        unitTest(9, ConsoleUtils.findClose("{[]{[]}[]}[[{}{}]]"));
+        unitTest(9, ConsoleUtils.findClosePair("{{{}}{{}}}"));
+        unitTest(1, ConsoleUtils.findClosePair("{}{}"));
+        unitTest(7, ConsoleUtils.findClosePair("{{{}{}}}{}"));
+        unitTest(-1, ConsoleUtils.findClosePair("{{{}}{{}}"));
+        unitTest(12, ConsoleUtils.findClosePair("[[a][b][c]{}]"));
+        unitTest(8, ConsoleUtils.findClosePair("[[a,b,c]][[a][b][c]{}]"));
+        unitTest(12, ConsoleUtils.findClosePair("{[[a,b,c]]{}}[[a][b][c]{}]"));
+        unitTest(9, ConsoleUtils.findClosePair("{[]{[]}[]}[[{}{}]]"));
     
         TweenLite.delayedCall(1, init,null,true);
     }

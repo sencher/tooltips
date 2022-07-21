@@ -1,11 +1,12 @@
 package {
 
 import com.junkbyte.console.Cc;
+import com.junkbyte.console.core.ConsoleUtils;
 
 import flash.display.Sprite;
 import flash.text.TextField;
 
-[SWF(width="800", height="400")]
+[SWF(width="800", height="800")]
 public class Test_Console extends Sprite {
     
     private var tf:TextField = new TextField();
@@ -16,8 +17,8 @@ public class Test_Console extends Sprite {
         Cc.visible = true;
         Cc.config.commandLineAllowed = true;
         Cc.config.commandLineAutoScope = true;
-        Cc.width = 800;
-        Cc.height = 300;
+        Cc.width = stage.stageWidth;
+        Cc.height = stage.stageHeight;
         Cc.commandLine = true;
         
         tf.border = true;
@@ -31,15 +32,18 @@ public class Test_Console extends Sprite {
         
         var o = {a:1,b:2,c:3}
         var a = ["a",17,{kk:"gg"}]
+        var a2 = ["a",17,{kk:"gg", zz:{zalupa:"konya"},data:[{ebana:"v rot", mars:"snickers",e:4},{aha:"cool"}]},14,4];
         var a3:Array = [[4,6], [2,8]];
-//        Cc.logcw(this, o);
-//        Cc.logcwj(this, o);
-//        Cc.logcw(this, a);
-        Cc.logcwj(this, []);
-        Cc.logcwj(this, [[1,7]]);
-        Cc.logcwj(this, a);
-        Cc.logcwj(this, a3);
-        trace(JSON.stringify(a3, "a", "b"))
+        Cc.logj( []);
+        Cc.logj( [[1,7]]);
+        Cc.logj( o);
+        Cc.logj( a);
+        Cc.logj( a2);
+        Cc.logj( a3);
+        //trace(JSON.stringify(a3, "a", "b"));
+        
+//        Cc.log(ConsoleUtils.formatJsonString("[\"a\",17,{kk:\"gg\", zz:{zalupa:\"konya\"},data:[{ebana:\"v rot\", mars:\"snickers\",e:4}]}]"));
+//        Cc.log(ConsoleUtils.formatJsonString("[\"a\",17,{kk:\"gg\", zz:{zalupa:\"konya\"},data:[{ebana:\"v rot\", mars:\"snickers\",e:4}]}]"));
     }
 }
 }
