@@ -7,6 +7,7 @@ public class Dummy {
     public function Dummy(id:int, type:String) {
         this.id = id;
         this.type = type;
+        trace(this, "created!");
     }
     
     public function toString():String {
