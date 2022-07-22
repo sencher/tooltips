@@ -17,6 +17,7 @@ public class Test_ConsoleChannels extends Sprite {
         Cc.visible = true;
         Cc.height = 600;
         Cc.width = 500;
+        Cc.config.tracingLevel = 1;
 
         Cc.log("init");
         var i:int;
