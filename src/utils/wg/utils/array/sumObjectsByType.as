@@ -2,8 +2,15 @@ package utils.wg.utils.array
 {
 	import flash.utils.getDefinitionByName;
 	import flash.utils.getQualifiedClassName;
-	
-	import wowp.utils.data.ioc.UnitInjector;
+
+import utils.wg.utils.data.ioc.UnitInjector;
+
+import utils.wg.utils.object.deepCopy;
+
+import utils.wg.utils.object.getPropByPath;
+import utils.wg.utils.object.setPropByPath;
+
+import wowp.utils.data.ioc.UnitInjector;
 	import wowp.utils.object.deepCopy;
 	import wowp.utils.object.getPropByPath;
 	import wowp.utils.object.setPropByPath;

@@ -32,11 +32,11 @@ public class Test_ConsoleChannels extends Sprite {
 //	    Cc.config.tracing = true;
      
         Cc.log("log");
-        Cc.logch("logch", "logch");
-        Cc.logchw(this, "logchw", "logchw");
+        Cc.logc("logch", "logch");
+        Cc.logcw(this, "logchw", "logchw");
         Cc.warn("warn");
-        Cc.warnch("warnch", "warnch");
-	    Cc.warnchw(this, "warnchw", "warnchw");
+        Cc.warnc("warnch", "warnch");
+	    Cc.warncw(this, "warnchw", "warnchw");
      
 //      var s:String = "<menu><a href='event:ref_1'>[Stack]</a></menu> warnchw";
 //	    var pattern:RegExp = /event:.*_(.*)'/g;
@@ -69,11 +69,11 @@ public class Test_ConsoleChannels extends Sprite {
 	}
 	
 	private function f2():void {
-		Cc.warnchw("warnchw","warnchw2");
+		Cc.warncw("warnchw","warnchw2");
 	}
     
     private function addRandomLineInRandonChannel(event:Event = null):void{
-        Cc.logch("window"+Utils.getRandom(1,3), ++counter, {s: Utils.generateRandomString(Utils.getRandom(3,16))});
+        Cc.logc("window"+Utils.getRandom(1,3), ++counter, {s: Utils.generateRandomString(Utils.getRandom(3,16))});
     }
 }
 }

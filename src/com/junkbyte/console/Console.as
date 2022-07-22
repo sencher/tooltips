@@ -42,6 +42,7 @@ import flash.events.ErrorEvent;
 import flash.events.Event;
 import flash.events.IEventDispatcher;
 import flash.events.KeyboardEvent;
+import flash.external.ExternalInterface;
 import flash.geom.Rectangle;
 import flash.net.SharedObject;
 import flash.system.Capabilities;
@@ -55,10 +56,7 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.80;
-    public static const VERSION_STAGE:String = "";
-    public static const BUILD:int = 611;
-    public static const BUILD_DATE:String = "30.7.2021";
+    public static const VERSION:Number = 2.81;
     
     public static const LOG:uint = 1;
     public static const INFO:uint = 3;
@@ -85,6 +83,7 @@ public class Console extends Sprite {
     
     private var _topTries:int = 50;
     private var _paused:Boolean;
+    private var _stopped:Boolean;
     private var _rollerKey:KeyBind;
     private var _logs:Logs;
     
@@ -124,6 +123,7 @@ public class Console extends Sprite {
         
         cl.addCLCmd("refs", printRefMap, "Show references");
         cl.addCLCmd("d", debugMode, "Set debug mode");
+        cl.addCLCmd("c", callExternalInterface, "Call ExternalInterface");
         
         if (_config.sharedObjectName) {
             try {
@@ -141,7 +141,7 @@ public class Console extends Sprite {
         
         
         //report("<b>Console v"+VERSION+VERSION_STAGE+" b"+BUILD+". Happy coding!</b>", -2);
-        report("<b>Console v" + VERSION + VERSION_STAGE + "</b> build " + BUILD + ". " + Capabilities.playerType + " " + Capabilities.version + ".", -2);
+        report("<b>Console v" + VERSION + ". " + Capabilities.playerType + " " + Capabilities.version + ".", -2);
         
         // must have enterFrame here because user can start without a parent display and use remoting.
         addEventListener(Event.ENTER_FRAME, _onEnterFrame);
@@ -376,11 +376,23 @@ public class Console extends Sprite {
         return _paused;
     }
     
+    public function get stopped():Boolean {
+        return _stopped;
+    }
+    
     public function set paused(newV:Boolean):void {
         if (_paused == newV) return;
         if (newV) report("Paused", 10);
         else report("Resumed", -1);
         _paused = newV;
+        _panels.mainPanel.setPaused(newV);
+    }
+    
+    public function set stopped(newV:Boolean):void {
+        if (_stopped == newV) return;
+        if (newV) report("Stopped", 10);
+        else report("Resumed", -1);
+        _stopped = newV;
         _panels.mainPanel.setPaused(newV);
     }
     
@@ -428,7 +440,7 @@ public class Console extends Sprite {
     //
     //
     private function _onEnterFrame(e:Event):void {
-        if(_paused) return;
+        //if(_paused) return;
 
         var time:int = getTimer();
         _logs.update(time);
@@ -510,6 +522,7 @@ public class Console extends Sprite {
     }
     
     public function addLine(strings:Array, priority:int = 0, channel:* = null, isRepeating:Boolean = false, html:Boolean = false, stacks:int = -1):void {
+        if(_stopped) return;
         var txt:String = "";
         var len:int = strings.length;
         for (var i:int = 0; i < len; i++) {
@@ -622,42 +635,42 @@ public class Console extends Sprite {
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#logch()
+     * @copy com.junkbyte.console.Cc#logc()
      */
     public function logch(channel:*, ...strings):void {
         addLine(strings, LOG, channel);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#infoch()
+     * @copy com.junkbyte.console.Cc#infoc()
      */
     public function infoch(channel:*, ...strings):void {
         addLine(strings, INFO, channel);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#debugch()
+     * @copy com.junkbyte.console.Cc#debugc()
      */
     public function debugch(channel:*, ...strings):void {
         addLine(strings, DEBUG, channel);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#warnch()
+     * @copy com.junkbyte.console.Cc#warnc()
      */
     public function warnch(channel:*, ...strings):void {
         addLine(strings, WARN, channel);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#errorch()
+     * @copy com.junkbyte.console.Cc#errorc()
      */
     public function errorch(channel:*, ...strings):void {
         addLine(strings, ERROR, channel);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#fatalch()
+     * @copy com.junkbyte.console.Cc#fatalc()
      */
     public function fatalch(channel:*, ...strings):void {
         addLine(strings, FATAL, channel);
@@ -702,7 +715,7 @@ public class Console extends Sprite {
      */
     public function clear(channel:String = null):void {
         _logs.clear(channel);
-        if (!_paused) _panels.mainPanel.updateToBottom();
+        if (!_paused && !_stopped) _panels.mainPanel.updateToBottom();
         _panels.updateMenu();
     }
     
@@ -755,6 +768,11 @@ public class Console extends Sprite {
         }
         Cc.DEBUG_MODE = value;
         log("DEBUG_MODE set to " + value);
+    }
+    
+    public function callExternalInterface(value:String, ...rest):void{
+        Cc.log(value, rest)
+        ExternalInterface.call(value);
     }
 
     public function printRefMap(value:*):void {

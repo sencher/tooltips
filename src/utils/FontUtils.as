@@ -196,7 +196,7 @@ public class FontUtils {
 //        }
 
         if (initFontHasGlyphs < 1) {
-            Cc.logch("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
+            Cc.logc("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
             var futureFormat:TextFormat = GamuaFloxUtils.cloneObject(initFormat);
             var fixedFont:Font = getFixedFont(futureFormat, initFontHasGlyphs == 0);
             if (fixedFont) {
@@ -209,7 +209,7 @@ public class FontUtils {
                     if(debug) {
                         tf.backgroundColor = YELLOW;
                     }
-                    Cc.errorch("fixedFont", futureFormat.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
+                    Cc.errorc("fixedFont", futureFormat.font, "|", str, tf.name, missingGlyphs(fixedFont, stringForCheck));
                 }else if(debug) {
                     tf.backgroundColor = BLUE;
                 }
@@ -217,7 +217,7 @@ public class FontUtils {
                 if(debug) {
                     tf.backgroundColor = ORANGE;
                 }
-                Cc.errorch("fixedFont", "No font", initFormat.font, initFormat.bold, "|", tf.name, tf.text);
+                Cc.errorc("fixedFont", "No font", initFormat.font, initFormat.bold, "|", tf.name, tf.text);
             }
         }else if(debug) {
             tf.backgroundColor = GREEN;
@@ -242,7 +242,7 @@ public class FontUtils {
         }
 
         if (d || stringForCheck.length && !tf.textWidth) {
-            Cc.errorch("fixedFont", "Empty glyphs", tf.defaultTextFormat.font, initFormat.bold, "|", tf.name, tf.text);
+            Cc.errorc("fixedFont", "Empty glyphs", tf.defaultTextFormat.font, initFormat.bold, "|", tf.name, tf.text);
             if(debug) {
                 tf.backgroundColor = RED;
             }

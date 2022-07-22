@@ -188,7 +188,7 @@ public class HangarWindowController {
     }
     
     public function open(payload:Object = null):void {
-        Cc.logchw(this, "open", payload);
+        Cc.logcw(this, "open", payload);
         var token:HangarWindowControllerToken = new HangarWindowControllerToken();
         var injector:IUnitInjector = null;
         if (payload != null) {
@@ -232,7 +232,7 @@ public class HangarWindowController {
      * открывает окно. если оно небыло загружено, то грузим его
      */
     private function openWindow(injector:IUnitInjector):void {
-        Cc.logchw(this, "openWindow", injector);
+        Cc.logcw(this, "openWindow", injector);
         trace("HangarWindowController::open", getContentName());
         _injector = injector;
         

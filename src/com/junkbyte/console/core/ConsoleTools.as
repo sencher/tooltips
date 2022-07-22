@@ -194,28 +194,28 @@ public class ConsoleTools extends ConsoleCore {
     }
     
     
-    public function whoCalledThis(depth:int = 100):String {
-        var e:Error = new Error();
-        var stackTrace:String = e.getStackTrace();
-        var lines:Array = stackTrace.split("\n\t");
-        var cut:Array = lines.slice(3, 3 + depth);
-        var s:String;
-        var r:String = "";
-    
-        for each (s in cut) {
-            r += cutLongNames(s) + "\n";
-        }
-    
-        function cutLongNames(value:String):String{
-            var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
-            if(o && o[2] && o[4]){
-                return o[2] + "__" + o[4];
-            }else {
-                return "cutLongNames null";
-            }
-        }
-        
-        return cut.length ? r += "*************" : r;
-    }
+//    public function whoCalledThis(depth:int = 100):String {
+//        var e:Error = new Error();
+//        var stackTrace:String = e.getStackTrace();
+//        var lines:Array = stackTrace.split("\n\t");
+//        var cut:Array = lines.slice(3, 3 + depth);
+//        var s:String;
+//        var r:String = "";
+//
+//        for each (s in cut) {
+//            r += cutLongNames(s) + "\n";
+//        }
+//
+//        function cutLongNames(value:String):String{
+//            var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
+//            if(o && o[2] && o[4]){
+//                return o[2] + "__" + o[4];
+//            }else {
+//                return "cutLongNames null";
+//            }
+//        }
+//
+//        return cut.length ? r += "*************" : r;
+//    }
 }
 }

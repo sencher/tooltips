@@ -23,6 +23,9 @@
 * 
 */
 package com.junkbyte.console {
+
+import com.junkbyte.console.core.ConsoleUtils;
+
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
@@ -151,7 +154,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
      */
     public static function log(...strings):void {
-        if (_console) _console.log.apply(null, strings);
+        addLine(strings, Console.LOG);
     }
     
     /**
@@ -161,8 +164,8 @@ public class Cc {
      * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function logch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.LOG);
+    public static function logc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.LOG);
     }
     
     /**
@@ -172,10 +175,30 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
      */
     public static function logw(...strings):void {
-        if (!_console) return;
-        var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(Console.DEFAULT_CHANNEL, strings, Console.LOG, false, true);
+        addWithStack(strings, Console.LOG);
+    }
+    
+    public static function logj(...strings):void {
+        addJson(strings, Console.LOG);
+    }
+    
+    /**
+     * Add log line with priority 1 to channel with whoCalledThis.<br>
+     * Allows multiple arguments for convenience use.
+     *
+     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
+     */
+    public static function logcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.LOG);
+    }
+    
+    public static function logcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.LOG);
+    }
+    
+    public static function logwj(...strings):void {
+        addWithStackJson(strings, Console.LOG);
     }
     
     /**
@@ -186,31 +209,8 @@ public class Cc {
      * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function logchwj(channel:*, ...strings):void {
-        if (!_console) return;
-        for (var i:int = 0; i < strings.length; i++) {
-            var currentElement:* = strings[i];
-            if (currentElement is String == false) {
-                strings[i] = _console.mapper.json(currentElement) + "\n\n";
-            }
-        }
-        var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(channel, strings, Console.LOG, false, true);
-    }
-    
-    /**
-     * Add log line with priority 1 to channel with whoCalledThis.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function logchw(channel:*, ...strings):void {
-        if (!_console) return;
-        var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(channel, strings, Console.LOG, false, true);
+    public static function logcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.LOG);
     }
     
     /**
@@ -220,47 +220,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
      */
     public static function info(...strings):void {
-        if (_console) _console.info.apply(null, strings);
-    }
-    
-    /**
-     * Add log line with priority 5
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function debug(...strings):void {
-        if (_console) _console.debug.apply(null, strings);
-    }
-    
-    /**
-     * Add log line with priority 7
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function warn(...strings):void {
-        if (_console) _console.warn.apply(null, strings);
-    }
-    
-    /**
-     * Add log line with priority 9
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function error(...strings):void {
-        if (_console) _console.error.apply(null, strings);
-    }
-    
-    /**
-     * Add log line with priority 10
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function fatal(...strings):void {
-        if (_console) _console.fatal.apply(null, strings);
+        addLine(strings, Console.INFO);
     }
     
     /**
@@ -270,8 +230,49 @@ public class Cc {
      * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function infoch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.INFO);
+    public static function infoc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.INFO);
+    }
+    
+    public static function infow(...strings):void {
+        addWithStack(strings, Console.INFO);
+    }
+    
+    public static function infoj(...strings):void {
+        addJson(strings, Console.INFO);
+    }
+    
+    /*
+     * Add log line with priority 3 to channel with whoCalledThis
+     * Allows multiple arguments for convenience use.
+     *
+     * @param channel	Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
+     * @param ...strings	Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
+     */
+    public static function infocw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.INFO);
+    }
+    
+    public static function infocj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.INFO);
+    }
+    
+    public static function infowj(...strings):void {
+        addWithStackJson(strings, Console.INFO);
+    }
+    
+    public static function infocwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.INFO);
+    }
+    
+    /**
+     * Add log line with priority 5
+     * Allows multiple arguments for convenience use.
+     *
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
+     */
+    public static function debug(...strings):void {
+        addLine(strings, Console.DEBUG);
     }
     
     /**
@@ -281,8 +282,42 @@ public class Cc {
      * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function debugch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.DEBUG);
+    public static function debugc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.DEBUG);
+    }
+    
+    public static function debugw(...strings):void {
+        addWithStack(strings, Console.DEBUG);
+    }
+    
+    public static function debugj(...strings):void {
+        addJson(strings, Console.DEBUG);
+    }
+    
+    public static function debugcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.DEBUG);
+    }
+    
+    public static function debugcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.DEBUG);
+    }
+    
+    public static function debugwj(...strings):void {
+        addWithStackJson(strings, Console.DEBUG);
+    }
+    
+    public static function debugcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.DEBUG);
+    }
+    
+    /**
+     * Add log line with priority 7
+     * Allows multiple arguments for convenience use.
+     *
+     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
+     */
+    public static function warn(...strings):void {
+        addLine(strings, Console.WARN);
     }
     
     /**
@@ -292,8 +327,16 @@ public class Cc {
      * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function warnch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.WARN);
+    public static function warnc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.WARN);
+    }
+    
+    public static function warnw(...strings):void {
+        addWithStack(strings, Console.WARN);
+    }
+    
+    public static function warnj(...strings):void {
+        addJson(strings, Console.WARN);
     }
     
     /*
@@ -303,61 +346,133 @@ public class Cc {
      * @param channel	Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
      * @param ...strings	Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
-    public static function warnchw(channel:*, ...strings):void {
+    public static function warncw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.WARN);
+    }
+    
+    public static function warncj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.WARN);
+    }
+    
+    public static function warnwj(...strings):void {
+        addWithStackJson(strings, Console.WARN);
+    }
+    
+    public static function warncwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.WARN);
+    }
+    
+    public static function error(...strings):void {
+        addLine(strings, Console.ERROR);
+    }
+    
+    public static function errorc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.ERROR);
+    }
+    
+    public static function errorw(...strings):void {
+        addWithStack(strings, Console.ERROR);
+    }
+    
+    public static function errorj(...strings):void {
+        addJson(strings, Console.ERROR);
+    }
+    
+    public static function errorcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.ERROR);
+    }
+    
+    public static function errorcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.ERROR);
+    }
+    
+    public static function errorwj(...strings):void {
+        addWithStackJson(strings, Console.ERROR);
+    }
+    
+    public static function errorcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.ERROR);
+    }
+    
+    public static function fatal(...strings):void {
+        addLine(strings, Console.FATAL);
+    }
+    
+    public static function fatalc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.FATAL);
+    }
+    
+    public static function fatalw(...strings):void {
+        addWithStack(strings, Console.FATAL);
+    }
+    
+    public static function fatalj(...strings):void {
+        addJson(strings, Console.FATAL);
+    }
+    
+    public static function fatalcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.FATAL);
+    }
+    
+    public static function fatalcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.FATAL);
+    }
+    
+    public static function fatalwj(...strings):void {
+        addWithStackJson(strings, Console.FATAL);
+    }
+    
+    public static function fatalcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.FATAL);
+    }
+    
+    private static function addLine(strings:Array, priority:int):void{
+        if (_console) _console.addLine(strings, priority);
+    }
+    
+    private static function addToChannel(channel:*, strings:Array, priority:int):void{
+        if (_console) _console.addCh(channel, strings, priority, false, true);
+    }
+    
+    private static function addWithStack(strings:Array, priority:int):void{
         if (!_console) return;
-        var stack:String = _console.mapper.whoCalledThis();
+        var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(channel, strings, Console.WARN, false, true);
+        _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
     }
     
-    /**
-     * Add log line with priority 9 to channel
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function errorch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.ERROR);
-    }
-    
-    /**
-     * Add log line with priority 9 to channel with whoCalledThis
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function errorchw(channel:*, ...strings):void {
+    private static function addJson(strings:Array, priority:int):void{
         if (!_console) return;
-        var stack:String = _console.mapper.whoCalledThis();
-        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(channel, strings, Console.ERROR, false, true);
+        _console.addCh(Console.DEFAULT_CHANNEL, toJson.apply(null, strings), priority, false, true);
     }
     
-    /**
-     * Add log line with priority 10 to channel
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function fatalch(channel:*, ...strings):void {
-        if (_console) _console.addCh(channel, strings, Console.FATAL);
-    }
-    
-    /**
-     * Add log line with priority 10 to channel with whoCalledThis
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function fatalchw(channel:*, ...strings):void {
+    private static function addToChannelWithStack(channel:*, strings:Array, priority:int):void{
         if (!_console) return;
-        var stack:String = _console.mapper.whoCalledThis();
+        var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
-        _console.addCh(channel, strings, Console.FATAL, false, true);
+        _console.addCh(channel, strings, priority, false, true);
+    }
+    
+    private static function addToChannelJson(channel:*, strings:Array, priority:int):void{
+        if (!_console) return;
+        strings = toJson.apply(null, strings);
+        _console.addCh(channel, strings, priority, false, true);
+    }
+    
+    private static function addWithStackJson(strings:Array, priority:int):void{
+        if (!_console) return;
+        strings = toJson.apply(null, strings);
+        var stack:String = ConsoleUtils.whoCalledThis();
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
+        _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
+    }
+    
+    private static function addToChannelWithStackJson(channel:*, strings:Array, priority:int):void{
+        if (!_console) return;
+        strings = toJson.apply(null, strings);
+        var stack:String = ConsoleUtils.whoCalledThis();
+        if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
+        _console.addCh(channel, strings, priority, false, true);
     }
     
     /**
@@ -1036,6 +1151,17 @@ public class Cc {
     
     public static function setScale(value:Number):void {
         if (_console) _console.scaleX = _console.scaleY = value;
+    }
+    
+    public static function toJson(...strings):Array{
+        for (var i:int = 0; i < strings.length; i++) {
+            var currentElement:* = strings[i];
+            if (currentElement is String == false) {
+                var t:String = _console.mapper.json(currentElement) + "\n\n";
+                strings[i] = t;
+            }
+        }
+        return strings;
     }
 }
 }

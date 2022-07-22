@@ -434,10 +434,19 @@ public class MainPanel extends ConsolePanel {
         updateScroller();
     }
     
-    /**
-     * @private
-     */
     public function setPaused(b:Boolean):void {
+        if (b && _atBottom) {
+            _atBottom = false;
+            _updateTraces();
+            _traceField.scrollV = _traceField.maxScrollV;
+        } else if (!b) {
+            _atBottom = true;
+            updateBottom();
+        }
+        updateMenu();
+    }
+    
+    public function setStopped(b:Boolean):void {
         if (b && _atBottom) {
             _atBottom = false;
             _updateTraces();
@@ -926,6 +935,7 @@ public class MainPanel extends ConsolePanel {
             str += " <a href=\"event:copy\">Sv</a>";
             str += " <a href=\"event:priority\">P" + _priority + "</a>";
             str += doActive(" <a href=\"event:pause\">P</a>", console.paused);
+            str += doActive(" <a href=\"event:stop\">S</a>", console.stopped);
             str += " <a href=\"event:clear\">C</a> <a href=\"event:close\">X</a> <a href=\"event:hide\">›</a>";
         }
         str += " </b></menu></high></r>";
@@ -985,7 +995,10 @@ public class MainPanel extends ConsolePanel {
             txt = "Change channel::shift: select multiple\nctrl: ignore channel";
         } else if (txt == "pause") {
             if (console.paused) txt = "Resume updates";
-            else txt = "Pause updates";
+            else txt = "Pause updates, they will appear after unpause";
+        } else if (txt == "stop") {
+            if (console.stopped) txt = "Resume updates";
+            else txt = "Stop updates, they will be discarded";
         } else if (txt == "close" && src == this) {
             txt = "Close::Type password to show again";
         } else if (txt.indexOf("external_") == 0) {
@@ -1014,11 +1027,10 @@ public class MainPanel extends ConsolePanel {
         stopDrag();
         var t:String = e.text;
         if (t == "pause") {
-            if (console.paused) {
-                console.paused = false;
-            } else {
-                console.paused = true;
-            }
+            console.paused = !console.paused;
+            console.panels.tooltip(null);
+        } else if (t == "stop") {
+            console.stopped = !console.stopped;
             console.panels.tooltip(null);
         } else if (t == "hide") {
             console.panels.tooltip();
@@ -1181,7 +1193,7 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function commandKeyUp(e:KeyboardEvent):void {
-        if (e.keyCode == Keyboard.ENTER) {
+        if (e.keyCode == Keyboard.ENTER || (_ctrl && e.keyCode == Keyboard.Z)) {
             updateToBottom();
             setHints();
             if (_enteringLogin) {
