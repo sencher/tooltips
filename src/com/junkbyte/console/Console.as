@@ -56,11 +56,15 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.81;
+    public static const VERSION:Number = 2.82;
     
     public static const LOG:uint = 1;
+    public static const BLUE:uint = 2;
     public static const INFO:uint = 3;
+    public static const YELLOW:uint = 4;
+    public static const PURPLE:uint = 5;
     public static const DEBUG:uint = 6;
+    public static const TOOL:uint = 7;
     public static const WARN:uint = 8;
     public static const ERROR:uint = 9;
     public static const FATAL:uint = 10;
@@ -522,7 +526,7 @@ public class Console extends Sprite {
     }
     
     public function addLine(strings:Array, priority:int = 0, channel:* = null, isRepeating:Boolean = false, html:Boolean = false, stacks:int = -1):void {
-        if(_stopped) return;
+        if(_stopped && channel != INSPECTING_CHANNEL) return;
         var txt:String = "";
         var len:int = strings.length;
         for (var i:int = 0; i < len; i++) {
@@ -609,6 +613,13 @@ public class Console extends Sprite {
     /**
      * @copy com.junkbyte.console.Cc#warn()
      */
+    public function tool(...strings):void {
+        addLine(strings, TOOL);
+    }
+    
+    /**
+     * @copy com.junkbyte.console.Cc#warn()
+     */
     public function warn(...strings):void {
         addLine(strings, WARN);
     }
@@ -637,42 +648,49 @@ public class Console extends Sprite {
     /**
      * @copy com.junkbyte.console.Cc#logc()
      */
-    public function logch(channel:*, ...strings):void {
+    public function logc(channel:*, ...strings):void {
         addLine(strings, LOG, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#infoc()
      */
-    public function infoch(channel:*, ...strings):void {
+    public function infoc(channel:*, ...strings):void {
         addLine(strings, INFO, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#debugc()
      */
-    public function debugch(channel:*, ...strings):void {
+    public function debugc(channel:*, ...strings):void {
         addLine(strings, DEBUG, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#warnc()
      */
-    public function warnch(channel:*, ...strings):void {
+    public function toolc(channel:*, ...strings):void {
+        addLine(strings, TOOL, channel);
+    }
+    
+    /**
+     * @copy com.junkbyte.console.Cc#warnc()
+     */
+    public function warnc(channel:*, ...strings):void {
         addLine(strings, WARN, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#errorc()
      */
-    public function errorch(channel:*, ...strings):void {
+    public function errorc(channel:*, ...strings):void {
         addLine(strings, ERROR, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#fatalc()
      */
-    public function fatalch(channel:*, ...strings):void {
+    public function fatalc(channel:*, ...strings):void {
         addLine(strings, FATAL, channel);
     }
     
