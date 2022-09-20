@@ -82,17 +82,17 @@ public class ConsoleStyle {
     /** Color of log priority level 1. C.log(...)*/
     public var priority1:uint = 0x449944;
     /** Color of log priority level 2. */
-    public var priority2:uint = 0x77BB77;
+    public var priority2:uint = 0x0089D3;
     /** Color of info log priority level 3. C.info(...) */
     public var priority3:uint = 0xA0D0A0;
     /** Color of log priority level 4. */
-    public var priority4:uint = 0xD6EED6;
+    public var priority4:uint = 0xD1CB00;
     /** Color of debug log priority level 5. */
-    public var priority5:uint = 0xE9E9E9;
+    public var priority5:uint = 0x9F4AD8;
     /** Color of log priority level 6. C.debug(...) */
-    public var priority6:uint = 0xFFDDDD;
+    public var priority6:uint = 0xCC5BA8;
     /** Color of warn log priority level 7. */
-    public var priority7:uint = 0xFFAAAA;
+    public var priority7:uint = 0xD1D1D1;
     /** Color of log priority level 8. C.warn(...) */
     public var priority8:uint = 0xFF7777;
     /** Color of error log priority level 9. C.error(...) */

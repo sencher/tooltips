@@ -56,7 +56,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function log(...args):void {
-        multiadd(_c.logch, args);
+        multiadd(_c.logc, args);
     }
     
     /**
@@ -66,7 +66,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function info(...args):void {
-        multiadd(_c.infoch, args);
+        multiadd(_c.infoc, args);
     }
     
     /**
@@ -76,7 +76,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function debug(...args):void {
-        multiadd(_c.debugch, args);
+        multiadd(_c.debugc, args);
     }
     
     /**
@@ -86,7 +86,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function warn(...args):void {
-        multiadd(_c.warnch, args);
+        multiadd(_c.warnc, args);
     }
     
     /**
@@ -97,7 +97,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function error(...args):void {
-        multiadd(_c.errorch, args);
+        multiadd(_c.errorc, args);
     }
     
     /**
@@ -108,7 +108,7 @@ public class ConsoleChannel {
      * @param String to be logged, any type can be passed and will be converted to string
      */
     public function fatal(...args):void {
-        multiadd(_c.fatalch, args);
+        multiadd(_c.fatalc, args);
     }
     
     private function multiadd(f:Function, args:Array):void {
