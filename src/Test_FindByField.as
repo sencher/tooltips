@@ -2,7 +2,7 @@ package {
 
 import flash.display.Sprite;
 
-import utils.wg.utils.array.findByField;
+import utils.wg.array.findByField;
 
 public class Test_FindByField extends Sprite {
     private var _bonuses:Vector.<Dummy>;

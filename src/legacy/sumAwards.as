@@ -3,9 +3,9 @@ package legacy
 
 import com.junkbyte.console.Cc;
 
-import utils.wg.utils.array.findByFieldArray;
-import utils.wg.utils.array.safeSplice;
-import utils.wg.utils.array.sumObjectsByType;
+import utils.wg.array.findByFieldArray;
+import utils.wg.array.safeSplice;
+import utils.wg.array.sumObjectsByType;
 
 public function sumAwards(source:Array):Array {
 		Cc.errorcw("sumAwards", source);

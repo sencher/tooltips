@@ -1,0 +1,1 @@
+package utils.wg.string{	public function number2str(num:Number, digits:int):String {		var abs:Number = Math.abs(num);		return (num < 0 ? "-" : "") + abs.toPrecision(Math.max(digits + 1, String(int(abs)).length));	}}

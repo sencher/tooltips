@@ -1,1 +1,0 @@
-package utils.wg.utils.string{		public function slash():String {				return smallSpace() + "/" + smallSpace();	}	}

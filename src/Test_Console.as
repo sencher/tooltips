@@ -29,6 +29,9 @@ public class Test_Console extends Sprite {
         Cc.log(TEXT);
         Cc.log(tf.text);
         Cc.log(tf.htmlText);
+    
+        Cc.logc(this, "txtAward.x < mcTipArea.x:");
+        Cc.logc(this, "txtAward.x <<<<>><< mcTipArea.x:");
         
         var o = {a:1,b:2,c:3}
         var a = ["a",17,{kk:"gg"}]

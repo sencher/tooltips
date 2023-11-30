@@ -25,6 +25,9 @@ public class Test_MouseEvents extends Sprite {
         // You can grab mouse positions outside of the application window (and even outside of the browser window) as long as
         // whatever you're doing makes the user hold their mouse down.
         //stage.addEventListener(MouseEvent.MOUSE_MOVE, onMouse);
+        
+        //container.enabled = false;
+        container.mouseEnabled = false;
     }
 
     private function onMouse(event:MouseEvent = null):void {

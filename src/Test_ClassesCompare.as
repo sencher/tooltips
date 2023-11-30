@@ -26,6 +26,8 @@ import mx.core.FlexTextField;
     private var h:Hash;
 
     public function Test_ClassesCompare() {
+        var i:Boolean;
+        var t = i as Sprite;
 
         h = new Hash();
         h.setKey(3,new First())

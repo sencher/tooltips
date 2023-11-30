@@ -14,7 +14,7 @@ public class Test_Inheritance extends Sprite {
 
 import flash.utils.getQualifiedClassName;
 
-import utils.wg.utils.domain.getClassName;
+import utils.wg.domain.getClassName;
 
 class first{
     public function doStuff():void{

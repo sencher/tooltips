@@ -1,0 +1,1 @@
+package utils.wg.string{	public function randomBetween(vFrom:Number, vTo:Number):Number {		return vFrom + Math.random() * (vTo - vFrom);	}}
