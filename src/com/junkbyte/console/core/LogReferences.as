@@ -44,6 +44,11 @@ import flash.utils.getQualifiedClassName;
  */
 public class LogReferences extends ConsoleCore {
     
+    private const LESS:RegExp = /</g;
+    private const GREATER:RegExp = />/g;
+    private const LESS_HTML:String = "&lt;";
+    private const GREATER_HTML:String = "&gt;";
+    
     private var _refMap:WeakObject = new WeakObject();
     private var _refRev:Dictionary = new Dictionary(true);
     private var _refIndex:uint = 1;
@@ -156,8 +161,15 @@ public class LogReferences extends ConsoleCore {
             else if (v is DisplayObject && v.name) add = " " + v.name;
             txt = "{" + genLinkString(o, prop, ShortClassName(v)) + EscHTML(add) + "}";
         } else {
-            if (v is ByteArray) txt = "[ByteArray position:" + ByteArray(v).position + " length:" + ByteArray(v).length + "]";
-            else txt = String(v);
+            if (v is ByteArray) {
+                txt = "[ByteArray position:" + ByteArray(v).position + " length:" + ByteArray(v).length + "]";
+            } else {
+                var string:String = String(v);
+                string = string.replace(LESS, LESS_HTML);
+                string = string.replace(GREATER, GREATER_HTML);
+                txt = string;
+            }
+            
             if (!html) {
                 return shortenString(EscHTML(txt), maxlen, o, prop);
             }

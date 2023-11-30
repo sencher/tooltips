@@ -48,7 +48,7 @@ import flash.ui.Keyboard;
  * @see #startOnStage()
  */
 public class Cc {
-    public static var DEBUG_MODE:int = 0;
+    public static var D_MODE:int = 0;
     
     private static var _console:Console;
     private static var _config:ConsoleConfig;
@@ -213,6 +213,38 @@ public class Cc {
         addToChannelWithStackJson(channel, strings, Console.LOG);
     }
     
+    public static function blue(...strings):void {
+        addLine(strings, Console.BLUE);
+    }
+    
+    public static function bluec(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.BLUE);
+    }
+    
+    public static function bluew(...strings):void {
+        addWithStack(strings, Console.BLUE);
+    }
+    
+    public static function bluej(...strings):void {
+        addJson(strings, Console.BLUE);
+    }
+    
+    public static function bluecw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.BLUE);
+    }
+    
+    public static function bluecj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.BLUE);
+    }
+    
+    public static function bluewj(...strings):void {
+        addWithStackJson(strings, Console.BLUE);
+    }
+    
+    public static function bluecwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.BLUE);
+    }
+    
     /**
      * Add log line with priority 3
      * Allows multiple arguments for convenience use.
@@ -265,23 +297,74 @@ public class Cc {
         addToChannelWithStackJson(channel, strings, Console.INFO);
     }
     
-    /**
-     * Add log line with priority 5
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
+    public static function yellow(...strings):void {
+        addLine(strings, Console.YELLOW);
+    }
+    
+    public static function yellowc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yelloww(...strings):void {
+        addWithStack(strings, Console.YELLOW);
+    }
+    
+    public static function yellowj(...strings):void {
+        addJson(strings, Console.YELLOW);
+    }
+    
+    public static function yellowcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yellowcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yellowwj(...strings):void {
+        addWithStackJson(strings, Console.YELLOW);
+    }
+    
+    public static function yellowcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.YELLOW);
+    }
+    
+    public static function purple(...strings):void {
+        addLine(strings, Console.PURPLE);
+    }
+    
+    public static function purplec(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.PURPLE);
+    }
+    
+    public static function purplew(...strings):void {
+        addWithStack(strings, Console.PURPLE);
+    }
+    
+    public static function purplej(...strings):void {
+        addJson(strings, Console.PURPLE);
+    }
+    
+    public static function purplecw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.PURPLE);
+    }
+    
+    public static function purplecj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.PURPLE);
+    }
+    
+    public static function purplewj(...strings):void {
+        addWithStackJson(strings, Console.PURPLE);
+    }
+    
+    public static function purplecwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.PURPLE);
+    }
+    
     public static function debug(...strings):void {
         addLine(strings, Console.DEBUG);
     }
-    
-    /**
-     * Add log line with priority 5 to channel
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
+
     public static function debugc(channel:*, ...strings):void {
         addToChannel(channel, strings, Console.DEBUG);
     }
@@ -308,6 +391,38 @@ public class Cc {
     
     public static function debugcwj(channel:*, ...strings):void {
         addToChannelWithStackJson(channel, strings, Console.DEBUG);
+    }
+    
+    public static function tool(...strings):void {
+        addLine(strings, Console.TOOL);
+    }
+    
+    public static function toolc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.TOOL);
+    }
+    
+    public static function toolw(...strings):void {
+        addWithStack(strings, Console.TOOL);
+    }
+    
+    public static function toolj(...strings):void {
+        addJson(strings, Console.TOOL);
+    }
+
+    public static function toolcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.TOOL);
+    }
+    
+    public static function toolcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.TOOL);
+    }
+    
+    public static function toolwj(...strings):void {
+        addWithStackJson(strings, Console.TOOL);
+    }
+    
+    public static function toolcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.TOOL);
     }
     
     /**

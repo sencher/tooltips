@@ -144,7 +144,7 @@ public class ConsoleUtils {
         return cutLastChars ? result.substring(0, result.length - cutLastChars) : result;
     }
     
-    private static function conditionalAdd(condition:Boolean, symbol:String):String{
+    private static function conditionalAdd(condition:*, symbol:String):String{
         if(condition){
             return symbol;
         }else{
@@ -240,7 +240,7 @@ public class ConsoleUtils {
         var e:Error = new Error();
         var stackTrace:String = e.getStackTrace();
         var lines:Array = stackTrace.split("\n\t");
-        var cut:Array = lines.slice(3, 3 + depth);
+        var cut:Array = lines.slice(4, 4 + depth);
         var s:String;
         var r:String = "";
         
