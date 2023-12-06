@@ -147,70 +147,36 @@ public class Cc {
         if (_console) _console.ch(channel, string, priority, isRepeating);
     }
     
-    /**
-     * Add log line with priority 1.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function log(...strings):void {
-        addLine(strings, Console.LOG);
+    public static function berry(...strings):void {
+        addLine(strings, Console.BERRY);
     }
     
-    /**
-     * Add log line with priority 1 to channel.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function logc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.LOG);
+    public static function berryc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.BERRY);
     }
     
-    /**
-     * Add log line with priority 1 with whoCalledThis.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function logw(...strings):void {
-        addWithStack(strings, Console.LOG);
+    public static function berryw(...strings):void {
+        addWithStack(strings, Console.BERRY);
     }
     
-    public static function logj(...strings):void {
-        addJson(strings, Console.LOG);
+    public static function berryj(...strings):void {
+        addJson(strings, Console.BERRY);
     }
     
-    /**
-     * Add log line with priority 1 to channel with whoCalledThis.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function logcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.LOG);
+    public static function berrycw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.BERRY);
     }
     
-    public static function logcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.LOG);
+    public static function berrycj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.BERRY);
     }
     
-    public static function logwj(...strings):void {
-        addWithStackJson(strings, Console.LOG);
+    public static function berrywj(...strings):void {
+        addWithStackJson(strings, Console.BERRY);
     }
     
-    /**
-     * Add log line with priority 1 to channel with whoCalledThis.<br>
-     * Converting objects to JSON if possible.<br>
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function logcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.LOG);
+    public static function berrycwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.BERRY);
     }
     
     public static function blue(...strings):void {
@@ -245,88 +211,388 @@ public class Cc {
         addToChannelWithStackJson(channel, strings, Console.BLUE);
     }
     
-    /**
-     * Add log line with priority 3
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function info(...strings):void {
-        addLine(strings, Console.INFO);
+    public static function blue2(...strings):void {
+        addLine(strings, Console.BLUE2);
     }
     
-    /**
-     * Add log line with priority 3 to channel
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function infoc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.INFO);
+    public static function blue2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.BLUE2);
     }
     
-    public static function infow(...strings):void {
-        addWithStack(strings, Console.INFO);
+    public static function blue2w(...strings):void {
+        addWithStack(strings, Console.BLUE2);
     }
     
-    public static function infoj(...strings):void {
-        addJson(strings, Console.INFO);
+    public static function blue2j(...strings):void {
+        addJson(strings, Console.BLUE2);
     }
     
-    /*
-     * Add log line with priority 3 to channel with whoCalledThis
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel	Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings	Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function infocw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.INFO);
+    public static function blue2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.BLUE2);
     }
     
-    public static function infocj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.INFO);
+    public static function blue2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.BLUE2);
     }
     
-    public static function infowj(...strings):void {
-        addWithStackJson(strings, Console.INFO);
+    public static function blue2wj(...strings):void {
+        addWithStackJson(strings, Console.BLUE2);
     }
     
-    public static function infocwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.INFO);
+    public static function blue2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.BLUE2);
     }
     
-    public static function yellow(...strings):void {
-        addLine(strings, Console.YELLOW);
+    public static function brown(...strings):void {
+        addLine(strings, Console.BROWN);
     }
     
-    public static function yellowc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.YELLOW);
+    public static function brownc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.BROWN);
     }
     
-    public static function yelloww(...strings):void {
-        addWithStack(strings, Console.YELLOW);
+    public static function brownw(...strings):void {
+        addWithStack(strings, Console.BROWN);
     }
     
-    public static function yellowj(...strings):void {
-        addJson(strings, Console.YELLOW);
+    public static function brownj(...strings):void {
+        addJson(strings, Console.BROWN);
     }
     
-    public static function yellowcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.YELLOW);
+    public static function browncw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.BROWN);
     }
     
-    public static function yellowcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.YELLOW);
+    public static function browncj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.BROWN);
     }
     
-    public static function yellowwj(...strings):void {
-        addWithStackJson(strings, Console.YELLOW);
+    public static function brownwj(...strings):void {
+        addWithStackJson(strings, Console.BROWN);
     }
     
-    public static function yellowcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.YELLOW);
+    public static function browncwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.BROWN);
+    }
+    
+    public static function cyan(...strings):void {
+        addLine(strings, Console.CYAN);
+    }
+    
+    public static function cyanc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.CYAN);
+    }
+    
+    public static function cyanw(...strings):void {
+        addWithStack(strings, Console.CYAN);
+    }
+    
+    public static function cyanj(...strings):void {
+        addJson(strings, Console.CYAN);
+    }
+    
+    public static function cyancw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.CYAN);
+    }
+    
+    public static function cyancj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.CYAN);
+    }
+    
+    public static function cyanwj(...strings):void {
+        addWithStackJson(strings, Console.CYAN);
+    }
+    
+    public static function cyancwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.CYAN);
+    }
+    
+    public static function grass(...strings):void {
+        addLine(strings, Console.GRASS);
+    }
+    
+    public static function grassc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GRASS);
+    }
+    
+    public static function grassw(...strings):void {
+        addWithStack(strings, Console.GRASS);
+    }
+    
+    public static function grassj(...strings):void {
+        addJson(strings, Console.GRASS);
+    }
+    
+    public static function grasscw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GRASS);
+    }
+    
+    public static function grasscj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GRASS);
+    }
+    
+    public static function grasswj(...strings):void {
+        addWithStackJson(strings, Console.GRASS);
+    }
+    
+    public static function grasscwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GRASS);
+    }
+    
+    public static function grass2(...strings):void {
+        addLine(strings, Console.GRASS2);
+    }
+    
+    public static function grass2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GRASS2);
+    }
+    
+    public static function grass2w(...strings):void {
+        addWithStack(strings, Console.GRASS2);
+    }
+    
+    public static function grass2j(...strings):void {
+        addJson(strings, Console.GRASS2);
+    }
+    
+    public static function grass2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GRASS2);
+    }
+    
+    public static function grass2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GRASS2);
+    }
+    
+    public static function grass2wj(...strings):void {
+        addWithStackJson(strings, Console.GRASS2);
+    }
+    
+    public static function grass2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GRASS2);
+    }
+    
+    public static function green(...strings):void {
+        addLine(strings, Console.GREEN);
+    }
+    
+    public static function greenc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GREEN);
+    }
+    
+    public static function greenw(...strings):void {
+        addWithStack(strings, Console.GREEN);
+    }
+    
+    public static function greenj(...strings):void {
+        addJson(strings, Console.GREEN);
+    }
+    
+    public static function greencw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GREEN);
+    }
+    
+    public static function greencj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GREEN);
+    }
+    
+    public static function greenwj(...strings):void {
+        addWithStackJson(strings, Console.GREEN);
+    }
+    
+    public static function greencwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GREEN);
+    }
+    
+    public static function green2(...strings):void {
+        addLine(strings, Console.GREEN2);
+    }
+    
+    public static function green2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GREEN2);
+    }
+    
+    public static function green2w(...strings):void {
+        addWithStack(strings, Console.GREEN2);
+    }
+    
+    public static function green2j(...strings):void {
+        addJson(strings, Console.GREEN2);
+    }
+    
+    public static function green2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GREEN2);
+    }
+    
+    public static function green2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GREEN2);
+    }
+    
+    public static function green2wj(...strings):void {
+        addWithStackJson(strings, Console.GREEN2);
+    }
+    
+    public static function green2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GREEN2);
+    }
+    
+    public static function grey(...strings):void {
+        addLine(strings, Console.GREY);
+    }
+    
+    public static function greyc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GREY);
+    }
+    
+    public static function greyw(...strings):void {
+        addWithStack(strings, Console.GREY);
+    }
+    
+    public static function greyj(...strings):void {
+        addJson(strings, Console.GREY);
+    }
+    
+    public static function greycw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GREY);
+    }
+    
+    public static function greycj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GREY);
+    }
+    
+    public static function greywj(...strings):void {
+        addWithStackJson(strings, Console.GREY);
+    }
+    
+    public static function greycwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GREY);
+    }
+    
+    public static function grey2(...strings):void {
+        addLine(strings, Console.GREY2);
+    }
+    
+    public static function grey2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.GREY2);
+    }
+    
+    public static function grey2w(...strings):void {
+        addWithStack(strings, Console.GREY2);
+    }
+    
+    public static function grey2j(...strings):void {
+        addJson(strings, Console.GREY2);
+    }
+    
+    public static function grey2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.GREY2);
+    }
+    
+    public static function grey2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.GREY2);
+    }
+    
+    public static function grey2wj(...strings):void {
+        addWithStackJson(strings, Console.GREY2);
+    }
+    
+    public static function grey2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.GREY2);
+    }
+    
+    public static function magenta(...strings):void {
+        addLine(strings, Console.MAGENTA);
+    }
+    
+    public static function magentac(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.MAGENTA);
+    }
+    
+    public static function magentaw(...strings):void {
+        addWithStack(strings, Console.MAGENTA);
+    }
+    
+    public static function magentaj(...strings):void {
+        addJson(strings, Console.MAGENTA);
+    }
+    
+    public static function magentacw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.MAGENTA);
+    }
+    
+    public static function magentacj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.MAGENTA);
+    }
+    
+    public static function magentawj(...strings):void {
+        addWithStackJson(strings, Console.MAGENTA);
+    }
+    
+    public static function magentacwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.MAGENTA);
+    }
+    
+    public static function orange(...strings):void {
+        addLine(strings, Console.ORANGE);
+    }
+    
+    public static function orangec(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.ORANGE);
+    }
+    
+    public static function orangew(...strings):void {
+        addWithStack(strings, Console.ORANGE);
+    }
+    
+    public static function orangej(...strings):void {
+        addJson(strings, Console.ORANGE);
+    }
+    
+    public static function orangecw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.ORANGE);
+    }
+    
+    public static function orangecj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.ORANGE);
+    }
+    
+    public static function orangewj(...strings):void {
+        addWithStackJson(strings, Console.ORANGE);
+    }
+    
+    public static function orangecwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.ORANGE);
+    }
+    
+    public static function pink(...strings):void {
+        addLine(strings, Console.PINK);
+    }
+    
+    public static function pinkc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.PINK);
+    }
+    
+    public static function pinkw(...strings):void {
+        addWithStack(strings, Console.PINK);
+    }
+    
+    public static function pinkj(...strings):void {
+        addJson(strings, Console.PINK);
+    }
+    
+    public static function pinkcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.PINK);
+    }
+    
+    public static function pinkcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.PINK);
+    }
+    
+    public static function pinkwj(...strings):void {
+        addWithStackJson(strings, Console.PINK);
+    }
+    
+    public static function pinkcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.PINK);
     }
     
     public static function purple(...strings):void {
@@ -361,191 +627,331 @@ public class Cc {
         addToChannelWithStackJson(channel, strings, Console.PURPLE);
     }
     
-    public static function debug(...strings):void {
-        addLine(strings, Console.DEBUG);
-    }
-
-    public static function debugc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.DEBUG);
+    public static function red(...strings):void {
+        addLine(strings, Console.RED);
     }
     
-    public static function debugw(...strings):void {
-        addWithStack(strings, Console.DEBUG);
+    public static function redc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.RED);
     }
     
-    public static function debugj(...strings):void {
-        addJson(strings, Console.DEBUG);
+    public static function redw(...strings):void {
+        addWithStack(strings, Console.RED);
     }
     
-    public static function debugcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.DEBUG);
+    public static function redj(...strings):void {
+        addJson(strings, Console.RED);
     }
     
-    public static function debugcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.DEBUG);
+    public static function redcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.RED);
     }
     
-    public static function debugwj(...strings):void {
-        addWithStackJson(strings, Console.DEBUG);
+    public static function redcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.RED);
     }
     
-    public static function debugcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.DEBUG);
+    public static function redwj(...strings):void {
+        addWithStackJson(strings, Console.RED);
     }
     
-    public static function tool(...strings):void {
-        addLine(strings, Console.TOOL);
+    public static function redcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.RED);
     }
     
-    public static function toolc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.TOOL);
+    public static function red2(...strings):void {
+        addLine(strings, Console.RED2);
     }
     
-    public static function toolw(...strings):void {
-        addWithStack(strings, Console.TOOL);
+    public static function red2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.RED2);
     }
     
-    public static function toolj(...strings):void {
-        addJson(strings, Console.TOOL);
-    }
-
-    public static function toolcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.TOOL);
+    public static function red2w(...strings):void {
+        addWithStack(strings, Console.RED2);
     }
     
-    public static function toolcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.TOOL);
+    public static function red2j(...strings):void {
+        addJson(strings, Console.RED2);
     }
     
-    public static function toolwj(...strings):void {
-        addWithStackJson(strings, Console.TOOL);
+    public static function red2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.RED2);
     }
     
-    public static function toolcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.TOOL);
+    public static function red2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.RED2);
     }
     
-    /**
-     * Add log line with priority 7
-     * Allows multiple arguments for convenience use.
-     *
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class
-     */
-    public static function warn(...strings):void {
-        addLine(strings, Console.WARN);
+    public static function red2wj(...strings):void {
+        addWithStackJson(strings, Console.RED2);
     }
     
-    /**
-     * Add log line with priority 7 to channel
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function warnc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.WARN);
+    public static function red2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.RED2);
     }
     
-    public static function warnw(...strings):void {
-        addWithStack(strings, Console.WARN);
+    public static function red3(...strings):void {
+        addLine(strings, Console.RED3);
     }
     
-    public static function warnj(...strings):void {
-        addJson(strings, Console.WARN);
+    public static function red3c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.RED3);
     }
     
-    /*
-     * Add log line with priority 7 to channel with whoCalledThis
-     * Allows multiple arguments for convenience use.
-     *
-     * @param channel	Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param ...strings	Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
-     */
-    public static function warncw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.WARN);
+    public static function red3w(...strings):void {
+        addWithStack(strings, Console.RED3);
     }
     
-    public static function warncj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.WARN);
+    public static function red3j(...strings):void {
+        addJson(strings, Console.RED3);
     }
     
-    public static function warnwj(...strings):void {
-        addWithStackJson(strings, Console.WARN);
+    public static function red3cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.RED3);
     }
     
-    public static function warncwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.WARN);
+    public static function red3cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.RED3);
     }
     
-    public static function error(...strings):void {
-        addLine(strings, Console.ERROR);
+    public static function red3wj(...strings):void {
+        addWithStackJson(strings, Console.RED3);
     }
     
-    public static function errorc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.ERROR);
+    public static function red3cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.RED3);
     }
     
-    public static function errorw(...strings):void {
-        addWithStack(strings, Console.ERROR);
+    public static function sky(...strings):void {
+        addLine(strings, Console.SKY);
     }
     
-    public static function errorj(...strings):void {
-        addJson(strings, Console.ERROR);
+    public static function skyc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.SKY);
     }
     
-    public static function errorcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.ERROR);
+    public static function skyw(...strings):void {
+        addWithStack(strings, Console.SKY);
     }
     
-    public static function errorcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.ERROR);
+    public static function skyj(...strings):void {
+        addJson(strings, Console.SKY);
     }
     
-    public static function errorwj(...strings):void {
-        addWithStackJson(strings, Console.ERROR);
+    public static function skycw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.SKY);
     }
     
-    public static function errorcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.ERROR);
+    public static function skycj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.SKY);
     }
     
-    public static function fatal(...strings):void {
-        addLine(strings, Console.FATAL);
+    public static function skywj(...strings):void {
+        addWithStackJson(strings, Console.SKY);
     }
     
-    public static function fatalc(channel:*, ...strings):void {
-        addToChannel(channel, strings, Console.FATAL);
+    public static function skycwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.SKY);
     }
     
-    public static function fatalw(...strings):void {
-        addWithStack(strings, Console.FATAL);
+    public static function sky2(...strings):void {
+        addLine(strings, Console.SKY2);
     }
     
-    public static function fatalj(...strings):void {
-        addJson(strings, Console.FATAL);
+    public static function sky2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.SKY2);
     }
     
-    public static function fatalcw(channel:*, ...strings):void {
-        addToChannelWithStack(channel, strings, Console.FATAL);
+    public static function sky2w(...strings):void {
+        addWithStack(strings, Console.SKY2);
     }
     
-    public static function fatalcj(channel:*, ...strings):void {
-        addToChannelJson(channel, strings, Console.FATAL);
+    public static function sky2j(...strings):void {
+        addJson(strings, Console.SKY2);
     }
     
-    public static function fatalwj(...strings):void {
-        addWithStackJson(strings, Console.FATAL);
+    public static function sky2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.SKY2);
     }
     
-    public static function fatalcwj(channel:*, ...strings):void {
-        addToChannelWithStackJson(channel, strings, Console.FATAL);
+    public static function sky2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.SKY2);
     }
     
-    private static function addLine(strings:Array, priority:int):void{
+    public static function sky2wj(...strings):void {
+        addWithStackJson(strings, Console.SKY2);
+    }
+    
+    public static function sky2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.SKY2);
+    }
+    
+    public static function teal(...strings):void {
+        addLine(strings, Console.TEAL);
+    }
+    
+    public static function tealc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.TEAL);
+    }
+    
+    public static function tealw(...strings):void {
+        addWithStack(strings, Console.TEAL);
+    }
+    
+    public static function tealj(...strings):void {
+        addJson(strings, Console.TEAL);
+    }
+    
+    public static function tealcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.TEAL);
+    }
+    
+    public static function tealcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.TEAL);
+    }
+    
+    public static function tealwj(...strings):void {
+        addWithStackJson(strings, Console.TEAL);
+    }
+    
+    public static function tealcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.TEAL);
+    }
+    
+    public static function teal2(...strings):void {
+        addLine(strings, Console.TEAL2);
+    }
+    
+    public static function teal2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.TEAL2);
+    }
+    
+    public static function teal2w(...strings):void {
+        addWithStack(strings, Console.TEAL2);
+    }
+    
+    public static function teal2j(...strings):void {
+        addJson(strings, Console.TEAL2);
+    }
+    
+    public static function teal2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.TEAL2);
+    }
+    
+    public static function teal2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.TEAL2);
+    }
+    
+    public static function teal2wj(...strings):void {
+        addWithStackJson(strings, Console.TEAL2);
+    }
+    
+    public static function teal2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.TEAL2);
+    }
+    
+    public static function white(...strings):void {
+        addLine(strings, Console.WHITE);
+    }
+    
+    public static function whitec(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.WHITE);
+    }
+    
+    public static function whitew(...strings):void {
+        addWithStack(strings, Console.WHITE);
+    }
+    
+    public static function whitej(...strings):void {
+        addJson(strings, Console.WHITE);
+    }
+    
+    public static function whitecw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.WHITE);
+    }
+    
+    public static function whitecj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.WHITE);
+    }
+    
+    public static function whitewj(...strings):void {
+        addWithStackJson(strings, Console.WHITE);
+    }
+    
+    public static function whitecwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.WHITE);
+    }
+    
+    public static function yellow(...strings):void {
+        addLine(strings, Console.YELLOW);
+    }
+    
+    public static function yellowc(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yelloww(...strings):void {
+        addWithStack(strings, Console.YELLOW);
+    }
+    
+    public static function yellowj(...strings):void {
+        addJson(strings, Console.YELLOW);
+    }
+    
+    public static function yellowcw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yellowcj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yellowwj(...strings):void {
+        addWithStackJson(strings, Console.YELLOW);
+    }
+    
+    public static function yellowcwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.YELLOW);
+    }
+    
+    public static function yellow2(...strings):void {
+        addLine(strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2c(channel:*, ...strings):void {
+        addToChannel(channel, strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2w(...strings):void {
+        addWithStack(strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2j(...strings):void {
+        addJson(strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2cw(channel:*, ...strings):void {
+        addToChannelWithStack(channel, strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2cj(channel:*, ...strings):void {
+        addToChannelJson(channel, strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2wj(...strings):void {
+        addWithStackJson(strings, Console.YELLOW2);
+    }
+    
+    public static function yellow2cwj(channel:*, ...strings):void {
+        addToChannelWithStackJson(channel, strings, Console.YELLOW2);
+    }
+    
+    private static function addLine(strings:Array, priority:int):void {
         if (_console) _console.addLine(strings, priority);
     }
     
-    private static function addToChannel(channel:*, strings:Array, priority:int):void{
+    private static function addToChannel(channel:*, strings:Array, priority:int):void {
         if (_console) _console.addCh(channel, strings, priority, false, true);
     }
     
@@ -759,7 +1165,7 @@ public class Cc {
      * WARNING: It hard references the function and arguments.
      * Pass null Function to remove previously added menu.
      * </p>
-     * Example: Cc.addMenu("hi", Cc.log, ["Hello from top menu"], "Says hello!");
+     * Example: Cc.addMenu("hi", Cc.green2, ["Hello from top menu"], "Says hello!");
      * This adds a link 'hi' on top menu. Rolling over the link will show the tooltip "Says hello!"
      * Clicking on the link will log in console "Hello from top menu".
      *
@@ -790,7 +1196,7 @@ public class Cc {
      *
      * <ul>
      * <li>Example 1 (storing functions)</li>
-     * <li><code>Cc.store("load", function(id:uint){Cc.log("Do some loading with id", id)});</code></li>
+     * <li><code>Cc.store("load", function(id:uint){Cc.green2("Do some loading with id", id)});</code></li>
      * <li>User call this function by typing '$load(123);' to load with id 123.</li>
      *
      * <li>Example 2 (storing anything)</li>
@@ -813,11 +1219,11 @@ public class Cc {
      *
      * <ul>
      * <li>Example 1:</li>
-     * <li><code>Cc.addSlashCommand("test", function():void{ Cc.log("Do the test!");} );</code></li>
+     * <li><code>Cc.addSlashCommand("test", function():void{ Cc.green2("Do the test!");} );</code></li>
      * <li>When user type "/test" in commandLine, it will call function with no params.</li>
      *
      * <li>Example 2:</li>
-     * <li><code>Cc.addSlashCommand("test2", function(param:String):void{Cc.log("Do the test2 with param string:", param);});</code></li>
+     * <li><code>Cc.addSlashCommand("test2", function(param:String):void{Cc.green2("Do the test2 with param string:", param);});</code></li>
      * <li>user type "/test2 abc 123" in commandLine to call function with param "abc 123".</li>
      * </ul>
      * If you need multiple params or non-string type, you will need to do the conversion inside your call back function.
@@ -949,11 +1355,11 @@ public class Cc {
      * @param Priority level. The level can be between 0 to 10, which maps back to more widely used info, debug, warn etc.
      * <ul>
      * <li>0 = All log levels including console event and status logs.</li>
-     * <li>1 / Console.LOG = Cc.log(...)</li>
-     * <li>3 / Console.INFO = Cc.info(...)</li>
+     * <li>1 / Console.GREEN2 = Cc.green2(...)</li>
+     * <li>3 / Console.INFO = Cc.grass(...)</li>
      * <li>6 / Console.DEBUG = Cc.debug(...)</li>
-     * <li>8 / Console.WARN = Cc.warn(...)</li>
-     * <li>9 / Console.ERROR = Cc.error(...)</li>
+     * <li>8 / Console.WARN = Cc.red(...)</li>
+     * <li>9 / Console.ERROR = Cc.sky(...)</li>
      * <li>10 / Console.FATAL = Cc.fatal(...)</li>
      * </ul>
      */

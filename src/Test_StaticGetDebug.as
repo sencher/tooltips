@@ -23,7 +23,7 @@ public class Test_StaticGetDebug extends Sprite {
     }
     
     public static function get ARRAY():Array{
-        Cc.logcw("ARRAY", "access to ARRAY");
+        Cc.green2cw("ARRAY", "access to ARRAY");
         return _ARRAY;
     }
 }

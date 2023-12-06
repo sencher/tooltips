@@ -33,7 +33,7 @@ public class Test_ConsoleAutoscope extends Sprite {
 //        }
 //			stage.addEventListener(KeyboardEvent.KEY_DOWN, container_keyDownHandler)
 //			stage.addEventListener(KeyboardEvent.KEY_UP, container_keyDownHandler)
-        Cc.logc(Utils, "init");
+        Cc.green2c(Utils, "init");
         
 //        var timer:Timer = new Timer(1000);
 //        timer.addEventListener(TimerEvent.TIMER, onTimer);
@@ -47,7 +47,7 @@ public class Test_ConsoleAutoscope extends Sprite {
         v.push(a);
         v.push(b);
         v.push(c);
-        Cc.logcw(this, "vec", v);
+        Cc.green2cw(this, "vec", v);
         
         
 //        var d:Dictionary = new Dictionary();
@@ -63,7 +63,7 @@ public class Test_ConsoleAutoscope extends Sprite {
     }
     
     private function logIntoRandomChannel(value:*):void {
-        Cc.logc("c" + Utils.getRandom(5, 8), value, {id: value});
+        Cc.green2c("c" + Utils.getRandom(5, 8), value, {id: value});
     }
     
     private function container_keyDownHandler(event:KeyboardEvent):void {

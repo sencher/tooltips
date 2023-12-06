@@ -29,14 +29,14 @@ public class Test_SerializeRecursive extends Sprite {
         b.name = "b";
         a.link = b;
         b.link = a;
-        Cc.log(a);
+        Cc.green2(a);
 
         c.name = "c";
         d.name = "d";
         c.link = array;
         array.push(c);
         array.push(d);
-        Cc.log(array);
+        Cc.green2(array);
         
         var level5:Object = {
             a1:{
@@ -68,10 +68,10 @@ public class Test_SerializeRecursive extends Sprite {
                 }
             }
         }
-        Cc.log(level5);
+        Cc.green2(level5);
         
-        Cc.log({i:1689.552,i2:132154,s:"bla!",o:{}, a:[{a1:3},{a2:9,a7:223,a19:"hello"}], zlata:[{privet:"poka"}, {serezha:"chelovek"}, [{z:5}, {b:21}, {f:5, h:9, s:14}]]});
-        Cc.log([{a1:3},{a2:-9}]);
+        Cc.green2({i:1689.552,i2:132154,s:"bla!",o:{}, a:[{a1:3},{a2:9,a7:223,a19:"hello"}], zlata:[{privet:"poka"}, {serezha:"chelovek"}, [{z:5}, {b:21}, {f:5, h:9, s:14}]]});
+        Cc.green2([{a1:3},{a2:-9}]);
     
         s.name = "hello";
         s.x = 250;
@@ -98,12 +98,12 @@ public class Test_SerializeRecursive extends Sprite {
     }
     
     private function init():void{
-        Cc.log(s);
+        Cc.green2(s);
     }
     
     private function unitTest(correctAnswer:*, result:*):void{
         if(correctAnswer == result){
-            Cc.logc("test", correctAnswer);
+            Cc.green2c("test", correctAnswer);
         }else {
             Cc.errorc("test", correctAnswer, result);
         }

@@ -11,7 +11,7 @@ public class Test_RegexpReplace extends Sprite {
 	    
 	    var a:String = "     aaa     bbb    ccc ddd   ";
 	    trace(a);
-	    Cc.logc("a", a, "/");
+	    Cc.green2c("a", a, "/");
 	    
 //	    var b:String = a.replace(/\s*(.*)/, "$1");
 //	    trace(b);
@@ -29,11 +29,11 @@ public class Test_RegexpReplace extends Sprite {
 //	    trace(e);
 //	    Cc.logch("e", e);
 	
-	    Cc.logc("6",a.search("aaa"), "/");
-	    Cc.logc("7",a.search(/aaa/), "/");
-	    Cc.logc("8",a.replace("aaa","a"), "/");
-	    Cc.logc("9",a.replace(/aaa/,"a"), "/");
-	    Cc.logc("10", trim(a), "/");
+	    Cc.green2c("6",a.search("aaa"), "/");
+	    Cc.green2c("7",a.search(/aaa/), "/");
+	    Cc.green2c("8",a.replace("aaa","a"), "/");
+	    Cc.green2c("9",a.replace(/aaa/,"a"), "/");
+	    Cc.green2c("10", trim(a), "/");
 	    
     }
 	

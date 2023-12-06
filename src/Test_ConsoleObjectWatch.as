@@ -44,7 +44,7 @@ public class Test_ConsoleObjectWatch extends Sprite {
         Cc.warncw(this, "asd",com.adobe.serialization.json.JSON.encode(o), "o:" + com.adobe.serialization.json.JSON.encode(o));
         Utils.logJsonObject(o);
         o.i = 999;
-        Cc.log(o);
+        Cc.green2(o);
         Utils.logJsonObject(o);
 //
 //        ConsoleHtmlExportAddon.addToMenu();

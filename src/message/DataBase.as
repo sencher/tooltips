@@ -15,7 +15,7 @@ public class DataBase {
     }
     
     public static function tryLogin(userData:Object):Boolean{
-        Cc.logcw("tryLogin", userData);
+        Cc.green2cw("tryLogin", userData);
         if(users[userData.l] && users[userData.l].passwoed == userData.p){
             return true;
         }

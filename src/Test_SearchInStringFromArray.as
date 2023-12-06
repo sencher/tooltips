@@ -20,7 +20,7 @@ public class Test_SearchInStringFromArray extends Sprite {
     }
     
     private function parse(message:String):void {
-        Cc.log("parse", message);
+        Cc.green2("parse", message);
         var lowerCase:String = message.toLowerCase();
         var userful:Array = ["result", "ystem"];
         for each (var search:String in userful) {

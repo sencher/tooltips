@@ -120,9 +120,9 @@ public class FontUtils {
         var embeddedFonts:Array = Font.enumerateFonts(false);
         embeddedFonts.sortOn("fontName", Array.CASEINSENSITIVE);
 
-        Cc.log("Fonts : embedded", embeddedFonts.length, "/ all", allFonts.length);
+        Cc.green2("Fonts : embedded", embeddedFonts.length, "/ all", allFonts.length);
         for each (var i:Font in embeddedFonts) {
-            Cc.log("\t" + fontParamsString(i));
+            Cc.green2("\t" + fontParamsString(i));
         }
     }
 
@@ -196,7 +196,7 @@ public class FontUtils {
 //        }
 
         if (initFontHasGlyphs < 1) {
-            Cc.logc("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
+            Cc.green2c("initFont", initFormat.font, initFormat.bold, "|", str, tf.name, missingGlyphs(initFont, stringForCheck));
             var futureFormat:TextFormat = GamuaFloxUtils.cloneObject(initFormat);
             var fixedFont:Font = getFixedFont(futureFormat, initFontHasGlyphs == 0);
             if (fixedFont) {

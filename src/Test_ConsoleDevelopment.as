@@ -22,14 +22,14 @@ public class Test_ConsoleDevelopment extends Sprite {
         Cc.commandLine = true;
         
         
-        Cc.log("log",{a:1});
-        Cc.logc(this,"logc",{a:1});
-        Cc.logw("logw",{a:1});
-        Cc.logj("logj",{a:1});
-        Cc.logcw(this,"logcw",{a:1});
-        Cc.logcj(this,"logcj",{a:1});
-        Cc.logwj("logwj",{a:1});
-        Cc.logcwj(this,"logcwj",{a:1});      
+        Cc.green2("log",{a:1});
+        Cc.green2c(this,"logc",{a:1});
+        Cc.green2w("logw",{a:1});
+        Cc.green2j("logj",{a:1});
+        Cc.green2cw(this,"logcw",{a:1});
+        Cc.green2cj(this,"logcj",{a:1});
+        Cc.green2wj("logwj",{a:1});
+        Cc.green2cwj(this,"logcwj",{a:1});
         
         Cc.info("info",{a:1});
         Cc.infoc(this,"infoc",{a:1});
@@ -86,7 +86,7 @@ public class Test_ConsoleDevelopment extends Sprite {
     
     private function spam(event:Event = null):void {
         if(++frameCounter >= SPAM_FRAME){
-            Cc.log(Utils.getRandom(0,1000000));
+            Cc.green2(Utils.getRandom(0,1000000));
             frameCounter = 0;
         }
         

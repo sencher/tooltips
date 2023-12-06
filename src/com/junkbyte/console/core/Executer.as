@@ -555,7 +555,7 @@ public class Executer extends EventDispatcher {
         }
         return str.substring(counter, counterEnd + 1);
 
-//			Cc.logchw(this, "ignoreWhite", str);
+//			Cc.green2chw(this, "ignoreWhite", str);
 //			// can't just do /\s*(.*?)\s*/  :(  any better way?
 //			str = str.replace(/\s*(.*)/,"$1");
 //			var i:int = str.length-1;

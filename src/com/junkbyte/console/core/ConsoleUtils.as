@@ -41,7 +41,7 @@ public class ConsoleUtils {
     }
     
     public static function formatJsonString(value:String, depth:int = 0):String {
-//        Cc.warn("formatJsonString", value, "depth:",depth);
+//        Cc.red("formatJsonString", value, "depth:",depth);
         if(!value) return "";
         
         //DEBUG
@@ -120,12 +120,12 @@ public class ConsoleUtils {
 //                    }
 //                    middle = cutLastCommaAndNewLine(middle);
                 }
-                
+        
                 break;
         }
-        
-//        Cc.warn("formatJsonString", value, "depth:",depth);
-//        Cc.info("prefix",prefix,"middle",middle,"suffix",suffix,"rest",rest)
+
+//        Cc.red("formatJsonString", value, "depth:",depth);
+//        Cc.grass("prefix",prefix,"middle",middle,"suffix",suffix,"rest",rest)
         return prefix + middle + suffix + rest;
     }
     

@@ -36,7 +36,7 @@ public class Test_TextField extends Sprite {
         addChild(tf);
         if(stage) stage.addEventListener(MouseEvent.CLICK, onClick);
         onClick();
-        Cc.log("dummy");
+        Cc.green2("dummy");
     }
 
     private function onClick(event:MouseEvent = null):void {

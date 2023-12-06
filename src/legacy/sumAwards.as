@@ -16,10 +16,10 @@ public function sumAwards(source:Array):Array {
 		
 		source = sumObjectsByType(source, ["type", "id"], "kwargs.boost",
 				[{type: "crew_member"}]);
-		Cc.logc("sumAwards", "after sumObjectsByType1", source);
+		Cc.green2c("sumAwards", "after sumObjectsByType1", source);
 		source = sumObjectsByType(source, ["type", "id"], "value",
 				[{type: "crew_member"},{type: "crew"}]);
-		Cc.logc("sumAwards", "after sumObjectsByType2", source);
+		Cc.green2c("sumAwards", "after sumObjectsByType2", source);
 		
 		// суммируем необученных пилотов
 		var allCrew:Array = findByFieldArray(source, "type", "crew_member").concat(findByFieldArray(source, "type", "crew"))

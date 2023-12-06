@@ -35,7 +35,7 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
         addChild(box);
 
         Cc.warncw(this);
-        Cc.log(this);
+        Cc.green2(this);
 
         var str:String = "this";
         var str2:String = str.replace(/\s*(.*)/, "$1");
@@ -55,23 +55,23 @@ public class Test_ConsoleKeysAndCommands extends Sprite {
     }
 
     public function f0():void {
-        Cc.log("f0 called", arguments);
-        Cc.log("f0 called", Cc.DEBUG_MODE);
+        Cc.green2("f0 called", arguments);
+        Cc.green2("f0 called", Cc.DEBUG_MODE);
     }
 
     public function f1(value1:int):void {
-        Cc.log("f1 called", value1, arguments);
+        Cc.green2("f1 called", value1, arguments);
     }
 
     public function f2(value1:int, value2:String):* {
-        Cc.log("f2 called", value1, value2, arguments);
+        Cc.green2("f2 called", value1, value2, arguments);
         Cc.warncw(this, "sdadfdsf##5555")
         return value1;
     }
 
     //TODO: add Array
     public function f3(value1:Array):* {
-        Cc.log("f3 called", value1, arguments);
+        Cc.green2("f3 called", value1, arguments);
         return value1;
     }
 }

@@ -12,43 +12,43 @@ public class TextFieldDebug extends TextField {
     }
     
     override public function set text(value:String):void {
-        if(inited) Cc.logcw(this, "text", text, ">>>", value);
+        if(inited) Cc.green2cw(this, "text", text, ">>>", value);
         super.text = value;
         logParams();
     }
     
     override public function set htmlText(value:String):void {
-        if(inited) Cc.logcw(this, "htmlText", htmlText, ">>>", value);
+        if(inited) Cc.green2cw(this, "htmlText", htmlText, ">>>", value);
         super.htmlText = value;
         logParams();
     }
     
     override public function set x(value:Number):void {
-        if(inited) Cc.logcw(this, "x", x, ">>>", value);
+        if(inited) Cc.green2cw(this, "x", x, ">>>", value);
         super.x = value;
         logParams();
     }
     
     override public function set y(value:Number):void {
-        if(inited) Cc.logcw(this, "y", y, ">>>", value);
+        if(inited) Cc.green2cw(this, "y", y, ">>>", value);
         super.y = value;
         logParams();
     }
     
     override public function set multiline(value:Boolean):void {
-        if(inited) Cc.logcw(this, "multiline", multiline, ">>>", value);
+        if(inited) Cc.green2cw(this, "multiline", multiline, ">>>", value);
         super.multiline = value;
         logParams();
     }
     
     override public function set wordWrap(value:Boolean):void {
-        if(inited) Cc.logcw(this, "wordWrap", wordWrap, ">>>", value);
+        if(inited) Cc.green2cw(this, "wordWrap", wordWrap, ">>>", value);
         super.wordWrap = value;
         logParams();
     }
     
     override public function set autoSize(value:String):void {
-        if(inited) Cc.logcw(this, "autoSize", autoSize, ">>>", value);
+        if(inited) Cc.green2cw(this, "autoSize", autoSize, ">>>", value);
         super.autoSize = value;
         logParams();
     }
@@ -56,7 +56,7 @@ public class TextFieldDebug extends TextField {
     private function logParams():void {
         if(!inited) return;
         
-        Cc.logc(this,
+        Cc.green2c(this,
             "x", x,
             "y", y,
             "height", height,

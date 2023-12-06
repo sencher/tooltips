@@ -43,11 +43,11 @@ import flash.utils.getQualifiedClassName;
  * @private
  */
 public class LogReferences extends ConsoleCore {
-    
-    private const LESS:RegExp = /</g;
-    private const GREATER:RegExp = />/g;
-    private const LESS_HTML:String = "&lt;";
-    private const GREATER_HTML:String = "&gt;";
+
+//    private const LESS:RegExp = /</g;
+//    private const GREATER:RegExp = />/g;
+//    private const LESS_HTML:String = "&lt;";
+//    private const GREATER_HTML:String = "&gt;";
     
     private var _refMap:WeakObject = new WeakObject();
     private var _refRev:Dictionary = new Dictionary(true);
@@ -164,12 +164,14 @@ public class LogReferences extends ConsoleCore {
             if (v is ByteArray) {
                 txt = "[ByteArray position:" + ByteArray(v).position + " length:" + ByteArray(v).length + "]";
             } else {
-                var string:String = String(v);
-                string = string.replace(LESS, LESS_HTML);
-                string = string.replace(GREATER, GREATER_HTML);
-                txt = string;
+//                var string:String = String(v);
+//                string = string.replace(LESS, LESS_HTML);
+//                string = string.replace(GREATER, GREATER_HTML);
+//                txt = string;
+    
+                txt = String(v);
             }
-            
+    
             if (!html) {
                 return shortenString(EscHTML(txt), maxlen, o, prop);
             }
@@ -543,7 +545,7 @@ public class LogReferences extends ConsoleCore {
                     else str = X;
                     report(" dynamic var <p3>" + str + "</p3> = " + makeValue(obj, X), 1, true, ch);
                 } else {
-//                    Cc.warn("makeValue", obj, X, config.useObjectLinking, makeValue(obj, X));
+//                    Cc.red("makeValue", obj, X, config.useObjectLinking, makeValue(obj, X));
                     report(" dictionary <p3>" + makeValue(X) + "</p3> = " + makeValue(obj, X), 1, true, ch);
                 }
             }

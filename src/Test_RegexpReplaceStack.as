@@ -28,8 +28,8 @@ public class Test_RegexpReplaceStack extends Sprite {
 //        var result:String = simple.replace(pattern, "$2 $4");
 //        var result2:String = stack.replace(pattern, "$2 $4");
 
-        Cc.log(cutLongNames(simple));
-        Cc.log(cutLongNames(stack));
+        Cc.green2(cutLongNames(simple));
+        Cc.green2(cutLongNames(stack));
 //        Cc.log(simple.replace(pattern, replFN));
 //        Cc.log(stack.replace(pattern, "$2 $4"));
 //        Cc.log(stack.replace(pattern, replFN));
@@ -66,11 +66,11 @@ public class Test_RegexpReplaceStack extends Sprite {
     }
     
     private function second():void {
-        Cc.logw("info");
+        Cc.green2w("info");
     }
     
     private function replFN(value:Array = null):String {
-        Cc.log("FN",value);
+        Cc.green2("FN",value);
         return value[2] + "__" + value[4];
     }
     

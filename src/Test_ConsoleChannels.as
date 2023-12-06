@@ -19,21 +19,21 @@ public class Test_ConsoleChannels extends Sprite {
         Cc.width = 500;
         Cc.config.tracingLevel = 1;
 
-        Cc.log("init");
+        Cc.green2("init");
         var i:int;
         for (i=0; i<500; i++){
             addRandomLineInRandonChannel();
         }
-        Cc.log("end");
+        Cc.green2("end");
 
         Cc.ch("window2", "CUSTOM");
         Cc.ch(this, "CUSTOM2");
 	
 //	    Cc.config.tracing = true;
      
-        Cc.log("log");
-        Cc.logc("logch", "logch");
-        Cc.logcw(this, "logchw", "logchw");
+        Cc.green2("log");
+        Cc.green2c("logch", "logch");
+        Cc.green2cw(this, "logchw", "logchw");
         Cc.warn("warn");
         Cc.warnc("warnch", "warnch");
 	    Cc.warncw(this, "warnchw", "warnchw");
@@ -73,7 +73,7 @@ public class Test_ConsoleChannels extends Sprite {
 	}
     
     private function addRandomLineInRandonChannel(event:Event = null):void{
-        Cc.logc("window"+Utils.getRandom(1,3), ++counter, {s: Utils.generateRandomString(Utils.getRandom(3,16))});
+        Cc.green2c("window"+Utils.getRandom(1,3), ++counter, {s: Utils.generateRandomString(Utils.getRandom(3,16))});
     }
 }
 }

@@ -21,7 +21,7 @@ public class Test_ConsolePause extends Sprite {
     }
 
     private function onTimer(event:TimerEvent):void {
-        Cc.log(counter++);
+        Cc.green2(counter++);
     }
 }
 }

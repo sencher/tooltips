@@ -122,12 +122,12 @@ public class Utils {
             r += s + "\n";
         }
         r += "*************";
-        Cc.log(r);
+        Cc.green2(r);
         return r;
     }
 
     public static function logJsonObject(value:*, channel:* = "logJson"):void {
-        Cc.logc(channel, ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(value)));
+        Cc.green2c(channel, ConsoleUtils.formatJsonString(com.adobe.serialization.json.JSON.encode(value)));
     }
 
     public static function logFuncNameAndArgs(args:*):void {

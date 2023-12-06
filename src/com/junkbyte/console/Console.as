@@ -56,18 +56,33 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.83;
+    public static const VERSION:Number = 2.84;
     
-    public static const LOG:uint = 1;
+    public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
-    public static const INFO:uint = 3;
-    public static const YELLOW:uint = 4;
-    public static const PURPLE:uint = 5;
-    public static const DEBUG:uint = 6;
-    public static const TOOL:uint = 7;
-    public static const WARN:uint = 8;
-    public static const ERROR:uint = 9;
-    public static const FATAL:uint = 10;
+    public static const BLUE2:uint = 3;
+    public static const BROWN:uint = 4;
+    public static const CYAN:uint = 5;
+    public static const GRASS:uint = 6;
+    public static const GRASS2:uint = 7;
+    public static const GREEN:uint = 8;
+    public static const GREEN2:uint = 9;
+    public static const GREY:uint = 10;
+    public static const GREY2:uint = 11;
+    public static const MAGENTA:uint = 12;
+    public static const ORANGE:uint = 13;
+    public static const PINK:uint = 14;
+    public static const PURPLE:uint = 15;
+    public static const RED:uint = 16;
+    public static const RED2:uint = 17;
+    public static const RED3:uint = 18;
+    public static const SKY:uint = 19;
+    public static const SKY2:uint = 20;
+    public static const TEAL:uint = 21;
+    public static const TEAL2:uint = 22;
+    public static const WHITE:uint = 23;
+    public static const YELLOW:uint = 24;
+    public static const YELLOW2:uint = 25;
     
     public static const GLOBAL_CHANNEL:String = " * ";
     public static const DEFAULT_CHANNEL:String = "-";
@@ -194,7 +209,7 @@ public class Console extends Sprite {
     }
     
     private function uncaughtErrorHandle(e:Event):void {
-        var error:* = e.hasOwnProperty("error") ? e["error"] : e; // for flash 9 compatibility
+        var error:* = e.hasOwnProperty("red2") ? e["error"] : e; // for flash 9 compatibility
         var str:String;
         if (error is Error) {
             str = _refs.makeString(error);
@@ -204,7 +219,7 @@ public class Console extends Sprite {
         if (!str) {
             str = String(error);
         }
-        report(str, FATAL, false);
+        report(str, RED2, false);
     }
     
     
@@ -590,52 +605,24 @@ public class Console extends Sprite {
     
     
     /**
-     * @copy com.junkbyte.console.Cc#log()
+     * @copy com.junkbyte.console.Cc#green2()
      */
-    public function log(...strings):void {
-        addLine(strings, LOG);
+    public function green2(...strings):void {
+        addLine(strings, GREEN2);
     }
     
     /**
-     * @copy com.junkbyte.console.Cc#info()
+     * @copy com.junkbyte.console.Cc#infoc()
      */
-    public function info(...strings):void {
-        addLine(strings, INFO);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#debug()
-     */
-    public function debug(...strings):void {
-        addLine(strings, DEBUG);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#warn()
-     */
-    public function tool(...strings):void {
-        addLine(strings, TOOL);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#warn()
-     */
-    public function warn(...strings):void {
-        addLine(strings, WARN);
+    public function green2c(channel:*, ...strings):void {
+        addLine(strings, GREEN2, channel);
     }
     
     /**
      * @copy com.junkbyte.console.Cc#error()
      */
-    public function error(...strings):void {
-        addLine(strings, ERROR);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#fatal()
-     */
-    public function fatal(...strings):void {
-        addLine(strings, FATAL);
+    public function red2(...strings):void {
+        addLine(strings, RED2);
     }
     
     /**
@@ -643,55 +630,6 @@ public class Console extends Sprite {
      */
     public function ch(channel:*, string:*, priority:int = 2, isRepeating:Boolean = false):void {
         addLine([string], priority, channel, isRepeating);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#logc()
-     */
-    public function logc(channel:*, ...strings):void {
-        addLine(strings, LOG, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#infoc()
-     */
-    public function infoc(channel:*, ...strings):void {
-        addLine(strings, INFO, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#debugc()
-     */
-    public function debugc(channel:*, ...strings):void {
-        addLine(strings, DEBUG, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#warnc()
-     */
-    public function toolc(channel:*, ...strings):void {
-        addLine(strings, TOOL, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#warnc()
-     */
-    public function warnc(channel:*, ...strings):void {
-        addLine(strings, WARN, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#errorc()
-     */
-    public function errorc(channel:*, ...strings):void {
-        addLine(strings, ERROR, channel);
-    }
-    
-    /**
-     * @copy com.junkbyte.console.Cc#fatalc()
-     */
-    public function fatalc(channel:*, ...strings):void {
-        addLine(strings, FATAL, channel);
     }
     
     /**
@@ -781,20 +719,20 @@ public class Console extends Sprite {
 
     public function debugMode(value:*):void {
         if(!value){
-            log("DEBUG_MODE is " + Cc.D_MODE);
+            green2("DEBUG_MODE is " + Cc.D_MODE);
             return;
         }
         Cc.D_MODE = value;
-        log("DEBUG_MODE set to " + value);
+        green2("DEBUG_MODE set to " + value);
     }
     
     public function callExternalInterface(value:String, ...rest):void{
-        Cc.tool(value, rest)
+        green2(value, rest)
         ExternalInterface.call(value);
     }
 
     public function printRefMap(value:*):void {
-        log(_refs);
+        green2(_refs);
     }
     
     public function get refs():LogReferences {

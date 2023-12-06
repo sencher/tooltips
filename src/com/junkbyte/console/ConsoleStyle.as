@@ -73,35 +73,38 @@ public class ConsoleStyle {
     public var channelsColor:uint = 0xFFFFFF;
     
     /** Font color for current channel name */
-    public var channelColor:uint = 0x0099CC;
+    public var channelColor:uint = 0x1199CC;
     
-    //
-    
-    /** Color of log priority level 0.*/
     public var priority0:uint = 0x3A773A;
-    /** Color of log priority level 1. C.log(...)*/
-    public var priority1:uint = 0x449944;
-    /** Color of log priority level 2. */
-    public var priority2:uint = 0x0089D3;
-    /** Color of info log priority level 3. C.info(...) */
-    public var priority3:uint = 0xA0D0A0;
-    /** Color of log priority level 4. */
-    public var priority4:uint = 0xD1CB00;
-    /** Color of debug log priority level 5. */
-    public var priority5:uint = 0x9F4AD8;
-    /** Color of log priority level 6. C.debug(...) */
-    public var priority6:uint = 0xCC5BA8;
-    /** Color of warn log priority level 7. */
-    public var priority7:uint = 0xD1D1D1;
-    /** Color of log priority level 8. C.warn(...) */
-    public var priority8:uint = 0xFF7777;
-    /** Color of error log priority level 9. C.error(...) */
-    public var priority9:uint = 0xFF2222;
-    /** Color of fatal log priority level 10. C.fatal(...) */
-    public var priority10:uint = 0xFF2222; // priority 10, also gets a bold
+    
+    public var priority1:uint = 0xCC5BA8;
+    public var priority2:uint = 0x1189D3;
+    public var priority3:uint = 0x107099;
+    public var priority4:uint = 0xa8650a;
+    public var priority5:uint = 0x00ebeb;
+    public var priority6:uint = 0x779933;
+    public var priority7:uint = 0x5C7829;
+    public var priority8:uint = 0x84d96a;
+    public var priority9:uint = 0x449944;
+    public var priority10:uint = 0xD1D1D1;
+    public var priority11:uint = 0x969696;
+    public var priority12:uint = 0xeb00eb;
+    public var priority13:uint = 0xf0c081;
+    public var priority14:uint = 0xe8a5b1;
+    public var priority15:uint = 0x9F4AD8;
+    public var priority16:uint = 0xFF7777;
+    public var priority17:uint = 0xFF2222;
+    public var priority18:uint = 0xCC3333;
+    public var priority19:uint = 0xa6fbff;
+    public var priority20:uint = 0x10aeb5;
+    public var priority21:uint = 0xA0D0A0;
+    public var priority22:uint = 0x0a8a74;
+    public var priority23:uint = 0xF0F0F0;
+    public var priority24:uint = 0xe3dd14;
+    public var priority25:uint = 0xB7B327;
     
     /** Color of console status log.*/
-    public var priorityC1:uint = 0x0099CC;
+    public var priorityC1:uint = 0x1199CC;
     /** Color of console event log.*/
     public var priorityC2:uint = 0xFF8800;
     
@@ -201,6 +204,10 @@ public class ConsoleStyle {
             fontSize: menuFontSize,
             textAlign: 'center'
         });
+    
+        //Bold example
+//        _css.setStyle("p10", {color: hesh(priority10), fontWeight: 'bold', display: 'inline'});
+    
         _css.setStyle("r", {textAlign: 'right', display: 'inline'});
         _css.setStyle("p", {fontFamily: traceFont, fontSize: traceFontSize});
         _css.setStyle("p0", {color: hesh(priority0), display: 'inline'});
@@ -213,7 +220,22 @@ public class ConsoleStyle {
         _css.setStyle("p7", {color: hesh(priority7), display: 'inline'});
         _css.setStyle("p8", {color: hesh(priority8), display: 'inline'});
         _css.setStyle("p9", {color: hesh(priority9), display: 'inline'});
-        _css.setStyle("p10", {color: hesh(priority10), fontWeight: 'bold', display: 'inline'});
+        _css.setStyle("p10", {color: hesh(priority10), display: 'inline'});
+        _css.setStyle("p11", {color: hesh(priority11), display: 'inline'});
+        _css.setStyle("p12", {color: hesh(priority12), display: 'inline'});
+        _css.setStyle("p13", {color: hesh(priority13), display: 'inline'});
+        _css.setStyle("p14", {color: hesh(priority14), display: 'inline'});
+        _css.setStyle("p15", {color: hesh(priority15), display: 'inline'});
+        _css.setStyle("p16", {color: hesh(priority16), display: 'inline'});
+        _css.setStyle("p17", {color: hesh(priority17), display: 'inline'});
+        _css.setStyle("p18", {color: hesh(priority18), display: 'inline'});
+        _css.setStyle("p19", {color: hesh(priority19), display: 'inline'});
+        _css.setStyle("p20", {color: hesh(priority20), display: 'inline'});
+        _css.setStyle("p21", {color: hesh(priority21), display: 'inline'});
+        _css.setStyle("p22", {color: hesh(priority22), display: 'inline'});
+        _css.setStyle("p23", {color: hesh(priority23), display: 'inline'});
+        _css.setStyle("p24", {color: hesh(priority24), display: 'inline'});
+        _css.setStyle("p25", {color: hesh(priority25), display: 'inline'});
         _css.setStyle("p-1", {color: hesh(priorityC1), display: 'inline'});
         _css.setStyle("p-2", {color: hesh(priorityC2), display: 'inline'});
         _css.setStyle("logs", {color: hesh(logHeaderColor), display: 'inline'});

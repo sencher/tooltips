@@ -31,7 +31,7 @@ public class MemoryRecorderAddon {
     public static function registerToConsole(console:Console, key:String = "r"):void {
         MemoryRecorder.instance.reportCallback = function (...args:Array):void {
             args.unshift("R");
-            console.infoc.apply(null, args);
+            console.green2c.apply(null, args);
         }
 
         var onMemoryRecorderStart:Function = function ():void {

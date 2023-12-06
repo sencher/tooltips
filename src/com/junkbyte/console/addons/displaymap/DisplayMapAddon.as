@@ -77,7 +77,7 @@ public class DisplayMapAddon {
             if (scope is DisplayObject) {
                 start(scope as DisplayObject, console);
             } else {
-                console.error("Current scope", scope, "is not a DisplayObject.");
+                console.red2("Current scope", scope, "is not a DisplayObject.");
             }
         }
         console.addSlashCommand(commandName, callbackFunction);

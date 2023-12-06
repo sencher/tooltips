@@ -110,12 +110,12 @@ public class ObstacleTextField extends TextField {
             updateTextBoundaries();
 
             var tfBounds:Rectangle = textField.getBounds(commonParent);
-            Cc.logc("Obstacle", tfBounds.x, textBoundaries.x, textBoundaries.x + textBoundaries.width);
+            Cc.green2c("Obstacle", tfBounds.x, textBoundaries.x, textBoundaries.x + textBoundaries.width);
 
             setBoxDimentions(debugBoxes[0], textBoundaries);
             for (i = 0; i < obstacles.length; i++) {
                 setBoxDimentions(debugBoxes[i + 1], DisplayObject(obstacles[i]).getBounds(commonParent));
-                Cc.logc("Obstacle", debugBoxes[i + 1].x);
+                Cc.green2c("Obstacle", debugBoxes[i + 1].x);
             }
         }
     }

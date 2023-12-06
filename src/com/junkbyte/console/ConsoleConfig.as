@@ -71,7 +71,7 @@ public class ConsoleConfig {
      * Auto stack trace logs for this priority and above
      * default priortiy = 10; fatal level
      */
-    public var autoStackPriority:int = Console.FATAL;
+    public var autoStackPriority:int = Console.RED2;
     
     /**
      * Default stack trace depth
@@ -97,7 +97,7 @@ public class ConsoleConfig {
      *
      * Example:
      * <code>
-     * Cc.log("This is a temp object:", new Object());
+     * Cc.green2("This is a temp object:", new Object());
      * // if you click this link in run time, it'll most likely say 'no longer exist'.
      * // However if you set objectHardReferenceTimer to 60, you will get AT LEAST 60 seconds before it become unavailable.
      * </code>
@@ -230,7 +230,7 @@ public class ConsoleConfig {
      * <ul>
      * <li>Example below prints the command input insted of executing:</li>
      * <li><code>Cc.config.commandLineInputPassThrough = function(commandStr:String):String{</code></li>
-     * <li><code>Cc.info("Received command input: '"+commandStr+"'.");</code></li>
+     * <li><code>Cc.grass("Received command input: '"+commandStr+"'.");</code></li>
      * <li><code>return null;</code></li>
      * <li><code>};</code></li>
      * </ul>
