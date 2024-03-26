@@ -13,7 +13,6 @@ import scaleform.clik.controls.Label;
 
 import wowp.utils.string.nbsp;
 import wowp.utils.string.size;
-import wowp.utils.display.Metrics;
 
 public class Utils {
     public static var TIME_SEPARATOR:String = " : ";
@@ -31,7 +30,7 @@ public class Utils {
         dest.splice(0);
         var cnt:int;
         var len:int = src.length;
-        for (cnt = 0; cnt < len; ++cnt) {
+        for (cnt = 0; cnt < len; cnt++) {
             dest[cnt] = src[cnt];
         }
     }

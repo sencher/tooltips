@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console {
+
 import flash.text.StyleSheet;
 
 public class ConsoleStyle {
@@ -78,10 +79,10 @@ public class ConsoleStyle {
     public var priority0:uint = 0x3A773A;
     
     public var priority1:uint = 0xCC5BA8;
-    public var priority2:uint = 0x1189D3;
+    public var priority2:uint = 0x1089D3;
     public var priority3:uint = 0x107099;
     public var priority4:uint = 0xa8650a;
-    public var priority5:uint = 0x00ebeb;
+    public var priority5:uint = 0x10ebeb;
     public var priority6:uint = 0x779933;
     public var priority7:uint = 0x5C7829;
     public var priority8:uint = 0x84d96a;
@@ -98,7 +99,7 @@ public class ConsoleStyle {
     public var priority19:uint = 0xa6fbff;
     public var priority20:uint = 0x10aeb5;
     public var priority21:uint = 0xA0D0A0;
-    public var priority22:uint = 0x0a8a74;
+    public var priority22:uint = 0x108a74;
     public var priority23:uint = 0xF0F0F0;
     public var priority24:uint = 0xe3dd14;
     public var priority25:uint = 0xB7B327;

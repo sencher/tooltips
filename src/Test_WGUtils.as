@@ -3,6 +3,8 @@ import flash.display.Sprite;
 import flash.text.TextField;
 import flash.text.TextFormat;
 
+import utils.wg.Utils;
+
 import utils.wg.object.setPropByPath;
 
 import utils.wg.string.reduceNumber;
@@ -19,12 +21,17 @@ public class Test_WGUtils extends Sprite {
 //        addChild(tf);
 //        tf.htmlText = reduceNumber(10000);
     
-        var a:Object = {b: 7};
-        setPropByPath(a, "s.d.k", "sdk")
-        trace(getPropByPath(a, "b"));
-        trace(getPropByPath(a, "zzz"));
-        trace(getPropByPath(a, "s.d.k"));
-        trace(JSON.stringify(a));
+//        var a:Object = {b: 7};
+//        setPropByPath(a, "s.d.k", "sdk")
+//        trace(getPropByPath(a, "b"));
+//        trace(getPropByPath(a, "zzz"));
+//        trace(getPropByPath(a, "s.d.k"));
+//        trace(JSON.stringify(a));
+        
+        var dest:Array = [1,2,8];
+        var src:Array = [7,4,11,6];
+        Utils.refillArray(dest, src);
+        trace(dest);
     }
 }
 }

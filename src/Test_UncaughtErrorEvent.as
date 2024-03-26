@@ -1,4 +1,9 @@
 package {
+
+import com.junkbyte.console.Cc;
+
+import flash.display.Loader;
+
 import flash.display.Sprite;
 import flash.events.ErrorEvent;
 import flash.events.MouseEvent;
@@ -8,13 +13,17 @@ public class Test_UncaughtErrorEvent extends Sprite
 {
     public function Test_UncaughtErrorEvent()
     {
+        Cc.start(this);
+        Cc.visible = true;
         loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, uncaughtErrorHandler);
+        Cc.green2cw(this, loaderInfo, loaderInfo.uncaughtErrorEvents, this.loaderInfo.loader);
 
         drawUI();
     }
 
     private function uncaughtErrorHandler(event:UncaughtErrorEvent):void
     {
+        trace("uncaughtErrorHandler", event);
         if (event.error is Error)
         {
             var error:Error = event.error as Error;

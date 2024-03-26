@@ -71,7 +71,7 @@ public class ConsoleConfig {
      * Auto stack trace logs for this priority and above
      * default priortiy = 10; fatal level
      */
-    public var autoStackPriority:int = Console.RED2;
+    public var autoStackPriority:int = 26;
     
     /**
      * Default stack trace depth

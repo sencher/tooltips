@@ -52,15 +52,21 @@ import mx.core.FlexTextField;
 //        trace(get_window_by_class_name(MovieClip).name);
 //        trace(get_window_by_class_name(Point));
 
-        trace(get_window_by_class_name(First));
-        trace(get_window_by_class_name(Second));
-        trace(get_window_by_class_name(Third));
-        trace(get_window_by_class_name(Point));
-
-        trace(get_window_by_class_name2(First));
-        trace(get_window_by_class_name2(Second));
-        trace(get_window_by_class_name2(Third));
-        trace(get_window_by_class_name2(Point));
+//        trace(get_window_by_class_name(First));
+//        trace(get_window_by_class_name(Second));
+//        trace(get_window_by_class_name(Third));
+//        trace(get_window_by_class_name(Point));
+//
+//        trace(get_window_by_class_name2(First));
+//        trace(get_window_by_class_name2(Second));
+//        trace(get_window_by_class_name2(Third));
+//        trace(get_window_by_class_name2(Point));
+        
+        var f:First = new First();
+        var fs:String = String(f);
+        if(fs == "First"){
+            trace("+")
+        }
     }
 
     private function get_window_by_class_name(window_class:Class):*

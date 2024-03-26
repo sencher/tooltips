@@ -604,7 +604,9 @@ public class Ct {
         Cc.red2j.apply(null, strings);
     }
     
+    /*Also add trace to log*/
     public static function red2cw(channel:*, ...strings):void {
+        trace(strings);
         strings.unshift(channel);
         Cc.red2cw.apply(null, strings);
     }

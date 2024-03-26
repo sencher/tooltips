@@ -955,32 +955,32 @@ public class Cc {
         if (_console) _console.addCh(channel, strings, priority, false, true);
     }
     
-    private static function addWithStack(strings:Array, priority:int):void{
+    private static function addWithStack(strings:Array, priority:int):void {
         if (!_console) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
     }
     
-    private static function addJson(strings:Array, priority:int):void{
+    private static function addJson(strings:Array, priority:int):void {
         if (!_console) return;
         _console.addCh(Console.DEFAULT_CHANNEL, toJson.apply(null, strings), priority, false, true);
     }
     
-    private static function addToChannelWithStack(channel:*, strings:Array, priority:int):void{
+    private static function addToChannelWithStack(channel:*, strings:Array, priority:int):void {
         if (!_console) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(channel, strings, priority, false, true);
     }
     
-    private static function addToChannelJson(channel:*, strings:Array, priority:int):void{
+    private static function addToChannelJson(channel:*, strings:Array, priority:int):void {
         if (!_console) return;
         strings = toJson.apply(null, strings);
         _console.addCh(channel, strings, priority, false, true);
     }
     
-    private static function addWithStackJson(strings:Array, priority:int):void{
+    private static function addWithStackJson(strings:Array, priority:int):void {
         if (!_console) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
@@ -988,7 +988,7 @@ public class Cc {
         _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
     }
     
-    private static function addToChannelWithStackJson(channel:*, strings:Array, priority:int):void{
+    private static function addToChannelWithStackJson(channel:*, strings:Array, priority:int):void {
         if (!_console) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
@@ -1434,88 +1434,81 @@ public class Cc {
         }
         
         if (event.ctrlKey && event.altKey) {
-            var cw:Number = _console.stage.stageWidth;
-            var ch:Number = _console.stage.stageHeight;
+            var stageWidth:Number = _console.stage.stageWidth;
+            var stageHeight:Number = _console.stage.stageHeight;
             switch (event.keyCode) {
                 case Keyboard.UP:
                     x = y = 0;
-                    width = cw;
-                    height = ch / 2;
+                    width = stageWidth;
+                    height = stageHeight / 2;
                     break;
                 case Keyboard.DOWN:
                     x = 0;
-                    y = ch / 2;
-                    width = cw;
-                    height = ch / 2;
+                    height = y = stageHeight / 2;
+                    width = stageWidth;
                     break;
                 case Keyboard.LEFT:
                     x = y = 0;
-                    width = cw / 2;
-                    height = ch;
+                    width = stageWidth / 2.8;
+                    height = stageHeight;
                     break;
                 case Keyboard.RIGHT:
-                    x = cw / 2;
+                    width = stageWidth / 2.8;
+                    x = stageWidth - width;
                     y = 0;
-                    width = cw / 2;
-                    height = ch;
+                    height = stageHeight;
                     break;
                 case Keyboard.NUMPAD_7:
                     x = y = 0;
-                    width = cw * .33;
-                    height = ch * .33;
+                    width = stageWidth * .33;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_8:
-                    x = cw * .33;
+                    width = x = stageWidth * .33;
                     y = 0;
-                    width = cw * .33;
-                    height = ch * .33;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_9:
-                    x = cw * .66;
+                    x = stageWidth * .66;
                     y = 0;
-                    width = cw * .33;
-                    height = ch * .33;
+                    width = stageWidth * .33;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_4:
                     x = 0;
-                    y = ch * .33;
-                    width = cw * .33;
-                    height = ch * .33;
+                    height = y = stageHeight * .33;
+                    width = stageWidth * .33;
                     break;
                 case Keyboard.NUMPAD_5:
-                    x = cw * .33;
-                    y = ch * .33;
-                    width = cw * .33;
-                    height = ch * .33;
+                    width = x = stageWidth * .33;
+                    height = y = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_6:
-                    x = cw * .66;
-                    y = ch * .33;
-                    width = cw * .33;
-                    height = ch * .33;
+                    x = stageWidth * .66;
+                    height = y = stageHeight * .33;
+                    width = stageWidth * .33;
                     break;
                 case Keyboard.NUMPAD_1:
                     x = 0;
-                    y = ch * .66;
-                    width = cw * .33;
-                    height = ch * .33;
+                    y = stageHeight * .66;
+                    width = stageWidth * .33;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_2:
-                    x = cw * .33;
-                    y = ch * .66;
-                    width = cw * .33;
-                    height = ch * .33;
+                    width = x = stageWidth * .33;
+                    y = stageHeight * .66;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_3:
-                    x = cw * .66;
-                    y = ch * .66;
-                    width = cw * .33;
-                    height = ch * .33;
+                    x = stageWidth * .66;
+                    y = stageHeight * .66;
+                    width = stageWidth * .33;
+                    height = stageHeight * .33;
                     break;
                 case Keyboard.NUMPAD_0:
                     x = y = 0;
-                    width = cw;
-                    height = ch;
+                    width = stageWidth;
+                    height = stageHeight;
                     break;
             }
         }
@@ -1674,7 +1667,7 @@ public class Cc {
         if (_console) _console.scaleX = _console.scaleY = value;
     }
     
-    public static function toJson(...strings):Array{
+    public static function toJson(...strings):Array {
         for (var i:int = 0; i < strings.length; i++) {
             var currentElement:* = strings[i];
             if (currentElement is String == false) {

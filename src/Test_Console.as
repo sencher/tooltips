@@ -33,33 +33,9 @@ public class Test_Console extends Sprite {
 //        Ct.warnc(this, "warnc", {arr:[1,7,8], str:"string"}, 789);
 //        Ct.errorc(this, "errorc", {arr:[1,7,8], str:"string"}, 789);
 //        Ct.fatalc(this, "fatalc", {arr:[1,7,8], str:"string"}, 789);
-    
-        Ct.berryc(this, "berryc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.bluec(this, "bluec", {arr:[1,7,8], str:"string"}, 789);
-        Ct.blue2c(this, "blue2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.brownc(this, "brownc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.cyanc(this, "cyanc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.grassc(this, "grassc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.grass2c(this, "grass2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.greenc(this, "greenc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.green2c(this, "green2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.greyc(this, "greyc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.grey2c(this, "grey2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.magentac(this, "magentac", {arr:[1,7,8], str:"string"}, 789);
-        Ct.orangec(this, "orangec", {arr:[1,7,8], str:"string"}, 789);
-        Ct.pinkc(this, "pinkc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.purplec(this, "purplec", {arr:[1,7,8], str:"string"}, 789);
-        Ct.redc(this, "redc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.red2c(this, "red2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.red3c(this, "red3c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.skyc(this, "skyc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.sky2c(this, "sky2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.tealc(this, "tealc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.teal2c(this, "teal2c", {arr:[1,7,8], str:"string"}, 789);
-        Ct.whitec(this, "whitec", {arr:[1,7,8], str:"string"}, 789);
-        Ct.yellowc(this, "yellowc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.yellow2c(this, "yellow2c", {arr:[1,7,8], str:"string"}, 789);
         
+        Cc.green2("dsfdsf\naaaa");
+    
         tf.border = true;
         tf.y = 300;
         addChild(tf);
@@ -69,7 +45,7 @@ public class Test_Console extends Sprite {
 //        Cc.log(tf.text);
 //        Cc.log(tf.htmlText);
     
-//        func1();
+        func1();
         
 //        var o = {a:1,b:2,c:3}
 //        var a = ["a",17,{kk:"gg"}]
@@ -88,8 +64,35 @@ public class Test_Console extends Sprite {
     }
     
     private function func1():void{
-        Cc.green2cw(this, "txtAward.x < mcTipArea.x:");
-//        Cc.logc(this, "txtAward.x <<<<>><< mcTipArea.x:");
+        func2();
+    }
+    
+    private function func2():void {
+        Ct.berryc(this, "berryc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.bluec(this, "bluec", {arr:[1,7,8], str:"string"}, 789);
+        Ct.blue2c(this, "blue2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.brownc(this, "brownc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.cyancw(this, "cyancw", {arr:[1,7,8], str:"string"}, 789);
+        Ct.grassj(this, "grassj", {arr:[1,7,8], str:"string"}, 789);
+        Ct.grass2c(this, "grass2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.greenc(this, "greenc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.green2wj(this, "green2wj", {arr:[1,7,8], str:"string"}, 789);
+        Ct.greyc(this, "greyc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.grey2c(this, "grey2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.magenta("magenta", {arr:[1,7,8], str:"string"}, 789);
+        Ct.orangec(this, "orangec", {arr:[1,7,8], str:"string"}, 789);
+        Ct.pinkc(this, "pinkc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.purplec(this, "purplec", {arr:[1,7,8], str:"string"}, 789);
+        Ct.redc(this, "redc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.red2c(this, "red2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.red3c(this, "red3c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.skycj(this, "skycj", {arr:[1,7,8], str:"string"}, 789);
+        Ct.sky2cwj(this, "sky2cwj", {arr:[1,7,8], str:"string"}, 789);
+        Ct.tealc(this, "tealc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.teal2c(this, "teal2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.white("white", {arr:[1,7,8], str:"string"}, 789);
+        Ct.yellowc(this, "yellowc", {arr:[1,7,8], str:"string"}, 789);
+        Ct.yellow2c(this, "yellow2c", {arr:[1,7,8], str:"string"}, 789);
     }
 }
 }

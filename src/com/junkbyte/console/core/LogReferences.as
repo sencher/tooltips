@@ -606,7 +606,7 @@ public class LogReferences extends ConsoleCore {
      * Produces class name without package path
      * e.g: flash.display.Sprite => Sprite
      */
-    public static function ShortClassName(obj:Object, eschtml:Boolean = true):String {
+    public static function ShortClassName(obj:*, eschtml:Boolean = true):String {
         var str:String = getQualifiedClassName(obj);
         var ind:int = str.indexOf("::");
         var st:String = obj is Class ? "*" : "";
