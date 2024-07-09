@@ -38,7 +38,7 @@ public dynamic class WeakObject extends Proxy {
         _dir = new Object();
     }
     
-    public function set(n:String, obj:Object, strong:Boolean = false):void {
+    public function set(n:String, obj:*, strong:Boolean = false):void {
         if (obj == null) delete _dir[n];
         else _dir[n] = new WeakRef(obj, strong);
     }

@@ -236,31 +236,35 @@ public class ConsoleUtils {
         return result;
     }
     
-    public static function whoCalledThis(depth:int = 100):String {
+    public static function whoCalledThis(depth:int = 100, cutFirst:int = 4):String {
         var e:Error = new Error();
         var stackTrace:String = e.getStackTrace();
         var lines:Array = stackTrace.split("\n\t");
-        var cut:Array = lines.slice(4, 4 + depth);
+        var cut:Array = lines.slice(cutFirst, cutFirst + depth);
         var s:String;
         var r:String = "";
-        
+    
         for each (s in cut) {
             var shortRow:String = cutLongNames(s);
-            if(shortRow) {
+            if (shortRow) {
                 r += shortRow + "\n";
             }
         }
         
         function cutLongNames(value:String):String{
             var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
-            if(o && o[2] && o[4]){
+            if (o && o[2] && o[4]) {
                 return o[2] + "__" + o[4];
-            }else {
+            } else {
                 return "";
             }
         }
-        
+    
         return cut.length ? r += "*************" : r;
+    }
+    
+    public static function traceStack(...rest):void {
+        trace(rest, "\n", ConsoleUtils.whoCalledThis(100, 3));
     }
 }
 }

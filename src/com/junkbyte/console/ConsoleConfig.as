@@ -102,7 +102,7 @@ public class ConsoleConfig {
      * // However if you set objectHardReferenceTimer to 60, you will get AT LEAST 60 seconds before it become unavailable.
      * </code>
      */
-    public var objectHardReferenceTimer:uint = 120;
+    public var objectHardReferenceTimer:uint = 600;
     
     /**
      * Use flash's build in (or external) trace().
@@ -118,6 +118,8 @@ public class ConsoleConfig {
      * @see traceCall
      */
     public var tracingLevel:int;
+    
+    public var flashTrace:Boolean;
     
     /**
      * Assign custom trace function.
