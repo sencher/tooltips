@@ -46,6 +46,7 @@ import flash.external.ExternalInterface;
 import flash.geom.Rectangle;
 import flash.net.SharedObject;
 import flash.system.Capabilities;
+import flash.system.System;
 import flash.utils.getTimer;
 
 /**
@@ -388,7 +389,13 @@ public class Console extends Sprite {
     }
     
     public function jsonch(channel:*, obj:Object, depth:int = int.MAX_VALUE):void {
-        addLine(new Array(_tools.json(obj, depth)), 1, channel, false, true);
+        trace("jsonch")
+        var json:String = _tools.json(obj, depth);
+        
+        //System.setClipboard(json);
+        
+        
+        addLine(new Array(json), 1, channel, false, true);
     }
     
     public function get paused():Boolean {

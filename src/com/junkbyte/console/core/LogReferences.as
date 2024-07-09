@@ -260,6 +260,7 @@ public class LogReferences extends ConsoleCore {
                         console.jsonch(console.panels.mainPanel.reportChannel, o, 4);
                     } else if (str.indexOf("refj_") == 0) {
                         //console.explodech(console.panels.mainPanel.reportChannel, o);
+                        trace("refj_")
                         console.jsonch(console.panels.mainPanel.reportChannel, o);
                         //trace(com.adobe.serialization.json.JSON.encode(o));
                     } else {

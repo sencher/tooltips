@@ -47,7 +47,7 @@ public class Test_ConsoleDevelopment extends Sprite {
         Cc.debugcw(this,"debugcw",{a:1});
         Cc.debugcj(this,"debugcj",{a:1});
         Cc.debugwj("debugwj",{a:1});
-        Cc.debugcwj(this,"debugcwj",{a:1});      
+        Cc.debugcwj(this,"debugcwj",{a:1});
         
         Cc.warn("warn",{a:1});
         Cc.warnc(this,"warnc",{a:1});
@@ -56,7 +56,7 @@ public class Test_ConsoleDevelopment extends Sprite {
         Cc.warncw(this,"warncw",{a:1});
         Cc.warncj(this,"warncj",{a:1});
         Cc.warnwj("warnwj",{a:1});
-        Cc.warncwj(this,"warncwj",{a:1});      
+        Cc.warncwj(this,"warncwj",{a:1});
         
         Cc.error("error",{a:1});
         Cc.errorc(this,"errorc",{a:1});
@@ -65,7 +65,7 @@ public class Test_ConsoleDevelopment extends Sprite {
         Cc.errorcw(this,"errorcw",{a:1});
         Cc.errorcj(this,"errorcj",{a:1});
         Cc.errorwj("errorwj",{a:1});
-        Cc.errorcwj(this,"errorcwj",{a:1});      
+        Cc.errorcwj(this,"errorcwj",{a:1});
         
         Cc.fatal("fatal",{a:1});
         Cc.fatalc(this,"fatalc",{a:1});
