@@ -59,8 +59,8 @@ public class LogReferences extends ConsoleCore {
     private var _history:Array;
     private var _hisIndex:uint;
     
-    private var _prevBank:Array = new Array();
-    private var _currentBank:Array = new Array();
+    private var _prevBank:Array = [];
+    private var _currentBank:Array = [];
     private var _lastWithdraw:uint;
     
     public function LogReferences(console:Console) {
@@ -76,7 +76,7 @@ public class LogReferences extends ConsoleCore {
         if (_currentBank.length || _prevBank.length) {
             if (time > _lastWithdraw + config.objectHardReferenceTimer * 1000) {
                 _prevBank = _currentBank;
-                _currentBank = new Array();
+                _currentBank = [];
                 _lastWithdraw = time;
             }
         }
@@ -260,7 +260,6 @@ public class LogReferences extends ConsoleCore {
                         console.jsonch(console.panels.mainPanel.reportChannel, o, 4);
                     } else if (str.indexOf("refj_") == 0) {
                         //console.explodech(console.panels.mainPanel.reportChannel, o);
-                        trace("refj_")
                         console.jsonch(console.panels.mainPanel.reportChannel, o);
                         //trace(com.adobe.serialization.json.JSON.encode(o));
                     } else {
@@ -277,7 +276,7 @@ public class LogReferences extends ConsoleCore {
         remoter.send("focus");
         handleFocused();
         
-        if (!_history) _history = new Array();
+        if (!_history) _history = [];
         
         if (_current != o) {
             _current = o; // current is kept as hard reference so that it stays...
@@ -445,7 +444,6 @@ public class LogReferences extends ConsoleCore {
         //
         // constants...
         //
-        props = [];
         nodes = clsV..constant;
         for each (var constantX:XML in nodes) {
             report(" const <p3>" + constantX.@name + "</p3>:" + constantX.@type + " = " + makeValue(cls, constantX.@name.toString()) + "</p0>", 1, true, ch);
@@ -459,7 +457,6 @@ public class LogReferences extends ConsoleCore {
         //
         // methods
         //
-        props = [];
         nodes = clsV..method; // '..' to include from <factory>
         for each (var methodX:XML in nodes) {
             if (viewAll || self == methodX.@declaredBy) {
@@ -492,7 +489,6 @@ public class LogReferences extends ConsoleCore {
         //
         hasstuff = false;
         inherit = 0;
-        props = [];
         nodes = clsV..accessor; // '..' to include from <factory>
         for each (var accessorX:XML in nodes) {
             if (viewAll || self == accessorX.@declaredBy) {
@@ -539,7 +535,6 @@ public class LogReferences extends ConsoleCore {
         // dynamic values
         // - It can sometimes fail if we are looking at proxy object which havnt extended nextNameIndex, nextName, etc.
         try {
-            props = [];
             for (var X:* in obj) {
                 if (X is String) {
                     if (refIndex) str = "<a href='event:cl_" + refIndex + "_" + X + " = '>" + X + "</a>";
@@ -569,7 +564,7 @@ public class LogReferences extends ConsoleCore {
     }
     
     public function getPossibleCalls(obj:*):Array {
-        var list:Array = new Array();
+        var list:Array = [];
         var V:XML = describeType(obj);
         var nodes:XMLList = V.method;
         for each (var methodX:XML in nodes) {

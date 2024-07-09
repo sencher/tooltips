@@ -964,6 +964,7 @@ public class MainPanel extends ConsolePanel {
         }
         if (limited) {
             str += "<ch><a href=\"event:channels\"><b>" + (channels.length > len ? "..." : "") + "</b>^^ </a></ch>";
+            str += "<ch><a href=\"event:json\">J </a></ch>";
         }
         str += "</chs> ";
         return str;
@@ -1015,6 +1016,7 @@ public class MainPanel extends ConsolePanel {
                 clear: "Clear log",
                 priority: "Priority filter::shift: previous priority\n(skips unused priorites)",
                 channels: "Expand channels",
+                json: "Show Json object",
                 close: "Close"
             };
             txt = obj[txt];
@@ -1050,6 +1052,8 @@ public class MainPanel extends ConsolePanel {
             dispatchEvent(new Event(Event.CLOSE));
         } else if (t == "channels") {
             console.panels.channelsPanel = !console.panels.channelsPanel;
+        } else if (t == "json") {
+            console.panels.jsonPanel = !console.panels.jsonPanel;
         } else if (t == "fps") {
             console.fpsMonitor = !console.fpsMonitor;
         } else if (t == "priority") {

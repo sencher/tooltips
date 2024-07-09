@@ -57,7 +57,7 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.86;
+    public static const VERSION:Number = 2.87;
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -385,16 +385,14 @@ public class Console extends Sprite {
      * @copy com.junkbyte.console.Cc#explodech()
      */
     public function explodech(channel:*, obj:Object, depth:int = 3):void {
-        addLine(new Array(_tools.explode(obj, depth)), 1, channel, false, true);
+        var explode:String = _tools.explode(obj, depth);
+        System.setClipboard(explode.replace(/<[^<]*>/gm, ""));
+        addLine(new Array(explode), 1, channel, false, true);
     }
     
     public function jsonch(channel:*, obj:Object, depth:int = int.MAX_VALUE):void {
-        trace("jsonch")
         var json:String = _tools.json(obj, depth);
-        
-        //System.setClipboard(json);
-        
-        
+        System.setClipboard(json);
         addLine(new Array(json), 1, channel, false, true);
     }
     

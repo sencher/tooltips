@@ -38,6 +38,7 @@ public class PanelsManager {
     private var _ruler:Ruler;
     
     private var _chsPanel:ChannelsPanel;
+    private var _jsonPanel:JsonPanel;
     private var _fpsPanel:GraphingPanel;
     private var _memPanel:GraphingPanel;
     private var _graphsMap:Object = {};
@@ -255,12 +256,13 @@ public class PanelsManager {
             _mainPanel.updateMenu();
         }
     }
-    
-    //
-    //
-    //
+
     public function get channelsPanel():Boolean {
         return _chsPanel != null;
+    }
+
+    public function get jsonPanel():Boolean {
+        return _jsonPanel != null;
     }
     
     public function set channelsPanel(b:Boolean):void {
@@ -276,6 +278,24 @@ public class PanelsManager {
             } else {
                 removePanel(ChannelsPanel.NAME);
                 _chsPanel = null;
+            }
+            updateMenu();
+        }
+    }
+    
+    public function set jsonPanel(b:Boolean):void {
+        if (jsonPanel != b) {
+            //console.logs.cleanChannels();
+            if (b) {
+                _jsonPanel = new JsonPanel(console);
+                _jsonPanel.x = _mainPanel.x + _mainPanel.width - 332;
+                _jsonPanel.y = _mainPanel.y - 2;
+                addPanel(_jsonPanel);
+                _jsonPanel.update();
+                updateMenu();
+            } else {
+                removePanel(JsonPanel.NAME);
+                _jsonPanel = null;
             }
             updateMenu();
         }
