@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.vos {
+
 import com.junkbyte.console.core.Executer;
 
 import flash.utils.ByteArray;
@@ -63,9 +64,6 @@ public class GraphInterest {
         return _prop;
     }
     
-    //
-    //
-    //
     public function getCurrentValue():Number {
         return useExec ? Executer.Exec(obj, _prop) : obj[_prop];
     }
@@ -81,9 +79,6 @@ public class GraphInterest {
         }
     }
     
-    //
-    //
-    //
     public function toBytes(bytes:ByteArray):void {
         bytes.writeUTF(key);
         bytes.writeUnsignedInt(col);

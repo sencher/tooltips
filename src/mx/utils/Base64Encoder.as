@@ -107,9 +107,6 @@ public class Base64Encoder
     //
     //--------------------------------------------------------------------------
 
-    /**
-     * @private
-     */
     public function drain():String
     {
         var result:String = "";
@@ -240,9 +237,6 @@ public class Base64Encoder
         data.position = oldPosition;
     }
 
-    /**
-     * @private
-     */
     public function flush():String
     {
         if (_count > 0)
@@ -295,9 +289,6 @@ public class Base64Encoder
     //
     //--------------------------------------------------------------------------
 
-    /**
-     * @private
-     */
     private function encodeBlock():void
     {
         var currentBuffer:Array = _buffers[_buffers.length - 1] as Array;

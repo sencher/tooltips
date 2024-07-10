@@ -26,7 +26,9 @@ package com.junkbyte.console.view {
 
 import com.greensock.TweenLite;
 import com.junkbyte.console.Console;
+import com.junkbyte.console.core.ConsoleEvent;
 
+import flash.events.Event;
 import flash.events.TextEvent;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
@@ -52,40 +54,48 @@ public class JsonPanel extends ConsolePanel {
         registerTFRoller(txtField, onMenuRollOver, linkHandler);
         registerDragger(txtField);
         addChild(txtField);
-    
+        
         txtObject = makeTF("txtObject");
         txtObject.width = txtObject.height = 160;
         txtObject.multiline = true;
-        setText("sdfdfdfdfgfdg");
+//        setText("sdfdfdfdfgfdg");
         addChild(txtObject);
+        
+        addEventListener(Event.ADDED_TO_STAGE, addedToStage);
+    }
+    
+    private function addedToStage(event:Event):void {
+        stage.addEventListener(ConsoleEvent.UPDATE_JSON_PANEL, onUpdateJsonPanel);
+    }
+    
+    private function onUpdateJsonPanel(event:ConsoleEvent):void {
+        setText(event.data);
+        visible = true;
     }
     
     public function update():void {
         txtField.wordWrap = false;
         txtField.width = 80;
-        var str:String = "<high><menu> <b><a href=\"event:close\">X</a></b></menu> ";
-        txtField.htmlText = str + "</high>";
+        txtField.htmlText = "<high><menu> <b><a href=\"event:close\">X</a></b></menu>                         </high>";
         if (txtField.width > 160) {
             txtField.wordWrap = true;
             txtField.width = 160;
         }
-    
+        
         txtObject.y = txtField.y + txtField.height;
         
         width = txtObject.width + 4;
         height = txtField.height + txtObject.height;
     }
     
-    public function setText(value:String):void{
-        txtObject.htmlText = "<p19>"+value+"</p19>";
-        TweenLite.delayedCall(1, selectAll,[1,5], true);
+    public function setText(value:String):void {
+        txtObject.htmlText = "<p19>" + value + "</p19>";
+        TweenLite.delayedCall(1, selectAll, [], true);
     }
     
-    private function selectAll(v1,v2):void{
-        trace(v1,v2);
+    public function selectAll():void {
         stage.focus = txtObject;
-        txtObject.setSelection(v1,v2);
-        trace(txtObject.selectedText);
+        txtObject.setSelection(0, int.MAX_VALUE);
     }
     
     private function onMenuRollOver(e:TextEvent):void {
@@ -95,7 +105,7 @@ public class JsonPanel extends ConsolePanel {
     protected function linkHandler(e:TextEvent):void {
         txtField.setSelection(0, 0);
         if (e.text == "close") {
-            console.panels.jsonPanel = false;
+            console.panels.jsonPanelSwitch();
         }
         e.stopPropagation();
     }

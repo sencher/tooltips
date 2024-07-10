@@ -749,9 +749,6 @@ public class ListCollectionView extends Proxy
         return -1;
     }
 
-    /**
-     * @private
-     */
     private function getFilteredItemIndex(item:Object):int
     { 
         // loc is wrong 

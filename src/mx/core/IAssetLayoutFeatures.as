@@ -46,9 +46,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutX(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutX():Number;
     
     /**
@@ -62,9 +59,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutY(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutY():Number;
     
     /**
@@ -78,9 +72,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutZ(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutZ():Number;
     
     /**
@@ -109,9 +100,6 @@ public interface IAssetLayoutFeatures
      *  @productversion Flex 4.1
      */
     function set transformX(value:Number):void;
-    /**
-     * @private
-     */
     function get transformX():Number;
     
     /**
@@ -124,9 +112,6 @@ public interface IAssetLayoutFeatures
      */
     function set transformY(value:Number):void;
     
-    /**
-     * @private
-     */
     function get transformY():Number;
     
     /**
@@ -139,9 +124,6 @@ public interface IAssetLayoutFeatures
      */
     function set transformZ(value:Number):void;
     
-    /**
-     * @private
-     */
     function get transformZ():Number;
     
     //------------------------------------------------------------------------------
@@ -157,9 +139,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutRotationX(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutRotationX():Number;
     
     /**
@@ -173,9 +152,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutRotationY(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutRotationY():Number;
     
     /**
@@ -189,9 +165,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutRotationZ(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutRotationZ():Number;
     
     //------------------------------------------------------------------------------
@@ -207,9 +180,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutScaleX(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutScaleX():Number;
     
     /**
@@ -223,9 +193,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutScaleY(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutScaleY():Number;
     
     /**
@@ -239,9 +206,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutScaleZ(value:Number):void;
     
-    /**
-     * @private
-     */
     function get layoutScaleZ():Number;
     
     /**
@@ -254,9 +218,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutMatrix(value:Matrix):void;
     
-    /**
-     * @private
-     */
     function get layoutMatrix():Matrix;
     
     /**
@@ -269,9 +230,6 @@ public interface IAssetLayoutFeatures
      */
     function set layoutMatrix3D(value:Matrix3D):void;
     
-    /**
-     * @private
-     */
     function get layoutMatrix3D():Matrix3D;
     
     /**

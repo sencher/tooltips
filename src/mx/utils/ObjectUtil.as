@@ -1366,9 +1366,6 @@ public class ObjectUtil
         return result;
     }
     
-    /**
-     * @private
-     */
     private static function byteArrayCompare(a:ByteArray, b:ByteArray):int
     {
         var result:int = 0;
@@ -1448,9 +1445,6 @@ public class ObjectUtil
         return oRef
     }
     
-    /**
-     * @private
-     */
     private static var refCount:int = 0;
 
     /**

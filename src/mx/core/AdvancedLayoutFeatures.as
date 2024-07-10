@@ -212,9 +212,6 @@ package mx.core
         invalidate();
     }
 
-    /**
-     * @private
-     */
     public function get layoutX():Number
     {
         return layout.x;
@@ -234,9 +231,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutY():Number
     {
         return layout.y;
@@ -257,9 +251,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutZ():Number
     {
         return layout.z;
@@ -303,9 +294,6 @@ package mx.core
         layout.transformX = value;
         invalidate();
     }
-    /**
-     * @private
-     */
     public function get transformX():Number
     {
         return layout.transformX;
@@ -321,9 +309,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get transformY():Number
     {
         return layout.transformY;
@@ -339,9 +324,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get transformZ():Number
     {
         return layout.transformZ;
@@ -365,9 +347,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutRotationX():Number
     {
         return layout.rotationX;
@@ -388,9 +367,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutRotationY():Number
     {
         return layout.rotationY;
@@ -411,9 +387,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutRotationZ():Number
     {
         return layout.rotationZ;
@@ -437,9 +410,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutScaleX():Number
     {
         return layout.scaleX;
@@ -460,9 +430,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutScaleY():Number
     {
         return layout.scaleY;
@@ -484,9 +451,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutScaleZ():Number
     {
         return layout.scaleZ;
@@ -507,9 +471,6 @@ package mx.core
     }
     
     
-    /**
-     * @private
-     */
     public function get layoutMatrix():Matrix
     {
         return layout.matrix;
@@ -532,9 +493,6 @@ package mx.core
         invalidate();
     }
     
-    /**
-     * @private
-     */
     public function get layoutMatrix3D():Matrix3D
     {
         return layout.matrix3D;

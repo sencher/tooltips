@@ -145,9 +145,6 @@ public class TweenEffectInstance extends EffectInstance
 			return 0;
 	}
 
-    /**
-     * @private
-     */
     override public function set playheadTime(value:Number):void
     {
         if (tween)

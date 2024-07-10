@@ -37,9 +37,6 @@ public interface IFlexModule
      */
     function set moduleFactory(factory:IFlexModuleFactory):void;
 
-    /**
-     * @private
-     */
     function get moduleFactory():IFlexModuleFactory;
 
 }

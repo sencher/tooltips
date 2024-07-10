@@ -185,9 +185,6 @@ public interface IEffectInstance
      */
     function get playheadTime():Number;
     
-    /**
-     * @private
-     */
     function set playheadTime(value:Number):void;
     
     //----------------------------------

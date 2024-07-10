@@ -111,9 +111,6 @@ public class Base64Decoder
         }
     }
 
-    /**
-     * @private
-     */
     public function drain():ByteArray
     {
         var result:ByteArray = new ByteArray();
@@ -128,9 +125,6 @@ public class Base64Decoder
         return result;
     }
 
-    /**
-     * @private
-     */
     public function flush():ByteArray
     {
         if (count > 0)

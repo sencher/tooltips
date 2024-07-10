@@ -350,9 +350,6 @@ public class EffectInstance extends EventDispatcher implements IEffectInstance
                (playReversed ? 0 : startDelay);
     }
 
-    /**
-     * @private
-     */
     public function set playheadTime(value:Number):void
     {
         if (delayTimer && delayTimer.running)

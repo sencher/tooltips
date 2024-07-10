@@ -83,9 +83,6 @@ public class MemoryMonitor extends ConsoleCore {
         }
     }
     
-    //
-    //
-    //
     public function update():void {
         if (_count == 0) return;
         var arr:Array = new Array();

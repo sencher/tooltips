@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.view {
+
 import com.junkbyte.console.Console;
 import com.junkbyte.console.vos.GraphGroup;
 
@@ -55,6 +56,13 @@ public class PanelsManager {
         _tooltipField.autoSize = TextFieldAutoSize.CENTER;
         _tooltipField.multiline = true;
         addPanel(_mainPanel);
+        
+        _jsonPanel = new JsonPanel(console);
+        _jsonPanel.visible = false;
+        _jsonPanel.x = _mainPanel.x + _mainPanel.width - 332;
+        _jsonPanel.y = _mainPanel.y - 2;
+        addPanel(_jsonPanel);
+        _jsonPanel.update();
     }
     
     public function addPanel(panel:ConsolePanel):void {
@@ -210,9 +218,6 @@ public class PanelsManager {
         _canDraw = false;
     }
     
-    /**
-     * @private
-     */
     public function removeGraph(group:GraphGroup):void {
         if (_fpsPanel && group == _fpsPanel.group) {
             _fpsPanel.close();
@@ -229,12 +234,6 @@ public class PanelsManager {
         }
     }
     
-    //
-    //
-    //
-    /**
-     * @private
-     */
     public function get displayRoller():Boolean {
         return (getPanel(RollerPanel.NAME) as RollerPanel) ? true : false;
     }
@@ -256,13 +255,14 @@ public class PanelsManager {
             _mainPanel.updateMenu();
         }
     }
-
+    
     public function get channelsPanel():Boolean {
         return _chsPanel != null;
     }
-
-    public function get jsonPanel():Boolean {
-        return _jsonPanel != null;
+    
+    public function jsonPanelSwitch():void {
+        _jsonPanel.selectAll();
+        _jsonPanel.visible = !_jsonPanel.visible;
     }
     
     public function set channelsPanel(b:Boolean):void {
@@ -283,47 +283,14 @@ public class PanelsManager {
         }
     }
     
-    public function set jsonPanel(b:Boolean):void {
-        if (jsonPanel != b) {
-            //console.logs.cleanChannels();
-            if (b) {
-                _jsonPanel = new JsonPanel(console);
-                _jsonPanel.x = _mainPanel.x + _mainPanel.width - 332;
-                _jsonPanel.y = _mainPanel.y - 2;
-                addPanel(_jsonPanel);
-                _jsonPanel.update();
-                updateMenu();
-            } else {
-                removePanel(JsonPanel.NAME);
-                _jsonPanel = null;
-            }
-            updateMenu();
-        }
-    }
-    
-    //
-    //
-    //
-    /**
-     * @private
-     */
     public function get memoryMonitor():Boolean {
         return _memPanel != null;
     }
     
-    /**
-     * @private
-     */
     public function get fpsMonitor():Boolean {
         return _fpsPanel != null;
     }
     
-    //
-    //
-    //
-    /**
-     * @private
-     */
     public function tooltip(str:String = null, panel:ConsolePanel = null):void {
         if (str && !rulerActive) {
             var split:Array = str.split("::");
@@ -362,9 +329,6 @@ public class PanelsManager {
         }
     }
     
-    //
-    //
-    //
     public function startRuler():void {
         if (rulerActive) {
             return;
@@ -387,9 +351,6 @@ public class PanelsManager {
         _mainPanel.updateMenu();
     }
     
-    //
-    //
-    //
     private function onPanelStartDragScale(e:Event):void {
         var target:ConsolePanel = e.currentTarget as ConsolePanel;
         if (console.config.style.panelSnapping) {

@@ -166,9 +166,6 @@ public class GraphingPanel extends ConsolePanel {
         _needRedraw = true;
     }
     
-    //
-    //
-    //
     public function update(group:GraphGroup, draw:Boolean):void {
         _group = group;
         var push:int = 1; // 0 = no push, 1 = 1 push, 2 = push all

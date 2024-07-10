@@ -178,9 +178,6 @@ package mx.geom
         translateBy(value-_x,0,0);
         invalidate(INVALIDATE_FROM_PROPERTY, false /*affects3D*/);
     }
-    /**
-     * @private
-     */
     public function get x():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -204,9 +201,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, false /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get y():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -230,9 +224,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get z():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -263,9 +254,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get rotationX():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -293,9 +281,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get rotationY():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -323,9 +308,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, false /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get rotationZ():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -352,9 +334,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, false /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get scaleX():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -378,9 +357,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, false /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get scaleY():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -405,9 +381,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get scaleZ():Number
     {
         if ((_flags & PROPERTIES_VALID) == false) validatePropertiesFromMatrix();
@@ -444,9 +417,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
 
-    /**
-     * @private
-     */
     public function get transformX():Number
     {
         return _transformX;
@@ -470,9 +440,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get transformY():Number
     {
         return _transformY;
@@ -495,9 +462,6 @@ package mx.geom
         invalidate(INVALIDATE_FROM_PROPERTY, true /*affects3D*/);
     }
     
-    /**
-     * @private
-     */
     public function get transformZ():Number
     {
         return _transformZ;
@@ -764,9 +728,6 @@ package mx.geom
         
     }
     
-    /**
-     * @private
-     */
     public function set matrix3D(v:Matrix3D):void
     {
         if (_matrix3D == null)

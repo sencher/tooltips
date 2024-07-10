@@ -906,17 +906,11 @@ public final class Long {
     ///////////////////////////////////////////////////////////////////////
     // IExternalizable implementation.
 
-    /**
-     * @private
-     */
     public function readExternal(input:IDataInput):void {
         _u1 = input.readUnsignedInt();
         _u0 = input.readUnsignedInt();
     }
 
-    /**
-     * @private
-     */
     public function writeExternal(output:IDataOutput):void {
         output.writeUnsignedInt(_u1);
         output.writeUnsignedInt(_u0);

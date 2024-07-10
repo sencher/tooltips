@@ -424,9 +424,6 @@ public interface IEffect extends IAbstractEffect
      */
     function get playheadTime():Number;
     
-    /**
-     * @private
-     */
     function set playheadTime(value:Number):void;
 
     //--------------------------------------------------------------------------

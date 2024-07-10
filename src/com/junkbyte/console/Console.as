@@ -23,7 +23,9 @@
 * 
 */
 package com.junkbyte.console {
+
 import com.junkbyte.console.core.CommandLine;
+import com.junkbyte.console.core.ConsoleEvent;
 import com.junkbyte.console.core.ConsoleTools;
 import com.junkbyte.console.core.Graphing;
 import com.junkbyte.console.core.KeyBinder;
@@ -46,7 +48,6 @@ import flash.external.ExternalInterface;
 import flash.geom.Rectangle;
 import flash.net.SharedObject;
 import flash.system.Capabilities;
-import flash.system.System;
 import flash.utils.getTimer;
 
 /**
@@ -90,6 +91,7 @@ public class Console extends Sprite {
     public static const CONSOLE_CHANNEL:String = "C";
     public static const FILTER_CHANNEL:String = "~";
     public static const INSPECTING_CHANNEL:String = "⌂";
+    private static const TAG:RegExp = /<[^<]*>/gm;
     
     private var _config:ConsoleConfig;
     private var _panels:PanelsManager;
@@ -150,7 +152,7 @@ public class Console extends Sprite {
                 _so = SharedObject.getLocal(_config.sharedObjectName, _config.sharedObjectPath);
                 _soData = _so.data;
             } catch (e:Error) {
-            
+                
             }
         }
         
@@ -378,7 +380,10 @@ public class Console extends Sprite {
      * @copy com.junkbyte.console.Cc#explode()
      */
     public function explode(obj:Object, depth:int = 3):void {
-        addLine(new Array(_tools.explode(obj, depth)), 1, null, false, true);
+        var explode:String = _tools.explode(obj, depth);
+        //System.setClipboard(explode.replace(TAG, ""));
+        dispatchEvent(new ConsoleEvent(ConsoleEvent.UPDATE_JSON_PANEL, explode.replace(TAG, ""), true));
+        addLine(new Array(explode), 1, null, false, true);
     }
     
     /**
@@ -386,14 +391,16 @@ public class Console extends Sprite {
      */
     public function explodech(channel:*, obj:Object, depth:int = 3):void {
         var explode:String = _tools.explode(obj, depth);
-        System.setClipboard(explode.replace(/<[^<]*>/gm, ""));
+        //System.setClipboard(explode.replace(TAG, ""));
+        dispatchEvent(new ConsoleEvent(ConsoleEvent.UPDATE_JSON_PANEL, explode.replace(TAG, ""), true));
         addLine(new Array(explode), 1, channel, false, true);
     }
     
     public function jsonch(channel:*, obj:Object, depth:int = int.MAX_VALUE):void {
         var json:String = _tools.json(obj, depth);
-        System.setClipboard(json);
-        addLine(new Array(json), 1, channel, false, true);
+        //System.setClipboard(json);
+        dispatchEvent(new ConsoleEvent(ConsoleEvent.UPDATE_JSON_PANEL, json, true));
+        //addLine(new Array(json), 1, channel, false, true);
     }
     
     public function get paused():Boolean {
@@ -420,9 +427,6 @@ public class Console extends Sprite {
         _panels.mainPanel.setPaused(newV);
     }
     
-    //
-    //
-    //
     override public function get width():Number {
         return _panels.mainPanel.width;
     }
@@ -460,12 +464,9 @@ public class Console extends Sprite {
         if (v) _panels.mainPanel.visible = true;
     }
     
-    //
-    //
-    //
     private function _onEnterFrame(e:Event):void {
         //if(_paused) return;
-
+        
         var time:int = getTimer();
         _logs.update(time);
         _refs.update(time);
@@ -511,9 +512,6 @@ public class Console extends Sprite {
         _remoter.remotingSocket(host, port);
     }
     
-    //
-    //
-    //
     
     /**
      * @copy com.junkbyte.console.Cc#setViewingChannels()
@@ -546,7 +544,7 @@ public class Console extends Sprite {
     }
     
     public function addLine(strings:Array, priority:int = 0, channel:* = null, isRepeating:Boolean = false, html:Boolean = false, stacks:int = -1):void {
-        if(_stopped && channel != INSPECTING_CHANNEL) return;
+        if (_stopped && channel != INSPECTING_CHANNEL) return;
         var txt:String = "";
         var len:int = strings.length;
         for (var i:int = 0; i < len; i++) {
@@ -667,9 +665,6 @@ public class Console extends Sprite {
         return true;
     }
     
-    //
-    //
-    //
     
     /**
      * @copy com.junkbyte.console.Cc#clear()
@@ -701,29 +696,20 @@ public class Console extends Sprite {
         return _panels;
     }
     
-    /**
-     * @private
-     */
     public function get cl():CommandLine {
         return _cl;
     }
     
-    /**
-     * @private
-     */
     public function get remoter():Remoting {
         return _remoter;
     }
     
-    /**
-     * @private
-     */
     public function get graphing():Graphing {
         return _graphing;
     }
-
+    
     public function debugMode(value:*):void {
-        if(!value){
+        if (!value) {
             green2("DEBUG_MODE is " + Cc.D_MODE);
             return;
         }
@@ -731,11 +717,11 @@ public class Console extends Sprite {
         green2("DEBUG_MODE set to " + value);
     }
     
-    public function callExternalInterface(value:String, ...rest):void{
+    public function callExternalInterface(value:String, ...rest):void {
         green2(value, rest)
         ExternalInterface.call(value);
     }
-
+    
     public function printRefMap(value:*):void {
         green2(_refs);
     }
@@ -744,30 +730,18 @@ public class Console extends Sprite {
         return _refs;
     }
     
-    /**
-     * @private
-     */
     public function get logs():Logs {
         return _logs;
     }
     
-    /**
-     * @private
-     */
     public function get mapper():ConsoleTools {
         return _tools;
     }
     
-    /**
-     * @private
-     */
     public function get so():Object {
         return _soData;
     }
     
-    /**
-     * @private
-     */
     public function updateSO(key:String = null):void {
         if (_so) {
             if (key) _so.setDirty(key);
@@ -775,9 +749,6 @@ public class Console extends Sprite {
         }
     }
     
-    //
-    //
-    //
     public static function MakeChannelName(obj:*):String {
         if (obj is String) return obj as String;
         else if (obj) return LogReferences.ShortClassName(obj);

@@ -63,9 +63,6 @@ public class GraphGroup {
         }
     }
     
-    //
-    //
-    //
     public function toBytes(bytes:ByteArray):void {
         bytes.writeUTF(name);
         bytes.writeUnsignedInt(type);

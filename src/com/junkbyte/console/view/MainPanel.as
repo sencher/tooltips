@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.view {
+
 import com.junkbyte.console.Cc;
 import com.junkbyte.console.Console;
 import com.junkbyte.console.core.ConsoleUtils;
@@ -233,9 +234,6 @@ public class MainPanel extends ConsolePanel {
         addEventListener(Event.REMOVED_FROM_STAGE, stageRemovedHandle, false, 0, true);
     }
     
-    /**
-     * @private
-     */
     public function addMenu(key:String, f:Function, args:Array, rollover:String):void {
         if (key) {
             key = key.replace(/[^\w]*/g, "");
@@ -314,9 +312,6 @@ public class MainPanel extends ConsolePanel {
     }
     
     
-    /**
-     * @private
-     */
     public function requestLogin(on:Boolean = true):void {
         var ct:ColorTransform = new ColorTransform();
         if (on) {
@@ -406,11 +401,11 @@ public class MainPanel extends ConsolePanel {
         }
     }
     
-    private function viewAll():Boolean{
+    private function viewAll():Boolean {
         return _priority == 0 && _viewingChannels.indexOf(Console.GLOBAL_CHANNEL) > -1;
     }
     
-    private function showChannelTag():Boolean{
+    private function showChannelTag():Boolean {
         return _viewingChannels.indexOf(Console.GLOBAL_CHANNEL) > -1 || _viewingChannels.length != 1;
     }
     
@@ -542,12 +537,12 @@ public class MainPanel extends ConsolePanel {
     public function setViewingChannels(channels:Array):void {
 //        trace("_viewingChannels",_viewingChannels);
 //        trace("channels",channels);
-        if(ConsoleUtils.areEqual(_viewingChannels, channels)){
+        if (ConsoleUtils.areEqual(_viewingChannels, channels)) {
 //            trace("skip");
             return;
         }
         
-        if(channelsKey != Console.INSPECTING_CHANNEL){
+        if (channelsKey != Console.INSPECTING_CHANNEL) {
             _scrollStates[channelsKey] = getScrollState();
         }
         
@@ -589,9 +584,6 @@ public class MainPanel extends ConsolePanel {
         return _viewingChannels;
     }
     
-    /**
-     * @private
-     */
     public function setIgnoredChannels(channels:Array):void {
         
         _scrollStates[channelsKey] = getScrollState();
@@ -889,12 +881,6 @@ public class MainPanel extends ConsolePanel {
         _traceField.height = Math.max(0, height - (_cmdField.visible ? (style.menuFontSize + 4) : 0) - _traceField.y);
     }
     
-    //
-    //
-    //
-    /**
-     * @private
-     */
     public function updateMenu(instant:Boolean = false):void {
         if (instant) {
             _updateMenu();
@@ -944,9 +930,6 @@ public class MainPanel extends ConsolePanel {
         updateTraceFHeight();
     }
     
-    /**
-     * @private
-     */
     public function getChannelsLink(limited:Boolean = false):String {
         var str:String = "<chs>";
         var channels:Array = console.logs.getChannels();
@@ -957,7 +940,7 @@ public class MainPanel extends ConsolePanel {
             var channelTxt:String;
             if (chShouldShow(channel)) {
                 channelTxt = "<ch><b>" + channel + "</b></ch>";
-            }else{
+            } else {
                 channelTxt = channel;
             }
             str += "<a href=\"event:channel_" + channel + "\">[" + channelTxt + "]</a> ";
@@ -975,9 +958,6 @@ public class MainPanel extends ConsolePanel {
         return str;
     }
     
-    /**
-     * @private
-     */
     public function onMenuRollOver(e:TextEvent, src:ConsolePanel = null):void {
         if (src == null) src = this;
         var txt:String = e.text ? e.text.replace("event:", "") : "";
@@ -1053,7 +1033,7 @@ public class MainPanel extends ConsolePanel {
         } else if (t == "channels") {
             console.panels.channelsPanel = !console.panels.channelsPanel;
         } else if (t == "json") {
-            console.panels.jsonPanel = !console.panels.jsonPanel;
+            console.panels.jsonPanelSwitch();
         } else if (t == "fps") {
             console.fpsMonitor = !console.fpsMonitor;
         } else if (t == "priority") {
@@ -1105,9 +1085,6 @@ public class MainPanel extends ConsolePanel {
         e.stopPropagation();
     }
     
-    /**
-     * @private
-     */
     public function onChannelPressed(chn:String):void {
         var current:Array;
         if (_ctrl && chn != Console.GLOBAL_CHANNEL) {
@@ -1311,9 +1288,6 @@ public class MainPanel extends ConsolePanel {
         }
     }
     
-    /**
-     * @private
-     */
     public function updateCLScope(str:String):void {
         if (_enteringLogin) {
             _enteringLogin = false;
@@ -1336,9 +1310,6 @@ public class MainPanel extends ConsolePanel {
         _hintField.x = _cmdField.x;
     }
     
-    /**
-     * @private
-     */
     public function set commandLine(b:Boolean):void {
         if (b) {
             _cmdField.visible = true;
@@ -1353,9 +1324,6 @@ public class MainPanel extends ConsolePanel {
         this.height = height;
     }
     
-    /**
-     * @private
-     */
     public function get commandLine():Boolean {
         return _cmdField.visible;
     }

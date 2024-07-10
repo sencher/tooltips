@@ -170,9 +170,6 @@ public class ConsolePanel extends Sprite {
     //
     // MOVING
     //
-    /**
-     * @private
-     */
     public function registerSnaps(X:Array, Y:Array):void {
         _snaps = [X, Y];
     }
@@ -232,9 +229,6 @@ public class ConsolePanel extends Sprite {
         dispatchEvent(new Event(DRAGGING_ENDED));
     }
     
-    /**
-     * @private
-     */
     public function moveBackSafePosition():void {
         if (_movedFrom != null) {
             // This will only work if stage size is not altered OR stage.align is top left
@@ -327,9 +321,6 @@ public class ConsolePanel extends Sprite {
     
     //
     //
-    /**
-     * @private
-     */
     public function makeTF(n:String, back:Boolean = false):TextField {
         var txt:TextField = new TextField();
         txt.name = n;

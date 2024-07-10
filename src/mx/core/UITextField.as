@@ -624,9 +624,6 @@ public class UITextField extends FlexTextField
         return "";
     }
 
-    /**
-     * @private
-     */
     public function set automationName(value:String):void
     {
         _automationName = value;

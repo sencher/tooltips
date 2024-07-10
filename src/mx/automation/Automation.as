@@ -80,9 +80,6 @@ public class Automation
         return _automationManager;
     }
 
-    /**
-     * @private
-     */
     public static function set automationManager(manager:IAutomationManager):void
     {
         _automationManager = manager;
@@ -150,9 +147,6 @@ public class Automation
         return _mouseSimulator;
     }
 
-    /**
-     * @private
-     */
     public static function set mouseSimulator(ms:IAutomationMouseSimulator):void
     {
         _mouseSimulator = ms;

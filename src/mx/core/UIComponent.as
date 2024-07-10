@@ -2608,9 +2608,6 @@ public class UIComponent extends FlexSprite
         return (_layoutFeatures == null) ? super.rotation : _layoutFeatures.layoutRotationZ;
     }
 
-    /**
-     * @private
-     */
     override public function set rotation(value:Number):void
     {
         if (FlexVersion.compatibilityVersion < FlexVersion.VERSION_4_0)
@@ -3137,9 +3134,6 @@ public class UIComponent extends FlexSprite
         return (_layoutFeatures == null) ? super.scaleZ : _layoutFeatures.layoutScaleZ;
     }
 
-    /**
-     * @private
-     */
     override public function set scaleZ(value:Number):void
     {
         if (scaleZ == value)
@@ -13643,9 +13637,6 @@ public class UIComponent extends FlexSprite
         return (_layoutFeatures != null)? _layoutFeatures.postLayoutTransformOffsets:null;
     }
 
-    /**
-     * @private
-     */
     public function set postLayoutTransformOffsets(value:TransformOffsets):void
     {
         // validateMatrix when switching between 2D/3D, works around player bug
@@ -13666,9 +13657,6 @@ public class UIComponent extends FlexSprite
         invalidateTransform();
     }
 
-    /**
-     * @private
-     */
     private var _maintainProjectionCenter:Boolean = false;
     
     /**
@@ -13690,9 +13678,6 @@ public class UIComponent extends FlexSprite
         }
         invalidateDisplayList();
     }
-    /**
-     * @private
-     */
     public function get maintainProjectionCenter():Boolean
     {
         return _maintainProjectionCenter;
@@ -13920,9 +13905,6 @@ public class UIComponent extends FlexSprite
         return (_layoutFeatures == null) ? 0 : _layoutFeatures.depth;
     }
 
-    /**
-     * @private
-     */
     public function set depth(value:Number):void
     {
         if (value == depth)
