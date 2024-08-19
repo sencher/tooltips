@@ -1,6 +1,5 @@
 package com.junkbyte.console.core {
 
-import com.junkbyte.console.Cc;
 
 public class ConsoleUtils {
     private static const OPEN_BRACE:String = "{";
@@ -25,9 +24,9 @@ public class ConsoleUtils {
         
         var len:int = arr1.length;
         for (var i:int = 0; i < len; i++) {
-            if(sortCheck && arr1[i] != arr2[i]){
+            if (sortCheck && arr1[i] != arr2[i]) {
                 return false;
-            }else if( arr2.indexOf(arr1[i]) < 0){
+            } else if (arr2.indexOf(arr1[i]) < 0) {
                 return false;
             }
             
@@ -35,14 +34,13 @@ public class ConsoleUtils {
         return true;
     }
     
-    public static function patternOccurrences(pattern:String, target:String):uint
-    {
+    public static function patternOccurrences(pattern:String, target:String):uint {
         return target.match(new RegExp(pattern, "g")).length;
     }
     
     public static function formatJsonString(value:String, depth:int = 0):String {
 //        Cc.red("formatJsonString", value, "depth:",depth);
-        if(!value) return "";
+        if (!value) return "";
         
         //DEBUG
 //        var p1 = patternOccurrences(ESCAPE_CHAR+OPEN_BRACE, value);
@@ -59,7 +57,7 @@ public class ConsoleUtils {
         var middle:String = "";
         var suffix:String = "";
         var rest:String = "";
-        
+
 //        while(value.charAt(0) == COMMA){
 //            value = value.substring(1);
 //        }
@@ -70,11 +68,11 @@ public class ConsoleUtils {
             case OPEN_BRACKET:
                 var close:int = findClosePair(value);
                 prefix = conditionalAdd(!depth, NEW_LINE) + tabs(depth) + first + NEW_LINE;
-                middle = formatJsonString(value.substring(1, close), depth+1);
-                if(value.charAt(close + 1) == COMMA){
+                middle = formatJsonString(value.substring(1, close), depth + 1);
+                if (value.charAt(close + 1) == COMMA) {
                     suffix = NEW_LINE + tabs(depth) + value.charAt(close) + COMMA;
                     rest = NEW_LINE + formatJsonString(value.substring(close + 2), depth);
-                }else{
+                } else {
                     suffix = conditionalAdd(middle, NEW_LINE) + tabs(depth) + value.charAt(close);
                     rest = /*NEW_LINE + */formatJsonString(value.substring(close + 1), depth);
                 }
@@ -100,19 +98,19 @@ public class ConsoleUtils {
 //                            break;
 //                    }
 //                }
-    
+                
                 var firstOpen:int = findFirstOpen(value);
 //                var lastClose:int = findLastClose(value);
                 var closePair:int = findClosePair(value, firstOpen);
-                if(firstOpen > -1){
+                if (firstOpen > -1) {
                     prefix = extractEqualValues(value.substring(0, firstOpen), depth) + NEW_LINE;
                     var nextCharAfterMiddleIsComma:Boolean = value.charAt(closePair + 1) == COMMA;
                     middle = formatJsonString(value.substring(firstOpen, closePair + 1), depth/* + 1*/) + conditionalAdd(nextCharAfterMiddleIsComma, COMMA + NEW_LINE);
-                    
+
 //                    suffix = extractEqualValues(value.substring(closePair + int(nextCharAfterMiddleIsComma ? 2 : 1)), depth);
                     suffix = formatJsonString(value.substring(closePair + int(nextCharAfterMiddleIsComma ? 2 : 1)), depth);
                     //rest = /*NEW_LINE + */formatJsonString(value.substring(closePair + 1), depth);
-                }else{
+                } else {
                     middle = extractEqualValues(value, depth, 1);
 //                    var fields:Array = value.split(COMMA);
 //                    for each (var f:String in fields){
@@ -120,7 +118,7 @@ public class ConsoleUtils {
 //                    }
 //                    middle = cutLastCommaAndNewLine(middle);
                 }
-        
+                
                 break;
         }
 
@@ -129,14 +127,14 @@ public class ConsoleUtils {
         return prefix + middle + suffix + rest;
     }
     
-    private static function extractEqualValues(value:String, depth:int, cutLastChars:int = 0):String{
+    private static function extractEqualValues(value:String, depth:int, cutLastChars:int = 0):String {
         var result:String = "";
         var fields:Array = value.split(COMMA);
         var current:String;
-        for (var i:int = 0; i<fields.length;i++){
+        for (var i:int = 0; i < fields.length; i++) {
             current = fields[i];
-            var lastCharIsColon:Boolean = current.charAt(current.length-1) == COLON;
-            if(current && current.length) {
+            var lastCharIsColon:Boolean = current.charAt(current.length - 1) == COLON;
+            if (current && current.length) {
                 result += conditionalAdd(i /*|| lastCharIsColon*/, NEW_LINE) + tabs(depth) + current + conditionalAdd(!lastCharIsColon, COMMA);
             }
         }
@@ -144,19 +142,19 @@ public class ConsoleUtils {
         return cutLastChars ? result.substring(0, result.length - cutLastChars) : result;
     }
     
-    private static function conditionalAdd(condition:*, symbol:String):String{
-        if(condition){
+    private static function conditionalAdd(condition:*, symbol:String):String {
+        if (condition) {
             return symbol;
-        }else{
+        } else {
             return "";
         }
     }
     
-    private static function cutLastNewLine(value:String):String{
+    private static function cutLastNewLine(value:String):String {
         return value.substring(0, value.length - 1);
     }
     
-    private static function cutLastCommaAndNewLine(value:String):String{
+    private static function cutLastCommaAndNewLine(value:String):String {
         return value.substring(0, value.length - 2);
     }
     
@@ -169,27 +167,27 @@ public class ConsoleUtils {
         return value.indexOf(OPEN_BRACKET) < 0 && value.indexOf(OPEN_BRACE) < 0;
     }
     
-    private static function findFirstOpen(value:String):int{
+    private static function findFirstOpen(value:String):int {
         var firstBracket:int = value.indexOf(OPEN_BRACKET);
         var firstBrace:int = value.indexOf(OPEN_BRACE);
         
-        if(firstBracket > -1){
-            if(firstBrace){
+        if (firstBracket > -1) {
+            if (firstBrace) {
                 return Math.min(value.indexOf(OPEN_BRACKET), value.indexOf(OPEN_BRACE));
-            }else{
+            } else {
                 return firstBracket;
             }
-        }else{
-            if(firstBrace > -1){
+        } else {
+            if (firstBrace > -1) {
                 return firstBrace;
-            }else{
+            } else {
                 return -1;
             }
         }
         //return Math.max(value.indexOf(OPEN_BRACKET), value.indexOf(OPEN_BRACE));
     }
     
-    private static function findLastClose(value:String):int{
+    private static function findLastClose(value:String):int {
         return Math.max(value.lastIndexOf(CLOSE_BRACKET), value.lastIndexOf(CLOSE_BRACE));
     }
     
@@ -210,15 +208,15 @@ public class ConsoleUtils {
         var opens:int = 1;
         var closes:int = 0;
         
-        while(cursor < value.length) {
+        while (cursor < value.length) {
             nextClose = value.indexOf(closeSymbol, cursor);
             closes++;
             
-            opens += patternOccurrences(ESCAPE_CHAR+openSymbol, value.substring(cursor, nextClose));
+            opens += patternOccurrences(ESCAPE_CHAR + openSymbol, value.substring(cursor, nextClose));
             
-            if(closes >= opens){
+            if (closes >= opens) {
                 return nextClose;
-            }else {
+            } else {
                 cursor = nextClose + 1;
             }
         }
@@ -226,10 +224,10 @@ public class ConsoleUtils {
         return -1;
     }
     
-    public static function tabs(num:int = 1):String{
+    public static function tabs(num:int = 1):String {
         var result:String = "";
         
-        for (var i:int = 0; i<num;i++){
+        for (var i:int = 0; i < num; i++) {
             result += TAB;
         }
         
@@ -243,7 +241,7 @@ public class ConsoleUtils {
         var cut:Array = lines.slice(cutFirst, cutFirst + depth);
         var s:String;
         var r:String = "";
-    
+        
         for each (s in cut) {
             var shortRow:String = cutLongNames(s);
             if (shortRow) {
@@ -251,7 +249,7 @@ public class ConsoleUtils {
             }
         }
         
-        function cutLongNames(value:String):String{
+        function cutLongNames(value:String):String {
             var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
             if (o && o[2] && o[4]) {
                 return o[2] + "__" + o[4];
@@ -259,7 +257,7 @@ public class ConsoleUtils {
                 return "";
             }
         }
-    
+        
         return cut.length ? r += "*************" : r;
     }
     

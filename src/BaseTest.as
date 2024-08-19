@@ -1,5 +1,7 @@
 package {
 
+import com.junkbyte.console.Cc;
+
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.KeyboardEvent;
@@ -8,11 +10,13 @@ import flash.text.TextField;
 import flash.text.TextFieldType;
 import flash.text.TextFormat;
 import flash.ui.Keyboard;
+import flash.utils.getTimer;
 
 import utils.Utils;
 
 [SWF(width="800", height="800")]
 public class BaseTest extends Sprite {
+    public static var creationTime:int = getTimer();
     private static const BUTTON_WIDTH:int = 75;
     private var tf:TextField = new TextField();
     private var f:TextFormat = new TextFormat();
@@ -43,6 +47,24 @@ public class BaseTest extends Sprite {
     
     public function overRide(value:* = ""):void{
         tf.htmlText = value + "\n";
+    }
+    
+    public function showConsole():void{
+        Cc.start(this);
+        Cc.config.flashTrace = false;
+        Cc.width = stage.stageWidth;
+        Cc.height = stage.stageHeight / 2;
+        Cc.visible = true;
+    }
+    
+    public function elapsedTime():int{
+        return getTimer() - creationTime;
+    }
+    
+    public function createSpiteWithName(value:String):Sprite {
+        var sprite:Sprite = new Sprite();
+        sprite.name = value;
+        return sprite;
     }
 }
 }

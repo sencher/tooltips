@@ -31,8 +31,10 @@ import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
 import flash.events.Event;
 import flash.events.KeyboardEvent;
+import flash.events.TimerEvent;
 import flash.geom.Rectangle;
 import flash.ui.Keyboard;
+import flash.utils.Timer;
 
 /**
  * Cc stands for Console Controller.
@@ -48,6 +50,17 @@ import flash.ui.Keyboard;
  */
 public class Cc {
     public static var D_MODE:int = 0;
+    public static var D_ONCE:Boolean;
+    public static var SPAM:Array = [];
+    
+    private static const NOT_INITED:int = 0;
+    private static const TIMER_STARTED:int = 1;
+    private static const DISABLED:int = 2;
+    private static const ENABLED:int = 3;
+    
+    private static var currentStatus:int = NOT_INITED;
+    private static var workHiddenTimer:Timer;
+    private static const WORK_HIDDEN_MS:int = 5000;
     
     private static var _console:Console;
     private static var _config:ConsoleConfig;
@@ -77,10 +90,12 @@ public class Cc {
      *            Password will not trigger if you have focus on an input TextField.
      */
     public static function start(container:DisplayObjectContainer, password:String = ""):void {
-        if (_console) {
+        if (currentStatus == ENABLED) {
             if (container && !_console.parent) container.addChild(_console);
         } else {
-            _console = new Console(password, config);
+            workHiddenTimerStop();
+            currentStatus = ENABLED;
+            if (!_console) _console = new Console(password, config);
             // if no parent display, console will always be hidden, but using Cc.remoting is still possible so its not the end.
             if (container) container.addChild(_console);
         }
@@ -106,13 +121,15 @@ public class Cc {
      *
      */
     public static function startOnStage(display:DisplayObject, password:String = ""):void {
-        if (_console) {
+        if (currentStatus == ENABLED) {
             if (display && display.stage && _console.parent != display.stage) display.stage.addChild(_console);
         } else {
+            workHiddenTimerStop();
+            currentStatus = ENABLED;
             if (display && display.stage) {
                 start(display.stage, password);
             } else {
-                _console = new Console(password, config);
+                if (!_console) _console = new Console(password, config);
                 // if no parent display, console will always be hidden, but using Cc.remoting is still possible so its not the end.
                 if (display) display.addEventListener(Event.ADDED_TO_STAGE, addedToStageHandle);
             }
@@ -125,1062 +142,1264 @@ public class Cc {
     /**
      * Add log line to default channel
      *
-     * @param string    String to add, any type can be passed and will be converted to string or a link if it is an object/class
+     * @param strings    String to add, any type can be passed and will be converted to strings or a link if it is an object/class
      * @param priority    Priority of line. 0-10, the higher the number the more visibilty it is in the log, and can be filtered through UI
      * @param isRepeating    When set to true, log line will replace the previously repeated line rather than making a new line (unless it has repeated more than ConsoleConfig -> maxRepeats)
      */
-    public static function add(string:*, priority:int = 2, isRepeating:Boolean = false):void {
-        if (_console) _console.add(string, priority, isRepeating);
+    public static function add(strings:*, priority:int = 2, isRepeating:Boolean = false):void {
+        if(isSpam(strings)) return;
+        if (status() != DISABLED) _console.add(strings, priority, isRepeating);
     }
     
     /**
      * Add log line to channel
      * If channel name doesn't exist it creates one
      *
-     * @param channel    Name of channel, if a non-string param is passed, it will use the object's class name as channel name.
-     * @param string    String to add, any type can be passed and will be converted to string or a link if it is an object/class
+     * @param channel    Name of channel, if a non-strings param is passed, it will use the object's class name as channel name.
+     * @param strings    String to add, any type can be passed and will be converted to strings or a link if it is an object/class
      * @param priority    Priority of line. 0-10, the higher the number the more visibilty it is in the log, and can be filtered through UI
      * @param isRepeating    When set to true, log line will replace the previous line rather than making a new line (unless it has repeated more than ConsoleConfig -> maxRepeats)
      */
-    public static function ch(channel:*, string:*, priority:int = 2, isRepeating:Boolean = false):void {
-        if (_console) _console.ch(channel, string, priority, isRepeating);
+    public static function ch(channel:*, strings:*, priority:int = 2, isRepeating:Boolean = false):void {
+        if(isSpam(strings)) return;
+        if (status() != DISABLED) _console.ch(channel, strings, priority, isRepeating);
     }
     
     public static function berry(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.BERRY);
     }
     
     public static function berryc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.BERRY);
     }
     
     public static function berryw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.BERRY);
     }
     
     public static function berryj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.BERRY);
     }
     
     public static function berrycw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.BERRY);
     }
     
     public static function berrycj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.BERRY);
     }
     
     public static function berrywj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.BERRY);
     }
     
     public static function berrycwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.BERRY);
     }
     
     public static function blue(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.BLUE);
     }
     
     public static function bluec(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.BLUE);
     }
     
     public static function bluew(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.BLUE);
     }
     
     public static function bluej(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.BLUE);
     }
     
     public static function bluecw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.BLUE);
     }
     
     public static function bluecj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.BLUE);
     }
     
     public static function bluewj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.BLUE);
     }
     
     public static function bluecwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.BLUE);
     }
     
     public static function blue2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.BLUE2);
     }
     
     public static function blue2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.BLUE2);
     }
     
     public static function blue2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.BLUE2);
     }
     
     public static function blue2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.BLUE2);
     }
     
     public static function blue2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.BLUE2);
     }
     
     public static function blue2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.BLUE2);
     }
     
     public static function blue2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.BLUE2);
     }
     
     public static function blue2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.BLUE2);
     }
     
     public static function brown(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.BROWN);
     }
     
     public static function brownc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.BROWN);
     }
     
     public static function brownw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.BROWN);
     }
     
     public static function brownj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.BROWN);
     }
     
     public static function browncw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.BROWN);
     }
     
     public static function browncj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.BROWN);
     }
     
     public static function brownwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.BROWN);
     }
     
     public static function browncwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.BROWN);
     }
     
     public static function cyan(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.CYAN);
     }
     
     public static function cyanc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.CYAN);
     }
     
     public static function cyanw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.CYAN);
     }
     
     public static function cyanj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.CYAN);
     }
     
     public static function cyancw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.CYAN);
     }
     
     public static function cyancj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.CYAN);
     }
     
     public static function cyanwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.CYAN);
     }
     
     public static function cyancwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.CYAN);
     }
     
     public static function grass(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GRASS);
     }
     
     public static function grassc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GRASS);
     }
     
     public static function grassw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GRASS);
     }
     
     public static function grassj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GRASS);
     }
     
     public static function grasscw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GRASS);
     }
     
     public static function grasscj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GRASS);
     }
     
     public static function grasswj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GRASS);
     }
     
     public static function grasscwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GRASS);
     }
     
     public static function grass2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GRASS2);
     }
     
     public static function grass2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GRASS2);
     }
     
     public static function grass2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GRASS2);
     }
     
     public static function grass2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GRASS2);
     }
     
     public static function grass2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GRASS2);
     }
     
     public static function grass2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GRASS2);
     }
     
     public static function grass2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GRASS2);
     }
     
     public static function grass2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GRASS2);
     }
     
     public static function green(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GREEN);
     }
     
     public static function greenc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GREEN);
     }
     
     public static function greenw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GREEN);
     }
     
     public static function greenj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GREEN);
     }
     
     public static function greencw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GREEN);
     }
     
     public static function greencj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GREEN);
     }
     
     public static function greenwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GREEN);
     }
     
     public static function greencwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GREEN);
     }
     
     public static function green2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GREEN2);
     }
     
     public static function green2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GREEN2);
     }
     
     public static function green2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GREEN2);
     }
     
     public static function green2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GREEN2);
     }
     
     public static function green2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GREEN2);
     }
     
     public static function green2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GREEN2);
     }
     
     public static function green2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GREEN2);
     }
     
     public static function green2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GREEN2);
     }
     
     public static function grey(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GREY);
     }
     
     public static function greyc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GREY);
     }
     
     public static function greyw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GREY);
     }
     
     public static function greyj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GREY);
     }
     
     public static function greycw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GREY);
     }
     
     public static function greycj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GREY);
     }
     
     public static function greywj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GREY);
     }
     
     public static function greycwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GREY);
     }
     
     public static function grey2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.GREY2);
     }
     
     public static function grey2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.GREY2);
     }
     
     public static function grey2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.GREY2);
     }
     
     public static function grey2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.GREY2);
     }
     
     public static function grey2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.GREY2);
     }
     
     public static function grey2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.GREY2);
     }
     
     public static function grey2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.GREY2);
     }
     
     public static function grey2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.GREY2);
     }
     
     public static function magenta(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.MAGENTA);
     }
     
     public static function magentac(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.MAGENTA);
     }
     
     public static function magentaw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.MAGENTA);
     }
     
     public static function magentaj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.MAGENTA);
     }
     
     public static function magentacw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.MAGENTA);
     }
     
     public static function magentacj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.MAGENTA);
     }
     
     public static function magentawj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.MAGENTA);
     }
     
     public static function magentacwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.MAGENTA);
     }
     
     public static function orange(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.ORANGE);
     }
     
     public static function orangec(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.ORANGE);
     }
     
     public static function orangew(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.ORANGE);
     }
     
     public static function orangej(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.ORANGE);
     }
     
     public static function orangecw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.ORANGE);
     }
     
     public static function orangecj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.ORANGE);
     }
     
     public static function orangewj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.ORANGE);
     }
     
     public static function orangecwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.ORANGE);
     }
     
     public static function pink(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.PINK);
     }
     
     public static function pinkc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.PINK);
     }
     
     public static function pinkw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.PINK);
     }
     
     public static function pinkj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.PINK);
     }
     
     public static function pinkcw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.PINK);
     }
     
     public static function pinkcj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.PINK);
     }
     
     public static function pinkwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.PINK);
     }
     
     public static function pinkcwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.PINK);
     }
     
     public static function purple(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.PURPLE);
     }
     
     public static function purplec(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.PURPLE);
     }
     
     public static function purplew(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.PURPLE);
     }
     
     public static function purplej(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.PURPLE);
     }
     
     public static function purplecw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.PURPLE);
     }
     
     public static function purplecj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.PURPLE);
     }
     
     public static function purplewj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.PURPLE);
     }
     
     public static function purplecwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.PURPLE);
     }
     
     public static function red(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.RED);
     }
     
     public static function redc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.RED);
     }
     
     public static function redw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.RED);
     }
     
     public static function redj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.RED);
     }
     
     public static function redcw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.RED);
     }
     
     public static function redcj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.RED);
     }
     
     public static function redwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.RED);
     }
     
     public static function redcwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.RED);
     }
     
     public static function red2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.RED2);
     }
     
     public static function red2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.RED2);
     }
     
     public static function red2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.RED2);
     }
     
     public static function red2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.RED2);
     }
     
     public static function red2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.RED2);
     }
     
     public static function red2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.RED2);
     }
     
     public static function red2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.RED2);
     }
     
     public static function red2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.RED2);
     }
     
     public static function red3(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.RED3);
     }
     
     public static function red3c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.RED3);
     }
     
     public static function red3w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.RED3);
     }
     
     public static function red3j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.RED3);
     }
     
     public static function red3cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.RED3);
     }
     
     public static function red3cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.RED3);
     }
     
     public static function red3wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.RED3);
     }
     
     public static function red3cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.RED3);
     }
     
     public static function sky(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.SKY);
     }
     
     public static function skyc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.SKY);
     }
     
     public static function skyw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.SKY);
     }
     
     public static function skyj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.SKY);
     }
     
     public static function skycw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.SKY);
     }
     
     public static function skycj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.SKY);
     }
     
     public static function skywj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.SKY);
     }
     
     public static function skycwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.SKY);
     }
     
     public static function sky2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.SKY2);
     }
     
     public static function sky2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.SKY2);
     }
     
     public static function sky2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.SKY2);
     }
     
     public static function sky2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.SKY2);
     }
     
     public static function sky2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.SKY2);
     }
     
     public static function sky2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.SKY2);
     }
     
     public static function sky2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.SKY2);
     }
     
     public static function sky2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.SKY2);
     }
     
     public static function teal(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.TEAL);
     }
     
     public static function tealc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.TEAL);
     }
     
     public static function tealw(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.TEAL);
     }
     
     public static function tealj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.TEAL);
     }
     
     public static function tealcw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.TEAL);
     }
     
     public static function tealcj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.TEAL);
     }
     
     public static function tealwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.TEAL);
     }
     
     public static function tealcwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.TEAL);
     }
     
     public static function teal2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.TEAL2);
     }
     
     public static function teal2c(channel:*, ...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addToChannel(channel, strings, Console.TEAL2);
     }
     
     public static function teal2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.TEAL2);
     }
     
     public static function teal2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.TEAL2);
     }
     
     public static function teal2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.TEAL2);
     }
     
     public static function teal2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.TEAL2);
     }
     
     public static function teal2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.TEAL2);
     }
     
     public static function teal2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.TEAL2);
     }
     
     public static function white(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.WHITE);
     }
     
     public static function whitec(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.WHITE);
     }
     
     public static function whitew(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.WHITE);
     }
     
     public static function whitej(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.WHITE);
     }
     
     public static function whitecw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.WHITE);
     }
     
     public static function whitecj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.WHITE);
     }
     
     public static function whitewj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.WHITE);
     }
     
     public static function whitecwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.WHITE);
     }
     
     public static function yellow(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.YELLOW);
     }
     
     public static function yellowc(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.YELLOW);
     }
     
     public static function yelloww(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.YELLOW);
     }
     
     public static function yellowj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.YELLOW);
     }
     
     public static function yellowcw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.YELLOW);
     }
     
     public static function yellowcj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.YELLOW);
     }
     
     public static function yellowwj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.YELLOW);
     }
     
     public static function yellowcwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.YELLOW);
     }
     
     public static function yellow2(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addLine(strings, Console.YELLOW2);
     }
     
     public static function yellow2c(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannel(channel, strings, Console.YELLOW2);
     }
     
     public static function yellow2w(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStack(strings, Console.YELLOW2);
     }
     
     public static function yellow2j(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) trace(strings);
         addJson(strings, Console.YELLOW2);
     }
     
     public static function yellow2cw(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStack(channel, strings, Console.YELLOW2);
     }
     
     public static function yellow2cj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) trace(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) trace("[" + channel + "] " + strings);
         addToChannelJson(channel, strings, Console.YELLOW2);
     }
     
     public static function yellow2wj(...strings):void {
+        if(isSpam(strings)) return;
         if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
         addWithStackJson(strings, Console.YELLOW2);
     }
     
     public static function yellow2cwj(channel:*, ...strings):void {
-        if (Cc.config.flashTrace) ConsoleUtils.traceStack(strings);
+        if(isSpam(strings)) return;
+        if (Cc.config.flashTrace) ConsoleUtils.traceStack("[" + channel + "] " + strings);
         addToChannelWithStackJson(channel, strings, Console.YELLOW2);
     }
     
     private static function addLine(strings:Array, priority:int):void {
-        if (_console) _console.addLine(strings, priority);
+        if (status() != DISABLED) _console.addLine(strings, priority);
     }
     
     private static function addToChannel(channel:*, strings:Array, priority:int):void {
-        if (_console) _console.addCh(channel, strings, priority, false, true);
+        if (status() != DISABLED) _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addWithStack(strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
     }
     
     private static function addJson(strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         _console.addCh(Console.DEFAULT_CHANNEL, toJson.apply(null, strings), priority, false, true);
     }
     
     private static function addToChannelWithStack(channel:*, strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addToChannelJson(channel:*, strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         strings = toJson.apply(null, strings);
         _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addWithStackJson(strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
@@ -1188,7 +1407,7 @@ public class Cc {
     }
     
     private static function addToChannelWithStackJson(channel:*, strings:Array, priority:int):void {
-        if (!_console) return;
+        if (status() == DISABLED) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
@@ -1204,7 +1423,7 @@ public class Cc {
      *
      */
     public static function stack(string:*, depth:int = -1, priority:int = 5):void {
-        if (_console) _console.stack(string, depth, priority);
+        if (status() != DISABLED) _console.stack(string, depth, priority);
     }
     
     /**
@@ -1217,7 +1436,7 @@ public class Cc {
      *
      */
     public static function stackch(channel:*, string:*, depth:int = -1, priority:int = 5):void {
-        if (_console) _console.stackch(channel, string, depth, priority);
+        if (status() != DISABLED) _console.stackch(channel, string, depth, priority);
     }
     
     /**
@@ -1231,7 +1450,7 @@ public class Cc {
      *
      */
     public static function inspect(obj:Object, showInherit:Boolean = true):void {
-        if (_console) _console.inspect(obj, showInherit);
+        if (status() != DISABLED) _console.inspect(obj, showInherit);
     }
     
     /**
@@ -1246,7 +1465,7 @@ public class Cc {
      *
      */
     public static function inspectch(channel:*, obj:Object, showInherit:Boolean = true):void {
-        if (_console) _console.inspectch(channel, obj, showInherit);
+        if (status() != DISABLED) _console.inspectch(channel, obj, showInherit);
     }
     
     /**
@@ -1256,7 +1475,7 @@ public class Cc {
      * @param depth    Depth of explosion, -1 = unlimited
      */
     public static function explode(obj:Object, depth:int = 1):void {
-        if (_console) _console.explode(obj, depth);
+        if (status() != DISABLED) _console.explode(obj, depth);
     }
     
     /**
@@ -1267,7 +1486,7 @@ public class Cc {
      * @param depth    Depth of explosion, -1 = unlimited
      */
     public static function explodech(channel:*, obj:Object, depth:int = 1):void {
-        if (_console) _console.explodech(channel, obj, depth);
+        if (status() != DISABLED) _console.explodech(channel, obj, depth);
     }
     
     /**
@@ -1285,7 +1504,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
     public static function addHTML(...strings):void {
-        if (_console) _console.addHTML.apply(null, strings);
+        if (status() != DISABLED) _console.addHTML.apply(null, strings);
     }
     
     /**
@@ -1304,7 +1523,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
     public static function addHTMLch(channel:*, priority:int, ...strings):void {
-        if (_console) _console.addHTMLch.apply(null, new Array(channel, priority).concat(strings));
+        if (status() != DISABLED) _console.addHTMLch.apply(null, new Array(channel, priority).concat(strings));
     }
     
     /**
@@ -1315,7 +1534,7 @@ public class Cc {
      * @param maxDepth    Maximum child depth. 0 = unlimited
      */
     public static function map(container:DisplayObjectContainer, maxDepth:uint = 0):void {
-        if (_console) _console.map(container, maxDepth);
+        if (status() != DISABLED) _console.map(container, maxDepth);
     }
     
     /**
@@ -1327,7 +1546,7 @@ public class Cc {
      * @param maxDepth    Maximum child depth. 0 = unlimited
      */
     public static function mapch(channel:*, container:DisplayObjectContainer, maxDepth:uint = 0):void {
-        if (_console) _console.mapch(channel, container, maxDepth);
+        if (status() != DISABLED) _console.mapch(channel, container, maxDepth);
     }
     
     /**
@@ -1335,7 +1554,7 @@ public class Cc {
      * @param channel Name of log channel to clear, leave blank to clear all.
      */
     public static function clear(channel:String = null):void {
-        if (_console) _console.clear(channel);
+        if (status() != DISABLED) _console.clear(channel);
     }
     
     //
@@ -1355,7 +1574,7 @@ public class Cc {
      *
      */
     public static function bindKey(key:KeyBind, callback:Function = null, args:Array = null):void {
-        if (_console) _console.bindKey(key, callback, args);
+        if (status() != DISABLED) _console.bindKey(key, callback, args);
     }
     
     /**
@@ -1374,7 +1593,7 @@ public class Cc {
      * @param  rollover    String to show on rolling over the menu item.
      */
     public static function addMenu(key:String, callback:Function, args:Array = null, rollover:String = null):void {
-        if (_console) _console.addMenu(key, callback, args, rollover);
+        if (status() != DISABLED) _console.addMenu(key, callback, args, rollover);
     }
     
     /**
@@ -1383,7 +1602,7 @@ public class Cc {
      * @param loaderInfo LoaderInfo instance that can dispatch errors
      */
     public static function listenUncaughtErrors(loaderinfo:LoaderInfo):void {
-        if (_console) _console.listenUncaughtErrors(loaderinfo);
+        if (status() != DISABLED) _console.listenUncaughtErrors(loaderinfo);
     }
     
     //
@@ -1409,7 +1628,7 @@ public class Cc {
      * @param  useStrong    If set to true Console will hard reference the object, making sure it will not get garbage collected.
      */
     public static function store(name:String, obj:Object, useStrong:Boolean = false):void {
-        if (_console) _console.store(name, obj, useStrong);
+        if (status() != DISABLED) _console.store(name, obj, useStrong);
     }
     
     /**
@@ -1436,7 +1655,7 @@ public class Cc {
      *                            null = whole string always passed as argument. default = ";"
      */
     public static function addSlashCommand(name:String, callback:Function, description:String = "", alwaysAvailable:Boolean = true, endOfArgsMarker:String = ";"):void {
-        if (_console) _console.addSlashCommand(name, callback, description, alwaysAvailable, endOfArgsMarker);
+        if (status() != DISABLED) _console.addSlashCommand(name, callback, description, alwaysAvailable, endOfArgsMarker);
     }
     
     //
@@ -1451,7 +1670,7 @@ public class Cc {
      * @return    Name console used to identify the object - this can be different to param n if another object of the same name is already being watched
      */
     public static function watch(obj:Object, name:String = null):String {
-        if (_console) return _console.watch(obj, name);
+        if (status() != DISABLED) return _console.watch(obj, name);
         return null;
     }
     
@@ -1461,7 +1680,7 @@ public class Cc {
      * @param name    identification/name given to the object for watch
      */
     public static function unwatch(name:String):void {
-        if (_console) _console.unwatch(name);
+        if (status() != DISABLED) _console.unwatch(name);
     }
     
     //
@@ -1491,7 +1710,7 @@ public class Cc {
      *
      */
     public static function addGraph(panelName:String, obj:Object, property:String, color:Number = -1, idKey:String = null, rectArea:Rectangle = null, inverse:Boolean = false):void {
-        if (_console) _console.addGraph(panelName, obj, property, color, idKey, rectArea, inverse);
+        if (status() != DISABLED) _console.addGraph(panelName, obj, property, color, idKey, rectArea, inverse);
     }
     
     /**
@@ -1510,7 +1729,7 @@ public class Cc {
      *
      */
     public static function fixGraphRange(panelName:String, min:Number = NaN, max:Number = NaN):void {
-        if (_console) _console.fixGraphRange(panelName, min, max);
+        if (status() != DISABLED) _console.fixGraphRange(panelName, min, max);
     }
     
     /**
@@ -1523,7 +1742,7 @@ public class Cc {
      *
      */
     public static function removeGraph(panelName:String, obj:Object = null, property:String = null):void {
-        if (_console) _console.removeGraph(panelName, obj, property);
+        if (status() != DISABLED) _console.removeGraph(panelName, obj, property);
     }
     
     //
@@ -1536,7 +1755,7 @@ public class Cc {
      * @see #setIgnoredChannels()
      */
     public static function setViewingChannels(...channels:Array):void {
-        if (_console) _console.setViewingChannels.apply(null, channels);
+        if (status() != DISABLED) _console.setViewingChannels.apply(null, channels);
     }
     
     /**
@@ -1546,7 +1765,7 @@ public class Cc {
      * @see #setViewingChannels()
      */
     public static function setIgnoredChannels(...channels:Array):void {
-        if (_console) _console.setIgnoredChannels.apply(null, channels);
+        if (status() != DISABLED) _console.setIgnoredChannels.apply(null, channels);
     }
     
     /**
@@ -1563,67 +1782,67 @@ public class Cc {
      * </ul>
      */
     public static function set minimumPriority(level:uint):void {
-        if (_console) _console.minimumPriority = level;
+        if (status() != DISABLED) _console.minimumPriority = level;
     }
     
     /**
      * width of main console panel
      */
     public static function get width():Number {
-        if (_console) return _console.width;
+        if (status() != DISABLED) return _console.width;
         return 0;
     }
     
     public static function set width(v:Number):void {
-        if (_console) _console.width = v;
+        if (status() != DISABLED) _console.width = v;
     }
     
     /**
      * height of main console panel
      */
     public static function get height():Number {
-        if (_console) return _console.height;
+        if (status() != DISABLED) return _console.height;
         return 0;
     }
     
     public static function set height(v:Number):void {
-        if (_console) _console.height = v;
+        if (status() != DISABLED) _console.height = v;
     }
     
     /**
      * x position of main console panel
      */
     public static function get x():Number {
-        if (_console) return _console.x;
+        if (status() != DISABLED) return _console.x;
         return 0;
     }
     
     public static function set x(v:Number):void {
-        if (_console) _console.x = v;
+        if (status() != DISABLED) _console.x = v;
     }
     
     /**
      * y position of main console panel
      */
     public static function get y():Number {
-        if (_console) return _console.y;
+        if (status() != DISABLED) return _console.y;
         return 0;
     }
     
     public static function set y(v:Number):void {
-        if (_console) _console.y = v;
+        if (status() != DISABLED) _console.y = v;
     }
     
     /**
      * visibility of all console panels
      */
     public static function get visible():Boolean {
-        if (_console) return _console.visible;
+        if (status() != DISABLED) return _console.visible;
         return false;
     }
     
     public static function set visible(v:Boolean):void {
-        if (_console) _console.visible = v;
+        if (status() != DISABLED) _console.visible = v;
     }
     
     private static function stage_keyDownHandler(event:KeyboardEvent):void {
@@ -1717,48 +1936,48 @@ public class Cc {
      * Start/stop FPS monitor graph.
      */
     public static function get fpsMonitor():Boolean {
-        if (_console) return _console.fpsMonitor;
+        if (status() != DISABLED) return _console.fpsMonitor;
         return false;
     }
     
     public static function set fpsMonitor(v:Boolean):void {
-        if (_console) _console.fpsMonitor = v;
+        if (status() != DISABLED) _console.fpsMonitor = v;
     }
     
     /**
      * Start/stop Memory monitor graph.
      */
     public static function get memoryMonitor():Boolean {
-        if (_console) return _console.memoryMonitor;
+        if (status() != DISABLED) return _console.memoryMonitor;
         return false;
     }
     
     public static function set memoryMonitor(v:Boolean):void {
-        if (_console) _console.memoryMonitor = v;
+        if (status() != DISABLED) _console.memoryMonitor = v;
     }
     
     /**
      * CommandLine UI's visibility.
      */
     public static function get commandLine():Boolean {
-        if (_console) return _console.commandLine;
+        if (status() != DISABLED) return _console.commandLine;
         return false;
     }
     
     public static function set commandLine(v:Boolean):void {
-        if (_console) _console.commandLine = v;
+        if (status() != DISABLED) _console.commandLine = v;
     }
     
     /**
      * Start/stop Display Roller.
      */
     public static function get displayRoller():Boolean {
-        if (_console) return _console.displayRoller;
+        if (status() != DISABLED) return _console.displayRoller;
         return false;
     }
     
     public static function set displayRoller(v:Boolean):void {
-        if (_console) _console.displayRoller = v;
+        if (status() != DISABLED) _console.displayRoller = v;
     }
     
     /**
@@ -1777,7 +1996,7 @@ public class Cc {
      *
      */
     public static function setRollerCaptureKey(character:String, ctrl:Boolean = false, alt:Boolean = false, shift:Boolean = false):void {
-        if (_console) _console.setRollerCaptureKey(character, shift, ctrl, alt);
+        if (status() != DISABLED) _console.setRollerCaptureKey(character, shift, ctrl, alt);
     }
     
     //
@@ -1789,12 +2008,12 @@ public class Cc {
      * for another Console remote to receive.
      */
     public static function get remoting():Boolean {
-        if (_console) return _console.remoting;
+        if (status() != DISABLED) return _console.remoting;
         return false;
     }
     
     public static function set remoting(v:Boolean):void {
-        if (_console) _console.remoting = v;
+        if (status() != DISABLED) _console.remoting = v;
     }
     
     /**
@@ -1809,7 +2028,7 @@ public class Cc {
      * </ul>
      */
     public static function remotingSocket(host:String, port:int):void {
-        if (_console) _console.remotingSocket(host, port);
+        if (status() != DISABLED) _console.remotingSocket(host, port);
     }
     
     //
@@ -1819,7 +2038,7 @@ public class Cc {
      * Remove console from it's parent display
      */
     public static function remove():void {
-        if (_console) {
+        if (status() != DISABLED) {
             if (_console.parent) {
                 _console.parent.removeChild(_console);
             }
@@ -1838,7 +2057,7 @@ public class Cc {
      * @return All log lines in console
      */
     public static function getAllLog(splitter:String = "\r\n"):String {
-        if (_console) return _console.getAllLog(splitter);
+        if (status() != DISABLED) return _console.getAllLog(splitter);
         else return "";
     }
     
@@ -1863,7 +2082,7 @@ public class Cc {
     }
     
     public static function setScale(value:Number):void {
-        if (_console) _console.scaleX = _console.scaleY = value;
+        if (status() != DISABLED) _console.scaleX = _console.scaleY = value;
     }
     
     public static function toJson(...strings):Array {
@@ -1875,6 +2094,49 @@ public class Cc {
             }
         }
         return strings;
+    }
+    
+    private static function status():int {
+//        trace("status before currentStatus:", currentStatus);
+        if (currentStatus == NOT_INITED) {
+            if (!_console) _console = new Console("", config);
+            currentStatus = TIMER_STARTED;
+            workHiddenTimer = new Timer(WORK_HIDDEN_MS, 1);
+            workHiddenTimer.addEventListener(TimerEvent.TIMER_COMPLETE, workHiddenTimer_completeHandler);
+            workHiddenTimer.start();
+        }
+
+//        trace("status after currentStatus:", currentStatus);
+        return currentStatus;
+    }
+    
+    private static function workHiddenTimer_completeHandler(event:TimerEvent):void {
+//        trace("workHiddenTimer_completeHandler");
+//        Cc.red2w( "workHiddenTimer_completeHandler");
+        workHiddenTimerStop();
+        Cc.remove();
+        Cc.config.flashTrace = false;
+        currentStatus = DISABLED;
+    }
+    
+    private static function workHiddenTimerStop():void {
+        if (workHiddenTimer) {
+            workHiddenTimer.stop();
+            workHiddenTimer = null;
+        }
+    }
+    
+    private static function isSpam(arguments:*):Boolean {
+        for each (var spamElement:String in SPAM){
+            for each (var argument:* in arguments){
+                if(String(argument.toString()).toLowerCase().indexOf(spamElement) > -1){
+                    trace("2133 true");
+                    return true;
+                }
+            }
+        }
+        trace("2138 false");
+        return false;
     }
 }
 }

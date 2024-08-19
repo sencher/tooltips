@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.view {
+
 import com.junkbyte.console.Console;
 import com.junkbyte.console.vos.GraphGroup;
 import com.junkbyte.console.vos.GraphInterest;

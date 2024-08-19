@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console {
+
 import com.junkbyte.console.vos.Log;
 
 public class ConsoleConfig {
@@ -119,7 +120,7 @@ public class ConsoleConfig {
      */
     public var tracingLevel:int;
     
-    public var flashTrace:Boolean;
+    public var flashTrace:Boolean = true;
     
     /**
      * Assign custom trace function.

@@ -2,14 +2,6 @@
 
 import com.junkbyte.console.core.ConsoleUtils;
 
-import flash.display.DisplayObject;
-import flash.display.DisplayObjectContainer;
-import flash.display.LoaderInfo;
-import flash.events.Event;
-import flash.events.KeyboardEvent;
-import flash.geom.Rectangle;
-import flash.ui.Keyboard;
-
 public class Ct {
     public static function berry(...strings):void {
         Cc.berry.apply(null, strings);
@@ -444,6 +436,7 @@ public class Ct {
     }
     
     public static function orange(...strings):void {
+        trace(strings);
         Cc.orange.apply(null, strings);
     }
     
@@ -606,7 +599,6 @@ public class Ct {
     
     /*Also add trace to log*/
     public static function red2cw(channel:*, ...strings):void {
-        ConsoleUtils.traceStack(strings);
         strings.unshift(channel);
         Cc.red2cw.apply(null, strings);
     }
@@ -623,6 +615,11 @@ public class Ct {
     public static function red2cwj(channel:*, ...strings):void {
         strings.unshift(channel);
         Cc.red2cwj.apply(null, strings);
+    }
+    
+    public static function error(...strings):void {
+        ConsoleUtils.traceStack(strings);
+        red2w(strings);
     }
     
     public static function red3(...strings):void {

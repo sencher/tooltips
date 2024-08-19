@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.view {
+
 import com.junkbyte.console.Console;
 import com.junkbyte.console.ConsoleConfig;
 import com.junkbyte.console.ConsoleStyle;

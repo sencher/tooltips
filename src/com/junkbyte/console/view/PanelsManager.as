@@ -56,7 +56,7 @@ public class PanelsManager {
         _tooltipField.autoSize = TextFieldAutoSize.CENTER;
         _tooltipField.multiline = true;
         addPanel(_mainPanel);
-        
+    
         _jsonPanel = new JsonPanel(console);
         _jsonPanel.visible = false;
         _jsonPanel.x = _mainPanel.x + _mainPanel.width - 332;

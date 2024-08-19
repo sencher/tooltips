@@ -23,6 +23,7 @@
 * 
 */
 package com.junkbyte.console.vos {
+
 import flash.geom.Rectangle;
 import flash.utils.ByteArray;
 

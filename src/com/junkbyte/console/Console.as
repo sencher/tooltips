@@ -58,7 +58,8 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.87;
+    public static const VERSION:Number = 2.89;
+    public static const LAST_CHANGE:String = "Spam";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -145,6 +146,7 @@ public class Console extends Sprite {
         
         cl.addCLCmd("refs", printRefMap, "Show references");
         cl.addCLCmd("d", debugMode, "Set debug mode");
+        cl.addCLCmd("o", debugOnce, "Set debug once true");
         cl.addCLCmd("c", callExternalInterface, "Call ExternalInterface");
         
         if (_config.sharedObjectName) {
@@ -152,7 +154,7 @@ public class Console extends Sprite {
                 _so = SharedObject.getLocal(_config.sharedObjectName, _config.sharedObjectPath);
                 _soData = _so.data;
             } catch (e:Error) {
-                
+            
             }
         }
         
@@ -163,7 +165,7 @@ public class Console extends Sprite {
         
         
         //report("<b>Console v"+VERSION+VERSION_STAGE+" b"+BUILD+". Happy coding!</b>", -2);
-        report("<b>Console v" + VERSION + ". " + Capabilities.playerType + " " + Capabilities.version + ".", -2);
+        report("<b>Console v" + VERSION + "[" + LAST_CHANGE + "]. " + Capabilities.playerType + " " + Capabilities.version + ".", -2);
         
         // must have enterFrame here because user can start without a parent display and use remoting.
         addEventListener(Event.ENTER_FRAME, _onEnterFrame);
@@ -715,6 +717,11 @@ public class Console extends Sprite {
         }
         Cc.D_MODE = value;
         green2("DEBUG_MODE set to " + value);
+    }
+    
+    public function debugOnce():void {
+        Cc.D_ONCE = true;
+        green2("DEBUG_ONCE set to true");
     }
     
     public function callExternalInterface(value:String, ...rest):void {

@@ -24,6 +24,7 @@
 */
 
 package com.junkbyte.console.core {
+
 import com.junkbyte.console.Console;
 import com.junkbyte.console.vos.WeakObject;
 
@@ -114,7 +115,7 @@ public class LogReferences extends ConsoleCore {
         return _refMap[ind];
     }
     
-    public function get refMap():WeakObject{
+    public function get refMap():WeakObject {
         return _refMap;
     }
     
@@ -168,10 +169,10 @@ public class LogReferences extends ConsoleCore {
 //                string = string.replace(LESS, LESS_HTML);
 //                string = string.replace(GREATER, GREATER_HTML);
 //                txt = string;
-    
+                
                 txt = String(v);
             }
-    
+            
             if (!html) {
                 return shortenString(EscHTML(txt), maxlen, o, prop);
             }
