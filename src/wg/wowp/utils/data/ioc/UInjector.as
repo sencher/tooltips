@@ -1,0 +1,1 @@
+package wowp.utils.data.ioc{	public class UInjector extends UnitInjector	{		public function UInjector(source:Object) {			super(null, source);		}	}}

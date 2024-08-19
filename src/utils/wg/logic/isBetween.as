@@ -1,1 +1,0 @@
-package utils.wg.logic{	public function isBetween(value:Number, min:Number, max:Number):Boolean {		return value >= min && value <= max;	}}

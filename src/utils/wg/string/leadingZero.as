@@ -1,1 +1,0 @@
-package utils.wg.string{	public function leadingZero(num:int, digits:int):String {		var value:String = num.toString();		while (value.length < digits) {			value = "0" + value;		}		return value;	}}

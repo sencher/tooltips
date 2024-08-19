@@ -1,1 +1,0 @@
-package utils.wg.data.ioc{import utils.wg.utils.data.ioc.*;	public class UInjector extends UnitInjector	{		public function UInjector(source:Object) {			super(null, source);		}	}}
