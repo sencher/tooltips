@@ -16,6 +16,8 @@ public class Dev_ConsoleFilterSpam extends BaseTest {
         consoleMessage("some cool");
         consoleMessage("not so cool bullshit", "and data");
         consoleMessage(new Sprite());
+        consoleMessage(new Sprite(),null);
+        consoleMessage("",NaN,undefined," ",int.MAX_VALUE,uint.MAX_VALUE, Function);
         consoleMessage(new CrewMarket());
         consoleMessage(new ZalupaOnline());
         consoleMessage(new IncredibleCrew());

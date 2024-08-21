@@ -622,6 +622,11 @@ public class Ct {
         red2w(strings);
     }
     
+    public static function warning(...strings):void {
+        ConsoleUtils.traceStack(strings);
+        redw(strings);
+    }
+    
     public static function red3(...strings):void {
         Cc.red3.apply(null, strings);
     }

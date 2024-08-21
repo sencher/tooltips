@@ -2129,13 +2129,11 @@ public class Cc {
     private static function isSpam(arguments:*):Boolean {
         for each (var spamElement:String in SPAM){
             for each (var argument:* in arguments){
-                if(String(argument.toString()).toLowerCase().indexOf(spamElement) > -1){
-                    trace("2133 true");
+                if(argument && String(argument.toString()).toLowerCase().indexOf(spamElement) > -1){
                     return true;
                 }
             }
         }
-        trace("2138 false");
         return false;
     }
 }
