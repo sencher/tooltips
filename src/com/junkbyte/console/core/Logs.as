@@ -91,6 +91,10 @@ public class Logs extends ConsoleCore {
         registerLog(line);
     }
     
+//    public function getMiddleLine(percent:Number):Log{
+//
+//    }
+    
     private function registerLog(line:Log):void {
         hasNewLog = true;
         addChannel(line.ch);

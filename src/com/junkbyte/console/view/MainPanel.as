@@ -51,6 +51,8 @@ import flash.text.TextFormat;
 import flash.ui.Keyboard;
 import flash.utils.Dictionary;
 
+import wowp.utils.debug.DebugUtils;
+
 public class MainPanel extends ConsolePanel {
     
     public static const NAME:String = "mainPanel";
@@ -122,8 +124,12 @@ public class MainPanel extends ConsolePanel {
         _traceField.wordWrap = true;
         _traceField.multiline = true;
         _traceField.y = fsize;
-        _traceField.addEventListener(Event.SCROLL, onTraceScroll);
+        _traceField.addEventListener(Event.SCROLL, traceField_scrollHandler);
         addChild(_traceField);
+    
+        resizeHandler();
+        addEventListener(Event.RESIZE, resizeHandler);
+        
         //
         txtField = makeTF("menuField");
         txtField.wordWrap = true;
@@ -232,6 +238,12 @@ public class MainPanel extends ConsolePanel {
         addEventListener(TextEvent.LINK, linkHandler, false, 0, true);
         addEventListener(Event.ADDED_TO_STAGE, stageAddedHandle, false, 0, true);
         addEventListener(Event.REMOVED_FROM_STAGE, stageRemovedHandle, false, 0, true);
+    }
+    
+    private function resizeHandler(event:Event = null):void {
+        trace("resizeHandler");
+        linesLeft = Math.round(_traceField.height / style.traceFontSize);
+        maxchars = Math.round(_traceField.width * 5 / style.traceFontSize);
     }
     
     public function addMenu(key:String, f:Function, args:Array, rollover:String):void {
@@ -419,7 +431,7 @@ public class MainPanel extends ConsolePanel {
             line = line.next;
         }
         _lockScrollUpdate = true;
-        _traceField.htmlText = "<logs>" + text + "</logs>";
+        traceFieldHtmlText(text);
         if (_needRestoreScrollState) {
             _needRestoreScrollState = false;
             setScrollState(ConsoleScrollState(_scrollStates[channelsKey]));
@@ -433,7 +445,7 @@ public class MainPanel extends ConsolePanel {
         if (b && _atBottom) {
             _atBottom = false;
             _updateTraces();
-            _traceField.scrollV = _traceField.maxScrollV;
+            setScrollPosition(_traceField.maxScrollV);
         } else if (!b) {
             _atBottom = true;
             updateBottom();
@@ -445,7 +457,7 @@ public class MainPanel extends ConsolePanel {
         if (b && _atBottom) {
             _atBottom = false;
             _updateTraces();
-            _traceField.scrollV = _traceField.maxScrollV;
+            setScrollPosition(_traceField.maxScrollV);
         } else if (!b) {
             _atBottom = true;
             updateBottom();
@@ -453,12 +465,17 @@ public class MainPanel extends ConsolePanel {
         updateMenu();
     }
     
+    private var visibleLinesFirstId:uint;
+    private var visibleLinesLastId:uint;
+    private var linesLeft:int;
+    private var maxchars:int;
+    
     private function updateBottom():void {
-        var text:String = "";
-        var linesLeft:int = Math.round(_traceField.height / style.traceFontSize);
-        var maxchars:int = Math.round(_traceField.width * 5 / style.traceFontSize);
         
+        var text:String = "";
         var line:Log = console.logs.last;
+        //if()
+        
         while (line) {
             if (lineShouldShow(line)) {
                 var numlines:int = Math.ceil(line.text.length / maxchars);
@@ -478,10 +495,15 @@ public class MainPanel extends ConsolePanel {
             line = line.prev;
         }
         _lockScrollUpdate = true;
-        _traceField.htmlText = "<logs>" + text + "</logs>";
-        _traceField.scrollV = _traceField.maxScrollV;
+        traceFieldHtmlText(text);
+        setScrollPosition(_traceField.maxScrollV);
         _lockScrollUpdate = false;
         updateScroller();
+    }
+    
+    private function traceFieldHtmlText(value:String):void {
+        trace("***", value.length);
+        _traceField.htmlText = "<logs>" + value + "</logs>";
     }
     
     private function lineShouldShow(line:Log):Boolean {
@@ -702,7 +724,9 @@ public class MainPanel extends ConsolePanel {
     //
     // START OF SCROLL BAR STUFF
     //
-    private function onTraceScroll(e:Event = null):void {
+    private function traceField_scrollHandler(e:Event = null):void {
+        var target:TextField = TextField(e.target);
+        trace("traceField_scrollHandler scrollV:", target.scrollV, "maxScrollV:", target.maxScrollV);
         if (_lockScrollUpdate || _shift) return;
         var atbottom:Boolean = _traceField.scrollV >= _traceField.maxScrollV;
         if (!console.paused && _atBottom != atbottom) {
@@ -711,7 +735,7 @@ public class MainPanel extends ConsolePanel {
             _selectionEnd = _traceField.text.length - _traceField.selectionEndIndex;
             _atBottom = atbottom;
             _updateTraces();
-            _traceField.scrollV = _traceField.maxScrollV - diff;
+            setScrollPosition(_traceField.maxScrollV - diff);
         }
         updateScroller();
     }
@@ -739,9 +763,15 @@ public class MainPanel extends ConsolePanel {
             updateBottom()
         } else {
             scrollPercent = value.scrollPercent;
-            _traceField.scrollV = value.scrollV;
+            setScrollPosition(value.scrollV);
             _scroll.visible = value.scrollVisible;
         }
+    }
+    
+    private function setScrollPosition(value:int):void{
+        if(_traceField.scrollV == value) return;
+        trace(DebugUtils.set("setScrollPosition", _traceField.scrollV, value));
+        _traceField.scrollV = value;
     }
     
     private function onScrollbarDown(e:MouseEvent):void {
@@ -778,7 +808,10 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function set scrollPercent(per:Number):void {
-        _scroller.y = style.controlSize + ((_scrollHeight - 30 - style.controlSize * 2) * per);
+        var newY:Number = style.controlSize + ((_scrollHeight - 30 - style.controlSize * 2) * per);
+        if(_scroller.y == newY) return;
+        trace(DebugUtils.set("_scroller.y",_scroller.y,newY));
+        _scroller.y = newY;
     }
     
     private function onScrollerDown(e:MouseEvent):void {
@@ -799,7 +832,7 @@ public class MainPanel extends ConsolePanel {
     
     private function onScrollerMove(e:MouseEvent):void {
         _lockScrollUpdate = true;
-        _traceField.scrollV = Math.round((scrollPercent * (_traceField.maxScrollV - 1)) + 1);
+        setScrollPosition(Math.round((scrollPercent * (_traceField.maxScrollV - 1)) + 1));
         _lockScrollUpdate = false;
     }
     
@@ -808,7 +841,7 @@ public class MainPanel extends ConsolePanel {
         stage.removeEventListener(MouseEvent.MOUSE_MOVE, onScrollerMove);
         stage.removeEventListener(MouseEvent.MOUSE_UP, onScrollerUp);
         _scrolling = false;
-        onTraceScroll();
+        traceField_scrollHandler();
     }
     
     //
