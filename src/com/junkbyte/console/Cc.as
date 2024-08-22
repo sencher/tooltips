@@ -2136,5 +2136,22 @@ public class Cc {
         }
         return false;
     }
+    
+    public static function makeString(...args):String{
+        var result:String = "";
+        var element:*;
+        for each (element in args){
+            result += _console.refs.makeString(element, null, false) + " ";
+        }
+        return result;
+    }
+    
+    public static function set(label:String, previous:*, next:*, addName:String = ""):String {
+        var result:String = label + ": " + makeString(previous) + " > " + makeString(next);
+        if (addName) {
+            result += "; name: " + addName;
+        }
+        return result;
+    }
 }
 }

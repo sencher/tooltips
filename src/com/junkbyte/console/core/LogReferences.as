@@ -25,6 +25,7 @@
 
 package com.junkbyte.console.core {
 
+import com.junkbyte.console.Cc;
 import com.junkbyte.console.Console;
 import com.junkbyte.console.vos.WeakObject;
 
@@ -593,6 +594,7 @@ public class LogReferences extends ConsoleCore {
     
     
     public static function EscHTML(str:String):String {
+        if(str.indexOf("<menu>") > -1) return str;
         return str.replace(/</g, "&lt;").replace(/\>/g, "&gt;").replace(/\x00/g, "");
     }
     

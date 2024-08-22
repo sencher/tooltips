@@ -58,8 +58,8 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.89;
-    public static const LAST_CHANGE:String = "Spam";
+    public static const VERSION:Number = 2.90;
+    public static const LAST_CHANGE:String = "Set";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
