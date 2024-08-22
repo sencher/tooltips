@@ -36,6 +36,8 @@ import flash.geom.Rectangle;
 import flash.ui.Keyboard;
 import flash.utils.Timer;
 
+import wowp.utils.debug.DebugUtils;
+
 /**
  * Cc stands for Console Controller.
  * It is a singleton controller for <code>Console (com.junkbyte.console.Console)</code>.
@@ -2135,6 +2137,33 @@ public class Cc {
             }
         }
         return false;
+    }
+    
+    public static function makeString(...args):String{
+        var result:String = "";
+        var element:*;
+        for each (element in args){
+            result += _console.refs.makeString(element) + " ";
+        }
+        return result;
+    }
+    
+    public static function set(label:String, previous:*, next:*, addName:String = ""):String {
+        if(!_console) return setStringify(label, previous, next, addName);
+        
+        var result:String = label + ": " + makeString(previous) + " > " + makeString(next);
+        if (addName) {
+            result += "; name: " + addName;
+        }
+        return result;
+    }
+    
+    public static function setStringify(label:String, previous:*, next:*, addName:String = ""):String {
+        var result:String = label + ": " + JSON.stringify(previous) + " > " + JSON.stringify(next);
+        if (addName) {
+            result += " ; name: " + addName;
+        }
+        return result;
     }
 }
 }
