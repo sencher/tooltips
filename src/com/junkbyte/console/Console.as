@@ -58,8 +58,8 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.90;
-    public static const LAST_CHANGE:String = "Set";
+    public static const VERSION:Number = 2.91;
+    public static const LAST_CHANGE:String = "Alt+S";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -154,7 +154,7 @@ public class Console extends Sprite {
                 _so = SharedObject.getLocal(_config.sharedObjectName, _config.sharedObjectPath);
                 _soData = _so.data;
             } catch (e:Error) {
-            
+    
             }
         }
         
@@ -413,20 +413,20 @@ public class Console extends Sprite {
         return _stopped;
     }
     
-    public function set paused(newV:Boolean):void {
-        if (_paused == newV) return;
-        if (newV) report("Paused", 10);
-        else report("Resumed", -1);
-        _paused = newV;
-        _panels.mainPanel.setPaused(newV);
+    public function set paused(value:Boolean):void {
+        if (_paused == value) return;
+        if (value) report("Paused", 10);
+        else report("UnPaused", -1);
+        _paused = value;
+        _panels.mainPanel.setPaused(value);
     }
     
-    public function set stopped(newV:Boolean):void {
-        if (_stopped == newV) return;
-        if (newV) report("Stopped", 10);
-        else report("Resumed", -1);
-        _stopped = newV;
-        _panels.mainPanel.setPaused(newV);
+    public function set stopped(value:Boolean):void {
+        if (_stopped == value) return;
+        if (value) report("Stopped", 10);
+        _stopped = value;
+        _panels.mainPanel.setPaused(value);
+        if (!value) report("UnStopped", -1);
     }
     
     override public function get width():Number {

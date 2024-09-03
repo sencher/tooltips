@@ -2,7 +2,7 @@ package wowp.utils.debug {
 
 import flash.display.DisplayObject;
 import flash.display.Sprite;
-import flash.utils.getQualifiedClassName;
+import flash.utils.Dictionary;
 import flash.utils.getTimer;
 
 import wowp.utils.domain.getDefinition;
@@ -79,23 +79,29 @@ public class DebugUtils {
     }
     
     public static function set(label:String, previous:*, next:*, addName:String = ""):String {
-        var result:String = label + ": " + JSON.stringify(previous) + " > " + JSON.stringify(next);
         if (addName) {
-            result += " ; name: " + addName;
+            return label + ": " + previous + " > " + next + " " + "; name: " + addName + " ";
+        } else {
+            return label + ": " + previous + " > " + next + " ";
         }
-        return result;
-    }
-    
-    public static function shortInfo(value:*):String {
-        if(value is Object){
-            return getQualifiedClassName(value);
-        }
-        
-        return value;
     }
     
     public static function getUniqueId():int {
         return totalUniqueIds++;
+    }
+    
+    private static var uniqueDictionary:Dictionary = new Dictionary(true);
+    
+    public static function uid(value:Object):int {
+        if(!value) return -1;
+        
+        if (!uniqueDictionary[value]) {
+            var uniqueId:uint = getUniqueId();
+            uniqueDictionary[value] = uniqueId;
+            return uniqueId;
+        }
+        
+        return uniqueDictionary[value];
     }
 }
 }

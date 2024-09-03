@@ -120,7 +120,7 @@ public class ConsoleConfig {
      */
     public var tracingLevel:int;
     
-    public var flashTrace:Boolean = true;
+    public var flashTrace:Boolean = false;
     
     /**
      * Assign custom trace function.
