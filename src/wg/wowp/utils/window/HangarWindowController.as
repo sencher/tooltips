@@ -29,6 +29,8 @@ import wowp.utils.data.binding.Signal;
 import wowp.utils.data.binding.SignalOnce;
 import wowp.utils.data.ioc.IUnitInjector;
 import wowp.utils.data.ioc.UInjector;
+import wowp.utils.debug.DebugAssistant;
+import wowp.utils.debug.DebugUtils;
 import wowp.utils.display.bottom;
 
 public class HangarWindowController {
@@ -82,7 +84,7 @@ public class HangarWindowController {
      * @param content        Окно или путь к swf
      */
     public function HangarWindowController(content:Object) {
-        if (DebugAssistant.CONSTRUCTOR_INFO) Ct.magentacw(this, "HangarWindowController.cons content:", content, "file:", SystemEx.getCodeFileName());
+        if (DebugAssistant.WINDOWS_INFO) Ct.bluecw(this, "HangarWindowController.cons uid:", DebugUtils.uid(this), "content:", content, "file:", SystemEx.getCodeFileName());
         if (content is DisplayObject) {
             _isLoaded = true;
             _content = content as Sprite;
@@ -152,11 +154,11 @@ public class HangarWindowController {
      * принудительно закрывает окно, или прерывает загрузку
      */
     public function close():void {
-//        Cc.green2cw(this, "close", getContentName());
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "close uid:", DebugUtils.uid(this), getContentName());
         //	окно еще не загрузилось
         if (!_isLoaded && _isLoading) {
             if (_tempEmptyWindow.parent != null) {
-//                Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
+                if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
                 EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow));
             }
             _isLoading = false;
@@ -164,6 +166,7 @@ public class HangarWindowController {
                 _loader.contentLoaderInfo.removeEventListener(Event.COMPLETE, loadedHandler);
                 _loader.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR, loadErrorHandler);
                 _loader.close();
+                _loader.unloadAndStop();
                 _loader = null;
             }
             onCanceled.fire();
@@ -171,13 +174,13 @@ public class HangarWindowController {
         
         //	окно открытое
         if (_isOpened) {
-//            Cc.bluec(this, "_content.dispatchEvent(new Event(Event.CLOSE, true, true)); _content:", _content);
+            if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "_content.dispatchEvent(new Event(Event.CLOSE, true, true)); _content:", _content);
             _content.dispatchEvent(new Event(Event.CLOSE, true, true));
         }
     }
     
     public function open(payload:Object = null):void {
-//        Cc.green2cw(this, "open name:", getContentName(), "payload:", payload);
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "open uid:", DebugUtils.uid(this), "name:", getContentName(), "payload:", payload);
         var token:HangarWindowControllerToken = new HangarWindowControllerToken();
         var injector:IUnitInjector = null;
         if (payload != null) {
@@ -195,7 +198,7 @@ public class HangarWindowController {
     }
     
     public function injectData(payload:Object):void {
-//        Cc.green2cw(this, "injectData name:", getContentName(), "payload:", payload, "_isLoading:", _isLoading);
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "injectData uid:", DebugUtils.uid(this), "name:", getContentName(), "payload:", payload, "_isLoading:", _isLoading);
         if (_isLoading) {
             //  will be injected right after it have been loaded
             _injector = new UInjector(payload);
@@ -208,8 +211,8 @@ public class HangarWindowController {
      * предварительно загружает окно. Может быть полезным когда нужно мнгновенно открыть следующее окно без миганий
      */
     public function preload():void {
-//        Cc.green2cw(this, "preload try _isLoaded:", _isLoaded, "_isLoading:", _isLoading, "_isPreloading:", _isPreloading, "_path:", _path);
         if (!_isLoaded && !_isLoading && !_isPreloading) {
+            if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "preload uid:", DebugUtils.uid(this), "_path:", _path);
             _isPreloading = true;
             _isLoading = true;
             if (DebugAssistant.SAVE_STACK_ON_ASYNC_CALLS) {
@@ -218,7 +221,7 @@ public class HangarWindowController {
             _loader = new Loader();
             _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loadedHandler);
             _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, loadErrorHandler);
-//            Cc.yellow("preloader.load:", _path);
+            if (DebugAssistant.LOAD_INFO) Ct.yellow("uid:", DebugUtils.uid(this), "_loader.load:", _path);
             _loader.load(new URLRequest(_path), new LoaderContext(false, ApplicationDomain.currentDomain));
         }
     }
@@ -240,30 +243,30 @@ public class HangarWindowController {
      * открывает окно. если оно небыло загружено, то грузим его
      */
     private function openWindow(injector:IUnitInjector):void {
-//        Cc.green2cw(this, "openWindow", getContentName(), "injector:", injector);
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "openWindow uid:", DebugUtils.uid(this), getContentName(), "injector:", injector);
         _injector = injector;
-    
+        
         HangarModel.instance.common.onHeaderModeChanged.add(resolveVisibility);
         _onVisibleFlagChanged.add(resolveVisibility);
-    
+        
         //	чтобы не мигала подложка для модальных окон на время загрузки ложим её на самый верх
         if (_tempEmptyWindow.parent != null) {
-//            Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
+            if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
             EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow));
         }
-    
+        
         if (!_isLoaded)			//	если окно не загруженое, то грузим его
         {
             _isPreloading = false;
             if (_isLoading) return;	//	если уже начался процесс загрузки, то просто ждем его окончания
             _isLoading = true;
-//            Cc.green2c(this, "loader", _path);
             if (DebugAssistant.SAVE_STACK_ON_ASYNC_CALLS) {
                 loadCaller = "\n" + ConsoleUtils.whoCalledThis(100, 2);
             }
             _loader = new Loader();
             _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loadedHandler);
             _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, loadErrorHandler);
+            if (DebugAssistant.LOAD_INFO) Ct.yellow("uid:", DebugUtils.uid(this), "_loader.load:", _path);
             _loader.load(new URLRequest(_path), new LoaderContext(false, ApplicationDomain.currentDomain));
         } else if (!isOpened)	//	если окно не открыто, то открываем его
         {
@@ -276,16 +279,16 @@ public class HangarWindowController {
     }
     
     private function dispatchShow():void {
-//        Cc.green2cw(this, "dispatchShow", getContentName());
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "dispatchShow uid:", DebugUtils.uid(this), "getContentName", getContentName());
         _content.addEventListener(Event.CLOSE, closeHandler);
         _content.addEventListener(HideWindowEvent.TYPE, hideWindowHandler);
         var e:ShowWindowEvent = new ShowWindowEvent(_content, Constraints.CENTER_V | Constraints.CENTER_H,
                 _isModal, _sortOnMouseDown, _openOnBottom, null, _isOverlap);
         e.owner = _owner;
         if (_putUnder != null) e.putUnder = _putUnder;
-//        Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(e); e:", e);
+        if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(e); e:", e);
         EventPipe.dispatcher.dispatchEvent(e);
-    
+        
         // если окно немодальное, то центрируем его с учетом отступов от чата или карусели
         if (!_isModal && !_isOverlap) {
             // окно прячется под чат, то центриуем окно между верхним краем и чатом
@@ -304,15 +307,15 @@ public class HangarWindowController {
     }
     
     private function resolveVisibility():void {
-//        Cc.green2cw(this, "resolveVisibility", getContentName());
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "resolveVisibility uid:", DebugUtils.uid(this), getContentName());
         var visible:Boolean = isAllowedToBeVisible();
         if (_isLoading) {	//	загрузка
             if (_isModal && _tempEmptyWindowEnabled) {
                 if (!_tempEmptyWindow.stage && visible) {
-//                    Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new ShowWindowEvent(_tempEmptyWindow, 0, true)); _tempEmptyWindow:", _tempEmptyWindow);
+                    if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new ShowWindowEvent(_tempEmptyWindow, 0, true)); _tempEmptyWindow:", _tempEmptyWindow);
                     EventPipe.dispatcher.dispatchEvent(new ShowWindowEvent(_tempEmptyWindow, 0, true));
                 } else if (_tempEmptyWindow.stage && !visible) {
-//                    Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
+                    if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, "uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
                     EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow));
                 }
             }
@@ -334,9 +337,9 @@ public class HangarWindowController {
     }
     
     private function closeWindow():void {
-//        Cc.green2cw(this, "closeWindow", getContentName());
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "closeWindow uid:", DebugUtils.uid(this), getContentName());
         if (_tempEmptyWindow.parent != null) {
-//            Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
+            if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, " uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow)); _tempEmptyWindow:", _tempEmptyWindow);
             EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_tempEmptyWindow));
         }
         if (!_cache) {
@@ -347,16 +350,30 @@ public class HangarWindowController {
         _content.removeEventListener(HideWindowEvent.TYPE, hideWindowHandler);
         HangarModel.instance.common.onHeaderModeChanged.remove(resolveVisibility);
         _onVisibleFlagChanged.remove(resolveVisibility);
-//        Cc.bluec(this, "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_content)); _content:", _content);
+        if (DebugAssistant.WINDOWS_INFO) Ct.tealc(this, " uid:", DebugUtils.uid(this), "EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_content)); _content:", _content);
         EventPipe.dispatcher.dispatchEvent(new HideWindowEvent(_content));
         setVisibility(true);
     
         //Exterimental unloadAndStop();
-        if (_loader && _path == "hangarProgressionWindow.swf") {
-//            Cc.red3c(this, "delete", _path);
+        if (_loader && isInUnloadWhiteList(_path)) {
+            if (DebugAssistant.LOAD_INFO) Ct.red3c(this, " uid:", DebugUtils.uid(this), "_loader.unloadAndStop _path:", _path);
             _loader.unloadAndStop();
             _isLoaded = _isLoading = _isOpened = false;
         }
+    }
+    
+    private const UNLOAD_WHITE_LIST:Array = ["hangarProgressionWindow", "hangarTotalWarStatisticsWindow"];
+    
+    private function isInUnloadWhiteList(value:String):Boolean {
+        if (!UNLOAD_WHITE_LIST || !UNLOAD_WHITE_LIST.length) return false;
+        
+        var lowerCaseValue:String = value.toLowerCase();
+        for each (var search:String in UNLOAD_WHITE_LIST) {
+            if (lowerCaseValue.indexOf(search.toLowerCase()) > -1) {
+                return true;
+            }
+        }
+        return false;
     }
     
     private function visibilityChangeHandler(event:WindowEvent):void {
@@ -378,7 +395,7 @@ public class HangarWindowController {
     
     //	окно загрузилось
     private function loadedHandler(e:Event):void {
-//        Cc.green2cw(this, "loadedHandler", getContentName(), _loader.content);
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "loadedHandler uid:", DebugUtils.uid(this), getContentName(), "_loader.content:", _loader.content);
         _content = _loader.content as Sprite;
         _content.addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
         _content.addEventListener(WindowEvent.VISIBILITY_CHANGED, visibilityChangeHandler);
@@ -398,24 +415,22 @@ public class HangarWindowController {
     }
     
     protected function loadErrorHandler(e:IOErrorEvent):void {
-        trace("99999 loadErrorHandler");
-        error("HangarWindowsController.loadErrorHandler <>", e.text, "\npathCaller:", pathCaller, "\nloadCaller:", loadCaller)
-//        error( );
+        error("HangarWindowsController.loadErrorHandler <>", e.text, "\npathCaller:", pathCaller, "\nloadCaller:", loadCaller);
     }
     
     private function closeHandler(e:Event):void {
-//        Cc.green2cw(this, "closeHandler", e.isDefaultPrevented());
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "closeHandler uid:", DebugUtils.uid(this), "isDefaultPrevented:", e.isDefaultPrevented());
         if (e.isDefaultPrevented()) {
-//            trace("HangarWindowController::closeHandler", getContentName(), "prevent closing");
+            if (DebugAssistant.WINDOWS_INFO) Ct.green2c(this, "HangarWindowController::closeHandler", getContentName(), "prevent closing");
         } else {
-//            trace("HangarWindowController::closeHandler", getContentName());
+            if (DebugAssistant.WINDOWS_INFO) Ct.green2c(this, "HangarWindowController::closeHandler", getContentName());
             e.stopImmediatePropagation();
             closeWindow();
         }
     }
     
     private function hideWindowHandler(e:HideWindowEvent):void {
-//        Cc.green2cw(this, "hideWindowHandler", _content, e.window);
+        if (DebugAssistant.WINDOWS_INFO) Ct.green2cw(this, "hideWindowHandler", _content, e.window);
         if (_content == e.window) {
             e.stopImmediatePropagation();
             closeWindow();

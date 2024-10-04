@@ -1,9 +1,13 @@
 package wowp.utils.debug {
 
+import com.junkbyte.console.Cc;
+
 import flash.display.DisplayObject;
 import flash.display.Sprite;
 import flash.utils.Dictionary;
 import flash.utils.getTimer;
+
+import wowp.utils.DictionaryUtils;
 
 import wowp.utils.domain.getDefinition;
 
@@ -93,14 +97,16 @@ public class DebugUtils {
     private static var uniqueDictionary:Dictionary = new Dictionary(true);
     
     public static function uid(value:Object):int {
-        if(!value) return -1;
+//        Cc.redcw("DebugUtils", "uid value:", value, "uniqueDictionary:", DictionaryUtils.clone(uniqueDictionary));
+        if (!value) return -1;
         
         if (!uniqueDictionary[value]) {
             var uniqueId:uint = getUniqueId();
             uniqueDictionary[value] = uniqueId;
+//            Cc.redc("DebugUtils", "new uniqueId:", uniqueId);
             return uniqueId;
         }
-        
+//        Cc.redc("DebugUtils", "old:", uniqueDictionary[value]);
         return uniqueDictionary[value];
     }
 }

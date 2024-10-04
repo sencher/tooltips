@@ -295,7 +295,7 @@ public class Utils {
 //    public static function updateLabel(tf:TextField, str:String, html:Boolean = false):void {
 //        //DEBUG
 ////            if(str.indexOf("Играть") > -1){
-////                //DebugUtils.Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+////                //DebugUtils.Cc("green2cw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
 ////                tf.border = true;
 ////                tf.background = true;
 ////                tf.backgroundColor = 0x880000;

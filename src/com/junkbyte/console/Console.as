@@ -37,6 +37,8 @@ import com.junkbyte.console.view.PanelsManager;
 import com.junkbyte.console.view.RollerPanel;
 import com.junkbyte.console.vos.Log;
 
+import flash.display.DisplayObject;
+
 import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
 import flash.display.Sprite;
@@ -50,6 +52,8 @@ import flash.net.SharedObject;
 import flash.system.Capabilities;
 import flash.utils.getTimer;
 
+import wowp.utils.domain.getDefinition;
+
 /**
  * Console is the main class.
  * Please see com.junkbyte.console.Cc for documentation as it shares the same properties and methods structure.
@@ -58,8 +62,8 @@ import flash.utils.getTimer;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.91;
-    public static const LAST_CHANGE:String = "Alt+S";
+    public static const VERSION:Number = 2.92;
+    public static const LAST_CHANGE:String = "{XML}";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -147,7 +151,9 @@ public class Console extends Sprite {
         cl.addCLCmd("refs", printRefMap, "Show references");
         cl.addCLCmd("d", debugMode, "Set debug mode");
         cl.addCLCmd("o", debugOnce, "Set debug once true");
-        cl.addCLCmd("c", callExternalInterface, "Call ExternalInterface");
+        cl.addCLCmd("e", callExternalInterface, "Call ExternalInterface");
+        cl.addCLCmd("c", createClass, "Create Class");
+        cl.addCLCmd("cl", clearClasses, "Clear Classes");
         
         if (_config.sharedObjectName) {
             try {
@@ -550,7 +556,7 @@ public class Console extends Sprite {
         var txt:String = "";
         var len:int = strings.length;
         for (var i:int = 0; i < len; i++) {
-            txt += (i ? " " : "") + _refs.makeString(strings[i], null, html);
+            txt += (i ? " " : "") + _refs.makeString(strings[i], null, html, -1);
         }
         
         if (priority >= _config.autoStackPriority && stacks < 0) stacks = _config.defaultStackDepth;
@@ -727,6 +733,35 @@ public class Console extends Sprite {
     public function callExternalInterface(value:String, ...rest):void {
         green2(value, rest)
         ExternalInterface.call(value);
+    }
+    
+    private var addedInstances:Array = [];
+    public function createClass(value:String):void {
+        var _class:Class = getDefinition(value, loaderInfo);
+        var _class2:Class = getDefinition(value);
+//        Cc.pink(_class, _class2);
+        if(_class == null && _class2 == null) return;
+    
+        var instance:* = new _class();
+        var instance2:* = new _class2();
+    
+//        Cc.yellow(instance, instance2);
+        if(instance is DisplayObject){
+            instance.x = instance.y = 500;
+            addedInstances.push(instance);
+            stage.addChild(instance);
+        }
+        green2("loaderInfo:", loaderInfo, "class:", _class, "instance:", instance);
+    }
+    
+    public function clearClasses(value:String):void {
+        green2("clearClasses", addedInstances.length);
+        var instance:*;
+        for each(instance in addedInstances){
+            stage.removeChild(instance);
+            if(instance.hasOwnProperty("dispose")) instance.dispose();
+        }
+        addedInstances = [];
     }
     
     public function printRefMap(value:*):void {

@@ -8,7 +8,6 @@ import flash.text.TextField;
 import wowp.account.constants.ColorConstants;
 import wowp.controls.UIFactory;
 import wowp.controls.WeblinkButton;
-import wowp.core.Const;
 import wowp.core.layers.tip.helper.TipsHelperNoStage;
 import wowp.utils.Utils;
 import wowp.utils.array.findByField;
@@ -165,7 +164,7 @@ public class TextHyperlinkProcessor {
     }
     
     private function getLinkByOverlay(mc:*):HyperlinkData {
-        return findByField(_links, Const.HOVER, mc) as HyperlinkData || findByField(_links, "btnWeb", mc) as HyperlinkData;
+        return findByField(_links, "hover", mc) as HyperlinkData || findByField(_links, "btnWeb", mc) as HyperlinkData;
     }
     
     private function dispose():void {

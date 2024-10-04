@@ -1,11 +1,6 @@
 package wowp.utils.data.ioc {
-
-import com.junkbyte.console.Ct;
-
 import flash.utils.describeType;
 import flash.utils.getQualifiedClassName;
-
-import wowp.core.error;
 
 public class UnitInjector implements IUnitInjector {
     private var _interfaceClass:Class;
@@ -13,7 +8,7 @@ public class UnitInjector implements IUnitInjector {
     private var _target:Object;
     
     public function UnitInjector(interfaceClass:Class = null, source:Object = null) {
-//        Cc.green2cw(this, "UnitInjector interfaceClass:", interfaceClass, "source:", source);
+//			Cc.green2cw(this, "UnitInjector", arguments);
         fill(interfaceClass, source);
     }
     
@@ -23,7 +18,7 @@ public class UnitInjector implements IUnitInjector {
      * @param source - бьект-источник данные из которого будут иджектится в обьект-цель
      */
     public function fill(interfaceClass:Class, source:Object):void {
-//        Cc.green2cw(this, "fill interfaceClass:", interfaceClass, "source:", source);
+        //Cc.green2cw(this, "fill", interfaceClass, source);
         _interfaceClass = interfaceClass;
         _sourceRoot = source;
     }
@@ -33,10 +28,10 @@ public class UnitInjector implements IUnitInjector {
      * @param target - Обьект-цель куда инжектируются данные
      */
     public function inject(target:Object):void {
-//        Cc.green2cw(this, DebugUtils.set("inject target", _target, target));
+//			Cc.green2cw(this, "inject", arguments);
         _target = target;
         if (!target) {
-            error( "Injection is not possible, there is no target object !'");
+            throw Error("::Injection is not possible, there is no target object !'");
         }
         // * Если все данные правильно приинициализированны то запускаем рекурентную инжекцию
         injectRecurrent(target, _sourceRoot);
@@ -48,10 +43,10 @@ public class UnitInjector implements IUnitInjector {
      * @param source - Обьект ресурс источник данных
      */
     protected function injectRecurrent(target:Object, source:Object = null):void {
-//        Cc.green2cw(this, "injectRecurrent target:", target, "source:", source);
+//			Cc.green2cw(this, "injectRecurrent", arguments);
         var prop:String;
         var xmlSource:XML = describeType(source);
-//        Cc.green2c(this, "xmlSource", xmlSource);
+//			Cc.green2cw(this, "xmlSource", xmlSource);
         var variables:XMLList = xmlSource.variable;
         var accessors:XMLList = xmlSource.accessor;
         if (variables.length() + accessors.length() > 0) {
@@ -75,38 +70,38 @@ public class UnitInjector implements IUnitInjector {
                     newSource[accessor.@name] = source[accessor.@name];
                 }
             }
-    
+            
             source = newSource;
-//            Cc.green2c(this, "newSource", newSource);
+//				Cc.green2cw(this, "newSource", newSource);
         }
         
         for (prop in source) {
-//            Cc.green2c(this, "prop", prop);
+//				Cc.green2cw(this, "prop", prop);
             // * Если у обьекта-цели реализованна функция или проперти куда надо инжектить
             if (target.hasOwnProperty(prop)) {
-//                Cc.green2c(this, "1 if (target.hasOwnProperty(prop))");
+//					Cc.green2cw(this, 1);
                 // * Если данные инжектятся в подобьект
                 if (typeof (target[prop]) == "object") {
-//                    Cc.green2c(this, "11 if (typeof (target[prop]) == 'object')");
+//						Cc.green2cw(this, 11);
                     //trace(":::::::INJECT: sub-object "+getQualifiedClassName(prop)+"");
                     // * Если проперти сложного типа и в него инжектится такойже тип то просто приравнивает иначе инжектим по полям и функциям
                     if (target[prop] == null || getQualifiedClassName(target[prop]) == getQualifiedClassName(source[prop])) {
-//                        Cc.green2c(this, "111 if (target[prop] == null || getQualifiedClassName(target[prop]) == getQualifiedClassName(source[prop]))");
+//							Cc.green2cw(this, 111);
                         try {
-//                            Cc.green2cw(this, "1111 ", DebugUtils.set(prop, target[prop], source[prop]));
+//								Cc.green2cw(this, 1111);
                             target[prop] = source[prop];
                         } catch (e:Error) {
-//                            Cc.redc(this, "1112 NOT set", DebugUtils.set(prop, target[prop], source[prop]));
+//								Cc.green2cw(this, 1112);
                             //trace("[ERROR]:::::::INJECT: Cant convert object "+target[prop]+" to "+source[prop]);
                         }
                     } else {
-//                        Cc.green2c(this, "112 injectRecurrent(target[prop], source[prop] as Object);");
+//							Cc.green2cw(this, 112);
                         injectRecurrent(target[prop], source[prop] as Object);
                     }
                 }
                 // * Если данные инжектятся в функцию
                 else if (target[prop] is Function) {
-//                    Cc.green2c(this, "12 else if (target[prop] is Function)");
+//						Cc.green2cw(this, 12);
                     var func:Function = (target[prop] as Function);
                     
                     //	не использовать func.length - иногда падает клиент!
@@ -114,34 +109,35 @@ public class UnitInjector implements IUnitInjector {
                     
                     // * Если у функции нет входных параметров то она просто вызывается
                     if (argLength == 0) {
-//                        Cc.green2c(this, "121 if (argLength == 0)");
+//							Cc.green2cw(this, 121);
                         //trace(":::::::INJECT: call function "+prop+"()");
                         func.call();
                     }
                     // * Если у функции один любой параметр в том числе и масив то она вызовется с эти параметром
                     else if (argLength == 1) {
-//                        Cc.green2c(this, "122 else if (argLength == 1)");
+//							Cc.green2cw(this, 122);
                         //trace(":::::::INJECT: call function "+prop+"("+getQualifiedClassName(source[prop])+"("+((source[prop] is String)?"\""+source[prop]+"\"":source[prop])+"))");
                         func(source[prop])
                     }
                     // * Если у функции множество параметров то масив находящийся в _source[prop] воспринимается как список параметров
                     else if (argLength > 1) {
-//                        Cc.green2c(this, "123 else if (argLength > 1)");
-//                        var traceData:Array = [];
-//                        for each(var obj:Object in source[prop]) {
-//                            traceData.push(getQualifiedClassName(obj) + "(" + ((obj is String) ? "\"" + obj + "\"" : obj) + ")");
-//                        }
-//                        trace(":::::::INJECT: call function "+prop+"(" + traceData.join(", ") + ")");
+//							Cc.green2cw(this, 123);
+//							var traceData:Array = [];
+//							for each(var obj:Object in source[prop]) {
+//								Cc.green2cw(this, 1231);
+//								traceData.push(getQualifiedClassName(obj) + "(" + ((obj is String) ? "\"" + obj + "\"" : obj) + ")");
+//							}
+                        //trace(":::::::INJECT: call function "+prop+"(" + traceData.join(", ") + ")");
                         func.apply(null, source[prop])
                     }
                 } else // * Если данные инжектятся в свойство обьекта
                 {
-//                    Cc.green2c(this, "13", DebugUtils.set(prop, target[prop], source[prop]));
+//						Cc.green2cw(this, 13);
                     //trace(":::::::INJECT: set property "+prop+": "+getQualifiedClassName(source[prop])+" = "+((source[prop] is String)?"\""+source[prop]+"\"":source[prop]))
                     target[prop] = source[prop];
                 }
             } else {
-//                Cc.redc(this, "2 [ERROR]:::::::INJECT: Property or function '" + prop + "' does not exist !");
+//					Cc.green2cw(this, 2);
                 //trace("[ERROR]:::::::INJECT: Property or function '" + prop + "' does not exist !");
             }
         }

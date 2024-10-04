@@ -1,12 +1,8 @@
-package wowp.utils.domain
-{
-	import flash.utils.getQualifiedClassName;
+package wowp.utils.domain {
 
-	public function getClassName(object:Object):String {
-		var str:String = getQualifiedClassName(object);
-		var arr:Array = str.split("::");
-		if (arr.length == 2)return arr[1];
-		return str;
-	}
-	
+import flash.utils.getQualifiedClassName;
+
+public function getClassName(object:Object):String {
+    return shortName(getQualifiedClassName(object));
+}
 }

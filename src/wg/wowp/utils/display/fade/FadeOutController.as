@@ -34,26 +34,26 @@ public class FadeOutController {
     
     private function startAnimation(stage:Stage):void {
         _holder = new Sprite();
-			_wrapper = new Sprite();
-			
-			stage.addChild(_holder);
-			
-			_content.cacheAsBitmap = true;
-			_content.mouseChildren = false;
-			_wrapper.addChild(_content);
-			_holder.addChild(_wrapper);
-			_holder.x = _content.x + _content.width / 2;
-			_holder.y = _content.y + _content.height / 2;
-			_content.x = -_content.width / 2;
-			_content.y = -_content.height / 2;
-			
-			setTimeout(move, 500);
-		}
-		
-		private function move():void {
-			new Tween(DURATION, _holder, {x: _targetPoint.x, y: _targetPoint.y}, {ease: Cubic.easeIn});
-			new Tween(DURATION, _wrapper, {scaleX: .3, scaleY: .3}, {ease: Cubic.easeOut});
-			_contentTween = new Tween(DURATION, _content, {alpha: 0});
+        _wrapper = new Sprite();
+        
+        stage.addChild(_holder);
+        
+        _content.cacheAsBitmap = true;
+        _content.mouseChildren = false;
+        _wrapper.addChild(_content);
+        _holder.addChild(_wrapper);
+        _holder.x = _content.x + _content.width / 2;
+        _holder.y = _content.y + _content.height / 2;
+        _content.x = -_content.width / 2;
+        _content.y = -_content.height / 2;
+        
+        setTimeout(move, 500);
+    }
+    
+    private function move():void {
+        new Tween(DURATION, _holder, {x: _targetPoint.x, y: _targetPoint.y}, {ease: Cubic.easeIn});
+        new Tween(DURATION, _wrapper, {scaleX: .3, scaleY: .3}, {ease: Cubic.easeOut});
+        _contentTween = new Tween(DURATION, _content, {alpha: 0});
 			setTimeout(completed, DURATION);
 		}
 		

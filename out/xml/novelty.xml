@@ -1,0 +1,24 @@
+<data>
+    <item>
+        <id>dailyBonusPanel</id>
+        <prefID>dailyBonusPanel_2_0_13</prefID>
+    </item>
+    <item>
+        <id>centralPanel</id>
+        <prefID>centralPanel_2_0_13</prefID>
+    </item>
+    <item>
+        <id>onboardingPanel</id>
+        <prefID>onboardingPanel</prefID>
+    </item>
+    <item>
+        <id>questsWindowDirectives</id>
+        <prefID>questsWindowDirectives</prefID>
+        <defaultInvisible>true</defaultInvisible>
+    </item>
+    <item>
+        <id>questsPanelBtn4</id>
+        <prefID>questsPanelBtn4</prefID>
+        <defaultInvisible>true</defaultInvisible>
+    </item>
+</data>

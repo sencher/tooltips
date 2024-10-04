@@ -25,19 +25,19 @@ public class Collector {
         this.callback = callback;
         this.repetable = repetable;
         
-        //Cc.logchw(this, "Collector", arguments);
+        //Cc.green2cw(this, "Collector", arguments);
         eventDispatcher.addEventListener(eventName, collect);
     }
     
     public function dispose():void {
-        //Cc.logchw(this, "dispose");
+        //Cc.green2cw(this, "dispose");
         if (eventDispatcher && eventName) eventDispatcher.removeEventListener(eventName, collect);
         eventDispatcher = null;
         callback = null;
     }
     
     private function collect(event:Event = null):void {
-        //Cc.logchw(this, "collect", counter + 1);
+        //Cc.green2cw(this, "collect", counter + 1);
         if (++counter >= limit) {
             //Cc.error("callback");
             callback();

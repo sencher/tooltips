@@ -1,11 +1,11 @@
 package wowp.utils.debug {
 
-import com.greensock.TweenLite;
 import com.junkbyte.console.Cc;
 import com.junkbyte.console.Ct;
 
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
+import flash.display.LoaderInfo;
 import flash.display.Sprite;
 import flash.display.Stage;
 import flash.external.ExternalInterface;
@@ -24,6 +24,7 @@ import wowp.core.api.debug.DebugManager;
 import wowp.core.eventPipe.EventPipe;
 import wowp.core.layers.tip.events.HideTipEvent;
 import wowp.data.ivo.compound.PlaneData;
+import wowp.hangar.crew.models.ifaces.Ifaces;
 import wowp.hangar.flight.model.FlightModel;
 import wowp.hangar.messages.handlers.SMActivity;
 import wowp.hangar.model.HangarModel;
@@ -34,16 +35,18 @@ import wowp.hangar.quests.service.AwardDataFactory;
 import wowp.hangar.quests.service.sumAwards;
 import wowp.hangar.tickets.tabs.TicketsWindowTabID;
 import wowp.settings.views.events.DataEvent;
+import wowp.utils.domain.getDefinition;
 import wowp.utils.object.mergeObjects;
 
 public class DebugAssistant {
     private static var inited:Boolean;
     
     private static var _stage:Stage;
+    private static var loaderInfo:LoaderInfo;
     private static var _eventPipe:EventPipe = new EventPipe();
     
     public static var DEFAULT_INTERFACE_FILTER:Array = ["IEquipment", "IEquipmentInstance"];
-    public static var INTERFACE_SERVICE_FILTER:Array = ["IBattleResult"];
+    public static var INTERFACE_SERVICE_FILTER:Array = [Ifaces.ISKILL_PENALTY/*, Ifaces.ICREW_MEMBER*/];
     
     public static const CALL:String = "\\\\\\\\";
     public static const RESPONSE:String = "////";
@@ -53,15 +56,10 @@ public class DebugAssistant {
     public static var PERMANENT_TOOLTIPS:Boolean;
     public static var LONG_TOOLTIP:Boolean;
     public static var KILL_TOOLTIP:Boolean;
+    public static var TOOLTIPS_INFO:Boolean;
     public static var SHOW_BUY_TICKETS:Boolean;
     public static var IGNORE_WING_LEVEL_DIFFERENCE:Boolean;
     
-    public static var TRACE_INTERFACE_RESPONCES:Boolean;
-    public static var TRACE_INTERFACE_CALLS:Boolean;
-    public static var CONSOLE_ALL_INTERFACE_RESPONCES:Boolean;
-    public static var CONSOLE_ALL_INTERFACE_CALLS:Boolean;
-    public static var CONSOLE_FILTERED_INTERFACE_RESPONCES:Boolean;
-    public static var CONSOLE_FILTERED_INTERFACE_CALLS:Boolean;
     public static var IGNORE_LOGOUT:Boolean;
     public static var ALL_QUESTS_FINISHED:Boolean;
     public static var NO_MODAL_WINDOWS:Boolean;
@@ -74,14 +72,15 @@ public class DebugAssistant {
         if (inited) {
             return;
         }
-        DebugAssistant._stage = stage;
+        _stage = stage;
+        loaderInfo = _stage.loaderInfo;
     
         if (!mini) {
             hangarWindowsModel = HangarModel.instance.ui;
             questsModel = AccountModel.instance.questsModel;
         }
     
-        DebugManager.start(stage);
+        DebugManager.start(stage, mini);
         DebugManager.debug(showBattleResult, "BattleResult", "Windows");
         DebugManager.debug(showQuestWindow, "QuestWindow", "Windows");
         DebugManager.debug(showQuestData, "QuestData", "Quests");
@@ -124,8 +123,6 @@ public class DebugAssistant {
         DebugManager.debug(setExperience, "setExperience", "Hangar");
         DebugManager.debug(setGold, "setGold", "Hangar");
         DebugManager.debug(setSilver, "setSilver", "Hangar");
-        DebugManager.debug(haveFlight, "haveFlight", "Debug");
-        DebugManager.debug(systemEx, "SystemEx", "Debug");
     
         DebugManager.debug(traceInterfaceResponces, "traceInterfaceResponces", "Interface");
         DebugManager.debug(traceInterfaceCalls, "traceInterfaceCalls", "Interface");
@@ -141,6 +138,12 @@ public class DebugAssistant {
         DebugManager.debug(killTooltip, "killTooltip", "Flags");
         DebugManager.debug(showBuyTickets, "showBuyTickets", "Flags");
         DebugManager.debug(ignoreWingLevelDifference, "ignoreWingLevelDifference", "Flags");
+        DebugManager.debug(ignoreWingLevelDifference, "ignoreWingLevelDifference", "Flags");
+    
+        DebugManager.debug(haveFlight, "haveFlight", "Debug");
+        DebugManager.debug(systemEx, "SystemEx", "Debug");
+        DebugManager.debug(createClass, "createClass", "Debug");
+        DebugManager.debug(disposeClass, "disposeClass", "Debug");
     
         _stage.addEventListener(DebugEvent.SET_SILVER, testHandler);
         inited = true;
@@ -151,6 +154,7 @@ public class DebugAssistant {
 //        CONSOLE_FILTERED_INTERFACE_CALLS = true;
 //        CONSOLE_FILTERED_INTERFACE_RESPONCES = true;
 //        PERMANENT_TOOLTIPS = true;
+//        TOOLTIPS_INFO = true;
 //        IGNORE_LOGOUT = true;
 //        ALL_QUESTS_FINISHED = true;
 //        CONSTRUCTOR_INFO = true;
@@ -162,29 +166,61 @@ public class DebugAssistant {
 //        TweenLite.delayedCall(15, showBattleResult);
     }
     
-    //Many pathCallers executed in constructors before init(), so in DEV mode hardcode this to true
+    public static const LOAD_INFO_FILTER:Array = ["swf"];
+    //Many pathCallers executed in constructors before DebugAssistant.init(), so in DEV mode hardcode this to true
+    public static var SANDBOX_MODE:Boolean// = true;
+    public static var LOAD_INFO:Boolean = true;
+    public static var CONSTRUCTOR_INFO:Boolean = true;
+    public static var WINDOWS_INFO:Boolean = true;
     public static var SAVE_STACK_ON_ASYNC_CALLS:Boolean = true;
     public static var SKIP_LOGIN_SCREEN:Boolean = true;
-    public static var CONSTRUCTOR_INFO:Boolean// = true;
+    
+    public static var TRACE_INTERFACE_RESPONCES:Boolean// = true;
+    public static var TRACE_INTERFACE_CALLS:Boolean// = true;
+    public static var CONSOLE_ALL_INTERFACE_CALLS:Boolean// = true;
+    public static var CONSOLE_ALL_INTERFACE_RESPONCES:Boolean// = true;
+    public static var CONSOLE_FILTERED_INTERFACE_RESPONCES:Boolean// = true;
+    public static var CONSOLE_FILTERED_INTERFACE_CALLS:Boolean// = true;
+    
     
     public static function showConsole():void {
         Cc.start(_stage);
         Cc.commandLine = true;
         Cc.config.commandLineAllowed = true;
         Cc.config.commandLineAutoScope = true;
-        Cc.config.flashTrace = true;
+        Cc.config.flashTrace = false;
         Cc.visible = true;
         
         Cc.y = 0;
         Cc.width = 685;
+//        Cc.height = _stage.stageHeight;
         Cc.height = 1095;
         Cc.config.alwaysOnTop = true;
         Cc.D_MODE = 0;
-    
-        Cc.SPAM = ["crew"];
-    
+        
+        if (LOAD_INFO && LOAD_INFO_FILTER.length) Ct.orange("LOAD_INFO_FILTER:", LOAD_INFO_FILTER);
+        //TODO:SS Implement filters
+        //if(DEFAULT_INTERFACE_FILTER.length) Ct.orange("DEFAULT_INTERFACE_FILTER:", DEFAULT_INTERFACE_FILTER);
+        if ((CONSOLE_FILTERED_INTERFACE_RESPONCES || CONSOLE_FILTERED_INTERFACE_CALLS) && INTERFACE_SERVICE_FILTER.length) Ct.orange("INTERFACE_SERVICE_FILTER:", INTERFACE_SERVICE_FILTER);
+
+//        Cc.spam = ["crew"];
+
 //        Cc.x = 286;
 //        Cc.x = 1235;
+    }
+    
+    public static function isInLoadInfoFilter(value:String):Boolean {
+        if (!LOAD_INFO) return false;
+        
+        if (!LOAD_INFO_FILTER || !LOAD_INFO_FILTER.length) return true;
+        
+        var lowerCaseValue:String = value.toLowerCase();
+        for each (var search:String in LOAD_INFO_FILTER) {
+            if (lowerCaseValue.indexOf(search.toLowerCase()) > -1) {
+                return true;
+            }
+        }
+        return false;
     }
     
     public static function colorTest():void {
@@ -292,6 +328,32 @@ public class DebugAssistant {
     
     public static function haveFlight():void {
         Ct.orange("haveFlight", FlightModel.instance.haveFlight);
+    }
+    
+    private static var _addedInstances:Array = [];
+    
+    public static function disposeClass():void {
+        Ct.orange("disposeClass", _addedInstances.length);
+        var instance:*;
+        for each(instance in _addedInstances) {
+            _stage.removeChild(instance);
+            if (instance.hasOwnProperty("dispose")) instance.dispose();
+        }
+        _addedInstances = [];
+    }
+    
+    public static function createClass(value:String):void {
+        var _class:Class = getDefinition(value, loaderInfo);
+        if (!_class) return;
+        
+        var instance:* = new _class();
+        
+        if (instance is DisplayObject) {
+            instance.x = instance.y = 500;
+            _addedInstances.push(instance);
+            _stage.addChild(instance);
+        }
+        Ct.orange("loaderInfo:", loaderInfo, "class:", _class, "instance:", instance);
     }
     
     public static function systemEx():void {

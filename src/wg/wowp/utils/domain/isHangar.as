@@ -6,11 +6,11 @@ package wowp.utils.domain
 	
 	public function isHangar():Object
 	{
-        if (EventPipe.dispatcher) {
-            return (EventPipe.dispatcher as DisplayObject).loaderInfo.url.split("/").pop() == "hangar.swf";
-        } else {
-            return false;
-        }
-    }
+		if (EventPipe.dispatcher) {
+			return (EventPipe.dispatcher as DisplayObject).loaderInfo.url.split("/").pop() == "hangar.swf";
+		} else {
+			return false;
+		}
+	}
 
 }

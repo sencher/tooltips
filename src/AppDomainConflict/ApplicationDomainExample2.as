@@ -22,12 +22,12 @@ public class ApplicationDomainExample2 extends Sprite {
         spanishGreeterLoader = new ClassLoader();
         spanishGreeterLoader.addEventListener(ClassLoader.LOAD_ERROR,loadErrorHandler);
         spanishGreeterLoader.addEventListener(ClassLoader.CLASS_LOADED,classLoadedHandler);
-        spanishGreeterLoader.load("Greeter_es.swf", true);
+        spanishGreeterLoader.load("Greeter_es.swf", false);
 
         englishGreeterLoader = new ClassLoader();
         englishGreeterLoader.addEventListener(ClassLoader.LOAD_ERROR,loadErrorHandler);
         englishGreeterLoader.addEventListener(ClassLoader.CLASS_LOADED,classLoadedHandler);
-        englishGreeterLoader.load("Greeter_en.swf", true);
+        englishGreeterLoader.load("Greeter_en.swf", false);
     }
 
     private function loadErrorHandler(e:Event):void {
@@ -43,9 +43,9 @@ public class ApplicationDomainExample2 extends Sprite {
     }
 
     private function greet():void {
-        trace(ApplicationDomain.currentDomain.getQualifiedDefinitionNames(), "\n");
-        trace(spanishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
-        trace(englishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n");
+        trace(ApplicationDomain.currentDomain.getQualifiedDefinitionNames(), "\n\n");
+        trace(spanishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n\n");
+        trace(englishGreeterLoader.loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames(), "\n\n");
 
         var spanishGreeter:Class = spanishGreeterLoader.getClass("Greeter");
         var englishGreeter:Class = englishGreeterLoader.getClass("Greeter");
@@ -95,7 +95,7 @@ class ClassLoader extends EventDispatcher {
         if(defaultDomain){
             context.applicationDomain = ApplicationDomain.currentDomain;
         }else{
-            context.applicationDomain = new ApplicationDomain();
+            context.applicationDomain = new ApplicationDomain(ApplicationDomain.currentDomain);
         }
 
         loader.load(request,context);

@@ -135,7 +135,10 @@ public class LogReferences extends ConsoleCore {
                 return stackstr;
             }
             return err.toString();
-        } else if (v is XML || v is XMLList) {
+        } else if (v is XML || v is XMLList /*|| (v is String && String(v).charAt(0) == "<")*/) {
+            if (config.useObjectLinking) {
+                return "{" + genLinkString(o, prop, ShortClassName(v)) + "}";
+            }
             return shortenString(EscHTML(v.toXMLString()), maxlen, o, prop);
         } else if (v is QName) {
             return String(v);

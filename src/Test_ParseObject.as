@@ -13,7 +13,7 @@ public class Test_ParseObject extends Sprite {
     
     private function addCustomAwards():void {
         var customAwards:Object = o;
-        //Cc.logchw(this, "customAwards", customAwards);
+        //Cc.green2cw(this, "customAwards", customAwards);
         if (!customAwards) return;
         
         var curRange:int;

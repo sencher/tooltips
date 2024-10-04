@@ -149,9 +149,10 @@ public class BitmapLoader extends Sprite {
     //	example:
     //	"icon/plane_bottom.dds#icon/plane_top.dds##icon/default_plane.dds
     public function load(path:String, smoothing:Boolean = true):void {
+        //UNSTABLE?
         if (_path == path && _smoothing == smoothing) return;
 
-//        if (DebugUtils.isInterestingString(path)) Cc.berrycw(this, "load", DebugUtils.set("path", _path, path), DebugUtils.set("smoothing", _smoothing, smoothing, name));
+//        if (DebugUtils.isInterestingString(path)) Cc.berrycw(this, "load", Cc.set("path", _path, path), Cc.set("smoothing", _smoothing, smoothing, name));
 
 //        if(DebugUtils.isInterestingString(path)) {
 //            path = "imageSlides/missionsSpecials/premiumPilotMissions_JAFEB.dds";
@@ -167,7 +168,7 @@ public class BitmapLoader extends Sprite {
     }
     
     public function loadOnlyLast(path:String, smoothing:Boolean = true):void {
-//        if (DebugUtils.isInterestingString(path)) Cc.berrycw(this, "loadOnlyLast", DebugUtils.set("path", _path, path), DebugUtils.set("smoothing", _smoothing, smoothing, name));
+//        if (DebugUtils.isInterestingString(path)) Cc.berrycw(this, "loadOnlyLast", Cc.set("path", _path, path), Cc.set("smoothing", _smoothing, smoothing, name));
         _pathList = null;
         _isLoaded = false;
         _smoothing = smoothing;
@@ -177,7 +178,7 @@ public class BitmapLoader extends Sprite {
     }
     
     public function clear():void {
-//        if (DebugUtils.isInterestingString(path)) Cc.redcw(this, "clear", DebugUtils.set("path", _path, null, name));
+//        if (DebugUtils.isInterestingString(path)) Cc.redcw(this, "clear", Cc.set("path", _path, null, name));
         _isLoaded = false;
         _path = null;
         removeEventListener(Event.ENTER_FRAME, itemLoadedHandler);
@@ -189,11 +190,11 @@ public class BitmapLoader extends Sprite {
     }
     
     public function onError():void {
-        error( "BitmapLoader <> failed to load", _path);
+        error("BitmapLoader <> failed to load", _path);
         
         var defaultPath:String = getDefaultPath();
         if (pathList.length == 1 && defaultPath != null) {
-            error( "BitmapLoader <> loading default image", defaultPath);
+            error("BitmapLoader <> loading default image", defaultPath);
             load(defaultPath, _smoothing);
         } else {
             onErrorLoad.fire();
@@ -350,7 +351,7 @@ class BitmapAutoLoader extends Bitmap implements ICacheClient {
     }
     
     public function load(path:String, originalWidth:Number, originalHeight):void {
-//        if (DebugUtils.isInterestingString(path)) Cc.redcw(this, "load", DebugUtils.set("path", _path, path), DebugUtils.set("originalWidth", _originalWidth, originalWidth), DebugUtils.set("originalHeight", _originalHeight, originalHeight));
+//        if (DebugUtils.isInterestingString(path)) Cc.redcw(this, "load", Cc.set("path", _path, path), Cc.set("originalWidth", _originalWidth, originalWidth), Cc.set("originalHeight", _originalHeight, originalHeight));
         _originalWidth = originalWidth;
         _originalHeight = originalHeight;
         _isLoaded = false;

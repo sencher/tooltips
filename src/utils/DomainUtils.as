@@ -4,6 +4,8 @@
  * @author Sergey Senkov
  */
 package utils {
+
+import flash.display.LoaderInfo;
 import flash.system.ApplicationDomain;
 import flash.utils.getQualifiedClassName;
 
@@ -44,6 +46,26 @@ public class DomainUtils {
         var listFull:Vector.<String> = domain.getQualifiedDefinitionNames();
         var id:Number = listShort.indexOf(value);
         return id > -1 ? domain.getDefinition(listFull[id]) : null;
+    }
+    
+    public static function getDefinition(name:String, loaderInfo:LoaderInfo = null):Class {
+        
+        var domain:ApplicationDomain =
+                (loaderInfo != null && loaderInfo.applicationDomain != null)
+                        ? loaderInfo.applicationDomain
+                        : ApplicationDomain.currentDomain;
+        
+        var result:Class;
+        do {
+            try {
+                result = Class(DomainUtils.getDefinitionIgnorePrefix(name, domain));
+                if(result) break;
+            } catch (e) {
+            }
+            domain = domain.parentDomain;
+        }while (domain != null)
+        
+        return result;
     }
 }
 }

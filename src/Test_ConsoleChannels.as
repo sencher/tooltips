@@ -33,7 +33,7 @@ public class Test_ConsoleChannels extends Sprite {
      
         Cc.green2("log");
         Cc.green2c("logch", "logch");
-        Cc.green2cw(this, "logchw", "logchw");
+        Cc.green2cw(this, "green2cw", "green2cw");
         Cc.warn("warn");
         Cc.warnc("warnch", "warnch");
 	    Cc.warncw(this, "warnchw", "warnchw");

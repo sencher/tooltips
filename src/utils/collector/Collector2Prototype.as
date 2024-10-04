@@ -48,7 +48,7 @@ public class Collector2Prototype {
     }
     
     public function dispose():void {
-        //Cc.logchw(this, "dispose");
+        //Cc.green2cw(this, "dispose");
         for (var source:* in sources) {
             source.removeEventListener(eventName, collect);
         }
@@ -67,7 +67,7 @@ public class Collector2Prototype {
     }
     
     private function collect(event:Event = null):void {
-        //Cc.logchw(this, "collect", event.target);
+        //Cc.green2cw(this, "collect", event.target);
         sources[event.target] = 1;
         event.target.removeEventListener(eventName, collect);
         if (allSourcesCollected) {

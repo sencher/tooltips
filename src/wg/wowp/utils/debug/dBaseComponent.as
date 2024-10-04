@@ -41,9 +41,9 @@ public class dBaseComponent extends BaseComponent {
         super.invalidate(flags);
     }
     
-    override public function renderHandler(e:Event):void {
-        //Cc.bluecw(this, "renderHandler", e.type, e);
-        super.renderHandler(e);
+    override public function renderHandler(event:Event):void {
+        //Cc.bluecw(this, "renderHandler", event.type, event);
+        super.renderHandler(event);
     }
     
     

@@ -21,7 +21,7 @@ public class Test_LoaderSecond extends Sprite {
 //
 //        cc("visible", true);
 //        cc("xxx", false);
-//        cc("logchw", "ch1", this)
+//        cc("green2cw", "ch1", this)
 //
 //
         s = Class(getDefinitionByName("loader_test::Test_LoaderStaticSimple"));

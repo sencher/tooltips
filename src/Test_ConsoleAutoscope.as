@@ -55,7 +55,7 @@ public class Test_ConsoleAutoscope extends Sprite {
 //        d[b] = c;
 //        d[c] = a;
 //
-//        Cc.logchw(this, "dic", d);
+//        Cc.green2cw(this, "dic", d);
     }
     
     private function onTimer(event:TimerEvent):void {

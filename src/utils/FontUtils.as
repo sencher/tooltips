@@ -134,7 +134,7 @@ public class FontUtils {
     updateLabel(tf:TextField, str:String, html:Boolean = false, d:Boolean = false):void {
         //DEBUG
         if (debug/*str.indexOf("Your123ASD") > -1*/) {
-//            Cc("logchw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
+//            Cc("green2cw", "updateLabel", arguments, Env.getDefaults().getKeysFromValue(str));
 //            str = '<font color=#0000ff>BLUE</font><font color="#00ff00">GREEN</font>';
 //            html = true;
             tf.border = true;

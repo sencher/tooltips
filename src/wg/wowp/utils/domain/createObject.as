@@ -11,9 +11,9 @@ public function createObject(name:String, domain:ApplicationDomain = null):Objec
     try {
         instance = new (getDefinition(name) as Class)();
     } catch (e:Error) {
-        error( "createObject <> Cannot create instance: " + name);
+        error("createObject <> Cannot create instance: " + name);
     }
     return instance;
-	}
+}
 
 }

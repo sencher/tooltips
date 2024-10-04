@@ -32,7 +32,7 @@ public class CollectorUnique {
         this.limit = limit;
         this.callback = callback;
         
-        //Cc.logchw(this, "Collector", arguments);
+        //Cc.green2cw(this, "Collector", arguments);
         eventDispatcher.addEventListener(eventName, collect);
         
         timer = new Timer(timeLimit);
@@ -47,7 +47,7 @@ public class CollectorUnique {
     }
     
     public function dispose():void {
-        //Cc.logchw(this, "dispose");
+        //Cc.green2cw(this, "dispose");
         if (eventDispatcher && eventName) eventDispatcher.removeEventListener(eventName, collect);
         eventDispatcher = null;
         callback = null;

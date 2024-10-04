@@ -56,10 +56,10 @@ public class Cc {
     public static var D_ONCE:Boolean;
     private static var _spam:Array = [];
     
-    private static const NOT_INITED:int = 0;
-    private static const TIMER_STARTED:int = 1;
-    private static const DISABLED:int = 2;
-    private static const ENABLED:int = 3;
+    public static const NOT_INITED:int = 0;
+    public static const TIMER_STARTED:int = 1;
+    public static const DISABLED:int = 2;
+    public static const ENABLED:int = 3;
     
     private static var currentStatus:int = NOT_INITED;
     private static var workHiddenTimer:Timer;
@@ -93,16 +93,18 @@ public class Cc {
      *            Password will not trigger if you have focus on an input TextField.
      */
     public static function start(container:DisplayObjectContainer, password:String = ""):void {
+//        ConsoleUtils.traceStack("---- start", currentStatus);
         if (currentStatus == ENABLED) {
             if (container && !_console.parent) container.addChild(_console);
         } else {
             workHiddenTimerStop();
+//            trace(Cc.set("---- currentStatus", currentStatus, ENABLED));
             currentStatus = ENABLED;
             if (!_console) _console = new Console(password, config);
             // if no parent display, console will always be hidden, but using Cc.remoting is still possible so its not the end.
             if (container) container.addChild(_console);
         }
-        visible = true;
+        if (!_console.stopped) visible = true;
         container.stage.addEventListener(KeyboardEvent.KEY_UP, stage_keyDownHandler);
     }
     
@@ -124,10 +126,12 @@ public class Cc {
      *
      */
     public static function startOnStage(display:DisplayObject, password:String = ""):void {
+//        ConsoleUtils.traceStack("---- startOnStage", currentStatus);
         if (currentStatus == ENABLED) {
             if (display && display.stage && _console.parent != display.stage) display.stage.addChild(_console);
         } else {
             workHiddenTimerStop();
+//            trace(Cc.set("---- currentStatus", currentStatus, ENABLED));
             currentStatus = ENABLED;
             if (display && display.stage) {
                 start(display.stage, password);
@@ -151,7 +155,7 @@ public class Cc {
      */
     public static function add(strings:*, priority:int = 2, isRepeating:Boolean = false):void {
         if (isSpam(strings)) return;
-        if (status() != DISABLED) _console.add(strings, priority, isRepeating);
+        if (status != DISABLED) _console.add(strings, priority, isRepeating);
     }
     
     /**
@@ -165,7 +169,7 @@ public class Cc {
      */
     public static function ch(channel:*, strings:*, priority:int = 2, isRepeating:Boolean = false):void {
         if (isSpam(strings)) return;
-        if (status() != DISABLED) _console.ch(channel, strings, priority, isRepeating);
+        if (status != DISABLED) _console.ch(channel, strings, priority, isRepeating);
     }
     
     public static function berry(...strings):void {
@@ -1369,40 +1373,40 @@ public class Cc {
     }
     
     private static function addLine(strings:Array, priority:int):void {
-        if (status() != DISABLED) _console.addLine(strings, priority);
+        if (status != DISABLED) _console.addLine(strings, priority);
     }
     
     private static function addToChannel(channel:*, strings:Array, priority:int):void {
-        if (status() != DISABLED) _console.addCh(channel, strings, priority, false, true);
+        if (status != DISABLED) _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addWithStack(strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(Console.DEFAULT_CHANNEL, strings, priority, false, true);
     }
     
     private static function addJson(strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         _console.addCh(Console.DEFAULT_CHANNEL, toJson.apply(null, strings), priority, false, true);
     }
     
     private static function addToChannelWithStack(channel:*, strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
         _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addToChannelJson(channel:*, strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         strings = toJson.apply(null, strings);
         _console.addCh(channel, strings, priority, false, true);
     }
     
     private static function addWithStackJson(strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
@@ -1410,7 +1414,7 @@ public class Cc {
     }
     
     private static function addToChannelWithStackJson(channel:*, strings:Array, priority:int):void {
-        if (status() == DISABLED) return;
+        if (status == DISABLED) return;
         strings = toJson.apply(null, strings);
         var stack:String = ConsoleUtils.whoCalledThis();
         if (stack) strings.unshift(_console.refs.genLinkString(stack, null, ConsoleConfig.STACK_HREF_TEXT));
@@ -1426,7 +1430,7 @@ public class Cc {
      *
      */
     public static function stack(string:*, depth:int = -1, priority:int = 5):void {
-        if (status() != DISABLED) _console.stack(string, depth, priority);
+        if (status != DISABLED) _console.stack(string, depth, priority);
     }
     
     /**
@@ -1439,7 +1443,7 @@ public class Cc {
      *
      */
     public static function stackch(channel:*, string:*, depth:int = -1, priority:int = 5):void {
-        if (status() != DISABLED) _console.stackch(channel, string, depth, priority);
+        if (status != DISABLED) _console.stackch(channel, string, depth, priority);
     }
     
     /**
@@ -1453,7 +1457,7 @@ public class Cc {
      *
      */
     public static function inspect(obj:Object, showInherit:Boolean = true):void {
-        if (status() != DISABLED) _console.inspect(obj, showInherit);
+        if (status != DISABLED) _console.inspect(obj, showInherit);
     }
     
     /**
@@ -1468,7 +1472,7 @@ public class Cc {
      *
      */
     public static function inspectch(channel:*, obj:Object, showInherit:Boolean = true):void {
-        if (status() != DISABLED) _console.inspectch(channel, obj, showInherit);
+        if (status != DISABLED) _console.inspectch(channel, obj, showInherit);
     }
     
     /**
@@ -1478,7 +1482,7 @@ public class Cc {
      * @param depth    Depth of explosion, -1 = unlimited
      */
     public static function explode(obj:Object, depth:int = 1):void {
-        if (status() != DISABLED) _console.explode(obj, depth);
+        if (status != DISABLED) _console.explode(obj, depth);
     }
     
     /**
@@ -1489,7 +1493,7 @@ public class Cc {
      * @param depth    Depth of explosion, -1 = unlimited
      */
     public static function explodech(channel:*, obj:Object, depth:int = 1):void {
-        if (status() != DISABLED) _console.explodech(channel, obj, depth);
+        if (status != DISABLED) _console.explodech(channel, obj, depth);
     }
     
     /**
@@ -1507,7 +1511,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
     public static function addHTML(...strings):void {
-        if (status() != DISABLED) _console.addHTML.apply(null, strings);
+        if (status != DISABLED) _console.addHTML.apply(null, strings);
     }
     
     /**
@@ -1526,7 +1530,7 @@ public class Cc {
      * @param ...strings    Strings to be logged, any type can be passed and will be converted to string or a link if it is an object/class.
      */
     public static function addHTMLch(channel:*, priority:int, ...strings):void {
-        if (status() != DISABLED) _console.addHTMLch.apply(null, new Array(channel, priority).concat(strings));
+        if (status != DISABLED) _console.addHTMLch.apply(null, new Array(channel, priority).concat(strings));
     }
     
     /**
@@ -1537,7 +1541,7 @@ public class Cc {
      * @param maxDepth    Maximum child depth. 0 = unlimited
      */
     public static function map(container:DisplayObjectContainer, maxDepth:uint = 0):void {
-        if (status() != DISABLED) _console.map(container, maxDepth);
+        if (status != DISABLED) _console.map(container, maxDepth);
     }
     
     /**
@@ -1549,7 +1553,7 @@ public class Cc {
      * @param maxDepth    Maximum child depth. 0 = unlimited
      */
     public static function mapch(channel:*, container:DisplayObjectContainer, maxDepth:uint = 0):void {
-        if (status() != DISABLED) _console.mapch(channel, container, maxDepth);
+        if (status != DISABLED) _console.mapch(channel, container, maxDepth);
     }
     
     /**
@@ -1557,7 +1561,7 @@ public class Cc {
      * @param channel Name of log channel to clear, leave blank to clear all.
      */
     public static function clear(channel:String = null):void {
-        if (status() != DISABLED) _console.clear(channel);
+        if (status != DISABLED) _console.clear(channel);
     }
     
     //
@@ -1577,7 +1581,7 @@ public class Cc {
      *
      */
     public static function bindKey(key:KeyBind, callback:Function = null, args:Array = null):void {
-        if (status() != DISABLED) _console.bindKey(key, callback, args);
+        if (status != DISABLED) _console.bindKey(key, callback, args);
     }
     
     /**
@@ -1596,7 +1600,7 @@ public class Cc {
      * @param  rollover    String to show on rolling over the menu item.
      */
     public static function addMenu(key:String, callback:Function, args:Array = null, rollover:String = null):void {
-        if (status() != DISABLED) _console.addMenu(key, callback, args, rollover);
+        if (status != DISABLED) _console.addMenu(key, callback, args, rollover);
     }
     
     /**
@@ -1605,7 +1609,7 @@ public class Cc {
      * @param loaderInfo LoaderInfo instance that can dispatch errors
      */
     public static function listenUncaughtErrors(loaderinfo:LoaderInfo):void {
-        if (status() != DISABLED) _console.listenUncaughtErrors(loaderinfo);
+        if (status != DISABLED) _console.listenUncaughtErrors(loaderinfo);
     }
     
     //
@@ -1631,7 +1635,7 @@ public class Cc {
      * @param  useStrong    If set to true Console will hard reference the object, making sure it will not get garbage collected.
      */
     public static function store(name:String, obj:Object, useStrong:Boolean = false):void {
-        if (status() != DISABLED) _console.store(name, obj, useStrong);
+        if (status != DISABLED) _console.store(name, obj, useStrong);
     }
     
     /**
@@ -1658,7 +1662,7 @@ public class Cc {
      *                            null = whole string always passed as argument. default = ";"
      */
     public static function addSlashCommand(name:String, callback:Function, description:String = "", alwaysAvailable:Boolean = true, endOfArgsMarker:String = ";"):void {
-        if (status() != DISABLED) _console.addSlashCommand(name, callback, description, alwaysAvailable, endOfArgsMarker);
+        if (status != DISABLED) _console.addSlashCommand(name, callback, description, alwaysAvailable, endOfArgsMarker);
     }
     
     //
@@ -1673,7 +1677,7 @@ public class Cc {
      * @return    Name console used to identify the object - this can be different to param n if another object of the same name is already being watched
      */
     public static function watch(obj:Object, name:String = null):String {
-        if (status() != DISABLED) return _console.watch(obj, name);
+        if (status != DISABLED) return _console.watch(obj, name);
         return null;
     }
     
@@ -1683,7 +1687,7 @@ public class Cc {
      * @param name    identification/name given to the object for watch
      */
     public static function unwatch(name:String):void {
-        if (status() != DISABLED) _console.unwatch(name);
+        if (status != DISABLED) _console.unwatch(name);
     }
     
     //
@@ -1713,7 +1717,7 @@ public class Cc {
      *
      */
     public static function addGraph(panelName:String, obj:Object, property:String, color:Number = -1, idKey:String = null, rectArea:Rectangle = null, inverse:Boolean = false):void {
-        if (status() != DISABLED) _console.addGraph(panelName, obj, property, color, idKey, rectArea, inverse);
+        if (status != DISABLED) _console.addGraph(panelName, obj, property, color, idKey, rectArea, inverse);
     }
     
     /**
@@ -1732,7 +1736,7 @@ public class Cc {
      *
      */
     public static function fixGraphRange(panelName:String, min:Number = NaN, max:Number = NaN):void {
-        if (status() != DISABLED) _console.fixGraphRange(panelName, min, max);
+        if (status != DISABLED) _console.fixGraphRange(panelName, min, max);
     }
     
     /**
@@ -1745,7 +1749,7 @@ public class Cc {
      *
      */
     public static function removeGraph(panelName:String, obj:Object = null, property:String = null):void {
-        if (status() != DISABLED) _console.removeGraph(panelName, obj, property);
+        if (status != DISABLED) _console.removeGraph(panelName, obj, property);
     }
     
     //
@@ -1758,7 +1762,7 @@ public class Cc {
      * @see #setIgnoredChannels()
      */
     public static function setViewingChannels(...channels:Array):void {
-        if (status() != DISABLED) _console.setViewingChannels.apply(null, channels);
+        if (status != DISABLED) _console.setViewingChannels.apply(null, channels);
     }
     
     /**
@@ -1768,7 +1772,7 @@ public class Cc {
      * @see #setViewingChannels()
      */
     public static function setIgnoredChannels(...channels:Array):void {
-        if (status() != DISABLED) _console.setIgnoredChannels.apply(null, channels);
+        if (status != DISABLED) _console.setIgnoredChannels.apply(null, channels);
     }
     
     /**
@@ -1785,67 +1789,67 @@ public class Cc {
      * </ul>
      */
     public static function set minimumPriority(level:uint):void {
-        if (status() != DISABLED) _console.minimumPriority = level;
+        if (status != DISABLED) _console.minimumPriority = level;
     }
     
     /**
      * width of main console panel
      */
     public static function get width():Number {
-        if (status() != DISABLED) return _console.width;
+        if (status != DISABLED) return _console.width;
         return 0;
     }
     
     public static function set width(v:Number):void {
-        if (status() != DISABLED) _console.width = v;
+        if (status != DISABLED) _console.width = v;
     }
     
     /**
      * height of main console panel
      */
     public static function get height():Number {
-        if (status() != DISABLED) return _console.height;
+        if (status != DISABLED) return _console.height;
         return 0;
     }
     
     public static function set height(v:Number):void {
-        if (status() != DISABLED) _console.height = v;
+        if (status != DISABLED) _console.height = v;
     }
     
     /**
      * x position of main console panel
      */
     public static function get x():Number {
-        if (status() != DISABLED) return _console.x;
+        if (status != DISABLED) return _console.x;
         return 0;
     }
     
     public static function set x(v:Number):void {
-        if (status() != DISABLED) _console.x = v;
+        if (status != DISABLED) _console.x = v;
     }
     
     /**
      * y position of main console panel
      */
     public static function get y():Number {
-        if (status() != DISABLED) return _console.y;
+        if (status != DISABLED) return _console.y;
         return 0;
     }
     
     public static function set y(v:Number):void {
-        if (status() != DISABLED) _console.y = v;
+        if (status != DISABLED) _console.y = v;
     }
     
     /**
      * visibility of all console panels
      */
     public static function get visible():Boolean {
-        if (status() != DISABLED) return _console.visible;
+        if (status != DISABLED) return _console.visible;
         return false;
     }
     
     public static function set visible(v:Boolean):void {
-        if (status() != DISABLED) _console.visible = v;
+        if (status != DISABLED) _console.visible = v;
     }
     
     private static function stage_keyDownHandler(event:KeyboardEvent):void {
@@ -1855,14 +1859,14 @@ public class Cc {
         if (keyCode == Keyboard.BACKQUOTE || (keyCode == Keyboard.A && altKey == true)) {
             visible = !visible;
             return;
-        }else if(keyCode == Keyboard.S && altKey == true){
+        } else if (keyCode == Keyboard.S && altKey == true) {
             _console.stopped = !_console.stopped;
             return;
-        }else if(keyCode == Keyboard.D && altKey == true){
+        } else if (keyCode == Keyboard.D && altKey == true) {
             _console.paused = !_console.paused;
             return;
         }
-        
+    
         if (ctrlKey && altKey) {
             var stageWidth:Number = _console.stage.stageWidth;
             var stageHeight:Number = _console.stage.stageHeight;
@@ -1948,48 +1952,48 @@ public class Cc {
      * Start/stop FPS monitor graph.
      */
     public static function get fpsMonitor():Boolean {
-        if (status() != DISABLED) return _console.fpsMonitor;
+        if (status != DISABLED) return _console.fpsMonitor;
         return false;
     }
     
     public static function set fpsMonitor(v:Boolean):void {
-        if (status() != DISABLED) _console.fpsMonitor = v;
+        if (status != DISABLED) _console.fpsMonitor = v;
     }
     
     /**
      * Start/stop Memory monitor graph.
      */
     public static function get memoryMonitor():Boolean {
-        if (status() != DISABLED) return _console.memoryMonitor;
+        if (status != DISABLED) return _console.memoryMonitor;
         return false;
     }
     
     public static function set memoryMonitor(v:Boolean):void {
-        if (status() != DISABLED) _console.memoryMonitor = v;
+        if (status != DISABLED) _console.memoryMonitor = v;
     }
     
     /**
      * CommandLine UI's visibility.
      */
     public static function get commandLine():Boolean {
-        if (status() != DISABLED) return _console.commandLine;
+        if (status != DISABLED) return _console.commandLine;
         return false;
     }
     
     public static function set commandLine(v:Boolean):void {
-        if (status() != DISABLED) _console.commandLine = v;
+        if (status != DISABLED) _console.commandLine = v;
     }
     
     /**
      * Start/stop Display Roller.
      */
     public static function get displayRoller():Boolean {
-        if (status() != DISABLED) return _console.displayRoller;
+        if (status != DISABLED) return _console.displayRoller;
         return false;
     }
     
     public static function set displayRoller(v:Boolean):void {
-        if (status() != DISABLED) _console.displayRoller = v;
+        if (status != DISABLED) _console.displayRoller = v;
     }
     
     /**
@@ -2008,7 +2012,7 @@ public class Cc {
      *
      */
     public static function setRollerCaptureKey(character:String, ctrl:Boolean = false, alt:Boolean = false, shift:Boolean = false):void {
-        if (status() != DISABLED) _console.setRollerCaptureKey(character, shift, ctrl, alt);
+        if (status != DISABLED) _console.setRollerCaptureKey(character, shift, ctrl, alt);
     }
     
     //
@@ -2020,12 +2024,12 @@ public class Cc {
      * for another Console remote to receive.
      */
     public static function get remoting():Boolean {
-        if (status() != DISABLED) return _console.remoting;
+        if (status != DISABLED) return _console.remoting;
         return false;
     }
     
     public static function set remoting(v:Boolean):void {
-        if (status() != DISABLED) _console.remoting = v;
+        if (status != DISABLED) _console.remoting = v;
     }
     
     /**
@@ -2040,7 +2044,7 @@ public class Cc {
      * </ul>
      */
     public static function remotingSocket(host:String, port:int):void {
-        if (status() != DISABLED) _console.remotingSocket(host, port);
+        if (status != DISABLED) _console.remotingSocket(host, port);
     }
     
     //
@@ -2050,7 +2054,7 @@ public class Cc {
      * Remove console from it's parent display
      */
     public static function remove():void {
-        if (status() != DISABLED) {
+        if (status != DISABLED) {
             if (_console.parent) {
                 _console.parent.removeChild(_console);
             }
@@ -2069,7 +2073,7 @@ public class Cc {
      * @return All log lines in console
      */
     public static function getAllLog(splitter:String = "\r\n"):String {
-        if (status() != DISABLED) return _console.getAllLog(splitter);
+        if (status != DISABLED) return _console.getAllLog(splitter);
         else return "";
     }
     
@@ -2094,7 +2098,7 @@ public class Cc {
     }
     
     public static function setScale(value:Number):void {
-        if (status() != DISABLED) _console.scaleX = _console.scaleY = value;
+        if (status != DISABLED) _console.scaleX = _console.scaleY = value;
     }
     
     public static function toJson(...strings):Array {
@@ -2108,27 +2112,28 @@ public class Cc {
         return strings;
     }
     
-    private static function status():int {
-//        trace("status before currentStatus:", currentStatus);
+    public static function get status():int {
+//        ConsoleUtils.traceStack("---- get status before", currentStatus);
         if (currentStatus == NOT_INITED) {
             if (!_console) _console = new Console("", config);
+//            trace(Cc.set("---- currentStatus", currentStatus, TIMER_STARTED));
             currentStatus = TIMER_STARTED;
             workHiddenTimer = new Timer(WORK_HIDDEN_MS, 1);
             workHiddenTimer.addEventListener(TimerEvent.TIMER_COMPLETE, workHiddenTimer_completeHandler);
             workHiddenTimer.start();
         }
 
-//        trace("status after currentStatus:", currentStatus);
+//        trace("---- get status after", currentStatus);
         return currentStatus;
     }
     
     private static function workHiddenTimer_completeHandler(event:TimerEvent):void {
-//        trace("workHiddenTimer_completeHandler");
-//        Cc.red2w( "workHiddenTimer_completeHandler");
+//        ConsoleUtils.traceStack("---- workHiddenTimer_completeHandler", currentStatus);
         workHiddenTimerStop();
+//        trace(Cc.set("---- currentStatus", currentStatus, DISABLED));
+        currentStatus = DISABLED;
         Cc.remove();
         Cc.config.flashTrace = false;
-        currentStatus = DISABLED;
     }
     
     private static function workHiddenTimerStop():void {
@@ -2172,12 +2177,12 @@ public class Cc {
     }
     
     public static function setStringify(label:String, previous:*, next:*, addName:String = ""):String {
-        if(!ApplicationDomain.currentDomain.hasDefinition("JSON")){
+        if (!ApplicationDomain.currentDomain.hasDefinition("JSON")) {
             orangew("[WARNING] Cc.setStringify <> ReferenceError: Error #1065: Variable JSON is not defined.");
             return label + ": " + previous + " > " + next;
         }
         
-        if(!JSON.prototype.hasOwnProperty("stringify")){
+        if (!JSON.prototype.hasOwnProperty("stringify")) {
             orangew("[WARNING] Cc.setStringify <> old version of some SWF - JSON.stringify not found!");
             return label + ": " + previous + " > " + next;
         }
