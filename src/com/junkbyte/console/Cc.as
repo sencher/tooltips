@@ -1852,6 +1852,22 @@ public class Cc {
         if (status != DISABLED) _console.visible = v;
     }
     
+    public static function set stopped(value:Boolean):void {
+        _console.stopped = value;
+    }
+    
+    public static function set paused(value:Boolean):void {
+        _console.stopped = value;
+    }
+    
+    public static function toggleStopped():void {
+        _console.stopped = !_console.stopped;
+    }
+    
+    public static function togglePaused():void {
+        _console.paused = !_console.paused;
+    }
+    
     private static function stage_keyDownHandler(event:KeyboardEvent):void {
         var keyCode:uint = event.keyCode;
         var ctrlKey:Boolean = event.ctrlKey;
@@ -1860,10 +1876,10 @@ public class Cc {
             visible = !visible;
             return;
         } else if (keyCode == Keyboard.S && altKey == true) {
-            _console.stopped = !_console.stopped;
+            toggleStopped();
             return;
         } else if (keyCode == Keyboard.D && altKey == true) {
-            _console.paused = !_console.paused;
+            togglePaused();
             return;
         }
     
