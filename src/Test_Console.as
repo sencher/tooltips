@@ -92,7 +92,7 @@ public class Test_Console extends Sprite {
         Ct.teal2c(this, "teal2c", {arr:[1,7,8], str:"string"}, 789);
         Ct.white("white", {arr:[1,7,8], str:"string"}, 789);
         Ct.yellowc(this, "yellowc", {arr:[1,7,8], str:"string"}, 789);
-        Ct.yellow2c(this, "yellow2c", {arr:[1,7,8], str:"string"}, 789);
+        Ct.yellow2cw(this, "yellow2c", {arr:[1,7,8], str:"string"}, 789);
     }
 }
 }

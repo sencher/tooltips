@@ -234,31 +234,84 @@ public class ConsoleUtils {
         return result;
     }
     
-    public static function whoCalledThis(depth:int = 100, cutFirst:int = 4):String {
-        var e:Error = new Error();
-        var stackTrace:String = e.getStackTrace();
-        var lines:Array = stackTrace.split("\n\t");
-        var cut:Array = lines.slice(cutFirst, cutFirst + depth);
-        var s:String;
-        var r:String = "";
+    private static const whoCalledTestStack:String = "Error\n" +
+            "\tat com.junkbyte.console.core::ConsoleUtils$/whoCalledThis()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\core\\ConsoleUtils.as:238]\n" +
+            "\tat com.junkbyte.console::Cc$/addToChannelWithStack()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\Cc.as:1397]\n" +
+            "\tat com.junkbyte.console::Cc$/cyancw()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\Cc.as:394]\n" +
+            "\tat Function/http://adobe.com/AS3/2006/builtin::apply()\n" +
+            "\tat com.junkbyte.console::Ct$/cyancw()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\Ct.as:169]\n" +
+            "\tat Test_Console/func2()[E:\\Projects\\tooltips\\src\\Test_Console.as:75]\n" +
+            "\tat Test_Console777777777/func1()[E:\\Projects\\tooltips\\src\\Test_Console.as:67]\n" +
+            "\tat Test_Console()[E:\\Projects\\tooltips\\src\\Test_Console.as:48]";
+    
+    public static function whoCalledThis(depth:int = 100, cutFirst:int = 1):String {
+        var stack:String = new Error().getStackTrace();
         
-        for each (s in cut) {
-            var shortRow:String = cutLongNames(s);
-            if (shortRow) {
-                r += shortRow + "\n";
+//        stack = whoCalledTestStack;
+        
+        if (!stack) return "";
+        
+        var lines:Array = stack.split("\n");
+        var result:String = "";
+        var count:int = 0;
+        
+        for (var i:int = cutFirst; i < lines.length && count < depth; i++) {
+            var line:String = lines[i];
+            
+            // Remove leading whitespace and "at "
+            line = line.replace(/^\s*at\s+/, "");
+            
+            // Find method name (up to "()")
+            var methodEnd:int = line.indexOf("()");
+            if (methodEnd < 0) continue;
+            var fullMethod:String = line.substring(0, methodEnd + 2); // include "()"
+            
+            // Remove package prefix (keep only after last "::")
+            var sep:int = fullMethod.lastIndexOf("::");
+            var methodWithClass:String = sep >= 0 ? fullMethod.substring(sep + 2) : fullMethod;
+            
+            // Split left class/method: class part before "/"
+            var slash:int = methodWithClass.indexOf("/");
+            var leftClass:String = slash >= 0 ? methodWithClass.substring(0, slash) : "";
+            var method:String = slash >= 0 ? methodWithClass.substring(slash + 1) : methodWithClass;
+            
+            // Extract the part inside brackets [ ... ]
+            var bracketStart:int = line.indexOf("[");
+            var bracketEnd:int = line.indexOf("]");
+            if (bracketStart < 0 || bracketEnd < 0) continue;
+            
+            var fileLine:String = line.substring(bracketStart + 1, bracketEnd);
+            
+            // Get actual class name (without path and .as)
+            var lastSlash:int = Math.max(fileLine.lastIndexOf("\\"), fileLine.lastIndexOf("/"));
+            var colon:int = fileLine.lastIndexOf(":");
+            if (lastSlash < 0 || colon < 0) continue;
+            
+            var rightClass:String = fileLine.substring(lastSlash + 1, colon);
+            if (rightClass.indexOf(".as") >= 0) rightClass = rightClass.replace(".as","");
+            
+            var lineNum:String = fileLine.substring(colon + 1);
+            
+            // Only remove trailing $ if leftClass = rightClass + "$"
+            if (leftClass && leftClass.charAt(leftClass.length - 1) == "$" && leftClass.substr(0, leftClass.length - 1) == rightClass) {
+                leftClass = rightClass;
             }
+            
+            // Constructor special case: leftClass/method = rightClass → show only "()"
+            var methodNameOnly:String = method.replace("()", ""); // remove () for comparison
+            if (methodNameOnly == rightClass) {
+                method = "()";
+                leftClass = "";
+            }
+            
+            // Decide what to show on the left
+            var leftPart:String = leftClass && leftClass != rightClass ? leftClass + "/" + method : method;
+            
+            result += leftPart + "  " + rightClass + ":" + lineNum + "\n";
+            count++;
         }
         
-        function cutLongNames(value:String):String {
-            var o:Array = /^.*(::| )(.*\)).*(;|\\)(.*)\]$/g.exec(value);
-            if (o && o[2] && o[4]) {
-                return o[2] + "__" + o[4];
-            } else {
-                return "";
-            }
-        }
-        
-        return cut.length ? r += "*************" : r;
+        return result ? result + "*************" : "";
     }
     
     public static function traceStack(...rest):void {
