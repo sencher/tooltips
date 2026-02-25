@@ -254,54 +254,41 @@ public class ConsoleUtils {
      *  - Simplify constructors to "() Class:Line".
      *  - Preserve child class names if different from file class.
      */
-    public static function whoCalledThis(depth:int = 100, cutFirst:int = 1):String {
-        var stack:String = new Error().getStackTrace();
-        
-//        stack = whoCalledTestStack;
-        
-        if (!stack) return "";
-        
-        var lines:Array = stack.split("\n");
+    public static function whoCalledThis(depth:int = 100, cutFirst:int = 6):String {
+        var lines:Array = new Error().getStackTrace().split("\n");
         var result:String = "";
         var count:int = 0;
         
         for (var i:int = cutFirst; i < lines.length && count < depth; i++) {
-            var line:String = lines[i].replace(/^\s*at\s*/, ""); // remove leading whitespace + 'at'
+            var line:String = lines[i].substr(4); // "\tat "
             
+            // find method parentheses
+            var methodEnd:int = line.indexOf("()");
+            if (methodEnd < 0) continue;
+            
+            // find file info in brackets [...], e.g. [E:\p\Test_Console.as:48]
             var bracketStart:int = line.indexOf("[");
             var bracketEnd:int = line.indexOf("]");
             if (bracketStart < 0 || bracketEnd < 0) continue;
             
             var fileLine:String = line.substring(bracketStart + 1, bracketEnd);
-            var lastSlash:int = Math.max(fileLine.lastIndexOf("\\"), fileLine.lastIndexOf("/"));
-            var colon:int = fileLine.lastIndexOf(":");
-            if (lastSlash < 0 || colon < 0) continue;
+            var colonPos:int = fileLine.lastIndexOf(":");
+            if (colonPos < 0) continue;
             
-            var rightClass:String = fileLine.substring(lastSlash + 1, colon).replace(".as","");
-            var lineNum:String = fileLine.substring(colon + 1);
+            var className:String = fileLine.substring(fileLine.lastIndexOf("\\") + 1, colonPos).replace(".as","");
+            var lineNumber:String = fileLine.substring(colonPos + 1);
             
-            var methodEnd:int = line.indexOf("()");
-            if (methodEnd < 0) continue;
-            
-            // FIX: safe handling if no "::" exists
-            var sep:int = line.lastIndexOf("::", methodEnd);
-            var fullMethod:String = line.substring(sep >= 0 ? sep + 2 : 0, methodEnd + 2);
-            
-            var slash:int = fullMethod.indexOf("/");
-            var leftClass:String = slash >= 0 ? fullMethod.substring(0, slash) : "";
-            var method:String = slash >= 0 ? fullMethod.substring(slash + 1) : fullMethod;
-            
-            if (leftClass && leftClass.charAt(leftClass.length-1)=="$" && leftClass.substr(0,leftClass.length-1)==rightClass) {
-                leftClass = rightClass;
+            // determine left part (method or constructor)
+            var slashPos:int = line.lastIndexOf("/", methodEnd);
+            var leftPart:String;
+            if (slashPos >= 0) {
+                leftPart = line.substring(slashPos + 1, methodEnd + 2); // include "()"
+            } else {
+                var methodName:String = line.substring(0, methodEnd);
+                leftPart = (methodName == className) ? "()" : methodName + "()"; // constructor fix
             }
             
-            if (method.replace("()","") == rightClass) {
-                method = "()";
-                leftClass = "";
-            }
-            
-            var leftPart:String = leftClass && leftClass != rightClass ? leftClass + "/" + method : method;
-            result += leftPart + "  " + rightClass + ":" + lineNum + "\n";
+            result += leftPart + "  " + className + ":" + lineNumber + "\n";
             count++;
         }
         
