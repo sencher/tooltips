@@ -135,7 +135,10 @@ public class LogReferences extends ConsoleCore {
                 return stackstr;
             }
             return err.toString();
-        } else if (v is XML || v is XMLList) {
+        } else if (v is XML || v is XMLList /*|| (v is String && String(v).charAt(0) == "<")*/) {
+            if (config.useObjectLinking) {
+                return "{" + genLinkString(o, prop, ShortClassName(v)) + "}";
+            }
             return shortenString(EscHTML(v.toXMLString()), maxlen, o, prop);
         } else if (v is QName) {
             return String(v);
@@ -170,10 +173,10 @@ public class LogReferences extends ConsoleCore {
 //                string = string.replace(LESS, LESS_HTML);
 //                string = string.replace(GREATER, GREATER_HTML);
 //                txt = string;
-                
+    
                 txt = String(v);
             }
-            
+    
             if (!html) {
                 return shortenString(EscHTML(txt), maxlen, o, prop);
             }
@@ -277,9 +280,9 @@ public class LogReferences extends ConsoleCore {
     public function focus(o:*, full:Boolean = false):void {
         remoter.send("focus");
         handleFocused();
-        
+    
         if (!_history) _history = [];
-        
+    
         if (_current != o) {
             _current = o; // current is kept as hard reference so that it stays...
             if (_history.length <= _hisIndex) _history.push(o);
@@ -594,7 +597,7 @@ public class LogReferences extends ConsoleCore {
     
     
     public static function EscHTML(str:String):String {
-        if(str.indexOf("<menu>") > -1) return str;
+        if (str.indexOf("<menu>") > -1) return str;
         return str.replace(/</g, "&lt;").replace(/\>/g, "&gt;").replace(/\x00/g, "");
     }
     

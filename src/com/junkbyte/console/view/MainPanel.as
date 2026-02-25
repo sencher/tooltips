@@ -113,11 +113,11 @@ public class MainPanel extends ConsolePanel {
         console.cl.addCLCmd("filter", setFilterText, "Filter console logs to matching string. When done, click on the * (global channel) at top.", true);
         console.cl.addCLCmd("filterexp", setFilterRegExp, "Filter console logs to matching regular expression", true);
         console.cl.addCLCmd("clearhistory", clearCommandLineHistory, "Clear history of commands you have entered.", true);
-        
+    
         name = NAME;
         minWidth = 50;
         minHeight = 18;
-        
+    
         _traceField = makeTF("traceField");
         _traceField.wordWrap = true;
         _traceField.multiline = true;
@@ -305,7 +305,7 @@ public class MainPanel extends ConsolePanel {
         if (e.keyCode == Keyboard.SHIFT) _shift = false;
         else if (e.keyCode == Keyboard.CONTROL) _ctrl = false;
         else if (e.keyCode == 18) _alt = false;
-        
+    
         if ((e.keyCode == Keyboard.TAB || e.keyCode == Keyboard.ENTER) && parent.visible && visible && _cmdField.visible) {
             setCommandLineFocus();
         }
@@ -457,7 +457,7 @@ public class MainPanel extends ConsolePanel {
         var text:String = "";
         var linesLeft:int = Math.round(_traceField.height / style.traceFontSize);
         var maxchars:int = Math.round(_traceField.width * 5 / style.traceFontSize);
-        
+    
         var line:Log = console.logs.last;
         while (line) {
             if (lineShouldShow(line)) {
@@ -541,11 +541,11 @@ public class MainPanel extends ConsolePanel {
 //            trace("skip");
             return;
         }
-        
+    
         if (channelsKey != Console.INSPECTING_CHANNEL) {
             _scrollStates[channelsKey] = getScrollState();
         }
-        
+    
         var a:Array = new Array();
         for each(var item:Object in channels) {
             if (item == Console.INSPECTING_CHANNEL) {

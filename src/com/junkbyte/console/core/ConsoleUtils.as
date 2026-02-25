@@ -29,7 +29,7 @@ public class ConsoleUtils {
             } else if (arr2.indexOf(arr1[i]) < 0) {
                 return false;
             }
-            
+    
         }
         return true;
     }
@@ -98,7 +98,7 @@ public class ConsoleUtils {
 //                            break;
 //                    }
 //                }
-                
+        
                 var firstOpen:int = findFirstOpen(value);
 //                var lastClose:int = findLastClose(value);
                 var closePair:int = findClosePair(value, firstOpen);
@@ -118,7 +118,7 @@ public class ConsoleUtils {
 //                    }
 //                    middle = cutLastCommaAndNewLine(middle);
                 }
-                
+        
                 break;
         }
 
@@ -202,18 +202,18 @@ public class ConsoleUtils {
                 closeSymbol = CLOSE_BRACKET;
                 break;
         }
-        
+    
         var cursor:int = openCharId + 1;
         var nextClose:int;
         var opens:int = 1;
         var closes:int = 0;
-        
+    
         while (cursor < value.length) {
             nextClose = value.indexOf(closeSymbol, cursor);
             closes++;
-            
+        
             opens += patternOccurrences(ESCAPE_CHAR + openSymbol, value.substring(cursor, nextClose));
-            
+        
             if (closes >= opens) {
                 return nextClose;
             } else {
