@@ -46,10 +46,10 @@ import flash.utils.getQualifiedClassName;
  */
 public class LogReferences extends ConsoleCore {
 
-    private const LESS:RegExp = /</g;
-    private const GREATER:RegExp = />/g;
-    private const LESS_HTML:String = "&lt;";
-    private const GREATER_HTML:String = "&gt;";
+//    private const LESS:RegExp = /</g;
+//    private const GREATER:RegExp = />/g;
+//    private const LESS_HTML:String = "&lt;";
+//    private const GREATER_HTML:String = "&gt;";
     
     private var _refMap:WeakObject = new WeakObject();
     private var _refRev:Dictionary = new Dictionary(true);
@@ -169,14 +169,14 @@ public class LogReferences extends ConsoleCore {
             if (v is ByteArray) {
                 txt = "[ByteArray position:" + ByteArray(v).position + " length:" + ByteArray(v).length + "]";
             } else {
-                var string:String = String(v);
-                string = string.replace(LESS, LESS_HTML);
-                string = string.replace(GREATER, GREATER_HTML);
-                txt = string;
-                
-//                txt = String(v);
+//                var string:String = String(v);
+//                string = string.replace(LESS, LESS_HTML);
+//                string = string.replace(GREATER, GREATER_HTML);
+//                txt = string;
+    
+                txt = String(v);
             }
-            
+    
             if (!html) {
                 return shortenString(EscHTML(txt), maxlen, o, prop);
             }
@@ -280,9 +280,9 @@ public class LogReferences extends ConsoleCore {
     public function focus(o:*, full:Boolean = false):void {
         remoter.send("focus");
         handleFocused();
-        
+    
         if (!_history) _history = [];
-        
+    
         if (_current != o) {
             _current = o; // current is kept as hard reference so that it stays...
             if (_history.length <= _hisIndex) _history.push(o);
@@ -597,7 +597,7 @@ public class LogReferences extends ConsoleCore {
     
     
     public static function EscHTML(str:String):String {
-        if(str.indexOf("<menu>") > -1) return str;
+        if (str.indexOf("<menu>") > -1) return str;
         return str.replace(/</g, "&lt;").replace(/\>/g, "&gt;").replace(/\x00/g, "");
     }
     
