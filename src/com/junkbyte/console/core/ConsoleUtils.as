@@ -244,6 +244,16 @@ public class ConsoleUtils {
             "\tat Test_Console777777777/func1()[E:\\Projects\\tooltips\\src\\Test_Console.as:67]\n" +
             "\tat Test_Console()[E:\\Projects\\tooltips\\src\\Test_Console.as:48]";
     
+    /**
+     * Efficient AS3 stack parser.
+     * Key operations:
+     *  - Strip leading whitespace and 'at' from all lines.
+     *  - Only process lines with '[file.as:line]'.
+     *  - Strip package prefixes from methods.
+     *  - Remove trailing $ if leftClass matches rightClass.
+     *  - Simplify constructors to "() Class:Line".
+     *  - Preserve child class names if different from file class.
+     */
     public static function whoCalledThis(depth:int = 100, cutFirst:int = 1):String {
         var stack:String = new Error().getStackTrace();
         
@@ -256,57 +266,41 @@ public class ConsoleUtils {
         var count:int = 0;
         
         for (var i:int = cutFirst; i < lines.length && count < depth; i++) {
-            var line:String = lines[i];
+            var line:String = lines[i].replace(/^\s*at\s*/, ""); // remove leading whitespace + 'at'
             
-            // Remove leading whitespace and "at "
-            line = line.replace(/^\s*at\s+/, "");
-            
-            // Find method name (up to "()")
-            var methodEnd:int = line.indexOf("()");
-            if (methodEnd < 0) continue;
-            var fullMethod:String = line.substring(0, methodEnd + 2); // include "()"
-            
-            // Remove package prefix (keep only after last "::")
-            var sep:int = fullMethod.lastIndexOf("::");
-            var methodWithClass:String = sep >= 0 ? fullMethod.substring(sep + 2) : fullMethod;
-            
-            // Split left class/method: class part before "/"
-            var slash:int = methodWithClass.indexOf("/");
-            var leftClass:String = slash >= 0 ? methodWithClass.substring(0, slash) : "";
-            var method:String = slash >= 0 ? methodWithClass.substring(slash + 1) : methodWithClass;
-            
-            // Extract the part inside brackets [ ... ]
             var bracketStart:int = line.indexOf("[");
             var bracketEnd:int = line.indexOf("]");
             if (bracketStart < 0 || bracketEnd < 0) continue;
             
             var fileLine:String = line.substring(bracketStart + 1, bracketEnd);
-            
-            // Get actual class name (without path and .as)
             var lastSlash:int = Math.max(fileLine.lastIndexOf("\\"), fileLine.lastIndexOf("/"));
             var colon:int = fileLine.lastIndexOf(":");
             if (lastSlash < 0 || colon < 0) continue;
             
-            var rightClass:String = fileLine.substring(lastSlash + 1, colon);
-            if (rightClass.indexOf(".as") >= 0) rightClass = rightClass.replace(".as","");
-            
+            var rightClass:String = fileLine.substring(lastSlash + 1, colon).replace(".as","");
             var lineNum:String = fileLine.substring(colon + 1);
             
-            // Only remove trailing $ if leftClass = rightClass + "$"
-            if (leftClass && leftClass.charAt(leftClass.length - 1) == "$" && leftClass.substr(0, leftClass.length - 1) == rightClass) {
+            var methodEnd:int = line.indexOf("()");
+            if (methodEnd < 0) continue;
+            
+            // FIX: safe handling if no "::" exists
+            var sep:int = line.lastIndexOf("::", methodEnd);
+            var fullMethod:String = line.substring(sep >= 0 ? sep + 2 : 0, methodEnd + 2);
+            
+            var slash:int = fullMethod.indexOf("/");
+            var leftClass:String = slash >= 0 ? fullMethod.substring(0, slash) : "";
+            var method:String = slash >= 0 ? fullMethod.substring(slash + 1) : fullMethod;
+            
+            if (leftClass && leftClass.charAt(leftClass.length-1)=="$" && leftClass.substr(0,leftClass.length-1)==rightClass) {
                 leftClass = rightClass;
             }
             
-            // Constructor special case: leftClass/method = rightClass → show only "()"
-            var methodNameOnly:String = method.replace("()", ""); // remove () for comparison
-            if (methodNameOnly == rightClass) {
+            if (method.replace("()","") == rightClass) {
                 method = "()";
                 leftClass = "";
             }
             
-            // Decide what to show on the left
             var leftPart:String = leftClass && leftClass != rightClass ? leftClass + "/" + method : method;
-            
             result += leftPart + "  " + rightClass + ":" + lineNum + "\n";
             count++;
         }

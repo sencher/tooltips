@@ -62,8 +62,8 @@ import wowp.utils.domain.getDefinition;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.92;
-    public static const LAST_CHANGE:String = "{XML}";
+    public static const VERSION:Number = 2.93;
+    public static const LAST_CHANGE:String = "whoCalledThis";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
