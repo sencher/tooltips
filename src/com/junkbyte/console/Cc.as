@@ -2218,5 +2218,9 @@ public class Cc {
         orange("SET SPAM:", value);
         _spam = value;
     }
+    
+    public static function get scaleform():Boolean{
+        return _console.scaleform;
+    }
 }
 }

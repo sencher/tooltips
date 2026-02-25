@@ -42,6 +42,7 @@ import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
 import flash.display.Sprite;
+import flash.display.Stage;
 import flash.events.ErrorEvent;
 import flash.events.Event;
 import flash.events.IEventDispatcher;
@@ -51,6 +52,8 @@ import flash.geom.Rectangle;
 import flash.net.SharedObject;
 import flash.system.Capabilities;
 import flash.utils.getTimer;
+
+import scaleform.gfx.Extensions;
 
 import wowp.utils.domain.getDefinition;
 
@@ -98,6 +101,8 @@ public class Console extends Sprite {
     public static const INSPECTING_CHANNEL:String = "⌂";
     private static const TAG:RegExp = /<[^<]*>/gm;
     
+    public var scaleform:Boolean;
+    
     private var _config:ConsoleConfig;
     private var _panels:PanelsManager;
     private var _cl:CommandLine;
@@ -127,6 +132,7 @@ public class Console extends Sprite {
      * @see http://code.google.com/p/flash-console/
      */
     public function Console(password:String = "", config:ConsoleConfig = null) {
+        scaleform = isScaleform();
         name = "Console";
         if (config == null) config = new ConsoleConfig();
         _config = config;
@@ -178,6 +184,55 @@ public class Console extends Sprite {
         addEventListener(Event.ADDED_TO_STAGE, stageAddedHandle);
         
         _panels.mainPanel.setViewingChannels([GLOBAL_CHANNEL]);
+    }
+    
+    public function isScaleform():Boolean {
+        var isGFx:Boolean = false;
+        
+        // 1. Manufacturer Check
+        var manufacturer:String = flash.system.Capabilities.manufacturer;
+        if (manufacturer.indexOf("Scaleform") != -1) {
+//            Cc.green("Manufacturer detected:", manufacturer);
+            isGFx = true;
+        }
+        
+        // 2. Player Type Check
+        var pType:String = flash.system.Capabilities.playerType;
+        if (pType == "External") {
+//            Cc.green("PlayerType detected:", pType);
+            isGFx = true;
+        }
+        
+        // 3. Extensions.isGFxPlayer Check (Dynamic lookup)
+        try {
+        
+//            var extClass:Object = flash.utils.getDefinitionByName("scaleform.gfx.Extensions");
+//            if (extClass != null) {
+//                Cc.green("Extensions.isScaleform:", Extensions.isScaleform, "isGFxPlayer:", Extensions.isGFxPlayer);
+                if (Extensions.isScaleform || Extensions.isGFxPlayer) isGFx = true;
+//            }
+        } catch (e:Error) {
+            // Not logged to keep Cc clean of expected Flash Player errors
+        }
+        
+        // 4. Stage gfxExtensions Check
+        try {
+            if (stage && stage.hasOwnProperty("gfxExtensions")) {
+//                Cc.green("stage.gfxExtensions:", stage["gfxExtensions"]);
+                isGFx = true;
+            }
+        } catch (e:Error) {}
+        
+        // 5. Global gfx Package Check (Legacy/Common)
+        try {
+            var focusHandler:Object = flash.utils.getDefinitionByName("gfx.managers.FocusHandler");
+            if (focusHandler != null) {
+//                Cc.green("FocusHandler found:", focusHandler);
+                isGFx = true;
+            }
+        } catch (e:Error) {}
+        
+        return isGFx;
     }
     
     private function stageAddedHandle(e:Event = null):void {

@@ -1,5 +1,8 @@
 package com.junkbyte.console.core {
 
+import com.junkbyte.console.Cc;
+import com.junkbyte.console.Cc;
+
 
 public class ConsoleUtils {
     private static const OPEN_BRACE:String = "{";
@@ -234,7 +237,8 @@ public class ConsoleUtils {
         return result;
     }
     
-    private static const whoCalledTestStack:String = "Error\n" +
+    private static const whoCalledTestStack:String =
+            "Error\n" +
             "\tat com.junkbyte.console.core::ConsoleUtils$/whoCalledThis()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\core\\ConsoleUtils.as:238]\n" +
             "\tat com.junkbyte.console::Cc$/addToChannelWithStack()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\Cc.as:1397]\n" +
             "\tat com.junkbyte.console::Cc$/cyancw()[E:\\Projects\\tooltips\\src\\com\\junkbyte\\console\\Cc.as:394]\n" +
@@ -254,7 +258,69 @@ public class ConsoleUtils {
      *  - Simplify constructors to "() Class:Line".
      *  - Preserve child class names if different from file class.
      */
-    public static function whoCalledThis(depth:int = 100, cutFirst:int = 6):String {
+    public static function whoCalledThis(depth:int = 100, cutFirst:int = 4):String {
+//        Cc.red(Cc.scaleform);
+        if(Cc.scaleform){
+            return whoScaleform(depth, cutFirst);
+        }else{
+            return whoFlash(depth, cutFirst + 1);
+        }
+    }
+    
+    private static function whoScaleform(depth:int = 0, cutFirst:int = 0):String {
+        var lines:Array = new Error().getStackTrace().split("\n");
+        var result:String = "";
+        var count:int = 0;
+        
+        // Start from 1 to skip the "Error" header line
+        for (var i:int = 1 + cutFirst; i < lines.length && count < depth; i++) {
+            var line:String = lines[i];
+            if (line.indexOf("\tat ") < 0) continue;
+            line = line.substr(4);
+            
+            // 1. Extract Bracket Info [Path;Package;File:Line]
+            var bracketStart:int = line.indexOf("[");
+            var bracketEnd:int = line.lastIndexOf("]");
+            if (bracketStart < 0 || bracketEnd < 0) continue;
+            
+            var bracketContent:String = line.substring(bracketStart + 1, bracketEnd);
+            var colonPos:int = bracketContent.lastIndexOf(":");
+            if (colonPos < 0) continue;
+            
+            var lineNumber:String = bracketContent.substring(colonPos + 1);
+            var fullPath:String = bracketContent.substring(0, colonPos);
+            
+            // Find filename: look for last backslash OR last semicolon
+            var fileNameStart:int = Math.max(fullPath.lastIndexOf("\\"), fullPath.lastIndexOf(";"));
+            var className:String = fullPath.substring(fileNameStart + 1).replace(".as", "");
+            
+            // --- ADDED: Skip Helper Classes ---
+            if (className == "Ct") {
+                continue;
+            }
+            
+            // 2. Determine Method Part
+            // Get everything between the last "/" and the "["
+            var methodArea:String = line.substring(0, bracketStart);
+            var methodPart:String = methodArea.split("/").pop();
+            
+            var leftDisplay:String = "";
+            // Check for explicit constructor string or if method name matches class name
+            if (methodPart.indexOf("constructor") >= 0) {
+                leftDisplay = "()";
+            } else {
+                var cleanMethod:String = methodPart.replace("()", "");
+                leftDisplay = (cleanMethod == className) ? "()" : cleanMethod + "()";
+            }
+            
+            result += leftDisplay + "  " + className + ":" + lineNumber + "\n";
+            count++;
+        }
+        
+        return result ? result + "*************" : "";
+    }
+    
+    private static function whoFlash(depth:int = 0, cutFirst:int = 0):String {
         var lines:Array = new Error().getStackTrace().split("\n");
         var result:String = "";
         var count:int = 0;
@@ -276,6 +342,12 @@ public class ConsoleUtils {
             if (colonPos < 0) continue;
             
             var className:String = fileLine.substring(fileLine.lastIndexOf("\\") + 1, colonPos).replace(".as","");
+            
+            // --- ADDED: Skip Helper Classes ---
+            if (className == "Ct") {
+                continue;
+            }
+            
             var lineNumber:String = fileLine.substring(colonPos + 1);
             
             // determine left part (method or constructor)
