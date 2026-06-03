@@ -30,6 +30,7 @@ import com.junkbyte.console.vos.GraphInterest;
 
 import flash.display.Graphics;
 import flash.display.Shape;
+import flash.display.Sprite;
 import flash.events.TextEvent;
 import flash.text.TextField;
 import flash.text.TextFormat;
@@ -54,6 +55,7 @@ public class GraphingPanel extends ConsolePanel {
     //
     private var underlay:Shape;
     private var graph:Shape;
+    private var _topBG:Sprite;
     private var lowTxt:TextField;
     private var highTxt:TextField;
     //
@@ -63,7 +65,13 @@ public class GraphingPanel extends ConsolePanel {
     public function GraphingPanel(m:Console, W:int, H:int, type:String = null) {
         super(m);
         _type = type;
+        
+        _topBG = new Sprite();
+        _topBG.name = "topBackground";
+        addChild(_topBG);
+        
         registerDragger(bg);
+        registerDragger(_topBG);
         minWidth = 32;
         minHeight = 26;
         //
@@ -93,7 +101,7 @@ public class GraphingPanel extends ConsolePanel {
         txtField.y = -3;
         registerTFRoller(txtField, onMenuRollOver, linkHandler);
         registerDragger(txtField); // so that we can still drag from textfield
-        addChild(txtField);
+        _topBG.addChild(txtField);
         //
         underlay = new Shape();
         addChild(underlay);
@@ -163,6 +171,12 @@ public class GraphingPanel extends ConsolePanel {
         highTxt.width = n;
         txtField.width = n;
         txtField.scrollH = txtField.maxScrollH;
+        
+        _topBG.graphics.clear();
+        _topBG.graphics.beginFill(0x002244, style.backgroundAlpha);
+        _topBG.graphics.drawRect(0, 0, n, style.menuFontSize);
+        _topBG.graphics.endFill();
+        
         graph.graphics.clear();
         _needRedraw = true;
     }

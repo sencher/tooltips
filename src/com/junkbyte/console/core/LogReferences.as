@@ -61,8 +61,10 @@ public class LogReferences extends ConsoleCore {
     private var _history:Array;
     private var _hisIndex:uint;
     
-    private var _prevBank:Array = [];
-    private var _currentBank:Array = [];
+    private var _prevBank:Dictionary = new Dictionary();
+    private var _currentBank:Dictionary = new Dictionary();
+    private var _prevBankCount:uint;
+    private var _currentBankCount:uint;
     private var _lastWithdraw:uint;
     
     public function LogReferences(console:Console) {
@@ -75,15 +77,17 @@ public class LogReferences extends ConsoleCore {
     }
     
     public function update(time:uint):void {
-        if (_currentBank.length || _prevBank.length) {
+        if (_currentBankCount || _prevBankCount) {
             if (time > _lastWithdraw + config.objectHardReferenceTimer * 1000) {
                 _prevBank = _currentBank;
-                _currentBank = [];
+                _prevBankCount = _currentBankCount;
+                _currentBank = new Dictionary();
+                _currentBankCount = 0;
                 _lastWithdraw = time;
             }
         }
     }
-    
+
     public function setLogRef(o:*):uint {
         if (!config.useObjectLinking) return 0;
         var ind:uint = _refRev[o];
@@ -91,9 +95,6 @@ public class LogReferences extends ConsoleCore {
             ind = _refIndex;
             _refMap[ind] = o;
             _refRev[o] = ind;
-            if (config.objectHardReferenceTimer) {
-                _currentBank.push(o);
-            }
             _refIndex++;
             // Look through every 20000 older _refMap ids and delete empty ones
             // 20000 rather than all to be faster.
@@ -104,6 +105,10 @@ public class LogReferences extends ConsoleCore {
 //                }
 //                i -= 20000;
 //            }
+        }
+        if (config.objectHardReferenceTimer && _currentBank[o] === undefined) {
+            _currentBank[o] = true;
+            _currentBankCount++;
         }
         return ind;
     }
@@ -158,7 +163,11 @@ public class LogReferences extends ConsoleCore {
                     break;
                 }
             }
-            return str + "]";
+            var finalStr:String = str + "]";
+            if (config.useObjectLinking) {
+                return genLinkString(v, null, finalStr);
+            }
+            return finalStr;
         } else if (config.useObjectLinking && v && typeof v == "object") {
             var add:String = "";
             if (v is ByteArray) add = " position:" + v.position + " length:" + v.length;
@@ -207,7 +216,7 @@ public class LogReferences extends ConsoleCore {
     private function shortenString(str:String, maxlen:int, o:*, prop:* = null):String {
         if (maxlen >= 0 && str.length > maxlen) {
             str = str.substring(0, maxlen);
-            return str + genLinkString(o, prop, " ...");
+            return str + genLinkString(o, prop, "...");
         }
         return str;
     }
@@ -319,27 +328,27 @@ public class LogReferences extends ConsoleCore {
         }
         var refIndex:uint = setLogRef(obj);
         var showInherit:String = "";
-        if (!viewAll) showInherit = " [<a href='event:refi'>show inherited</a>]";
+        if (!viewAll) showInherit = " <a href='event:refi'>[show inherited]</a>";
         var menuStr:String;
         if (_history) {
-            menuStr = "<b>[<a href='event:refexit'>exit</a>]";
+            menuStr = "<b><a href='event:refexit'>[exit]</a>";
             if (_hisIndex > 1) {
-                menuStr += " [<a href='event:refprev'>previous</a>]";
+                menuStr += " <a href='event:refprev'>[previous]</a>";
             }
             if (_history && _hisIndex < _history.length) {
-                menuStr += " [<a href='event:reffwd'>forward</a>]";
+                menuStr += " <a href='event:reffwd'>[forward]</a>";
             }
-            menuStr += "</b> || [<a href='event:ref_" + refIndex + "'>refresh</a>]";
-            menuStr += "</b> [<a href='event:refe_" + refIndex + "'>explode</a>]";
-            menuStr += "</b> [<a href='event:refj1_" + refIndex + "'>j1</a>]";
-            menuStr += "</b> [<a href='event:refj2_" + refIndex + "'>j2</a>]";
-            menuStr += "</b> [<a href='event:refj4_" + refIndex + "'>j4</a>]";
-            menuStr += "</b> [<a href='event:refj_" + refIndex + "'>json</a>]";
+            menuStr += "</b> || <a href='event:ref_" + refIndex + "'>[refresh]</a>";
+            menuStr += "</b> <a href='event:refe_" + refIndex + "'>[explode]</a>";
+            menuStr += "</b> <a href='event:refj1_" + refIndex + "'>[j1]</a>";
+            menuStr += "</b> <a href='event:refj2_" + refIndex + "'>[j2]</a>";
+            menuStr += "</b> <a href='event:refj4_" + refIndex + "'>[j4]</a>";
+            menuStr += "</b> <a href='event:refj_" + refIndex + "'>[json]</a>";
             if (config.commandLineAllowed) {
-                menuStr += " [<a href='event:cl_" + refIndex + "'>scope</a>]";
+                menuStr += " <a href='event:cl_" + refIndex + "'>[scope]</a>";
             }
             
-            if (viewAll) menuStr += " [<a href='event:refi'>hide inherited</a>]";
+            if (viewAll) menuStr += " <a href='event:refi'>[hide inherited]</a>";
             else menuStr += showInherit;
             report(menuStr, -1, true, ch);
             report("", 1, true, ch);

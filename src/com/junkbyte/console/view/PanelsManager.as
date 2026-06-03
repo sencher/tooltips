@@ -40,6 +40,7 @@ public class PanelsManager {
     
     private var _chsPanel:ChannelsPanel;
     private var _jsonPanel:JsonPanel;
+    private var _tooltipPanel:TooltipPanel;
     private var _fpsPanel:GraphingPanel;
     private var _memPanel:GraphingPanel;
     private var _graphsMap:Object = {};
@@ -63,6 +64,10 @@ public class PanelsManager {
         _jsonPanel.y = _mainPanel.y - 2;
         addPanel(_jsonPanel);
         _jsonPanel.update();
+
+        _tooltipPanel = new TooltipPanel(console);
+        _tooltipPanel.visible = false;
+        addPanel(_tooltipPanel);
     }
     
     public function addPanel(panel:ConsolePanel):void {
@@ -89,6 +94,10 @@ public class PanelsManager {
     
     public function get mainPanel():MainPanel {
         return _mainPanel;
+    }
+
+    public function get tooltipPanel():TooltipPanel {
+        return _tooltipPanel;
     }
     
     public function panelExists(n:String):Boolean {
@@ -129,6 +138,8 @@ public class PanelsManager {
                 _chsPanel.update();
             }
         }
+        if (_tooltipPanel) _tooltipPanel.update();
+        if (_jsonPanel) _jsonPanel.update();
     }
     
     public function updateGraphs(graphs:Array):void {
@@ -270,8 +281,8 @@ public class PanelsManager {
             console.logs.cleanChannels();
             if (b) {
                 _chsPanel = new ChannelsPanel(console);
-                _chsPanel.x = _mainPanel.x + _mainPanel.width - 332;
-                _chsPanel.y = _mainPanel.y - 2;
+                _chsPanel.x = console.mouseX;
+                _chsPanel.y = console.mouseY;
                 addPanel(_chsPanel);
                 _chsPanel.update();
                 updateMenu();

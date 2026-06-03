@@ -34,6 +34,7 @@ import com.junkbyte.console.core.LogReferences;
 import com.junkbyte.console.core.Logs;
 import com.junkbyte.console.core.MemoryMonitor;
 import com.junkbyte.console.core.Remoting;
+import com.junkbyte.console.view.MainPanel;
 import com.junkbyte.console.view.PanelsManager;
 import com.junkbyte.console.view.RollerPanel;
 import com.junkbyte.console.vos.Log;
@@ -66,8 +67,8 @@ import wowp.utils.domain.getDefinition;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.94;
-    public static const LAST_CHANGE:String = "flashTrace + htmlEscape";
+    public static const VERSION:Number = 2.95;
+    public static const LAST_CHANGE:String = "High-perf Logs + Tooltips + Roller/JSON & UI Refinements";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -162,6 +163,10 @@ public class Console extends Sprite {
         cl.addCLCmd("c", createClass, "Create Class");
         cl.addCLCmd("cl", clearClasses, "Clear Classes");
     
+        cl.addCLCmd("rollerkey", function (str:String = ""):void {
+            setRollerCaptureKey(str);
+        }, "Set roller capture key");
+
         if (_config.sharedObjectName) {
             try {
                 _so = SharedObject.getLocal(_config.sharedObjectName, _config.sharedObjectPath);
@@ -171,6 +176,7 @@ public class Console extends Sprite {
             }
         }
         
+        if (_config.style.backgroundColor == 0) _config.style.backgroundColor = 0x111111;
         _config.style.updateStyleSheet();
         _panels = new PanelsManager(this);
         if (password) visible = false;
@@ -361,6 +367,8 @@ public class Console extends Sprite {
     
     private function onRollerCaptureKey():void {
         if (displayRoller) {
+            var roller:RollerPanel = _panels.getPanel(RollerPanel.NAME) as RollerPanel;
+            if (roller) roller.doCapture();
             report("Display Roller Capture:<br/>" + RollerPanel(_panels.getPanel(RollerPanel.NAME)).getMapString(true), -1);
         }
     }
@@ -462,7 +470,7 @@ public class Console extends Sprite {
     
     public function jsonch(channel:*, obj:Object, depth:int = int.MAX_VALUE):void {
         var json:String = _tools.json(obj, depth);
-        //System.setClipboard(json);
+        flash.system.System.setClipboard(json);
         dispatchEvent(new ConsoleEvent(ConsoleEvent.UPDATE_JSON_PANEL, json, true));
         //addLine(new Array(json), 1, channel, false, true);
     }
@@ -746,7 +754,13 @@ public class Console extends Sprite {
      */
     public function clear(channel:String = null):void {
         _logs.clear(channel);
-        if (!_paused && !_stopped) _panels.mainPanel.updateToBottom();
+        if (!_paused && !_stopped) {
+            var main:MainPanel = _panels.mainPanel;
+            var isActive:Boolean = !channel || main.isActiveChannel(channel);
+            if (isActive && (channel != Console.INSPECTING_CHANNEL || (main.viewingChannels.length == 1 && main.viewingChannels[0] == Console.INSPECTING_CHANNEL))) {
+                main.updateToBottom();
+            }
+        }
         _panels.updateMenu();
     }
     

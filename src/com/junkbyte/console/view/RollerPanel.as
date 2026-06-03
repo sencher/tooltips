@@ -29,11 +29,13 @@ import com.junkbyte.console.core.LogReferences;
 
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
+import flash.display.Sprite;
 import flash.display.Stage;
 import flash.events.Event;
 import flash.events.KeyboardEvent;
 import flash.events.TextEvent;
 import flash.geom.Point;
+import flash.system.System;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
 import flash.utils.Dictionary;
@@ -45,18 +47,42 @@ public class RollerPanel extends ConsolePanel {
     
     public static const NAME:String = "rollerPanel";
     
+    private var _topBG:Sprite;
+    private var _keyField:TextField;
+    private var _contentField:TextField;
     private var _settingKey:Boolean;
+    private var _frozen:Boolean;
     
     public function RollerPanel(m:Console) {
         super(m);
         name = NAME;
         init(60, 100, false);
-        txtField = makeTF("rollerPrints");
-        txtField.multiline = true;
-        txtField.autoSize = TextFieldAutoSize.LEFT;
+        
+        _topBG = new Sprite();
+        _topBG.name = "topBackground";
+        addChild(_topBG);
+        
+        txtField = makeTF("menuField");
+        txtField.height = style.menuFontSize + 4;
+        txtField.y = -2;
+        txtField.selectable = false;
         registerTFRoller(txtField, onMenuRollOver, linkHandler);
         registerDragger(txtField);
-        addChild(txtField);
+        registerDragger(_topBG);
+        _topBG.addChild(txtField);
+
+        _keyField = makeTF("keyField");
+        _keyField.selectable = false;
+        _keyField.y = txtField.y + txtField.height;
+        registerTFRoller(_keyField, onMenuRollOver, linkHandler);
+        addChild(_keyField);
+
+        _contentField = makeTF("rollerPrints");
+        _contentField.multiline = true;
+        _contentField.autoSize = TextFieldAutoSize.LEFT;
+        registerTFRoller(_contentField, onMenuRollOver, linkHandler);
+        addChild(_contentField);
+
         addEventListener(Event.ENTER_FRAME, _onFrame);
         addEventListener(Event.REMOVED_FROM_STAGE, removeListeners);
     }
@@ -72,24 +98,45 @@ public class RollerPanel extends ConsolePanel {
             close();
             return;
         }
+        
+        var menuStr:String = "<high><menu><a href=\"event:copy\">[unfreeze and copy]</a> <a href=\"event:close\">[X]</a></menu></high>";
+        var keyStr:String = "";
         if (_settingKey) {
-            txtField.htmlText = "<high><menu>Press a key to set [ <a href=\"event:cancel\"><b>cancel</b></a> ]</menu></high>";
+            keyStr = "<high><menu>Press a key to set <a href=\"event:cancel\"><b>[cancel]</b></a></menu></high>";
         } else {
-            txtField.htmlText = "<low>" + getMapString(false) + "</low>";
-            txtField.autoSize = TextFieldAutoSize.LEFT;
-            txtField.setSelection(0, 0);
+            var key:String = console.rollerCaptureKey ? console.rollerCaptureKey.key : "unassigned";
+            keyStr = "<low>Capture key: <menu><a href=\"event:capture\">" + key + "</a></menu></low>";
         }
-        width = txtField.width + 4;
-        height = txtField.height;
+        txtField.htmlText = menuStr;
+        _keyField.htmlText = keyStr;
+
+        var availWidth:Number = Math.max(_contentField.width, 160);
+        txtField.width = availWidth;
+        txtField.autoSize = TextFieldAutoSize.NONE;
+
+        _keyField.width = availWidth;
+        _keyField.autoSize = TextFieldAutoSize.LEFT;
+        _keyField.y = txtField.y + txtField.height;
+
+        if (!_frozen && !_settingKey) {
+            _contentField.htmlText = "<low>" + getMapString(false) + "</low>";
+            _contentField.autoSize = TextFieldAutoSize.LEFT;
+        }
+        _contentField.y = _keyField.y + _keyField.height;
+
+        _topBG.graphics.clear();
+        _topBG.graphics.beginFill(0x002244, style.backgroundAlpha);
+        _topBG.graphics.drawRect(0, 0, availWidth + 4, txtField.height + 2);
+        _topBG.graphics.endFill();
+
+        width = availWidth + 4;
+        height = _contentField.y + _contentField.height;
     }
     
     public function getMapString(dolink:Boolean):String {
         var stg:Stage = console.stage;
         var str:String = "";
-        if (!dolink) {
-            var key:String = console.rollerCaptureKey ? console.rollerCaptureKey.key : "unassigned";
-            str = "<menu> <a href=\"event:close\"><b>X</b></a></menu> Capture key: <menu><a href=\"event:capture\">" + key + "</a></menu><br/>";
-        }
+        
         var p:Point = new Point(stg.mouseX, stg.mouseY);
         if (stg.areInaccessibleObjectsUnderPoint(p)) {
             str += "<p9>Inaccessible objects detected</p9><br/>";
@@ -139,17 +186,29 @@ public class RollerPanel extends ConsolePanel {
         return str;
     }
     
+    public function doCapture():void {
+        _frozen = !_frozen;
+        if (_frozen) copyToClipboard();
+    }
+
+    private function copyToClipboard():void {
+        System.setClipboard(_contentField.text);
+        console.report("Copied roller content to clipboard.", -1);
+    }
+
     public override function close():void {
         cancelCaptureKeySet();
         removeListeners();
         super.close();
         console.panels.updateMenu(); // should be black boxed :/
     }
-    
+
     private function onMenuRollOver(e:TextEvent):void {
         var txt:String = e.text ? e.text.replace("event:", "") : "";
         if (txt == "close") {
             txt = "Close";
+        } else if (txt == "copy") {
+            txt = "Unfreeze and copy to clipboard";
         } else if (txt == "capture") {
             var key:KeyBind = console.rollerCaptureKey;
             if (key) {
@@ -164,18 +223,18 @@ public class RollerPanel extends ConsolePanel {
         }
         console.panels.tooltip(txt, this);
     }
-    
+
     protected function linkHandler(e:TextEvent):void {
-        TextField(e.currentTarget).setSelection(0, 0);
         if (e.text == "close") {
             close();
+        } else if (e.text == "copy") {
+            copyToClipboard();
+            _frozen = false;
         } else if (e.text == "capture") {
-            if (console.rollerCaptureKey) {
-                console.setRollerCaptureKey(null);
-            } else {
-                _settingKey = true;
-                stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler, false, 0, true);
-            }
+            _frozen = false;
+            console.setRollerCaptureKey(null);
+            _settingKey = true;
+            if (stage) stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler, false, 0, true);
             console.panels.tooltip(null);
         } else if (e.text == "cancel") {
             cancelCaptureKeySet();

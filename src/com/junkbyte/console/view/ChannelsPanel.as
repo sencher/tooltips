@@ -25,6 +25,7 @@
 package com.junkbyte.console.view {
 import com.junkbyte.console.Console;
 
+import flash.display.Sprite;
 import flash.events.TextEvent;
 import flash.text.TextFieldAutoSize;
 
@@ -35,18 +36,26 @@ public class ChannelsPanel extends ConsolePanel {
     
     public static const NAME:String = "channelsPanel";
     
+    private var _topBG:Sprite;
+    
     public function ChannelsPanel(m:Console) {
         super(m);
         name = NAME;
         init(10, 10, false);
+        
+        _topBG = new Sprite();
+        _topBG.name = "topBackground";
+        addChild(_topBG);
+        
         txtField = makeTF("channelsField");
         txtField.wordWrap = true;
         txtField.width = 160;
         txtField.multiline = true;
         txtField.autoSize = TextFieldAutoSize.LEFT;
+        txtField.selectable = false;
         registerTFRoller(txtField, onMenuRollOver, linkHandler);
-        registerDragger(txtField);
-        addChild(txtField);
+        registerDragger(_topBG);
+        _topBG.addChild(txtField);
     }
     
     public function update():void {
@@ -58,6 +67,12 @@ public class ChannelsPanel extends ConsolePanel {
             txtField.wordWrap = true;
             txtField.width = 160;
         }
+        
+        _topBG.graphics.clear();
+        _topBG.graphics.beginFill(0x002244, style.backgroundAlpha);
+        _topBG.graphics.drawRect(0, 0, txtField.width + 4, style.menuFontSize + 4);
+        _topBG.graphics.endFill();
+        
         width = txtField.width + 4;
         height = txtField.height;
     }

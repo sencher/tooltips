@@ -50,6 +50,10 @@ import flash.text.TextFieldType;
 import flash.text.TextFormat;
 import flash.ui.Keyboard;
 import flash.utils.Dictionary;
+import flash.utils.getQualifiedClassName;
+import flash.utils.getTimer;
+import flash.utils.clearTimeout;
+import flash.utils.setTimeout;
 
 public class MainPanel extends ConsolePanel {
     
@@ -60,6 +64,8 @@ public class MainPanel extends ConsolePanel {
     private static const IGNORED_CH_HISTORY:String = "ignoredChannels";
     private static const PRIORITY_HISTORY:String = "priority";
     
+    private var _topBG:Sprite;
+    private var _chsField:TextField;
     private var _traceField:TextField;
     private var _cmdPrefx:TextField;
     private var _cmdField:TextField;
@@ -99,6 +105,10 @@ public class MainPanel extends ConsolePanel {
     private var _lockScrollUpdate:Boolean;
     private var _atBottom:Boolean = true;
     private var _enteringLogin:Boolean;
+    private var _busy:uint;
+    
+    private var _tooltipTimer:uint;
+    private var _lastRollURL:String;
     
     private var _hint:String;
     
@@ -118,21 +128,39 @@ public class MainPanel extends ConsolePanel {
         minWidth = 50;
         minHeight = 18;
     
-        _traceField = makeTF("traceField");
+        _traceField = makeTF("traceField", true);
         _traceField.wordWrap = true;
         _traceField.multiline = true;
         _traceField.y = fsize;
         _traceField.addEventListener(Event.SCROLL, onTraceScroll);
+        registerTFRoller(_traceField, onTraceRollOver, linkHandler);
         addChild(_traceField);
         //
+        _topBG = new Sprite();
+        _topBG.name = "topBackground";
+        registerDragger(_topBG);
+        addChild(_topBG);
+        //
+        _chsField = makeTF("channelsField");
+        _chsField.wordWrap = false;
+        _chsField.multiline = false;
+        _chsField.autoSize = TextFieldAutoSize.LEFT;
+        _chsField.selectable = false;
+        _chsField.y = -2;
+        registerTFRoller(_chsField, onMenuRollOver, linkHandler);
+        registerDragger(_chsField);
+        _topBG.addChild(_chsField);
+        //
         txtField = makeTF("menuField");
-        txtField.wordWrap = true;
-        txtField.multiline = true;
-        txtField.autoSize = TextFieldAutoSize.RIGHT;
+        txtField.wordWrap = false;
+        txtField.multiline = false;
+        txtField.autoSize = TextFieldAutoSize.LEFT;
+        txtField.selectable = false;
         txtField.height = fsize + 6;
         txtField.y = -2;
         registerTFRoller(txtField, onMenuRollOver);
-        addChild(txtField);
+        registerDragger(txtField);
+        _topBG.addChild(txtField);
         //
         _cmdBG = new Shape();
         _cmdBG.name = "commandBackground";
@@ -205,7 +233,7 @@ public class MainPanel extends ConsolePanel {
         updateCLScope("");
         //
         init(640, 100, true);
-        registerDragger(txtField);
+        //
         //
         if (console.so[CL_HISTORY] is Array) {
             _cmdsHistory = console.so[CL_HISTORY];
@@ -360,7 +388,7 @@ public class MainPanel extends ConsolePanel {
         }
     }
     
-    private function isActiveChannel(ch:String):Boolean {
+    public function isActiveChannel(ch:String):Boolean {
         if (!_viewingChannels.length && !_ignoredChannels.length) {
             return true;
         } else if (_viewingChannels.length && _viewingChannels.indexOf(ch) > -1) {
@@ -392,9 +420,9 @@ public class MainPanel extends ConsolePanel {
         }
         if (_selectionStart != _selectionEnd) {
             if (_atBottom) {
-                _traceField.setSelection(_traceField.text.length - _selectionStart, _traceField.text.length - _selectionEnd);
+                _traceField.setSelection(_traceField.length - _selectionStart, _traceField.length - _selectionEnd);
             } else {
-                _traceField.setSelection(_traceField.text.length - _selectionEnd, _traceField.text.length - _selectionStart);
+                _traceField.setSelection(_traceField.length - _selectionEnd, _traceField.length - _selectionStart);
             }
             _selectionEnd = -1;
             _selectionStart = -1;
@@ -410,16 +438,18 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function updateFull():void {
-        var text:String = "";
+        _busy = getTimer();
+        var lines:Array = new Array();
         var line:Log = console.logs.first;
+        var viewall:Boolean = viewAll();
         while (line) {
-            if (viewAll() || lineShouldShow(line)) {
-                text += makeLine(line);
+            if (viewall || lineShouldShow(line)) {
+                lines.push(makeLine(line));
             }
             line = line.next;
         }
         _lockScrollUpdate = true;
-        _traceField.htmlText = "<logs>" + text + "</logs>";
+        _traceField.htmlText = "<logs>" + lines.join("") + "</logs>";
         if (_needRestoreScrollState) {
             _needRestoreScrollState = false;
             setScrollState(ConsoleScrollState(_scrollStates[channelsKey]));
@@ -454,7 +484,8 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function updateBottom():void {
-        var text:String = "";
+        _busy = getTimer();
+        var lines:Array = new Array();
         var linesLeft:int = Math.round(_traceField.height / style.traceFontSize);
         var maxchars:int = Math.round(_traceField.width * 5 / style.traceFontSize);
     
@@ -463,11 +494,11 @@ public class MainPanel extends ConsolePanel {
             if (lineShouldShow(line)) {
                 var numlines:int = Math.ceil(line.text.length / maxchars);
                 if (line.html || linesLeft >= numlines) {
-                    text = makeLine(line) + text;
+                    lines.push(makeLine(line));
                 } else {
                     line = line.clone();
                     line.text = line.text.substring(Math.max(0, line.text.length - (maxchars * linesLeft)));
-                    text = makeLine(line) + text;
+                    lines.push(makeLine(line));
                     break;
                 }
                 linesLeft -= numlines;
@@ -478,7 +509,7 @@ public class MainPanel extends ConsolePanel {
             line = line.prev;
         }
         _lockScrollUpdate = true;
-        _traceField.htmlText = "<logs>" + text + "</logs>";
+        _traceField.htmlText = "<logs>" + lines.reverse().join("") + "</logs>";
         _traceField.scrollV = _traceField.maxScrollV;
         _lockScrollUpdate = false;
         updateScroller();
@@ -656,19 +687,8 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function makeLine(line:Log):String {
-        var header:String = "<p>";
-        if (showChannelTag()) {
-            header += line.chStr;
-        }
-        if (config.showLineNumber) {
-            header += line.lineStr;
-        }
-        if (config.showTimestamp) {
-            header += line.timeStr;
-        }
-        
         var ptag:String = "p" + line.priority;
-        return header + "<" + ptag + ">" + addFilterText(line.text) + "</" + ptag + "></p>";
+        return "<p>" + (showChannelTag() ? line.chStr : "") + (config.showLineNumber ? line.lineStr : "") + (config.showTimestamp ? line.timeStr : "") + "<" + ptag + ">" + addFilterText(line.text) + "</" + ptag + "></p>";
     }
     
     private function addFilterText(txt:String):String {
@@ -707,8 +727,8 @@ public class MainPanel extends ConsolePanel {
         var atbottom:Boolean = _traceField.scrollV >= _traceField.maxScrollV;
         if (!console.paused && _atBottom != atbottom) {
             var diff:int = _traceField.maxScrollV - _traceField.scrollV;
-            _selectionStart = _traceField.text.length - _traceField.selectionBeginIndex;
-            _selectionEnd = _traceField.text.length - _traceField.selectionEndIndex;
+            _selectionStart = _traceField.length - _traceField.selectionBeginIndex;
+            _selectionEnd = _traceField.length - _traceField.selectionEndIndex;
             _atBottom = atbottom;
             _updateTraces();
             _traceField.scrollV = _traceField.maxScrollV - diff;
@@ -819,7 +839,7 @@ public class MainPanel extends ConsolePanel {
         _lockScrollUpdate = true;
         super.width = n;
         _traceField.width = n - 4;
-        txtField.width = n - 6;
+        txtField.x = Math.round(n - txtField.width);
         _cmdField.width = width - 15 - _cmdField.x;
         _cmdBG.width = n;
         
@@ -845,8 +865,6 @@ public class MainPanel extends ConsolePanel {
         super.height = n;
         var mini:Boolean = _mini || !style.topMenu;
         updateTraceFHeight();
-        _traceField.y = mini ? 0 : fsize;
-        _traceField.height = n - (_cmdField.visible ? (fsize + 4) : 0) - (mini ? 0 : fsize);
         var cmdy:Number = n - (fsize + 6);
         _cmdField.y = cmdy;
         _cmdPrefx.y = cmdy;
@@ -877,8 +895,13 @@ public class MainPanel extends ConsolePanel {
     
     private function updateTraceFHeight():void {
         var mini:Boolean = _mini || !style.topMenu;
-        _traceField.y = mini ? 0 : (txtField.y + txtField.height - 6);
+        _traceField.y = mini ? 0 : (txtField.y + txtField.height - 2);
         _traceField.height = Math.max(0, height - (_cmdField.visible ? (style.menuFontSize + 4) : 0) - _traceField.y);
+
+        _topBG.graphics.clear();
+        _topBG.graphics.beginFill(0x002244, style.backgroundAlpha);
+        _topBG.graphics.drawRect(0, 0, width, mini ? 0 : _traceField.y);
+        _topBG.graphics.endFill();
     }
     
     public function updateMenu(instant:Boolean = false):void {
@@ -890,66 +913,105 @@ public class MainPanel extends ConsolePanel {
     }
     
     private function _updateMenu():void {
-        var str:String = "<r><high>";
+        var str:String = "<high>";
         if (_mini || !style.topMenu) {
+            _chsField.visible = false;
             str += "<menu><b> <a href=\"event:show\">‹</a>";
         } else {
-            if (!console.panels.channelsPanel) {
-                str += getChannelsLink(true);
-            }
-            str += "<menu> <b>";
+            _chsField.visible = !console.panels.channelsPanel;
+            str += "<menu><b>";
             
             var extra:Boolean;
             for (var X:String in _extraMenus) {
-                str += "<a href=\"event:external_" + X + "\">" + X + "</a> ";
+                str += " <a href=\"event:external_" + X + "\">" + X + "</a>";
                 extra = true;
             }
-            if (extra) str += "¦ ";
+            if (extra) str += " ¦";
             
-            str += doActive("<a href=\"event:fps\">F</a>", console.fpsMonitor > 0);
-            str += doActive(" <a href=\"event:mm\">M</a>", console.memoryMonitor > 0);
+            str += " " + doActive("<a href=\"event:fps\">F</a>", console.fpsMonitor > 0);
+            str += " " + doActive("<a href=\"event:mm\">M</a>", console.memoryMonitor > 0);
             
-            str += doActive(" <a href=\"event:command\">CL</a>", commandLine);
+            str += " " + doActive("<a href=\"event:command\">CL</a>", commandLine);
             
             if (console.remoter.remoting != Remoting.RECIEVER) {
                 if (config.displayRollerEnabled)
-                    str += doActive(" <a href=\"event:roller\">Ro</a>", console.displayRoller);
+                    str += " " + doActive("<a href=\"event:roller\">Ro</a>", console.displayRoller);
                 if (config.rulerToolEnabled)
-                    str += doActive(" <a href=\"event:ruler\">RL</a>", console.panels.rulerActive);
+                    str += " " + doActive("<a href=\"event:ruler\">RL</a>", console.panels.rulerActive);
             }
             str += " ¦</b>";
             str += " <a href=\"event:copy\">Sv</a>";
             str += " <a href=\"event:priority\">P" + _priority + "</a>";
-            str += doActive(" <a href=\"event:pause\">P</a>", console.paused);
-            str += doActive(" <a href=\"event:stop\">S</a>", console.stopped);
-            str += " <a href=\"event:clear\">C</a> <a href=\"event:close\">X</a> <a href=\"event:hide\">›</a>";
+            str += " " + doActive("<a href=\"event:pause\">P</a>", console.paused);
+            str += " " + doActive("<a href=\"event:stop\">S</a>", console.stopped);
+            str += " <a href=\"event:json\">J</a> <a href=\"event:clear\">C</a> <a href=\"event:close\">X</a> <a href=\"event:hide\">›</a>";
         }
-        str += " </b></menu></high></r>";
+        str += " </b></menu></high>";
         txtField.htmlText = str;
-        txtField.scrollH = txtField.maxScrollH;
+        txtField.scrollH = 0;
+        txtField.x = Math.round(width - txtField.width);
         updateTraceFHeight();
+
+        if (_chsField.visible) {
+            var avail:Number = txtField.x - 25;
+            _chsField.x = 0;
+            _chsField.width = Math.max(10, avail);
+            _chsField.htmlText = "<high>" + getChannelsLink(true, avail) + "</high>";
+        }
     }
     
-    public function getChannelsLink(limited:Boolean = false):String {
+    public function getChannelsLink(limited:Boolean = false, maxWidth:int = 800):String {
         var str:String = "<chs>";
         var channels:Array = console.logs.getChannels();
         var len:int = channels.length;
+        
+        var useShort:Boolean = false;
+        if (limited) {
+            var estimatedWidth:int = 0;
+            for (var i:int = 0; i < len; i++) {
+                estimatedWidth += (channels[i].length + 4) * 8; // estimation
+            }
+            if (estimatedWidth > maxWidth) {
+                useShort = true;
+            }
+        }
+        
         if (limited && len > style.maxChannelsInMenu) len = style.maxChannelsInMenu;
-        for (var i:int = 0; i < len; i++) {
+        var links:Array = new Array();
+        for (i = 0; i < len; i++) {
             var channel:String = channels[i];
+            var displayChannel:String = channel;
+            if (channel == Console.GLOBAL_CHANNEL) {
+                displayChannel = "*";
+            } else if (useShort && channel.length > 2) {
+                displayChannel = channel.charAt(0) + channel.charAt(channel.length - 1);
+            }
+            
             var channelTxt:String;
             if (chShouldShow(channel)) {
-                channelTxt = "<ch><b>" + channel + "</b></ch>";
+                channelTxt = "<ch><b>" + displayChannel + "</b></ch>";
             } else {
-                channelTxt = channel;
+                channelTxt = displayChannel;
             }
-            str += "<a href=\"event:channel_" + channel + "\">[" + channelTxt + "]</a> ";
+            links.push("<a href=\"event:channel_" + channel + "\">[" + channelTxt + "]</a>");
+            
+            if (limited) {
+                var currentWidth:int = 0;
+                for each (var link:String in links) {
+                    currentWidth += (link.replace(/<.*?>/g, "").length + 1) * 7.5; // estimation including spaces and brackets
+                }
+                if (currentWidth > maxWidth - 60) {
+                    links.pop();
+                    len = i;
+                    break;
+                }
+            }
         }
+        str += links.join(" ");
         if (limited) {
-            str += "<ch><a href=\"event:channels\"><b>" + (channels.length > len ? "..." : "") + "</b>^^ </a></ch>";
-            str += "<ch><a href=\"event:json\">J </a></ch>";
+            str += " <ch><a href=\"event:channels\"><b>" + (channels.length > len ? "..." : "") + " </b>^^</a></ch>";
         }
-        str += "</chs> ";
+        str += "</chs>";
         return str;
     }
     
@@ -994,17 +1056,65 @@ public class MainPanel extends ConsolePanel {
                 command: "Command Line",
                 copy: "Save to clipboard::shift: no channel name\nctrl: use viewing filters\nalt: save to file",
                 clear: "Clear log",
-                priority: "Priority filter::shift: previous priority\n(skips unused priorites)",
+                priority: "Priority filter::shift: previous priority\n(skips unused priorities)",
                 channels: "Expand channels",
                 json: "Show Json object",
-                close: "Close"
+                close: "Close",
+                hide: "Hide menu",
+                show: "Show menu"
             };
             txt = obj[txt];
         }
         console.panels.tooltip(txt, src);
     }
     
+    private function onTraceRollOver(e:TextEvent):void {
+        var url:String = e.text ? e.text.replace("event:", "") : "";
+        if (url == _lastRollURL) return;
+        _lastRollURL = url;
+        
+        if (_tooltipTimer) {
+            clearTimeout(_tooltipTimer);
+            _tooltipTimer = 0;
+        }
+        
+        if (url.indexOf("ref_") == 0) {
+            _tooltipTimer = setTimeout(showTooltip, 100, url);
+        }
+    }
+    
+    private function showTooltip(url:String):void {
+        _tooltipTimer = 0;
+        var ind1:int = url.indexOf("_") + 1;
+        var id:uint;
+        var prop:String = "";
+        var ind2:int = url.indexOf("_", ind1);
+        if (ind2 > 0) {
+            id = uint(url.substring(ind1, ind2));
+            prop = url.substring(ind2 + 1);
+        } else {
+            id = uint(url.substring(ind1));
+        }
+        var o:Object = console.refs.getRefById(id);
+        if (prop && o) o = o[prop];
+        if (o) {
+            var str:String;
+            if (o is String) {
+                str = LogReferences.EscHTML(o as String);
+            } else if (o is Array || getQualifiedClassName(o).indexOf("__AS3__.vec::Vector") == 0) {
+                str = console.mapper.json(o);
+            } else if (typeof o == "object") {
+                str = console.mapper.explode(o, 2);
+            } else {
+                str = String(o);
+            }
+            console.panels.tooltipPanel.show(str);
+        }
+    }
+    
     private function linkHandler(e:TextEvent):void {
+        if (_busy && getTimer() < _busy + 100) return;
+        _busy = getTimer();
         txtField.setSelection(0, 0);
         stopDrag();
         var t:String = e.text;

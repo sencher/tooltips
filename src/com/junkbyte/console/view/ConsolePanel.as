@@ -37,6 +37,8 @@ import flash.geom.Point;
 import flash.geom.Rectangle;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
+import flash.utils.clearTimeout;
+import flash.utils.setTimeout;
 
 /**
  * Dispatched when dragging / moving started
@@ -83,9 +85,11 @@ public class ConsolePanel extends Sprite {
     private var _dragOffset:Point;
     
     private var _resizeTxt:TextField;
+    private var _resizeTxtTimer:uint;
     //
     protected var console:Console;
     protected var bg:Sprite;
+    protected var border:Sprite;
     protected var scaler:Sprite;
     protected var txtField:TextField;
     protected var minWidth:int = 18;
@@ -102,6 +106,10 @@ public class ConsolePanel extends Sprite {
         bg = new Sprite();
         bg.name = "background";
         addChild(bg);
+        border = new Sprite();
+        border.name = "border";
+        border.mouseEnabled = false;
+        addChild(border);
     }
     
     protected function get config():ConsoleConfig {
@@ -112,17 +120,16 @@ public class ConsolePanel extends Sprite {
         return console.config.style;
     }
     
+    private var _bgCol:Number = -1;
+    private var _bgAlpha:Number = -1;
+    private var _bgRounding:int = -1;
+    private var _width:Number = 0;
+    private var _height:Number = 0;
+
     protected function init(w:Number, h:Number, resizable:Boolean = false, col:Number = -1, a:Number = -1, rounding:int = -1):void {
-        
-        bg.graphics.clear();
-        bg.graphics.beginFill(col >= 0 ? col : style.backgroundColor, a >= 0 ? a : style.backgroundAlpha);
-        if (rounding < 0) rounding = style.roundBorder;
-        if (rounding <= 0) bg.graphics.drawRect(0, 0, 100, 100);
-        else {
-            bg.graphics.drawRoundRect(0, 0, rounding + 10, rounding + 10, rounding, rounding);
-            bg.scale9Grid = new Rectangle(rounding * 0.5, rounding * 0.5, 10, 10);
-        }
-        
+        _bgCol = col;
+        _bgAlpha = a;
+        _bgRounding = rounding;
         scalable = resizable;
         width = w;
         height = h;
@@ -150,22 +157,43 @@ public class ConsolePanel extends Sprite {
     //
     override public function set width(n:Number):void {
         if (n < minWidth) n = minWidth;
+        _width = n;
         if (scaler) scaler.x = n;
-        bg.width = n;
+        updateBG();
     }
     
     override public function set height(n:Number):void {
         if (n < minHeight) n = minHeight;
+        _height = n;
         if (scaler) scaler.y = n;
-        bg.height = n;
+        updateBG();
     }
     
     override public function get width():Number {
-        return bg.width;
+        return _width;
     }
     
     override public function get height():Number {
-        return bg.height;
+        return _height;
+    }
+
+    private function updateBG():void {
+        bg.graphics.clear();
+        bg.graphics.beginFill(_bgCol >= 0 ? _bgCol : style.backgroundColor, _bgAlpha >= 0 ? _bgAlpha : style.backgroundAlpha);
+        var r:int = _bgRounding < 0 ? style.roundBorder : _bgRounding;
+        if (r <= 0) bg.graphics.drawRect(0, 0, _width, _height);
+        else bg.graphics.drawRoundRect(0, 0, _width, _height, r, r);
+        bg.graphics.endFill();
+        
+        border.graphics.clear();
+        border.graphics.lineStyle(1, 0x880044);
+        if (r <= 0) border.graphics.drawRect(0, 0, _width, _height);
+        else border.graphics.drawRoundRect(0, 0, _width, _height, r, r);
+        
+        // Ensure border is on top
+        if (numChildren > 0 && getChildIndex(border) != numChildren - 1) {
+            addChild(border);
+        }
     }
     
     //
@@ -175,21 +203,35 @@ public class ConsolePanel extends Sprite {
         _snaps = [X, Y];
     }
     
-    protected function registerDragger(mc:DisplayObject, dereg:Boolean = false):void {
+    protected function registerDragger(mc:DisplayObject, dereg:Boolean = false, handCursor:Boolean = false):void {
         if (dereg) {
             mc.removeEventListener(MouseEvent.MOUSE_DOWN, onDraggerMouseDown);
+            if (mc is Sprite) {
+                Sprite(mc).buttonMode = false;
+                Sprite(mc).useHandCursor = false;
+            }
         } else {
             mc.addEventListener(MouseEvent.MOUSE_DOWN, onDraggerMouseDown, false, 0, true);
+            if (mc is Sprite) {
+                Sprite(mc).buttonMode = handCursor;
+                Sprite(mc).useHandCursor = handCursor;
+            }
         }
     }
     
     private function onDraggerMouseDown(e:MouseEvent):void {
         if (!stage || !moveable) return;
         //
-        _resizeTxt = makeTF("positioningField", true);
-        _resizeTxt.mouseEnabled = false;
-        _resizeTxt.autoSize = TextFieldAutoSize.LEFT;
-        addChild(_resizeTxt);
+        if (_resizeTxtTimer) {
+            clearTimeout(_resizeTxtTimer);
+            _resizeTxtTimer = 0;
+        }
+        if (!_resizeTxt) {
+            _resizeTxt = makeTF("positioningField", true);
+            _resizeTxt.mouseEnabled = false;
+            _resizeTxt.autoSize = TextFieldAutoSize.LEFT;
+            addChild(_resizeTxt);
+        }
         updateDragText();
         //
         _movedFrom = new Point(x, y);
@@ -223,11 +265,19 @@ public class ConsolePanel extends Sprite {
             stage.removeEventListener(MouseEvent.MOUSE_UP, onDraggerMouseUp);
             stage.removeEventListener(MouseEvent.MOUSE_MOVE, onDraggerMouseMove);
         }
+        if (_resizeTxtTimer) {
+            clearTimeout(_resizeTxtTimer);
+        }
+        _resizeTxtTimer = setTimeout(removeResizeText, 1000);
+        dispatchEvent(new Event(DRAGGING_ENDED));
+    }
+    
+    private function removeResizeText():void {
+        _resizeTxtTimer = 0;
         if (_resizeTxt && _resizeTxt.parent) {
             _resizeTxt.parent.removeChild(_resizeTxt);
         }
         _resizeTxt = null;
-        dispatchEvent(new Event(DRAGGING_ENDED));
     }
     
     public function moveBackSafePosition():void {
@@ -277,12 +327,18 @@ public class ConsolePanel extends Sprite {
     }
     
     private function onScalerMouseDown(e:Event):void {
-        _resizeTxt = makeTF("resizingField", true);
-        _resizeTxt.mouseEnabled = false;
-        _resizeTxt.autoSize = TextFieldAutoSize.RIGHT;
-        _resizeTxt.x = -4;
-        _resizeTxt.y = -17;
-        scaler.addChild(_resizeTxt);
+        if (_resizeTxtTimer) {
+            clearTimeout(_resizeTxtTimer);
+            _resizeTxtTimer = 0;
+        }
+        if (!_resizeTxt) {
+            _resizeTxt = makeTF("resizingField", true);
+            _resizeTxt.mouseEnabled = false;
+            _resizeTxt.autoSize = TextFieldAutoSize.RIGHT;
+            _resizeTxt.x = -4;
+            _resizeTxt.y = -17;
+            scaler.addChild(_resizeTxt);
+        }
         updateScaleText();
         _dragOffset = new Point(scaler.mouseX, scaler.mouseY); // using this way instead of startDrag, so that it can control snapping.
         _snaps = [[], []];
@@ -313,10 +369,10 @@ public class ConsolePanel extends Sprite {
         scaler.stage.removeEventListener(MouseEvent.MOUSE_MOVE, updateScale);
         updateScale();
         _snaps = null;
-        if (_resizeTxt && _resizeTxt.parent) {
-            _resizeTxt.parent.removeChild(_resizeTxt);
+        if (_resizeTxtTimer) {
+            clearTimeout(_resizeTxtTimer);
         }
-        _resizeTxt = null;
+        _resizeTxtTimer = setTimeout(removeResizeText, 1000);
         dispatchEvent(new Event(SCALING_ENDED));
     }
     

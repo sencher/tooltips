@@ -117,7 +117,7 @@ public class ConsoleStyle {
     public var showCommandLineScope:Boolean = true;
     
     /** Maximum number of channels to display on top menu */
-    public var maxChannelsInMenu:int = 7;
+    public var maxChannelsInMenu:int = 15;
     
     /** Panel snapping radius during drag move. default:3, set to 0 to disable*/
     public var panelSnapping:int = 3;

@@ -96,7 +96,7 @@ public class Logs extends ConsoleCore {
         addChannel(line.ch);
         
         line.lineStr = line.line + " ";
-        line.chStr = "[<a href=\"event:channel_" + line.ch + "\">" + line.ch + "</a>] ";
+        line.chStr = "<a href=\"event:channel_" + line.ch + "\">[" + line.ch + "]</a> ";
         line.timeStr = config.timeStampFormatter(line.time) + " ";
         
         send2Remote(line);
@@ -140,16 +140,15 @@ public class Logs extends ConsoleCore {
     }
     
     public function getLogsAsString(splitter:String, incChNames:Boolean = true, filter:Function = null):String {
-        var str:String = "";
+        var a:Array = new Array();
         var line:Log = first;
         while (line) {
             if (filter == null || filter(line)) {
-                if (first != line) str += splitter;
-                str += incChNames ? line.toString() : line.plainText();
+                a.push(incChNames ? line.toString() : line.plainText());
             }
             line = line.next;
         }
-        return str;
+        return a.join(splitter);
     }
     
     public function getChannels():Array {

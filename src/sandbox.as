@@ -3,7 +3,7 @@ package {
     import flash.display.Sprite;
     import flash.events.Event;
 
-    [SWF(width="1000", height="500", frameRate="60", backgroundColor="#000000")]
+    [SWF(width="1000", height="800", frameRate="60", backgroundColor="#000000")]
     public class sandbox extends Sprite {
         public function sandbox() {
             if (stage) init();
@@ -20,7 +20,61 @@ package {
             Cc.height = 500;
             Cc.config.alwaysOnTop = true;
             
+            for (var i:int = 0; i < 10000; i++) {
+                if (i % 1000 == 0) {
+                    var obj:Object = {
+                        id: i,
+                        level1: [
+                            {
+                                level2: [
+                                    { name: "Leaf " + i + "-1", values: [i, i+1, i+2] },
+                                    { name: "Leaf " + i + "-2", values: [i+3, i+4, i+5] }
+                                ],
+                                meta: "some meta"
+                            },
+                            "Level 1 string"
+                        ],
+                        info: {
+                            timestamp: new Date().getTime(),
+                            channel: "CH" + (i % 10)
+                        }
+                    };
+                    Cc.ch("!Objects", obj);
+                } else {
+                    Cc.ch("CH" + (i % 10), "Line " + i + " some random text to fill up the console and test the performance of the new optimizations.");
+                }
+            }
+            
             runTest();
+            testStacks();
+        }
+
+        private function testStacks():void {
+            callPathA("initial");
+            recursivePath(5);
+        }
+
+        private function recursivePath(depth:int):void {
+            if (depth > 0) {
+                recursivePath(depth - 1);
+            } else {
+                Cc.greenw("Recursive stack trace test");
+            }
+        }
+
+        private function callPathA(val:String):void {
+            callPathB(val + " > A");
+        }
+
+        private function callPathB(val:String):void {
+            var anonymous:Function = function(v:String):void {
+                callPathC(v + " > anonymous");
+            };
+            anonymous(val + " > B");
+        }
+
+        private function callPathC(val:String):void {
+            Cc.greenw("Stack trace test: " + val);
         }
 
         private function runTest():void {
