@@ -27,6 +27,7 @@ package com.junkbyte.console {
 import com.junkbyte.console.core.CommandLine;
 import com.junkbyte.console.core.ConsoleEvent;
 import com.junkbyte.console.core.ConsoleTools;
+import com.junkbyte.console.core.ConsoleUtils;
 import com.junkbyte.console.core.Graphing;
 import com.junkbyte.console.core.KeyBinder;
 import com.junkbyte.console.core.LogReferences;
@@ -65,8 +66,8 @@ import wowp.utils.domain.getDefinition;
  */
 public class Console extends Sprite {
     
-    public static const VERSION:Number = 2.93;
-    public static const LAST_CHANGE:String = "whoCalledThis";
+    public static const VERSION:Number = 2.94;
+    public static const LAST_CHANGE:String = "flashTrace + htmlEscape";
     
     public static const BERRY:uint = 1;
     public static const BLUE:uint = 2;
@@ -614,12 +615,23 @@ public class Console extends Sprite {
             txt += (i ? " " : "") + _refs.makeString(strings[i], null, html, -1);
         }
         
+        var ch:String = MakeChannelName(channel);
         if (priority >= _config.autoStackPriority && stacks < 0) stacks = _config.defaultStackDepth;
         
+        var stackAdded:String = "";
         if (!html && stacks > 0) {
-            txt += _tools.getStack(stacks, priority);
+            stackAdded = _tools.getStack(stacks, priority);
+            txt += stackAdded;
         }
-        _logs.add(new Log(this, txt, MakeChannelName(channel), priority, isRepeating, html));
+
+        if (_config.flashTrace) {
+            var prefix:String = (ch == DEFAULT_CHANNEL) ? "" : "[" + ch + "] ";
+            var traceTxt:String = prefix + txt.replace(TAG, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+            if (stackAdded) traceTxt += "\n" + ConsoleUtils.whoCalledThis(100, 3);
+            trace(traceTxt);
+        }
+
+        _logs.add(new Log(this, txt, ch, priority, isRepeating, html));
     }
     
     //

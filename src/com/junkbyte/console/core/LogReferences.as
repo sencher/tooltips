@@ -597,7 +597,7 @@ public class LogReferences extends ConsoleCore {
     
     
     public static function EscHTML(str:String):String {
-        if (str.indexOf("<menu>") > -1) return str;
+        if (str.indexOf("<menu>") > -1 || str.indexOf("<p") > -1) return str;
         return str.replace(/</g, "&lt;").replace(/\>/g, "&gt;").replace(/\x00/g, "");
     }
     

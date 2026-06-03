@@ -367,8 +367,8 @@ public class ConsoleUtils {
         return result ? result + "*************" : "";
     }
     
-    public static function traceStack(...rest):void {
-        trace(rest, "\n", ConsoleUtils.whoCalledThis(100, 3));
+    public static function traceStack(strings:*, stack:String = null):void {
+        trace(strings, "\n", stack ? stack : ConsoleUtils.whoCalledThis(100, 3));
     }
 }
 }
